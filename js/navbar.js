@@ -15,7 +15,13 @@ class Navbar {
         const path = window.location.pathname;
         const pathParts = path.split('/').filter(part => part !== '');
         
-        // If we're in a subdirectory (like blog-posts/), we need to go up one level
+        // Handle different deployment scenarios:
+        // 1. GitHub Pages: /elemento-website-25/index.html -> need to go up one level
+        // 2. Local development: /index.html -> no need to go up
+        // 3. Local subdirectory: /blog-posts/post.html -> need to go up one level
+        
+        // For GitHub Pages, we need to go up one level from the repository root
+        // For local development, we need to go up one level if we're in a subdirectory
         if (pathParts.length > 1) {
             return '../';
         }
@@ -29,21 +35,25 @@ class Navbar {
     render() {
         const basePath = this.getBasePath();
         
+        // Use absolute paths from the root to avoid path issues
+        const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+        const rootPath = pathParts.length > 1 ? '/' + pathParts[0] + '/' : '/';
+        
         return `
             <nav class="navbar">
                 <div class="nav-container">
-                    <a href="${basePath}index.html" class="logo">
+                    <a href="${rootPath}index.html" class="logo">
                         <div class="logo-icon">E</div>
                         <span>Elemento</span>
                     </a>
                     
                     <ul class="nav-menu">
-                        <li><a href="${basePath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
-                        <li><a href="${basePath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products</a></li>
-                        <li><a href="${basePath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
-                        <li><a href="${basePath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
-                        <li><a href="${basePath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
-                        <li><a href="${basePath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
+                        <li><a href="${rootPath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
+                        <li><a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products</a></li>
+                        <li><a href="${rootPath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
+                        <li><a href="${rootPath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
+                        <li><a href="${rootPath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
+                        <li><a href="${rootPath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
                     </ul>
                     
                     <div class="nav-controls">
