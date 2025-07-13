@@ -11,26 +11,39 @@ class Navbar {
         return filename;
     }
 
+    getBasePath() {
+        const path = window.location.pathname;
+        const pathParts = path.split('/').filter(part => part !== '');
+        
+        // If we're in a subdirectory (like blog-posts/), we need to go up one level
+        if (pathParts.length > 1) {
+            return '../';
+        }
+        return './';
+    }
+
     getActiveClass(page) {
         return this.currentPage === page ? 'active' : '';
     }
 
     render() {
+        const basePath = this.getBasePath();
+        
         return `
             <nav class="navbar">
                 <div class="nav-container">
-                    <a href="index.html" class="logo">
+                    <a href="${basePath}index.html" class="logo">
                         <div class="logo-icon">E</div>
                         <span>Elemento</span>
                     </a>
                     
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
-                        <li><a href="products.html" class="nav-link ${this.getActiveClass('products.html')}">Products</a></li>
-                        <li><a href="technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
-                        <li><a href="about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
-                        <li><a href="contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
-                        <li><a href="blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
+                        <li><a href="${basePath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
+                        <li><a href="${basePath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products</a></li>
+                        <li><a href="${basePath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
+                        <li><a href="${basePath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
+                        <li><a href="${basePath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
+                        <li><a href="${basePath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
                     </ul>
                     
                     <div class="nav-controls">

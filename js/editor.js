@@ -23,19 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
   <title>${title} | Elemento Blog</title>
   <link rel='stylesheet' href='../css/style.css'>
   <link rel='stylesheet' href='../css/themes.css'>
+  <link rel="icon" href="../favicon.ico">
 </head>
 <body class='theme-default'>
-  <nav class='navbar'>
-    <a href='../index.html' class='logo'>Elemento</a>
-    <ul class='nav-menu'>
-      <li><a href='../index.html'>Home</a></li>
-      <li><a href='../products.html'>Products</a></li>
-      <li><a href='../technology.html'>Technology</a></li>
-      <li><a href='../about.html'>About</a></li>
-      <li><a href='../contact.html'>Contact</a></li>
-      <li><a href='../blog.html' class='active'>Blog</a></li>
-    </ul>
-  </nav>
+  <!-- Background Canvas for animated gradients -->
+  <div id="background-canvas"></div>
+  
+  <!-- Navigation -->
+  <div id="navbar-placeholder"></div>
+  
   <main class='container'>
     <article class='blog-post'>
       <h1>${title}</h1>
@@ -44,9 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class='blog-content'>${content}</div>
     </article>
   </main>
+  
   <footer class='footer'>
     <div class='footer-bottom'>&copy; 2024 Elemento. All rights reserved. | <a href='../blog.html'>Blog</a></div>
   </footer>
+  
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>`;
     const blob = new Blob([html], {type: 'text/html'});
