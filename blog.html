@@ -9,17 +9,7 @@
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="theme-default">
-    <nav class="navbar">
-        <a href="index.html" class="logo">Elemento</a>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="technology.html">Technology</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-        </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <section class="hero">
         <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Elemento Blog" class="hero-image" />
         <div class="hero-content">
@@ -38,6 +28,7 @@
             &copy; 2024 Elemento. All rights reserved. | <a href="blog.html">Blog</a>
         </div>
     </footer>
+    <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
     <script>
     fetch('blog-posts/index.json')
