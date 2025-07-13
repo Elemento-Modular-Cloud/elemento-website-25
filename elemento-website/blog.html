@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Elemento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="theme-default">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Elemento</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Elemento Blog" class="hero-image" />
+        <div class="hero-content">
+            <h1 class="hero-title">Elemento Blog</h1>
+            <p class="hero-subtitle">Insights, news, and stories from the Elemento team.</p>
+        </div>
+    </section>
+    <main class="container">
+        <section id="blog-list" class="blog-list">
+            <!-- Blog posts will be loaded here -->
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- ...existing footer... -->
+        <div class="footer-bottom">
+            &copy; 2024 Elemento. All rights reserved. | <a href="blog.html">Blog</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+    fetch('blog-posts/index.json')
+      .then(res => res.json())
+      .then(posts => {
+        const list = document.getElementById('blog-list');
+        if (!posts.length) {
+          list.innerHTML = '<p>No blog posts yet.</p>';
+          return;
+        }
+        list.innerHTML = posts.map(post => `
+          <article class="card blog-card">
+            <h2><a href="blog-posts/${post.filename}">${post.title}</a></h2>
+            <p class="blog-meta">By ${post.author} &mdash; ${post.date}</p>
+            <p>${post.summary}</p>
+            <a href="blog-posts/${post.filename}" class="btn btn-secondary">Read More</a>
+          </article>
+        `).join('');
+      });
+    </script>
+</body>
+</html> 

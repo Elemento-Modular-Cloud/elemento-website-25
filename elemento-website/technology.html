@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - Elemento Cloud Platform</title>
+    <meta name="description" content="Explore the cutting-edge technology behind Elemento's cloud platform including Kubernetes, Infrastructure as Code, multi-cloud architecture, and green computing innovations.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">E</div>
+                <span>Elemento</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="technology.html" class="nav-link active">Technology</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle theme">🌞</button>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80" alt="Elemento Technology" class="hero-image" />
+        <div class="hero-content">
+            <h1 class="hero-title">Technology</h1>
+            <p class="hero-subtitle">Discover the advanced technology stack and architecture that powers Elemento's cloud solutions.</p>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Our Technology</h1>
+                <p class="section-subtitle">Cutting-edge cloud infrastructure technology built for performance, scalability, and sustainability</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technology Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <h2>Kubernetes Native Architecture</h2>
+                    <p>Elemento is built on Kubernetes, the industry standard for container orchestration. Our platform leverages Kubernetes' powerful capabilities for seamless deployment, scaling, and management of containerized applications.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Key Benefits:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Automatic Scaling & Load Balancing
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Self-Healing & High Availability
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Multi-Cloud Deployment
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Declarative Configuration
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">⚙️</div>
+                        <h3>Kubernetes Native</h3>
+                        <p>Built on Kubernetes for seamless container orchestration and management across any infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure as Code Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">💻</div>
+                        <h3>Infrastructure as Code</h3>
+                        <p>Manage your entire infrastructure using code with Terraform, Ansible, and other IaC tools.</p>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h2>Infrastructure as Code</h2>
+                    <p>Everything in Elemento is managed as code. Use Terraform, Ansible, or any IaC tool to define, deploy, and manage your infrastructure with version control and automated testing.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Supported Tools:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Terraform & Terraform Cloud
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Ansible & Ansible Tower
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Pulumi & CloudFormation
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Custom APIs & SDKs
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Cloud Architecture Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <h2>Multi-Cloud Architecture</h2>
+                    <p>Deploy across multiple cloud providers or on-premises with consistent management and unified APIs. Our platform abstracts the complexity of multi-cloud environments while maintaining vendor neutrality.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Supported Platforms:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                AWS, Azure, Google Cloud
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                DigitalOcean, Linode, Vultr
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                On-Premises & Private Cloud
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Edge Computing & IoT
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">☁️</div>
+                        <h3>Multi-Cloud</h3>
+                        <p>Deploy across multiple cloud providers with unified management and vendor-neutral APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Computing Technology Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">🌱</div>
+                        <h3>Green Computing</h3>
+                        <p>Advanced algorithms optimize for energy efficiency and carbon footprint reduction.</p>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h2>Green Computing Technology</h2>
+                    <p>Our proprietary green routing algorithms automatically optimize workload placement based on energy efficiency, carbon footprint, and cost. We partner with renewable energy providers and use advanced monitoring to track environmental impact.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Green Features:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Energy-Efficient Workload Placement
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Carbon Footprint Tracking
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Renewable Energy Optimization
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Sustainability Reporting
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Built with modern, proven technologies for reliability and performance</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">🐳</div>
+                    <h3>Containerization</h3>
+                    <p>Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🔧</div>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Terraform, Ansible, and Pulumi integration for automated infrastructure management and deployment.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">📊</div>
+                    <h3>Monitoring & Observability</h3>
+                    <p>Prometheus, Grafana, and ELK stack for comprehensive monitoring, logging, and alerting.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🔒</div>
+                    <h3>Security & Compliance</h3>
+                    <p>Built-in security scanning, compliance frameworks, and enterprise-grade encryption.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🌐</div>
+                    <h3>Networking</h3>
+                    <p>Advanced networking with load balancing, service mesh, and global traffic management.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">💾</div>
+                    <h3>Storage & Databases</h3>
+                    <p>Distributed storage systems with automatic backup, replication, and disaster recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">System Architecture</h2>
+                <p class="section-subtitle">How Elemento's components work together to deliver a complete cloud platform</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h3>Control Plane</h3>
+                    <p>The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces.</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Kubernetes</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">API Gateway</span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Data Plane</h3>
+                    <p>The execution layer where your applications run, including compute resources, storage systems, and networking components.</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Compute</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Storage</span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Management Layer</h3>
+                    <p>User interfaces, APIs, and automation tools that provide access to platform capabilities and enable infrastructure as code.</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Web UI</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">CLI</span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Observability Stack</h3>
+                    <p>Comprehensive monitoring, logging, and analytics that provide insights into performance, costs, and environmental impact.</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Monitoring</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Innovation & Research</h2>
+                <p class="section-subtitle">Pioneering new approaches to cloud infrastructure and sustainability</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI-Powered Optimization</h3>
+                    <p>Machine learning algorithms that automatically optimize resource allocation, cost management, and performance tuning.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🌍</div>
+                    <h3>Carbon-Aware Computing</h3>
+                    <p>Advanced algorithms that consider carbon intensity when making workload placement decisions.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🔬</div>
+                    <h3>Research Partnerships</h3>
+                    <p>Collaborating with leading universities and research institutions to advance cloud computing technology.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">⚡</div>
+                    <h3>Edge Computing</h3>
+                    <p>Extending our platform to edge locations for low-latency applications and IoT deployments.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🔐</div>
+                    <h3>Zero-Trust Security</h3>
+                    <p>Implementing advanced security models that verify every request and connection.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">📈</div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Using historical data to predict capacity needs and optimize resource allocation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>99.99%</h3>
+                    <p>Uptime Guarantee</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <h3>< 10ms</h3>
+                    <p>Average Latency</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <h3>40%</h3>
+                    <p>Energy Reduction</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <h3>8+</h3>
+                    <p>Cloud Providers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience Our Technology</h2>
+                <p class="section-subtitle">Ready to see how our cutting-edge technology can transform your infrastructure?</p>
+            </div>
+            
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+                <a href="products.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Explore Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Elemento</h4>
+                    <p>Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Infrastructure as Code</a></li>
+                        <li><a href="products.html">Security & Compliance</a></li>
+                        <li><a href="products.html">Monitoring & Analytics</a></li>
+                        <li><a href="products.html">Green Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="status.html">System Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elemento. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

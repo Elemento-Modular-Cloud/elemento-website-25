@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Editor | Elemento</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <style>
+    .editor-container { max-width: 700px; margin: 2rem auto; background: var(--glassmorphism-background); border-radius: var(--card-border-radius); box-shadow: var(--glassmorphism-shadow); padding: 2rem; }
+    #editor { height: 300px; background: #fff; }
+    .form-group { margin-bottom: 1.5rem; }
+    label { font-weight: 600; }
+    .instructions { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 8px; padding: 1rem; margin-bottom: 2rem; color: #ad8b00; }
+  </style>
+</head>
+<body class="theme-default">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Elemento</a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="editor-container">
+      <div class="instructions">
+        <strong>Instructions:</strong> Fill out the form and write your blog post below. When you click "Export Post", an HTML file will be downloaded. Add this file to the <code>blog-posts/</code> folder and update <code>blog-posts/index.json</code> with the post metadata.
+      </div>
+      <form id="blog-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" required class="w-full">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" required class="w-full">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required class="w-full">
+        </div>
+        <div class="form-group">
+          <label for="summary">Summary</label>
+          <textarea id="summary" name="summary" rows="2" required class="w-full"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="editor">Content</label>
+          <div id="editor"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Export Post</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-bottom">&copy; 2024 Elemento. All rights reserved. | <a href="blog.html">Blog</a></div>
+  </footer>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html> 

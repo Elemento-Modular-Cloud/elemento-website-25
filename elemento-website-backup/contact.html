@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elemento Cloud Platform</title>
+    <meta name="description" content="Get in touch with Elemento for cloud infrastructure solutions, support, sales inquiries, or partnership opportunities.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">E</div>
+                <span>Elemento</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle theme">🌞</button>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80" alt="Contact Elemento" class="hero-image" />
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-subtitle">Get in touch with the Elemento team for support, partnership, or general inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you're looking to get started with Elemento, need technical support, or want to explore partnership opportunities, we're here to help.</p>
+                    
+                    <div style="margin: var(--space-xl) 0;">
+                        <h4>Contact Information</h4>
+                        <div style="margin: var(--space-lg) 0;">
+                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                                <span style="font-size: 1.2rem;">📧</span>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:hello@elemento.cloud" style="color: var(--primary-color);">hello@elemento.cloud</a>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                                <span style="font-size: 1.2rem;">📞</span>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <a href="tel:+1-555-123-4567" style="color: var(--primary-color);">+1 (555) 123-4567</a>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+                                <span style="font-size: 1.2rem;">🏢</span>
+                                <div>
+                                    <strong>Office</strong><br>
+                                    123 Cloud Street<br>
+                                    San Francisco, CA 94105
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>
+                        Saturday: 10:00 AM - 2:00 PM PST<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="demo">Request Demo</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and insights
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Options Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support Options</h2>
+                <p class="section-subtitle">Multiple ways to get the help you need</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Comprehensive guides, tutorials, and API documentation to help you get started and troubleshoot issues.</p>
+                    <a href="documentation.html" class="btn btn-secondary">View Docs</a>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">💬</div>
+                    <h3>Community</h3>
+                    <p>Join our community forum to connect with other users, share experiences, and get help from peers.</p>
+                    <a href="community.html" class="btn btn-secondary">Join Community</a>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">🎓</div>
+                    <h3>Training</h3>
+                    <p>Free webinars, training sessions, and certification programs to help your team master Elemento.</p>
+                    <a href="training.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Global Presence</h2>
+                <p class="section-subtitle">Serving customers worldwide with local support and infrastructure</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <h3>San Francisco</h3>
+                    <p><strong>Headquarters</strong><br>
+                    123 Cloud Street<br>
+                    San Francisco, CA 94105<br>
+                    United States</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">HQ</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Sales</span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>London</h3>
+                    <p><strong>European Office</strong><br>
+                    456 Tech Square<br>
+                    London, EC2A 4BX<br>
+                    United Kingdom</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Sales</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Support</span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Singapore</h3>
+                    <p><strong>Asia-Pacific Office</strong><br>
+                    789 Innovation Drive<br>
+                    Singapore 018956<br>
+                    Singapore</p>
+                    <div style="margin-top: var(--space-lg);">
+                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Sales</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h3>How quickly can I get started?</h3>
+                    <p>You can start using Elemento immediately with our free trial. Most customers are up and running within 30 minutes.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>What kind of support do you offer?</h3>
+                    <p>We offer comprehensive support including documentation, community forums, email support, and priority support for enterprise customers.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Can I deploy on-premises?</h3>
+                    <p>Yes! Elemento is designed to be self-hostable, giving you complete control over your infrastructure and data.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>Do you offer custom solutions?</h3>
+                    <p>Absolutely. Our enterprise team works closely with customers to develop custom solutions that meet specific requirements.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>What compliance standards do you support?</h3>
+                    <p>We support SOC 2, ISO 27001, GDPR, HIPAA, and other major compliance frameworks with built-in security features.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3>How do you handle data privacy?</h3>
+                    <p>Data privacy is built into our platform. You control where your data is stored and processed, with encryption at rest and in transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <p class="section-subtitle">Join hundreds of organizations that have transformed their infrastructure with Elemento</p>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Start Free Trial</a>
+                <a href="products.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Explore Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Elemento</h4>
+                    <p>Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Infrastructure as Code</a></li>
+                        <li><a href="products.html">Security & Compliance</a></li>
+                        <li><a href="products.html">Monitoring & Analytics</a></li>
+                        <li><a href="products.html">Green Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="status.html">System Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elemento. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
