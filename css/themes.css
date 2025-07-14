@@ -66,10 +66,11 @@
     --icon-color-disabled: rgba(0, 0, 0, 0.3);
     --button-text-color: var(--black);
     --titlebar-color: var(--text-color);
+    --subtitle-color: var(--grey-darker);
     --secondary-color: var(--blue-light);
     --background-color: var(--white);
     --text-color: var(--grey-darker);
-    --text-secondary: var(--grey);
+    --text-secondary: var(--black-light);
     --text-muted: var(--grey-light);
     --sidebar-bg-color: var(--white-light);
     --button-color-disabled: var(--white-light);
@@ -189,10 +190,11 @@
     --icon-color-disabled: rgba(255, 255, 255, 0.25);
     --button-text-color: var(--black);
     --titlebar-color: var(--primary-color);
+    --subtitle-color: var(--black);
     --secondary-color: var(--blue-light);
     --background-color: var(--black);
     --text-color: var(--grey-light);
-    --text-secondary: var(--grey);
+    --text-secondary: var(--white-light);
     --text-muted: var(--grey-dark);
     --sidebar-bg-color: var(--black-light);
     --sidebar-active-text-color: var(--accent-color);
@@ -304,6 +306,7 @@
     --icon-color-disabled: rgba(255, 255, 255, 0.25);
     --button-text-color: var(--black-dark);
     --titlebar-color: var(--primary-color);
+    --subtitle-color: var(--black-dark);
     --secondary-color: var(--blue-light);
     --background-color: var(--black-dark);
     --text-color: var(--white-light);
