@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </head>
 <body class='theme-default'>
   <!-- Background Canvas for animated gradients -->
-  <div id="background-canvas"></div>
+
   
   <!-- Navigation -->
   <div id="navbar-placeholder"></div>

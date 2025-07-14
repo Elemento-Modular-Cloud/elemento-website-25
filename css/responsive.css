@@ -339,9 +339,7 @@
         transition-duration: 0.01ms !important;
     }
     
-    #background-canvas {
-        animation: none;
-    }
+
     
     .spinning-gradient {
         animation: none;
@@ -375,9 +373,7 @@
 @media print {
     .header,
     .footer,
-    #background-canvas {
-        display: none;
-    }
+
     
     body {
         background: white;

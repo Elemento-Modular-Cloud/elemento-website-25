@@ -7,14 +7,14 @@ class ElementoWebsite {
     constructor() {
         this.currentTheme = localStorage.getItem('theme') || 'light';
         this.isScrolled = false;
-        this.backgroundCanvas = null;
+        // this.backgroundCanvas = null;
         this.init();
     }
 
     init() {
         this.setupTheme();
         this.setupNavigation();
-        this.setupBackgroundCanvas();
+        // this.setupBackgroundCanvas();
         this.setupScrollEffects();
         this.setupAnimations();
         this.setupForms();
@@ -52,7 +52,7 @@ class ElementoWebsite {
         this.updateThemeIcon();
         
         // Update background canvas
-        this.updateBackgroundCanvas();
+        // this.updateBackgroundCanvas();
         
         // Show theme change notification
         this.showToast(`Switched to ${this.currentTheme} theme`, 'info');
@@ -70,40 +70,7 @@ class ElementoWebsite {
         }
     }
 
-    setupBackgroundCanvas() {
-        // Create background canvas if it doesn't exist
-        if (!document.getElementById('background-canvas')) {
-            this.backgroundCanvas = document.createElement('div');
-            this.backgroundCanvas.id = 'background-canvas';
-            document.body.appendChild(this.backgroundCanvas);
-        } else {
-            this.backgroundCanvas = document.getElementById('background-canvas');
-        }
 
-        this.updateBackgroundCanvas();
-    }
-
-    updateBackgroundCanvas() {
-        if (!this.backgroundCanvas) return;
-
-        // Clear existing content
-        this.backgroundCanvas.innerHTML = '';
-
-        // Add spinning gradient
-        const spinningGradient = document.createElement('div');
-        spinningGradient.className = 'spinning-gradient';
-        this.backgroundCanvas.appendChild(spinningGradient);
-
-        // Add gradient mask for better performance
-        const gradientMask = document.createElement('div');
-        gradientMask.className = 'gradient-mask';
-        this.backgroundCanvas.appendChild(gradientMask);
-
-        // Add background blur effect
-        const backgroundBlur = document.createElement('div');
-        backgroundBlur.className = 'background-blur';
-        this.backgroundCanvas.appendChild(backgroundBlur);
-    }
 
     setupNavigation() {
         const navbar = document.querySelector('.navbar');
@@ -135,10 +102,7 @@ class ElementoWebsite {
                 this.isScrolled = scrolled;
                 navbar.classList.toggle('scrolled', scrolled);
                 
-                // Dim background canvas on scroll
-                if (this.backgroundCanvas) {
-                    this.backgroundCanvas.classList.toggle('dimmed', scrolled);
-                }
+
             }
         });
 
@@ -179,10 +143,7 @@ class ElementoWebsite {
             const documentHeight = document.documentElement.scrollHeight;
             const scrollProgress = scrollY / (documentHeight - windowHeight);
             
-            if (this.backgroundCanvas) {
-                const opacity = Math.max(0.3, 1 - scrollProgress * 0.7);
-                this.backgroundCanvas.style.opacity = opacity;
-            }
+
             
             ticking = false;
         };
@@ -561,29 +522,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.elementoWebsite = new ElementoWebsite();
 });
 
-// Handle page visibility changes for performance
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        // Pause animations when page is not visible
-        const canvas = document.getElementById('background-canvas');
-        if (canvas) {
-            canvas.style.animationPlayState = 'paused';
-        }
-    } else {
-        // Resume animations when page becomes visible
-        const canvas = document.getElementById('background-canvas');
-        if (canvas) {
-            canvas.style.animationPlayState = 'running';
-        }
-    }
-});
-
-// Handle window resize
-window.addEventListener('resize', () => {
-    if (window.elementoWebsite) {
-        window.elementoWebsite.debounce(() => {
-            // Recalculate any layout-dependent values
-            window.elementoWebsite.updateBackgroundCanvas();
-        }, 250)();
-    }
-}); 
+ 
