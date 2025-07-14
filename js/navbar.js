@@ -44,7 +44,7 @@ class Navbar {
                 <div class="nav-container">
                     <a href="${rootPath}index.html" class="logo">
                         <div class="logo-icon">E</div>
-                        <span>Elemento</span>
+                        <span class="elemento-brand">Elemento</span>
                     </a>
                     
                     <ul class="nav-menu">
@@ -54,9 +54,9 @@ class Navbar {
                             <div class="dropdown-menu">
                                 <div class="container">
                                     <ul>
-                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">Atomos</a></li>
-                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">Electros</a></li>
-                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">Cloud Network</a></li>
+                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}"><span class="pixel-brand">Atomos</span></a></li>
+                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}"><span class="pixel-brand">Electros</span></a></li>
+                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}"><span class="pixel-brand">Cloud Network</span></a></li>
                                     </ul>
                                 </div>
                             </div>
