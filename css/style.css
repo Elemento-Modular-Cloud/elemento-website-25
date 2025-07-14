@@ -56,6 +56,7 @@
     font-family: 'Red Hat Display', sans-serif !important;
     font-weight: 700;
     letter-spacing: 0.5px;
+    color: var(--primary-color);
 }
 
 /* For highlighting key terms in headings */
@@ -173,9 +174,9 @@ body {
 .logo-icon {
     width: 30px;
     height: 30px;
-    /* background: var(--primary-color); */
-    color: var(--button-text-color);
-    /* border-radius: 50%; */
+    background: var(--primary-color);
+    mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
+    -webkit-mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
     display: flex;
     align-items: center;
     justify-content: center;
