@@ -49,7 +49,18 @@ class Navbar {
                     
                     <ul class="nav-menu">
                         <li><a href="${rootPath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
-                        <li><a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products</a></li>
+                        <li class="dropdown">
+                            <a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-menu">
+                                <div class="container">
+                                    <ul>
+                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">Atomos</a></li>
+                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">Electros</a></li>
+                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">Cloud Network</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="${rootPath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
                         <li><a href="${rootPath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
                         <li><a href="${rootPath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
@@ -82,10 +93,61 @@ class Navbar {
             body.insertBefore(navbarDiv.firstElementChild, body.firstChild);
         }
 
+        // Initialize dropdown functionality
+        this.initDropdowns();
         // Initialize mobile menu functionality
         this.initMobileMenu();
         // Initialize theme toggle functionality
         this.initThemeToggle();
+    }
+
+    initDropdowns() {
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('.nav-link');
+            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+            
+            if (dropdownLink && dropdownMenu) {
+                // Desktop hover functionality
+                dropdown.addEventListener('mouseenter', () => {
+                    if (window.innerWidth > 768) {
+                        dropdownMenu.classList.add('show');
+                    }
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    if (window.innerWidth > 768) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
+                
+                // Mobile/tablet click functionality
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Close other dropdowns first
+                        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                            if (menu !== dropdownMenu) {
+                                menu.classList.remove('show');
+                            }
+                        });
+                        
+                        // Toggle current dropdown
+                        dropdownMenu.classList.toggle('show');
+                    }
+                });
+                
+                // Close dropdown when clicking outside (for mobile)
+                document.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768 && !dropdown.contains(e.target) && dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
+            }
+        });
     }
 
     initMobileMenu() {
@@ -98,16 +160,22 @@ class Navbar {
                 mobileMenuBtn.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking on a link
-            const navLinks = document.querySelectorAll('.nav-link');
+            // Close mobile menu when clicking on a link (but not dropdown triggers)
+            const navLinks = document.querySelectorAll('.nav-link:not(.dropdown .nav-link), .dropdown-link');
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('active');
                     mobileMenuBtn.classList.remove('active');
+                    // Also close any open dropdowns
+                    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                        menu.classList.remove('show');
+                    });
                 });
             });
         }
     }
+
+
 
     initThemeToggle() {
         const themeToggle = document.querySelector('.theme-toggle');
