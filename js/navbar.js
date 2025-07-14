@@ -37,7 +37,8 @@ class Navbar {
         
         // Use absolute paths from the root to avoid path issues
         const pathParts = window.location.pathname.split('/').filter(part => part !== '');
-        const rootPath = pathParts.length > 1 ? '/' + pathParts[0] + '/' : '/';
+        const rootPath = "./" //pathParts.length > 1 ? '/' + pathParts[0] + '/' : '/';
+
         
         return `
             <nav class="navbar">
