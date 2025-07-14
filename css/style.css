@@ -306,7 +306,8 @@ body {
 }
 
 .dropdown-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: var(--space-sm) var(--space-lg);
     color: var(--text-color);
     text-decoration: none;
@@ -317,6 +318,15 @@ body {
     border-radius: 6px;
     white-space: nowrap;
     background: transparent;
+}
+
+/* Product icons in dropdown */
+.product-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: var(--space-sm);
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .dropdown-link:hover,
@@ -593,6 +603,7 @@ body {
     display: flex;
     gap: var(--space-lg);
     flex-wrap: wrap;
+    padding-top: var(--space-2xl);
 }
 
 /* Removed .hero-image and .hero-placeholder styles as they're no longer needed */

@@ -54,9 +54,18 @@ class Navbar {
                             <div class="dropdown-menu">
                                 <div class="container">
                                     <ul>
-                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}"><span class="pixel-brand">Atomos</span></a></li>
-                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}"><span class="pixel-brand">Electros</span></a></li>
-                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}"><span class="pixel-brand">Cloud Network</span></a></li>
+                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                            <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon">
+                                            <span class="">Atomos</span>
+                                        </a></li>
+                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                            <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon">
+                                            <span class="">Electros</span>
+                                        </a></li>
+                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                            <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon">
+                                            <span class="">Cloud Network</span>
+                                        </a></li>
                                     </ul>
                                 </div>
                             </div>

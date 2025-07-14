@@ -93,23 +93,22 @@
 .hero-blur {
     filter: blur(0px);
     position: absolute;
-    top: 45%;
-    right: 3%;
+    top:50%;
+    right: 35%;
     transform: translateY(-50%);
     animation: blur-breathe 6s ease-in-out infinite;
     will-change: filter;
 }
 
 .hero-gradient-mask {
-    position: relative;
-    width: 35vw;
-    height: 60vh;
-    min-width: 400px;
-    min-height: 400px;
-    max-width: 800px;
-    max-height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100vw;
+    height: 50vh;
     overflow: hidden;
-    animation: mask-morph 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    /* background-color: red; */
+    animation: organic-drift 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     will-change: transform, clip-path;
     clip-path: polygon(12% 3%, 28% 0%, 45% 1%, 62% 0%, 78% 4%, 89% 12%, 96% 23%, 99% 38%, 97% 54%, 92% 69%, 84% 82%, 73% 91%, 59% 97%, 44% 99%, 29% 97%, 15% 92%, 6% 84%, 1% 73%, 0% 59%, 2% 44%, 7% 29%, 15% 16%, 26% 7%);
 }
@@ -128,14 +127,10 @@
 .hero-spinning-gradient {
     position: absolute;
     top: 60%;
-    left: 15%;
-    width: 80vw;
-    height: 140vh;
-    min-width: 500px;
-    min-height: 500px;
-    max-width: 900px;
-    max-height: 800px;
-    transform: translate(-50%, -50%);
+    left: 25%;
+    width: 60vw;
+    height: 55vh;
+    /* transform: translate(-50%, -50%); */
     animation: hero-organic-drift 8s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
     opacity: 0.9;
     will-change: transform;
@@ -143,15 +138,11 @@
 
 .hero-radial-gradient {
     position: absolute;
-    top: 40%;
-    left: 60%;
-    width: 30vw;
+    top: 60%;
+    left: 0%;
+    width: 60vw;
     height: 50vh;
-    min-width: 350px;
-    min-height: 350px;
-    max-width: 600px;
-    max-height: 500px;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     animation: radial-breathe 15s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
     opacity: 0.7;
     will-change: transform;
@@ -159,15 +150,11 @@
 
 .hero-linear-gradient {
     position: absolute;
-    top: 30%;
-    left: 40%;
-    width: 35vw;
-    height: 45vh;
-    min-width: 400px;
-    min-height: 300px;
-    max-width: 700px;
-    max-height: 400px;
-    transform: translate(-50%, -50%);
+    top: 60%;
+    left: -25%;
+    width: 60vw;
+    height: 65vh;
+    /* transform: translate(-50%, -50%); */
     animation: linear-morph 12s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
     opacity: 0.6;
     will-change: transform;
@@ -719,208 +706,258 @@
 }
 
 /* ============================================================================ */
-/* RESPONSIVE ADJUSTMENTS                                                     */
+/* POLYGON CLIPPING MASKS - PAGE-SPECIFIC GEOMETRIC ELEMENTS                 */
 /* ============================================================================ */
 
-/* Responsive design for gradient blobs */
+/* Base polygon clipping mask */
+.hero-polygon-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Home Page - Dynamic Angular Cuts */
+.polygon-home-1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(20% 0%, 80% 10%, 100% 60%, 75% 100%, 0% 90%);
+    opacity: 0.15;
+    animation: home-polygon-drift 20s ease-in-out infinite;
+}
+
+.polygon-home-2 {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(0% 20%, 60% 0%, 100% 40%, 80% 100%, 10% 80%);
+    opacity: 0.1;
+    animation: home-polygon-drift 25s ease-in-out infinite reverse;
+}
+
+@keyframes home-polygon-drift {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateX(2%) translateY(-1%) rotate(1deg) scale(1.02); }
+    50% { transform: translateX(-1%) translateY(2%) rotate(-0.5deg) scale(0.98); }
+    75% { transform: translateX(1%) translateY(-1%) rotate(0.8deg) scale(1.01); }
+}
+
+/* About Page - Organic Flowing Cuts */
+.polygon-about-1 {
+    background: radial-gradient(ellipse, var(--primary-color), transparent);
+    clip-path: polygon(0% 0%, 100% 20%, 90% 80%, 20% 100%, 0% 60%);
+    opacity: 0.12;
+    animation: about-polygon-flow 30s ease-in-out infinite;
+}
+
+.polygon-about-2 {
+    background: radial-gradient(circle, var(--accent-color), transparent);
+    clip-path: polygon(20% 0%, 100% 30%, 80% 100%, 0% 70%);
+    opacity: 0.08;
+    animation: about-polygon-flow 35s ease-in-out infinite reverse;
+}
+
+@keyframes about-polygon-flow {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+    33% { transform: translateX(-2%) translateY(1%) scale(1.03); }
+    66% { transform: translateX(1%) translateY(-2%) scale(0.97); }
+}
+
+/* Products Page - Grid/Tech-Inspired Cuts */
+.polygon-products-1 {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 33% 0%, 33% 33%, 66% 33%, 66% 66%, 100% 66%, 100% 100%, 0% 100%);
+    opacity: 0.1;
+    animation: products-polygon-grid 15s linear infinite;
+}
+
+.polygon-products-2 {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    opacity: 0.08;
+    animation: products-polygon-grid 20s linear infinite reverse;
+}
+
+@keyframes products-polygon-grid {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+    25% { transform: translateX(1%) translateY(1%) rotate(90deg); }
+    50% { transform: translateX(-1%) translateY(1%) rotate(180deg); }
+    75% { transform: translateX(1%) translateY(-1%) rotate(270deg); }
+}
+
+/* Technology Page - Circuit/Tech Geometric Cuts */
+.polygon-technology-1 {
+    background: linear-gradient(60deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 20% 100%, 0% 80%);
+    opacity: 0.13;
+    animation: tech-polygon-circuit 18s ease-in-out infinite;
+}
+
+.polygon-technology-2 {
+    background: linear-gradient(120deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    opacity: 0.09;
+    animation: tech-polygon-circuit 22s ease-in-out infinite reverse;
+}
+
+@keyframes tech-polygon-circuit {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1) rotate(0deg); }
+    25% { transform: translateX(2%) translateY(-1%) scale(1.02) rotate(2deg); }
+    50% { transform: translateX(-1%) translateY(2%) scale(0.98) rotate(-1deg); }
+    75% { transform: translateX(1%) translateY(1%) scale(1.01) rotate(1deg); }
+}
+
+/* Atomos Page - Atomic/Molecular Inspired Cuts */
+.polygon-atomos-1 {
+    background: radial-gradient(circle, var(--primary-color), transparent);
+    clip-path: polygon(50% 0%, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0% 50%, 20% 20%);
+    opacity: 0.12;
+    animation: atomos-polygon-orbit 25s linear infinite;
+}
+
+.polygon-atomos-2 {
+    background: radial-gradient(ellipse, var(--accent-color), transparent);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 70% 100%, 30% 100%, 0% 30%);
+    opacity: 0.08;
+    animation: atomos-polygon-orbit 30s linear infinite reverse;
+}
+
+@keyframes atomos-polygon-orbit {
+    0%, 100% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    25% { transform: translate(-50%, -50%) rotate(90deg) scale(1.1); }
+    50% { transform: translate(-50%, -50%) rotate(180deg) scale(0.9); }
+    75% { transform: translate(-50%, -50%) rotate(270deg) scale(1.05); }
+}
+
+/* Cloud Network Page - Network Node Inspired Cuts */
+.polygon-cloud-network-1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 40%, 40% 0%, 60% 0%, 100% 40%, 100% 60%, 60% 100%, 40% 100%, 0% 60%);
+    opacity: 0.11;
+    animation: network-polygon-connect 20s ease-in-out infinite;
+}
+
+.polygon-cloud-network-2 {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(20% 20%, 80% 0%, 100% 80%, 80% 80%, 0% 100%);
+    opacity: 0.09;
+    animation: network-polygon-connect 28s ease-in-out infinite reverse;
+}
+
+@keyframes network-polygon-connect {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    20% { transform: translateX(3%) translateY(1%) rotate(3deg) scale(1.03); }
+    40% { transform: translateX(-1%) translateY(3%) rotate(-2deg) scale(0.97); }
+    60% { transform: translateX(2%) translateY(-2%) rotate(2deg) scale(1.02); }
+    80% { transform: translateX(-2%) translateY(1%) rotate(-1deg) scale(0.99); }
+}
+
+/* Electros Page - Electric/Energy Inspired Cuts */
+.polygon-electros-1 {
+    background: linear-gradient(30deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 25% 10%, 50% 0%, 75% 15%, 100% 0%, 90% 50%, 100% 100%, 50% 90%, 0% 100%, 10% 50%);
+    opacity: 0.12;
+    animation: electros-polygon-energy 16s ease-in-out infinite;
+}
+
+.polygon-electros-2 {
+    background: linear-gradient(150deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(10% 0%, 90% 10%, 100% 90%, 10% 100%, 0% 10%);
+    opacity: 0.08;
+    animation: electros-polygon-energy 24s ease-in-out infinite reverse;
+}
+
+@keyframes electros-polygon-energy {
+    0%, 100% { transform: translateX(0) translateY(0) skew(0deg) scale(1); }
+    25% { transform: translateX(2%) translateY(-1%) skew(2deg) scale(1.03); }
+    50% { transform: translateX(-2%) translateY(2%) skew(-1deg) scale(0.97); }
+    75% { transform: translateX(1%) translateY(-2%) skew(1deg) scale(1.01); }
+}
+
+/* Contact Page - Communication/Speech Bubble Inspired Cuts */
+.polygon-contact-1 {
+    background: linear-gradient(75deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 25% 100%, 0% 75%);
+    opacity: 0.11;
+    animation: contact-polygon-talk 22s ease-in-out infinite;
+}
+
+.polygon-contact-2 {
+    background: radial-gradient(ellipse, var(--accent-color), transparent);
+    clip-path: polygon(10% 10%, 90% 0%, 100% 90%, 50% 100%, 0% 50%);
+    opacity: 0.07;
+    animation: contact-polygon-talk 26s ease-in-out infinite reverse;
+}
+
+@keyframes contact-polygon-talk {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    33% { transform: translateX(-1%) translateY(2%) rotate(-1deg) scale(1.02); }
+    66% { transform: translateX(2%) translateY(-1%) rotate(1deg) scale(0.98); }
+}
+
+/* Blog Page - Paper/Document Inspired Cuts */
+.polygon-blog-1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 95% 0%, 100% 10%, 100% 100%, 5% 100%, 0% 90%);
+    opacity: 0.1;
+    animation: blog-polygon-page 28s ease-in-out infinite;
+}
+
+.polygon-blog-2 {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%);
+    opacity: 0.08;
+    animation: blog-polygon-page 32s ease-in-out infinite reverse;
+}
+
+@keyframes blog-polygon-page {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateX(1%) translateY(-1%) rotate(0.5deg) scale(1.01); }
+    50% { transform: translateX(-1%) translateY(1%) rotate(-0.5deg) scale(0.99); }
+    75% { transform: translateX(0.5%) translateY(0.5%) rotate(0.3deg) scale(1.005); }
+}
+
+/* Responsive adjustments for polygon masks */
 @media (max-width: 768px) {
-    /* Responsive gradient blobs */
-    .hero-blur {
-        right: 2%;
-        transform: translateY(-50%) scale(0.8);
-        animation: blur-breathe-tablet 6s ease-in-out infinite;
+    .hero-polygon-mask {
+        opacity: 0.7;
     }
     
-    .hero-gradient-mask {
-        width: 45vw;
-        height: 50vh;
-        min-width: 300px;
-        min-height: 300px;
-        max-width: 500px;
-        max-height: 450px;
-        animation-duration: 15s; /* Slightly slower on smaller screens */
+    .polygon-home-1, .polygon-about-1, .polygon-products-1, 
+    .polygon-technology-1, .polygon-atomos-1, .polygon-cloud-network-1,
+    .polygon-electros-1, .polygon-contact-1, .polygon-blog-1 {
+        opacity: 0.7;
     }
     
-    .hero-gradient-mask.mask-alt {
-        animation-duration: 18s;
-    }
-    
-    .hero-gradient-mask.mask-slow {
-        animation-duration: 25s;
-    }
-    
-    .hero-spinning-gradient {
-        width: 50vw;
-        height: 55vh;
-        min-width: 350px;
-        min-height: 350px;
-        max-width: 600px;
-        max-height: 550px;
-    }
-    
-    .hero-radial-gradient {
-        width: 35vw;
-        height: 40vh;
-        min-width: 250px;
-        min-height: 250px;
-        max-width: 400px;
-        max-height: 350px;
-    }
-    
-    .hero-linear-gradient {
-        width: 40vw;
-        height: 35vh;
-        min-width: 280px;
-        min-height: 220px;
-        max-width: 450px;
-        max-height: 300px;
-    }
-    
-    /* Responsive black masks for tablet */
-    .hero-black-mask-1 {
-        width: 30vw;
-        height: 25vh;
-        min-width: 150px;
-        min-height: 150px;
-        max-width: 300px;
-        max-height: 250px;
-    }
-    
-    .hero-black-mask-2 {
-        width: 25vw;
-        height: 20vh;
-        min-width: 120px;
-        min-height: 120px;
-        max-width: 220px;
-        max-height: 200px;
-    }
-    
-    .hero-black-mask-3 {
-        width: 22vw;
-        height: 18vh;
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 180px;
-        max-height: 160px;
-    }
-    
-    .hero-black-mask-4 {
-        width: 18vw;
-        height: 15vh;
-        min-width: 80px;
-        min-height: 80px;
-        max-width: 150px;
-        max-height: 140px;
+    .polygon-home-2, .polygon-about-2, .polygon-products-2,
+    .polygon-technology-2, .polygon-atomos-2, .polygon-cloud-network-2,
+    .polygon-electros-2, .polygon-contact-2, .polygon-blog-2 {
+        opacity: 0.7;
     }
 }
 
 @media (max-width: 480px) {
-    /* Smaller gradient blobs for very small screens */
-    .hero-blur {
-        right: 1%;
-        transform: translateY(-50%) scale(0.6);
-        animation: blur-breathe-mobile 6s ease-in-out infinite;
+    .hero-polygon-mask {
+        opacity: 0.7;
     }
     
-    .hero-gradient-mask {
-        width: 60vw;
-        height: 40vh;
-        min-width: 250px;
-        min-height: 250px;
-        max-width: 350px;
-        max-height: 350px;
-        animation-duration: 18s; /* Even slower on very small screens */
+    .polygon-home-1, .polygon-about-1, .polygon-products-1, 
+    .polygon-technology-1, .polygon-atomos-1, .polygon-cloud-network-1,
+    .polygon-electros-1, .polygon-contact-1, .polygon-blog-1 {
+        opacity: 0.7;
     }
     
-    .hero-gradient-mask.mask-alt {
-        animation-duration: 22s;
-    }
-    
-    .hero-gradient-mask.mask-slow {
-        animation-duration: 30s;
-    }
-    
-    .hero-spinning-gradient {
-        width: 65vw;
-        height: 45vh;
-        min-width: 300px;
-        min-height: 300px;
-        max-width: 450px;
-        max-height: 450px;
-    }
-    
-    .hero-radial-gradient {
-        width: 50vw;
-        height: 35vh;
-        min-width: 200px;
-        min-height: 200px;
-        max-width: 300px;
-        max-height: 280px;
-    }
-    
-    .hero-linear-gradient {
-        width: 55vw;
-        height: 30vh;
-        min-width: 220px;
-        min-height: 180px;
-        max-width: 350px;
-        max-height: 250px;
-    }
-    
-    /* Responsive black masks for mobile */
-    .hero-black-mask-1 {
-        width: 35vw;
-        height: 20vh;
-        min-width: 120px;
-        min-height: 120px;
-        max-width: 200px;
-        max-height: 180px;
-    }
-    
-    .hero-black-mask-2 {
-        width: 30vw;
-        height: 18vh;
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 150px;
-        max-height: 140px;
-    }
-    
-    .hero-black-mask-3 {
-        width: 25vw;
-        height: 15vh;
-        min-width: 80px;
-        min-height: 80px;
-        max-width: 120px;
-        max-height: 120px;
-    }
-    
-    .hero-black-mask-4 {
-        width: 20vw;
-        height: 12vh;
-        min-width: 60px;
-        min-height: 60px;
-        max-width: 100px;
-        max-height: 100px;
+    .polygon-home-2, .polygon-about-2, .polygon-products-2,
+    .polygon-technology-2, .polygon-atomos-2, .polygon-cloud-network-2,
+    .polygon-electros-2, .polygon-contact-2, .polygon-blog-2 {
+        opacity: 0.7;
     }
 }
 
-/* ============================================================================ */
-/* PERFORMANCE OPTIMIZATIONS                                                  */
-/* ============================================================================ */
-
-/* Performance optimizations */
+/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
-    .hero-blur {
+    .hero-polygon-mask * {
         animation: none !important;
-        filter: blur(90px) !important;
-    }
-    
-    .hero-black-mask {
-        animation: none !important;
-    }
-    
-    .spinning-gradient {
-        animation: none;
+        transform: none !important;
     }
 } 
