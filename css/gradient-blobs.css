@@ -108,20 +108,23 @@
     height: 50vh;
     overflow: hidden;
     /* background-color: red; */
-    animation: organic-drift 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: circular-orbit 15s linear infinite;
     will-change: transform, clip-path;
-    clip-path: polygon(12% 3%, 28% 0%, 45% 1%, 62% 0%, 78% 4%, 89% 12%, 96% 23%, 99% 38%, 97% 54%, 92% 69%, 84% 82%, 73% 91%, 59% 97%, 44% 99%, 29% 97%, 15% 92%, 6% 84%, 1% 73%, 0% 59%, 2% 44%, 7% 29%, 15% 16%, 26% 7%);
+    clip-path: circle(45% at 50% 50%);
+    border-radius: 50%;
 }
 
 /* Alternate mask animations for variety */
 .mask-alt {
-    animation: mask-morph-alt 15s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-    clip-path: polygon(8% 15%, 22% 5%, 38% 2%, 56% 4%, 73% 9%, 86% 18%, 94% 31%, 98% 46%, 96% 62%, 89% 76%, 78% 87%, 64% 94%, 48% 98%, 32% 96%, 18% 90%, 7% 81%, 2% 68%, 0% 53%, 3% 38%, 9% 24%, 18% 12%, 30% 4%);
+    animation: circular-orbit-alt 18s linear infinite;
+    clip-path: circle(42% at 50% 50%);
+    border-radius: 50%;
 }
 
 .mask-slow {
-    animation: mask-morph-slow 20s cubic-bezier(0.25, 0, 0.75, 1) infinite;
-    clip-path: polygon(18% 8%, 35% 2%, 52% 0%, 68% 3%, 82% 10%, 92% 20%, 97% 33%, 99% 48%, 95% 63%, 87% 77%, 75% 88%, 60% 95%, 44% 99%, 28% 96%, 14% 89%, 5% 79%, 1% 66%, 2% 51%, 6% 36%, 13% 22%, 23% 11%, 36% 5%);
+    animation: circular-orbit-slow 25s linear infinite;
+    clip-path: circle(38% at 50% 50%);
+    border-radius: 50%;
 }
 
 .hero-spinning-gradient {
@@ -132,9 +135,11 @@
     min-width: 800px;
     height: 60vh;
     transform: translate(-30%, -30%);
-    animation: hero-organic-drift 8s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    animation: gradient-orbit-clockwise 20s linear infinite;
     opacity: 0.9;
     will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(40% at 50% 50%);
 }
 
 .hero-radial-gradient {
@@ -145,9 +150,11 @@
     min-width: 800px;
     height: 60vh;
     transform: translate(-30%, -30%);
-    animation: radial-breathe 15s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    animation: gradient-orbit-counter 25s linear infinite;
     opacity: 0.7;
     will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(35% at 50% 50%);
 }
 
 .hero-linear-gradient {
@@ -158,39 +165,122 @@
     min-width: 800px;
     height: 60vh;
     transform: translate(-30%, -30%);
-    animation: linear-morph 12s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    animation: gradient-orbit-slow 30s linear infinite;
     opacity: 0.6;
     will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(30% at 50% 50%);
 }
 
 /* ============================================================================ */
 /* HERO GRADIENT ANIMATIONS                                                   */
 /* ============================================================================ */
 
-@keyframes hero-organic-drift {
+@keyframes circular-orbit {
     0% {
-        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scaleX(1.0) scaleY(1.0) skew(0deg, 0deg);
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
     }
-    15% {
-        transform: translate(-50%, -50%) translateX(25px) translateY(-15px) rotate(8deg) scaleX(0.95) scaleY(0.9) skew(2deg, -1deg);
+    25% {
+        transform: translate(-50%, -50%) translateX(20px) translateY(-20px) rotate(90deg) scale(0.95);
     }
-    30% {
-        transform: translate(-50%, -50%) translateX(35px) translateY(20px) rotate(-5deg) scaleX(0.9) scaleY(0.95) skew(-3deg, 2deg);
-    }
-    45% {
-        transform: translate(-50%, -50%) translateX(-20px) translateY(30px) rotate(12deg) scaleX(0.9) scaleY(0.85) skew(4deg, -2deg);
-    }
-    60% {
-        transform: translate(-50%, -50%) translateX(-40px) translateY(-10px) rotate(-8deg) scaleX(0.85) scaleY(0.8) skew(-1deg, 3deg);
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-40px) rotate(180deg) scale(0.9);
     }
     75% {
-        transform: translate(-50%, -50%) translateX(-15px) translateY(-25px) rotate(6deg) scaleX(0.9) scaleY(0.95) skew(3deg, -4deg);
-    }
-    90% {
-        transform: translate(-50%, -50%) translateX(10px) translateY(-5px) rotate(-3deg) scaleX(0.95) scaleY(1.0) skew(-2deg, 1deg);
+        transform: translate(-50%, -50%) translateX(-20px) translateY(-20px) rotate(270deg) scale(0.95);
     }
     100% {
-        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scaleX(1.0) scaleY(1.0) skew(0deg, 0deg);
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-clockwise {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(30px) translateY(-30px) rotate(90deg) scale(0.95);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-60px) rotate(180deg) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-30px) translateY(-30px) rotate(270deg) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-counter {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(-25px) translateY(-25px) rotate(-90deg) scale(0.95);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-50px) rotate(-180deg) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(25px) translateY(-25px) rotate(-270deg) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-slow {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(40px) translateY(-40px) rotate(90deg) scale(0.98);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-80px) rotate(180deg) scale(0.95);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-40px) translateY(-40px) rotate(270deg) scale(0.98);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes circular-orbit-alt {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(-35px) translateY(-35px) rotate(-90deg) scale(0.96);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-70px) rotate(-180deg) scale(0.92);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(35px) translateY(-35px) rotate(-270deg) scale(0.96);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes circular-orbit-slow {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(50px) translateY(-50px) rotate(90deg) scale(0.97);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-100px) rotate(180deg) scale(0.94);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-50px) translateY(-50px) rotate(270deg) scale(0.97);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
     }
 }
 
@@ -698,209 +788,263 @@
 /* PAGE-SPECIFIC GRADIENT THEMES                                              */
 /* ============================================================================ */
 
-/* Page-specific gradient themes with organic clipping paths */
+/* Page-specific gradient themes with circular clipping paths */
 .gradient-home {
     background: conic-gradient(
         from 0deg,
-        #0099ff,
-        #ff6600,
-        #bbffa1,
-        #4c00ff,
-        #ff2666,
-        #00aaff
+        rgba(255, 140, 0, 1.0),    /* Saturated Orange */
+        rgba(0, 150, 255, 1.0),    /* Saturated Blue */
+        rgba(255, 20, 60, 1.0),    /* Saturated Red */
+        rgba(255, 160, 0, 1.0),    /* Saturated Yellow-Orange */
+        rgba(0, 100, 255, 1.0),    /* Saturated Dark Blue */
+        rgb(242, 149, 0),   /* Saturated Pink-Red */
+        rgba(255, 140, 0, 1.0)     /* Back to Saturated Orange */
     );
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-products {
     background: conic-gradient(
         from 45deg,
-        #09b24e,
-        #0fc55c,
-        #07933d,
-        #16d46b,
-        #05782f,
-        #09b24e
+        rgba(0, 220, 80, 1.0),
+        transparent,
+        rgba(0, 255, 100, 1.0),
+        transparent,
+        rgba(0, 180, 60, 1.0),
+        transparent,
+        rgba(20, 255, 120, 1.0),
+        transparent,
+        rgba(0, 150, 40, 1.0),
+        transparent,
+        rgba(0, 220, 80, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 75% 25%, 95% 20%, 80% 45%, 100% 65%, 70% 75%, 85% 100%, 50% 80%, 15% 95%, 20% 70%, 0% 50%, 25% 40%, 5% 25%, 30% 20%);
+    clip-path: circle(48% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-atomos {
     background: conic-gradient(
         from 90deg,
-        #118acb,
-        #1ca0e6,
-        #0d6fa3,
-        #2eb8ff,
-        #0a5d8a,
-        #118acb
+        rgba(0, 150, 255, 1.0),
+        transparent,
+        rgba(30, 180, 255, 1.0),
+        transparent,
+        rgba(0, 120, 220, 1.0),
+        transparent,
+        rgba(60, 200, 255, 1.0),
+        transparent,
+        rgba(0, 100, 200, 1.0),
+        transparent,
+        rgba(0, 150, 255, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 65% 30%, 90% 15%, 75% 50%, 100% 70%, 65% 80%, 80% 100%, 50% 85%, 20% 100%, 35% 75%, 0% 60%, 25% 45%, 10% 20%, 35% 25%);
+    clip-path: circle(46% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-cloud-network {
     background: conic-gradient(
         from 135deg,
-        #ef4056,
-        #ff5a6f,
-        #d63447,
-        #ff7088,
-        #c1283a,
-        #ef4056
+        rgba(255, 30, 80, 1.0),
+        transparent,
+        rgba(255, 60, 120, 1.0),
+        transparent,
+        rgba(220, 0, 60, 1.0),
+        transparent,
+        rgba(255, 80, 140, 1.0),
+        transparent,
+        rgba(200, 0, 50, 1.0),
+        transparent,
+        rgba(255, 30, 80, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 70% 20%, 100% 30%, 85% 55%, 95% 80%, 70% 70%, 75% 100%, 50% 85%, 25% 100%, 30% 75%, 5% 65%, 15% 40%, 0% 25%, 30% 35%);
+    clip-path: circle(47% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-electros {
     background: conic-gradient(
         from 180deg,
-        #ffa600,
-        #ffb833,
-        #e6950a,
-        #ffc966,
-        #cc8500,
-        #ffa600
+        rgba(255, 180, 0, 1.0),
+        transparent,
+        rgba(255, 200, 50, 1.0),
+        transparent,
+        rgba(255, 150, 0, 1.0),
+        transparent,
+        rgba(255, 220, 100, 1.0),
+        transparent,
+        rgba(220, 130, 0, 1.0),
+        transparent,
+        rgba(255, 180, 0, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 80% 15%, 95% 40%, 75% 60%, 90% 85%, 60% 90%, 70% 100%, 50% 75%, 30% 100%, 40% 85%, 10% 70%, 25% 50%, 5% 30%, 20% 15%);
+    clip-path: circle(49% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-technology {
     background: conic-gradient(
         from 225deg,
-        #6366f1,
-        #8b5cf6,
-        #a855f7,
-        #7c3aed,
-        #6366f1
+        rgba(120, 120, 255, 1.0),
+        transparent,
+        rgba(150, 80, 255, 1.0),
+        transparent,
+        rgba(180, 60, 255, 1.0),
+        transparent,
+        rgba(140, 40, 255, 1.0),
+        transparent,
+        rgba(120, 120, 255, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 85% 10%, 100% 45%, 80% 65%, 95% 90%, 65% 85%, 60% 100%, 50% 80%, 40% 100%, 35% 80%, 5% 75%, 20% 55%, 0% 30%, 15% 15%);
+    clip-path: circle(45% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-about {
     background: conic-gradient(
         from 270deg,
-        #f59e0b,
-        #eab308,
-        #84cc16,
-        #65a30d,
-        #f59e0b
+        rgba(255, 180, 0, 1.0),
+        transparent,
+        rgba(255, 200, 0, 1.0),
+        transparent,
+        rgba(150, 220, 0, 1.0),
+        transparent,
+        rgba(120, 180, 0, 1.0),
+        transparent,
+        rgba(255, 180, 0, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 60% 30%, 100% 25%, 70% 55%, 85% 85%, 55% 75%, 65% 100%, 50% 85%, 35% 100%, 45% 70%, 15% 80%, 30% 50%, 0% 35%, 40% 25%);
+    clip-path: circle(44% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-contact {
     background: conic-gradient(
         from 315deg,
-        #0ea5e9,
-        #06b6d4,
-        #10b981,
-        #059669,
-        #0ea5e9
+        rgba(0, 180, 255, 1.0),
+        transparent,
+        rgba(0, 200, 220, 1.0),
+        transparent,
+        rgba(0, 200, 140, 1.0),
+        transparent,
+        rgba(0, 160, 120, 1.0),
+        transparent,
+        rgba(0, 180, 255, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 90% 20%, 100% 55%, 75% 70%, 80% 100%, 55% 90%, 50% 100%, 45% 85%, 20% 100%, 25% 65%, 0% 50%, 25% 35%, 10% 10%, 45% 20%);
+    clip-path: circle(43% at 50% 50%);
+    border-radius: 50%;
 }
 
 .gradient-blog {
     background: conic-gradient(
         from 30deg,
-        #d946ef,
-        #c026d3,
-        #a21caf,
-        #be185d,
-        #d946ef
+        rgba(230, 60, 255, 1.0),
+        transparent,
+        rgba(200, 30, 220, 1.0),
+        transparent,
+        rgba(180, 20, 190, 1.0),
+        transparent,
+        rgba(200, 20, 100, 1.0),
+        transparent,
+        rgba(230, 60, 255, 1.0),
+        transparent
     );
-    clip-path: polygon(50% 0%, 55% 35%, 95% 30%, 75% 60%, 100% 75%, 70% 80%, 85% 100%, 50% 75%, 15% 100%, 30% 75%, 0% 60%, 25% 45%, 5% 15%, 45% 30%);
+    clip-path: circle(46% at 50% 50%);
+    border-radius: 50%;
 }
 
 /* Radial gradient variations for each page */
 .radial-home {
-    background: radial-gradient(ellipse at 30% 70%, #0099ff, #ff6600, transparent, #4c00ff, transparent);
+    background: radial-gradient(ellipse at 30% 70%, rgba(0, 150, 255, 1.0), rgba(0, 100, 255, 1.0), transparent, rgb(141, 20, 255), rgb(246, 22, 6), transparent, rgba(255, 140, 0, 1.0), rgba(255, 160, 0, 1.0), transparent);
     clip-path: ellipse(70% 85% at 40% 60%);
 }
 
 .radial-products {
-    background: radial-gradient(circle at 75% 25%, #09b24e, transparent, #0fc55c, transparent, #16d46b);
+    background: radial-gradient(circle at 75% 25%, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0));
     clip-path: ellipse(80% 65% at 70% 35%);
 }
 
 .radial-atomos {
-    background: radial-gradient(ellipse at 85% 60%, #118acb, #1ca0e6, transparent, #2eb8ff, transparent);
+    background: radial-gradient(ellipse at 85% 60%, rgba(0, 150, 255, 1.0), rgba(30, 180, 255, 1.0), transparent, rgba(60, 200, 255, 1.0), transparent);
     clip-path: ellipse(75% 90% at 80% 50%);
 }
 
 .radial-cloud-network {
-    background: radial-gradient(circle at 15% 25%, #ef4056, transparent, #ff5a6f, #d63447, transparent);
+    background: radial-gradient(circle at 15% 25%, rgba(255, 30, 80, 1.0), transparent, rgba(255, 60, 120, 1.0), rgba(220, 0, 60, 1.0), transparent);
     clip-path: ellipse(85% 70% at 20% 35%);
 }
 
 .radial-electros {
-    background: radial-gradient(ellipse at 25% 15%, #ffa600, #ffb833, transparent, #ffc966, transparent);
+    background: radial-gradient(ellipse at 25% 15%, rgba(255, 180, 0, 1.0), rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent);
     clip-path: ellipse(90% 60% at 30% 25%);
 }
 
 .radial-technology {
-    background: radial-gradient(circle at 65% 85%, #6366f1, transparent, #8b5cf6, #a855f7, transparent);
+    background: radial-gradient(circle at 65% 85%, rgba(120, 120, 255, 1.0), transparent, rgba(150, 80, 255, 1.0), rgba(180, 60, 255, 1.0), transparent);
     clip-path: ellipse(65% 95% at 60% 80%);
 }
 
 .radial-about {
-    background: radial-gradient(ellipse at 90% 75%, #f59e0b, #eab308, transparent, #84cc16, transparent);
+    background: radial-gradient(ellipse at 90% 75%, rgba(255, 180, 0, 1.0), rgba(255, 200, 0, 1.0), transparent, rgba(150, 220, 0, 1.0), transparent);
     clip-path: ellipse(95% 75% at 85% 70%);
 }
 
 .radial-contact {
-    background: radial-gradient(circle at 45% 10%, #0ea5e9, transparent, #06b6d4, #10b981, transparent);
+    background: radial-gradient(circle at 45% 10%, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), rgba(0, 200, 140, 1.0), transparent);
     clip-path: ellipse(80% 80% at 50% 20%);
 }
 
 .radial-blog {
-    background: radial-gradient(ellipse at 10% 90%, #d946ef, #c026d3, transparent, #be185d, transparent);
+    background: radial-gradient(ellipse at 10% 90%, rgba(230, 60, 255, 1.0), rgba(200, 30, 220, 1.0), transparent, rgba(200, 20, 100, 1.0), transparent);
     clip-path: ellipse(70% 95% at 15% 85%);
 }
 
 /* Linear gradient variations for each page */
 .linear-home {
-    background: linear-gradient(45deg, #0099ff, transparent, #ff6600, transparent, #bbffa1, transparent, #4c00ff);
+    background: linear-gradient(45deg, rgba(0, 150, 255, 1.0), transparent, rgba(0, 100, 255, 1.0), transparent, rgba(255, 20, 60, 1.0), transparent, rgba(255, 60, 100, 1.0), transparent, rgba(255, 140, 0, 1.0), transparent, rgba(255, 160, 0, 1.0));
     clip-path: polygon(20% 15%, 80% 5%, 95% 60%, 85% 90%, 15% 85%, 5% 40%);
 }
 
 .linear-products {
-    background: linear-gradient(15deg, #09b24e, transparent, #0fc55c, transparent, #16d46b, transparent);
+    background: linear-gradient(15deg, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0), transparent);
     clip-path: polygon(15% 10%, 85% 20%, 90% 75%, 70% 95%, 10% 80%, 5% 25%);
 }
 
 .linear-atomos {
-    background: linear-gradient(180deg, #118acb, transparent, #1ca0e6, transparent, #2eb8ff, transparent);
+    background: linear-gradient(180deg, rgba(0, 150, 255, 1.0), transparent, rgba(30, 180, 255, 1.0), transparent, rgba(60, 200, 255, 1.0), transparent);
     clip-path: polygon(25% 5%, 90% 10%, 95% 65%, 75% 90%, 20% 85%, 10% 30%);
 }
 
 .linear-cloud-network {
-    background: linear-gradient(270deg, #ef4056, transparent, #ff5a6f, transparent, #d63447, transparent);
+    background: linear-gradient(270deg, rgba(255, 30, 80, 1.0), transparent, rgba(255, 60, 120, 1.0), transparent, rgba(220, 0, 60, 1.0), transparent);
     clip-path: polygon(30% 8%, 85% 15%, 92% 70%, 80% 95%, 25% 88%, 8% 35%);
 }
 
 .linear-electros {
-    background: linear-gradient(330deg, #ffa600, transparent, #ffb833, transparent, #ffc966, transparent);
+    background: linear-gradient(330deg, rgba(255, 180, 0, 1.0), transparent, rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent);
     clip-path: polygon(18% 12%, 82% 8%, 88% 62%, 78% 92%, 22% 95%, 12% 45%);
 }
 
 .linear-technology {
-    background: linear-gradient(210deg, #6366f1, transparent, #8b5cf6, transparent, #a855f7, transparent);
+    background: linear-gradient(210deg, rgba(120, 120, 255, 1.0), transparent, rgba(150, 80, 255, 1.0), transparent, rgba(180, 60, 255, 1.0), transparent);
     clip-path: polygon(28% 6%, 88% 12%, 95% 68%, 82% 88%, 18% 92%, 6% 38%);
 }
 
 .linear-about {
-    background: linear-gradient(120deg, #f59e0b, transparent, #eab308, transparent, #84cc16, transparent);
+    background: linear-gradient(120deg, rgba(255, 180, 0, 1.0), transparent, rgba(255, 200, 0, 1.0), transparent, rgba(150, 220, 0, 1.0), transparent);
     clip-path: polygon(22% 18%, 78% 6%, 92% 55%, 85% 88%, 15% 95%, 8% 42%);
 }
 
 .linear-contact {
-    background: linear-gradient(300deg, #0ea5e9, transparent, #06b6d4, transparent, #10b981, transparent);
+    background: linear-gradient(300deg, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), transparent, rgba(0, 200, 140, 1.0), transparent);
     clip-path: polygon(35% 5%, 90% 18%, 88% 72%, 65% 92%, 10% 85%, 12% 28%);
 }
 
 .linear-blog {
-    background: linear-gradient(240deg, #d946ef, transparent, #c026d3, transparent, #a21caf, transparent);
+    background: linear-gradient(240deg, rgba(230, 60, 255, 1.0), transparent, rgba(200, 30, 220, 1.0), transparent, rgba(180, 20, 190, 1.0), transparent);
     clip-path: polygon(26% 12%, 84% 8%, 95% 58%, 88% 88%, 16% 92%, 5% 42%);
 }
 
@@ -921,14 +1065,14 @@
 
 /* Home Page - Dynamic Angular Cuts */
 .polygon-home-1 {
-    background: linear-gradient(45deg, var(--background-color), var(--black));
+    background: linear-gradient(45deg, rgba(0, 150, 255, 1.0), transparent, rgba(0, 100, 255, 1.0), transparent, rgba(255, 20, 60, 1.0));
     clip-path: polygon(20% 0%, 80% 10%, 100% 60%, 75% 100%, 0% 90%);
     opacity: 0.7;
     animation: home-polygon-drift 20s ease-in-out infinite;
 }
 
 .polygon-home-2 {
-    background: linear-gradient(135deg, var(--background-color), var(--black));
+    background: linear-gradient(135deg, rgba(255, 60, 100, 1.0), transparent, rgba(255, 20, 60, 1.0), transparent, rgba(255, 140, 0, 1.0));
     clip-path: polygon(0% 20%, 60% 0%, 100% 40%, 80% 100%, 10% 80%);
     opacity: 0.5;
     animation: home-polygon-drift 25s ease-in-out infinite reverse;

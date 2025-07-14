@@ -603,7 +603,6 @@ body {
     display: flex;
     gap: var(--space-lg);
     flex-wrap: wrap;
-    padding-top: var(--space-2xl);
 }
 
 /* Removed .hero-image and .hero-placeholder styles as they're no longer needed */
