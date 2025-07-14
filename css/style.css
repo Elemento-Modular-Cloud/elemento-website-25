@@ -568,6 +568,415 @@ body {
     align-items: center;
     justify-content: center;
     padding: var(--space-4xl) 0 var(--space-4xl) 0;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+/* Gradient blob system */
+.hero-blur {
+    filter: blur(90px);
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+.hero-gradient-mask {
+    position: relative;
+    width: 35vw;
+    height: 60vh;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 800px;
+    max-height: 700px;
+    overflow: hidden;
+    animation: mask-morph 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    will-change: transform;
+}
+
+/* Alternate mask animations for variety */
+.mask-alt {
+    animation: mask-morph-alt 15s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.mask-slow {
+    animation: mask-morph-slow 20s cubic-bezier(0.25, 0, 0.75, 1) infinite;
+}
+
+.hero-spinning-gradient {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 40vw;
+    height: 70vh;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 900px;
+    max-height: 800px;
+    transform: translate(-50%, -50%);
+    animation: hero-organic-drift 8s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    opacity: 0.9;
+    will-change: transform;
+}
+
+.hero-radial-gradient {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 30vw;
+    height: 50vh;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 600px;
+    max-height: 500px;
+    transform: translate(-50%, -50%);
+    animation: radial-breathe 15s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    opacity: 0.7;
+    will-change: transform;
+}
+
+.hero-linear-gradient {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 35vw;
+    height: 45vh;
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 700px;
+    max-height: 400px;
+    transform: translate(-50%, -50%);
+    animation: linear-morph 12s cubic-bezier(0.4, 0.0, 0.6, 1) infinite;
+    opacity: 0.6;
+    will-change: transform;
+}
+
+@keyframes hero-organic-drift {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scaleX(1.2) scaleY(1.1) skew(0deg, 0deg);
+    }
+    15% {
+        transform: translate(-50%, -50%) translateX(25px) translateY(-15px) rotate(8deg) scaleX(1.4) scaleY(0.9) skew(2deg, -1deg);
+    }
+    30% {
+        transform: translate(-50%, -50%) translateX(35px) translateY(20px) rotate(-5deg) scaleX(1.1) scaleY(1.3) skew(-3deg, 2deg);
+    }
+    45% {
+        transform: translate(-50%, -50%) translateX(-20px) translateY(30px) rotate(12deg) scaleX(0.9) scaleY(1.2) skew(4deg, -2deg);
+    }
+    60% {
+        transform: translate(-50%, -50%) translateX(-40px) translateY(-10px) rotate(-8deg) scaleX(1.3) scaleY(0.8) skew(-1deg, 3deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-15px) translateY(-25px) rotate(6deg) scaleX(1.1) scaleY(1.4) skew(3deg, -4deg);
+    }
+    90% {
+        transform: translate(-50%, -50%) translateX(10px) translateY(-5px) rotate(-3deg) scaleX(1.2) scaleY(1.0) skew(-2deg, 1deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scaleX(1.2) scaleY(1.1) skew(0deg, 0deg);
+    }
+}
+
+@keyframes mask-morph {
+    0% {
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1) translateX(10px) translateY(5px);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.95) translateX(0px) translateY(-15px);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.05) translateX(-8px) translateY(5px);
+    }
+    100% {
+        transform: rotate(360deg) scale(1) translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes mask-morph-alt {
+    0% {
+        transform: rotate(0deg) scale(1.05) translateX(0px) translateY(0px);
+    }
+    20% {
+        transform: rotate(-72deg) scale(0.9) translateX(-12px) translateY(6px);
+    }
+    40% {
+        transform: rotate(-144deg) scale(1.15) translateX(0px) translateY(18px);
+    }
+    60% {
+        transform: rotate(-216deg) scale(0.85) translateX(15px) translateY(-10px);
+    }
+    80% {
+        transform: rotate(-288deg) scale(1.08) translateX(-5px) translateY(8px);
+    }
+    100% {
+        transform: rotate(-360deg) scale(1.05) translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes mask-morph-slow {
+    0% {
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
+    }
+    33% {
+        transform: rotate(120deg) scale(1.12) translateX(8px) translateY(-12px);
+    }
+    66% {
+        transform: rotate(240deg) scale(0.92) translateX(-15px) translateY(10px);
+    }
+    100% {
+        transform: rotate(360deg) scale(1) translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes radial-breathe {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) scaleX(1) scaleY(1) rotate(0deg) skew(0deg, 0deg);
+    }
+    20% {
+        transform: translate(-50%, -50%) translateX(-18px) translateY(12px) scaleX(1.4) scaleY(0.7) rotate(-6deg) skew(1deg, -2deg);
+    }
+    40% {
+        transform: translate(-50%, -50%) translateX(22px) translateY(-8px) scaleX(0.8) scaleY(1.5) rotate(4deg) skew(-2deg, 3deg);
+    }
+    60% {
+        transform: translate(-50%, -50%) translateX(8px) translateY(25px) scaleX(1.2) scaleY(0.9) rotate(-2deg) skew(3deg, -1deg);
+    }
+    80% {
+        transform: translate(-50%, -50%) translateX(-12px) translateY(-18px) scaleX(0.9) scaleY(1.3) rotate(3deg) skew(-1deg, 2deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) scaleX(1) scaleY(1) rotate(0deg) skew(0deg, 0deg);
+    }
+}
+
+@keyframes linear-morph {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) scaleX(1) scaleY(1) rotate(0deg) skew(0deg, 0deg);
+    }
+    16% {
+        transform: translate(-50%, -50%) translateX(30px) translateY(-20px) scaleX(1.3) scaleY(0.6) rotate(7deg) skew(-3deg, 4deg);
+    }
+    32% {
+        transform: translate(-50%, -50%) translateX(-15px) translateY(35px) scaleX(0.7) scaleY(1.4) rotate(-11deg) skew(5deg, -2deg);
+    }
+    48% {
+        transform: translate(-50%, -50%) translateX(-35px) translateY(-10px) scaleX(1.1) scaleY(0.8) rotate(14deg) skew(-1deg, -3deg);
+    }
+    64% {
+        transform: translate(-50%, -50%) translateX(20px) translateY(25px) scaleX(0.9) scaleY(1.2) rotate(-9deg) skew(4deg, 1deg);
+    }
+    80% {
+        transform: translate(-50%, -50%) translateX(5px) translateY(-30px) scaleX(1.2) scaleY(0.9) rotate(5deg) skew(-2deg, 3deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) scaleX(1) scaleY(1) rotate(0deg) skew(0deg, 0deg);
+    }
+}
+
+/* Page-specific gradient themes with organic clipping paths */
+.gradient-home {
+    background: conic-gradient(
+        from 0deg,
+        #0099ff,
+        #ff6600,
+        #bbffa1,
+        #4c00ff,
+        #ff2666,
+        #00aaff
+    );
+    clip-path: polygon(35% 2%, 48% 0%, 62% 3%, 75% 8%, 87% 18%, 95% 32%, 98% 47%, 94% 62%, 87% 76%, 76% 88%, 62% 95%, 47% 98%, 32% 95%, 18% 88%, 8% 76%, 2% 62%, 0% 47%, 3% 32%, 12% 18%, 25% 8%);
+}
+
+.gradient-products {
+    background: conic-gradient(
+        from 0deg,
+        #9b59f6,
+        #ff4899,
+        #ff7316,
+        #7366f1,
+        #9b59f6
+    );
+    clip-path: polygon(42% 5%, 58% 2%, 72% 7%, 83% 15%, 91% 26%, 96% 39%, 97% 53%, 93% 67%, 85% 79%, 74% 89%, 60% 95%, 45% 98%, 30% 96%, 17% 91%, 7% 83%, 2% 72%, 1% 58%, 4% 44%, 11% 31%, 22% 20%, 35% 12%);
+}
+
+.gradient-atomos {
+    background: conic-gradient(
+        from 0deg,
+        #00d4ff,
+        #4488ff,
+        #2255ff,
+        #00aaff,
+        #00d4ff
+    );
+    clip-path: polygon(28% 1%, 45% 0%, 62% 4%, 76% 12%, 87% 23%, 94% 37%, 97% 52%, 95% 68%, 89% 82%, 79% 93%, 66% 99%, 51% 100%, 36% 97%, 22% 91%, 11% 82%, 4% 70%, 1% 56%, 2% 41%, 7% 27%, 16% 15%);
+}
+
+.gradient-cloud-network {
+    background: conic-gradient(
+        from 0deg,
+        #10b981,
+        #059669,
+        #14b8a6,
+        #0d9488,
+        #10b981
+    );
+    clip-path: polygon(38% 3%, 52% 0%, 67% 2%, 79% 8%, 89% 17%, 95% 29%, 98% 42%, 97% 56%, 92% 69%, 84% 81%, 73% 90%, 60% 96%, 46% 99%, 32% 98%, 19% 94%, 8% 87%, 2% 77%, 0% 65%, 2% 52%, 7% 39%, 15% 27%, 26% 17%, 39% 9%);
+}
+
+.gradient-electros {
+    background: conic-gradient(
+        from 0deg,
+        #ff8316,
+        #ff580c,
+        #ff3626,
+        #ff5544,
+        #ff8316
+    );
+    clip-path: polygon(33% 6%, 46% 2%, 59% 1%, 72% 4%, 83% 10%, 91% 19%, 96% 30%, 98% 42%, 96% 55%, 91% 67%, 83% 77%, 72% 85%, 59% 91%, 46% 95%, 33% 96%, 20% 94%, 9% 89%, 2% 81%, 0% 71%, 1% 60%, 5% 48%, 12% 37%, 21% 27%);
+}
+
+.gradient-technology {
+    background: conic-gradient(
+        from 0deg,
+        #6366f1,
+        #8b5cf6,
+        #a855f7,
+        #7c3aed,
+        #6366f1
+    );
+    clip-path: polygon(40% 4%, 55% 1%, 69% 3%, 81% 9%, 90% 18%, 96% 29%, 99% 42%, 98% 56%, 94% 69%, 86% 80%, 75% 89%, 62% 95%, 48% 98%, 34% 97%, 21% 93%, 10% 86%, 3% 76%, 0% 64%, 1% 51%, 5% 38%, 12% 26%, 22% 16%, 34% 9%);
+}
+
+.gradient-about {
+    background: conic-gradient(
+        from 0deg,
+        #f59e0b,
+        #eab308,
+        #84cc16,
+        #65a30d,
+        #f59e0b
+    );
+    clip-path: polygon(44% 2%, 57% 0%, 70% 4%, 81% 11%, 89% 20%, 95% 31%, 98% 43%, 97% 56%, 93% 68%, 86% 79%, 76% 88%, 64% 94%, 51% 97%, 38% 96%, 26% 92%, 15% 85%, 7% 75%, 2% 63%, 0% 50%, 2% 37%, 8% 25%, 17% 15%, 29% 7%);
+}
+
+.gradient-contact {
+    background: conic-gradient(
+        from 0deg,
+        #0ea5e9,
+        #06b6d4,
+        #10b981,
+        #059669,
+        #0ea5e9
+    );
+    clip-path: polygon(36% 5%, 49% 1%, 63% 0%, 76% 3%, 87% 9%, 94% 18%, 98% 29%, 99% 41%, 96% 54%, 90% 66%, 81% 76%, 70% 84%, 57% 90%, 44% 94%, 31% 95%, 18% 93%, 8% 88%, 2% 80%, 0% 70%, 1% 59%, 5% 47%, 12% 36%, 22% 26%, 34% 18%);
+}
+
+.gradient-blog {
+    background: conic-gradient(
+        from 0deg,
+        #d946ef,
+        #c026d3,
+        #a21caf,
+        #be185d,
+        #d946ef
+    );
+    clip-path: polygon(41% 3%, 54% 0%, 66% 2%, 77% 7%, 86% 14%, 92% 23%, 96% 33%, 97% 44%, 95% 55%, 90% 65%, 82% 74%, 72% 82%, 61% 88%, 49% 92%, 37% 94%, 25% 93%, 14% 89%, 5% 83%, 1% 75%, 0% 65%, 2% 54%, 6% 43%, 13% 33%, 22% 24%, 33% 16%);
+}
+
+/* Radial gradient variations for each page */
+.radial-home {
+    background: radial-gradient(ellipse at 30% 70%, #0099ff, #ff6600, transparent, #4c00ff, transparent);
+    clip-path: ellipse(70% 85% at 40% 60%);
+}
+
+.radial-products {
+    background: radial-gradient(circle at 60% 40%, #9b59f6, transparent, #ff4899, transparent, #ff7316);
+    clip-path: ellipse(80% 65% at 30% 50%);
+}
+
+.radial-atomos {
+    background: radial-gradient(ellipse at 70% 30%, #00d4ff, #4488ff, transparent, #2255ff, transparent);
+    clip-path: ellipse(75% 90% at 50% 40%);
+}
+
+.radial-cloud-network {
+    background: radial-gradient(circle at 40% 60%, #10b981, transparent, #14b8a6, #0d9488, transparent);
+    clip-path: ellipse(85% 70% at 60% 30%);
+}
+
+.radial-electros {
+    background: radial-gradient(ellipse at 50% 80%, #ff8316, #ff580c, transparent, #ff3626, transparent);
+    clip-path: ellipse(90% 60% at 45% 70%);
+}
+
+.radial-technology {
+    background: radial-gradient(circle at 80% 20%, #6366f1, transparent, #8b5cf6, #a855f7, transparent);
+    clip-path: ellipse(65% 95% at 70% 25%);
+}
+
+.radial-about {
+    background: radial-gradient(ellipse at 20% 40%, #f59e0b, #eab308, transparent, #84cc16, transparent);
+    clip-path: ellipse(95% 75% at 25% 45%);
+}
+
+.radial-contact {
+    background: radial-gradient(circle at 60% 70%, #0ea5e9, transparent, #06b6d4, #10b981, transparent);
+    clip-path: ellipse(80% 80% at 55% 65%);
+}
+
+.radial-blog {
+    background: radial-gradient(ellipse at 40% 30%, #d946ef, #c026d3, transparent, #be185d, transparent);
+    clip-path: ellipse(70% 95% at 45% 35%);
+}
+
+/* Linear gradient variations for each page */
+.linear-home {
+    background: linear-gradient(45deg, #0099ff, transparent, #ff6600, transparent, #bbffa1, transparent, #4c00ff);
+    clip-path: polygon(20% 15%, 80% 5%, 95% 60%, 85% 90%, 15% 85%, 5% 40%);
+}
+
+.linear-products {
+    background: linear-gradient(135deg, #9b59f6, transparent, #ff4899, transparent, #ff7316, transparent);
+    clip-path: polygon(15% 10%, 85% 20%, 90% 75%, 70% 95%, 10% 80%, 5% 25%);
+}
+
+.linear-atomos {
+    background: linear-gradient(90deg, #00d4ff, transparent, #4488ff, transparent, #2255ff, transparent);
+    clip-path: polygon(25% 5%, 90% 10%, 95% 65%, 75% 90%, 20% 85%, 10% 30%);
+}
+
+.linear-cloud-network {
+    background: linear-gradient(60deg, #10b981, transparent, #059669, transparent, #14b8a6, transparent);
+    clip-path: polygon(30% 8%, 85% 15%, 92% 70%, 80% 95%, 25% 88%, 8% 35%);
+}
+
+.linear-electros {
+    background: linear-gradient(120deg, #ff8316, transparent, #ff580c, transparent, #ff3626, transparent);
+    clip-path: polygon(18% 12%, 82% 8%, 88% 62%, 78% 92%, 22% 95%, 12% 45%);
+}
+
+.linear-technology {
+    background: linear-gradient(30deg, #6366f1, transparent, #8b5cf6, transparent, #a855f7, transparent);
+    clip-path: polygon(28% 6%, 88% 12%, 95% 68%, 82% 88%, 18% 92%, 6% 38%);
+}
+
+.linear-about {
+    background: linear-gradient(150deg, #f59e0b, transparent, #eab308, transparent, #84cc16, transparent);
+    clip-path: polygon(22% 18%, 78% 6%, 92% 55%, 85% 88%, 15% 95%, 8% 42%);
+}
+
+.linear-contact {
+    background: linear-gradient(75deg, #0ea5e9, transparent, #06b6d4, transparent, #10b981, transparent);
+    clip-path: polygon(35% 5%, 90% 18%, 88% 72%, 65% 92%, 10% 85%, 12% 28%);
+}
+
+.linear-blog {
+    background: linear-gradient(105deg, #d946ef, transparent, #c026d3, transparent, #a21caf, transparent);
+    clip-path: polygon(26% 12%, 84% 8%, 95% 58%, 88% 88%, 16% 92%, 5% 42%);
 }
 
 .hero-content {
@@ -608,47 +1017,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--glassmorphism-shadow);
-    transition: all 0.3s ease;
-    filter: brightness(0.9) contrast(1.1);
-}
-
-.hero-image:hover {
-    filter: brightness(1) contrast(1.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-
-.hero-placeholder {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--glassmorphism-shadow);
-    transition: all 0.3s ease;
-    filter: brightness(0.9) contrast(1.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.hero-placeholder:hover {
-    transform: scale(1.02);
-    filter: brightness(1) contrast(1.2);
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25);
-}
+/* Removed .hero-image and .hero-placeholder styles as they're no longer needed */
 
 /* 3D/Animated content placeholder styles */
 .hero-3d-placeholder {
@@ -1041,6 +1410,58 @@ body {
         max-width: 400px;
     }
     
+    /* Responsive gradient blobs */
+    .hero-blur {
+        right: 2%;
+        transform: translateY(-50%) scale(0.8);
+        filter: blur(15px);
+    }
+    
+    .hero-gradient-mask {
+        width: 45vw;
+        height: 50vh;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 500px;
+        max-height: 450px;
+        animation-duration: 15s; /* Slightly slower on smaller screens */
+    }
+    
+    .hero-gradient-mask.mask-alt {
+        animation-duration: 18s;
+    }
+    
+    .hero-gradient-mask.mask-slow {
+        animation-duration: 25s;
+    }
+    
+    .hero-spinning-gradient {
+        width: 50vw;
+        height: 55vh;
+        min-width: 350px;
+        min-height: 350px;
+        max-width: 600px;
+        max-height: 550px;
+    }
+    
+    .hero-radial-gradient {
+        width: 35vw;
+        height: 40vh;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 400px;
+        max-height: 350px;
+    }
+    
+    .hero-linear-gradient {
+        width: 40vw;
+        height: 35vh;
+        min-width: 280px;
+        min-height: 220px;
+        max-width: 450px;
+        max-height: 300px;
+    }
+    
     .hero-3d-placeholder {
         min-height: 300px;
     }
@@ -1100,6 +1521,58 @@ body {
     .hero-3d-sphere {
         width: 100px;
         height: 100px;
+    }
+    
+    /* Smaller gradient blobs for very small screens */
+    .hero-blur {
+        right: 1%;
+        transform: translateY(-50%) scale(0.6);
+        filter: blur(12px);
+    }
+    
+    .hero-gradient-mask {
+        width: 60vw;
+        height: 40vh;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 350px;
+        max-height: 350px;
+        animation-duration: 18s; /* Even slower on very small screens */
+    }
+    
+    .hero-gradient-mask.mask-alt {
+        animation-duration: 22s;
+    }
+    
+    .hero-gradient-mask.mask-slow {
+        animation-duration: 30s;
+    }
+    
+    .hero-spinning-gradient {
+        width: 65vw;
+        height: 45vh;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 450px;
+        max-height: 450px;
+    }
+    
+    .hero-radial-gradient {
+        width: 50vw;
+        height: 35vh;
+        min-width: 200px;
+        min-height: 200px;
+        max-width: 300px;
+        max-height: 280px;
+    }
+    
+    .hero-linear-gradient {
+        width: 55vw;
+        height: 30vh;
+        min-width: 220px;
+        min-height: 180px;
+        max-width: 350px;
+        max-height: 250px;
     }
 }
 
