@@ -44,7 +44,7 @@ class Navbar {
             <nav class="navbar">
                 <div class="nav-container">
                     <a href="${rootPath}index.html" class="logo">
-                        <div class="logo-icon">E</div>
+                        <img src="${rootPath}assets/logos/Elemento.svg" alt="Elemento Logo" class="logo-icon">
                         <span class="elemento-brand">Elemento</span>
                     </a>
                     

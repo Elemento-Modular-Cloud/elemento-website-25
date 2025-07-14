@@ -171,11 +171,11 @@ body {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    /* background: var(--primary-color); */
     color: var(--button-text-color);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
