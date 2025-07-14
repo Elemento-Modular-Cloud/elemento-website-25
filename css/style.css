@@ -25,9 +25,9 @@
 }
 
 /* Argent Pixel utility classes for selective word highlighting */
-.pixel-word {
+.pixel-word, .emphasis-pixel {
     font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif !important;
-    font-weight: 400;
+    font-weight: 900;
     font-style: italic;
 }
 
