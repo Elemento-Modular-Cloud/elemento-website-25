@@ -39,15 +39,41 @@
     --black: #1A1C20;
     --black-dark: #000;
 
+    /* RGB values without alpha for flexible use */
+    --black-light-rgb: 47, 51, 56;
+    --black-rgb: 26, 28, 32;
+    --black-dark-rgb: 0, 0, 0;
+
+    /* RGBA equivalents for black shades */
+    --black-light-rgba: rgba(var(--black-light-rgb), 1);
+    --black-rgba: rgba(var(--black-rgb), 1);
+    --black-dark-rgba: rgba(var(--black-dark-rgb), 1);
+
     --white-light: #fff;
     --white-medium: #FAFAFF;
     --white: #F5F5FA;
     --white-dark: #E6E6F0;
 
+    /* RGB values without alpha for flexible use */
+    --white-light-rgb: 255, 255, 255;
+    --white-medium-rgb: 250, 250, 255;
+    --white-rgb: 245, 245, 250;
+    --white-dark-rgb: 230, 230, 240;
+
+    /* RGBA equivalents for white shades */
+    --white-light-rgba: rgba(var(--white-light-rgb), 1);
+    --white-medium-rgba: rgba(var(--white-medium-rgb), 1);
+    --white-rgba: rgba(var(--white-rgb), 1);
+    --white-dark-rgba: rgba(var(--white-dark-rgb), 1);
+
     /* Accent colors */
     --accent-color-light: var(--yellow-light);
     --accent-color: var(--yellow);
     --accent-color-dark: var(--yellow-dark);
+
+    /* Stripe opacity */
+    --stripe-opacity-1: .3;
+    --stripe-opacity-2: .3;
 
     /* Spacing system */
     --space-xs: 0.25rem;
@@ -69,6 +95,8 @@
     --subtitle-color: var(--black);
     --secondary-color: var(--blue-light);
     --background-color: var(--white);
+    --stripe-color-1: rgba(var(--white-rgb), var(--stripe-opacity-1));
+    --stripe-color-2: rgba(var(--white-rgb), var(--stripe-opacity-2));
     --text-color: var(--grey-darker);
     --text-secondary: var(--black-light);
     --text-muted: var(--grey-light);
@@ -188,9 +216,11 @@
     --icon-color-disabled: rgba(255, 255, 255, 0.25);
     --button-text-color: var(--black);
     --titlebar-color: var(--primary-color);
-    --subtitle-color: var(--black);
+    --subtitle-color: var(--grey-light);
     --secondary-color: var(--blue-light);
-    --background-color: var(--black);
+    --background-color: var(--black-rgba);
+    --stripe-color-1: rgba(var(--black-rgb), var(--stripe-opacity-1));
+    --stripe-color-2: rgba(var(--black-rgb), var(--stripe-opacity-2));
     --text-color: var(--grey-light);
     --text-secondary: var(--white-light);
     --text-muted: var(--grey-dark);
@@ -305,6 +335,8 @@
     --subtitle-color: var(--white-light);
     --secondary-color: var(--blue-light);
     --background-color: var(--black-dark);
+    --stripe-color-1: rgba(var(--black-dark-rgb), var(--stripe-opacity-1));
+    --stripe-color-2: rgba(var(--black-dark-rgb), var(--stripe-opacity-2));
     --text-color: var(--white-light);
     --text-secondary: var(--white-light);
     --text-muted: var(--grey-light);
