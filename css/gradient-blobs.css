@@ -61,7 +61,7 @@
     width: 100vw;
     height: 100vw;
     transform: translate(-50%, -50%);
-    animation: spin 18s linear infinite;
+    animation: spin 13s linear infinite;
     background: var(--spinning-gradient);
     z-index: 3;
 }
@@ -96,7 +96,7 @@
     top: 50%;
     right: 35%;
     transform: translateY(-60%);
-    animation: blur-breathe 6s ease-in-out infinite;
+    animation: blur-breathe 7s ease-in-out infinite;
     will-change: filter;
 }
 
@@ -135,7 +135,7 @@
     min-width: 800px;
     height: 60vh;
     transform: translate(-30%, -30%);
-    animation: gradient-orbit-clockwise 20s linear infinite;
+    animation: gradient-orbit-clockwise 23s linear infinite;
     opacity: 0.9;
     will-change: transform;
     border-radius: 50%;
@@ -875,7 +875,15 @@
         transparent,
         rgba(255, 220, 100, 1.0),
         transparent,
+        rgba(255, 100, 0, 1.0),
+        transparent,
+        rgba(255, 240, 150, 1.0),
+        transparent,
         rgba(220, 130, 0, 1.0),
+        transparent,
+        rgba(255, 160, 20, 1.0),
+        transparent,
+        rgba(255, 200, 80, 1.0),
         transparent,
         rgba(255, 180, 0, 1.0),
         transparent
@@ -956,6 +964,24 @@
     border-radius: 50%;
 }
 
+.gradient-editor {
+    background: conic-gradient(
+        from 60deg,
+        rgba(120, 180, 255, 1.0),
+        transparent,
+        rgba(150, 200, 255, 1.0),
+        transparent,
+        rgba(100, 160, 220, 1.0),
+        transparent,
+        rgba(180, 220, 255, 1.0),
+        transparent,
+        rgba(120, 180, 255, 1.0),
+        transparent
+    );
+    clip-path: circle(47% at 50% 50%);
+    border-radius: 50%;
+}
+
 /* Radial gradient variations for each page */
 .radial-home {
     background: radial-gradient(ellipse at 30% 70%, rgba(0, 150, 255, 1.0), rgba(0, 100, 255, 1.0), transparent, rgb(141, 20, 255), rgb(246, 22, 6), transparent, rgba(255, 140, 0, 1.0), rgba(255, 160, 0, 1.0), transparent);
@@ -978,7 +1004,7 @@
 }
 
 .radial-electros {
-    background: radial-gradient(ellipse at 25% 15%, rgba(255, 180, 0, 1.0), rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent);
+    background: radial-gradient(ellipse at 25% 15%, rgba(255, 180, 0, 1.0), rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent, rgba(255, 100, 0, 1.0), transparent, rgba(255, 240, 150, 1.0), transparent);
     clip-path: ellipse(90% 60% at 30% 25%);
 }
 
@@ -1000,6 +1026,11 @@
 .radial-blog {
     background: radial-gradient(ellipse at 10% 90%, rgba(230, 60, 255, 1.0), rgba(200, 30, 220, 1.0), transparent, rgba(200, 20, 100, 1.0), transparent);
     clip-path: ellipse(70% 95% at 15% 85%);
+}
+
+.radial-editor {
+    background: radial-gradient(circle at 80% 30%, rgba(120, 180, 255, 1.0), transparent, rgba(150, 200, 255, 1.0), rgba(100, 160, 220, 1.0), transparent);
+    clip-path: ellipse(85% 75% at 75% 40%);
 }
 
 /* Linear gradient variations for each page */
@@ -1024,7 +1055,7 @@
 }
 
 .linear-electros {
-    background: linear-gradient(330deg, rgba(255, 180, 0, 1.0), transparent, rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent);
+    background: linear-gradient(330deg, rgba(255, 180, 0, 1.0), transparent, rgba(255, 200, 50, 1.0), transparent, rgba(255, 220, 100, 1.0), transparent, rgba(255, 100, 0, 1.0), transparent, rgba(255, 240, 150, 1.0), transparent, rgba(255, 160, 20, 1.0), transparent);
     clip-path: polygon(18% 12%, 82% 8%, 88% 62%, 78% 92%, 22% 95%, 12% 45%);
 }
 
@@ -1046,6 +1077,11 @@
 .linear-blog {
     background: linear-gradient(240deg, rgba(230, 60, 255, 1.0), transparent, rgba(200, 30, 220, 1.0), transparent, rgba(180, 20, 190, 1.0), transparent);
     clip-path: polygon(26% 12%, 84% 8%, 95% 58%, 88% 88%, 16% 92%, 5% 42%);
+}
+
+.linear-editor {
+    background: linear-gradient(90deg, rgba(120, 180, 255, 1.0), transparent, rgba(150, 200, 255, 1.0), transparent, rgba(180, 220, 255, 1.0), transparent);
+    clip-path: polygon(32% 10%, 86% 6%, 93% 65%, 80% 90%, 20% 95%, 7% 38%);
 }
 
 /* ============================================================================ */
@@ -1076,13 +1112,6 @@
     clip-path: polygon(0% 20%, 60% 0%, 100% 40%, 80% 100%, 10% 80%);
     opacity: 0.5;
     animation: home-polygon-drift 25s ease-in-out infinite reverse;
-}
-
-@keyframes home-polygon-drift {
-    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
-    25% { transform: translateX(2%) translateY(-1%) rotate(1deg) scale(1.02); }
-    50% { transform: translateX(-1%) translateY(2%) rotate(-0.5deg) scale(0.98); }
-    75% { transform: translateX(1%) translateY(-1%) rotate(0.8deg) scale(1.01); }
 }
 
 /* About Page - Organic Flowing Cuts */
@@ -1260,6 +1289,28 @@
     75% { transform: translateX(0.5%) translateY(0.5%) rotate(0.3deg) scale(1.005); }
 }
 
+/* Editor Page - Tool/Interface Inspired Cuts */
+.polygon-editor-1 {
+    background: linear-gradient(75deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 10%, 90% 0%, 100% 90%, 10% 100%);
+    opacity: 0.7;
+    animation: editor-polygon-tool 24s ease-in-out infinite;
+}
+
+.polygon-editor-2 {
+    background: linear-gradient(165deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(15% 0%, 100% 15%, 85% 100%, 0% 85%);
+    opacity: 0.5;
+    animation: editor-polygon-tool 30s ease-in-out infinite reverse;
+}
+
+@keyframes editor-polygon-tool {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateX(1.5%) translateY(-0.5%) rotate(1deg) scale(1.02); }
+    50% { transform: translateX(-0.5%) translateY(1.5%) rotate(-0.8deg) scale(0.98); }
+    75% { transform: translateX(0.8%) translateY(0.8%) rotate(0.5deg) scale(1.01); }
+}
+
 /* Responsive adjustments for polygon masks */
 @media (max-width: 768px) {
     .hero-polygon-mask {
@@ -1316,16 +1367,248 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-        -15deg,
-        transparent 0px,
-        transparent 10px,
-        var(--stripe-color-1)  10px,
-        var(--stripe-color-2) calc(10px * 2)
-    );
+    width: 300%;
+    height: 300%;
     pointer-events: none;
     z-index: 5;
     transform-origin: center center;
+}
+
+/* ============================================================================ */
+/* PAGE-SPECIFIC RECTANGLE OVERLAY VARIATIONS                                 */
+/* ============================================================================ */
+
+/* Home Page - Dynamic Tech Grid */
+.ro-home-1 {
+    background: repeating-linear-gradient(
+        -17deg,
+        transparent 0px,
+        transparent 6px,
+        var(--stripe-color-1)  6px,
+        var(--stripe-color-2) calc(6px * 1.5)
+    );
+    /* animation: home-overlay-drift 20s ease-in-out infinite; */
+}
+
+.ro-home-2 {
+    background: repeating-linear-gradient(
+        -21deg,
+        transparent 0px,
+        transparent 25px,
+        var(--stripe-color-1)  25px,
+        var(--stripe-color-2) calc(25px * 2)
+    );
+    /* animation: home-overlay-drift 25s ease-in-out infinite reverse; */
+}
+
+/* About Page - Organic Flowing Lines */
+.ro-about-1 {
+    background: repeating-linear-gradient(
+        -70deg,
+        transparent 0px,
+        transparent 4px,
+        var(--stripe-color-1)  4px,
+        var(--stripe-color-2) calc(4px * 2)
+    );
+    /* animation: about-overlay-flow 30s ease-in-out infinite; */
+}
+
+.ro-about-2 {
+    background: repeating-linear-gradient(
+        -63deg,
+        transparent 0px,
+        transparent 24px,
+        var(--stripe-color-1)  24px,
+        var(--stripe-color-2) calc(24px * 2.2)
+    );
+    /* animation: about-overlay-flow 35s ease-in-out infinite reverse; */
+}
+
+/* Products Page - Grid/Tech-Inspired Pattern */
+.ro-products-1 {
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 4px,
+        var(--stripe-color-1)  4px,
+        var(--stripe-color-2) calc(4px * 1.8)
+    );
+    /* animation: products-overlay-grid 15s linear infinite; */
+}
+
+.ro-products-2 {
+    background: repeating-linear-gradient(
+        88deg,
+        transparent 0px,
+        transparent 22px,
+        var(--stripe-color-1)  22px,
+        var(--stripe-color-2) calc(22px * 2)
+    );
+    /* animation: products-overlay-grid 20s linear infinite reverse; */
+}
+
+
+/* Technology Page - Circuit/Tech Geometric Pattern */
+.ro-technology-1 {
+    background: repeating-linear-gradient(
+        60deg,
+        transparent 0px,
+        transparent 4.2px,
+        var(--stripe-color-1)  4.2px,
+        var(--stripe-color-2) calc(4.2px * 2.15)
+    );
+    /* animation: tech-overlay-circuit 18s ease-in-out infinite; */
+}
+
+.ro-technology-2 {
+    background: repeating-linear-gradient(
+        63.5deg,
+        transparent 0px,
+        transparent 26px,
+        var(--stripe-color-1)  26px,
+        var(--stripe-color-2) calc(26px * 1.9)
+    );
+    /* animation: tech-overlay-circuit 22s ease-in-out infinite reverse; */
+}
+
+
+/* Atomos Page - Atomic/Molecular Inspired Pattern */
+.ro-atomos-1 {
+    background: repeating-linear-gradient(
+        12deg,
+        transparent 0px,
+        transparent 40px,
+        var(--stripe-color-1)  40px,
+        var(--stripe-color-2) calc(40px * 1.4)
+    );
+    /* animation: atomos-overlay-orbit 25s linear infinite; */
+}
+
+.ro-atomos-2 {
+    background: repeating-linear-gradient(
+        15deg,
+        transparent 0px,
+        transparent 5px,
+        var(--stripe-color-1)  5px,
+        var(--stripe-color-2) calc(5px * 1.96)
+    );
+    /* animation: atomos-overlay-orbit 30s linear infinite reverse; */
+}
+
+
+/* Cloud Network Page - Network/Connectivity Pattern */
+.ro-cloud-network-1 {
+    background: repeating-linear-gradient(
+        -28deg,
+        transparent 0px,
+        transparent 33px,
+        var(--stripe-color-1)  33px,
+        var(--stripe-color-2) calc(33px * 2.1)
+    );
+    /* animation: network-overlay-connect 28s ease-in-out infinite; */
+}
+
+.ro-cloud-network-2 {
+    background: repeating-linear-gradient(
+        -31deg,
+        transparent 0px,
+        transparent 4.5px,
+        var(--stripe-color-1)  4.5px,
+        var(--stripe-color-2) calc(4.5px * 1.76)
+    );
+    /* animation: network-overlay-connect 32s ease-in-out infinite reverse; */
+}
+
+/* Electros Page - Electric/Energy Pattern */
+.ro-electros-1 {
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 29px,
+        var(--stripe-color-1)  29px,
+        var(--stripe-color-2) calc(29px * 1.8)
+    );
+    /* animation: electros-overlay-energy 16s ease-in-out infinite; */
+}
+
+.ro-electros-2 {
+    background: repeating-linear-gradient(
+        87deg,
+        transparent 0px,
+        transparent 4.2px,
+        var(--stripe-color-1)  4.2px,
+        var(--stripe-color-2) calc(4.2px * 1.9)
+    );
+    /* animation: electros-overlay-energy 24s ease-in-out infinite reverse; */
+}
+
+
+/* Contact Page - Communication/Speech Pattern */
+.ro-contact-1 {
+    background: repeating-linear-gradient(
+        170deg,
+        transparent 0px,
+        transparent 28px,
+        var(--stripe-color-1)  28px,
+        var(--stripe-color-2) calc(28px * 2.1)
+    );
+    /* animation: contact-overlay-talk 22s ease-in-out infinite; */
+}
+
+.ro-contact-2 {
+    background: repeating-linear-gradient(
+        175deg,
+        transparent 0px,
+        transparent 5px,
+        var(--stripe-color-1)  5px,
+        var(--stripe-color-2) calc(5px * 1.9)
+    );
+    /* animation: contact-overlay-talk 26s ease-in-out infinite reverse; */
+}
+
+/* Blog Page - Paper/Document Pattern */
+.ro-blog-1 {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 36px,
+        var(--stripe-color-1)  36px,
+        var(--stripe-color-2) calc(36px * 1.6)
+    );
+    /* animation: blog-overlay-page 28s ease-in-out infinite; */
+}
+
+.ro-blog-2 {
+    background: repeating-linear-gradient(
+        50deg,
+        transparent 0px,
+        transparent 6px,
+        var(--stripe-color-1)  6px,
+        var(--stripe-color-2) calc(6px * 1.9)
+    );
+    /* animation: blog-overlay-page 32s ease-in-out infinite reverse; */
+}
+
+
+/* Editor Page - Tool/Interface Pattern */
+.ro-editor-1 {
+    background: repeating-linear-gradient(
+        75deg,
+        transparent 0px,
+        transparent 38px,
+        var(--stripe-color-1)  38px,
+        var(--stripe-color-2) calc(38px * 1.85)
+    );
+    /* animation: editor-overlay-tool 24s ease-in-out infinite; */
+}
+
+.ro-editor-2 {
+    background: repeating-linear-gradient(
+        82deg,
+        transparent 0px,
+        transparent 4px,
+        var(--stripe-color-1)  4px,
+        var(--stripe-color-2) calc(4px * 2.1)
+    );
+    /* animation: editor-overlay-tool 30s ease-in-out infinite reverse; */
 }

@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Post Editor | Elemento</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/themes.css">
-  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-  <style>
-    .editor-container { max-width: 700px; margin: 2rem auto; background: var(--glassmorphism-background); border-radius: var(--card-border-radius); box-shadow: var(--glassmorphism-shadow); padding: 2rem; }
-    #editor { height: 300px; background: #fff; }
-    .form-group { margin-bottom: 1.5rem; }
-    label { font-weight: 600; }
-    .instructions { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 8px; padding: 1rem; margin-bottom: 2rem; color: #ad8b00; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Editor - Elemento</title>
+    <meta name="description" content="Create and edit blog posts for the Elemento website with our intuitive editor interface.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <style>
+        .editor-container { 
+            max-width: 700px; 
+            margin: 2rem auto; 
+            background: var(--glassmorphism-background); 
+            border-radius: var(--card-border-radius); 
+            box-shadow: var(--glassmorphism-shadow); 
+            padding: 2rem; 
+        }
+        #editor { height: 300px; background: #fff; }
+        .form-group { margin-bottom: 1.5rem; }
+        label { font-weight: 600; }
+        .instructions { 
+            background: #fffbe6; 
+            border: 1px solid #ffe58f; 
+            border-radius: 8px; 
+            padding: 1rem; 
+            margin-bottom: 2rem; 
+            color: #ad8b00; 
+        }
+    </style>
 </head>
-<body class="theme-default">
-  <div id="navbar-placeholder"></div>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Gradient blob -->
+        <div class="hero-blur">
+            <div class="hero-spinning-gradient gradient-editor"></div>
+            <div class="hero-radial-gradient radial-editor"></div>
+            <div class="hero-linear-gradient linear-editor"></div>
+        </div>
+        
+        <!-- Polygon clipping masks -->
+        <div class="hero-polygon-mask">
+            <div class="polygon-editor-1"></div>
+            <div class="polygon-editor-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-buttons fade-in">
+                    <h1 class="hero-title">Blog Post Editor</h1>
+                    <div class="hero-subtitle">
+                        <p>Create and publish <span class="emphasis-pixel">engaging</span> blog posts for the <span class="emphasis-pixel">Elemento</span> community with our <span class="emphasis-pixel">intuitive</span> editor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rectangle-overlay ro-editor-1"></div>
+        <div class="rectangle-overlay ro-editor-2"></div>
+    </section>
+
+    <!-- Main Content -->
   <main class="container">
     <div class="editor-container">
       <div class="instructions">

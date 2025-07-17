@@ -72,8 +72,8 @@
     --accent-color-dark: var(--yellow-dark);
 
     /* Stripe opacity */
-    --stripe-opacity-1: .3;
-    --stripe-opacity-2: .3;
+    --stripe-opacity-1: .1;
+    --stripe-opacity-2: .15;
 
     /* Spacing system */
     --space-xs: 0.25rem;
