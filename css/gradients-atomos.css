@@ -1,0 +1,74 @@
+/* ============================================================================ */
+/* ATOMOS PAGE GRADIENTS                                                      */
+/* ============================================================================ */
+
+.gradient-atomos {
+    background: conic-gradient(
+        from 90deg,
+        rgba(0, 150, 255, 1.0),
+        transparent,
+        rgba(30, 180, 255, 1.0),
+        transparent,
+        rgba(0, 120, 220, 1.0),
+        transparent,
+        rgba(60, 200, 255, 1.0),
+        transparent,
+        rgba(0, 100, 200, 1.0),
+        transparent,
+        rgba(0, 150, 255, 1.0),
+        transparent
+    );
+    clip-path: circle(46% at 50% 50%);
+    border-radius: 50%;
+}
+
+.radial-atomos {
+    background: radial-gradient(ellipse at 85% 60%, rgba(0, 150, 255, 1.0), rgba(30, 180, 255, 1.0), transparent, rgba(60, 200, 255, 1.0), transparent);
+    clip-path: ellipse(75% 90% at 80% 50%);
+}
+
+.linear-atomos {
+    background: linear-gradient(180deg, rgba(0, 150, 255, 1.0), transparent, rgba(30, 180, 255, 1.0), transparent, rgba(60, 200, 255, 1.0), transparent);
+    clip-path: polygon(25% 5%, 90% 10%, 95% 65%, 75% 90%, 20% 85%, 10% 30%);
+}
+
+@keyframes atomos-polygon-orbit {
+    0%, 100% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    25% { transform: translate(-50%, -50%) rotate(90deg) scale(0.95); }
+    50% { transform: translate(-50%, -50%) rotate(180deg) scale(0.9); }
+    75% { transform: translate(-50%, -50%) rotate(270deg) scale(0.85); }
+}
+
+.polygon-atomos-1 {
+    background: radial-gradient(circle, var(--primary-color), transparent);
+    clip-path: polygon(50% 0%, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0% 50%, 20% 20%);
+    opacity: 0.12;
+    animation: atomos-polygon-orbit 25s linear infinite;
+}
+
+.polygon-atomos-2 {
+    background: radial-gradient(ellipse, var(--accent-color), transparent);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 70% 100%, 30% 100%, 0% 30%);
+    opacity: 0.08;
+    animation: atomos-polygon-orbit 30s linear infinite reverse;
+}
+
+.ro-atomos-1 {
+    background: repeating-linear-gradient(
+        12deg,
+        transparent 0px,
+        transparent 40px,
+        var(--stripe-color-1)  40px,
+        var(--stripe-color-2) calc(40px * 1.4)
+    );
+}
+
+.ro-atomos-2 {
+    background: repeating-linear-gradient(
+        15deg,
+        transparent 0px,
+        transparent 5px,
+        var(--stripe-color-1)  5px,
+        var(--stripe-color-2) calc(5px * 1.96)
+    );
+} 

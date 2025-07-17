@@ -1,0 +1,72 @@
+/* ============================================================================ */
+/* TECHNOLOGY PAGE GRADIENTS                                                  */
+/* ============================================================================ */
+
+.gradient-technology {
+    background: conic-gradient(
+        from 225deg,
+        rgba(120, 120, 255, 1.0),
+        transparent,
+        rgba(150, 80, 255, 1.0),
+        transparent,
+        rgba(180, 60, 255, 1.0),
+        transparent,
+        rgba(140, 40, 255, 1.0),
+        transparent,
+        rgba(120, 120, 255, 1.0),
+        transparent
+    );
+    clip-path: circle(45% at 50% 50%);
+    border-radius: 50%;
+}
+
+.radial-technology {
+    background: radial-gradient(circle at 65% 85%, rgba(120, 120, 255, 1.0), transparent, rgba(150, 80, 255, 1.0), rgba(180, 60, 255, 1.0), transparent);
+    clip-path: ellipse(65% 95% at 60% 80%);
+}
+
+.linear-technology {
+    background: linear-gradient(210deg, rgba(120, 120, 255, 1.0), transparent, rgba(150, 80, 255, 1.0), transparent, rgba(180, 60, 255, 1.0), transparent);
+    clip-path: polygon(28% 6%, 88% 12%, 95% 68%, 82% 88%, 18% 92%, 6% 38%);
+}
+
+@keyframes tech-polygon-circuit {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1) rotate(0deg); }
+    25% { transform: translateX(2%) translateY(-1%) scale(1.02) rotate(2deg); }
+    50% { transform: translateX(-1%) translateY(2%) scale(0.98) rotate(-1deg); }
+    75% { transform: translateX(1%) translateY(1%) scale(1.01) rotate(1deg); }
+}
+
+.polygon-technology-1 {
+    background: linear-gradient(60deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 20% 100%, 0% 80%);
+    opacity: 0.13;
+    animation: tech-polygon-circuit 18s ease-in-out infinite;
+}
+
+.polygon-technology-2 {
+    background: linear-gradient(120deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    opacity: 0.09;
+    animation: tech-polygon-circuit 22s ease-in-out infinite reverse;
+}
+
+.ro-technology-1 {
+    background: repeating-linear-gradient(
+        60deg,
+        transparent 0px,
+        transparent 4.2px,
+        var(--stripe-color-1)  4.2px,
+        var(--stripe-color-2) calc(4.2px * 2.15)
+    );
+}
+
+.ro-technology-2 {
+    background: repeating-linear-gradient(
+        63.5deg,
+        transparent 0px,
+        transparent 26px,
+        var(--stripe-color-1)  26px,
+        var(--stripe-color-2) calc(26px * 1.9)
+    );
+} 

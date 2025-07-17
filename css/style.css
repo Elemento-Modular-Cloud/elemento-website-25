@@ -4,8 +4,8 @@
 /* Import themes */
 @import url('./themes.css');
 
-/* Import gradient blobs */
-@import url('./gradient-blobs.css');
+/* Import gradient blobs base (shared animations and classes) */
+@import url('./gradient-blobs-base.css');
 
 /* Local Font Imports */
 @font-face {

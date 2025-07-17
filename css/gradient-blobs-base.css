@@ -1,0 +1,386 @@
+/* ============================================================================ */
+/* GRADIENT BLOBS BASE - SHARED ANIMATIONS & CORE CLASSES                    */
+/* ============================================================================ */
+
+/* Background canvas rotation animation */
+@keyframes background-rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    15% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(0.95);
+    }
+    30% {
+        transform: translate(-50%, -50%) rotate(120deg) scale(0.92);
+    }
+    45% {
+        transform: translate(-50%, -50%) rotate(200deg) scale(0.88);
+    }
+    60% {
+        transform: translate(-50%, -50%) rotate(280deg) scale(0.91);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(320deg) scale(0.94);
+    }
+    90% {
+        transform: translate(-50%, -50%) rotate(350deg) scale(0.97);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+}
+
+/* Core gradient system animations */
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(2);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn) scale(2);
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hero gradient orbit animations */
+@keyframes circular-orbit {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(20px) translateY(-20px) rotate(90deg) scale(0.95);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-40px) rotate(180deg) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-20px) translateY(-20px) rotate(270deg) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-clockwise {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(30px) translateY(-30px) rotate(90deg) scale(0.95);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-60px) rotate(180deg) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-30px) translateY(-30px) rotate(270deg) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-counter {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(-25px) translateY(-25px) rotate(-90deg) scale(0.95);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-50px) rotate(-180deg) scale(0.9);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(25px) translateY(-25px) rotate(-270deg) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes gradient-orbit-slow {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(40px) translateY(-40px) rotate(90deg) scale(0.98);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-80px) rotate(180deg) scale(0.95);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-40px) translateY(-40px) rotate(270deg) scale(0.98);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes circular-orbit-alt {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(-35px) translateY(-35px) rotate(-90deg) scale(0.96);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-70px) rotate(-180deg) scale(0.92);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(35px) translateY(-35px) rotate(-270deg) scale(0.96);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(-360deg) scale(1);
+    }
+}
+
+@keyframes circular-orbit-slow {
+    0% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(50px) translateY(-50px) rotate(90deg) scale(0.97);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(-100px) rotate(180deg) scale(0.94);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-50px) translateY(-50px) rotate(270deg) scale(0.97);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes blur-breathe {
+    0% {
+        filter: blur(90px);
+    }
+    25% {
+        filter: blur(75px);
+    }
+    50% {
+        filter: blur(105px);
+    }
+    75% {
+        filter: blur(80px);
+    }
+    100% {
+        filter: blur(90px);
+    }
+}
+
+@keyframes blur-breathe-tablet {
+    0% {
+        filter: blur(15px);
+    }
+    25% {
+        filter: blur(10px);
+    }
+    50% {
+        filter: blur(22px);
+    }
+    75% {
+        filter: blur(12px);
+    }
+    100% {
+        filter: blur(15px);
+    }
+}
+
+@keyframes blur-breathe-mobile {
+    0% {
+        filter: blur(12px);
+    }
+    25% {
+        filter: blur(8px);
+    }
+    50% {
+        filter: blur(18px);
+    }
+    75% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(12px);
+    }
+}
+
+/* ============================================================================ */
+/* BASE GRADIENT SYSTEM CLASSES                                               */
+/* ============================================================================ */
+
+/* Legacy gradient classes */
+.background-blur {
+    filter: blur(100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.gradient-mask {
+    border-radius: 99999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    min-width: 1000px;
+    height: 100vh;
+    transform: translate(-50%, -50%) scale(0.7);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.spinning-gradient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vw;
+    transform: translate(-50%, -50%);
+    animation: spin 13s linear infinite;
+    background: var(--spinning-gradient);
+    z-index: 3;
+}
+
+/* Hero gradient system - base classes */
+.hero-blur {
+    filter: blur(0px);
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translateY(-60%);
+    animation: blur-breathe 7s ease-in-out infinite;
+    will-change: filter;
+}
+
+.hero-gradient-mask {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+    animation: circular-orbit 15s linear infinite;
+    will-change: transform, clip-path;
+    clip-path: circle(45% at 50% 50%);
+    border-radius: 50%;
+}
+
+.mask-alt {
+    animation: circular-orbit-alt 18s linear infinite;
+    clip-path: circle(42% at 50% 50%);
+    border-radius: 50%;
+}
+
+.mask-slow {
+    animation: circular-orbit-slow 25s linear infinite;
+    clip-path: circle(38% at 50% 50%);
+    border-radius: 50%;
+}
+
+.hero-spinning-gradient {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 50vw;
+    min-width: 800px;
+    height: 60vh;
+    transform: translate(-30%, -30%);
+    animation: gradient-orbit-clockwise 23s linear infinite;
+    opacity: 0.9;
+    will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(40% at 50% 50%);
+}
+
+.hero-radial-gradient {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 50vw;
+    min-width: 800px;
+    height: 60vh;
+    transform: translate(-30%, -30%);
+    animation: gradient-orbit-counter 25s linear infinite;
+    opacity: 0.7;
+    will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.hero-linear-gradient {
+    position: absolute;
+    top: 40%;
+    left: -25%;
+    width: 50vw;
+    min-width: 800px;
+    height: 60vh;
+    transform: translate(-30%, -30%);
+    animation: gradient-orbit-slow 30s linear infinite;
+    opacity: 0.6;
+    will-change: transform;
+    border-radius: 50%;
+    clip-path: circle(30% at 50% 50%);
+}
+
+/* Base polygon clipping mask */
+.hero-polygon-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Base rectangle overlay styles */
+.rectangle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300%;
+    height: 300%;
+    pointer-events: none;
+    z-index: 5;
+    transform-origin: center center;
+}
+
+/* ============================================================================ */
+/* RESPONSIVE ADJUSTMENTS                                                     */
+/* ============================================================================ */
+
+@media (max-width: 768px) {
+    .hero-polygon-mask {
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-polygon-mask {
+        opacity: 0.7;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .hero-polygon-mask *,
+    .hero-spinning-gradient,
+    .hero-radial-gradient,
+    .hero-linear-gradient,
+    .hero-blur {
+        animation: none !important;
+        transform: none !important;
+    }
+} 

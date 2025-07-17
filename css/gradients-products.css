@@ -1,0 +1,74 @@
+/* ============================================================================ */
+/* PRODUCTS PAGE GRADIENTS                                                    */
+/* ============================================================================ */
+
+.gradient-products {
+    background: conic-gradient(
+        from 45deg,
+        rgba(0, 220, 80, 1.0),
+        transparent,
+        rgba(0, 255, 100, 1.0),
+        transparent,
+        rgba(0, 180, 60, 1.0),
+        transparent,
+        rgba(20, 255, 120, 1.0),
+        transparent,
+        rgba(0, 150, 40, 1.0),
+        transparent,
+        rgba(0, 220, 80, 1.0),
+        transparent
+    );
+    clip-path: circle(48% at 50% 50%);
+    border-radius: 50%;
+}
+
+.radial-products {
+    background: radial-gradient(circle at 75% 25%, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0));
+    clip-path: ellipse(80% 65% at 70% 35%);
+}
+
+.linear-products {
+    background: linear-gradient(15deg, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0), transparent);
+    clip-path: polygon(15% 10%, 85% 20%, 90% 75%, 70% 95%, 10% 80%, 5% 25%);
+}
+
+@keyframes products-polygon-grid {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+    25% { transform: translateX(1%) translateY(1%) rotate(90deg); }
+    50% { transform: translateX(-1%) translateY(1%) rotate(180deg); }
+    75% { transform: translateX(1%) translateY(-1%) rotate(270deg); }
+}
+
+.polygon-products-1 {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 33% 0%, 33% 33%, 66% 33%, 66% 66%, 100% 66%, 100% 100%, 0% 100%);
+    opacity: 0.1;
+    animation: products-polygon-grid 15s linear infinite;
+}
+
+.polygon-products-2 {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    opacity: 0.08;
+    animation: products-polygon-grid 20s linear infinite reverse;
+}
+
+.ro-products-1 {
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 4px,
+        var(--stripe-color-1)  4px,
+        var(--stripe-color-2) calc(4px * 1.8)
+    );
+}
+
+.ro-products-2 {
+    background: repeating-linear-gradient(
+        88deg,
+        transparent 0px,
+        transparent 22px,
+        var(--stripe-color-1)  22px,
+        var(--stripe-color-2) calc(22px * 2)
+    );
+} 

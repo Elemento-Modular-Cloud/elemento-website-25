@@ -1,0 +1,71 @@
+/* ============================================================================ */
+/* CONTACT PAGE GRADIENTS                                                     */
+/* ============================================================================ */
+
+.gradient-contact {
+    background: conic-gradient(
+        from 315deg,
+        rgba(0, 180, 255, 1.0),
+        transparent,
+        rgba(0, 200, 220, 1.0),
+        transparent,
+        rgba(0, 200, 140, 1.0),
+        transparent,
+        rgba(0, 160, 120, 1.0),
+        transparent,
+        rgba(0, 180, 255, 1.0),
+        transparent
+    );
+    clip-path: circle(43% at 50% 50%);
+    border-radius: 50%;
+}
+
+.radial-contact {
+    background: radial-gradient(circle at 45% 10%, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), rgba(0, 200, 140, 1.0), transparent);
+    clip-path: ellipse(80% 80% at 50% 20%);
+}
+
+.linear-contact {
+    background: linear-gradient(300deg, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), transparent, rgba(0, 200, 140, 1.0), transparent);
+    clip-path: polygon(35% 5%, 90% 18%, 88% 72%, 65% 92%, 10% 85%, 12% 28%);
+}
+
+@keyframes contact-polygon-talk {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    33% { transform: translateX(-1%) translateY(2%) rotate(-1deg) scale(1.02); }
+    66% { transform: translateX(2%) translateY(-1%) rotate(1deg) scale(0.98); }
+}
+
+.polygon-contact-1 {
+    background: linear-gradient(75deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 25% 100%, 0% 75%);
+    opacity: 0.7;
+    animation: contact-polygon-talk 22s ease-in-out infinite;
+}
+
+.polygon-contact-2 {
+    background: radial-gradient(ellipse, var(--accent-color), transparent);
+    clip-path: polygon(10% 10%, 90% 0%, 100% 90%, 50% 100%, 0% 50%);
+    opacity: 0.5;
+    animation: contact-polygon-talk 26s ease-in-out infinite reverse;
+}
+
+.ro-contact-1 {
+    background: repeating-linear-gradient(
+        170deg,
+        transparent 0px,
+        transparent 28px,
+        var(--stripe-color-1)  28px,
+        var(--stripe-color-2) calc(28px * 2.1)
+    );
+}
+
+.ro-contact-2 {
+    background: repeating-linear-gradient(
+        175deg,
+        transparent 0px,
+        transparent 5px,
+        var(--stripe-color-1)  5px,
+        var(--stripe-color-2) calc(5px * 1.9)
+    );
+} 

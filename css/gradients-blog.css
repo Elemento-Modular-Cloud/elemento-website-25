@@ -1,0 +1,72 @@
+/* ============================================================================ */
+/* BLOG PAGE GRADIENTS                                                        */
+/* ============================================================================ */
+
+.gradient-blog {
+    background: conic-gradient(
+        from 30deg,
+        rgba(230, 60, 255, 1.0),
+        transparent,
+        rgba(200, 30, 220, 1.0),
+        transparent,
+        rgba(180, 20, 190, 1.0),
+        transparent,
+        rgba(200, 20, 100, 1.0),
+        transparent,
+        rgba(230, 60, 255, 1.0),
+        transparent
+    );
+    clip-path: circle(46% at 50% 50%);
+    border-radius: 50%;
+}
+
+.radial-blog {
+    background: radial-gradient(ellipse at 10% 90%, rgba(230, 60, 255, 1.0), rgba(200, 30, 220, 1.0), transparent, rgba(200, 20, 100, 1.0), transparent);
+    clip-path: ellipse(70% 95% at 15% 85%);
+}
+
+.linear-blog {
+    background: linear-gradient(240deg, rgba(230, 60, 255, 1.0), transparent, rgba(200, 30, 220, 1.0), transparent, rgba(180, 20, 190, 1.0), transparent);
+    clip-path: polygon(26% 12%, 84% 8%, 95% 58%, 88% 88%, 16% 92%, 5% 42%);
+}
+
+@keyframes blog-polygon-page {
+    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateX(1%) translateY(-1%) rotate(0.5deg) scale(1.01); }
+    50% { transform: translateX(-1%) translateY(1%) rotate(-0.5deg) scale(0.99); }
+    75% { transform: translateX(0.5%) translateY(0.5%) rotate(0.3deg) scale(1.005); }
+}
+
+.polygon-blog-1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    clip-path: polygon(0% 0%, 95% 0%, 100% 10%, 100% 100%, 5% 100%, 0% 90%);
+    opacity: 0.7;
+    animation: blog-polygon-page 28s ease-in-out infinite;
+}
+
+.polygon-blog-2 {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%);
+    opacity: 0.5;
+    animation: blog-polygon-page 32s ease-in-out infinite reverse;
+}
+
+.ro-blog-1 {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 36px,
+        var(--stripe-color-1)  36px,
+        var(--stripe-color-2) calc(36px * 1.6)
+    );
+}
+
+.ro-blog-2 {
+    background: repeating-linear-gradient(
+        50deg,
+        transparent 0px,
+        transparent 6px,
+        var(--stripe-color-1)  6px,
+        var(--stripe-color-2) calc(6px * 1.9)
+    );
+} 
