@@ -72,8 +72,19 @@
     --accent-color-dark: var(--yellow-dark);
 
     /* Stripe opacity */
-    --stripe-opacity-1: .1;
-    --stripe-opacity-2: .15;
+    --stripe-opacity-1: .2;
+    --stripe-opacity-2: 1;
+    --stripe-width-1: 12px;
+    --stripe-gap-1: 9px;
+    --stripe-width-2: 12px;
+    --stripe-gap-2: 9px;
+
+    @media (max-width: 1000px) {
+        --stripe-width-1: 10px;
+        --stripe-gap-1: 5px;
+        --stripe-width-2: 10px;
+        --stripe-gap-2: 5px;
+    }
 
     /* Spacing system */
     --space-xs: 0.25rem;

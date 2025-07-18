@@ -57,9 +57,9 @@
     background: repeating-linear-gradient(
         90deg,
         transparent 0px,
-        transparent 4px,
-        var(--stripe-color-1)  4px,
-        var(--stripe-color-2) calc(4px * 1.8)
+        transparent var(--stripe-width-1),
+        var(--stripe-color-1)  var(--stripe-width-1),
+        var(--stripe-color-2) calc(var(--stripe-width-1) * 1.8)
     );
 }
 
@@ -67,8 +67,8 @@
     background: repeating-linear-gradient(
         88deg,
         transparent 0px,
-        transparent 22px,
-        var(--stripe-color-1)  22px,
-        var(--stripe-color-2) calc(22px * 2)
+        transparent var(--stripe-width-2),
+        var(--stripe-color-1)  var(--stripe-width-2),
+        var(--stripe-color-2) calc(var(--stripe-width-2) * 2)
     );
 } 

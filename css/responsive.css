@@ -35,7 +35,7 @@
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     :root {
         --container-padding: 1.5rem;
         --section-padding: 3rem 0;

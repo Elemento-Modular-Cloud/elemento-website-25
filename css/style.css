@@ -235,7 +235,6 @@ body {
 }
 
 .theme-toggle:hover {
-    background: var(--glassmorphism-background);
     transform: scale(1.1);
 }
 
@@ -1060,7 +1059,7 @@ body {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -1473,7 +1472,7 @@ body {
 }
 
 /* Blog responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .blog-post {
         padding: var(--space-xl);
         margin-top: var(--space-2xl);

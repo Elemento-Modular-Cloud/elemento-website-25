@@ -216,6 +216,29 @@
 /* BASE GRADIENT SYSTEM CLASSES                                               */
 /* ============================================================================ */
 
+
+.blur-placer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+    transform: translateX(17%);
+}
+
+@media (max-width: 1000px) {
+    .blur-placer {
+        top: 50%;
+        left: -9%;
+        width: 120%;
+        height: 50%;
+        padding-top: 50%;
+        transform: none;
+    }
+}
+
 /* Legacy gradient classes */
 .background-blur {
     filter: blur(100px);
@@ -231,9 +254,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
-    min-width: 1000px;
-    height: 100vh;
+    width: 10vw;
+    /* min-width: 1000px; */
+    height: 10vw;
     transform: translate(-50%, -50%) scale(0.7);
     overflow: hidden;
     z-index: 2;
@@ -243,8 +266,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
-    height: 100vw;
+    width: 30vw;
+    height: 30vw;
     transform: translate(-50%, -50%);
     animation: spin 13s linear infinite;
     background: var(--spinning-gradient);
@@ -253,12 +276,11 @@
 
 /* Hero gradient system - base classes */
 .hero-blur {
-    filter: blur(0px);
-    position: absolute;
-    top: 50%;
-    right: 35%;
-    transform: translateY(-60%);
-    animation: blur-breathe 7s ease-in-out infinite;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* animation: blur-breathe 7s ease-in-out infinite; */
+    filter: blur(100px);
     will-change: filter;
 }
 
@@ -266,71 +288,93 @@
     position: absolute;
     top: 50%;
     left: 0%;
-    width: 60vw;
-    height: 50vh;
+    width: 50vmin;
+    height: 50vmin;
     overflow: hidden;
     animation: circular-orbit 15s linear infinite;
     will-change: transform, clip-path;
-    clip-path: circle(45% at 50% 50%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     border-radius: 50%;
 }
 
 .mask-alt {
     animation: circular-orbit-alt 18s linear infinite;
-    clip-path: circle(42% at 50% 50%);
+    clip-path: polygon(50% 5%, 63% 38%, 95% 38%, 69% 59%, 82% 91%, 50% 72%, 18% 91%, 31% 59%, 5% 38%, 37% 38%);
     border-radius: 50%;
 }
 
 .mask-slow {
     animation: circular-orbit-slow 25s linear infinite;
-    clip-path: circle(38% at 50% 50%);
+    clip-path: polygon(50% 8%, 65% 40%, 92% 40%, 71% 60%, 85% 88%, 50% 75%, 15% 88%, 29% 60%, 8% 40%, 35% 40%);
     border-radius: 50%;
 }
 
 .hero-spinning-gradient {
     position: absolute;
-    top: 40%;
-    left: 35%;
-    width: 50vw;
-    min-width: 800px;
-    height: 60vh;
-    transform: translate(-30%, -30%);
+    top: 50%;
+    left: 50%;
+    width: 49vmin;
+    height: 50vmin;
+    transform: translate(-50%, -53%);
     animation: gradient-orbit-clockwise 23s linear infinite;
+    transform-origin: 45% 55%;
     opacity: 0.9;
     will-change: transform;
     border-radius: 50%;
-    clip-path: circle(40% at 50% 50%);
+    clip-path: polygon(50% 3%, 64% 36%, 96% 36%, 72% 58%, 84% 93%, 50% 73%, 16% -3%, 28% 58%, 4% 36%, 36% 36%);
 }
 
 .hero-radial-gradient {
     position: absolute;
-    top: 40%;
-    left: 0%;
-    width: 50vw;
-    min-width: 800px;
-    height: 60vh;
-    transform: translate(-30%, -30%);
+    top: 50%;
+    left: 50%;
+    width: 45vmin;
+    height: 60vmin;
+    transform: translate(-55%, -42%);
     animation: gradient-orbit-counter 25s linear infinite;
+    transform-origin: 48% 60%;
     opacity: 0.7;
     will-change: transform;
     border-radius: 50%;
-    clip-path: circle(35% at 50% 50%);
+    clip-path: polygon(50% 10%, 66% 42%, 90% 42%, 73% 62%, 83% 86%, 50% 78%, 17% 86%, 27% 62%, 10% 42%, 34% 42%);
+    mix-blend-mode: darken;
 }
 
 .hero-linear-gradient {
     position: absolute;
-    top: 40%;
-    left: -25%;
-    width: 50vw;
-    min-width: 800px;
-    height: 60vh;
-    transform: translate(-30%, -30%);
+    top: 50%;
+    left: 57%;
+    width: 37vmin;
+    height: 65vmin;
+    transform: translate(-50%, -50%);
     animation: gradient-orbit-slow 30s linear infinite;
     opacity: 0.6;
     will-change: transform;
     border-radius: 50%;
-    clip-path: circle(30% at 50% 50%);
+    clip-path: polygon(50% 15%, 68% 45%, 88% 45%, 75% 65%, 80% 83%, 50% 80%, 20% 83%, 25% 65%, 12% 45%, 32% 45%);
 }
+
+@media (max-width: 1000px) {
+    .hero-spinning-gradient {
+        top: 40%;
+        left: 35%;
+        width: 50vh;
+        height: 50vh;
+        transform: scale(0.5);
+    }
+    .hero-radial-gradient {
+        width: 50vh;
+        height: 50vh;
+        transform: scale(0.5);
+    }
+    .hero-linear-gradient {
+        width: 50vh;
+        height: 50vh;
+        transform: scale(0.5);
+    }
+}
+
+
 
 /* Base polygon clipping mask */
 .hero-polygon-mask {
@@ -340,7 +384,6 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 3;
 }
 
 /* Base rectangle overlay styles */
@@ -353,25 +396,30 @@
     width: 300%;
     height: 300%;
     pointer-events: none;
-    z-index: 5;
-    transform-origin: center center;
 }
 
+.rectangle-overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.rectangle-overlay-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, var(--background-color), transparent);
+    z-index: 10;
+}
 /* ============================================================================ */
 /* RESPONSIVE ADJUSTMENTS                                                     */
 /* ============================================================================ */
-
-@media (max-width: 768px) {
-    .hero-polygon-mask {
-        opacity: 0.7;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-polygon-mask {
-        opacity: 0.7;
-    }
-}
 
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
