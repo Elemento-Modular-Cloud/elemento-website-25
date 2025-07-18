@@ -55,9 +55,6 @@ function toggleTheme() {
     // Save theme preference
     localStorage.setItem('elemento-theme', newTheme);
     localStorage.setItem('elemento-theme-index', currentThemeIndex.toString());
-    
-    // Show theme change notification
-    showThemeNotification(newTheme);
 }
 
 // Update theme icon
@@ -75,51 +72,7 @@ function getThemeName(index) {
     return names[index];
 }
 
-// Show theme change notification
-function showThemeNotification(theme) {
-    const themeName = getThemeName(currentThemeIndex);
-    const message = `Switched to ${themeName} theme`;
-    
-    // Use existing toast system if available
-    if (window.ElementoWebsite && window.ElementoWebsite.showToast) {
-        window.ElementoWebsite.showToast(message, 'info', 2000);
-    } else {
-        // Fallback notification
-        const notification = document.createElement('div');
-        notification.style.cssText = `
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background: var(--card-bg-color);
-            color: var(--text-color);
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: var(--shadow-medium);
-            border: 1px solid var(--glassmorphism-border);
-            backdrop-filter: blur(20px);
-            z-index: 1000;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        `;
-        notification.innerHTML = message; // Use innerHTML for SVG
-        document.body.appendChild(notification);
-        
-        // Show notification
-        setTimeout(() => {
-            notification.style.transform = 'translateX(0)';
-        }, 100);
-        
-        // Hide notification
-        setTimeout(() => {
-            notification.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.parentNode.removeChild(notification);
-                }
-            }, 300);
-        }, 2000);
-    }
-}
+// Theme change notifications have been removed per user request
 
 // Load saved theme
 function loadSavedTheme() {

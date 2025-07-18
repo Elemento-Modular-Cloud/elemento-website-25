@@ -18,7 +18,7 @@ class ElementoWebsite {
         this.setupScrollEffects();
         this.setupAnimations();
         this.setupForms();
-        this.setupMobileMenu();
+        // Mobile menu is handled by navbar.js
         this.setupKeyboardShortcuts();
         this.setupPerformanceOptimizations();
         this.setupAccessibility();
@@ -53,9 +53,6 @@ class ElementoWebsite {
         
         // Update background canvas
         // this.updateBackgroundCanvas();
-        
-        // Show theme change notification
-        this.showToast(`Switched to ${this.currentTheme} theme`, 'info');
     }
 
     updateThemeIcon() {
@@ -297,33 +294,7 @@ class ElementoWebsite {
         return emailRegex.test(email);
     }
 
-    setupMobileMenu() {
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        if (mobileMenuBtn && navMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
 
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!mobileMenuBtn.contains(e.target) && !navMenu.contains(e.target)) {
-                    mobileMenuBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            });
-
-            // Close menu when clicking on a link
-            navMenu.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-        }
-    }
 
     setupKeyboardShortcuts() {
         document.addEventListener('keydown', (e) => {
@@ -333,15 +304,7 @@ class ElementoWebsite {
                 this.toggleTheme();
             }
             
-            // Escape to close mobile menu
-            if (e.key === 'Escape') {
-                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-                const navMenu = document.querySelector('.nav-menu');
-                if (mobileMenuBtn && navMenu) {
-                    mobileMenuBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            }
+            // Escape key handling is managed by navbar.js for mobile menu
         });
     }
 
