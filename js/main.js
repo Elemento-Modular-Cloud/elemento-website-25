@@ -186,7 +186,7 @@ class ElementoWebsite {
         const productIcon = document.querySelector('.hero-product-icon');
         const heroBlur = document.querySelector('.hero-blur');
         
-        if (!productIcon || !heroBlur) return;
+        if (!heroBlur) return; // Only require heroBlur to exist
         
         // Calculate fade progress based on scroll position
         // Start fading when scroll reaches 20% of viewport height
@@ -194,8 +194,10 @@ class ElementoWebsite {
         const fadeEnd = windowHeight * 1;
         const scrollProgress = Math.max(0, Math.min(1, (scrollY - fadeStart) / (fadeEnd - fadeStart)));
         
-        // Product icon: fade to completely transparent
-        productIcon.style.transform = `translate(-50%, calc(-50% - ${scrollY}px * .9))`;
+        // Product icon: fade to completely transparent (if it exists)
+        if (productIcon) {
+            productIcon.style.transform = `translate(-50%, calc(-50% - ${scrollY}px * .9))`;
+        }
         
         // Background blob: fade to more subtle (reduce blur and opacity)
         const blurOpacity = Math.max(0.3, 1 - (scrollProgress * 0.7)); // Keep some opacity
