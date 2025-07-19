@@ -146,7 +146,10 @@ class ElementoWebsite {
             const documentHeight = document.documentElement.scrollHeight;
             const scrollProgress = scrollY / (documentHeight - windowHeight);
             
-
+            // Mobile scroll effects for product icon and background blob
+            if (window.innerWidth <= 1000) {
+                this.updateMobileScrollEffects(scrollY, windowHeight);
+            }
             
             ticking = false;
         };
@@ -176,6 +179,28 @@ class ElementoWebsite {
         document.querySelectorAll('.scroll-animate').forEach(el => {
             observer.observe(el);
         });
+    }
+
+    updateMobileScrollEffects(scrollY, windowHeight) {
+        // Get the hero product icon and background blur elements
+        const productIcon = document.querySelector('.hero-product-icon');
+        const heroBlur = document.querySelector('.hero-blur');
+        
+        if (!productIcon || !heroBlur) return;
+        
+        // Calculate fade progress based on scroll position
+        // Start fading when scroll reaches 20% of viewport height
+        const fadeStart = windowHeight * 0;
+        const fadeEnd = windowHeight * 1;
+        const scrollProgress = Math.max(0, Math.min(1, (scrollY - fadeStart) / (fadeEnd - fadeStart)));
+        
+        // Product icon: fade to completely transparent
+        productIcon.style.transform = `translate(-50%, calc(-50% - ${scrollY}px * .9))`;
+        
+        // Background blob: fade to more subtle (reduce blur and opacity)
+        const blurOpacity = Math.max(0.3, 1 - (scrollProgress * 0.7)); // Keep some opacity
+        
+        heroBlur.style.opacity = blurOpacity;
     }
 
     setupAnimations() {
