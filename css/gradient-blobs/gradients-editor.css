@@ -16,18 +16,18 @@
         rgba(120, 180, 255, 1.0),
         transparent
     );
-    clip-path: circle(47% at 50% 50%);
+    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
     border-radius: 50%;
 }
 
 .radial-editor {
     background: radial-gradient(circle at 80% 30%, rgba(120, 180, 255, 1.0), transparent, rgba(150, 200, 255, 1.0), rgba(100, 160, 220, 1.0), transparent);
-    clip-path: ellipse(85% 75% at 75% 40%);
+    clip-path: polygon(75% 40%, 80% 35%, 85% 30%, 88% 25%, 90% 20%, 92% 15%, 94% 10%, 92% 5%, 88% 8%, 82% 12%, 78% 18%, 75% 25%, 72% 30%, 70% 35%, 68% 40%, 70% 45%, 72% 50%, 75% 55%, 78% 60%, 82% 65%, 88% 70%, 92% 75%, 94% 80%, 92% 85%, 88% 80%, 82% 75%, 78% 70%, 75% 65%, 72% 60%, 70% 55%, 68% 50%, 70% 45%, 75% 40%);
 }
 
 .linear-editor {
     background: linear-gradient(90deg, rgba(120, 180, 255, 1.0), transparent, rgba(150, 200, 255, 1.0), transparent, rgba(180, 220, 255, 1.0), transparent);
-    clip-path: polygon(32% 10%, 86% 6%, 93% 65%, 80% 90%, 20% 95%, 7% 38%);
+    clip-path: polygon(32% 10%, 42% 8%, 52% 6%, 62% 5%, 72% 6%, 82% 8%, 88% 12%, 92% 18%, 93% 25%, 92% 35%, 88% 45%, 82% 55%, 75% 65%, 65% 70%, 55% 75%, 45% 78%, 35% 80%, 25% 78%, 18% 70%, 15% 60%, 18% 50%, 22% 40%, 28% 30%, 32% 20%, 35% 15%, 32% 10%);
 }
 
 @keyframes editor-polygon-tool {
@@ -39,14 +39,14 @@
 
 .polygon-editor-1 {
     background: linear-gradient(75deg, var(--primary-color), var(--accent-color));
-    clip-path: polygon(0% 10%, 90% 0%, 100% 90%, 10% 100%);
+    clip-path: polygon(0% 10%, 10% 8%, 20% 6%, 30% 5%, 40% 6%, 50% 8%, 60% 10%, 70% 12%, 80% 15%, 90% 18%, 95% 25%, 100% 35%, 95% 45%, 90% 55%, 85% 65%, 80% 75%, 75% 85%, 70% 90%, 60% 95%, 50% 100%, 40% 95%, 30% 90%, 20% 85%, 10% 80%, 5% 70%, 0% 60%, 5% 50%, 10% 40%, 15% 30%, 20% 20%, 0% 10%);
     opacity: 0.7;
     animation: editor-polygon-tool 24s ease-in-out infinite;
 }
 
 .polygon-editor-2 {
     background: linear-gradient(165deg, var(--accent-color), var(--primary-color));
-    clip-path: polygon(15% 0%, 100% 15%, 85% 100%, 0% 85%);
+    clip-path: polygon(15% 0%, 25% 5%, 35% 8%, 45% 10%, 55% 12%, 65% 15%, 75% 18%, 85% 20%, 95% 22%, 100% 30%, 95% 40%, 90% 50%, 85% 60%, 80% 70%, 75% 80%, 70% 85%, 60% 90%, 50% 95%, 40% 90%, 30% 85%, 20% 80%, 15% 70%, 10% 60%, 5% 50%, 0% 40%, 5% 30%, 10% 20%, 15% 0%);
     opacity: 0.5;
     animation: editor-polygon-tool 30s ease-in-out infinite reverse;
 }

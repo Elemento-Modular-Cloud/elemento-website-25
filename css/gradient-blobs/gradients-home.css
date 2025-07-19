@@ -14,18 +14,18 @@
         rgb(242, 149, 0),   /* Saturated Pink-Red */
         rgba(255, 140, 0, 1.0)     /* Back to Saturated Orange */
     );
-    clip-path: circle(50% at 50% 50%);
+    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
     border-radius: 50%;
 }
 
 .radial-home {
     background: radial-gradient(ellipse at 30% 70%, rgba(0, 150, 255, 1.0), rgba(0, 100, 255, 1.0), transparent, rgb(141, 20, 255), rgb(246, 22, 6), transparent, rgba(255, 140, 0, 1.0), rgba(255, 160, 0, 1.0), transparent);
-    clip-path: ellipse(70% 85% at 40% 60%);
+    clip-path: polygon(40% 60%, 45% 55%, 55% 50%, 65% 48%, 75% 50%, 85% 55%, 90% 65%, 85% 75%, 75% 80%, 65% 82%, 55% 80%, 45% 75%, 40% 65%, 40% 60%);
 }
 
 .linear-home {
     background: linear-gradient(45deg, rgba(0, 150, 255, 1.0), transparent, rgba(0, 100, 255, 1.0), transparent, rgba(255, 20, 60, 1.0), transparent, rgba(255, 60, 100, 1.0), transparent, rgba(255, 140, 0, 1.0), transparent, rgba(255, 160, 0, 1.0));
-    clip-path: polygon(20% 15%, 80% 5%, 95% 60%, 85% 90%, 15% 85%, 5% 40%);
+    clip-path: polygon(20% 15%, 30% 12%, 45% 10%, 60% 8%, 75% 10%, 85% 15%, 92% 25%, 95% 40%, 92% 55%, 85% 65%, 75% 70%, 60% 72%, 45% 70%, 30% 65%, 20% 55%, 15% 40%, 18% 25%, 20% 15%);
 }
 
 /* Polygon masks and animations */
@@ -37,14 +37,14 @@
 
 .polygon-home-1 {
     background: linear-gradient(45deg, rgba(0, 150, 255, 1.0), transparent, rgba(0, 100, 255, 1.0), transparent, rgba(255, 20, 60, 1.0));
-    clip-path: polygon(20% 0%, 80% 10%, 100% 60%, 75% 100%, 0% 90%);
+    clip-path: polygon(20% 0%, 30% 5%, 45% 8%, 60% 10%, 75% 8%, 85% 5%, 95% 10%, 100% 25%, 95% 45%, 85% 60%, 75% 70%, 60% 75%, 45% 70%, 30% 60%, 20% 45%, 15% 25%, 20% 0%);
     opacity: 0.7;
     animation: home-polygon-drift 20s ease-in-out infinite;
 }
 
 .polygon-home-2 {
     background: linear-gradient(135deg, rgba(255, 60, 100, 1.0), transparent, rgba(255, 20, 60, 1.0), transparent, rgba(255, 140, 0, 1.0));
-    clip-path: polygon(0% 20%, 60% 0%, 100% 40%, 80% 100%, 10% 80%);
+    clip-path: polygon(0% 20%, 10% 15%, 25% 12%, 40% 10%, 55% 12%, 70% 15%, 85% 20%, 95% 30%, 90% 45%, 80% 60%, 65% 70%, 50% 75%, 35% 70%, 20% 60%, 10% 45%, 5% 30%, 0% 20%);
     opacity: 0.5;
     animation: home-polygon-drift 25s ease-in-out infinite reverse;
 }
@@ -52,7 +52,7 @@
 /* Rectangle overlays */
 .ro-home-1 {
     background: repeating-linear-gradient(
-        -17deg,
+        -82deg,
         transparent 0px,
         transparent var(--stripe-width-1),
         var(--stripe-color-1)  var(--stripe-width-1),
@@ -62,7 +62,7 @@
 
 .ro-home-2 {
     background: repeating-linear-gradient(
-        -19.6deg,
+        -90deg,
         transparent 0px,
         transparent var(--stripe-width-2),
         var(--stripe-color-1)  var(--stripe-width-2),

@@ -16,18 +16,18 @@
         rgba(230, 60, 255, 1.0),
         transparent
     );
-    clip-path: circle(46% at 50% 50%);
+    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
     border-radius: 50%;
 }
 
 .radial-blog {
     background: radial-gradient(ellipse at 10% 90%, rgba(230, 60, 255, 1.0), rgba(200, 30, 220, 1.0), transparent, rgba(200, 20, 100, 1.0), transparent);
-    clip-path: ellipse(70% 95% at 15% 85%);
+    clip-path: polygon(15% 85%, 20% 80%, 25% 75%, 30% 70%, 35% 65%, 40% 60%, 45% 55%, 50% 50%, 55% 55%, 60% 60%, 65% 65%, 70% 70%, 75% 75%, 80% 80%, 85% 85%, 80% 90%, 75% 92%, 70% 90%, 65% 88%, 60% 85%, 55% 82%, 50% 80%, 45% 82%, 40% 85%, 35% 88%, 30% 90%, 25% 92%, 20% 90%, 15% 85%);
 }
 
 .linear-blog {
     background: linear-gradient(240deg, rgba(230, 60, 255, 1.0), transparent, rgba(200, 30, 220, 1.0), transparent, rgba(180, 20, 190, 1.0), transparent);
-    clip-path: polygon(26% 12%, 84% 8%, 95% 58%, 88% 88%, 16% 92%, 5% 42%);
+    clip-path: polygon(26% 12%, 35% 10%, 45% 8%, 55% 6%, 65% 8%, 75% 10%, 85% 12%, 92% 18%, 95% 25%, 92% 35%, 88% 45%, 82% 55%, 75% 65%, 65% 70%, 55% 75%, 45% 78%, 35% 80%, 25% 78%, 18% 70%, 15% 60%, 18% 50%, 22% 40%, 26% 30%, 30% 20%, 26% 12%);
 }
 
 @keyframes blog-polygon-page {
@@ -39,14 +39,14 @@
 
 .polygon-blog-1 {
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-    clip-path: polygon(0% 0%, 95% 0%, 100% 10%, 100% 100%, 5% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 10% 5%, 20% 8%, 30% 10%, 40% 12%, 50% 15%, 60% 12%, 70% 10%, 80% 8%, 90% 5%, 95% 10%, 100% 15%, 95% 25%, 90% 35%, 85% 45%, 80% 55%, 75% 65%, 70% 75%, 65% 85%, 60% 90%, 50% 95%, 40% 90%, 30% 85%, 20% 75%, 10% 65%, 5% 55%, 0% 45%, 5% 35%, 10% 25%, 15% 15%, 0% 0%);
     opacity: 0.7;
     animation: blog-polygon-page 28s ease-in-out infinite;
 }
 
 .polygon-blog-2 {
     background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-    clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%);
+    clip-path: polygon(5% 5%, 15% 8%, 25% 12%, 35% 15%, 45% 18%, 55% 20%, 65% 22%, 75% 25%, 85% 28%, 95% 30%, 100% 35%, 95% 45%, 90% 55%, 85% 65%, 80% 75%, 75% 85%, 70% 90%, 60% 95%, 50% 100%, 40% 95%, 30% 90%, 25% 85%, 20% 75%, 15% 65%, 10% 55%, 5% 45%, 0% 35%, 5% 5%);
     opacity: 0.5;
     animation: blog-polygon-page 32s ease-in-out infinite reverse;
 }
