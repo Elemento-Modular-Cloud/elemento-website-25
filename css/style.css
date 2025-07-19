@@ -5,7 +5,7 @@
 @import url('./themes.css');
 
 /* Import gradient blobs base (shared animations and classes) */
-@import url('./gradient-blobs-base.css');
+@import url('./gradient-blobs/gradient-blobs-base.css');
 
 /* Local Font Imports */
 @font-face {
