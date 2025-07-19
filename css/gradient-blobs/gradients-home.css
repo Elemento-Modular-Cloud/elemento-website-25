@@ -52,7 +52,7 @@
 /* Rectangle overlays */
 .ro-home-1 {
     background: repeating-linear-gradient(
-        15deg,
+        -17deg,
         transparent 0px,
         transparent var(--stripe-width-1),
         var(--stripe-color-1)  var(--stripe-width-1),
@@ -62,10 +62,10 @@
 
 .ro-home-2 {
     background: repeating-linear-gradient(
-        -15deg,
+        -19.6deg,
         transparent 0px,
         transparent var(--stripe-width-2),
         var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2))
+        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*1.7)
     );
-} 
+}

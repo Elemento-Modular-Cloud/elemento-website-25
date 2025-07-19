@@ -110,10 +110,16 @@ body {
     z-index: 10;
 }
 
+@media (max-width: 1000px) {
+    .container {
+        margin-top: 50%;
+    }
+}
+
 .section {
     padding: var(--space-4xl) 0;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .section-header {
@@ -476,14 +482,41 @@ body {
 
 /* Hero product icons */
 .hero-product-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 32%;
+    height: 32%;
     display: block;
     position: absolute;
-    top: 2.5rem;
-    right: 0;
-    margin: auto;
-    transform: translate(50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #000000;
+    -webkit-mask: var(--icon-mask-url) no-repeat center / contain;
+    mask: var(--icon-mask-url) no-repeat center / contain;
+    mix-blend-mode: hard-light;
+}
+
+@media (max-width: 1000px) {
+    .hero-product-icon {
+        width: 25%;
+        height: 25%;
+        top: 35%;
+    }
+}
+
+.hero-product-icon.atomos {
+    background-color: var(--atomos-color);
+    --icon-mask-url: url('/assets/logos/Atomos.svg');
+}
+
+.hero-product-icon.electros {
+    background-color: var(--electros-color);
+    --icon-mask-url: url('/assets/logos/Electros.svg');
+}
+
+.hero-product-icon.cloud-net {
+    background-color: var(--cloud-net-color);
+    --icon-mask-url: url('/assets/logos/Cloud Network.svg');
 }
 
 /* Hero title group - keeps icon and title together */
@@ -813,7 +846,7 @@ body {
 
 /* Features section */
 .features {
-    background: var(--background-color);
+    /* background: var(--background-color); */
 }
 
 .feature-icon {
@@ -860,6 +893,7 @@ body {
     border-top: 1px solid var(--glassmorphism-border);
     padding: var(--space-4xl) 0 var(--space-2xl);
     margin-top: var(--space-4xl);
+    z-index: 1100;
 }
 
 .footer-content {
@@ -867,6 +901,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-2xl);
     margin-bottom: var(--space-2xl);
+    z-index: 1100;
 }
 
 .footer-section h4 {

@@ -52,20 +52,20 @@
 
 .ro-about-1 {
     background: repeating-linear-gradient(
-        70deg,
+        69deg,
         transparent 0px,
         transparent var(--stripe-width-1),
         var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 2)
+        var(--stripe-color-2) calc(var(--stripe-gap-1) + var(--stripe-width-1)*2)
     );
 }
 
 .ro-about-2 {
     background: repeating-linear-gradient(
-        190deg,
+        74deg,
         transparent 0px,
         transparent var(--stripe-width-2),
         var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 2)
+        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*1.1)
     );
-} 
+}

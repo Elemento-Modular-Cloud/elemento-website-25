@@ -230,10 +230,11 @@
 
 @media (max-width: 1000px) {
     .blur-placer {
-        top: 50%;
+        position: fixed;
+        top: 0%;
         left: -9%;
         width: 120%;
-        height: 50%;
+        height: 100%;
         padding-top: 50%;
         transform: none;
     }

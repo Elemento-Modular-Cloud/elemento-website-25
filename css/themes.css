@@ -70,10 +70,13 @@
     --accent-color-light: var(--yellow-light);
     --accent-color: var(--yellow);
     --accent-color-dark: var(--yellow-dark);
+    --electros-color: #ffa600;
+    --atomos-color: #007bff;
+    --cloud-net-color: #DC3545;
 
     /* Stripe opacity */
-    --stripe-opacity-1: .2;
-    --stripe-opacity-2: 1;
+    --stripe-opacity-1: 0;
+    --stripe-opacity-2: .5;
     --stripe-width-1: 12px;
     --stripe-gap-1: 9px;
     --stripe-width-2: 12px;
