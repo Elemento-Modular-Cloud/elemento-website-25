@@ -11,6 +11,12 @@ class Navbar {
         return filename;
     }
 
+    // Add method to check if current page is a product page
+    isProductPage() {
+        const productPages = ['atomos.html', 'electros.html', 'cloud-network.html', 'products.html'];
+        return productPages.includes(this.currentPage);
+    }
+
     getBasePath() {
         const path = window.location.pathname;
         const pathParts = path.split('/').filter(part => part !== '');
@@ -113,6 +119,19 @@ class Navbar {
         this.initMobileMenu();
         // Initialize theme toggle functionality
         this.initThemeToggle();
+        
+        // Show dropdown menu if on a product page
+        this.showProductDropdown();
+    }
+
+    // Add method to show dropdown menu on product pages
+    showProductDropdown() {
+        if (this.isProductPage()) {
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            if (dropdownMenu) {
+                dropdownMenu.classList.add('show');
+            }
+        }
     }
 
     initDropdowns() {
@@ -131,7 +150,7 @@ class Navbar {
                 });
                 
                 dropdown.addEventListener('mouseleave', () => {
-                    if (window.innerWidth > 768) {
+                    if (window.innerWidth > 768 && !this.isProductPage()) {
                         dropdownMenu.classList.remove('show');
                     }
                 });
