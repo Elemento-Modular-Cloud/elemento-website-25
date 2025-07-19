@@ -506,17 +506,17 @@ body {
 
 .hero-product-icon.atomos {
     background-color: var(--atomos-color);
-    --icon-mask-url: url('/assets/logos/Atomos.svg');
+    --icon-mask-url: url('../assets/logos/Atomos.svg');
 }
 
 .hero-product-icon.electros {
     background-color: var(--electros-color);
-    --icon-mask-url: url('/assets/logos/Electros.svg');
+    --icon-mask-url: url('../assets/logos/Electros.svg');
 }
 
 .hero-product-icon.cloud-net {
     background-color: var(--cloud-net-color);
-    --icon-mask-url: url('/assets/logos/Cloud Network.svg');
+    --icon-mask-url: url('../assets/logos/Cloud Network.svg');
 }
 
 /* Hero title group - keeps icon and title together */
