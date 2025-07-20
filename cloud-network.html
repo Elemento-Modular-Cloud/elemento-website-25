@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Network - Elemento Cloud Platform</title>
-    <meta name="description" content="Discover Cloud Network, Elemento's advanced networking platform that provides global connectivity, load balancing, and intelligent traffic management.">
+    <title>Cloud Network (Meson API) — Federated Multicloud Gateway | Elemento</title>
+    <meta name="description" content="Elemento Meson API Gateway connects 235+ clouds and on-prem nodes into one programmable multicloud network. Unified control, seamless portability.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/cloud-network.css">
@@ -47,10 +50,14 @@
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
                     <div class="hero-title-group">
-                        <h1 class="hero-title"><span class="pixel-brand">Cloud Network</span></h1>
+                        <h1 class="hero-title"><span class="pixel-brand">Cloud Network (Meson API)</span> — Connect Any Cloud</h1>
                     </div>
                     <div class="hero-subtitle">
-                        <p><span class="emphasis-pixel">Advanced</span> networking platform providing <span class="emphasis-pixel">global</span> connectivity, <span class="emphasis-pixel">intelligent</span> load balancing, and seamless traffic management.</p>
+                        <p>Universal <span class="emphasis-pixel">API proxy</span> for your Cloud Factory. Connect to any <span class="emphasis-pixel">AWS</span>, <span class="emphasis-pixel">Azure</span>, <span class="emphasis-pixel">GCP</span>, or other CSP through a single unified interface.</p>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#docs" class="btn btn-primary">Read Docs</a>
+                        <a href="/sign-up" class="btn btn-secondary">Become a Provider</a>
                     </div>
                 </div>
             </div>
@@ -58,53 +65,123 @@
     </section>
 
     <!-- Page Header -->
-    <section class="section" style="padding-top: 120px;">
+    <section class="section section-header-padded">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title"><span class="pixel-brand">Cloud Network</span> Platform</h1>
-                <p class="section-subtitle"><span class="pixel-word">Global</span> networking infrastructure with <span class="pixel-word">intelligent</span> traffic management and <span class="pixel-word">multi-cloud</span> connectivity</p>
+                <h2 class="section-title">The <span class="highlight-pixel">Federated Multicloud Gateway</span> for Your Cloud Factory</h2>
             </div>
         </div>
-    </section>
-
-    <!-- Overview Section -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+        <div class="container">            
+            <div class="grid grid-2 grid-centered">
                 <div class="fade-in">
-                    <h2><span class="highlight-pixel">Global</span> Network Infrastructure</h2>
-                    <p><span class="pixel-brand">Cloud Network</span> provides a <span class="pixel-word">unified</span> networking layer that spans <span class="pixel-word">multiple cloud providers</span> and regions. Our <span class="pixel-word">intelligent routing</span> algorithms optimize for <span class="pixel-word">performance</span>, <span class="pixel-word">cost</span>, and <span class="pixel-word">environmental impact</span> while ensuring <span class="pixel-word">high availability</span> and <span class="pixel-word">low latency</span>.</p>
+                    <p>
+                        Elemento's <span class="pixel-brand">Meson API Gateway</span> acts as a <span class="pixel-word">universal proxy</span> that abstracts cloud provider APIs into a <span class="pixel-word">unified protocol</span>, enabling <span class="pixel-word">cross-provider VM management</span>, <span class="pixel-word">pricing comparison</span>, and <span class="pixel-word">seamless migrations</span>.
+                    </p>
+                    <br>
+                    <p>
+                        Instead of learning separate APIs for <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">Google Cloud</span>, and other CSPs, Meson provides <span class="pixel-word">one API to rule them all</span> while you continue using your existing cloud accounts.
+                    </p>
                     
-                    <div style="margin: var(--space-lg) 0;">
-                        <h4>Core Capabilities:</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Global Load Balancing & Traffic Management
+                    <div class="feature-list-container">
+                        <ul class="feature-list">
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                API proxy for AWS, Azure, GCP, and 10+ major CSPs
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Multi-Cloud Network Connectivity
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Maps CSP-specific APIs into a single Elemento API
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Intelligent Traffic Routing
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Real-time cost comparison across providers
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Advanced Security & DDoS Protection
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Use your existing cloud accounts and credentials
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Deep integration with Electros dashboard and CLI
                             </li>
                         </ul>
                     </div>
                     
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    <a href="#docs" class="btn btn-primary">Read Documentation</a>
                 </div>
                 
-                <div class="fade-in">
-                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">🌐</div>
-                        <h3>Global Network</h3>
-                        <p>Unified networking layer spanning multiple cloud providers and regions with intelligent traffic management.</p>
+                <div class="content-image">
+                    <img src="./assets/img/Cloud Network - Hero - 1.webp" alt="Meson API Gateway Architecture" class="hero-detail-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>10+</h3>
+                    <p>CSP Integrations</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>100%</h3>
+                    <p>API Compatibility</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>1</h3>
+                    <p>Unified API</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Real-time</h3>
+                    <p>Cost Comparison</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Diagram Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meson API Proxy Architecture</h2>
+                <p class="section-subtitle">Your Cloud Factory's flow: Electros UI/CLI ⇄ Meson API Proxy ⇄ Your existing AWS/Azure/GCP accounts</p>
+            </div>
+            
+            <div class="fade-in" style="text-align: center;">
+                <div class="card" style="padding: var(--space-3xl); background: var(--bg-secondary);">
+                    <div class="feature-icon" style="margin: 0 auto var(--space-lg); font-size: 4rem;"><i class="fas fa-link" style="color: var(--blue);"></i></div>
+                    <h3>Universal API Proxy Architecture</h3>
+                    <p>Diagram showing your Cloud Factory's Flow: [<span class="pixel-word">Electros UI/CLI</span>] ⇄ [<span class="pixel-word">Meson API Proxy</span>] ⇄ [<span class="pixel-word">Your CSP Accounts</span>]</p>
+                    <div style="margin-top: var(--space-xl); display: flex; gap: var(--space-lg); justify-content: center; flex-wrap: wrap;">
+                        <div style="background: var(--primary-color); color: white; padding: var(--space-sm) var(--space-lg); border-radius: var(--radius-md);">
+                            <strong>Electros</strong><br>
+                            <small>Unified provisioning interface</small>
+                        </div>
+                        <div style="background: var(--accent-color); color: white; padding: var(--space-sm) var(--space-lg); border-radius: var(--radius-md);">
+                            <strong>Meson API Proxy</strong><br>
+                            <small>Translation layer for CSP APIs</small>
+                        </div>
+                        <div style="background: var(--bg-tertiary); color: var(--text-primary); padding: var(--space-sm) var(--space-lg); border-radius: var(--radius-md);">
+                            <strong>Your CSP Accounts</strong><br>
+                            <small>AWS, Azure, GCP, etc.</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,92 +192,209 @@
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">Advanced networking capabilities for modern cloud environments</p>
+                <h2 class="section-title">Meson API Proxy Features</h2>
+                <p class="section-subtitle">Universal API abstraction layer for existing CSP accounts</p>
             </div>
             
-            <div class="grid grid-3">
+            <div class="grid grid-2">
                 <div class="card fade-in">
-                    <div class="card-icon">⚖️</div>
-                    <h3>Global Load Balancing</h3>
-                    <p>Intelligent load balancing across multiple regions and cloud providers with health checks and automatic failover.</p>
+                    <div class="card-icon"><i class="fas fa-exchange-alt" style="color: var(--blue);"></i></div>
+                    <h3>Universal API Abstraction</h3>
+                    <p>Operators learn one API — <span class="pixel-word">Elemento's</span> — while Meson handles the translation to <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">GCP</span>, <span class="pixel-word">on-prem KVM</span>, and more.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon">🛣️</div>
-                    <h3>Smart Traffic Routing</h3>
-                    <p>AI-powered traffic routing that optimizes for latency, cost, and environmental impact in real-time.</p>
+                    <div class="card-icon"><i class="fas fa-dollar-sign" style="color: var(--green);"></i></div>
+                    <h3>Dynamic Cloud-Cost Comparison</h3>
+                    <p><span class="pixel-word">Electros UI</span> surfaces cost-per-VM metrics across your CSP accounts. Meson helps you identify the <span class="pixel-word">best-priced resources</span> across providers in real-time.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon">🔒</div>
-                    <h3>Advanced Security</h3>
-                    <p>Built-in DDoS protection, WAF, SSL/TLS termination, and network security policies for comprehensive protection.</p>
+                    <div class="card-icon"><i class="fas fa-bolt" style="color: var(--orange);"></i></div>
+                    <h3>Provider Agnostic Provisioning</h3>
+                    <p>Launch a VM wherever you choose, all through the same dashboard or script — <span class="pixel-word">cloud-agnostic PaaS provisioning</span>.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon">🌍</div>
-                    <h3>Multi-Cloud Connectivity</h3>
-                    <p>Seamless connectivity between AWS, Azure, Google Cloud, and other providers with unified management.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📊</div>
-                    <h3>Network Analytics</h3>
-                    <p>Comprehensive network monitoring, traffic analysis, and performance insights with custom dashboards.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">⚡</div>
-                    <h3>Edge Computing</h3>
-                    <p>Distributed edge locations for low-latency applications and global content delivery optimization.</p>
+                    <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--purple);"></i></div>
+                    <h3>Expandable CSP Integration</h3>
+                    <p><span class="pixel-word">10+ major CSPs</span> supported today, with ongoing API integrations and <span class="pixel-word">custom provider support</span> for enterprise customers.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Network Architecture Section -->
+    <!-- Provider Integration Status Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Network Architecture</h2>
-                <p class="section-subtitle">How Cloud Network components work together to deliver global connectivity</p>
+                <h2 class="section-title">Provider Integration Status</h2>
+                <p class="section-subtitle">Detailed breakdown of supported functionalities across all integrated CSPs</p>
             </div>
             
-            <div class="grid grid-2">
+            <div class="comparison-table fade-in">
+                <div class="table-container comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr class="comparison-table-header">
+                                <th>Provider</th>
+                                <th>VM Management</th>
+                                <th>Storage</th>
+                                <th>Networking</th>
+                                <th>Cost API</th>
+                                <th>Status</th>
+                                <th>Meson URL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell"><strong>AWS</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://aws.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">aws.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell"><strong>Azure</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://azure.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">azure.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell"><strong>Google Cloud</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://gcp.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">gcp.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell"><strong>DigitalOcean</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://digitalocean.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">digitalocean.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell"><strong>Vultr</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://vultr.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">vultr.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell"><strong>Linode</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://linode.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">linode.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell"><strong>Hetzner Cloud</strong></td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://hetzner.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">hetzner.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell"><strong>OVHcloud</strong></td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><span style="background: var(--red); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Development</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://ovh.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">ovh.meson.elemento.cloud</a></td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell"><strong>Scaleway</strong></td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
+                                <td class="comparison-table-cell-error"><span style="background: var(--red); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Development</span></td>
+                                <td class="comparison-table-cell-success"><a href="https://scaleway.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">scaleway.meson.elemento.cloud</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="grid grid-3" style="margin-top: var(--space-xl);">
                 <div class="card fade-in">
-                    <h3>Global Edge Network</h3>
-                    <p>Distributed edge locations worldwide that provide low-latency access and intelligent traffic routing based on location and performance.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Edge Locations</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">CDN</span>
-                    </div>
+                    <div class="card-icon"><i class="fas fa-check-circle" style="color: var(--green);"></i></div>
+                    <h4>Production Ready</h4>
+                    <p>AWS, Azure, DigitalOcean, Vultr</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>Load Balancer Layer</h3>
-                    <p>Intelligent load balancing with health checks, automatic failover, and traffic distribution across multiple backend services.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Load Balancers</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Health Checks</span>
-                    </div>
+                    <div class="card-icon"><i class="fas fa-clock" style="color: var(--yellow);"></i></div>
+                    <h4>Beta Testing</h4>
+                    <p>Google Cloud, Linode, Hetzner</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>Security Layer</h3>
-                    <p>Comprehensive security features including DDoS protection, WAF, SSL/TLS termination, and network security policies.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">DDoS Protection</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">WAF</span>
+                    <div class="card-icon"><i class="fas fa-tools" style="color: var(--red);"></i></div>
+                    <h4>In Development</h4>
+                    <p>OVHcloud, Scaleway</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Proxy Benefits Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">API Proxy Benefits</h2>
+                <p class="section-subtitle">Unified interface while using your existing CSP accounts</p>
+            </div>
+            
+            <div class="grid grid-2 c4-content">
+                <div class="fade-in">
+                    <p>Meson API proxy <span class="pixel-word">sits between</span> your applications and CSP APIs, providing <span class="emphasis-pixel">unified access</span> while you continue billing directly with your existing cloud providers. No markup, no middleman billing.</p>
+                    
+                    <div class="c4-benefits">
+                        <h4>Proxy Benefits:</h4>
+                        <ul>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Keep your existing CSP accounts and billing
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Real-time cost visibility across all providers
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                No additional fees or markup on resources
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Single API to learn instead of multiple CSP APIs
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <div class="card fade-in">
-                    <h3>Backend Services</h3>
-                    <p>Your applications and services running across multiple cloud providers with unified network access and management.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Applications</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Databases</span>
+                <div class="fade-in">
+                    <div class="card c4-card">
+                        <div class="feature-icon c4-icon"><i class="fas fa-shield-alt" style="color: var(--blue);"></i></div>
+                        <h3>Your Accounts, Your Control</h3>
+                        <p>Meson proxies API calls to your existing CSP accounts. You maintain full control and direct billing relationships.</p>
                     </div>
                 </div>
             </div>
@@ -212,71 +406,74 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Use Cases</h2>
-                <p class="section-subtitle">Perfect for applications requiring global reach and high availability</p>
+                <p class="section-subtitle">Perfect for modern cloud-native and hybrid deployments</p>
             </div>
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon">🌐</div>
-                    <h3>Global Web Applications</h3>
-                    <p>Deploy web applications with global reach, automatic load balancing, and intelligent traffic routing.</p>
+                    <div class="card-icon"><i class="fas fa-rocket" style="color: var(--blue);"></i></div>
+                    <h3>Multi-CSP Management</h3>
+                    <p>Manage VMs across your <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, and <span class="pixel-word">GCP</span> accounts with a single API — no need to learn multiple CSP APIs.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon">📱</div>
-                    <h3>Mobile App Backends</h3>
-                    <p>Provide low-latency access to mobile app backends with global edge locations and intelligent routing.</p>
+                    <div class="card-icon"><i class="fas fa-globe" style="color: var(--green);"></i></div>
+                    <h3>Cross-Provider Cost Optimization</h3>
+                    <p>Compare costs across <span class="pixel-word">multiple CSPs</span> in real-time to choose the most cost-effective option for each workload without vendor lock-in.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon">🎥</div>
-                    <h3>Content Delivery</h3>
-                    <p>Optimize content delivery with global CDN, intelligent caching, and edge computing capabilities.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🏢</div>
-                    <h3>Enterprise Applications</h3>
-                    <p>Connect enterprise applications across multiple cloud providers with unified networking and security.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🤖</div>
-                    <h3>IoT & Edge Computing</h3>
-                    <p>Support IoT applications and edge computing workloads with distributed network infrastructure.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📊</div>
-                    <h3>Data Processing</h3>
-                    <p>Optimize data processing workflows with intelligent traffic routing and multi-cloud connectivity.</p>
+                    <div class="card-icon"><i class="fas fa-code" style="color: var(--purple);"></i></div>
+                    <h3>DevOps & Infrastructure as Code</h3>
+                    <p><span class="pixel-word">Terraform</span> and <span class="pixel-word">DevOps teams</span> can use Meson's unified API for multi-cloud deployments without learning provider-specific syntax.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Performance Metrics Section -->
-    <section class="section stats">
+    <!-- Electros Integration Section -->
+    <section class="section">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <h3>< 10ms</h3>
-                    <p>Average Latency</p>
+            <div class="section-header">
+                <h2 class="section-title">Seamless Electros Integration</h2>
+                <p class="section-subtitle">Unified management across all connected clouds</p>
+            </div>
+            
+            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+                <div class="fade-in">
+                    <p>All <span class="pixel-word">Meson-connected clouds</span> appear in the <span class="pixel-brand">Electros</span> interface and CLI as a <span class="emphasis-pixel">unified provider list</span>. No need to remember multiple credentials or APIs.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Integration Benefits:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Single interface for all cloud providers
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Unified credential management
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Cross-cloud VM migration and management
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Real-time cost monitoring and optimization
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="electros.html" class="btn btn-primary">Learn About Electros</a>
                 </div>
                 
-                <div class="stat-item fade-in">
-                    <h3>99.99%</h3>
-                    <p>Uptime Guarantee</p>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <h3>200+</h3>
-                    <p>Edge Locations</p>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <h3>8+</h3>
-                    <p>Cloud Providers</p>
+                <div class="fade-in">
+                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);"><i class="fas fa-bolt" style="color: var(--orange);"></i></div>
+                        <h3>Unified Control</h3>
+                        <p>Manage VMs across all providers from a single dashboard, CLI, or API interface.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,12 +483,12 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ready to Scale Globally?</h2>
-                <p class="section-subtitle">Experience the power of Cloud Network for global connectivity and intelligent traffic management</p>
+                <h2 class="section-title">Ready to unify your CSP APIs?</h2>
+                <p class="section-subtitle">Experience the power of Meson API Proxy for unified multicloud management</p>
             </div>
             
             <div class="text-center">
-                <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+                <a href="/technology/cloud-network#sign-up" class="btn btn-primary">Get Started with Meson</a>
                 <a href="technology.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Learn More</a>
             </div>
         </div>
