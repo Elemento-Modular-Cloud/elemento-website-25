@@ -99,6 +99,23 @@
     --space-3xl: 4rem;
     --space-4xl: 6rem;
 
+    /* OS Colors */
+    --os-linux: #000;
+    --os-ubuntu: #E95420;
+    --os-fedora: #294172;
+    --os-centos: #932279;
+    --os-debian: #A81D33;
+    --os-redhat: #EE0000;
+    --os-windows: #0078D6;
+    --os-windows-xp: #01A601;
+    --os-windows-10: #00A4EF;
+    --os-windows-11: #0078D7;
+    --os-windows-server-2008: #006cbe;
+    --os-windows-server-2016: #005ca2;
+    --os-windows-server-2019: #014675;
+    --os-windows-server-2022: #002238;
+    --os-macos: #393939;
+
     /* Light theme (Default) */
     --primary-color: var(--accent-color);
     --logo-color: var(--grey-dark);
@@ -223,6 +240,22 @@
 
 /* Dark theme */
 .theme-dark {
+    --os-linux: #FCC624;
+    --os-ubuntu: #E95420;
+    --os-fedora: #51A2DA;
+    --os-centos: #B5258E;
+    --os-debian: #D70A53;
+    --os-redhat: #EE0000;
+    --os-windows: #00ADEF;
+    --os-windows-xp: #2ECC71;
+    --os-windows-10: #0078D7;
+    --os-windows-11: #0067C0;
+    --os-windows-server-2008: #0078D4;
+    --os-windows-server-2016: #0099BC;
+    --os-windows-server-2019: #00B7C3;
+    --os-windows-server-2022: #2be3f0;
+    --os-macos: #FFF;
+
     --primary-color: var(--accent-color);
     --logo-color: var(--accent-color);
     --button-color: var(--primary-color);
@@ -339,6 +372,23 @@
 
 /* High contrast theme */
 .theme-high-contrast {
+
+    --os-linux: #FCC624;
+    --os-ubuntu: #E95420;
+    --os-fedora: #51A2DA;
+    --os-centos: #B5258E;
+    --os-debian: #D70A53;
+    --os-redhat: #EE0000;
+    --os-windows: #00ADEF;
+    --os-windows-xp: #2ECC71;
+    --os-windows-10: #0078D7;
+    --os-windows-11: #0067C0;
+    --os-windows-server-2008: #0078D4;
+    --os-windows-server-2016: #0099BC;
+    --os-windows-server-2019: #00B7C3;
+    --os-windows-server-2022: #2be3f0;
+    --os-macos: #FFF;
+
     --primary-color: var(--accent-color);
     --logo-color: var(--accent-color);
     --button-color: var(--primary-color);

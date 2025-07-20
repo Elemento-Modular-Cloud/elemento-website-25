@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atomos - Elemento Cloud Platform</title>
-    <meta name="description" content="Discover Atomos, Elemento's advanced container orchestration platform built on Kubernetes for seamless deployment and management of containerized applications.">
+    <title>AtomOS — Linux Hypervisor for Cloud Factories | Elemento Cloud</title>
+    <meta name="description" content="AtomOS is a lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/atomos.css">
@@ -47,10 +50,14 @@
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
                     <div class="hero-title-group">
-                        <h1 class="hero-title"><span class="pixel-brand">Atomos</span></h1>
+                        <h1 class="hero-title"><span class="pixel-brand">AtomOS</span></h1>
                     </div>
                     <div class="hero-subtitle">
-                        <p><span class="emphasis-pixel">Advanced</span> container orchestration platform built on <span class="emphasis-pixel">Kubernetes</span> for <span class="emphasis-pixel">seamless</span> deployment and management of applications.</p>
+                        <p>Bare-Metal Hypervisor for On-Premise Cloud Factories</p>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Get Started</a>
+                        <a href="#prices" class="btn btn-secondary"><i class="fas fa-tags"></i> Discover pricing</a>
                     </div>
                 </div>
             </div>
@@ -58,198 +65,57 @@
     </section>
 
     <!-- Page Header -->
-    <section class="section" style="padding-top: 120px;">
+    <section class="section section-header-padded">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title"><span class="pixel-brand">Atomos</span> Platform</h1>
-                <p class="section-subtitle"><span class="pixel-word">Kubernetes-native</span> container orchestration with <span class="pixel-word">enterprise-grade</span> features and <span class="pixel-word">simplified</span> management</p>
+                <h2 class="section-title">The <span class="highlight-pixel">Next-gen Linux Hypervisor</span> for On-Premise Cloud Factories</h2>
             </div>
         </div>
-    </section>
-
-    <!-- Overview Section -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+        <div class="container">            
+            <div class="grid grid-2 grid-centered">
                 <div class="fade-in">
-                    <h2><span class="highlight-pixel">Kubernetes</span> Native Architecture</h2>
-                    <p><span class="pixel-brand">Atomos</span> is built on <span class="pixel-word">Kubernetes</span>, the <span class="pixel-word">industry standard</span> for container orchestration. Our platform leverages <span class="pixel-word">Kubernetes'</span> powerful capabilities while adding <span class="pixel-word">enterprise-grade</span> features, <span class="pixel-word">simplified</span> management, and <span class="pixel-word">enhanced security</span>.</p>
+                    <p>
+                        We didn't want to be fancy, implement our virtualisation platform from zero forgetting about all the great stuff people behind <span class="pixel-word">KVM</span> and <span class="pixel-word">QEMU</span> did in the past 30 years.
+                    </p>
+                    <br>
+                    <p>
+                        We decided to build on top of <span class="pixel-word">KVM</span> and <span class="pixel-word">QEMU</span> to create a hypervisor that is <span class="pixel-word">open</span>, <span class="pixel-word">portable</span>, and <span class="pixel-word">secure</span>.
+                    </p>
                     
-                    <div style="margin: var(--space-lg) 0;">
-                        <h4>Core Capabilities:</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Automatic Scaling & Load Balancing
+                    <div class="feature-list-container">
+                        <ul class="feature-list">
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                RHEL-compatible, KVM-based virtualization platform
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Self-Healing & High Availability
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                No vendor lock-in: upstream Linux and open standards
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Multi-Cloud Deployment
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Secure boot, ECC memory, GPU passthrough
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Declarative Configuration
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Zero centralized services — autonomous clustering with C4 protocol
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Nested virtualization-ready (GCP, AWS, Azure)
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Ideal for hybrid, on-premise, and edge computing
                             </li>
                         </ul>
                     </div>
                     
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    <a href="#installation" class="btn btn-primary">Get Started</a>
                 </div>
                 
-                <div class="fade-in">
-                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">⚙️</div>
-                        <h3>Kubernetes Native</h3>
-                        <p>Built on Kubernetes for seamless container orchestration and management across any infrastructure.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">Enterprise-grade features designed for production workloads</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card fade-in">
-                    <div class="card-icon">🔧</div>
-                    <h3>Simplified Management</h3>
-                    <p>Intuitive web interface and CLI tools that make Kubernetes management accessible to teams of all skill levels.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔒</div>
-                    <h3>Enhanced Security</h3>
-                    <p>Built-in security scanning, RBAC, network policies, and compliance frameworks for enterprise environments.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📊</div>
-                    <h3>Advanced Monitoring</h3>
-                    <p>Comprehensive monitoring, logging, and alerting with custom dashboards and performance analytics.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🚀</div>
-                    <h3>Auto-Scaling</h3>
-                    <p>Intelligent auto-scaling based on CPU, memory, and custom metrics with predictive scaling capabilities.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🌐</div>
-                    <h3>Multi-Cluster Management</h3>
-                    <p>Manage multiple Kubernetes clusters from a single interface with unified policies and configurations.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔄</div>
-                    <h3>CI/CD Integration</h3>
-                    <p>Seamless integration with popular CI/CD tools and GitOps workflows for automated deployments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Platform Architecture</h2>
-                <p class="section-subtitle">How Atomos components work together to deliver a complete container orchestration solution</p>
-            </div>
-            
-            <div class="grid grid-2">
-                <div class="card fade-in">
-                    <h3>Control Plane</h3>
-                    <p>The central management layer that orchestrates all container operations, including the Kubernetes control plane, API gateway, and management interfaces.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Kubernetes API</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Management UI</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Data Plane</h3>
-                    <p>The execution layer where your containers run, including compute resources, storage systems, and networking components.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Containers</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Storage</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Security Layer</h3>
-                    <p>Comprehensive security features including network policies, RBAC, secrets management, and compliance monitoring.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">RBAC</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Network Policies</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Observability Stack</h3>
-                    <p>Comprehensive monitoring, logging, and analytics that provide insights into container performance and health.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Monitoring</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Logging</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Use Cases</h2>
-                <p class="section-subtitle">Perfect for a wide range of containerized applications and workloads</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card fade-in">
-                    <div class="card-icon">🌐</div>
-                    <h3>Web Applications</h3>
-                    <p>Deploy and scale web applications with automatic load balancing and horizontal scaling capabilities.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📱</div>
-                    <h3>Microservices</h3>
-                    <p>Build and manage microservices architectures with service discovery and inter-service communication.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🤖</div>
-                    <h3>Machine Learning</h3>
-                    <p>Deploy ML models and training workloads with GPU support and resource optimization.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📊</div>
-                    <h3>Data Processing</h3>
-                    <p>Run batch processing jobs and data pipelines with efficient resource allocation and scheduling.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔧</div>
-                    <h3>DevOps Tools</h3>
-                    <p>Host CI/CD pipelines, monitoring tools, and development environments with integrated workflows.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🏢</div>
-                    <h3>Enterprise Apps</h3>
-                    <p>Deploy enterprise applications with high availability, security, and compliance requirements.</p>
+                <div class="content-image">
+                    <img src="./assets/img/Atomos - Hero - 1.webp" alt="AtomOS Linux Hypervisor Architecture" class="hero-detail-image">
                 </div>
             </div>
         </div>
@@ -260,23 +126,488 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item fade-in">
-                    <h3>99.99%</h3>
-                    <p>Uptime Guarantee</p>
+                    <div class="stat-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>GPU</h3>
+                    <p>Automatic passthrough</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <h3>< 50ms</h3>
-                    <p>Container Startup Time</p>
+                    <div class="stat-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>+70%</h3>
+                    <p>VM CPU performance</p>
                 </div>
                 
                 <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
                     <h3>1000+</h3>
-                    <p>Nodes per Cluster</p>
+                    <p>VMs per Host</p>
                 </div>
                 
                 <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
                     <h3>10x</h3>
                     <p>Faster Deployments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="section features" id="installation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quickstart Install in 3 Minutes</h2>
+                <p class="section-subtitle">Get AtomOS running on your infrastructure quickly and easily</p>
+            </div>
+            
+            <div class="card fade-in installation-card">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <strong><i class="fas fa-rocket" style="color: var(--accent-color);"></i> AtomOS Installation Guide</strong>
+                    </div>
+                    <div class="terminal-step">
+                        <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install Linux OS (Rocky/Alma 9, Fedora ≥38, Ubuntu ≥24, Debian 12)
+                    </div>
+                    <div class="terminal-step-success">
+                        <strong><i class="fas fa-terminal" style="color: var(--green);"></i> 2.</strong> Run installation script: <code class="terminal-code">curl https://repo.elemento.cloud/get-atomos.sh | bash</code>
+                    </div>
+                    <div class="terminal-step-success">
+                        <strong><i class="fas fa-globe" style="color: var(--blue-light);"></i> 3.</strong> Reboot and access Web UI at <code class="terminal-code">localhost:9090</code>, configure VM storage
+                    </div>
+                    <div class="terminal-success">
+                        <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 4.</strong> Install Electros to launch and manage VMs from anywhere
+                    </div>
+                    <div class="terminal-footer">
+                        <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to deploy your first VM in minutes!</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cluster Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advanced Hypervisor Features for Private Cloud Deployments</h2>
+                <p class="section-subtitle">Enterprise-grade features designed for production workloads</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-hdd" style="color: var(--blue);"></i></div>
+                    <h3>Thin Provisioning</h3>
+                    <p>Supported via qcow2 format for efficient storage utilization and dynamic disk allocation.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-exchange-alt" style="color: var(--green);"></i></div>
+                    <h3>Live VM Migration</h3>
+                    <p>Over fast LAN + shared FS for zero-downtime workload mobility.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-shield-alt" style="color: var(--orange);"></i></div>
+                    <h3>Secure Boot + vTPM</h3>
+                    <p>Full support for secure boot and Virtual Trusted Platform Module for enhanced security.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-terminal" style="color: var(--purple);"></i></div>
+                    <h3>Command Line Tools</h3>
+                    <p>Native Electros CLI for automation and scripting, plus standard Linux virtualization tools.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-balance-scale" style="color: var(--blue-light);"></i></div>
+                    <h3>Load Balancing</h3>
+                    <p>Autonomous via node-level scheduling, no centralized management required.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-database" style="color: var(--green-light);"></i></div>
+                    <h3>Storage Backends</h3>
+                    <p>Any shared FS: GlusterFS, Ceph, NFS, iSCSI, etc. - flexible storage options for your infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You-Know-Who vs AtomOS — Hypervisor Showdown</h2>
+                <p class="section-subtitle">How AtomOS compares to the industry-leading virtualization platform</p>
+            </div>
+            
+            <div class="comparison-table fade-in">
+                <div class="table-container comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr class="comparison-table-header">
+                                <th>Feature</th>
+                                <th>You-Know-Who</th>
+                                <th>Elemento AtomOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">Hypervisor Class</td>
+                                <td class="comparison-table-cell-secondary">Type 1</td>
+                                <td class="comparison-table-cell-primary">Type 1</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">Operating System</td>
+                                <td class="comparison-table-cell-secondary">Proprietary BSD Kernel</td>
+                                <td class="comparison-table-cell-primary">Rocky/Alma Linux (RHEL binary compatible)</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">Virtualization Engine</td>
+                                <td class="comparison-table-cell-secondary">Proprietary Closed-Source</td>
+                                <td class="comparison-table-cell-primary">Upstream "Vanilla" KVM/QEMU</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">Management</td>
+                                <td class="comparison-table-cell-secondary">vCenter Server VM</td>
+                                <td class="comparison-table-cell-primary">Electros (Web UI + CLI) & REST API</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">Licensing</td>
+                                <td class="comparison-table-cell-secondary">Commercial, CPU-based</td>
+                                <td class="comparison-table-cell-primary">Server-based (not CPU cores or VM count)</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">Cluster Setup</td>
+                                <td class="comparison-table-cell-secondary">Manual w/ License</td>
+                                <td class="comparison-table-cell-primary">Auto-discovery w/ License (C4 protocol)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported OS Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compatible Guest Operating Systems</h2>
+                <p class="section-subtitle">AtomOS supports a wide range of Linux and Windows guest OSes for flexible deployment scenarios</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <h3><i class="fab fa-linux"></i> Linux Distributions</h3>
+                    <div class="os-grid">
+                        <span class="os-tag"><i class="fab fa-ubuntu" style="color: var(--os-ubuntu);"></i> Ubuntu 24.04+</span>
+                        <span class="os-tag"><i class="fab fa-debian" style="color: var(--os-debian);"></i> Debian 12+</span>
+                        <span class="os-tag"><i class="fab fa-centos" style="color: var(--os-centos);"></i> AlmaLinux</span>
+                        <span class="os-tag"><i class="fab fa-centos" style="color: var(--os-centos);"></i> Rocky Linux</span>
+                        <span class="os-tag"><i class="fab fa-fedora" style="color: var(--os-fedora);"></i> Fedora 38+</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> Pop!_OS</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> Mint</span>
+                        <span class="os-tag"><i class="fab fa-centos" style="color: var(--os-centos);"></i> CentOS</span>
+                        <span class="os-tag"><i class="fab fa-firefox" style="color: var(--os-firefox);"></i> FireBoxV</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> Arch Linux</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> Gentoo</span>
+                        <span class="os-tag"><i class="fab fa-suse" style="color: var(--os-suse);"></i> OpenSUSE</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> OpenBSD</span>
+                        <span class="os-tag"><i class="fab fa-freebsd" style="color: var(--os-freebsd);"></i> FreeBSD</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> NetBSD</span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> <span class="highlight-pixel">Virtually any Linux...</span></span>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <h3><i class="fab fa-windows"></i> Windows Support</h3>
+                    <div class="windows-section">
+                        <div class="windows-client-grid">
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-xp);"></i> Windows XP (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-7);"></i> Windows 7 (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-10);"></i> Windows 10</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-11);"></i> Windows 11</span>
+                        </div>
+                        <div class="windows-server-grid">
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2003);"></i> Server 2003 (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2008);"></i> Server 2008 (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2012);"></i> Server 2012 (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2016);"></i> Server 2016 (EOL)</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2019);"></i> Server 2019</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2022);"></i> Server 2022</span>
+                            <span class="os-tag"><i class="fab fa-windows" style="color: var(--os-windows-server-2025);"></i> Server 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <h3><i class="fab fa-apple"></i> MacOS Support</h3>
+                    <div class="os-grid">
+                        <span class="os-tag"><i class="fas fa-tools"></i> <span class="highlight-pixel">Work in progress...</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filesystem Support Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Filesystem & Disk Format Compatibility</h2>
+                <p class="section-subtitle">For performance, use raw or qcow2 on stable Linux-native FS (EXT4, XFS). Avoid BTRFS/ReFS stacking with qcow2.</p>
+            </div>
+            
+            <div class="comparison-table fade-in">
+                <div class="table-container comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr class="comparison-table-header">
+                                <th>Filesystem</th>
+                                <th>qcow2</th>
+                                <th>raw</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">NTFS</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Stable</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-check" style="color: var(--green);"></i><br> Stable</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">ReFS</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">EXT4</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Recommended</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Full support</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">XFS</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Recommended</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Full support</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">BTRFS</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">ZFS</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- C4 Protocol Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Self-Healing Clusters with C4 Protocol</h2>
+                <p class="section-subtitle">Autonomous clustering without centralized management</p>
+            </div>
+            
+            <div class="grid grid-2 c4-content">
+                <div class="fade-in">
+                    <p><span class="pixel-brand">AtomOS</span> implements Elemento's <span class="emphasis-pixel">C4 protocol</span> for automatic peer discovery and trust-based node linking. No need for orchestrators, matchmaker services, or controller VMs.</p>
+                    
+                    <div class="c4-benefits">
+                        <h4>Key Benefits:</h4>
+                        <ul>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Automatic node discovery and trust establishment
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                No centralized management or single points of failure
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Self-healing cluster topology with automatic failover
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Distributed control plane with peer-to-peer communication
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="card c4-card">
+                        <div class="feature-icon c4-icon"><i class="fas fa-network-wired" style="color: var(--blue);"></i></div>
+                        <h3>Autonomous Clustering</h3>
+                        <p>Every host participates in its own discovery and control fabric without external dependencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="section" id="prices">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your AtomOS Edition</h2>
+                <p class="section-subtitle">From free community use to enterprise production deployments</p>
+            </div>
+            
+            <div class="grid grid-2 plans-grid">
+                <div class="card fade-in" id="community">
+                    <div class="plan-card">
+                        <h3>AtomOS Community Edition — Free Forever</h3>
+                        <div class="plan-price">€0</div>
+                        <p class="plan-subtitle">Per server, regardless of CPU cores or VM count</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Run up to 2 virtual machines per server
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            CLI control only (virsh, qemu-img)
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Perfect for labs, makers, DevOps hobbyists
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#installation" class="btn btn-primary"><i class="fas fa-download"></i> Download Now</a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in" id="enterprise">
+                    <div class="plan-card">
+                        <h3>AtomOS Enterprise — For Private Cloud Production</h3>
+                        <div class="plan-price">€600/year</div>
+                        <p class="plan-subtitle">Per server, regardless of CPU cores or VM count</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Unlimited VMs and nested virt
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Web GUI (Cockpit + Electros)
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Monitoring + Alerts (Grafana stack)
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Cluster PXE boot + live migration
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Guaranteed upgrade path and support
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="contact.html" class="btn btn-primary"><i class="fas fa-crown"></i> Get Enterprise License</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Economy Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Server-Based Pricing Drives Green Economy</h2>
+                <p class="section-subtitle">Our pricing model incentivizes efficient resource utilization and sustainable infrastructure choices</p>
+            </div>
+            
+            <div class="grid grid-2 green-economy-grid">
+                <div class="fade-in">
+                    <h3><span class="highlight-pixel">Efficient</span> Resource Utilization</h3>
+                    <p>Unlike CPU-core or VM-count based licensing, AtomOS's <span class="pixel-word">server-based pricing</span> encourages organizations to maximize the value of each physical server. This drives investment in <span class="pixel-word">larger, more efficient</span> hardware that can host more workloads with better performance per watt.</p>
+                    
+                    <div class="green-benefits">
+                        <h4>Green Economy Benefits:</h4>
+                        <ul>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-seedling" style="color: var(--green);"></i></span>
+                                Incentivizes high-density, energy-efficient servers
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-bolt" style="color: var(--yellow);"></i></span>
+                                Reduces power consumption through consolidation
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-coins" style="color: var(--orange);"></i></span>
+                                Lower total cost of ownership and operational expenses
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-recycle" style="color: var(--green-light);"></i></span>
+                                Extends hardware lifecycle through better utilization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="card green-card">
+                        <div class="feature-icon green-icon"><i class="fas fa-globe-europe" style="color: var(--green);"></i></div>
+                        <h3>Sustainable Infrastructure</h3>
+                        <p>By charging per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.</p>
+                        <div class="green-result">
+                            <strong>Result:</strong> Fewer servers, less power, lower carbon footprint
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about AtomOS deployment and usage</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h4>What platforms support AtomOS?</h4>
+                    <p>Runs on x86_64 servers (Intel/AMD) with virtualization support. Also runs as nested guest in AWS/GCP/Azure metal VMs.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>Can I use AtomOS for gaming or AI workloads?</h4>
+                    <p>Yes. GPU passthrough is supported for NVIDIA (GTX960+) and AMD cards, tested for gaming, 3D rendering, and inference engines.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>Does AtomOS require a central manager?</h4>
+                    <p>No. Unlike vSphere or Proxmox, clustering is embedded — every host participates in its own discovery and control fabric.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>Is AtomOS open-source?</h4>
+                    <p>Core hypervisor is open. Electros and C4 protocol orchestration layers are licensed with commercial support options.</p>
                 </div>
             </div>
         </div>
@@ -286,12 +617,12 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ready to Get Started?</h2>
-                <p class="section-subtitle">Experience the power of Atomos for your containerized applications</p>
+                <h2 class="section-title">Transform any machine into a production-ready hypervisor with AtomOS.</h2>
+                <p class="section-subtitle">Experience the power of Linux-native virtualization for your infrastructure</p>
             </div>
             
             <div class="text-center">
-                <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+                <a href="#installation" class="btn btn-primary">Download Now</a>
                 <a href="technology.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Learn More</a>
             </div>
         </div>
@@ -302,7 +633,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="assets/logos/Elemento.svg" alt="Elemento Logo" style="width: 40px; height: 40px; margin-bottom: 1rem;">
+                    <img src="assets/logos/Elemento.svg" alt="Elemento Logo" class="footer-logo">
                     <h4>Elemento</h4>
                     <p>Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.</p>
                 </div>
@@ -310,7 +641,7 @@
                 <div class="footer-section">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="atomos.html">Atomos</a></li>
+                        <li><a href="atomos.html">AtomOS</a></li>
                         <li><a href="electros.html">Electros</a></li>
                         <li><a href="cloud-network.html">Cloud Network</a></li>
                         <li><a href="products.html">All Products</a></li>

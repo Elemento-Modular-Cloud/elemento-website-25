@@ -1,6 +1,9 @@
 /* Import Google Fonts as fallbacks */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
 /* Import themes */
 @import url('./themes.css');
 
@@ -277,7 +280,7 @@ body {
     border-bottom: 1px solid var(--glassmorphism-border);
     box-shadow: var(--glassmorphism-shadow);
     padding: 0;
-    z-index: 999;
+    z-index: 1001;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -402,6 +405,47 @@ body {
 
 .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* Content with image layout - available across all pages */
+.content-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.content-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: var(--space-lg);
+    font-family: var(--font-heading);
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+    line-height: 1.7;
+}
+
+.content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--glassmorphism-shadow);
+    transition: transform 0.3s ease;
+}
+
+.hero-detail-image:hover {
+    transform: scale(1.02);
 }
 
 /* Cards with glassmorphism effect */
@@ -1226,6 +1270,15 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .content-with-image {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .content-text h2 {
+        font-size: 2rem;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -1242,6 +1295,14 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+    }
+    
+    .content-text h2 {
+        font-size: 1.75rem;
+    }
+    
+    .content-text p {
+        font-size: 1rem;
     }
     
     .section-title {
