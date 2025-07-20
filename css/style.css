@@ -61,7 +61,7 @@
 
 /* For highlighting key terms in headings */
 .highlight-pixel {
-    font-family: 'Argent Pixel Italic', inherit;
+    font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif;
     color: var(--primary-color);
     font-weight: 400;
     font-style: italic;
@@ -69,7 +69,7 @@
 
 /* For subtle pixel emphasis within text */
 .emphasis-pixel {
-    font-family: 'Argent Pixel Italic', inherit;
+    font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif;
     font-weight: 400;
     font-style: italic;
 }
