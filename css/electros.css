@@ -1,3 +1,228 @@
 /* Electros Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-electros.css'); 
+@import url('./gradient-blobs/gradients-electros.css');
+
+/* Download Section Styles */
+.download-buttons {
+    margin-top: var(--space-lg);
+}
+
+.download-option {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.download-option h4 {
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.arch-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.arch-buttons .btn {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.download-info {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: var(--space-xs);
+}
+
+/* Alternative Downloads - now at same level */
+.alt-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+/* Checksums Section */
+.checksums-section {
+    margin-top: var(--space-lg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.checksums-section summary {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-secondary);
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.checksums-section summary:hover {
+    background: var(--bg-primary);
+}
+
+.checksums-grid {
+    padding: var(--space-md);
+    display: grid;
+    gap: var(--space-md);
+}
+
+.checksum-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.checksum-group strong {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+
+.checksum {
+    font-family: monospace;
+    background: var(--bg-secondary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    word-break: break-all;
+}
+
+/* Button States */
+.download-btn.download-ready {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.download-btn.download-error {
+    background: var(--red);
+    border-color: var(--red);
+    opacity: 0.7;
+}
+
+.checksum.checksum-ready {
+    color: var(--text-primary);
+    background: var(--bg-primary);
+}
+
+/* Protocols Grid Styles */
+.protocols-grid-container {
+    margin-top: var(--space-lg);
+}
+
+.protocols-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.protocol-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.protocol-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-color);
+}
+
+.protocol-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.protocol-card h5 {
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.protocol-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .arch-buttons {
+        flex-direction: column;
+    }
+    
+    .alt-buttons {
+        flex-direction: column;
+    }
+    
+    .protocols-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+    
+    .protocol-card {
+        padding: var(--space-md);
+    }
+}
+
+/* Future Enhancements Styles */
+.future-enhancements {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.future-enhancements:hover {
+    opacity: 1;
+}
+
+.future-icon {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.future-icon i {
+    font-size: 1.5rem;
+}
+
+.future-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.future-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+}
+
+.future-indicator {
+    color: var(--text-secondary);
+    opacity: 0.5;
+    font-size: 1.2rem;
+    font-weight: 300;
+} 

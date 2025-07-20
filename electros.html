@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electros - Elemento Cloud Platform</title>
-    <meta name="description" content="Discover Electros, Elemento's intelligent infrastructure automation platform that simplifies deployment and management of cloud resources.">
+    <title>Electros App — Multicloud Dashboard & CLI | Elemento Cloud</title>
+    <meta name="description" content="Electros is the universal multicloud dashboard and CLI for managing VMs, storage, and networks across public clouds and on-prem infrastructure.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/electros.css">
@@ -47,10 +50,13 @@
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
                     <div class="hero-title-group">
-                        <h1 class="hero-title"><span class="pixel-brand">Electros</span></h1>
+                        <h1 class="hero-title"><span class="pixel-brand">Electros</span> — The Control Center of Your Cloud Factory</h1>
                     </div>
                     <div class="hero-subtitle">
-                        <p><span class="emphasis-pixel">Intelligent</span> infrastructure automation platform that <span class="emphasis-pixel">simplifies</span> deployment and management of cloud resources across providers.</p>
+                        <p>Deploy, monitor, and manage VMs across multiple clouds or on-prem nodes—all from a unified desktop app or CLI.</p>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#download" class="btn btn-primary"><i class="fas fa-download"></i> Download Electros Now</a>
                     </div>
                 </div>
             </div>
@@ -58,202 +64,53 @@
     </section>
 
     <!-- Page Header -->
-    <section class="section" style="padding-top: 120px;">
+    <section class="section section-header-padded">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title"><span class="pixel-brand">Electros</span> Platform</h1>
-                <p class="section-subtitle"><span class="pixel-word">Infrastructure as Code</span> made simple with <span class="pixel-word">intelligent automation</span> and <span class="pixel-word">multi-cloud</span> management</p>
+                <h2 class="section-title">The <span class="highlight-pixel">Universal Dashboard</span> for Your Cloud Factory</h2>
             </div>
         </div>
-    </section>
-
-    <!-- Overview Section -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
+        <div class="container">            
+            <div class="grid grid-2 grid-centered">
                 <div class="fade-in">
-                    <h2><span class="highlight-pixel">Infrastructure as Code</span> Simplified</h2>
-                    <p><span class="pixel-brand">Electros</span> transforms infrastructure management with <span class="pixel-word">intelligent automation</span>, <span class="pixel-word">multi-cloud</span> support, and <span class="pixel-word">simplified workflows</span>. Deploy and manage your entire infrastructure using code with <span class="pixel-word">version control</span>, <span class="pixel-word">testing</span>, and <span class="pixel-word">automated deployments</span>.</p>
+                    <p>
+                        <span class="pixel-brand">Electros</span> is the Elemento Cloud's universal dashboard—available as a native desktop app (Linux, macOS, Windows) and CLI. It provides cohesive visibility, provisioning, and remote access for workloads across any integrated infrastructure.
+                    </p>
+                    <br>
+                    <p>
+                        Whether you're managing VMs on <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">Google Cloud</span>, or your own <span class="pixel-word">on-premise infrastructure</span>, Electros gives you a unified interface for complete control.
+                    </p>
                     
-                    <div style="margin: var(--space-lg) 0;">
-                        <h4>Core Capabilities:</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Multi-Cloud Infrastructure Management
+                    <div class="feature-list-container">
+                        <ul class="feature-list">
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Supports 4+ cloud providers (and growing)
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Intelligent Resource Optimization
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                100% cross-platform (Linux, macOS, Windows)
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Automated Compliance & Security
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Manage VMs, storage, networking via GUI or CLI
                             </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Cost Optimization & Monitoring
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Real-time cost monitoring for cloud workloads
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Deep integration with AtomOS and Meson API
                             </li>
                         </ul>
                     </div>
                     
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    <a href="#download" class="btn btn-primary"><i class="fas fa-download"></i> Download Electros Now</a>
                 </div>
                 
-                <div class="fade-in">
-                    <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);">⚡</div>
-                        <h3>Intelligent Automation</h3>
-                        <p>AI-powered infrastructure automation that optimizes resources and reduces operational overhead.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">Advanced infrastructure automation capabilities for modern cloud environments</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card fade-in">
-                    <div class="card-icon">🏗️</div>
-                    <h3>Infrastructure as Code</h3>
-                    <p>Define your entire infrastructure using Terraform, Ansible, or Pulumi with version control and automated testing.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🤖</div>
-                    <h3>AI-Powered Optimization</h3>
-                    <p>Intelligent algorithms that automatically optimize resource allocation, costs, and performance based on usage patterns.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔒</div>
-                    <h3>Security & Compliance</h3>
-                    <p>Automated security scanning, compliance checks, and policy enforcement across all cloud resources.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📊</div>
-                    <h3>Cost Management</h3>
-                    <p>Real-time cost monitoring, budget alerts, and automated cost optimization recommendations.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🌐</div>
-                    <h3>Multi-Cloud Support</h3>
-                    <p>Unified management across AWS, Azure, Google Cloud, and other providers with consistent policies.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔄</div>
-                    <h3>GitOps Workflows</h3>
-                    <p>Seamless integration with Git repositories for automated deployments and infrastructure versioning.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Supported Tools Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Supported Tools & Platforms</h2>
-                <p class="section-subtitle">Comprehensive support for popular infrastructure tools and cloud providers</p>
-            </div>
-            
-            <div class="grid grid-2">
-                <div class="card fade-in">
-                    <h3>Infrastructure as Code Tools</h3>
-                    <p>Full support for Terraform, Ansible, Pulumi, and CloudFormation with enhanced features and integrations.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Terraform</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Ansible</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Pulumi</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Cloud Providers</h3>
-                    <p>Unified management across major cloud providers with consistent APIs and policies.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">AWS</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Azure</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">GCP</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>CI/CD Integration</h3>
-                    <p>Seamless integration with popular CI/CD platforms for automated infrastructure deployments.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">GitHub Actions</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Jenkins</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">GitLab CI</span>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Monitoring & Observability</h3>
-                    <p>Comprehensive monitoring and alerting with integration to popular observability tools.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Prometheus</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Grafana</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">ELK Stack</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Use Cases</h2>
-                <p class="section-subtitle">Perfect for organizations looking to modernize their infrastructure management</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card fade-in">
-                    <div class="card-icon">🏢</div>
-                    <h3>Enterprise Migration</h3>
-                    <p>Simplify large-scale cloud migrations with automated infrastructure provisioning and validation.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🚀</div>
-                    <h3>DevOps Automation</h3>
-                    <p>Automate infrastructure deployments as part of CI/CD pipelines for faster, more reliable releases.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">💰</div>
-                    <h3>Cost Optimization</h3>
-                    <p>Automatically optimize cloud costs with intelligent resource management and budget controls.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🔒</div>
-                    <h3>Compliance Management</h3>
-                    <p>Ensure infrastructure compliance with automated policy enforcement and audit trails.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🌐</div>
-                    <h3>Multi-Cloud Strategy</h3>
-                    <p>Manage infrastructure across multiple cloud providers with unified policies and monitoring.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">📈</div>
-                    <h3>Scalable Infrastructure</h3>
-                    <p>Build scalable, resilient infrastructure that automatically adapts to changing demands.</p>
+                <div class="content-image">
+                    <img src="./assets/img/Electros - Hero.webp" alt="Electros Desktop Interface" class="hero-detail-image">
                 </div>
             </div>
         </div>
@@ -264,23 +121,410 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item fade-in">
-                    <h3>90%</h3>
-                    <p>Faster Deployments</p>
+                    <div class="stat-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>3</h3>
+                    <p>Platforms Supported</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <h3>40%</h3>
-                    <p>Cost Reduction</p>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <h3>8+</h3>
+                    <div class="stat-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>4+</h3>
                     <p>Cloud Providers</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <h3>99.9%</h3>
-                    <p>Deployment Success Rate</p>
+                    <div class="stat-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>100%</h3>
+                    <p>CLI Parity</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Free</h3>
+                    <p>With Elemento Account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Capabilities Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Usage Scenarios</h2>
+                <p class="section-subtitle">Powerful capabilities for managing hybrid and multicloud environments</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--blue);"></i></div>
+                    <h3>Hybrid & Multicloud Orchestration</h3>
+                    <p>Deploy VMs across public clouds and private nodes seamlessly, balancing cost, performance, and compliance.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-link" style="color: var(--green);"></i></div>
+                    <h3>Remote Access Built In</h3>
+                    <p>Connect via SSH, VNC, or RDP with a single click. GUI and CLI share the same daemon—no context-switching.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-code" style="color: var(--purple);"></i></div>
+                    <h3>Cloud Factory CLI</h3>
+                    <p>Automate infrastructure-as-code. Electros CLI powers scripting, CI/CD, and cloud pipeline workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Image Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See Electros in Action</h2>
+                <p class="section-subtitle">Experience the unified interface for managing your cloud infrastructure</p>
+            </div>
+            
+            <div class="fade-in" style="text-align: center;">
+                <div class="card" style="padding: var(--space-3xl); background: var(--bg-secondary);">
+                    <div style="font-size: 4rem; margin-bottom: var(--space-lg);">🖥️</div>
+                    <h3>Electros Desktop Interface</h3>
+                    <p>Embed a screenshot or carousel of the app UI showing VM list and remote session capabilities.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: var(--space-lg);">[Demo image placeholder - Electros App desktop interface showing VM list and remote session]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Remote Connectivity Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Unified <span class="highlight-pixel">Remote Access</span> Protocols</h2>
+                <p class="section-subtitle">Seamless connectivity across all your virtual machines with intelligent protocol selection</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="content-image">
+                    <img src="./assets/img/Electros - Hero.webp" alt="Electros Desktop Interface" class="hero-detail-image">
+                </div>
+
+                <div class="fade-in">
+                    <p>
+                        <span class="pixel-brand">Electros</span> provides intelligent remote access that automatically selects the optimal protocol based on your VM's operating system and configuration. Whether you're connecting to Linux servers, Windows workstations, or specialized appliances, Electros ensures you get the best possible remote experience.
+                    </p>
+                    
+                    <div class="protocols-grid-container">
+                        <h4>Current Protocol Support:</h4>
+                        <div class="protocols-grid">
+                            <div class="protocol-card">
+                                <div class="protocol-icon">
+                                    <i class="fas fa-terminal" style="color: var(--green);"></i>
+                                </div>
+                                <h5>SSH</h5>
+                                <p>Secure shell access for Linux, BSD, and Unix systems</p>
+                            </div>
+                            
+                            <div class="protocol-card">
+                                <div class="protocol-icon">
+                                    <i class="fas fa-desktop" style="color: var(--blue);"></i>
+                                </div>
+                                <h5>RDP</h5>
+                                <p>Remote Desktop Protocol for Windows and Linux GUI sessions</p>
+                            </div>
+                            
+                            <div class="protocol-card">
+                                <div class="protocol-icon">
+                                    <i class="fas fa-eye" style="color: var(--purple);"></i>
+                                </div>
+                                <h5>VNC</h5>
+                                <p>Virtual Network Computing for cross-platform graphical access</p>
+                            </div>
+                            
+                            <div class="protocol-card">
+                                <div class="protocol-icon">
+                                    <i class="fas fa-magic" style="color: var(--orange);"></i>
+                                </div>
+                                <h5>Auto-Selection</h5>
+                                <p>Intelligent protocol detection based on guest OS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section features" id="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Download Electros</h2>
+                <p class="section-subtitle">Get started with the universal multicloud dashboard</p>
+            </div>
+            
+            <!-- Desktop Download Buttons -->
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h3><i class="fas fa-desktop" style="color: var(--blue);"></i> Desktop Installers</h3>
+                    <p>Native applications for your operating system with full GUI capabilities.</p>
+                    
+                    <div class="download-buttons">
+                        <!-- Linux -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-linux" style="color: var(--orange);"></i> Linux</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="ai-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64 AppImage
+                                </a>
+                                <a href="#" id="ai-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> ARM64 AppImage
+                                </a>
+                            </div>
+                            <small class="download-info">Universal Linux packages</small>
+                        </div>
+                        
+                        <!-- macOS -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-apple" style="color: var(--gray);"></i> macOS</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="dmg-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Intel (x64)
+                                </a>
+                                <a href="#" id="dmg-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Apple Silicon (ARM64)
+                                </a>
+                            </div>
+                            <small class="download-info">Native macOS binaries</small>
+                        </div>
+                        
+                        <!-- Windows -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-windows" style="color: var(--blue);"></i> Windows</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="exe-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64
+                                </a>
+                            </div>
+                            <small class="download-info">Windows 10/11 (x64 only)</small>
+                        </div>
+                        
+                        <!-- Ubuntu/Debian -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-ubuntu" style="color: var(--orange);"></i> Ubuntu/Debian</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="deb-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64 Package
+                                </a>
+                                <a href="#" id="deb-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> ARM64 Package
+                                </a>
+                            </div>
+                            <small class="download-info">Native Ubuntu/Debian packages</small>
+                        </div>
+
+                        <details class="checksums-section">
+                            <summary>Verify Downloads</summary>
+                            <div class="checksums-grid">
+                                <div class="checksum-group">
+                                    <strong>Linux AppImage (x64)</strong>
+                                    <small id="ai-x64-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="ai-x64-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>Linux AppImage (ARM64)</strong>
+                                    <small id="ai-arm-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="ai-arm-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>macOS (Intel)</strong>
+                                    <small id="dmg-x64-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="dmg-x64-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>macOS (Apple Silicon)</strong>
+                                    <small id="dmg-arm-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="dmg-arm-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>Windows (x64)</strong>
+                                    <small id="exe-x64-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="exe-x64-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>Ubuntu/Debian (x64)</strong>
+                                    <small id="deb-x64-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="deb-x64-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                                <div class="checksum-group">
+                                    <strong>Ubuntu/Debian (ARM64)</strong>
+                                    <small id="deb-arm-md5" class="checksum">MD5: Loading...</small>
+                                    <small id="deb-arm-sha256" class="checksum">SHA256: Loading...</small>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                            <!-- Installation Guide -->
+                <div class="card fade-in installation-card">
+                    <div class="terminal-container">
+                        <div class="terminal-header">
+                            <strong><i class="fas fa-download" style="color: var(--accent-color);"></i> Electros CLI Installation Guide</strong>
+                        </div>
+                        <div class="terminal-step">
+                            <strong><i class="fas fa-desktop" style="color: var(--blue);"></i> 1.</strong> Make sure you have Python 3.9+ installed
+                        </div>
+                        <div class="terminal-step-success">
+                            <strong><i class="fas fa-terminal" style="color: var(--green);"></i> 2.</strong> CLI install: <code class="terminal-code">python3 -m pip install elemento-cli</code>
+                        </div>
+                        <div class="terminal-step-success">
+                            <strong><i class="fas fa-cog" style="color: var(--blue-light);"></i> 3.</strong> Configure Electros CLI from ~/.elemento/config
+                        </div>
+                        <div class="terminal-success">
+                            <strong><i class="fas fa-rocket" style="color: var(--purple);"></i> 4.</strong> Start managing VMs across all your clouds!
+                        </div>
+                        <div class="terminal-footer">
+                            <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to manage your multicloud infrastructure!</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powered By Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Under the Hood</h2>
+                <p class="section-subtitle">How Electros works behind the scenes</p>
+            </div>
+            
+            <div class="grid grid-2 c4-content">
+                <div class="fade-in">
+                    <p>The GUI and CLI both interface with background daemons, ensuring consistent behavior. Auto-selection of protocols depending on guest OS—SSH for Linux, RDP/VNC for Windows and others—while future upgrades will support 4K@60 fps streaming.</p>
+                    
+                    <div class="c4-benefits">
+                        <h4>Technical Architecture:</h4>
+                        <ul>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Shared core daemons between GUI and CLI interfaces
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Automatic protocol selection based on guest OS
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Real-time synchronization between interfaces
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                Future 4K streaming support for enhanced remote access
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="card c4-card">
+                        <div class="feature-icon c4-icon"><i class="fas fa-cogs" style="color: var(--blue);"></i></div>
+                        <h3>Unified Architecture</h3>
+                        <p>Both desktop app and CLI share the same core daemons, ensuring consistent behavior and real-time synchronization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Table Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Electros Cross‑Platform & Protocol Support</h2>
+                <p class="section-subtitle">Comprehensive support across operating systems and access protocols</p>
+            </div>
+            
+            <div class="comparison-table fade-in">
+                <div class="table-container comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr class="comparison-table-header">
+                                <th>Feature</th>
+                                <th>Support Level</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">Operating System</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full Support</td>
+                                <td class="comparison-table-cell">Linux, macOS, Windows</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">VM Access Protocols</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full Support</td>
+                                <td class="comparison-table-cell">SSH, VNC, RDP</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">4K Streaming (future)</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> In Development</td>
+                                <td class="comparison-table-cell"></td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="comparison-table-cell">CLI Parity</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full Support</td>
+                                <td class="comparison-table-cell">Identical functionality in both CLI and GUI</td>
+                            </tr>
+                            <tr class="comparison-table-row-alt">
+                                <td class="comparison-table-cell">Licensing</td>
+                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Free</td>
+                                <td class="comparison-table-cell">Free with your Elemento account</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about Electros functionality</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h4>Does Electros run offline?</h4>
+                    <p>Yes, basic inventory and local VM management work without network, syncing when online.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>Can I mix GUI and CLI workflows?</h4>
+                    <p>Absolutely—both interfaces share the same core daemons, so actions done in one reflect in the other.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>What access protocols are supported?</h4>
+                    <p>SSH (Linux/BSD), RDP/VNC (Windows/Linux GUI). 4K streaming is coming soon.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>Is Electros free to use?</h4>
+                    <p>Yes, Electros is free with your Elemento account. No additional licensing fees required.</p>
                 </div>
             </div>
         </div>
@@ -290,13 +534,13 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ready to Automate Your Infrastructure?</h2>
-                <p class="section-subtitle">Experience the power of Electros for intelligent infrastructure management</p>
+                <h2 class="section-title">Ready to manage your hybrid cloud workloads with a single app?</h2>
+                <p class="section-subtitle">Experience the power of Electros for unified multicloud management</p>
             </div>
             
             <div class="text-center">
-                <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
-                <a href="technology.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Learn More</a>
+                <a href="#download" class="btn btn-primary"><i class="fas fa-download"></i> Download Electros</a>
+                <a href="technology.html" class="btn btn-secondary" style="margin-left: var(--space-lg);"><i class="fas fa-book"></i> Learn More</a>
             </div>
         </div>
     </section>
@@ -308,5 +552,6 @@
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/electros.js"></script>
 </body>
 </html> 
