@@ -15,6 +15,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Preload critical fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
@@ -139,64 +140,10 @@
                 <h2 class="section-title">Meet Our Team</h2>
                 <p class="section-subtitle">The experts behind Elemento's innovative cloud platform</p>
             </div>
-            
-            <div class="team-grid">
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👨‍💼</div>
-                    <h4>Alex Chen</h4>
-                    <p>CEO & Founder</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        Former cloud architect with 15+ years experience in distributed systems and infrastructure automation.
-                    </p>
-                </div>
-                
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👩‍💻</div>
-                    <h4>Sarah Johnson</h4>
-                    <p>CTO</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        Expert in Kubernetes, containerization, and cloud-native architectures with a focus on performance optimization.
-                    </p>
-                </div>
-                
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👨‍🔬</div>
-                    <h4>Dr. Michael Rodriguez</h4>
-                    <p>Head of Research</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        PhD in Computer Science specializing in distributed systems and green computing technologies.
-                    </p>
-                </div>
-                
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👩‍💼</div>
-                    <h4>Emily Watson</h4>
-                    <p>VP of Engineering</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        Former engineering leader at major cloud providers with expertise in scalable infrastructure design.
-                    </p>
-                </div>
-                
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👨‍🔧</div>
-                    <h4>David Kim</h4>
-                    <p>Lead Infrastructure Engineer</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        Infrastructure automation specialist with deep knowledge of Terraform, Ansible, and cloud-native tools.
-                    </p>
-                </div>
-                
-                <div class="team-member fade-in">
-                    <div class="team-avatar">👩‍🎨</div>
-                    <h4>Lisa Thompson</h4>
-                    <p>Head of Product</p>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: var(--space-sm);">
-                        Product strategist focused on user experience and bringing complex infrastructure solutions to market.
-                    </p>
-                </div>
-            </div>
+            <div class="team-grid" id="team-grid"></div>
         </div>
     </section>
+    <script src="js/team.js"></script>
 
     <!-- Timeline Section -->
     <section class="section features">
