@@ -513,32 +513,7 @@ class ElementoWebsite {
     }
 }
 
-// FAQ Toggle Function (Global function for onclick)
-function toggleFAQ(button) {
-    const faqItem = button.closest('.faq-item');
-    const answer = faqItem.querySelector('.faq-answer');
-    const isActive = button.classList.contains('active');
-    
-    // Close all other FAQ items
-    document.querySelectorAll('.faq-question').forEach(btn => {
-        btn.classList.remove('active');
-    });
-    document.querySelectorAll('.faq-answer').forEach(ans => {
-        ans.classList.remove('active');
-        ans.style.maxHeight = '0px';
-    });
-    
-    // Toggle current item
-    if (!isActive) {
-        button.classList.add('active');
-        answer.classList.add('active');
-        
-        // Use a larger max-height to accommodate all content
-        answer.style.maxHeight = '400px';
-    } else {
-        answer.style.maxHeight = '0px';
-    }
-}
+// FAQ functionality is now handled by js/faq.js
 
 // Initialize the website when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {

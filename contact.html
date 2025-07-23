@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/contact.css">
     
@@ -49,9 +52,18 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
-                    <h1 class="hero-title"><span class="pixel-word">Contact</span> <span class="elemento-brand">Us</span></h1>
+                    <div class="hero-tagline">Let's Connect</div>
+                    <h1 class="hero-title"><span class="pixel-word">Contact</span> <span class="elemento-brand">Our Team</span></h1>
                     <div class="hero-subtitle">
-                        <p>Get in touch with the <span class="emphasis-pixel">Elemento</span> team for <span class="emphasis-pixel">support</span>, <span class="emphasis-pixel">partnership</span>, or general inquiries about our solutions.</p>
+                        <p>Ready to transform your <span class="emphasis-pixel">infrastructure</span>? Get in touch with the <span class="emphasis-pixel">Elemento</span> team for <span class="emphasis-pixel">expert guidance</span>, <span class="emphasis-pixel">technical support</span>, or <span class="emphasis-pixel">partnership opportunities</span>.</p>
+                    </div>
+                    
+                    <!-- Quick Contact Options -->
+                    <div class="quick-contact-options">
+                        <a href="#form" class="btn btn-secondary quick-contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get in touch</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -63,129 +75,153 @@
         <div class="container">
             <div class="grid grid-2" style="gap: var(--space-4xl);">
                 <div class="fade-in">
-                    <h2>Get in Touch</h2>
-                    <p>Whether you're looking to get started with Elemento, need technical support, or want to explore partnership opportunities, we're here to help.</p>
+                    <h2>Get in <span class="highlight-pixel">Touch</span></h2>
+                    <p>Whether you're looking to get started with <span class="emphasis-pixel">Elemento</span>, need <span class="emphasis-pixel">technical support</span>, or want to explore <span class="emphasis-pixel">partnership opportunities</span>, we're here to help.</p>
                     
-                    <div style="margin: var(--space-xl) 0;">
-                        <h4>Contact Information</h4>
-                        <div style="margin: var(--space-lg) 0;">
-                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
-                                <span style="font-size: 1.2rem;">📧</span>
-                                <div>
-                                    <strong>Email</strong><br>
-                                    <a href="mailto:hello@elemento.cloud" style="color: var(--primary-color);">hello@elemento.cloud</a>
-                                </div>
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info-section">
+                        <div class="card contact-info-card fade-in">
+                            <div class="card-icon"><i class="fas fa-envelope" style="color: var(--blue);"></i></div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>We'll get in touh soon!</p>
+                                <a href="mailto:hello@elemento.cloud" class="contact-link">hello@elemento.cloud</a>
                             </div>
-                            
-                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
-                                <span style="font-size: 1.2rem;">📞</span>
-                                <div>
-                                    <strong>Phone</strong><br>
-                                    <a href="tel:+1-555-123-4567" style="color: var(--primary-color);">+1 (555) 123-4567</a>
-                                </div>
+                            <div class="contact-status online">●</div>
+                        </div>
+                        
+                        <div class="card contact-info-card fade-in">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt" style="color: var(--purple);"></i></div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>Cuneo HQ</p>
+                                <span class="contact-address">2 Via Virginio Allione<br>Cuneo, Italy</span>
                             </div>
-                            
-                            <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
-                                <span style="font-size: 1.2rem;">🏢</span>
-                                <div>
-                                    <strong>Office</strong><br>
-                                    123 Cloud Street<br>
-                                    San Francisco, CA 94105
-                                </div>
-                            </div>
+                            <div class="contact-status online">●</div>
                         </div>
                     </div>
                     
-                    <div>
-                        <h4>Business Hours</h4>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>
-                        Saturday: 10:00 AM - 2:00 PM PST<br>
-                        Sunday: Closed</p>
+                    <!-- Social Media Links -->
+                    <div class="social-contact-section">
+                        <h4>Follow Us</h4>
+                        <div class="grid grid-2" style="gap: var(--space-md);">
+                            <a href="https://www.linkedin.com/company/elemento-modular-cloud/" class="btn btn-outline social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/elemento-modular-cloud" class="btn btn-outline social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.facebook.com/ElementoCloud/" class="btn btn-outline social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/elementocloud/" class="btn btn-outline social-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="fade-in">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                <div class="fade-in" id="form">
+                    <div class="enhanced-form-container">
+                        <div class="form-header">
+                            <h3>Send us a <span class="highlight-pixel">Message</span></h3>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="sales">Sales Inquiry</option>
-                                <option value="support">Technical Support</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="demo">Request Demo</option>
-                                <option value="general">General Inquiry</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs..."></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" value="yes">
-                                <span class="checkmark"></span>
-                                Subscribe to our newsletter for updates and insights
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Options Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Support Options</h2>
-                <p class="section-subtitle">Multiple ways to get the help you need</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card fade-in">
-                    <div class="card-icon">📚</div>
-                    <h3>Documentation</h3>
-                    <p>Comprehensive guides, tutorials, and API documentation to help you get started and troubleshoot issues.</p>
-                    <a href="documentation.html" class="btn btn-secondary">View Docs</a>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">💬</div>
-                    <h3>Community</h3>
-                    <p>Join our community forum to connect with other users, share experiences, and get help from peers.</p>
-                    <a href="community.html" class="btn btn-secondary">Join Community</a>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon">🎓</div>
-                    <h3>Training</h3>
-                    <p>Free webinars, training sessions, and certification programs to help your team master Elemento.</p>
-                    <a href="training.html" class="btn btn-secondary">Learn More</a>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Company</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="sales">💼 Sales Inquiry</option>
+                                    <option value="support">🛠️ Technical Support</option>
+                                    <option value="partnership">🤝 Partnership</option>
+                                    <option value="demo">🎥 Request Demo</option>
+                                    <option value="general">💬 General Inquiry</option>
+                                    <option value="billing">💳 Billing Question</option>
+                                    <option value="security">🔒 Security Question</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs, challenges, or questions..."></textarea>
+                                <div class="character-count">
+                                    <span id="char-count">0</span>/500 characters
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for product updates and <span class="emphasis-pixel">cloud insights</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="/privacy" class="policy-link">Privacy Policy</a> and <a href="/terms" class="policy-link">Terms of Service</a> *
+                                </label>
+                            </div>
+                            
+                            <!-- reCAPTCHA -->
+                            <div class="form-group">
+                                <label>Security Verification *</label>
+                                <div class="captcha-container">
+                                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY_HERE"></div>
+                                </div>
+                                <div class="captcha-error" id="captcha-error" style="display: none;">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    Please complete the captcha verification
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-full form-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                            
+                            <div class="form-success-message" style="display: none;">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Message sent successfully!</h4>
+                                <p>We'll get back to you within 24 hours.</p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,103 +231,278 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Global Presence</h2>
+                <h2 class="section-title">Local <span class="highlight-pixel">Presence</span>, Global <span class="highlight-pixel">Reach</span></h2>
                 <p class="section-subtitle">Serving customers worldwide with local support and infrastructure</p>
             </div>
             
             <div class="grid grid-3">
-                <div class="card fade-in">
-                    <h3>San Francisco</h3>
-                    <p><strong>Headquarters</strong><br>
-                    123 Cloud Street<br>
-                    San Francisco, CA 94105<br>
-                    United States</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">HQ</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Sales</span>
+                <!-- Office Address Card -->
+                <div class="card fade-in office-card">
+                    <div class="office-header">
+                        <div class="office-flag">🇮🇹</div>
+                        <div class="office-status">
+                            <span class="status-indicator" id="office-status-indicator"></span>
+                            <span class="status-text" id="office-status-text">Checking...</span>
+                        </div>
+                    </div>
+                    <h3>Cuneo</h3>
+                    <div class="office-type">
+                        <i class="fas fa-building" style="color: var(--primary-color);"></i>
+                        <span>Headquarters</span>
+                    </div>
+                    <p class="office-address">2 Via Virginio Allione <br>Cuneo, Italy</p>
+                    <div class="office-hours">
+                        <i class="fas fa-clock" style="color: var(--text-secondary);"></i>
+                        <span>Mon-Fri: 9 AM - 6 PM Europe/Rome</span>
+                        <span class="current-time" id="current-office-time"></span>
+                    </div>
+                    <div class="office-tags">
+                        <span class="office-tag primary">HQ</span>
+                        <span class="office-tag">Sales</span>
+                        <span class="office-tag">Engineering</span>
+                    </div>
+                    
+                    <!-- Contact Actions -->
+                    <div class="office-actions" style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--glassmorphism-border);">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Via+Virginio+Allione+2,+12100+Cuneo+CN,+Italy" class="btn btn-outline">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Get Directions</span>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="card fade-in">
-                    <h3>London</h3>
-                    <p><strong>European Office</strong><br>
-                    456 Tech Square<br>
-                    London, EC2A 4BX<br>
-                    United Kingdom</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Sales</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Support</span>
+                <!-- Map Card -->
+                <div class="card fade-in map-card-full">
+                    <div class="map-container-full">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.8985!2d7.5434!3d44.3918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cd2b6!2sVia%20Virginio%20Allione%2C%202%2C%2012100%20Cuneo%20CN%2C%20Italy!5e0!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        
+                        <!-- Map Controls Overlay -->
+                        <div class="map-controls-overlay">
+                            <button id="satellite-toggle" class="map-control-btn" onclick="toggleMapView()" title="Switch to satellite view">
+                                <i class="fas fa-satellite"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Map Marker Overlay -->
+                        <div class="map-marker-overlay">
+                            <div class="map-marker">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                                <span>Elemento HQ</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card fade-in">
-                    <h3>Singapore</h3>
-                    <p><strong>Asia-Pacific Office</strong><br>
-                    789 Innovation Drive<br>
-                    Singapore 018956<br>
-                    Singapore</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Sales</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Support</span>
+                <!-- Transportation Card -->
+                <div class="card fade-in transport-card">
+                    <div class="card-icon" style="margin-bottom: var(--space-lg);">
+                        <i class="fas fa-route" style="color: var(--primary-color); font-size: 2rem;"></i>
+                    </div>
+                    <h3>How to <span class="highlight-pixel">Reach</span> Us</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">Multiple convenient ways to visit our headquarters</p>
+                    
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <div class="transport-icon">
+                                <i class="fas fa-car" style="color: var(--blue);"></i>
+                            </div>
+                            <div class="transport-details">
+                                <h4>By Car</h4>
+                                <p>Free parking available<br>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-option">
+                            <div class="transport-icon">
+                                <i class="fas fa-train" style="color: var(--green);"></i>
+                            </div>
+                            <div class="transport-details">
+                                <h4>By Train</h4>
+                                <p>5 min walk from Cuneo Station<br>
+                            </div>
+                        </div>
+                        
+                        <div class="transport-option">
+                            <div class="transport-icon">
+                                <i class="fas fa-plane" style="color: var(--purple);"></i>
+                            </div>
+                            <div class="transport-details">
+                                <h4>By Air</h4>
+                                <p>1 h from Torino Airport<br>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Support Options Section -->
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Quick answers to common questions</p>
+                <h2 class="section-title">Multiple Ways to Get <span class="highlight-pixel">Help</span></h2>
+                <p class="section-subtitle">Choose the support option that works best for you</p>
             </div>
             
-            <div class="grid grid-2">
+            <div class="grid grid-3">
                 <div class="card fade-in">
-                    <h3>How quickly can I get started?</h3>
-                    <p>You can start using Elemento immediately with our free trial. Most customers are up and running within 30 minutes.</p>
+                    <div class="card-icon"><i class="fas fa-book-open" style="color: var(--blue);"></i></div>
+                    <h3>Documentation</h3>
+                    <p>Comprehensive guides, tutorials, and API documentation to help you get started and troubleshoot issues.</p>
+                    <div class="support-features">
+                        <span class="feature-tag">🚀 Quick Start</span>
+                        <span class="feature-tag">📖 API Docs</span>
+                        <span class="feature-tag">🎯 Tutorials</span>
+                    </div>
+                    <a href="documentation.html" class="btn btn-secondary">Explore Docs</a>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>What kind of support do you offer?</h3>
-                    <p>We offer comprehensive support including documentation, community forums, email support, and priority support for enterprise customers.</p>
+                    <div class="card-icon"><i class="fas fa-users" style="color: var(--green);"></i></div>
+                    <h3>Community</h3>
+                    <p>Join our community forum to connect with other users, share experiences, and get help from peers.</p>
+                    <div class="support-features">
+                        <span class="feature-tag">💬 Active Forum</span>
+                        <span class="feature-tag">👥 1000+ Members</span>
+                        <span class="feature-tag">⚡ Fast Responses</span>
+                    </div>
+                    <a href="community.html" class="btn btn-secondary">Join Community</a>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>Can I deploy on-premises?</h3>
-                    <p>Yes! Elemento is designed to be self-hostable, giving you complete control over your infrastructure and data.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>Do you offer custom solutions?</h3>
-                    <p>Absolutely. Our enterprise team works closely with customers to develop custom solutions that meet specific requirements.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>What compliance standards do you support?</h3>
-                    <p>We support SOC 2, ISO 27001, GDPR, HIPAA, and other major compliance frameworks with built-in security features.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h3>How do you handle data privacy?</h3>
-                    <p>Data privacy is built into our platform. You control where your data is stored and processed, with encryption at rest and in transit.</p>
+                    <div class="card-icon"><i class="fas fa-graduation-cap" style="color: var(--purple);"></i></div>
+                    <h3>Training</h3>
+                    <p>Free webinars, training sessions, and certification programs to help your team master Elemento.</p>
+                    <div class="support-features">
+                        <span class="feature-tag">🎓 Certification</span>
+                        <span class="feature-tag">📺 Webinars</span>
+                        <span class="feature-tag">🆓 Free Access</span>
+                    </div>
+                    <a href="training.html" class="btn btn-secondary">Start Learning</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Enhanced FAQ Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="highlight-pixel">Questions</span></h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How quickly can I get started with Elemento?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can start using <span class="emphasis-pixel">Elemento</span> immediately with our free trial. Most customers are up and running within <span class="emphasis-pixel">30 minutes</span>. Our quick-start guide walks you through the entire setup process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What kind of support do you offer?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive support including <span class="emphasis-pixel">24/7 documentation</span>, community forums, email support, and <span class="emphasis-pixel">priority support</span> for enterprise customers. Our support team has an average response time of under 2 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I deploy Elemento on-premises?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! <span class="emphasis-pixel">Elemento</span> is designed to be <span class="emphasis-pixel">self-hostable</span>, giving you complete control over your infrastructure and data. You can deploy on your own servers, private cloud, or hybrid environments.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer custom solutions?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our <span class="emphasis-pixel">enterprise team</span> works closely with customers to develop custom solutions that meet specific requirements. We offer custom integrations, white-label solutions, and dedicated support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What compliance standards do you support?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We support <span class="emphasis-pixel">SOC 2</span>, <span class="emphasis-pixel">ISO 27001</span>, <span class="emphasis-pixel">GDPR</span>, <span class="emphasis-pixel">HIPAA</span>, and other major compliance frameworks with built-in security features and audit trails.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item scroll-animate">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do you handle data privacy?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Data privacy is built into our platform. You control where your data is stored and processed, with <span class="emphasis-pixel">encryption at rest and in transit</span>. We never access your data without explicit permission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ready to Get Started?</h2>
-                <p class="section-subtitle">Join hundreds of organizations that have transformed their infrastructure with Elemento</p>
+                <h2 class="section-title">Ready to <span class="highlight-pixel">Transform</span> Your Infrastructure?</h2>
+                <p class="section-subtitle">Join hundreds of organizations that have revolutionized their cloud operations with Elemento</p>
             </div>
             
-            <div class="text-center">
-                <a href="#" class="btn btn-primary">Start Free Trial</a>
-                <a href="products.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Explore Products</a>
+            <div class="cta-stats">
+                <div class="grid grid-3">
+                    <div class="text-center">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Organizations</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime SLA</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">30min</div>
+                        <div class="stat-label">Setup Time</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Free Trial
+                </a>
+                <a href="products.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">
+                    <i class="fas fa-play"></i>
+                    Watch Demo
+                </a>
+            </div>
+            
+            <div class="text-center" style="margin-top: var(--space-lg);">
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">No credit card required • 14-day free trial • Cancel anytime</p>
             </div>
         </div>
     </section>
@@ -302,6 +513,214 @@
     <!-- Scripts -->
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
     <script src="js/footer.js"></script>
+    
+    <!-- Enhanced Contact Page Script -->
+    <script>
+        // Office Hours Management
+        function checkOfficeHours() {
+            // Office hours: Monday-Friday, 9 AM - 6 PM Europe/Rome timezone
+            const now = new Date();
+            const romeTime = new Date(now.toLocaleString("en-US", {timeZone: "Europe/Rome"}));
+            
+            const dayOfWeek = romeTime.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+            const hour = romeTime.getHours();
+            const minutes = romeTime.getMinutes();
+            const currentTime = hour * 60 + minutes; // Convert to minutes for easier comparison
+            
+            const officeOpen = 9 * 60; // 9 AM in minutes
+            const officeClose = 18 * 60; // 6 PM in minutes
+            
+            const isWeekday = dayOfWeek >= 1 && dayOfWeek <= 5; // Monday to Friday
+            const isWithinHours = currentTime >= officeOpen && currentTime < officeClose;
+            
+            const statusIndicator = document.getElementById('office-status-indicator');
+            const statusText = document.getElementById('office-status-text');
+            const currentTimeElement = document.getElementById('current-office-time');
+            
+            // Update current time display
+            if (currentTimeElement) {
+                const timeString = romeTime.toLocaleTimeString('en-US', {
+                    timeZone: 'Europe/Rome',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: false
+                });
+                currentTimeElement.textContent = `Current time in Cuneo: ${timeString}`;
+            }
+            
+            if (statusIndicator && statusText) {
+                if (isWeekday && isWithinHours) {
+                    statusIndicator.className = 'status-indicator online';
+                    statusText.className = 'status-text';
+                    statusText.textContent = 'Open Now';
+                } else {
+                    statusIndicator.className = 'status-indicator offline';
+                    if (!isWeekday) {
+                        statusText.className = 'status-text closed';
+                        statusText.textContent = 'Closed (Weekend)';
+                    } else if (currentTime < officeOpen) {
+                        const hoursUntilOpen = Math.floor((officeOpen - currentTime) / 60);
+                        const minutesUntilOpen = (officeOpen - currentTime) % 60;
+                        statusText.className = 'status-text opening-soon';
+                        if (hoursUntilOpen > 0) {
+                            statusText.textContent = `Opens in ${hoursUntilOpen}h ${minutesUntilOpen}m`;
+                        } else {
+                            statusText.textContent = `Opens in ${minutesUntilOpen}m`;
+                        }
+                    } else {
+                        statusText.className = 'status-text closed';
+                        // Calculate next opening time
+                        const tomorrow = new Date(romeTime);
+                        tomorrow.setDate(tomorrow.getDate() + 1);
+                        const nextOpenTime = new Date(tomorrow);
+                        nextOpenTime.setHours(9, 0, 0, 0);
+                        
+                        const timeUntilNextOpen = nextOpenTime - romeTime;
+                        const hoursUntilNextOpen = Math.floor(timeUntilNextOpen / (1000 * 60 * 60));
+                        const minutesUntilNextOpen = Math.floor((timeUntilNextOpen % (1000 * 60 * 60)) / (1000 * 60));
+                        
+                        if (hoursUntilNextOpen > 0) {
+                            statusText.textContent = `Opens tomorrow in ${hoursUntilNextOpen}h ${minutesUntilNextOpen}m`;
+                        } else {
+                            statusText.textContent = `Opens tomorrow in ${minutesUntilNextOpen}m`;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Map functionality
+        let isSatelliteView = false;
+        const normalMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.8985!2d7.5434!3d44.3918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f8!3m3!1m2!1s0x12cd2b6!2sVia%20Virginio%20Allione%2C%202%2C%2012100%20Cuneo%20CN%2C%20Italy!5e0!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus";
+        const satelliteMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.8985!2d7.5434!3d44.3918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f8!3m3!1m2!1s0x12cd2b6!2sVia%20Virginio%20Allione%2C%202%2C%2012100%20Cuneo%20CN%2C%20Italy!5e1!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus";
+
+        function toggleMapView() {
+            const mapIframe = document.querySelector('.map-container-full iframe');
+            const toggleButtonContainer = document.getElementById('satellite-toggle');
+            const toggleButton = toggleButtonContainer ? toggleButtonContainer.querySelector('i') : null;
+            
+            console.log('Map iframe found:', mapIframe); // Debug line
+            console.log('Toggle button found:', toggleButton); // Debug line
+            
+            if (!mapIframe || !toggleButton) {
+                console.log('Element not found - iframe:', !!mapIframe, 'button:', !!toggleButton);
+                return;
+            }
+            
+            isSatelliteView = !isSatelliteView;
+            console.log('Switching to satellite view:', isSatelliteView); // Debug line
+            
+            if (isSatelliteView) {
+                mapIframe.src = satelliteMapUrl;
+                toggleButton.className = 'fas fa-map';
+                toggleButtonContainer.title = 'Switch to normal view';
+            } else {
+                mapIframe.src = normalMapUrl;
+                toggleButton.className = 'fas fa-satellite';
+                toggleButtonContainer.title = 'Switch to satellite view';
+            }
+            
+            // Add visual feedback
+            toggleButtonContainer.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                toggleButtonContainer.style.transform = 'scale(1)';
+            }, 150);
+        }
+
+        function openDirections() {
+            // Open Google Maps directions
+            const address = encodeURIComponent('2 Via Virginio Allione, Cuneo, Italy');
+            window.open(`https://www.google.com/maps/dir/?api=1&destination=${address}`, '_blank');
+        }
+
+        // FAQ functionality is now handled by js/faq.js
+
+        // Form Enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize office hours check
+            checkOfficeHours();
+            
+            // Update office status every minute
+            setInterval(checkOfficeHours, 60000);
+            
+            const form = document.getElementById('contactForm');
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('char-count');
+            const submitBtn = form.querySelector('.form-submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            const successMessage = form.querySelector('.form-success-message');
+            const captchaError = document.getElementById('captcha-error');
+            
+            // Character counter for message field
+            messageTextarea.addEventListener('input', function() {
+                const count = this.value.length;
+                charCount.textContent = count;
+                
+                if (count > 500) {
+                    charCount.style.color = 'var(--error-color)';
+                } else {
+                    charCount.style.color = 'var(--text-secondary)';
+                }
+            });
+            
+            // Form validation and submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Hide previous captcha error
+                captchaError.style.display = 'none';
+                
+                // Verify reCAPTCHA
+                const recaptchaResponse = grecaptcha.getResponse();
+                if (!recaptchaResponse) {
+                    captchaError.style.display = 'block';
+                    captchaError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
+                
+                // Show loading state
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-flex';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission with captcha verification
+                // In a real implementation, you would send the recaptchaResponse to your server
+                const formData = new FormData(form);
+                formData.append('g-recaptcha-response', recaptchaResponse);
+                
+                // Simulate server response (replace with actual API call)
+                setTimeout(() => {
+                    btnText.style.display = 'inline-flex';
+                    btnLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                    
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    form.reset();
+                    charCount.textContent = '0';
+                    
+                    // Reset reCAPTCHA
+                    grecaptcha.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }, 2000);
+            });
+            
+            // Map interaction enhancements
+            const mapContainer = document.querySelector('.map-container');
+            if (mapContainer) {
+                mapContainer.addEventListener('click', function() {
+                    // Add click tracking or interaction
+                    console.log('Map clicked');
+                });
+            }
+        });
+    </script>
 </body>
 </html> 

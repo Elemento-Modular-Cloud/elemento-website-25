@@ -430,38 +430,10 @@
     transform: rotate(180deg);
 }
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background: rgba(255, 255, 255, 0.02);
-    opacity: 0;
-    transform: translateY(-10px);
-    padding: 0 var(--space-xl);
-}
-
-.faq-answer.active {
-    max-height: 300px;
-    padding: 0 var(--space-xl) var(--space-xl);
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.faq-answer p {
-    margin: 0;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
 @media (max-width: 768px) {
     .faq-question {
         font-size: 1rem;
         padding: var(--space-lg);
-    }
-    
-    .faq-answer.active {
-        padding: 0 var(--space-lg) var(--space-lg);
     }
 }
 
