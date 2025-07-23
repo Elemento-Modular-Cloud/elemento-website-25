@@ -1,0 +1,21 @@
+{
+  "name": "Elemento - Cloud Infrastructure Platform",
+  "short_name": "Elemento",
+  "description": "Advanced cloud infrastructure platform for unified multi-cloud management",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffa600",
+  "theme_color": "#ffa600",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
