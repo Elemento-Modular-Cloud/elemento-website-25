@@ -21,10 +21,20 @@ fetch('team.json')
     }
     
     const html = team.map(member => {
-      console.log(`👤 Processing member: ${member.name} (${member.role})`);
+      console.log(`👤 Processing member: ${member.name} (${member.role}) - Division: ${member.division}`);
+      
+      // Determine division class for blur effect
+      const divisionClass = member.division ? `division-${member.division}` : 'division-default';
+      
       return `
-        <div class="team-member fade-in">
-          <img src="${member.photo || 'assets/img/team/placeholder.png'}" alt="${member.name}" class="team-photo" onerror="this.src='assets/img/team/placeholder.png'" />
+        <div class="team-member fade-in ${divisionClass}">
+          <div class="team-photo-container">
+            <!-- Division-specific glow background -->
+            <div class="team-member-glow ${divisionClass}-glow">
+              <img src="${member.photo || 'assets/img/team/placeholder.png'}" alt="" class="glow-mask" onerror="this.src='assets/img/team/placeholder.png'" />
+            </div>
+            <img src="${member.photo || 'assets/img/team/placeholder.png'}" alt="${member.name}" class="team-photo" onerror="this.src='assets/img/team/placeholder.png'" />
+          </div>
           <h4>${member.name}</h4>
           <p class="team-role">${member.role}</p>
           ${member.highlight ? `<p class="team-highlight"><em>${member.highlight}</em></p>` : ''}
@@ -57,4 +67,4 @@ fetch('team.json')
       message: error.message,
       stack: error.stack
     });
-  }); 
+  });

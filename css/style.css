@@ -1995,11 +1995,18 @@ body {
 }
 
 /* Footer styles */
-.footer-logo {
-    width: 40px;
+.footer-logo-container {
+    position: relative;
+    display: inline-block;
     height: 40px;
-    margin-bottom: 1rem;
+    width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: var(--text-color);
+    mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
+    -webkit-mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
 }
+
 
 /* Stat icon styles - reusable for any stats section */
 .stat-icon {
@@ -2207,3 +2214,8 @@ body {
         padding: 0 var(--space-lg) var(--space-lg);
     }
 } 
+
+.iubenda-uspr-btn {
+    z-index: 99999999 !important;
+    transform: scale(.8);
+}

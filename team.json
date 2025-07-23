@@ -2,6 +2,7 @@
   {
     "name": "Gabriele Gaetano Fronzé",
     "role": "CEO – Chief Executive Officer",
+    "division": "leadership",
     "highlight": "Ph.D. in Physics",
     "bio": "With a foundation in Nuclear and Subnuclear Physics, I've channeled my scientific rigor into creating robust, scalable cloud solutions.",
     "photo": "assets/img/team/gfronze.webp",
@@ -13,6 +14,7 @@
   {
     "name": "Filippo Valle",
     "role": "CTO – Chief Technical Officer",
+    "division": "engineering",
     "highlight": "Physicist, Ph.D. in Complex Systems for Life Sciences",
     "bio": "Curious by nature, I Love coding and data mining. | I studied Complex Systems and now I am leading the tech team to simplify the clouds.",
     "photo": "assets/img/team/fvalle.webp",
@@ -24,6 +26,7 @@
   {
     "name": "Giulia Sannai",
     "role": "CMO – Chief Marketing Officer",
+    "division": "creative",
     "highlight": "Musicologist & Communication Expert",
     "bio": "CMO at Elemento Cloud, bridging strategy, technology, and creativity. Musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.",
     "photo": "assets/img/team/gsannai.webp",
@@ -35,6 +38,7 @@
   {
     "name": "Luca Benzi",
     "role": "Frontend CSO – Chief Sales Officer",
+    "division": "sales",
     "highlight": "Born networker",
     "bio": "Ambitious sales executive, relentless in achieving goals. Ultratrailer, passionate about history and travel, a curious explorer of cultures and flavors. A natural connector, always ready to create value in relationships.",
     "photo": "assets/img/team/lbenzi.webp",
@@ -45,6 +49,7 @@
   {
     "name": "Gianluca Costa",
     "role": "Backend CSO – Chief Sales Officer",
+    "division": "sales",
     "highlight": "",
     "bio": "I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.",
     "photo": "assets/img/team/gcosta.webp",
@@ -55,6 +60,7 @@
   {
     "name": "Martino Mogna",
     "role": "R&D Leader",
+    "division": "engineering",
     "highlight": "Web Dev student & maker",
     "bio": "Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.",
     "photo": "assets/img/team/mmogna.webp",
@@ -66,6 +72,7 @@
   {
     "name": "Vincent Morello",
     "role": "Art Director",
+    "division": "creative",
     "highlight": "Graphic Design Degree",
     "bio": "Shaping visuals and identities always seeking the key to reinterpreting the ordinary",
     "photo": "assets/img/team/vmorello.webp",
@@ -76,6 +83,7 @@
   {
     "name": "Andrea Riccardi",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "",
     "bio": "Passionate programmer with a love for computer science and video games, driven by the desire to understand how things work",
     "photo": "assets/img/team/andrea.jpg",
@@ -87,6 +95,7 @@
   {
     "name": "Nicola Gutierrez",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "",
     "bio": "Software Engineer specialized in artificial intelligence and data. Interested in data processing and acquisition, model optimization, and AI integration.",
     "photo": "assets/img/team/ngutierrez.png",
@@ -98,6 +107,7 @@
   {
     "name": "Filippo Ferrando Damillano",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "Computer Science Student",
     "bio": "R&D Developer at Elemento Cloud and Computer Science student passionate about Linux systems and virtualization technologies. Always eager to explore new tech challenges and learn as much as possible!",
     "photo": "assets/img/team/ferrando.png",
@@ -109,6 +119,7 @@
   {
     "name": "Paolo Beci",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "MSc Cloud Engineering",
     "bio": "MSc Cloud Engineer @PoliTO, passionate about computer science, innovation, and economics. Always seeking new challenges and growth opportunities.",
     "photo": "assets/img/team/pbeci.png",
@@ -120,6 +131,7 @@
   {
     "name": "Giulia Borgoni",
     "role": "Business Analyst",
+    "division": "business",
     "highlight": "PoliTo Master's Student",
     "bio": "Engineer and computer science teacher. Passionate about mountains, travel and innovation. Always curious, always learning",
     "photo": "assets/img/team/gborgoni.webp",
@@ -130,6 +142,7 @@
   {
     "name": "Marco Garro",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "Computer science student",
     "bio": "I am a computer science student who loves music and low-level programming. I've been fortunate to work with Elemento since 2023.",
     "photo": "assets/img/team/mgarro.webp",
@@ -141,6 +154,7 @@
   {
     "name": "Simone Robaldo",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "IT Student",
     "bio": "IT Student and programmer that enjoys photography in his free time.",
     "photo": "assets/img/team/srobaldo.webp",
@@ -152,6 +166,7 @@
   {
     "name": "Giorgio Torchio",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "",
     "bio": "Passionate about books and everything related to computer science. I particularly enjoy studying algorithms, multimedia formats, and network protocols.",
     "photo": "assets/img/team/giorgio.jpg",
@@ -162,6 +177,7 @@
   {
     "name": "Lorenzo Canciani",
     "role": "Cloud Software Developer",
+    "division": "engineering",
     "highlight": "MSc Cybersecurity student",
     "bio": "MSc Cybersecurity student @PoliTO, passionate about anything that works autonomously. If I don't understand how it works, I simply take it apart. Yes, I'm curious too!",
     "photo": "assets/img/team/lorenzo.jpg",
@@ -173,6 +189,7 @@
   {
     "name": "Vittorio Garretto",
     "role": "Research Scientist",
+    "division": "engineering",
     "highlight": "Master in Complex Systems Physics",
     "bio": "As a master's student in Complex Systems Physics, I have developed a deep interest in Machine Learning, where I combine analytical skills with a passion for data-driven insights.",
     "photo": "assets/img/team/vittorio.jpg",

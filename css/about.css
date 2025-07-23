@@ -20,16 +20,111 @@
   transition: all 0.3s ease;
   height: 100%; /* Ensures equal height */
   min-height: 650px; /* Increased to accommodate 2-line names */
+  position: relative; /* For blur positioning */
+  overflow: hidden; /* Contains the blur effect */
 }
 
-.team-photo {
-  width: 230px;
-  height: 300px;
+/* Division-specific silhouette glow backgrounds */
+.team-member-glow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(50px);
+  border-radius: 100px;
+  mix-blend-mode: hard-light;
+}
+
+.glow-mask {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
   border-radius: 16px;
+  filter: brightness(0) contrast(1000%);
+  opacity: 0.8;
+}
+
+/* Leadership division - Blue/Purple gradient */
+.division-leadership-glow {
+  background: linear-gradient(45deg, 
+    rgba(99, 102, 241, 0.8) 0%, 
+    rgba(139, 92, 246, 0.6) 50%, 
+    rgba(168, 85, 247, 0.4) 100%);
+}
+
+/* Sales division - Orange/Red gradient */
+.division-sales-glow {
+  background: linear-gradient(45deg, 
+    rgba(249, 115, 22, 0.8) 0%, 
+    rgba(239, 68, 68, 0.6) 50%, 
+    rgba(220, 38, 127, 0.4) 100%);
+}
+
+/* Engineering division - Green/Blue gradient */
+.division-engineering-glow {
+  background: linear-gradient(45deg, 
+    rgba(34, 197, 94, 0.8) 0%, 
+    rgba(59, 130, 246, 0.6) 50%, 
+    rgba(6, 182, 212, 0.4) 100%);
+}
+
+/* Creative division - Purple/Pink gradient */
+.division-creative-glow {
+  background: linear-gradient(45deg, 
+    rgba(168, 85, 247, 0.8) 0%, 
+    rgba(236, 72, 153, 0.6) 50%, 
+    rgba(244, 63, 94, 0.4) 100%);
+}
+
+/* Business division - Orange/Red gradient */
+.division-business-glow {
+  background: linear-gradient(45deg, 
+    rgba(249, 115, 22, 0.8) 0%, 
+    rgba(239, 68, 68, 0.6) 50%, 
+    rgba(220, 38, 127, 0.4) 100%);
+}
+
+/* Default division - Neutral gradient */
+.division-default-glow {
+  background: linear-gradient(45deg, 
+    rgba(156, 163, 175, 0.6) 0%, 
+    rgba(107, 114, 128, 0.4) 50%, 
+    rgba(75, 85, 99, 0.2) 100%);
+}
+
+/* Enhanced hover effects for team members */
+.team-member:hover .team-member-glow {
+  animation-play-state: paused;
+  filter: blur(10px);
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.team-photo-container {
+  position: relative;
+  width: 230px;
+  height: 300px;
   margin-bottom: var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .team-member h4 {
@@ -46,6 +141,8 @@
   text-align: center;
   hyphens: auto;
   word-wrap: break-word;
+  position: relative;
+  z-index: 1;
 }
 
 .team-role {
@@ -55,6 +152,8 @@
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
 }
 
 .team-highlight {
@@ -66,6 +165,8 @@
   background: rgba(var(--primary-color-rgb), 0.1);
   border-radius: 8px;
   border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .team-bio {
@@ -78,6 +179,8 @@
   display: flex;
   align-items: center;
   padding: 0 var(--space-sm);
+  position: relative;
+  z-index: 1;
 }
 
 .team-links {
@@ -88,6 +191,8 @@
   justify-content: center;
   padding-top: var(--space-lg);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .team-links .btn-link {
@@ -146,14 +251,24 @@
     min-height: 3.2rem;
   }
   
-  .team-photo {
+  .team-photo-container {
     width: 200px;
     height: 250px;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: 100%;
   }
   
   .team-photo-wrapper {
     width: 200px;
     height: 250px;
+  }
+  
+  .team-member-glow {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -173,9 +288,14 @@
     min-height: 3rem;
   }
   
-  .team-photo {
+  .team-photo-container {
     width: 175px;
     height: 225px;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: 100%;
   }
   
   .team-photo-wrapper {
@@ -190,6 +310,11 @@
   
   .team-links .btn-link {
     min-width: 120px;
+  }
+  
+  .team-member-glow {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -209,13 +334,23 @@
     min-height: 2.6rem;
   }
   
-  .team-photo {
+  .team-photo-container {
     width: 150px;
     height: 200px;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: 100%;
   }
   
   .team-photo-wrapper {
     width: 150px;
     height: 200px;
+  }
+  
+  .team-member-glow {
+    width: 100%;
+    height: 100%;
   }
 } 
