@@ -3,6 +3,231 @@
  * Based on elemento-gui-new styling and functionality
  */
 
+// Helper function to get saved cookie preference
+function getCookiePreference() {
+    try {
+        const saved = localStorage.getItem('elemento_cookie_preference');
+        return saved ? JSON.parse(saved) : null;
+    } catch (error) {
+        console.error('Failed to get cookie preference:', error);
+        return null;
+    }
+}
+
+// Add click interception functionality
+function setupIubendaClickInterception() {
+    console.log('Setting up iubenda click interception');
+    
+    // Helper function to save cookie preference
+    function saveCookiePreference(choice, timestamp = Date.now()) {
+        console.log('Saving cookie preference', choice);
+        const preference = {
+            choice: choice, // 'accepted', 'rejected', or 'customized'
+            timestamp: timestamp,
+            date: new Date(timestamp).toISOString()
+        };
+        
+        try {
+            localStorage.setItem('elemento_cookie_preference', JSON.stringify(preference));
+            console.log('Cookie preference saved:', preference);
+            
+            // Also save to sessionStorage for immediate access
+            sessionStorage.setItem('elemento_cookie_preference', JSON.stringify(preference));
+            
+            // Dispatch custom event for other parts of the app to listen to
+            const event = new CustomEvent('cookiePreferenceChanged', { 
+                detail: preference 
+            });
+            document.dispatchEvent(event);
+            
+        } catch (error) {
+            console.error('Failed to save cookie preference:', error);
+        }
+    }
+    
+    // Function to intercept clicks on iubenda banner buttons
+    function interceptiubendaClicks() {
+        // Wait for the iubenda banner to be created
+        const checkForBanner = setInterval(() => {
+            const iubendaBanner = document.querySelector('#iubenda-cs-banner');
+            
+            if (iubendaBanner) {
+                // More comprehensive selector matching
+                const selectors = {
+                    acceptBtn: '.iubenda-cs-accept-btn, [data-iubenda-cs-accept], button[data-iubenda-cs-accept]',
+                    rejectBtn: '.iubenda-cs-reject-btn, [data-iubenda-cs-reject], button[data-iubenda-cs-reject]',
+                    customizeBtn: '.iubenda-cs-customize-btn, [data-iubenda-cs-customize], button[data-iubenda-cs-customize]',
+                    privacyLink: '.iubenda-privacy-policy-link, a[href*="privacy"], [data-iubenda-privacy]',
+                    cookiePolicyLink: '.iubenda-cs-cookie-policy-lnk, a[href*="cookie"], [data-iubenda-cookie]',
+                    vendorListLink: '.iubenda-vendor-list-link, a[href*="vendor"], [data-iubenda-vendor]',
+                    advertisingPrefsLink: '.iubenda-advertising-preferences-link, a[href*="advertising"], [data-iubenda-advertising]',
+                    privacyChoicesLink: '.iubenda-cs-preferences-link, a[href*="preferences"], [data-iubenda-preferences]'
+                };
+                
+                // Intercept clicks on Accept button
+                const acceptBtn = iubendaBanner.querySelector(selectors.acceptBtn);
+                if (acceptBtn) {
+                    acceptBtn.addEventListener('click', function(e) {
+                        saveCookiePreference('accepted');
+                    });
+                }
+                
+                // Intercept clicks on Reject button
+                const rejectBtn = iubendaBanner.querySelector(selectors.rejectBtn);
+                if (rejectBtn) {
+                    rejectBtn.addEventListener('click', function(e) {
+                        saveCookiePreference('rejected');
+                    });
+                }
+                
+                // Intercept clicks on Customize button
+                const customizeBtn = iubendaBanner.querySelector(selectors.customizeBtn);
+                if (customizeBtn) {
+                    customizeBtn.addEventListener('click', function(e) {
+                        saveCookiePreference('customized');
+                    });
+                }
+                
+                // Intercept clicks on privacy policy link
+                const privacyLink = iubendaBanner.querySelector(selectors.privacyLink);
+                if (privacyLink) {
+                    privacyLink.addEventListener('click', function(e) {
+                        // Privacy policy link clicked
+                    });
+                }
+                
+                // Intercept clicks on cookie policy link
+                const cookiePolicyLink = iubendaBanner.querySelector(selectors.cookiePolicyLink);
+                if (cookiePolicyLink) {
+                    cookiePolicyLink.addEventListener('click', function(e) {
+                        // Cookie policy link clicked
+                    });
+                }
+                
+                // Intercept clicks on vendor list link
+                const vendorListLink = iubendaBanner.querySelector(selectors.vendorListLink);
+                if (vendorListLink) {
+                    vendorListLink.addEventListener('click', function(e) {
+                        // Vendor list link clicked
+                    });
+                }
+                
+                // Intercept clicks on advertising preferences link
+                const advertisingPrefsLink = iubendaBanner.querySelector(selectors.advertisingPrefsLink);
+                if (advertisingPrefsLink) {
+                    advertisingPrefsLink.addEventListener('click', function(e) {
+                        // Advertising preferences link clicked
+                    });
+                }
+                
+                // Intercept clicks on privacy choices panel link
+                const privacyChoicesLink = iubendaBanner.querySelector(selectors.privacyChoicesLink);
+                if (privacyChoicesLink) {
+                    privacyChoicesLink.addEventListener('click', function(e) {
+                        // Privacy choices panel link clicked
+                    });
+                }
+                
+                // Also try to intercept any click within the banner as a fallback
+                iubendaBanner.addEventListener('click', function(e) {
+                    // General click handling if needed
+                });
+                
+                // Clear the interval since we found the banner
+                clearInterval(checkForBanner);
+            }
+        }, 100); // Check every 100ms
+        
+        // Stop checking after 10 seconds to avoid infinite loop
+        setTimeout(() => {
+            clearInterval(checkForBanner);
+        }, 10000);
+    }
+    
+    // Run the interception function
+    interceptiubendaClicks();
+    
+    // Also run when the DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', interceptiubendaClicks);
+    } else {
+        interceptiubendaClicks();
+    }
+    
+    // Also run when the page is fully loaded
+    window.addEventListener('load', interceptiubendaClicks);
+    
+    // Monitor for new iubenda banners being added to the DOM
+    const bannerObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === 1) { // Element node
+                    if (node.id === 'iubenda-cs-banner' || 
+                        (node.querySelector && node.querySelector('#iubenda-cs-banner'))) {
+                        console.log('New iubenda banner detected');
+                        setTimeout(() => interceptiubendaClicks(), 100);
+                    }
+                }
+            });
+        });
+    });
+    
+    // Start observing
+    bannerObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    // Expose helper functions globally for other scripts to use
+    window.elementoCookieUtils = {
+        saveCookiePreference,
+        getCookiePreference
+    };
+}
+
+function handleCookiePreference() {
+    const cookiePreference = getCookiePreference();
+    console.log('cookie preference', cookiePreference);
+        
+    const checkForBanner = setInterval(() => {
+        const iubendaBanner = document.querySelector('#iubenda-cs-banner');
+        console.log('iubenda banner', iubendaBanner);
+
+        if (cookiePreference) {
+            // Simulate click on the appropriate button based on stored preference
+            const selectors = {
+                acceptBtn: '.iubenda-cs-accept-btn, [data-iubenda-cs-accept], button[data-iubenda-cs-accept]',
+                rejectBtn: '.iubenda-cs-reject-btn, [data-iubenda-cs-reject], button[data-iubenda-cs-reject]',
+                customizeBtn: '.iubenda-cs-customize-btn, [data-iubenda-cs-customize], button[data-iubenda-cs-customize]'
+            };
+            
+            let targetButton = null;
+            
+            try {
+                if (cookiePreference.choice === 'accepted' || cookiePreference.choice === 'customized') {
+                    targetButton = iubendaBanner.querySelector(selectors.acceptBtn);
+                } else if (cookiePreference.choice === 'rejected') {
+                    targetButton = iubendaBanner.querySelector(selectors.rejectBtn);
+                }
+                
+                if (targetButton) {
+                    // Simulate click on the appropriate button
+                    targetButton.click();
+                    console.log(`Automatically clicked ${cookiePreference.choice} button based on stored preference`);
+                }
+            } catch (error) {
+                clearInterval(checkForBanner);
+                return;
+            }
+        }
+    }, 100); // Check every 100ms
+
+    // Stop checking after 10 seconds to avoid infinite loop
+    setTimeout(() => {
+        clearInterval(checkForBanner);
+    }, 10000);
+}
+
 class ElementoWebsite {
     constructor() {
         this.currentTheme = localStorage.getItem('theme') || 'light';
@@ -419,63 +644,34 @@ class ElementoWebsite {
             return;
         }
 
-        // // Inject CSS to hide iubenda buttons immediately
-        // const hideiubendaCSS = `
-        //     .iubenda-uspr-btn,
-        //     .iubenda-tp-btn {
-        //         opacity: 0 !important;
-        //         visibility: hidden !important;
-        //         display: none !important;
-        //     }
-        // `;
-        // const style = document.createElement('style');
-        // style.textContent = hideiubendaCSS;
-        // document.head.appendChild(style);
-
-        // // Set up MutationObserver to catch buttons as they're created
-        // const observer = new MutationObserver((mutations) => {
-        //     mutations.forEach((mutation) => {
-        //         mutation.addedNodes.forEach((node) => {
-        //             if (node.nodeType === 1) { // Element node
-        //                 if (node.classList && (node.classList.contains('iubenda-uspr-btn') || node.classList.contains('iubenda-tp-btn'))) {
-        //                     // Immediately hide the button
-        //                     node.style.setProperty('opacity', '0', 'important');
-        //                     node.style.setProperty('visibility', 'hidden', 'important');
-        //                     node.style.setProperty('display', 'none', 'important');
-        //                 }
-        //             }
-        //         });
-        //     });
-        // });
-
-        // // Start observing immediately
-        // observer.observe(document.body, {
-        //     childList: true,
-        //     subtree: true
-        // });
-
         // Create and add the first iubenda script
         const iubendaWidgetScript = document.createElement('script');
         iubendaWidgetScript.type = 'text/javascript';
         iubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
-        document.head.appendChild(iubendaWidgetScript);
+        document.head.insertBefore(iubendaWidgetScript, document.head.firstChild);
 
-        // Create and add the second iubenda script with configuration
-        const iubendaConfigScript = document.createElement('script');
-        iubendaConfigScript.type = 'text/javascript';
-        iubendaConfigScript.textContent = `
-            var _iub = _iub || {}; 
-            _iub.cons_instructions = _iub.cons_instructions || []; 
-            _iub.cons_instructions.push(["init", {api_key: "sxLUEyAyNL0U7vRevCJj7IqOklkcEx0C"}]);
-        `;
-        document.head.appendChild(iubendaConfigScript);
+        // Run the click interception setup
+        if (getCookiePreference()) {
 
-        // Create and add the third iubenda script
-        const iubendaConsScript = document.createElement('script');
-        iubendaConsScript.type = 'text/javascript';
-        iubendaConsScript.src = 'https://cdn.iubenda.com/cons/iubenda_cons.js';
-        iubendaConsScript.async = true;
-        document.head.appendChild(iubendaConsScript);
+            handleCookiePreference();
+            // Inject CSS to hide iubenda buttons immediately
+            const hideiubendaBannerCSS = `
+                html {
+                    overflow-y: visible !important;
+                }
+                #iubenda-cs-banner {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                }
+            `;
+            const style = document.createElement('style');
+            style.textContent = hideiubendaBannerCSS;
+            document.head.appendChild(style);
+            
+        } else {
+            setupIubendaClickInterception();
+        }
 
         // Load the iubenda fix script immediately (no delay)
         const iubendaFixScript = document.createElement('script');
