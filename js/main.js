@@ -22,7 +22,7 @@ class ElementoWebsite {
         this.setupKeyboardShortcuts();
         this.setupPerformanceOptimizations();
         this.setupAccessibility();
-        this.setupJubendaScripts();
+        this.setupiubendaScripts();
         this.setupThemesScript(); // Add this line
     }
 
@@ -413,75 +413,75 @@ class ElementoWebsite {
         });
     }
 
-    setupJubendaScripts() {
-        // Check if Jubenda scripts are already loaded
+    setupiubendaScripts() {
+        // Check if iubenda scripts are already loaded
         if (document.querySelector('script[src*="iubenda"]')) {
             return;
         }
 
-        // Inject CSS to hide Jubenda buttons immediately
-        const hideJubendaCSS = `
-            .iubenda-uspr-btn,
-            .iubenda-tp-btn {
-                opacity: 0 !important;
-                visibility: hidden !important;
-                display: none !important;
-            }
-        `;
-        const style = document.createElement('style');
-        style.textContent = hideJubendaCSS;
-        document.head.appendChild(style);
+        // // Inject CSS to hide iubenda buttons immediately
+        // const hideiubendaCSS = `
+        //     .iubenda-uspr-btn,
+        //     .iubenda-tp-btn {
+        //         opacity: 0 !important;
+        //         visibility: hidden !important;
+        //         display: none !important;
+        //     }
+        // `;
+        // const style = document.createElement('style');
+        // style.textContent = hideiubendaCSS;
+        // document.head.appendChild(style);
 
-        // Set up MutationObserver to catch buttons as they're created
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                mutation.addedNodes.forEach((node) => {
-                    if (node.nodeType === 1) { // Element node
-                        if (node.classList && (node.classList.contains('iubenda-uspr-btn') || node.classList.contains('iubenda-tp-btn'))) {
-                            // Immediately hide the button
-                            node.style.setProperty('opacity', '0', 'important');
-                            node.style.setProperty('visibility', 'hidden', 'important');
-                            node.style.setProperty('display', 'none', 'important');
-                        }
-                    }
-                });
-            });
-        });
+        // // Set up MutationObserver to catch buttons as they're created
+        // const observer = new MutationObserver((mutations) => {
+        //     mutations.forEach((mutation) => {
+        //         mutation.addedNodes.forEach((node) => {
+        //             if (node.nodeType === 1) { // Element node
+        //                 if (node.classList && (node.classList.contains('iubenda-uspr-btn') || node.classList.contains('iubenda-tp-btn'))) {
+        //                     // Immediately hide the button
+        //                     node.style.setProperty('opacity', '0', 'important');
+        //                     node.style.setProperty('visibility', 'hidden', 'important');
+        //                     node.style.setProperty('display', 'none', 'important');
+        //                 }
+        //             }
+        //         });
+        //     });
+        // });
 
-        // Start observing immediately
-        observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
+        // // Start observing immediately
+        // observer.observe(document.body, {
+        //     childList: true,
+        //     subtree: true
+        // });
 
-        // Create and add the first Jubenda script
-        const jubendaWidgetScript = document.createElement('script');
-        jubendaWidgetScript.type = 'text/javascript';
-        jubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
-        document.head.appendChild(jubendaWidgetScript);
+        // Create and add the first iubenda script
+        const iubendaWidgetScript = document.createElement('script');
+        iubendaWidgetScript.type = 'text/javascript';
+        iubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
+        document.head.appendChild(iubendaWidgetScript);
 
-        // Create and add the second Jubenda script with configuration
-        const jubendaConfigScript = document.createElement('script');
-        jubendaConfigScript.type = 'text/javascript';
-        jubendaConfigScript.textContent = `
+        // Create and add the second iubenda script with configuration
+        const iubendaConfigScript = document.createElement('script');
+        iubendaConfigScript.type = 'text/javascript';
+        iubendaConfigScript.textContent = `
             var _iub = _iub || {}; 
             _iub.cons_instructions = _iub.cons_instructions || []; 
             _iub.cons_instructions.push(["init", {api_key: "sxLUEyAyNL0U7vRevCJj7IqOklkcEx0C"}]);
         `;
-        document.head.appendChild(jubendaConfigScript);
+        document.head.appendChild(iubendaConfigScript);
 
-        // Create and add the third Jubenda script
-        const jubendaConsScript = document.createElement('script');
-        jubendaConsScript.type = 'text/javascript';
-        jubendaConsScript.src = 'https://cdn.iubenda.com/cons/iubenda_cons.js';
-        jubendaConsScript.async = true;
-        document.head.appendChild(jubendaConsScript);
+        // Create and add the third iubenda script
+        const iubendaConsScript = document.createElement('script');
+        iubendaConsScript.type = 'text/javascript';
+        iubendaConsScript.src = 'https://cdn.iubenda.com/cons/iubenda_cons.js';
+        iubendaConsScript.async = true;
+        document.head.appendChild(iubendaConsScript);
 
-        // Load the Jubenda fix script immediately (no delay)
-        const jubendaFixScript = document.createElement('script');
-        jubendaFixScript.type = 'text/javascript';
-        jubendaFixScript.src = 'js/jubenda_fix.js';
-        document.head.appendChild(jubendaFixScript);
+        // Load the iubenda fix script immediately (no delay)
+        const iubendaFixScript = document.createElement('script');
+        iubendaFixScript.type = 'text/javascript';
+        iubendaFixScript.src = 'js/iubenda_fix.js';
+        document.head.appendChild(iubendaFixScript);
     }
 
     setupThemesScript() {

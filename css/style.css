@@ -2213,9 +2213,4 @@ body {
     .faq-answer.active {
         padding: 0 var(--space-lg) var(--space-lg);
     }
-} 
-
-.iubenda-uspr-btn {
-    z-index: 99999999 !important;
-    transform: scale(.8);
 }
