@@ -650,8 +650,21 @@ class ElementoWebsite {
         iubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
         document.head.insertBefore(iubendaWidgetScript, document.head.firstChild);
 
+        const preference = getCookiePreference();
+        console.log('preference', preference);
+        let isExpired = false;
+
+        if (preference) {
+            const validDate = new Date(preference.timestamp);
+            const currentDate = new Date();
+            const timeDifference = currentDate - validDate;
+            const oneYear = 365 * 24 * 60 * 60 * 1000;
+            isExpired = timeDifference > oneYear;
+            console.log('isExpired', isExpired);
+        }
+
         // Run the click interception setup
-        if (getCookiePreference()) {
+        if (getCookiePreference() && !isExpired) {
 
             handleCookiePreference();
             // Inject CSS to hide iubenda buttons immediately
