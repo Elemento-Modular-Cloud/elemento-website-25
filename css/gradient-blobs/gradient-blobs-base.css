@@ -158,60 +158,6 @@
     }
 }
 
-@keyframes blur-breathe {
-    0% {
-        filter: blur(90px);
-    }
-    25% {
-        filter: blur(75px);
-    }
-    50% {
-        filter: blur(105px);
-    }
-    75% {
-        filter: blur(80px);
-    }
-    100% {
-        filter: blur(90px);
-    }
-}
-
-@keyframes blur-breathe-tablet {
-    0% {
-        filter: blur(15px);
-    }
-    25% {
-        filter: blur(10px);
-    }
-    50% {
-        filter: blur(22px);
-    }
-    75% {
-        filter: blur(12px);
-    }
-    100% {
-        filter: blur(15px);
-    }
-}
-
-@keyframes blur-breathe-mobile {
-    0% {
-        filter: blur(12px);
-    }
-    25% {
-        filter: blur(8px);
-    }
-    50% {
-        filter: blur(18px);
-    }
-    75% {
-        filter: blur(10px);
-    }
-    100% {
-        filter: blur(12px);
-    }
-}
-
 /* ============================================================================ */
 /* BASE GRADIENT SYSTEM CLASSES                                               */
 /* ============================================================================ */
@@ -225,7 +171,7 @@
     height: 100%;
     z-index: 4;
     overflow: hidden;
-    transform: translateX(17%);
+    /* transform: translateX(17%); */
 }
 
 @media (max-width: 1000px) {
@@ -281,8 +227,15 @@
     width: 100%;
     height: 100%;
     /* animation: blur-breathe 7s ease-in-out infinite; */
-    filter: blur(100px);
+    filter: blur(3vh);
     will-change: filter;
+    margin-left: 17%;
+}
+
+@media (max-width: 1000px) {
+    .hero-blur {
+        margin-left: 0;
+    }
 }
 
 .hero-gradient-mask {
@@ -317,8 +270,8 @@
     width: 49vmin;
     height: 50vmin;
     transform: translate(-50%, -53%);
-    animation: gradient-orbit-clockwise 23s linear infinite;
-    transform-origin: 45% 55%;
+    animation: gradient-orbit-counter 23s linear infinite;
+    transform-origin: center;
     opacity: 0.9;
     will-change: transform;
     border-radius: 50%;
@@ -332,7 +285,7 @@
     width: 45vmin;
     height: 60vmin;
     transform: translate(-55%, -42%);
-    animation: gradient-orbit-counter 25s linear infinite;
+    animation: gradient-orbit-clockwise 25s linear infinite;
     transform-origin: 48% 60%;
     opacity: 0.7;
     will-change: transform;
@@ -394,8 +347,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
 }
 

@@ -21,7 +21,7 @@ let currentThemeIndex = DEFAULT_THEME_INDEX;
 function log(message, data = null) {
     const timestamp = new Date().toISOString();
     const logMessage = `[Elemento Themes ${timestamp}] ${message}`;
-    console.log(logMessage, data || '');
+    // console.log(logMessage, data || '');
 }
 
 // Get DOM elements

@@ -530,8 +530,8 @@ body {
     height: 32%;
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 67%;
     transform: translate(-50%, -50%);
     z-index: 100;
     background-color: #000000;
@@ -544,7 +544,7 @@ body {
     .hero-product-icon {
         width: 25%;
         height: 25%;
-        top: 35%;
+        top: 25%;
     }
 }
 
