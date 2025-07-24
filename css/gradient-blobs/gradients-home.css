@@ -54,20 +54,20 @@
 /* Rectangle overlays */
 .ro-home-1 {
     background: repeating-linear-gradient(
-        95deg,
+        111deg,
         transparent 0px,
         transparent var(--stripe-width-1),
         var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-gap-1) + var(--stripe-width-1))
+        var(--stripe-color-2) calc(var(--stripe-gap-1) + var(--stripe-width-1)*2)
     );
 }
 
 .ro-home-2 {
     background: repeating-linear-gradient(
-        98deg,
+        115deg,
         transparent 0px,
         transparent var(--stripe-width-2),
         var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*1.7)
+        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*2)
     );
 }

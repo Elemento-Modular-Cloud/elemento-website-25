@@ -27,11 +27,10 @@ fetch('team.json')
       const divisionClass = member.division ? `division-${member.division}` : 'division-default';
       
       return `
-        <div class="team-member fade-in ${divisionClass}">
+        <div class="team-member ${divisionClass}">
           <div class="team-photo-container">
             <!-- Division-specific glow background -->
             <div class="team-member-glow ${divisionClass}-glow">
-              <img src="${member.photo || 'assets/img/team/placeholder.png'}" alt="" class="glow-mask" onerror="this.src='assets/img/team/placeholder.png'" />
             </div>
             <img src="${member.photo || 'assets/img/team/placeholder.png'}" alt="${member.name}" class="team-photo" onerror="this.src='assets/img/team/placeholder.png'" />
           </div>

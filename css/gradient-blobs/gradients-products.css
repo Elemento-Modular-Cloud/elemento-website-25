@@ -55,7 +55,7 @@
 
 .ro-products-1 {
     background: repeating-linear-gradient(
-        0deg,
+        -12deg,
         transparent 0px,
         transparent var(--stripe-width-1),
         var(--stripe-color-1)  var(--stripe-width-1),
@@ -65,7 +65,7 @@
 
 .ro-products-2 {
     background: repeating-linear-gradient(
-        -4deg,
+        -15deg,
         transparent 0px,
         transparent var(--stripe-width-2),
         var(--stripe-color-1)  var(--stripe-width-2),

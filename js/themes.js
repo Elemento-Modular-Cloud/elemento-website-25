@@ -2,7 +2,7 @@
 
 // Theme configuration
 const themes = ['theme-light', 'theme-dark', 'theme-high-contrast'];
-const DEFAULT_THEME_INDEX = 1; // 0 = light, 1 = dark, 2 = high-contrast
+const DEFAULT_THEME_INDEX = 2; // 0 = light, 1 = dark, 2 = high-contrast
 const DEFAULT_THEME = themes[DEFAULT_THEME_INDEX];
 const themeIcons = [
     `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -17,39 +17,33 @@ const themeIcons = [
 ];
 let currentThemeIndex = DEFAULT_THEME_INDEX;
 
-// Logging utility
-function log(message, data = null) {
-    const timestamp = new Date().toISOString();
-    const logMessage = `[Elemento Themes ${timestamp}] ${message}`;
-    // console.log(logMessage, data || '');
-}
-
 // Get DOM elements
-const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+const btnClass = '.theme-toggle';
+const themeToggleBtn = document.querySelector(btnClass);
 const body = document.body;
 
 // Initialize theme switcher
 function initThemeSwitcher() {
-    log('Initializing theme switcher');
+    console.log('Initializing theme switcher');
     
     // Create theme switcher if it doesn't exist
-    if (!document.querySelector('.theme-switcher')) {
-        log('Creating theme switcher element');
+        if (!document.querySelector(btnClass)) {
+        console.log('Creating theme switcher element');
         const themeSwitcher = document.createElement('div');
         themeSwitcher.className = 'theme-switcher';
         themeSwitcher.innerHTML = `
-            <button class="theme-toggle-btn" title="Toggle theme">
+            <button class="theme-toggle" title="Toggle theme">
                 ${themeIcons[currentThemeIndex]}
             </button>
         `;
         document.body.appendChild(themeSwitcher);
         
         // Add event listener to the new button
-        const newThemeToggleBtn = themeSwitcher.querySelector('.theme-toggle-btn');
+        const newThemeToggleBtn = themeSwitcher.querySelector(btnClass);
         newThemeToggleBtn.addEventListener('click', toggleTheme);
-        log('Theme switcher created and event listener added');
+        console.log('Theme switcher created and event listener added');
     } else {
-        log('Theme switcher already exists');
+        console.log('Theme switcher already exists');
     }
 }
 
@@ -59,7 +53,7 @@ function toggleTheme() {
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     const newTheme = themes[currentThemeIndex];
     
-    log(`Toggling theme from ${previousTheme} to ${newTheme}`, {
+    console.log(`Toggling theme from ${previousTheme} to ${newTheme}`, {
         previousIndex: (currentThemeIndex - 1 + themes.length) % themes.length,
         newIndex: currentThemeIndex,
         themeName: getThemeName(currentThemeIndex)
@@ -71,25 +65,25 @@ function toggleTheme() {
     // Add new theme class
     body.classList.add(newTheme);
     
-    // Update button icon
-    updateThemeIcon();
-    
     // Save theme preference
     localStorage.setItem('elemento-theme', newTheme);
     localStorage.setItem('elemento-theme-index', currentThemeIndex.toString());
     
-    log(`Theme saved to localStorage: ${newTheme}`);
+    console.log(`Theme saved to localStorage: ${newTheme}`);
+
+    // Update button icon
+    updateThemeIcon();
 }
 
 // Update theme icon
 function updateThemeIcon() {
-    const btn = document.querySelector('.theme-toggle-btn');
+    const btn = document.querySelector('.theme-toggle');
     if (btn) {
         btn.innerHTML = themeIcons[currentThemeIndex];
         btn.title = `Current theme: ${getThemeName(currentThemeIndex)}`;
-        log(`Updated theme icon to: ${getThemeName(currentThemeIndex)}`);
+        console.log(`Updated theme icon to: ${getThemeName(currentThemeIndex)}`);
     } else {
-        log('Warning: Theme toggle button not found');
+        console.log('Warning: Theme toggle button not found');
     }
 }
 
@@ -103,33 +97,56 @@ function getThemeName(index) {
 
 // Load saved theme
 function loadSavedTheme() {
-    log('Loading saved theme from localStorage');
+    console.log('Loading saved theme from localStorage');
     
-    const savedTheme = localStorage.getItem('elemento-theme');
-    const savedIndex = localStorage.getItem('elemento-theme-index');
+    let savedTheme = null;
+    let savedIndex = null;
     
-    log('Saved theme data:', { savedTheme, savedIndex });
+    // Safe localStorage access for private navigation
+    try {
+        savedTheme = localStorage.getItem('elemento-theme');
+        savedIndex = localStorage.getItem('elemento-theme-index');
+    } catch (e) {
+        console.log('localStorage not available (private navigation?), using defaults');
+    }
     
-    // Remove all theme classes
-    body.classList.remove('theme-light', 'theme-dark', 'theme-high-contrast');
+    console.log('Saved theme data:', { savedTheme, savedIndex });
     
     if (savedTheme) {
+        // Remove all theme classes
+        body.classList.remove('theme-light', 'theme-dark', 'theme-high-contrast');
+        
         // Add saved theme class
         body.classList.add(savedTheme);
         
         // Update current index
         if (savedIndex) {
-            currentThemeIndex = parseInt(savedIndex);
+            currentThemeIndex = parseInt(savedIndex, 10);
         } else {
             currentThemeIndex = themes.indexOf(savedTheme);
         }
         
-        log(`Loaded saved theme: ${savedTheme} (index: ${currentThemeIndex})`);
+        // Ensure valid index
+        if (currentThemeIndex < 0 || currentThemeIndex >= themes.length) {
+            currentThemeIndex = DEFAULT_THEME_INDEX;
+        }
+        
+        console.log(`Loaded saved theme: ${savedTheme} (index: ${currentThemeIndex})`);
     } else {
-        // Default to configured theme
-        body.classList.add(DEFAULT_THEME);
-        currentThemeIndex = DEFAULT_THEME_INDEX;
-        log(`No saved theme found, using default: ${DEFAULT_THEME} (index: ${DEFAULT_THEME_INDEX})`);
+        // Check if body already has a theme class
+        const existingTheme = themes.find(theme => body.classList.contains(theme));
+        
+        if (existingTheme) {
+            // Use the existing theme class
+            currentThemeIndex = themes.indexOf(existingTheme);
+            console.log(`No saved theme found, using existing body class: ${existingTheme} (index: ${currentThemeIndex})`);
+        } else {
+            // Default to configured theme
+            body.classList.remove('theme-light', 'theme-dark', 'theme-high-contrast');
+            body.classList.add(DEFAULT_THEME);
+            currentThemeIndex = DEFAULT_THEME_INDEX;
+            console.log(`No saved theme or existing body class found, using default: ${DEFAULT_THEME} (index: ${DEFAULT_THEME_INDEX})`);
+        }
     }
     
     // Update theme icon
@@ -138,8 +155,8 @@ function loadSavedTheme() {
 
 // Initialize theme system
 function initThemeSystem() {
-    log('Initializing theme system');
-    log('Configuration:', {
+    console.log('Initializing theme system');
+    console.log('Configuration:', {
         themes,
         DEFAULT_THEME_INDEX,
         DEFAULT_THEME,
@@ -156,50 +173,88 @@ function initThemeSystem() {
     document.addEventListener('keydown', (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === 't') {
             e.preventDefault();
-            log('Theme toggle triggered via keyboard shortcut (Ctrl/Cmd + T)');
+            console.log('Theme toggle triggered via keyboard shortcut (Ctrl/Cmd + T)');
             toggleTheme();
         }
     });
     
-    log('Theme system initialization complete');
+    console.log('Theme system initialization complete');
 }
 
 // Auto-detect system theme preference
 function detectSystemTheme() {
-    log('Detecting system theme preference');
+    console.log('System theme detection disabled - using configured default theme');
+    return;
+    
+    // Only run if no theme is saved
+    let hasSavedTheme = false;
+    try {
+        hasSavedTheme = !!localStorage.getItem('elemento-theme');
+    } catch (e) {
+        console.log('localStorage not available for system theme detection');
+        return;
+    }
+    
+    if (hasSavedTheme) {
+        console.log('Theme already saved, skipping system preference detection');
+        return;
+    }
+    
+    // Don't override if we already have a default theme applied
+    // This respects the configured DEFAULT_THEME_INDEX
+    if (body.classList.contains(DEFAULT_THEME)) {
+        console.log(`Default theme already applied: ${DEFAULT_THEME}, skipping system detection`);
+        return;
+    }
     
     if (window.matchMedia) {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
         const systemPrefersDark = mediaQuery.matches;
         
-        log('System theme preference:', { prefersDark: systemPrefersDark });
+        console.log('System theme preference:', { prefersDark: systemPrefersDark });
         
-        // Only auto-detect if no theme is saved
-        if (!localStorage.getItem('elemento-theme')) {
-            if (systemPrefersDark) {
-                // System prefers dark theme
-                currentThemeIndex = 1; // Dark theme
-                body.classList.remove('theme-light');
-                body.classList.add('theme-dark');
+        // Only apply system preference if it matches available themes
+        // and we want to honor system preferences over configured defaults
+        if (systemPrefersDark && DEFAULT_THEME_INDEX !== 1) {
+            // System prefers dark but default is not dark - ask user or respect default
+            console.log('System prefers dark but default is configured differently, keeping default');
+            return;
+        } else if (!systemPrefersDark && DEFAULT_THEME_INDEX !== 0) {
+            // System prefers light but default is not light - ask user or respect default  
+            console.log('System prefers light but default is configured differently, keeping default');
+            return;
+        }
+        
+        // Apply system preference only if it aligns with available options
+        if (systemPrefersDark) {
+            currentThemeIndex = 1; // Dark theme
+            body.classList.remove('theme-light', 'theme-high-contrast');
+            body.classList.add('theme-dark');
+            try {
                 localStorage.setItem('elemento-theme', 'theme-dark');
                 localStorage.setItem('elemento-theme-index', '1');
-                log('Applied system dark theme preference');
-            } else {
-                // System prefers light theme
-                currentThemeIndex = DEFAULT_THEME_INDEX; // Use configured default
-                body.classList.remove('theme-dark', 'theme-high-contrast');
-                body.classList.add(DEFAULT_THEME);
+            } catch (e) {
+                console.log('Could not save theme preference');
+            }
+            console.log('Applied system dark theme preference');
+        } else {
+            // System prefers light theme, but use configured default instead of assuming light
+            currentThemeIndex = DEFAULT_THEME_INDEX; // Use configured default
+            body.classList.remove('theme-dark', 'theme-light', 'theme-high-contrast');
+            body.classList.add(DEFAULT_THEME);
+            try {
                 localStorage.setItem('elemento-theme', DEFAULT_THEME);
                 localStorage.setItem('elemento-theme-index', DEFAULT_THEME_INDEX.toString());
-                log(`Applied system light theme preference, using default: ${DEFAULT_THEME}`);
+            } catch (e) {
+                console.log('Could not save theme preference');
             }
-        } else {
-            log('Theme already saved, skipping system preference detection');
+            console.log(`Applied configured default theme: ${DEFAULT_THEME}`);
         }
+        updateThemeIcon();
         
         // Listen for system theme changes
         mediaQuery.addEventListener('change', (e) => {
-            log('System theme preference changed:', { prefersDark: e.matches });
+            console.log('System theme preference changed:', { prefersDark: e.matches });
             
             // Only auto-switch if no manual theme is saved
             if (!localStorage.getItem('elemento-theme')) {
@@ -210,7 +265,7 @@ function detectSystemTheme() {
                     body.classList.add('theme-dark');
                     localStorage.setItem('elemento-theme', 'theme-dark');
                     localStorage.setItem('elemento-theme-index', '1');
-                    log('Auto-switched to dark theme due to system change');
+                    console.log('Auto-switched to dark theme due to system change');
                 } else {
                     // System switched to light
                     currentThemeIndex = DEFAULT_THEME_INDEX; // Use configured default
@@ -218,15 +273,15 @@ function detectSystemTheme() {
                     body.classList.add(DEFAULT_THEME);
                     localStorage.setItem('elemento-theme', DEFAULT_THEME);
                     localStorage.setItem('elemento-theme-index', DEFAULT_THEME_INDEX.toString());
-                    log(`Auto-switched to default theme due to system change: ${DEFAULT_THEME}`);
+                    console.log(`Auto-switched to default theme due to system change: ${DEFAULT_THEME}`);
                 }
                 updateThemeIcon();
             } else {
-                log('Manual theme saved, ignoring system theme change');
+                console.log('Manual theme saved, ignoring system theme change');
             }
         });
     } else {
-        log('Warning: matchMedia not supported, skipping system theme detection');
+        console.log('Warning: matchMedia not supported, skipping system theme detection');
     }
 }
 
@@ -240,7 +295,7 @@ window.ElementoThemes = {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    log('DOM loaded, initializing theme system');
+    console.log('DOM loaded, initializing theme system');
     initThemeSystem();
     detectSystemTheme();
 });
@@ -248,10 +303,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // Initialize immediately if DOM is already loaded
 if (document.readyState === 'loading') {
     // DOM is still loading, wait for DOMContentLoaded
-    log('DOM still loading, waiting for DOMContentLoaded event');
+    console.log('DOM still loading, waiting for DOMContentLoaded event');
 } else {
     // DOM is already loaded
-    log('DOM already loaded, initializing immediately');
+    console.log('DOM already loaded, initializing immediately');
     initThemeSystem();
     detectSystemTheme();
+    updateThemeIcon();
 } 

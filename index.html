@@ -17,7 +17,7 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="js/main.js" as="script">
 </head>
-<body class="theme-high-contrast">    
+<body class="">    
     <!-- Skip to main content link for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
@@ -27,35 +27,58 @@
     <!-- Main Content -->
     <main id="main-content">        
         <!-- Hero Section -->
-        <section class="hero">
-            <!-- Gradient blob -->
-             <div class="blur-placer">
+        <section class="hero" role="banner" aria-label="Elemento Homepage Hero">
+            <!-- Background Animation Layers -->
+            <div class="blur-placer">
                 <div class="hero-blur">
                     <div class="hero-spinning-gradient gradient-home"></div>
                     <div class="hero-radial-gradient radial-home"></div>
                     <div class="hero-linear-gradient linear-home"></div>
                 </div>
-                
                 <div class="rectangle-overlay-container">
                     <div class="rectangle-overlay ro-home-1"></div>
-                    <div class="rectangle-overlay ro-home-2"></div>       
-                 </div>
-             </div>
-
-            
+                    <div class="rectangle-overlay ro-home-2"></div>
+                </div>
+            </div>
+        
+            <!-- Polygon Mask Overlays -->
+            <div class="hero-polygon-mask">
+                <div class="polygon-home-1"></div>
+                <div class="polygon-home-2"></div>
+            </div>
+        
+            <!-- Hero Content -->
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-buttons fade-in">
-                        <div class="hero-tagline">Ready. Set. Cloud.</div>
+                        <!-- Tagline -->
+                        <p class="hero-tagline">Ready. Set. Cloud.</p>
+        
+                        <!-- Main Headline -->
                         <h1 class="hero-title">
-                            Build Your Own <span class="pixel-accent">Cloud Factory</span>
-                        </h1> 
+                            Your next <span class="pixel-accent">Cloud</span><br>
+                            Starts Here
+                        </h1>
+        
+                        <!-- Subheadline -->
                         <div class="hero-subtitle">
-                            Elemento gives you a programmable, vendor-neutral Cloud Operating System that turns any infrastructure—public, private or hybrid—into an automated factory of cloud workloads.
+                            <p>
+                                Elemento lets you build and run your own cloud infrastructure — <span class="pixel-accent">just like a factory</span>.
+                                You choose where it runs (on-prem, hybrid, or public cloud), and we automate everything.
+                                <br><span class="pixel-accent">No vendor lock-in. Full control. Fast.</span>
+                            </p>
                         </div>
-                        <div class="hero-cta">
-                            <a href="/sign-up" class="btn btn-primary">Start Your Cloud Factory</a>
-                            <a href="#platform" class="btn btn-secondary">Explore Platform</a>
+        
+                        <!-- CTA Buttons -->
+                        <div class="quick-contact-options">
+                            <a href="/sign-up" class="btn btn-primary quick-contact-btn">
+                                <i class="fas fa-rocket"></i>
+                                <span>Start now</span>
+                            </a>
+                            <a href="#platform" class="btn btn-secondary quick-contact-btn">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>See Platform</span>
+                            </a>
                         </div>
                     </div>
                 </div>
