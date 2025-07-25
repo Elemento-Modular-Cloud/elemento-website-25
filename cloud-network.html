@@ -223,94 +223,19 @@
                             <tr class="comparison-table-header">
                                 <th>Provider</th>
                                 <th>VM Management</th>
-                                <th>Storage</th>
+                                <th>Storage-aaS</th>
                                 <th>Networking</th>
+                                <th>K8s</th>
                                 <th>Cost API</th>
                                 <th>Status</th>
-                                <th>Meson URL</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell"><strong>AWS</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://aws.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">aws.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell"><strong>Azure</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://azure.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">azure.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell"><strong>Google Cloud</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://gcp.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">gcp.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell"><strong>DigitalOcean</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://digitalocean.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">digitalocean.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell"><strong>Vultr</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-success"><span style="background: var(--green); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Production</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://vultr.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">vultr.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell"><strong>Linode</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://linode.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">linode.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell"><strong>Hetzner Cloud</strong></td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-warning"><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Beta</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://hetzner.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">hetzner.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell"><strong>OVHcloud</strong></td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><span style="background: var(--red); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Development</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://ovh.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">ovh.meson.elemento.cloud</a></td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell"><strong>Scaleway</strong></td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Partial</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> Planned</td>
-                                <td class="comparison-table-cell-error"><span style="background: var(--red); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Development</span></td>
-                                <td class="comparison-table-cell-success"><a href="https://scaleway.meson.elemento.cloud" target="_blank" style="color: var(--accent-color)">scaleway.meson.elemento.cloud</a></td>
+                            <!-- Table will be populated by JavaScript -->
+                            <tr>
+                                <td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                                    <p>Loading provider data...</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -321,19 +246,19 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-check-circle" style="color: var(--green);"></i></div>
                     <h4>Production Ready</h4>
-                    <p>AWS, Azure, DigitalOcean, Vultr</p>
+                    <p>Loading...</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-clock" style="color: var(--yellow);"></i></div>
                     <h4>Beta Testing</h4>
-                    <p>Google Cloud, Linode, Hetzner</p>
+                    <p>Loading...</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-tools" style="color: var(--red);"></i></div>
                     <h4>In Development</h4>
-                    <p>OVHcloud, Scaleway</p>
+                    <p>Loading...</p>
                 </div>
             </div>
         </div>
@@ -486,5 +411,6 @@
     <script src="js/main.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/themes.js"></script>
+    <script src="js/provider-integrations.js"></script>
 </body>
 </html> 

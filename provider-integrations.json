@@ -1,0 +1,119 @@
+[
+  {
+    "provider": "Google",
+    "vmManagement": "full",
+    "storageAas": "planned",
+    "networking": "full",
+    "k8s": "full",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "Azure",
+    "vmManagement": "full",
+    "storageAas": "planned",
+    "networking": "full",
+    "k8s": "full",
+    "costApi": "planned",
+    "status": "soon"
+  },
+  {
+    "provider": "AWS",
+    "vmManagement": "partial",
+    "storageAas": "planned",
+    "networking": "partial",
+    "k8s": "full",
+    "costApi": "planned",
+    "status": "beta"
+  },
+  {
+    "provider": "Aruba",
+    "vmManagement": "full",
+    "storageAas": "full",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "OVH",
+    "vmManagement": "full",
+    "storageAas": "full",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "IONOS",
+    "vmManagement": "full",
+    "storageAas": "full",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "Gigas",
+    "vmManagement": "full",
+    "storageAas": "full",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "UpCloud",
+    "vmManagement": "full",
+    "storageAas": "planned",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "Wasabi",
+    "vmManagement": "na",
+    "storageAas": "partial",
+    "networking": "na",
+    "k8s": "na",
+    "costApi": "partial",
+    "status": "beta"
+  },
+  {
+    "provider": "OVHcloud",
+    "vmManagement": "full",
+    "storageAas": "full",
+    "networking": "full",
+    "k8s": "planned",
+    "costApi": "full",
+    "status": "production"
+  },
+  {
+    "provider": "Scaleway",
+    "vmManagement": "partial",
+    "storageAas": "planned",
+    "networking": "planned",
+    "k8s": "planned",
+    "costApi": "planned",
+    "status": "development"
+  },
+  {
+    "provider": "Leaseweb",
+    "vmManagement": "partial",
+    "storageAas": "planned",
+    "networking": "planned",
+    "k8s": "planned",
+    "costApi": "planned",
+    "status": "development"
+  },
+  {
+    "provider": "DigitalOcean",
+    "vmManagement": "planned",
+    "storageAas": "planned",
+    "networking": "planned",
+    "k8s": "planned",
+    "costApi": "planned",
+    "status": "development"
+  }
+] 
