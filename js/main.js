@@ -774,28 +774,61 @@ class ElementoWebsite {
 
             const svgContent = await response.text();
             
-            // Add viewBox to SVG if it doesn't have one
-            let processedSvgContent = svgContent;
-            if (!svgContent.includes('viewBox=')) {
-                // Extract width and height from the SVG
-                const widthMatch = svgContent.match(/width="([^"]+)"/);
-                const heightMatch = svgContent.match(/height="([^"]+)"/);
+            // Parse the SVG to extract dimensions and transforms
+            const parser = new DOMParser();
+            const svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
+            const svgElement = svgDoc.querySelector('svg');
+            
+            if (!svgElement) {
+                throw new Error('No SVG element found in the content');
+            }
+
+            // Extract original dimensions
+            const originalWidth = parseFloat(svgElement.getAttribute('width') || '0');
+            const originalHeight = parseFloat(svgElement.getAttribute('height') || '0');
+            
+            // Find the main group with transform to calculate actual content bounds
+            const mainGroup = svgElement.querySelector('g[transform]');
+            let viewBox = null;
+            
+            if (mainGroup) {
+                const transform = mainGroup.getAttribute('transform');
+                const translateMatch = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);
                 
-                if (widthMatch && heightMatch) {
-                    const width = widthMatch[1];
-                    const height = heightMatch[1];
-                    // Add viewBox attribute to the opening svg tag
-                    processedSvgContent = svgContent.replace(
-                        /<svg([^>]*)>/,
-                        `<svg$1 viewBox="0 0 ${width} ${height}">`
-                    );
+                if (translateMatch) {
+                    const translateX = parseFloat(translateMatch[1]);
+                    const translateY = parseFloat(translateMatch[2]);
+                    
+                    // Calculate the actual content bounds
+                    const contentWidth = originalWidth + Math.abs(translateX);
+                    const contentHeight = originalHeight + Math.abs(translateY);
+                    
+                    // Create a viewBox that encompasses all the content
+                    viewBox = `0 0 ${contentWidth} ${contentHeight}`;
                 }
             }
+            
+            // If we couldn't calculate viewBox, use the original dimensions
+            if (!viewBox) {
+                viewBox = `0 0 ${originalWidth} ${originalHeight}`;
+            }
+            
+            // Add viewBox and make the SVG responsive
+            let processedSvgContent = svgContent;
+            
+            // Remove existing viewBox if present
+            processedSvgContent = processedSvgContent.replace(/viewBox="[^"]*"/g, '');
+            
+            // Add the calculated viewBox and make it responsive
+            processedSvgContent = processedSvgContent.replace(
+                /<svg([^>]*)>/,
+                `<svg$1 viewBox="${viewBox}" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">`
+            );
             
             // Replace the placeholder content with the actual SVG
             container.innerHTML = processedSvgContent;
             
-            console.log(`SVG injected successfully into ${containerSelector} from ${pathToUse}`);
+            console.log(`SVG injected successfully into ${containerSelector} from ${pathToUse} with viewBox: ${viewBox}`);
         } catch (error) {
             console.error('Error injecting SVG:', error);
             // Fallback: show error message in container
