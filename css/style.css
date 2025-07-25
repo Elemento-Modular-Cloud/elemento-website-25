@@ -158,11 +158,25 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--glassmorphism-background);
-    backdrop-filter: blur(20px);
+    background: transparent; /* Remove background from parent */
     border-bottom: 1px solid var(--glassmorphism-border);
     box-shadow: var(--glassmorphism-shadow);
     transition: all 0.3s ease;
+}
+
+/* Add backdrop-filter to pseudo-element for navbar */
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--glassmorphism-background);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+    pointer-events: none; /* Allow clicks to pass through */
 }
 
 .nav-container {
@@ -276,11 +290,14 @@ body {
 
 .dropdown-menu {
     position: fixed;
-    top: 82px;
+    top: 80px;
     left: 0;
     right: 0;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid var(--glassmorphism-border);
     border-bottom: 1px solid var(--glassmorphism-border);
     box-shadow: var(--glassmorphism-shadow);
@@ -288,7 +305,6 @@ body {
     z-index: 1001;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
     transition: all 0.3s ease;
     width: 100%;
 }
@@ -296,7 +312,6 @@ body {
 .dropdown-menu.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
 }
 
 .dropdown-menu .container {
@@ -1187,8 +1202,7 @@ body {
         top: 80px;
         left: 0;
         right: 0;
-        /* More opaque background for better readability */
-        background: rgba(255, 255, 255, 0.95);
+        background: transparent; /* Remove background from parent */
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--glassmorphism-border);
         flex-direction: column;
@@ -1202,6 +1216,18 @@ body {
             inset 0 1px 0 rgba(255, 255, 255, 0.25);
     }
     
+    .nav-menu::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
@@ -1209,24 +1235,25 @@ body {
     }
     
     /* Theme-specific mobile menu backgrounds for better readability */
-    .theme-dark .nav-menu {
+    .theme-dark .nav-menu::after {
         background: rgba(26, 28, 32, 0.95);
-        box-shadow: 
-            0 8px 32px rgba(0, 0, 0, 0.3),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
     
-    .theme-high-contrast .nav-menu {
+    .theme-high-contrast .nav-menu::after {
         background: rgba(0, 0, 0, 0.98);
         border: 2px solid var(--primary-color);
-        box-shadow: 
-            0 8px 32px rgba(0, 0, 0, 0.5),
-            inset 0 1px 0 rgba(255, 166, 0, 0.2);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
     
     /* Mobile dropdown menu improvements */
     .dropdown-menu {
+        position: fixed; /* Change from fixed to absolute for mobile too */
+        top: 80px;
         background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
         box-shadow: 
             0 8px 32px rgba(0, 0, 0, 0.15),
             inset 0 1px 0 rgba(255, 255, 255, 0.25);
@@ -1234,6 +1261,7 @@ body {
     
     .theme-dark .dropdown-menu {
         background: rgba(26, 28, 32, 0.95);
+        backdrop-filter: blur(20px);
         box-shadow: 
             0 8px 32px rgba(0, 0, 0, 0.3),
             inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -1241,6 +1269,7 @@ body {
     
     .theme-high-contrast .dropdown-menu {
         background: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(20px);
         border-top: 2px solid var(--primary-color);
         border-bottom: 2px solid var(--primary-color);
         box-shadow: 

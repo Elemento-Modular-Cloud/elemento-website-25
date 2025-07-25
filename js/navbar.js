@@ -65,30 +65,31 @@ class Navbar {
                         <li><a href="${rootPath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
                         <li class="dropdown">
                             <a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products <span class="dropdown-arrow">▼</span></a>
-                            <div class="dropdown-menu">
-                                <div class="container">
-                                    <ul>
-                                        <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
-                                            <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon">
-                                            <span class="">Atomos</span>
-                                        </a></li>
-                                        <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
-                                            <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon">
-                                            <span class="">Electros</span>
-                                        </a></li>
-                                        <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
-                                            <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon">
-                                            <span class="">Cloud Network</span>
-                                        </a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </li>
                         <li><a href="${rootPath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
                         <li><a href="${rootPath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
                         <li><a href="${rootPath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
                         <li><a href="${rootPath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
                     </ul>
+
+                    <div class="dropdown-menu">
+                        <div class="container">
+                            <ul>
+                                <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                    <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon">
+                                    <span class="">Atomos</span>
+                                </a></li>
+                                <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                    <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon">
+                                    <span class="">Electros</span>
+                                </a></li>
+                                <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                    <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon">
+                                    <span class="">Cloud Network</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                     
                     <div class="nav-controls">
                         <button class="theme-toggle" aria-label="Toggle theme">
