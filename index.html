@@ -254,23 +254,10 @@
                     </p>
                 </div>
                 
-                <div class="architecture-diagram">
-                    <div class="diagram-container">
-                        <div class="diagram-layer">
-                            <div class="diagram-node" data-tooltip="Bare metal virtualization layer">AtomOS</div>
-                        </div>
-                        <div class="diagram-arrow">⇄</div>
-                        <div class="diagram-layer">
-                            <div class="diagram-node" data-tooltip="Control and orchestration interface">Electros CLI/UI</div>
-                        </div>
-                        <div class="diagram-arrow">⇄</div>
-                        <div class="diagram-layer">
-                            <div class="diagram-node" data-tooltip="Unified API translating to any cloud">Meson API Gateway</div>
-                        </div>
-                        <div class="diagram-arrow">⇄</div>
-                        <div class="diagram-layer">
-                            <div class="diagram-node" data-tooltip="Dynamic and abstracted IaaS targets">AWS, Azure, On-prem, GCP, Edge</div>
-                        </div>
+                <div class="use-case-card diagram-svg" src="./assets/diagrams/Homepage.svg">
+                    <!-- SVG will be injected here programmatically -->
+                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                        <p>Loading diagram...</p>
                     </div>
                 </div>
             </div>
@@ -517,5 +504,23 @@
     <script src="js/faq.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/themes.js"></script>
+    
+    <!-- Initialize Mermaid -->
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                background: 'transparent',
+                fontFamily: '"Red Hat Display", sans-serif'
+            },
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                padding: 20
+            }
+        });
+    </script>
 </body>
 </html> 

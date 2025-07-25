@@ -747,6 +747,84 @@ class ElementoWebsite {
             }
         };
     }
+
+    // SVG Injection functionality
+    async injectSVGDiagram(containerSelector, svgPath = null) {
+        try {
+            const container = typeof containerSelector === 'string' 
+                ? document.querySelector(containerSelector) 
+                : containerSelector;
+            if (!container) {
+                console.error(`Container not found: ${containerSelector}`);
+                return;
+            }
+
+            // Get the SVG path from the src attribute if not provided
+            const pathToUse = svgPath || container.getAttribute('src');
+            if (!pathToUse) {
+                console.error(`No SVG path provided and no src attribute found on ${containerSelector}`);
+                return;
+            }
+
+            // Fetch the SVG content
+            const response = await fetch(pathToUse);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch SVG: ${response.status} ${response.statusText}`);
+            }
+
+            const svgContent = await response.text();
+            
+            // Add viewBox to SVG if it doesn't have one
+            let processedSvgContent = svgContent;
+            if (!svgContent.includes('viewBox=')) {
+                // Extract width and height from the SVG
+                const widthMatch = svgContent.match(/width="([^"]+)"/);
+                const heightMatch = svgContent.match(/height="([^"]+)"/);
+                
+                if (widthMatch && heightMatch) {
+                    const width = widthMatch[1];
+                    const height = heightMatch[1];
+                    // Add viewBox attribute to the opening svg tag
+                    processedSvgContent = svgContent.replace(
+                        /<svg([^>]*)>/,
+                        `<svg$1 viewBox="0 0 ${width} ${height}">`
+                    );
+                }
+            }
+            
+            // Replace the placeholder content with the actual SVG
+            container.innerHTML = processedSvgContent;
+            
+            console.log(`SVG injected successfully into ${containerSelector} from ${pathToUse}`);
+        } catch (error) {
+            console.error('Error injecting SVG:', error);
+            // Fallback: show error message in container
+            const container = document.querySelector(containerSelector);
+            if (container) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                        <p>Unable to load diagram</p>
+                        <small>Please refresh the page to try again</small>
+                    </div>
+                `;
+            }
+        }
+    }
+
+    // Initialize SVG diagrams when DOM is ready
+    setupSVGDiagrams() {
+        // Find all containers with diagram-svg class and inject their SVGs
+        const diagramContainers = document.querySelectorAll('.diagram-svg');
+        diagramContainers.forEach((container) => {
+            const src = container.getAttribute('src');
+            if (src) {
+                // Pass the container element directly
+                this.injectSVGDiagram(container, src);
+            } else {
+                console.error('No src attribute found on diagram-svg container at:', container);
+            }
+        });
+    }
 }
 
 // FAQ functionality is now handled by js/faq.js
@@ -754,6 +832,11 @@ class ElementoWebsite {
 // Initialize the website when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.elementoWebsite = new ElementoWebsite();
+    
+    // Setup SVG diagrams after initialization
+    if (window.elementoWebsite) {
+        window.elementoWebsite.setupSVGDiagrams();
+    }
 });
 
  

@@ -150,6 +150,11 @@
     --monospace-background-color: rgba(0, 0, 0, 0.1);
     --experimental-background: rgba(0, 0, 0, 0.1);
     --switch-background-color: var(--text-color);
+    --svg-arrow-color: var(--grey);
+    --svg-fill-color: var(--white-light);
+    --svg-tile-stroke: var(--grey);
+    --svg-tile-color: var(--white-dark);
+    --svg-text-color: var(--text-color);
 
     /* Glassmorphism gradient variables */
     --glassmorphism-gradient: linear-gradient(
@@ -282,6 +287,11 @@
     --monospace-background-color: rgba(255, 255, 255, 0.1);
     --experimental-background: rgba(0, 0, 0, 0.1);
     --switch-background-color: var(--text-color);
+    --svg-arrow-color: var(--grey);
+    --svg-fill-color: var(--black-light);
+    --svg-tile-stroke: var(--grey-dark);
+    --svg-tile-color: var(--card-bg-color);
+    --svg-text-color: var(--text-color);
 
     /* Glassmorphism gradient variables for dark theme */
     --glassmorphism-gradient: linear-gradient(
@@ -415,6 +425,11 @@
     --monospace-background-color: rgba(255, 255, 255, 0.1);
     --experimental-background: rgba(0, 0, 0, 0.1);
     --switch-background-color: var(--black-light);
+    --svg-arrow-color: var(--white);
+    --svg-fill-color: var(--black);
+    --svg-tile-stroke: var(--black-light);
+    --svg-tile-color: var(--card-bg-color);
+    --svg-text-color: var(--text-color);
 
     /* Glassmorphism gradient variables for high contrast theme */
     --glassmorphism-gradient: linear-gradient(
