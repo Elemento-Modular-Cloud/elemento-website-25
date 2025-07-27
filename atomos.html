@@ -51,6 +51,54 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+
+        /* Critical heading styles to prevent layout shifts */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Critical hero title styles */
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        /* Critical hero tagline styles */
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
     
         /* Critical splash screen styles */
         .splash-screen {
