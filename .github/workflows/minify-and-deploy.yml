@@ -35,11 +35,11 @@ jobs:
 
     - name: Create minified CSS files
       run: |
-        # Create minified versions of all CSS files
+        # Create minified versions of all CSS files with better options
         for file in css/*.css; do
           if [ -f "$file" ]; then
             echo "Minifying $file..."
-            cleancss -o "${file%.css}.min.css" "$file"
+            cleancss --format beautify --compatibility "*" -o "${file%.css}.min.css" "$file"
           fi
         done
         
@@ -47,7 +47,7 @@ jobs:
         for file in css/gradient-blobs/*.css; do
           if [ -f "$file" ]; then
             echo "Minifying $file..."
-            cleancss -o "${file%.css}.min.css" "$file"
+            cleancss --format beautify --compatibility "*" -o "${file%.css}.min.css" "$file"
           fi
         done
 
