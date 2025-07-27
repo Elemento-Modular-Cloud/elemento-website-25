@@ -152,7 +152,7 @@ function styleiubendaButtons() {
 }
 
 // Run the styling function immediately
-styleiubendaButtons();
+// styleiubendaButtons();
 
 // Also run when the DOM is ready
 if (document.readyState === 'loading') {
