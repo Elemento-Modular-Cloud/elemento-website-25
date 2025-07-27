@@ -63,17 +63,17 @@ jobs:
 
     - name: Update HTML files to use minified versions
       run: |
-        # Update all HTML files to reference minified CSS and JS
+        # Update all HTML files to reference minified CSS and JS (only local files)
         find . -name "*.html" -type f | while read file; do
           echo "Updating $file..."
           
-          # Replace CSS references (but keep themes.css as is)
-          sed -i 's/\.css"/\.min\.css"/g' "$file"
-          sed -i "s/\.css'/\.min\.css'/g" "$file"
+          # Replace local CSS references (avoid external CDN files)
+          sed -i 's/href="css\/\([^"]*\)\.css"/href="css\/\1\.min\.css"/g' "$file"
+          sed -i "s/href='css\/\([^']*\)\.css'/href='css\/\1\.min\.css'/g" "$file"
           
-          # Replace JS references
-          sed -i 's/\.js"/\.min\.js"/g' "$file"
-          sed -i "s/\.js'/\.min\.js'/g" "$file"
+          # Replace local JS references
+          sed -i 's/src="js\/\([^"]*\)\.js"/src="js\/\1\.min\.js"/g' "$file"
+          sed -i "s/src='js\/\([^']*\)\.js'/src='js\/\1\.min\.js'/g" "$file"
           
           # Revert themes.css back to original (since we didn't minify it)
           sed -i 's/themes\.min\.css"/themes\.css"/g' "$file"
