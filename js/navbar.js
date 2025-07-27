@@ -146,20 +146,48 @@ class Navbar {
         const dropdowns = document.querySelectorAll('.dropdown');
         const dropdownMenu = document.querySelector('.dropdown-menu'); // Get the dropdown menu once
         
+        // Add timeout variables for delay functionality
+        let hideTimeout;
+        let showTimeout;
+        
         dropdowns.forEach(dropdown => {
             const dropdownLink = dropdown.querySelector('.nav-link');
             
             if (dropdownLink && dropdownMenu) {
-                // Desktop hover functionality
+                // Desktop hover functionality with delay
                 dropdown.addEventListener('mouseenter', () => {
                     if (window.innerWidth > 768) {
+                        // Clear any existing hide timeout
+                        clearTimeout(hideTimeout);
+                        
+                        // Show dropdown immediately on enter
                         dropdownMenu.classList.add('show');
                     }
                 });
                 
                 dropdown.addEventListener('mouseleave', () => {
                     if (window.innerWidth > 768 && !this.isProductPage()) {
-                        dropdownMenu.classList.remove('show');
+                        // Set a delay before hiding the dropdown
+                        hideTimeout = setTimeout(() => {
+                            dropdownMenu.classList.remove('show');
+                        }, 300); // 300ms delay
+                    }
+                });
+                
+                // Also add mouseenter/mouseleave to the dropdown menu itself
+                dropdownMenu.addEventListener('mouseenter', () => {
+                    if (window.innerWidth > 768) {
+                        // Clear any existing hide timeout when hovering over the menu
+                        clearTimeout(hideTimeout);
+                    }
+                });
+                
+                dropdownMenu.addEventListener('mouseleave', () => {
+                    if (window.innerWidth > 768 && !this.isProductPage()) {
+                        // Set a delay before hiding the dropdown
+                        hideTimeout = setTimeout(() => {
+                            dropdownMenu.classList.remove('show');
+                        }, 300); // 300ms delay
                     }
                 });
                 
