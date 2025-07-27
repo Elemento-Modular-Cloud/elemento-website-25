@@ -248,7 +248,6 @@ class ElementoWebsite {
         this.setupPerformanceOptimizations();
         this.setupAccessibility();
         this.setupiubendaScripts();
-        this.setupThemesScript(); // Add this line
     }
 
     // setupTheme method removed - now handled by themes.js
@@ -648,22 +647,6 @@ class ElementoWebsite {
         iubendaFixScript.type = 'text/javascript';
         iubendaFixScript.src = 'js/iubenda_fix.js';
         document.head.appendChild(iubendaFixScript);
-    }
-
-    setupThemesScript() {
-        // Check if themes script is already loaded
-        if (document.querySelector('script[src*="themes.js"]')) {
-            return;
-        }
-
-        // Create and add the themes script
-        const themesScript = document.createElement('script');
-        themesScript.type = 'text/javascript';
-        themesScript.src = 'js/themes.js';
-        themesScript.async = true;
-        document.head.appendChild(themesScript);
-
-        console.log('Themes script injected via main.js');
     }
 
     showToast(message, type = 'info', duration = 5000) {
