@@ -301,11 +301,17 @@ class ElementoWebsite {
         const navLinks = document.querySelectorAll('.nav-link');
         
         let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop - 200) {
-                current = section.getAttribute('id');
+        
+        // Batch DOM reads to avoid forced reflows
+        const sectionData = Array.from(sections).map(section => ({
+            id: section.getAttribute('id'),
+            top: section.offsetTop,
+            height: section.clientHeight
+        }));
+        
+        sectionData.forEach(section => {
+            if (window.scrollY >= section.top - 200) {
+                current = section.id;
             }
         });
 
@@ -825,8 +831,10 @@ class ElementoWebsite {
                 `<svg$1 viewBox="${viewBox}" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">`
             );
             
-            // Replace the placeholder content with the actual SVG
-            container.innerHTML = processedSvgContent;
+            // Use requestAnimationFrame to batch DOM writes and avoid forced reflows
+            requestAnimationFrame(() => {
+                container.innerHTML = processedSvgContent;
+            });
             
             console.log(`SVG injected successfully into ${containerSelector} from ${pathToUse} with viewBox: ${viewBox}`);
         } catch (error) {
@@ -834,12 +842,14 @@ class ElementoWebsite {
             // Fallback: show error message in container
             const container = document.querySelector(containerSelector);
             if (container) {
-                container.innerHTML = `
-                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
-                        <p>Unable to load diagram</p>
-                        <small>Please refresh the page to try again</small>
-                    </div>
-                `;
+                requestAnimationFrame(() => {
+                    container.innerHTML = `
+                        <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                            <p>Unable to load diagram</p>
+                            <small>Please refresh the page to try again</small>
+                        </div>
+                    `;
+                });
             }
         }
     }
