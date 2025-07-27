@@ -20,7 +20,7 @@
     "modern"
   ],
   "author": "Elemento srl",
-  "license": "UNLICENSED",
+  "license": "CC-BY-SA-4.0",
   "private": true,
   "devDependencies": {
     "serve": "^14.2.0",

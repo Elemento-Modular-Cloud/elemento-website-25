@@ -5,6 +5,15 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   minify-and-deploy:
     runs-on: ubuntu-latest
@@ -68,17 +77,28 @@ jobs:
           sed -i "s/\.js'/\.min\.js'/g" "$file"
         done
 
-    - name: Commit and push changes
+    - name: Push to minified branch
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
         git diff --quiet && git diff --staged --quiet || git commit -m "Minify CSS and JS files [skip ci]"
-        git push
+        git push origin HEAD:minified
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Checkout minified branch
+      uses: actions/checkout@v4
+      with:
+        ref: minified
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: .
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: . 
+      id: deployment
+      uses: actions/deploy-pages@v4 
