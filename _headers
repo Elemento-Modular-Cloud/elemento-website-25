@@ -1,0 +1,36 @@
+# Cache static assets for 1 year
+*.css
+  Cache-Control: public, max-age=600, immutable
+
+*.js
+  Cache-Control: public, max-age=600, immutable
+
+*.woff2
+  Cache-Control: public, max-age=600, immutable
+
+*.svg
+  Cache-Control: public, max-age=600, immutable
+
+*.webp
+  Cache-Control: public, max-age=600, immutable
+
+*.png
+  Cache-Control: public, max-age=600, immutable
+
+*.jpg
+  Cache-Control: public, max-age=600, immutable
+
+*.jpeg
+  Cache-Control: public, max-age=600, immutable
+
+# Cache HTML files for 1 hour (allows for content updates)
+*.html
+  Cache-Control: public, max-age=3600
+
+# Cache manifest and other config files for 1 day
+*.webmanifest
+  Cache-Control: public, max-age=86400
+
+# Cache JSON files for 1 hour
+*.json
+  Cache-Control: public, max-age=3600 
