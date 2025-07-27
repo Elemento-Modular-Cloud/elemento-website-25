@@ -1,27 +1,27 @@
-# Cache static assets for 1 year
+# Cache static assets for 30 days
 *.css
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.js
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.woff2
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.svg
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.webp
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.png
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.jpg
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 *.jpeg
-  Cache-Control: public, max-age=600, immutable
+  Cache-Control: public, max-age=2592000, immutable
 
 # Cache HTML files for 1 hour (allows for content updates)
 *.html
