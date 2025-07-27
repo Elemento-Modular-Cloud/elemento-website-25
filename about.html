@@ -15,6 +15,8 @@
     <link rel="preload" href="css/themes.css" as="style" crossorigin>
     <link rel="preload" href="js/main.js" as="script" crossorigin>
     <link rel="preload" href="js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
+    <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
     
     <!-- Preload specific stylesheets -->
     <link rel="preload" href="css/about.css" as="style" crossorigin>
@@ -23,53 +25,163 @@
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Critical CSS - Inline the most critical styles -->
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
     <style>
-    /* Critical rendering path styles */
-    :root {
-        --background-color: #F5F5FA;
-        --text-color: #1A1C20;
-        --primary-color: #FFA600;
-        --font-primary: 'Open Sans', sans-serif;
-        --font-heading: 'Red Hat Display', sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-    body { 
-        margin: 0; 
-        padding: 0; 
-        font-family: var(--font-primary);
-        color: var(--text-color);
-        background-color: var(--background-color);
-        line-height: 1.6;
-        overflow-x: hidden;
-    }
-
-    /* Critical hero styles */
-    .hero { 
-        min-height: 100vh; 
-        display: flex; 
-        align-items: center; 
-        position: relative; 
-        overflow: hidden; 
-    }
-    .container { 
-        max-width: 1200px; 
-        margin: 0 auto; 
-        padding: 0 20px; 
-    }
-    .hero-title { 
-        font-size: 3.5rem; 
-        font-weight: 700; 
-        margin-bottom: 1rem; 
-        font-family: var(--font-heading);
-    }
-    .pixel-accent { 
-        font-family: 'Argent Pixel Italic', var(--font-heading), sans-serif;
-        color: var(--primary-color);
-        font-weight: 400;
-        font-style: italic;
-    }
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+    
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent-color);
+            mask-image: url(../assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(../assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .splash-spinner {
+                animation: none;
+                border-top-color: var(--primary-color);
+            }
+            
+            .splash-screen {
+                transition: none;
+            }
+        }
     </style>
 
     <!-- Non-critical stylesheets with optimized loading -->
@@ -104,7 +216,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
 </head>
-<body>
+<body class="">
+
+    
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
     <!-- Navigation -->
     <div id="navbar-placeholder"></div>
 
@@ -308,9 +431,10 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="js/main.js" defer></script>
-    <script src="js/navbar.js" defer></script>
-    <script src="js/footer.js" defer></script>
-    <script src="js/themes.js" defer></script>
+    <script src="js/splash-screen.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/themes.js"></script>
 </body>
 </html> 
