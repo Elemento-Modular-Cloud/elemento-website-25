@@ -167,7 +167,7 @@ function initThemeSystem() {
     loadSavedTheme();
     
     // Initialize theme switcher
-    initThemeSwitcher();
+    // initThemeSwitcher();
     
     // Add keyboard shortcut (Ctrl/Cmd + T)
     document.addEventListener('keydown', (e) => {
