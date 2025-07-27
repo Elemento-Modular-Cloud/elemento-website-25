@@ -144,10 +144,10 @@ class Navbar {
 
     initDropdowns() {
         const dropdowns = document.querySelectorAll('.dropdown');
+        const dropdownMenu = document.querySelector('.dropdown-menu'); // Get the dropdown menu once
         
         dropdowns.forEach(dropdown => {
             const dropdownLink = dropdown.querySelector('.nav-link');
-            const dropdownMenu = dropdown.querySelector('.dropdown-menu');
             
             if (dropdownLink && dropdownMenu) {
                 // Desktop hover functionality
