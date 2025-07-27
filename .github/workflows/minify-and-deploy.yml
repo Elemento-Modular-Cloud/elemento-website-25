@@ -1,0 +1,84 @@
+name: Minify and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  minify-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm install -g clean-css-cli terser
+
+    - name: Create minified CSS files
+      run: |
+        # Create minified versions of all CSS files
+        for file in css/*.css; do
+          if [ -f "$file" ]; then
+            echo "Minifying $file..."
+            cleancss -o "${file%.css}.min.css" "$file"
+          fi
+        done
+        
+        # Handle gradient-blobs subdirectory
+        for file in css/gradient-blobs/*.css; do
+          if [ -f "$file" ]; then
+            echo "Minifying $file..."
+            cleancss -o "${file%.css}.min.css" "$file"
+          fi
+        done
+
+    - name: Create minified JS files
+      run: |
+        # Create minified versions of all JS files
+        for file in js/*.js; do
+          if [ -f "$file" ]; then
+            echo "Minifying $file..."
+            terser "$file" -o "${file%.js}.min.js" --compress --mangle
+          fi
+        done
+
+    - name: Update HTML files to use minified versions
+      run: |
+        # Update all HTML files to reference minified CSS and JS
+        find . -name "*.html" -type f | while read file; do
+          echo "Updating $file..."
+          
+          # Replace CSS references
+          sed -i 's/\.css"/\.min\.css"/g' "$file"
+          sed -i "s/\.css'/\.min\.css'/g" "$file"
+          
+          # Replace JS references
+          sed -i 's/\.js"/\.min\.js"/g' "$file"
+          sed -i "s/\.js'/\.min\.js'/g" "$file"
+        done
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff --quiet && git diff --staged --quiet || git commit -m "Minify CSS and JS files [skip ci]"
+        git push
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: . 

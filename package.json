@@ -7,7 +7,9 @@
     "start": "python -m http.server 8000",
     "serve": "npx serve .",
     "dev": "python -m http.server 8000",
-    "build": "echo 'No build process required for static site'",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "for file in css/*.css; do if [ -f \"$file\" ]; then cleancss -o \"${file%.css}.min.css\" \"$file\"; fi; done && for file in css/gradient-blobs/*.css; do if [ -f \"$file\" ]; then cleancss -o \"${file%.css}.min.css\" \"$file\"; fi; done",
+    "minify-js": "for file in js/*.js; do if [ -f \"$file\" ]; then terser \"$file\" -o \"${file%.js}.min.js\" --compress --mangle; fi; done",
     "test": "echo 'No tests specified'"
   },
   "keywords": [
@@ -21,7 +23,9 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.24.0"
   },
   "engines": {
     "node": ">=14.0.0"
