@@ -5,8 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Elemento</title>
     <meta name="description" content="Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community. Stay updated with the latest in cloud technology.">
-    <link rel="stylesheet" href="css/blog.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="css/style.css" as="style" crossorigin>
+    <link rel="preload" href="css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="js/main.js" as="script" crossorigin>
+    <link rel="preload" href="js/navbar.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="css/blog.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Critical CSS - Inline the most critical styles -->
+    <style>
+    /* Critical rendering path styles */
+    :root {
+        --background-color: #F5F5FA;
+        --text-color: #1A1C20;
+        --primary-color: #FFA600;
+        --font-primary: 'Open Sans', sans-serif;
+        --font-heading: 'Red Hat Display', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { 
+        margin: 0; 
+        padding: 0; 
+        font-family: var(--font-primary);
+        color: var(--text-color);
+        background-color: var(--background-color);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* Critical hero styles */
+    .hero { 
+        min-height: 100vh; 
+        display: flex; 
+        align-items: center; 
+        position: relative; 
+        overflow: hidden; 
+    }
+    .container { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+    }
+    .hero-title { 
+        font-size: 3.5rem; 
+        font-weight: 700; 
+        margin-bottom: 1rem; 
+        font-family: var(--font-heading);
+    }
+    .pixel-accent { 
+        font-family: 'Argent Pixel Italic', var(--font-heading), sans-serif;
+        color: var(--primary-color);
+        font-weight: 400;
+        font-style: italic;
+    }
+    </style>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    
+    <!-- Home Page Styles -->
+    <link rel="stylesheet" href="css/blog.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Home Page Styles -->
+        <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
 </head>
 <body class="theme-default">
 
@@ -51,10 +145,10 @@
         </section>
     </main>
     <div id="footer-placeholder"></div>
-    <script src="js/navbar.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/themes.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/themes.js" defer></script>
     <script>
     fetch('blog-posts/index.json')
       .then(res => res.json())
