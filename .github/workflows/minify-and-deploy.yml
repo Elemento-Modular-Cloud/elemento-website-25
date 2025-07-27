@@ -35,9 +35,9 @@ jobs:
 
     - name: Create minified CSS files
       run: |
-        # Create minified versions of all CSS files with better options
+        # Create minified versions of all CSS files except themes.css
         for file in css/*.css; do
-          if [ -f "$file" ]; then
+          if [ -f "$file" ] && [ "$(basename "$file")" != "themes.css" ]; then
             echo "Minifying $file..."
             cleancss --format beautify --compatibility "*" -o "${file%.css}.min.css" "$file"
           fi
@@ -67,13 +67,17 @@ jobs:
         find . -name "*.html" -type f | while read file; do
           echo "Updating $file..."
           
-          # Replace CSS references
+          # Replace CSS references (but keep themes.css as is)
           sed -i 's/\.css"/\.min\.css"/g' "$file"
           sed -i "s/\.css'/\.min\.css'/g" "$file"
           
           # Replace JS references
           sed -i 's/\.js"/\.min\.js"/g' "$file"
           sed -i "s/\.js'/\.min\.js'/g" "$file"
+          
+          # Revert themes.css back to original (since we didn't minify it)
+          sed -i 's/themes\.min\.css"/themes\.css"/g' "$file"
+          sed -i "s/themes\.min\.css'/themes\.css'/g" "$file"
         done
 
     - name: Configure Git
