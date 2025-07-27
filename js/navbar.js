@@ -65,6 +65,23 @@ class Navbar {
                         <li><a href="${rootPath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
                         <li class="dropdown">
                             <a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products <span class="dropdown-arrow">▼</span></a>
+                            <!-- Mobile dropdown menu integrated into nav-menu -->
+                            <div class="dropdown-menu mobile-dropdown">
+                                <ul>
+                                    <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                        <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
+                                        <span class="">Atomos</span>
+                                    </a></li>
+                                    <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                        <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
+                                        <span class="">Electros</span>
+                                    </a></li>
+                                    <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                        <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
+                                        <span class="">Cloud Network</span>
+                                    </a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="${rootPath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
                         <li><a href="${rootPath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
@@ -72,7 +89,8 @@ class Navbar {
                         <li><a href="${rootPath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
                     </ul>
 
-                    <div class="dropdown-menu">
+                    <!-- Desktop dropdown menu (separate from mobile) -->
+                    <div class="dropdown-menu desktop-dropdown">
                         <div class="container">
                             <ul>
                                 <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
@@ -135,16 +153,19 @@ class Navbar {
     // Add method to show dropdown menu on product pages
     showProductDropdown() {
         if (this.isProductPage()) {
-            const dropdownMenu = document.querySelector('.dropdown-menu');
-            if (dropdownMenu) {
-                dropdownMenu.classList.add('show');
+            const desktopDropdownMenu = document.querySelector('.desktop-dropdown');
+            
+            if (desktopDropdownMenu) {
+                desktopDropdownMenu.classList.add('show');
             }
+            // Mobile dropdown is always visible when mobile menu is active
         }
     }
 
     initDropdowns() {
         const dropdowns = document.querySelectorAll('.dropdown');
-        const dropdownMenu = document.querySelector('.dropdown-menu'); // Get the dropdown menu once
+        const desktopDropdownMenu = document.querySelector('.desktop-dropdown'); // Desktop dropdown
+        const mobileDropdownMenu = document.querySelector('.mobile-dropdown'); // Mobile dropdown
         
         // Add timeout variables for delay functionality
         let hideTimeout;
@@ -153,68 +174,55 @@ class Navbar {
         dropdowns.forEach(dropdown => {
             const dropdownLink = dropdown.querySelector('.nav-link');
             
-            if (dropdownLink && dropdownMenu) {
+            if (dropdownLink) {
                 // Desktop hover functionality with delay
                 dropdown.addEventListener('mouseenter', () => {
-                    if (window.innerWidth > 768) {
+                    if (window.innerWidth > 768 && desktopDropdownMenu) {
                         // Clear any existing hide timeout
                         clearTimeout(hideTimeout);
                         
                         // Show dropdown immediately on enter
-                        dropdownMenu.classList.add('show');
+                        desktopDropdownMenu.classList.add('show');
                     }
                 });
                 
                 dropdown.addEventListener('mouseleave', () => {
-                    if (window.innerWidth > 768 && !this.isProductPage()) {
+                    if (window.innerWidth > 768 && !this.isProductPage() && desktopDropdownMenu) {
                         // Set a delay before hiding the dropdown
                         hideTimeout = setTimeout(() => {
-                            dropdownMenu.classList.remove('show');
+                            desktopDropdownMenu.classList.remove('show');
                         }, 300); // 300ms delay
                     }
                 });
                 
                 // Also add mouseenter/mouseleave to the dropdown menu itself
-                dropdownMenu.addEventListener('mouseenter', () => {
-                    if (window.innerWidth > 768) {
-                        // Clear any existing hide timeout when hovering over the menu
-                        clearTimeout(hideTimeout);
-                    }
-                });
+                if (desktopDropdownMenu) {
+                    desktopDropdownMenu.addEventListener('mouseenter', () => {
+                        if (window.innerWidth > 768) {
+                            // Clear any existing hide timeout when hovering over the menu
+                            clearTimeout(hideTimeout);
+                        }
+                    });
+                    
+                    desktopDropdownMenu.addEventListener('mouseleave', () => {
+                        if (window.innerWidth > 768 && !this.isProductPage()) {
+                            // Set a delay before hiding the dropdown
+                            hideTimeout = setTimeout(() => {
+                                desktopDropdownMenu.classList.remove('show');
+                            }, 300); // 300ms delay
+                        }
+                    });
+                }
                 
-                dropdownMenu.addEventListener('mouseleave', () => {
-                    if (window.innerWidth > 768 && !this.isProductPage()) {
-                        // Set a delay before hiding the dropdown
-                        hideTimeout = setTimeout(() => {
-                            dropdownMenu.classList.remove('show');
-                        }, 300); // 300ms delay
-                    }
-                });
-                
-                // Mobile/tablet click functionality
+                // Mobile/tablet click functionality - Products link is always clickable
                 dropdownLink.addEventListener('click', (e) => {
                     if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        // Close other dropdowns first
-                        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
-                            if (menu !== dropdownMenu) {
-                                menu.classList.remove('show');
-                            }
-                        });
-                        
-                        // Toggle current dropdown
-                        dropdownMenu.classList.toggle('show');
+                        // Allow normal navigation to products page
+                        // The dropdown is always visible in mobile menu
                     }
                 });
                 
-                // Close dropdown when clicking outside (for mobile)
-                document.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768 && !dropdown.contains(e.target) && dropdownMenu.classList.contains('show')) {
-                        dropdownMenu.classList.remove('show');
-                    }
-                });
+
             }
         });
     }
@@ -229,14 +237,29 @@ class Navbar {
                 mobileMenuBtn.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking on a link (but not dropdown triggers)
-            const navLinks = document.querySelectorAll('.nav-link:not(.dropdown .nav-link), .dropdown-link');
+            // Close mobile menu when clicking on any nav link
+            const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('active');
                     mobileMenuBtn.classList.remove('active');
-                    // Also close any open dropdowns
-                    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                    // Close desktop dropdowns only
+                    document.querySelectorAll('.desktop-dropdown.show').forEach(menu => {
+                        menu.classList.remove('show');
+                    });
+                });
+            });
+            
+
+            
+            // Handle dropdown links - they should close the mobile menu
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                    // Close desktop dropdown
+                    document.querySelectorAll('.desktop-dropdown.show').forEach(menu => {
                         menu.classList.remove('show');
                     });
                 });

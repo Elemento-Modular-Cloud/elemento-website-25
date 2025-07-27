@@ -41,44 +41,7 @@
         --section-padding: 3rem 0;
     }
     
-    /* Header */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: var(--glassmorphism-bg);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: var(--shadow-medium);
-        padding: 2rem 0;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .nav-menu li {
-        margin: 1rem 0;
-    }
-    
-    .hamburger {
-        display: flex;
-    }
-    
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+    /* Mobile menu styles are handled by main style.css */
     
     /* Hero Section */
     .hero-container {
@@ -364,9 +327,7 @@
         background: rgba(0, 0, 0, 0.8);
     }
     
-    .nav-menu.active {
-        background: rgba(0, 0, 0, 0.9);
-    }
+    /* Mobile menu styles are handled by main style.css */
 }
 
 /* Print Styles */
