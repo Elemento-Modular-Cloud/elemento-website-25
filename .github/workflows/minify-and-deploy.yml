@@ -39,7 +39,7 @@ jobs:
         for file in css/*.css; do
           if [ -f "$file" ] && [ "$(basename "$file")" != "themes.css" ]; then
             echo "Minifying $file..."
-            cleancss --format beautify --compatibility "*" -o "${file%.css}.min.css" "$file"
+            cleancss --compatibility "*" -o "${file%.css}.min.css" "$file"
           fi
         done
         
@@ -47,7 +47,7 @@ jobs:
         for file in css/gradient-blobs/*.css; do
           if [ -f "$file" ]; then
             echo "Minifying $file..."
-            cleancss --format beautify --compatibility "*" -o "${file%.css}.min.css" "$file"
+            cleancss --compatibility "*" -o "${file%.css}.min.css" "$file"
           fi
         done
 
