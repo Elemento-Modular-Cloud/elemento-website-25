@@ -76,13 +76,33 @@ jobs:
           sed -i "s/\.js'/\.min\.js'/g" "$file"
         done
 
-    - name: Push to minified branch
+    - name: Configure Git
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+
+    - name: Check if minified branch exists
+      id: check-branch
+      run: |
+        if git ls-remote --heads origin minified | grep -q minified; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Push to minified branch (new branch)
+      if: steps.check-branch.outputs.exists == 'false'
+      run: |
         git add -A
         git diff --quiet && git diff --staged --quiet || git commit -m "Minify CSS and JS files [skip ci]"
         git push origin HEAD:minified
+
+    - name: Push to minified branch (existing branch)
+      if: steps.check-branch.outputs.exists == 'true'
+      run: |
+        git add -A
+        git diff --quiet && git diff --staged --quiet || git commit -m "Minify CSS and JS files [skip ci]"
+        git push origin HEAD:minified --force
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
