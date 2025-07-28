@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch - Elemento</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../css/themes.css">
+    
+    <!-- Forms CSS -->
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1 class="form-title">Get in <span class="pixel-accent">Touch</span></h1>
+            <p class="form-subtitle">We'd love to hear from you</p>
+        </div>
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="91df0fd4-2f3e-438f-82ed-65f7fdc23db4">
+            
+            <!-- Form Type -->
+            <input type="hidden" name="subject" value="New Elemento Contact Form">
+            
+            <!-- Honeypot for spam protection -->
+            <input type="hidden" name="botcheck" style="display: none;">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="message_subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required maxlength="1000"></textarea>
+                <div class="character-count">
+                    <span id="charCount">0</span>/1000 characters
+                </div>
+            </div>
+
+            <div class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to our newsletter for updates and insights</label>
+            </div>
+
+            <div class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                <label for="terms">I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a> *</label>
+            </div>
+
+            <!-- Enhanced security challenge -->
+            <div class="form-group security-challenge">
+                <label for="securityQuestion">Security Question: What is 5 + 5? *</label>
+                <input type="number" id="securityQuestion" name="securityQuestion" required min="10" max="10" placeholder="Enter the answer">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+                Send Message
+            </button>
+        </form>
+
+        <div class="form-success-message" id="successMessage">
+            <h4>📧 Message Sent!</h4>
+            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+        </div>
+
+        <div class="form-error-message" id="errorMessage">
+            <p>Please complete all required fields and the security challenge.</p>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced client-side protection with Web3Forms
+        let formSubmissionAttempts = 0;
+        let lastSubmissionTime = 0;
+        const MAX_ATTEMPTS = 3;
+        const COOLDOWN_TIME = 300000; // 5 minutes
+        
+        // Track user interaction to detect bots
+        let userInteractions = 0;
+        let formLoadTime = Date.now();
+        
+        // Monitor user interactions
+        document.addEventListener('mousemove', () => userInteractions++);
+        document.addEventListener('keypress', () => userInteractions++);
+        document.addEventListener('click', () => userInteractions++);
+        
+        // Character counter
+        document.getElementById('message').addEventListener('input', function() {
+            const charCount = this.value.length;
+            document.getElementById('charCount').textContent = charCount;
+        });
+        
+        // Enhanced bot detection
+        function detectBot() {
+            const timeOnPage = Date.now() - formLoadTime;
+            const interactionRate = userInteractions / (timeOnPage / 1000);
+            
+            // Bot indicators
+            const indicators = [];
+            
+            // Too fast submission
+            if (timeOnPage < 5000) indicators.push('too_fast');
+            
+            // No user interactions
+            if (userInteractions < 3) indicators.push('no_interaction');
+            
+            // Low interaction rate
+            if (interactionRate < 0.1) indicators.push('low_interaction');
+            
+            // Check for automation tools
+            if (navigator.webdriver) indicators.push('webdriver');
+            
+            // Check for headless browser indicators
+            if (!navigator.plugins.length) indicators.push('no_plugins');
+            if (!navigator.languages.length) indicators.push('no_languages');
+            
+            return indicators.length > 2; // Bot if 3+ indicators
+        }
+        
+        // Enhanced form validation
+        function validateForm() {
+            const form = document.getElementById('contactForm');
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            // Check required fields
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#DC3545';
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            // Validate email format
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                isValid = false;
+                email.style.borderColor = '#DC3545';
+            }
+            
+            // Validate security question
+            const securityAnswer = document.getElementById('securityQuestion');
+            if (securityAnswer.value !== '10') {
+                isValid = false;
+                securityAnswer.style.borderColor = '#DC3545';
+            }
+            
+            // Validate message length
+            const message = document.getElementById('message');
+            if (message.value.length < 10) {
+                isValid = false;
+                message.style.borderColor = '#DC3545';
+            }
+            
+            return isValid;
+        }
+        
+        // Form submission with Web3Forms
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Rate limiting
+            const now = Date.now();
+            if (now - lastSubmissionTime < 5000) { // 5 second cooldown
+                showError('Please wait before submitting again.');
+                return;
+            }
+            
+            // Check submission attempts
+            if (formSubmissionAttempts >= MAX_ATTEMPTS) {
+                showError('Too many submission attempts. Please try again later.');
+                return;
+            }
+            
+            // Bot detection
+            if (detectBot()) {
+                showError('Suspicious activity detected. Please try again.');
+                return;
+            }
+            
+            // Validate form
+            if (!validateForm()) {
+                showError('Please complete all required fields correctly.');
+                return;
+            }
+            
+            // Disable submit button
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Add security data to form
+            const securityData = document.createElement('input');
+            securityData.type = 'hidden';
+            securityData.name = 'security_data';
+            securityData.value = JSON.stringify({
+                timestamp: now,
+                userInteractions: userInteractions,
+                timeOnPage: now - formLoadTime,
+                userAgent: navigator.userAgent,
+                screenResolution: `${screen.width}x${screen.height}`,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+            });
+            this.appendChild(securityData);
+            
+            // Submit to Web3Forms
+            fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Show success
+                    document.getElementById('contactForm').style.display = 'none';
+                    document.getElementById('successMessage').classList.add('show');
+                    
+                    // Send message to parent if embedded
+                    if (window.parent !== window) {
+                        window.parent.postMessage({
+                            type: 'form-submitted',
+                            formType: 'contact',
+                            data: data,
+                            timestamp: now
+                        }, '*');
+                    }
+                } else {
+                    showError('Submission failed. Please try again.');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }
+            })
+            .catch(error => {
+                console.error('Form submission error:', error);
+                showError('Submission failed. Please try again.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            });
+            
+            formSubmissionAttempts++;
+            lastSubmissionTime = now;
+        });
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.innerHTML = `<p>${message}</p>`;
+            errorDiv.classList.add('show');
+            setTimeout(() => errorDiv.classList.remove('show'), 5000);
+        }
+
+        // Listen for theme changes from parent
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'theme-change') {
+                document.body.className = event.data.theme;
+            }
+        });
+
+        // Request current theme from parent on load
+        if (window.parent !== window) {
+            window.parent.postMessage({
+                type: 'request-theme'
+            }, '*');
+        }
+
+        // Function to apply theme from localStorage
+        function applyThemeFromStorage() {
+            try {
+                // First try to get theme from current window's localStorage
+                let savedTheme = localStorage.getItem('elemento-theme');
+                
+                // If not found and we're in an iframe, try parent window
+                if (!savedTheme && window.parent !== window) {
+                    try {
+                        savedTheme = window.parent.localStorage.getItem('elemento-theme');
+                    } catch (error) {
+                        console.log('Could not access parent localStorage:', error);
+                    }
+                }
+                
+                if (savedTheme) {
+                    document.body.className = savedTheme;
+                    console.log('Applied theme from localStorage:', savedTheme);
+                }
+            } catch (error) {
+                console.log('Could not read theme from localStorage:', error);
+            }
+        }
+
+        // Apply theme on page load
+        applyThemeFromStorage();
+
+        // Listen for localStorage changes from other tabs/windows
+        window.addEventListener('storage', function(event) {
+            if (event.key === 'elemento-theme' && event.newValue) {
+                document.body.className = event.newValue;
+                console.log('Theme updated from storage event:', event.newValue);
+            }
+        });
+    </script>
+</body>
+</html>

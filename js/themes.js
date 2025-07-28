@@ -73,7 +73,40 @@ function toggleTheme() {
 
     // Update button icon
     updateThemeIcon();
+    
+    // Notify iframes of theme change
+    notifyIframesOfThemeChange(newTheme);
 }
+
+// Notify iframes of theme changes
+function notifyIframesOfThemeChange(theme) {
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        try {
+            iframe.contentWindow.postMessage({
+                type: 'theme-change',
+                theme: theme
+            }, '*');
+        } catch (error) {
+            console.log('Could not notify iframe of theme change:', error);
+        }
+    });
+}
+
+// Listen for theme requests from iframes
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'request-theme') {
+        const currentTheme = themes[currentThemeIndex];
+        try {
+            event.source.postMessage({
+                type: 'theme-change',
+                theme: currentTheme
+            }, '*');
+        } catch (error) {
+            console.log('Could not send theme to iframe:', error);
+        }
+    }
+});
 
 // Update theme icon
 function updateThemeIcon() {
@@ -151,6 +184,9 @@ function loadSavedTheme() {
     
     // Update theme icon
     updateThemeIcon();
+    
+    // Notify iframes of current theme
+    notifyIframesOfThemeChange(themes[currentThemeIndex]);
 }
 
 // Initialize theme system
