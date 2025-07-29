@@ -103,10 +103,7 @@
             </button>
         </form>
 
-        <div class="form-success-message" id="successMessage">
-            <h4>🎉 Welcome to Elemento!</h4>
-            <p>Thank you for signing up. We'll be in touch soon with your next steps.</p>
-        </div>
+        <!-- Success message removed - redirecting to dedicated success page -->
 
         <div class="form-error-message" id="errorMessage">
             <p>Please complete all required fields and the security challenge.</p>
@@ -246,9 +243,8 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // Show success
-                    document.getElementById('signupForm').style.display = 'none';
-                    document.getElementById('successMessage').classList.add('show');
+                    // Redirect to success page
+                    window.location.href = '../signup-success.html';
                     
                     // Send message to parent if embedded
                     if (window.parent !== window) {

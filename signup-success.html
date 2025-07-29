@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Elemento Cloud Platform</title>
-    <meta name="description" content="Join Elemento and get started with the future of cloud computing. Sign up for free and start building your cloud infrastructure.">
+    <title>Welcome to Elemento - Registration Successful</title>
+    <meta name="description" content="Welcome to Elemento! Your account has been successfully created. Get started with your cloud infrastructure journey.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
@@ -230,45 +230,78 @@
             }
         }
 
-        /* Iframe container styles */
-        .iframe-container {
+        /* Success page specific styles */
+        .hero {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            padding: var(--space-4xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--space-2xl) 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
         }
 
-        .form-iframe {
-            width: 100%;
-            min-height: 100%; /* Account for navbar and footer */
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-welcome {
+            /* First column of hero-content grid */
+        }
+
+        .download-section-wrapper {
             background: var(--background-color);
+            color: var(--text-color);
+            border-radius: 12px;
         }
 
-        /* Loading state for iframe */
-        .iframe-loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 400px;
-            color: var(--text-secondary);
+        .hero-title {
+            color: var(--text-color) !important;
+            margin-bottom: var(--space-lg);
         }
 
-        .iframe-loading .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--border-color);
-            border-top: 3px solid var(--primary-color);
-            border-radius: 50%;
-            animation: splash-spin 1s linear infinite;
-            margin-right: var(--space-md);
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: var(--space-xl);
+            opacity: 0.9;
+        }
+
+        .email-notification {
+            background-color: var(--accent-color);
+            padding: var(--space-lg);
+            margin: var(--space-xl) 0 0 0;
+            border-radius: 0 8px 8px 0;
+            display: inline-block;
+            max-width: 500px;
+        }
+
+        .hero-tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+
+        /* Responsive Design for Hero */
+        @media (max-width: 768px) {
+            .hero-welcome {
+                max-width: 100%;
+            }
         }
         </style>
 
@@ -276,8 +309,10 @@
     <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
     
-    <!-- Contact Page Styles (reused for signup) -->
+    <!-- Success Page Styles -->
+    <link rel="stylesheet" href="css/signup-success.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/electros.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/gradient-blobs/gradients-contact.css" media="print" onload="this.media='all'">
 
@@ -286,8 +321,10 @@
         <link rel="stylesheet" href="css/themes.css">
         <link rel="stylesheet" href="css/style.css">
         
-        <!-- Contact Page Styles -->
+        <!-- Success Page Styles -->
+        <link rel="stylesheet" href="css/signup-success.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/electros.css">
         <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
         <link rel="stylesheet" href="css/gradient-blobs/gradients-contact.css">
     </noscript>
@@ -334,7 +371,7 @@
         }
     </style>
 </head>
-<body class="" style="overflow: hidden;">
+<body class="">
 
     
     <!-- Splash Screen -->
@@ -344,87 +381,142 @@
                 <div class="splash-logo-img"></div>
             </div>
         </div>
-    </div> 
+    </div>
 
-    <!-- Navigation -->
-    <div id="navbar-placeholder"></div>
-
-    <!-- Iframe Container -->
-    <section class="iframe-container">
-        <iframe 
-            src="forms/signup.html" 
-            class="form-iframe" 
-            id="signupIframe">
-        </iframe>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Welcome Message -->
+                <div class="hero-welcome fade-in">
+                    <div class="hero-tagline">Registration Complete!</div>
+                    <h1 class="hero-title">Welcome to <span class="pixel-word">Elemento</span>!</h1>
+                    <div class="hero-subtitle">
+                        Your account has been successfully created. You're now ready to start building your cloud infrastructure with the universal multicloud dashboard.
+                    </div>
+                    
+                    <!-- Email Notification -->
+                    <div class="email-notification">
+                        <i class="fas fa-envelope" style="margin-right: var(--space-sm);"></i>
+                        <strong>Check your email</strong> - We've sent you a welcome message with your login credentials and next steps.
+                    </div>
+                </div>
+            
+                <!-- Download Section -->
+                <div class="download-section-wrapper">
+                    <div class="card fade-in">
+                        <h3><i class="fas fa-desktop" style="color: var(--blue);"></i> Desktop Installers</h3>
+                        <p>Native applications for your operating system with full GUI capabilities.</p>
+                        
+                        <div class="download-buttons">
+                            <!-- Linux -->
+                            <div class="download-option">
+                                <h4><i class="fab fa-linux" style="color: var(--orange);"></i> Linux</h4>
+                                <div class="arch-buttons">
+                                    <a href="#" id="ai-x64-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> x64 AppImage
+                                    </a>
+                                    <a href="#" id="ai-arm-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> ARM64 AppImage
+                                    </a>
+                                </div>
+                                <small class="download-info">Universal Linux packages</small>
+                            </div>
+                            
+                            <!-- macOS -->
+                            <div class="download-option">
+                                <h4><i class="fab fa-apple" style="color: var(--gray);"></i> macOS</h4>
+                                <div class="arch-buttons">
+                                    <a href="#" id="dmg-x64-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> Intel (x64)
+                                    </a>
+                                    <a href="#" id="dmg-arm-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> Apple Silicon (ARM64)
+                                    </a>
+                                </div>
+                                <small class="download-info">Native macOS binaries</small>
+                            </div>
+                            
+                            <!-- Windows -->
+                            <div class="download-option">
+                                <h4><i class="fab fa-windows" style="color: var(--blue);"></i> Windows</h4>
+                                <div class="arch-buttons">
+                                    <a href="#" id="exe-x64-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> x64
+                                    </a>
+                                </div>
+                                <small class="download-info">Windows 10/11 (x64 only)</small>
+                            </div>
+                            
+                            <!-- Ubuntu/Debian -->
+                            <div class="download-option">
+                                <h4><i class="fab fa-ubuntu" style="color: var(--orange);"></i> Ubuntu/Debian</h4>
+                                <div class="arch-buttons">
+                                    <a href="#" id="deb-x64-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> x64 Package
+                                    </a>
+                                    <a href="#" id="deb-arm-btn" class="btn btn-primary">
+                                        <i class="fas fa-download"></i> ARM64 Package
+                                    </a>
+                                </div>
+                                <small class="download-info">Native Ubuntu/Debian packages</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
     <script src="js/splash-screen.js" defer></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/electros.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/themes.js" defer></script>
-    <script src="js/main.js" defer></script>    
     
-    <!-- Iframe Management Script -->
+    <!-- Success Page Script -->
     <script>
-        // Iframe management
-        const iframe = document.getElementById('signupIframe');
-        const iframeLoading = document.getElementById('iframeLoading');
-        
-        // Show iframe when loaded
-        iframe.addEventListener('load', function() {
-            iframeLoading.style.display = 'none';
-            iframe.style.display = 'block';
+        // Success page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add celebration animation
+            const successIcon = document.querySelector('.success-icon');
+            if (successIcon) {
+                successIcon.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.2) rotate(360deg)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1) rotate(0deg)';
+                    }, 500);
+                });
+            }
             
-            // Send current theme to iframe
-            const currentTheme = document.body.className || 'data-theme="light"';
-            iframe.contentWindow.postMessage({
-                type: 'theme-change',
-                theme: currentTheme
-            }, '*');
+            // Track successful registration
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'sign_up', {
+                    'method': 'web_form'
+                });
+            }
+            
+            // Store registration success in localStorage
+            localStorage.setItem('elemento-registration-success', 'true');
+            localStorage.setItem('elemento-registration-timestamp', Date.now().toString());
         });
         
         // Handle form submission messages from iframe
         window.addEventListener('message', function(event) {
-            if (event.data.type === 'form-submitted') {
-                console.log('Form submitted successfully:', event.data);
+            if (event.data.type === 'form-submitted' && event.data.formType === 'signup') {
+                console.log('Registration completed successfully:', event.data);
                 
-                // Redirect to success page
-                window.location.href = 'signup-success.html';
-            }
-        });
-        
-        // Listen for theme changes and forward to iframe
-        const observer2 = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                    const currentTheme = document.body.getAttribute('data-theme');
-                    if (iframe.contentWindow) {
-                        iframe.contentWindow.postMessage({
-                            type: 'theme-change',
-                            theme: currentTheme
-                        }, '*');
-                    }
+                // Update success message with user data if available
+                const userEmail = event.data.data?.email || 'your email';
+                const welcomeMessage = document.querySelector('.hero-subtitle');
+                if (welcomeMessage) {
+                    welcomeMessage.innerHTML = `Your account has been successfully created. We've sent a confirmation to <strong>${userEmail}</strong>.`;
                 }
-            });
-        });
-        
-        // Start observing theme changes
-        observer2.observe(document.body, {
-            attributes: true,
-            attributeFilter: ['data-theme']
-        });
-        
-        // Handle iframe load errors
-        iframe.addEventListener('error', function() {
-            iframeLoading.innerHTML = `
-                <div style="text-align: center; color: var(--text-secondary);">
-                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: var(--space-md);"></i>
-                    <p>Failed to load signup form. Please refresh the page or try again later.</p>
-                    <button onclick="location.reload()" class="btn btn-primary" style="margin-top: var(--space-md);">
-                        Refresh Page
-                    </button>
-                </div>
-            `;
+            }
         });
     </script>
 </body>
