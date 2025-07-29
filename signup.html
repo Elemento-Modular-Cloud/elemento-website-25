@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Elemento Cloud Platform</title>
+    <meta name="description" content="Join Elemento and get started with the future of cloud computing. Sign up for free and start building your cloud infrastructure.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="css/style.css" as="style" crossorigin>
+    <link rel="preload" href="css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="js/main.js" as="script" crossorigin>
+    <link rel="preload" href="js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="css/contact.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical heading styles to prevent layout shifts */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Critical hero title styles */
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        /* Critical hero tagline styles */
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent-color);
+            mask-image: url(assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .splash-spinner {
+                animation: none;
+                border-top-color: var(--primary-color);
+            }
+            
+            .splash-screen {
+                transition: none;
+            }
+        }
+
+        /* Iframe container styles */
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-2xl) 0;
+        }
+
+        .form-iframe {
+            width: 100%;
+            min-height: 100%; /* Account for navbar and footer */
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background: var(--background-color);
+        }
+
+        /* Loading state for iframe */
+        .iframe-loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            color: var(--text-secondary);
+        }
+
+        .iframe-loading .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+            margin-right: var(--space-md);
+        }
+        </style>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    
+    <!-- Contact Page Styles (reused for signup) -->
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradients-contact.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Contact Page Styles -->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradients-contact.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+    
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+</head>
+<body class="" style="overflow: hidden;">
+
+    
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Iframe Container -->
+    <section class="iframe-container">
+        <iframe 
+            src="forms/signup.html" 
+            class="form-iframe" 
+            id="signupIframe">
+        </iframe>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/splash-screen.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/themes.js" defer></script>
+    <script src="js/main.js" defer></script>    
+    
+    <!-- Iframe Management Script -->
+    <script>
+        // Iframe management
+        const iframe = document.getElementById('signupIframe');
+        const iframeLoading = document.getElementById('iframeLoading');
+        
+        // Show iframe when loaded
+        iframe.addEventListener('load', function() {
+            iframeLoading.style.display = 'none';
+            iframe.style.display = 'block';
+            
+            // Send current theme to iframe
+            const currentTheme = document.body.className || 'data-theme="light"';
+            iframe.contentWindow.postMessage({
+                type: 'theme-change',
+                theme: currentTheme
+            }, '*');
+        });
+        
+        // Handle form submission messages from iframe
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'form-submitted') {
+                console.log('Form submitted successfully:', event.data);
+                
+                // You can add additional handling here if needed
+                // For example, redirect to a thank you page or show a success message
+                
+                // Optional: Show success message on parent page
+                const successMessage = document.createElement('div');
+                successMessage.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: var(--success-color);
+                        color: white;
+                        padding: var(--space-lg);
+                        border-radius: 8px;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                        z-index: 1000;
+                        max-width: 300px;
+                    ">
+                        <h4 style="margin: 0 0 var(--space-sm) 0;">�� Welcome to Elemento!</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">Thank you for signing up. We'll be in touch soon!</p>
+                    </div>
+                `;
+                document.body.appendChild(successMessage);
+                
+                // Remove success message after 5 seconds
+                setTimeout(() => {
+                    if (successMessage.parentNode) {
+                        successMessage.parentNode.removeChild(successMessage);
+                    }
+                }, 5000);
+            }
+        });
+        
+        // Listen for theme changes and forward to iframe
+        const observer2 = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                    const currentTheme = document.body.getAttribute('data-theme');
+                    if (iframe.contentWindow) {
+                        iframe.contentWindow.postMessage({
+                            type: 'theme-change',
+                            theme: currentTheme
+                        }, '*');
+                    }
+                }
+            });
+        });
+        
+        // Start observing theme changes
+        observer2.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['data-theme']
+        });
+        
+        // Handle iframe load errors
+        iframe.addEventListener('error', function() {
+            iframeLoading.innerHTML = `
+                <div style="text-align: center; color: var(--text-secondary);">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: var(--space-md);"></i>
+                    <p>Failed to load signup form. Please refresh the page or try again later.</p>
+                    <button onclick="location.reload()" class="btn btn-primary" style="margin-top: var(--space-md);">
+                        Refresh Page
+                    </button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html> 

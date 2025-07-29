@@ -411,103 +411,14 @@
                     </div>
                 </div>
                 
-                <div class="fade-in" id="form">
-                    <div class="enhanced-form-container">
-                        <div class="form-header">
-                            <h3>Send us a <span class="highlight-pixel">Message</span></h3>
-                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-                        </div>
-                        
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="company">Company</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="sales">💼 Sales Inquiry</option>
-                                    <option value="support">🛠️ Technical Support</option>
-                                    <option value="partnership">🤝 Partnership</option>
-                                    <option value="demo">🎥 Request Demo</option>
-                                    <option value="general">💬 General Inquiry</option>
-                                    <option value="billing">💳 Billing Question</option>
-                                    <option value="security">🔒 Security Question</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs, challenges, or questions..."></textarea>
-                                <div class="character-count">
-                                    <span id="char-count">0</span>/500 characters
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="newsletter" value="yes">
-                                    <span class="checkmark"></span>
-                                    Subscribe to our newsletter for product updates and <span class="emphasis-pixel">cloud insights</span>
-                                </label>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="privacy" required>
-                                    <span class="checkmark"></span>
-                                    I agree to the <a href="/privacy" class="policy-link">Privacy Policy</a> and <a href="/terms" class="policy-link">Terms of Service</a> *
-                                </label>
-                            </div>
-                            
-                            <!-- reCAPTCHA -->
-                            <div class="form-group">
-                                <label>Security Verification *</label>
-                                <div class="captcha-container">
-                                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY_HERE"></div>
-                                </div>
-                                <div class="captcha-error" id="captcha-error" style="display: none;">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                    Please complete the captcha verification
-                                </div>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary w-full form-submit-btn">
-                                <span class="btn-text">Send Message</span>
-                                <span class="btn-loading" style="display: none;">
-                                    <i class="fas fa-spinner fa-spin"></i>
-                                    Sending...
-                                </span>
-                            </button>
-                            
-                            <div class="form-success-message" style="display: none;">
-                                <i class="fas fa-check-circle"></i>
-                                <h4>Message sent successfully!</h4>
-                                <p>We'll get back to you within 24 hours.</p>
-                            </div>
-                        </form>
-                    </div>
+                <!-- Iframe Container -->
+                <div class="iframe-container">
+                    <iframe 
+                        src="forms/getintouch.html" 
+                        class="form-iframe" 
+                        id="contactIframe"
+                        scrolling="no">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -807,6 +718,182 @@
     
     <!-- Enhanced Contact Page Script -->
     <script>
+        // Iframe container styles
+        const iframeStyles = `
+            .iframe-container {
+                width: 100%;
+                border-radius: 12px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .form-iframe {
+                width: 100%;
+                height: 800px;
+                border: none;
+            }
+
+            /* Responsive iframe height */
+            @media (max-width: 768px) {
+                .iframe-container {
+                    min-height: 900px;
+                }
+                .form-iframe {
+                    height: 900px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .iframe-container {
+                    min-height: 1000px;
+                }
+                .form-iframe {
+                    height: 1000px;
+                }
+            }
+
+            /* Loading state for iframe */
+            .iframe-loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 400px;
+                color: var(--text-secondary);
+            }
+
+            .iframe-loading .spinner {
+                width: 40px;
+                height: 40px;
+                border: 3px solid var(--border-color);
+                border-top: 3px solid var(--primary-color);
+                border-radius: 50%;
+                animation: splash-spin 1s linear infinite;
+                margin-right: var(--space-md);
+            }
+        `;
+        
+        // Inject iframe styles
+        const styleSheet = document.createElement("style");
+        styleSheet.textContent = iframeStyles;
+        document.head.appendChild(styleSheet);
+
+        // Iframe management
+        const iframe = document.getElementById('contactIframe');
+        
+        // Function to adjust iframe height based on content
+        function adjustIframeHeight() {
+            try {
+                if (iframe.contentWindow && iframe.contentWindow.document) {
+                    const iframeDocument = iframe.contentWindow.document;
+                    const iframeBody = iframeDocument.body;
+                    const iframeHtml = iframeDocument.documentElement;
+                    
+                    // Get the actual height needed
+                    const scrollHeight = Math.max(
+                        iframeBody.scrollHeight,
+                        iframeBody.offsetHeight,
+                        iframeHtml.clientHeight,
+                        iframeHtml.scrollHeight,
+                        iframeHtml.offsetHeight
+                    );
+                    
+                    // Add some padding to ensure no cropping
+                    const newHeight = scrollHeight + 100;
+                    
+                    // Set minimum height and update iframe
+                    const minHeight = window.innerWidth <= 480 ? 1000 : 
+                                    window.innerWidth <= 768 ? 900 : 800;
+                    
+                    iframe.style.height = Math.max(newHeight, minHeight) + 'px';
+                    iframe.parentElement.style.minHeight = Math.max(newHeight, minHeight) + 'px';
+                }
+            } catch (error) {
+                console.log('Could not adjust iframe height:', error);
+            }
+        }
+        
+        // Show iframe when loaded
+        iframe.addEventListener('load', function() {
+            // Send current theme to iframe
+            const currentTheme = document.body.getAttribute('data-theme') || 'light';
+            iframe.contentWindow.postMessage({
+                type: 'theme-change',
+                theme: currentTheme
+            }, '*');
+            
+            // Adjust height after a short delay to ensure content is rendered
+            setTimeout(adjustIframeHeight, 100);
+            
+            // Adjust height again after a longer delay to catch any dynamic content
+            setTimeout(adjustIframeHeight, 500);
+        });
+        
+        // Handle form submission messages from iframe
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'form-submitted') {
+                console.log('Contact form submitted successfully:', event.data);
+                
+                // Show success message on parent page
+                const successMessage = document.createElement('div');
+                successMessage.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: var(--success-color, #28a745);
+                        color: white;
+                        padding: var(--space-lg);
+                        border-radius: 8px;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                        z-index: 1000;
+                        max-width: 300px;
+                    ">
+                        <h4 style="margin: 0 0 var(--space-sm) 0;">📧 Message Sent!</h4>
+                        <p style="margin: 0; font-size: 0.9rem;">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                `;
+                document.body.appendChild(successMessage);
+                
+                // Remove success message after 5 seconds
+                setTimeout(() => {
+                    if (successMessage.parentNode) {
+                        successMessage.parentNode.removeChild(successMessage);
+                    }
+                }, 5000);
+            }
+        });
+        
+        // Listen for theme changes and forward to iframe
+        const observer2 = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                    const currentTheme = document.body.getAttribute('data-theme');
+                    if (iframe.contentWindow) {
+                        iframe.contentWindow.postMessage({
+                            type: 'theme-change',
+                            theme: currentTheme
+                        }, '*');
+                    }
+                }
+            });
+        });
+        
+        // Start observing theme changes
+        observer2.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['data-theme']
+        });
+        
+        // Handle iframe load errors
+        iframe.addEventListener('error', function() {
+            console.error('Failed to load contact form iframe');
+        });
+
+        // Adjust iframe height on window resize
+        window.addEventListener('resize', function() {
+            setTimeout(adjustIframeHeight, 100);
+        });
+
         // Office Hours Management
         function checkOfficeHours() {
             // Office hours: Monday-Friday, 9 AM - 6 PM Europe/Rome timezone
@@ -934,72 +1021,188 @@
             // Update office status every minute
             setInterval(checkOfficeHours, 60000);
             
-            const form = document.getElementById('contactForm');
-            const messageTextarea = document.getElementById('message');
-            const charCount = document.getElementById('char-count');
-            const submitBtn = form.querySelector('.form-submit-btn');
-            const btnText = submitBtn.querySelector('.btn-text');
-            const btnLoading = submitBtn.querySelector('.btn-loading');
-            const successMessage = form.querySelector('.form-success-message');
-            const captchaError = document.getElementById('captcha-error');
-            
             // Character counter for message field
-            messageTextarea.addEventListener('input', function() {
-                const count = this.value.length;
-                charCount.textContent = count;
-                
-                if (count > 500) {
-                    charCount.style.color = 'var(--error-color)';
-                } else {
-                    charCount.style.color = 'var(--text-secondary)';
-                }
-            });
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('charCount');
             
-            // Form validation and submission
-            form.addEventListener('submit', function(e) {
+            if (messageTextarea && charCount) {
+                messageTextarea.addEventListener('input', function() {
+                    const count = this.value.length;
+                    charCount.textContent = count;
+                    
+                    if (count > 1000) {
+                        charCount.style.color = 'var(--error-color)';
+                    } else {
+                        charCount.style.color = 'var(--text-secondary)';
+                    }
+                });
+            }
+            
+            // Enhanced client-side protection with Web3Forms
+            let formSubmissionAttempts = 0;
+            let lastSubmissionTime = 0;
+            const MAX_ATTEMPTS = 3;
+            const COOLDOWN_TIME = 300000; // 5 minutes
+            
+            // Track user interaction to detect bots
+            let userInteractions = 0;
+            let formLoadTime = Date.now();
+            
+            // Monitor user interactions
+            document.addEventListener('mousemove', () => userInteractions++);
+            document.addEventListener('keypress', () => userInteractions++);
+            document.addEventListener('click', () => userInteractions++);
+            
+            // Enhanced bot detection
+            function detectBot() {
+                const timeOnPage = Date.now() - formLoadTime;
+                const interactionRate = userInteractions / (timeOnPage / 1000);
+                
+                // Bot indicators
+                const indicators = [];
+                
+                // Too fast submission
+                if (timeOnPage < 5000) indicators.push('too_fast');
+                
+                // No user interactions
+                if (userInteractions < 3) indicators.push('no_interaction');
+                
+                // Low interaction rate
+                if (interactionRate < 0.1) indicators.push('low_interaction');
+                
+                // Check for automation tools
+                if (navigator.webdriver) indicators.push('webdriver');
+                
+                // Check for headless browser indicators
+                if (!navigator.plugins.length) indicators.push('no_plugins');
+                if (!navigator.languages.length) indicators.push('no_languages');
+                
+                return indicators.length > 2; // Bot if 3+ indicators
+            }
+            
+            // Enhanced form validation
+            function validateForm() {
+                const form = document.getElementById('contactForm');
+                const requiredFields = form.querySelectorAll('[required]');
+                let isValid = true;
+                
+                // Check required fields
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.style.borderColor = '#DC3545';
+                    } else {
+                        field.style.borderColor = '';
+                    }
+                });
+                
+                // Validate email format
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email.value)) {
+                    isValid = false;
+                    email.style.borderColor = '#DC3545';
+                }
+                
+                // Validate security question
+                const securityAnswer = document.getElementById('securityQuestion');
+                if (securityAnswer.value !== '10') {
+                    isValid = false;
+                    securityAnswer.style.borderColor = '#DC3545';
+                }
+                
+                // Validate message length
+                const message = document.getElementById('message');
+                if (message.value.length < 10) {
+                    isValid = false;
+                    message.style.borderColor = '#DC3545';
+                }
+                
+                return isValid;
+            }
+            
+            // Form submission with Web3Forms
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Hide previous captcha error
-                captchaError.style.display = 'none';
-                
-                // Verify reCAPTCHA
-                const recaptchaResponse = grecaptcha.getResponse();
-                if (!recaptchaResponse) {
-                    captchaError.style.display = 'block';
-                    captchaError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // Rate limiting
+                const now = Date.now();
+                if (now - lastSubmissionTime < 5000) { // 5 second cooldown
+                    showError('Please wait before submitting again.');
                     return;
                 }
                 
-                // Show loading state
-                btnText.style.display = 'none';
-                btnLoading.style.display = 'inline-flex';
+                // Check submission attempts
+                if (formSubmissionAttempts >= MAX_ATTEMPTS) {
+                    showError('Too many submission attempts. Please try again later.');
+                    return;
+                }
+                
+                // Bot detection
+                if (detectBot()) {
+                    showError('Suspicious activity detected. Please try again.');
+                    return;
+                }
+                
+                // Validate form
+                if (!validateForm()) {
+                    showError('Please complete all required fields correctly.');
+                    return;
+                }
+                
+                // Disable submit button
+                const submitBtn = document.getElementById('submitBtn');
                 submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
                 
-                // Simulate form submission with captcha verification
-                // In a real implementation, you would send the recaptchaResponse to your server
-                const formData = new FormData(form);
-                formData.append('g-recaptcha-response', recaptchaResponse);
+                // Add security data to form
+                const securityData = document.createElement('input');
+                securityData.type = 'hidden';
+                securityData.name = 'security_data';
+                securityData.value = JSON.stringify({
+                    timestamp: now,
+                    userInteractions: userInteractions,
+                    timeOnPage: now - formLoadTime,
+                    userAgent: navigator.userAgent,
+                    screenResolution: `${screen.width}x${screen.height}`,
+                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+                });
+                this.appendChild(securityData);
                 
-                // Simulate server response (replace with actual API call)
-                setTimeout(() => {
-                    btnText.style.display = 'inline-flex';
-                    btnLoading.style.display = 'none';
+                // Submit to Web3Forms
+                fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Show success
+                        document.getElementById('contactForm').style.display = 'none';
+                        document.getElementById('successMessage').classList.add('show');
+                    } else {
+                        showError('Submission failed. Please try again.');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send Message';
+                    }
+                })
+                .catch(error => {
+                    console.error('Form submission error:', error);
+                    showError('Submission failed. Please try again.');
                     submitBtn.disabled = false;
-                    
-                    // Show success message
-                    successMessage.style.display = 'block';
-                    form.reset();
-                    charCount.textContent = '0';
-                    
-                    // Reset reCAPTCHA
-                    grecaptcha.reset();
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 5000);
-                }, 2000);
+                    submitBtn.textContent = 'Send Message';
+                });
+                
+                formSubmissionAttempts++;
+                lastSubmissionTime = now;
             });
+            
+            function showError(message) {
+                const errorDiv = document.getElementById('errorMessage');
+                errorDiv.innerHTML = `<p>${message}</p>`;
+                errorDiv.classList.add('show');
+                setTimeout(() => errorDiv.classList.remove('show'), 5000);
+            }
             
             // Map interaction enhancements
             const mapContainer = document.querySelector('.map-container');
