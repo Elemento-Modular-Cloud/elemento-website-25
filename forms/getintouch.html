@@ -109,15 +109,61 @@
         let userInteractions = 0;
         let formLoadTime = Date.now();
         
+        // Logging utility
+        function log(message, level = 'info', data = null) {
+            const timestamp = new Date().toISOString();
+            const logEntry = {
+                timestamp,
+                level,
+                message,
+                data,
+                userAgent: navigator.userAgent,
+                url: window.location.href,
+                referrer: document.referrer
+            };
+            
+            console.log(`[${timestamp}] [${level.toUpperCase()}] ${message}`, data ? data : '');
+            
+            // Store logs in localStorage for debugging (limit to last 50 entries)
+            try {
+                const logs = JSON.parse(localStorage.getItem('elemento-form-logs') || '[]');
+                logs.push(logEntry);
+                if (logs.length > 50) logs.shift();
+                localStorage.setItem('elemento-form-logs', JSON.stringify(logs));
+            } catch (error) {
+                console.warn('Could not store log entry:', error);
+            }
+        }
+        
+        // Initialize logging
+        log('Form script initialized', 'info', {
+            formLoadTime,
+            userAgent: navigator.userAgent,
+            screenResolution: `${screen.width}x${screen.height}`,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        });
+        
         // Monitor user interactions
-        document.addEventListener('mousemove', () => userInteractions++);
-        document.addEventListener('keypress', () => userInteractions++);
-        document.addEventListener('click', () => userInteractions++);
+        document.addEventListener('mousemove', () => {
+            userInteractions++;
+            if (userInteractions % 10 === 0) { // Log every 10th interaction
+                log('User interaction detected', 'debug', { userInteractions, type: 'mousemove' });
+            }
+        });
+        document.addEventListener('keypress', () => {
+            userInteractions++;
+            log('User interaction detected', 'debug', { userInteractions, type: 'keypress' });
+        });
+        document.addEventListener('click', () => {
+            userInteractions++;
+            log('User interaction detected', 'debug', { userInteractions, type: 'click' });
+        });
         
         // Character counter
         document.getElementById('message').addEventListener('input', function() {
             const charCount = this.value.length;
             document.getElementById('charCount').textContent = charCount;
+            log('Message character count updated', 'debug', { charCount, maxLength: 1000 });
         });
         
         // Enhanced bot detection
@@ -144,7 +190,20 @@
             if (!navigator.plugins.length) indicators.push('no_plugins');
             if (!navigator.languages.length) indicators.push('no_languages');
             
-            return indicators.length > 2; // Bot if 3+ indicators
+            const isBot = indicators.length > 2;
+            
+            log('Bot detection analysis', 'info', {
+                timeOnPage,
+                userInteractions,
+                interactionRate,
+                indicators,
+                isBot,
+                webdriver: navigator.webdriver,
+                plugins: navigator.plugins.length,
+                languages: navigator.languages.length
+            });
+            
+            return isBot;
         }
         
         // Enhanced form validation
@@ -152,12 +211,17 @@
             const form = document.getElementById('contactForm');
             const requiredFields = form.querySelectorAll('[required]');
             let isValid = true;
+            const validationErrors = [];
+            
+            log('Starting form validation', 'info');
             
             // Check required fields
             requiredFields.forEach(field => {
                 if (!field.value.trim()) {
                     isValid = false;
                     field.style.borderColor = '#DC3545';
+                    validationErrors.push(`Missing required field: ${field.name}`);
+                    log('Validation error', 'warn', { field: field.name, error: 'missing_required' });
                 } else {
                     field.style.borderColor = '';
                 }
@@ -169,6 +233,8 @@
             if (!emailRegex.test(email.value)) {
                 isValid = false;
                 email.style.borderColor = '#DC3545';
+                validationErrors.push('Invalid email format');
+                log('Validation error', 'warn', { field: 'email', error: 'invalid_format', value: email.value });
             }
             
             // Validate security question
@@ -176,6 +242,8 @@
             if (securityAnswer.value !== '10') {
                 isValid = false;
                 securityAnswer.style.borderColor = '#DC3545';
+                validationErrors.push('Incorrect security answer');
+                log('Validation error', 'warn', { field: 'securityQuestion', error: 'incorrect_answer', value: securityAnswer.value });
             }
             
             // Validate message length
@@ -183,7 +251,15 @@
             if (message.value.length < 10) {
                 isValid = false;
                 message.style.borderColor = '#DC3545';
+                validationErrors.push('Message too short');
+                log('Validation error', 'warn', { field: 'message', error: 'too_short', length: message.value.length });
             }
+            
+            log('Form validation completed', isValid ? 'info' : 'warn', {
+                isValid,
+                errors: validationErrors,
+                totalErrors: validationErrors.length
+            });
             
             return isValid;
         }
@@ -192,30 +268,41 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            log('Form submission attempt started', 'info', {
+                formSubmissionAttempts,
+                timeSinceLastSubmission: Date.now() - lastSubmissionTime
+            });
+            
             // Rate limiting
             const now = Date.now();
             if (now - lastSubmissionTime < 5000) { // 5 second cooldown
+                log('Rate limiting triggered', 'warn', { timeSinceLastSubmission: now - lastSubmissionTime });
                 showError('Please wait before submitting again.');
                 return;
             }
             
             // Check submission attempts
             if (formSubmissionAttempts >= MAX_ATTEMPTS) {
+                log('Maximum submission attempts reached', 'error', { attempts: formSubmissionAttempts, maxAttempts: MAX_ATTEMPTS });
                 showError('Too many submission attempts. Please try again later.');
                 return;
             }
             
             // Bot detection
             if (detectBot()) {
+                log('Bot detection triggered', 'warn', { userInteractions, timeOnPage: now - formLoadTime });
                 showError('Suspicious activity detected. Please try again.');
                 return;
             }
             
             // Validate form
             if (!validateForm()) {
+                log('Form validation failed', 'warn');
                 showError('Please complete all required fields correctly.');
                 return;
             }
+            
+            log('Form validation passed, preparing submission', 'info');
             
             // Disable submit button
             const submitBtn = document.getElementById('submitBtn');
@@ -226,45 +313,61 @@
             const securityData = document.createElement('input');
             securityData.type = 'hidden';
             securityData.name = 'security_data';
-            securityData.value = JSON.stringify({
+            const securityPayload = {
                 timestamp: now,
                 userInteractions: userInteractions,
                 timeOnPage: now - formLoadTime,
                 userAgent: navigator.userAgent,
                 screenResolution: `${screen.width}x${screen.height}`,
                 timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-            });
+            };
+            securityData.value = JSON.stringify(securityPayload);
             this.appendChild(securityData);
+            
+            log('Submitting form to Web3Forms', 'info', {
+                action: this.action,
+                securityData: securityPayload
+            });
             
             // Submit to Web3Forms
             fetch(this.action, {
                 method: 'POST',
                 body: new FormData(this)
             })
-            .then(response => response.json())
+            .then(response => {
+                log('Web3Forms response received', 'info', { status: response.status, statusText: response.statusText });
+                return response.json();
+            })
             .then(data => {
+                log('Web3Forms response parsed', 'info', { success: data.success, data });
+                
                 if (data.success) {
+                    log('Form submission successful', 'info', { data });
+                    
                     // Show success
                     document.getElementById('contactForm').style.display = 'none';
                     document.getElementById('successMessage').classList.add('show');
                     
                     // Send message to parent if embedded
                     if (window.parent !== window) {
-                        window.parent.postMessage({
+                        const parentMessage = {
                             type: 'form-submitted',
                             formType: 'contact',
                             data: data,
                             timestamp: now
-                        }, '*');
+                        };
+                        window.parent.postMessage(parentMessage, '*');
+                        log('Parent message sent', 'info', { message: parentMessage });
                     }
                 } else {
+                    log('Form submission failed', 'error', { data });
                     showError('Submission failed. Please try again.');
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send Message';
                 }
             })
             .catch(error => {
-                console.error('Form submission error:', error);
+                log('Form submission error', 'error', { error: error.message, stack: error.stack });
                 showError('Submission failed. Please try again.');
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'Send Message';
@@ -272,24 +375,35 @@
             
             formSubmissionAttempts++;
             lastSubmissionTime = now;
+            
+            log('Form submission attempt completed', 'info', {
+                attempts: formSubmissionAttempts,
+                lastSubmissionTime: now
+            });
         });
         
         function showError(message) {
+            log('Showing error message', 'warn', { message });
             const errorDiv = document.getElementById('errorMessage');
             errorDiv.innerHTML = `<p>${message}</p>`;
             errorDiv.classList.add('show');
-            setTimeout(() => errorDiv.classList.remove('show'), 5000);
+            setTimeout(() => {
+                errorDiv.classList.remove('show');
+                log('Error message hidden', 'debug');
+            }, 5000);
         }
 
         // Listen for theme changes from parent
         window.addEventListener('message', function(event) {
             if (event.data.type === 'theme-change') {
+                log('Theme change received from parent', 'info', { theme: event.data.theme });
                 document.body.className = event.data.theme;
             }
         });
 
         // Request current theme from parent on load
         if (window.parent !== window) {
+            log('Requesting theme from parent', 'debug');
             window.parent.postMessage({
                 type: 'request-theme'
             }, '*');
@@ -305,17 +419,20 @@
                 if (!savedTheme && window.parent !== window) {
                     try {
                         savedTheme = window.parent.localStorage.getItem('elemento-theme');
+                        log('Retrieved theme from parent localStorage', 'debug', { theme: savedTheme });
                     } catch (error) {
-                        console.log('Could not access parent localStorage:', error);
+                        log('Could not access parent localStorage', 'warn', { error: error.message });
                     }
                 }
                 
                 if (savedTheme) {
                     document.body.className = savedTheme;
-                    console.log('Applied theme from localStorage:', savedTheme);
+                    log('Applied theme from localStorage', 'info', { theme: savedTheme });
+                } else {
+                    log('No saved theme found', 'debug');
                 }
             } catch (error) {
-                console.log('Could not read theme from localStorage:', error);
+                log('Could not read theme from localStorage', 'error', { error: error.message });
             }
         }
 
@@ -325,10 +442,41 @@
         // Listen for localStorage changes from other tabs/windows
         window.addEventListener('storage', function(event) {
             if (event.key === 'elemento-theme' && event.newValue) {
+                log('Theme updated from storage event', 'info', { 
+                    oldValue: event.oldValue, 
+                    newValue: event.newValue,
+                    url: event.url
+                });
                 document.body.className = event.newValue;
-                console.log('Theme updated from storage event:', event.newValue);
             }
         });
+        
+        // Log page visibility changes
+        document.addEventListener('visibilitychange', function() {
+            log('Page visibility changed', 'debug', { 
+                hidden: document.hidden,
+                visibilityState: document.visibilityState
+            });
+        });
+        
+        // Log when form becomes visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    log('Form became visible', 'info', { 
+                        intersectionRatio: entry.intersectionRatio,
+                        boundingClientRect: entry.boundingClientRect
+                    });
+                }
+            });
+        });
+        
+        const formContainer = document.querySelector('.form-container');
+        if (formContainer) {
+            observer.observe(formContainer);
+        }
+        
+        log('Form script setup completed', 'info');
     </script>
 </body>
 </html>

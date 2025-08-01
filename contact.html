@@ -411,14 +411,65 @@
                     </div>
                 </div>
                 
-                <!-- Iframe Container -->
-                <div class="iframe-container">
-                    <iframe 
-                        src="forms/getintouch.html" 
-                        class="form-iframe" 
-                        id="contactIframe"
-                        scrolling="no">
-                    </iframe>
+                <!-- Inline Contact Form -->
+                <div class="form-container fade-in">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="91df0fd4-2f3e-438f-82ed-65f7fdc23db4">
+                        <!-- Form Type -->
+                        <input type="hidden" name="subject" value="New Elemento Contact Form">
+                        <!-- Honeypot for spam protection -->
+                        <input type="hidden" name="botcheck" style="display: none;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="message_subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required maxlength="1000"></textarea>
+                            <div class="character-count">
+                                <span id="charCount">0</span>/1000 characters
+                            </div>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Subscribe to our newsletter for updates and insights</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                            <label for="terms">I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a> *</label>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">
+                            Send Message
+                        </button>
+                    </form>
+                    <div class="form-success-message" id="successMessage">
+                        <h4>📧 Message Sent!</h4>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+
+                    <div class="form-error-message" id="errorMessage">
+                        <p>Please complete all required fields and the security challenge.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -717,502 +768,6 @@
     <script src="js/themes.js" defer></script>
     
     <!-- Enhanced Contact Page Script -->
-    <script>
-        // Iframe container styles
-        const iframeStyles = `
-            .iframe-container {
-                width: 100%;
-                border-radius: 12px;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .form-iframe {
-                width: 100%;
-                height: 800px;
-                border: none;
-            }
-
-            /* Responsive iframe height */
-            @media (max-width: 768px) {
-                .iframe-container {
-                    min-height: 900px;
-                }
-                .form-iframe {
-                    height: 900px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .iframe-container {
-                    min-height: 1000px;
-                }
-                .form-iframe {
-                    height: 1000px;
-                }
-            }
-
-            /* Loading state for iframe */
-            .iframe-loading {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-height: 400px;
-                color: var(--text-secondary);
-            }
-
-            .iframe-loading .spinner {
-                width: 40px;
-                height: 40px;
-                border: 3px solid var(--border-color);
-                border-top: 3px solid var(--primary-color);
-                border-radius: 50%;
-                animation: splash-spin 1s linear infinite;
-                margin-right: var(--space-md);
-            }
-        `;
-        
-        // Inject iframe styles
-        const styleSheet = document.createElement("style");
-        styleSheet.textContent = iframeStyles;
-        document.head.appendChild(styleSheet);
-
-        // Iframe management
-        const iframe = document.getElementById('contactIframe');
-        
-        // Function to adjust iframe height based on content
-        function adjustIframeHeight() {
-            try {
-                if (iframe.contentWindow && iframe.contentWindow.document) {
-                    const iframeDocument = iframe.contentWindow.document;
-                    const iframeBody = iframeDocument.body;
-                    const iframeHtml = iframeDocument.documentElement;
-                    
-                    // Get the actual height needed
-                    const scrollHeight = Math.max(
-                        iframeBody.scrollHeight,
-                        iframeBody.offsetHeight,
-                        iframeHtml.clientHeight,
-                        iframeHtml.scrollHeight,
-                        iframeHtml.offsetHeight
-                    );
-                    
-                    // Add some padding to ensure no cropping
-                    const newHeight = scrollHeight + 100;
-                    
-                    // Set minimum height and update iframe
-                    const minHeight = window.innerWidth <= 480 ? 1000 : 
-                                    window.innerWidth <= 768 ? 900 : 800;
-                    
-                    iframe.style.height = Math.max(newHeight, minHeight) + 'px';
-                    iframe.parentElement.style.minHeight = Math.max(newHeight, minHeight) + 'px';
-                }
-            } catch (error) {
-                console.log('Could not adjust iframe height:', error);
-            }
-        }
-        
-        // Show iframe when loaded
-        iframe.addEventListener('load', function() {
-            // Send current theme to iframe
-            const currentTheme = document.body.getAttribute('data-theme') || 'light';
-            iframe.contentWindow.postMessage({
-                type: 'theme-change',
-                theme: currentTheme
-            }, '*');
-            
-            // Adjust height after a short delay to ensure content is rendered
-            setTimeout(adjustIframeHeight, 100);
-            
-            // Adjust height again after a longer delay to catch any dynamic content
-            setTimeout(adjustIframeHeight, 500);
-        });
-        
-        // Handle form submission messages from iframe
-        window.addEventListener('message', function(event) {
-            if (event.data.type === 'form-submitted') {
-                console.log('Contact form submitted successfully:', event.data);
-                
-                // Show success message on parent page
-                const successMessage = document.createElement('div');
-                successMessage.innerHTML = `
-                    <div style="
-                        position: fixed;
-                        top: 20px;
-                        right: 20px;
-                        background: var(--success-color, #28a745);
-                        color: white;
-                        padding: var(--space-lg);
-                        border-radius: 8px;
-                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                        z-index: 1000;
-                        max-width: 300px;
-                    ">
-                        <h4 style="margin: 0 0 var(--space-sm) 0;">📧 Message Sent!</h4>
-                        <p style="margin: 0; font-size: 0.9rem;">Thank you for reaching out. We'll get back to you within 24 hours.</p>
-                    </div>
-                `;
-                document.body.appendChild(successMessage);
-                
-                // Remove success message after 5 seconds
-                setTimeout(() => {
-                    if (successMessage.parentNode) {
-                        successMessage.parentNode.removeChild(successMessage);
-                    }
-                }, 5000);
-            }
-        });
-        
-        // Listen for theme changes and forward to iframe
-        const observer2 = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                    const currentTheme = document.body.getAttribute('data-theme');
-                    if (iframe.contentWindow) {
-                        iframe.contentWindow.postMessage({
-                            type: 'theme-change',
-                            theme: currentTheme
-                        }, '*');
-                    }
-                }
-            });
-        });
-        
-        // Start observing theme changes
-        observer2.observe(document.body, {
-            attributes: true,
-            attributeFilter: ['data-theme']
-        });
-        
-        // Handle iframe load errors
-        iframe.addEventListener('error', function() {
-            console.error('Failed to load contact form iframe');
-        });
-
-        // Adjust iframe height on window resize
-        window.addEventListener('resize', function() {
-            setTimeout(adjustIframeHeight, 100);
-        });
-
-        // Office Hours Management
-        function checkOfficeHours() {
-            // Office hours: Monday-Friday, 9 AM - 6 PM Europe/Rome timezone
-            const now = new Date();
-            const romeTime = new Date(now.toLocaleString("en-US", {timeZone: "Europe/Rome"}));
-            
-            const dayOfWeek = romeTime.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-            const hour = romeTime.getHours();
-            const minutes = romeTime.getMinutes();
-            const currentTime = hour * 60 + minutes; // Convert to minutes for easier comparison
-            
-            const officeOpen = 9 * 60; // 9 AM in minutes
-            const officeClose = 18 * 60; // 6 PM in minutes
-            
-            const isWeekday = dayOfWeek >= 1 && dayOfWeek <= 5; // Monday to Friday
-            const isWithinHours = currentTime >= officeOpen && currentTime < officeClose;
-            
-            const statusIndicator = document.getElementById('office-status-indicator');
-            const statusText = document.getElementById('office-status-text');
-            const currentTimeElement = document.getElementById('current-office-time');
-            
-            // Update current time display
-            if (currentTimeElement) {
-                const timeString = romeTime.toLocaleTimeString('en-US', {
-                    timeZone: 'Europe/Rome',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: false
-                });
-                currentTimeElement.textContent = `Current time in Cuneo: ${timeString}`;
-            }
-            
-            if (statusIndicator && statusText) {
-                if (isWeekday && isWithinHours) {
-                    statusIndicator.className = 'status-indicator online';
-                    statusText.className = 'status-text';
-                    statusText.textContent = 'Open Now';
-                } else {
-                    statusIndicator.className = 'status-indicator offline';
-                    if (!isWeekday) {
-                        statusText.className = 'status-text closed';
-                        statusText.textContent = 'Closed (Weekend)';
-                    } else if (currentTime < officeOpen) {
-                        const hoursUntilOpen = Math.floor((officeOpen - currentTime) / 60);
-                        const minutesUntilOpen = (officeOpen - currentTime) % 60;
-                        statusText.className = 'status-text opening-soon';
-                        if (hoursUntilOpen > 0) {
-                            statusText.textContent = `Opens in ${hoursUntilOpen}h ${minutesUntilOpen}m`;
-                        } else {
-                            statusText.textContent = `Opens in ${minutesUntilOpen}m`;
-                        }
-                    } else {
-                        statusText.className = 'status-text closed';
-                        // Calculate next opening time
-                        const tomorrow = new Date(romeTime);
-                        tomorrow.setDate(tomorrow.getDate() + 1);
-                        const nextOpenTime = new Date(tomorrow);
-                        nextOpenTime.setHours(9, 0, 0, 0);
-                        
-                        const timeUntilNextOpen = nextOpenTime - romeTime;
-                        const hoursUntilNextOpen = Math.floor(timeUntilNextOpen / (1000 * 60 * 60));
-                        const minutesUntilNextOpen = Math.floor((timeUntilNextOpen % (1000 * 60 * 60)) / (1000 * 60));
-                        
-                        if (hoursUntilNextOpen > 0) {
-                            statusText.textContent = `Opens tomorrow in ${hoursUntilNextOpen}h ${minutesUntilNextOpen}m`;
-                        } else {
-                            statusText.textContent = `Opens tomorrow in ${minutesUntilNextOpen}m`;
-                        }
-                    }
-                }
-            }
-        }
-
-        // Map functionality
-        let isSatelliteView = false;
-        const normalMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.8985!2d7.5434!3d44.3918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f8!3m3!1m2!1s0x12cd2b6!2sVia%20Virginio%20Allione%2C%202%2C%2012100%20Cuneo%20CN%2C%20Italy!5e0!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus";
-        const satelliteMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.8985!2d7.5434!3d44.3918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f8!3m3!1m2!1s0x12cd2b6!2sVia%20Virginio%20Allione%2C%202%2C%2012100%20Cuneo%20CN%2C%20Italy!5e1!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus";
-
-        function toggleMapView() {
-            const mapIframe = document.querySelector('.map-container-full iframe');
-            const toggleButtonContainer = document.getElementById('satellite-toggle');
-            const toggleButton = toggleButtonContainer ? toggleButtonContainer.querySelector('i') : null;
-            
-            console.log('Map iframe found:', mapIframe); // Debug line
-            console.log('Toggle button found:', toggleButton); // Debug line
-            
-            if (!mapIframe || !toggleButton) {
-                console.log('Element not found - iframe:', !!mapIframe, 'button:', !!toggleButton);
-                return;
-            }
-            
-            isSatelliteView = !isSatelliteView;
-            console.log('Switching to satellite view:', isSatelliteView); // Debug line
-            
-            if (isSatelliteView) {
-                mapIframe.src = satelliteMapUrl;
-                toggleButton.className = 'fas fa-map';
-                toggleButtonContainer.title = 'Switch to normal view';
-            } else {
-                mapIframe.src = normalMapUrl;
-                toggleButton.className = 'fas fa-satellite';
-                toggleButtonContainer.title = 'Switch to satellite view';
-            }
-            
-            // Add visual feedback
-            toggleButtonContainer.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                toggleButtonContainer.style.transform = 'scale(1)';
-            }, 150);
-        }
-
-        function openDirections() {
-            // Open Google Maps directions
-            const address = encodeURIComponent('2 Via Virginio Allione, Cuneo, Italy');
-            window.open(`https://www.google.com/maps/dir/?api=1&destination=${address}`, '_blank');
-        }
-
-        // FAQ functionality is now handled by js/faq.js
-
-        // Form Enhancement
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize office hours check
-            checkOfficeHours();
-            
-            // Update office status every minute
-            setInterval(checkOfficeHours, 60000);
-            
-            // Character counter for message field
-            const messageTextarea = document.getElementById('message');
-            const charCount = document.getElementById('charCount');
-            
-            if (messageTextarea && charCount) {
-                messageTextarea.addEventListener('input', function() {
-                    const count = this.value.length;
-                    charCount.textContent = count;
-                    
-                    if (count > 1000) {
-                        charCount.style.color = 'var(--error-color)';
-                    } else {
-                        charCount.style.color = 'var(--text-secondary)';
-                    }
-                });
-            }
-            
-            // Enhanced client-side protection with Web3Forms
-            let formSubmissionAttempts = 0;
-            let lastSubmissionTime = 0;
-            const MAX_ATTEMPTS = 3;
-            const COOLDOWN_TIME = 300000; // 5 minutes
-            
-            // Track user interaction to detect bots
-            let userInteractions = 0;
-            let formLoadTime = Date.now();
-            
-            // Monitor user interactions
-            document.addEventListener('mousemove', () => userInteractions++);
-            document.addEventListener('keypress', () => userInteractions++);
-            document.addEventListener('click', () => userInteractions++);
-            
-            // Enhanced bot detection
-            function detectBot() {
-                const timeOnPage = Date.now() - formLoadTime;
-                const interactionRate = userInteractions / (timeOnPage / 1000);
-                
-                // Bot indicators
-                const indicators = [];
-                
-                // Too fast submission
-                if (timeOnPage < 5000) indicators.push('too_fast');
-                
-                // No user interactions
-                if (userInteractions < 3) indicators.push('no_interaction');
-                
-                // Low interaction rate
-                if (interactionRate < 0.1) indicators.push('low_interaction');
-                
-                // Check for automation tools
-                if (navigator.webdriver) indicators.push('webdriver');
-                
-                // Check for headless browser indicators
-                if (!navigator.plugins.length) indicators.push('no_plugins');
-                if (!navigator.languages.length) indicators.push('no_languages');
-                
-                return indicators.length > 2; // Bot if 3+ indicators
-            }
-            
-            // Enhanced form validation
-            function validateForm() {
-                const form = document.getElementById('contactForm');
-                const requiredFields = form.querySelectorAll('[required]');
-                let isValid = true;
-                
-                // Check required fields
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.style.borderColor = '#DC3545';
-                    } else {
-                        field.style.borderColor = '';
-                    }
-                });
-                
-                // Validate email format
-                const email = document.getElementById('email');
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email.value)) {
-                    isValid = false;
-                    email.style.borderColor = '#DC3545';
-                }
-                
-                // Validate security question
-                const securityAnswer = document.getElementById('securityQuestion');
-                if (securityAnswer.value !== '10') {
-                    isValid = false;
-                    securityAnswer.style.borderColor = '#DC3545';
-                }
-                
-                // Validate message length
-                const message = document.getElementById('message');
-                if (message.value.length < 10) {
-                    isValid = false;
-                    message.style.borderColor = '#DC3545';
-                }
-                
-                return isValid;
-            }
-            
-            // Form submission with Web3Forms
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Rate limiting
-                const now = Date.now();
-                if (now - lastSubmissionTime < 5000) { // 5 second cooldown
-                    showError('Please wait before submitting again.');
-                    return;
-                }
-                
-                // Check submission attempts
-                if (formSubmissionAttempts >= MAX_ATTEMPTS) {
-                    showError('Too many submission attempts. Please try again later.');
-                    return;
-                }
-                
-                // Bot detection
-                if (detectBot()) {
-                    showError('Suspicious activity detected. Please try again.');
-                    return;
-                }
-                
-                // Validate form
-                if (!validateForm()) {
-                    showError('Please complete all required fields correctly.');
-                    return;
-                }
-                
-                // Disable submit button
-                const submitBtn = document.getElementById('submitBtn');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-                
-                // Add security data to form
-                const securityData = document.createElement('input');
-                securityData.type = 'hidden';
-                securityData.name = 'security_data';
-                securityData.value = JSON.stringify({
-                    timestamp: now,
-                    userInteractions: userInteractions,
-                    timeOnPage: now - formLoadTime,
-                    userAgent: navigator.userAgent,
-                    screenResolution: `${screen.width}x${screen.height}`,
-                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-                });
-                this.appendChild(securityData);
-                
-                // Submit to Web3Forms
-                fetch(this.action, {
-                    method: 'POST',
-                    body: new FormData(this)
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        // Show success
-                        document.getElementById('contactForm').style.display = 'none';
-                        document.getElementById('successMessage').classList.add('show');
-                    } else {
-                        showError('Submission failed. Please try again.');
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = 'Send Message';
-                    }
-                })
-                .catch(error => {
-                    console.error('Form submission error:', error);
-                    showError('Submission failed. Please try again.');
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
-                });
-                
-                formSubmissionAttempts++;
-                lastSubmissionTime = now;
-            });
-            
-            function showError(message) {
-                const errorDiv = document.getElementById('errorMessage');
-                errorDiv.innerHTML = `<p>${message}</p>`;
-                errorDiv.classList.add('show');
-                setTimeout(() => errorDiv.classList.remove('show'), 5000);
-            }
-            
-            // Map interaction enhancements
-            const mapContainer = document.querySelector('.map-container');
-            if (mapContainer) {
-                mapContainer.addEventListener('click', function() {
-                    // Add click tracking or interaction
-                    console.log('Map clicked');
-                });
-            }
-        });
-    </script>
+    <script src="js/contact.js" defer></script>
 </body>
 </html> 

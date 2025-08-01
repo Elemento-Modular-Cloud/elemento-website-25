@@ -455,9 +455,6 @@ class ElementoWebsite {
         setTimeout(() => {
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
-            
-            // Show success message
-            this.showToast('Message sent successfully!', 'success');
             form.reset();
         }, 2000);
     }

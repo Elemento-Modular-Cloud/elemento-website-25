@@ -2452,3 +2452,14 @@ body {
     position: relative;
     z-index: 1;
 }
+
+/* Form Message Display Override - Ensure proper visibility control */
+.form-success-message,
+.form-error-message {
+    display: none;
+}
+
+.form-success-message.show,
+.form-error-message.show {
+    display: block;
+}

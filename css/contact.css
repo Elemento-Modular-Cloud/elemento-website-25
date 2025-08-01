@@ -118,7 +118,7 @@
 }
 
 .form-header {
-    padding: var(--space-2xl) var(--space-2xl) var(--space-xl);
+    /* padding: var(--space-2xl) var(--space-2xl) var(--space-xl); */
     text-align: center;
 }
 
