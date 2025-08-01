@@ -53,22 +53,4 @@
     animation: atomos-polygon-orbit 30s linear infinite reverse;
 }
 
-.ro-atomos-1 {
-    background: repeating-linear-gradient(
-        12deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 1.4)
-    );
-}
-
-.ro-atomos-2 {
-    background: repeating-linear-gradient(
-        15deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 1.96)
-    );
-} 
+ 

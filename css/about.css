@@ -2,6 +2,12 @@
 @import url('./style.css');
 @import url('./gradient-blobs/gradients-about.css');
 
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 1.svg');
+    mask-size: 70rem 60%;
+    transform: scaleY(-1)
+}
+
 /* Enhanced Team Grid */
 .team-grid {
   display: grid;

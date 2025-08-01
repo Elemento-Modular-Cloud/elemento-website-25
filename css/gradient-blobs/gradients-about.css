@@ -50,22 +50,8 @@
     animation: about-polygon-flow 35s ease-in-out infinite reverse;
 }
 
-.ro-about-1 {
-    background: repeating-linear-gradient(
-        69deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-gap-1) + var(--stripe-width-1)*2)
-    );
-}
-
-.ro-about-2 {
-    background: repeating-linear-gradient(
-        74deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*1.1)
-    );
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 7.svg');
+    mask-size: contain;
+    mask-repeat: repeat;
 }

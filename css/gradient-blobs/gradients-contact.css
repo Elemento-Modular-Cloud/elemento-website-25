@@ -50,22 +50,4 @@
     animation: contact-polygon-talk 26s ease-in-out infinite reverse;
 }
 
-.ro-contact-1 {
-    background: repeating-linear-gradient(
-        170deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 2)
-    );
-}
-
-.ro-contact-2 {
-    background: repeating-linear-gradient(
-        175deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 3)
-    );
-} 
+ 

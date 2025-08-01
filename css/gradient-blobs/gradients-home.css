@@ -71,3 +71,9 @@
         var(--stripe-color-2) calc(var(--stripe-gap-2) + var(--stripe-width-2)*2)
     );
 }
+
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 11.svg');
+    mask-size: contain;
+    mask-repeat: repeat;
+}

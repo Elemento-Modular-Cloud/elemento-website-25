@@ -61,22 +61,4 @@
     animation: electros-polygon-energy 24s ease-in-out infinite reverse;
 }
 
-.ro-electros-1 {
-    background: repeating-linear-gradient(
-        -90deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 2.1)
-    );
-}
-
-.ro-electros-2 {
-    background: repeating-linear-gradient(
-        -87deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 1.76)
-    );
-} 
+ 

@@ -171,7 +171,6 @@
     height: 100%;
     z-index: 4;
     overflow: hidden;
-    /* transform: translateX(17%); */
 }
 
 @media (max-width: 1000px) {
@@ -180,9 +179,8 @@
         top: 0%;
         left: -9%;
         width: 120%;
-        height: 100%;
+        height: 50%;
         padding-top: 50%;
-        transform: none;
     }
 }
 
@@ -201,9 +199,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 10vw;
+    width: 15vw; /* Increased from 10vw */
     /* min-width: 1000px; */
-    height: 10vw;
+    height: 15vw; /* Increased from 10vw */
     transform: translate(-50%, -50%) scale(0.7);
     overflow: hidden;
     z-index: 2;
@@ -213,8 +211,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 30vw;
-    height: 30vw;
+    width: 45vw; /* Increased from 30vw */
+    height: 45vw; /* Increased from 30vw */
     transform: translate(-50%, -50%);
     animation: spin 13s linear infinite;
     background: var(--spinning-gradient);
@@ -241,14 +239,15 @@
 .hero-gradient-mask {
     position: absolute;
     top: 50%;
-    left: 0%;
-    width: 50vmin;
-    height: 50vmin;
+    left: 50%; /* Changed from 0% to 50% to center */
+    width: 75vmin; /* Increased from 50vmin */
+    height: 75vmin; /* Increased from 50vmin */
     overflow: hidden;
     animation: circular-orbit 15s linear infinite;
     will-change: transform, clip-path;
     clip-path: polygon(50% 0%, 55% 15%, 65% 25%, 75% 30%, 85% 35%, 95% 35%, 98% 40%, 92% 50%, 85% 60%, 75% 65%, 65% 70%, 55% 75%, 45% 80%, 35% 85%, 25% 90%, 15% 85%, 10% 75%, 5% 65%, 2% 55%, 8% 45%, 15% 35%, 25% 30%, 35% 25%, 45% 20%, 50% 0%);
     border-radius: 50%;
+    transform: translate(-50%, -50%); /* Added transform to center properly */
 }
 
 .mask-alt {
@@ -266,9 +265,9 @@
 .hero-spinning-gradient {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 49vmin;
-    height: 50vmin;
+    left: 50%; /* Changed from 50% to 50% (was already correct) */
+    width: 74vmin; /* Increased from 49vmin */
+    height: 75vmin; /* Increased from 50vmin */
     transform: translate(-50%, -53%);
     animation: gradient-orbit-counter 23s linear infinite;
     transform-origin: center;
@@ -281,12 +280,12 @@
 .hero-radial-gradient {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 45vmin;
-    height: 60vmin;
+    left: 50%; /* Changed from 50% to 50% (was already correct) */
+    width: 68vmin; /* Increased from 45vmin */
+    height: 90vmin; /* Increased from 60vmin */
     transform: translate(-55%, -42%);
     animation: gradient-orbit-clockwise 25s linear infinite;
-    transform-origin: 48% 60%;
+    transform-origin: center;
     opacity: 0.7;
     will-change: transform;
     border-radius: 50%;
@@ -297,10 +296,10 @@
 .hero-linear-gradient {
     position: absolute;
     top: 50%;
-    left: 57%;
-    width: 37vmin;
-    height: 65vmin;
-    transform: translate(-50%, -50%);
+    left: 50%; /* Changed from 57% to 50% to center properly */
+    width: 56vmin; /* Increased from 37vmin */
+    height: 98vmin; /* Increased from 65vmin */
+    transform: translate(-50%, -50%); /* Changed from translate(-50%, -50%) to center properly */
     animation: gradient-orbit-slow 30s linear infinite;
     opacity: 0.6;
     will-change: transform;
@@ -310,21 +309,25 @@
 
 @media (max-width: 1000px) {
     .hero-spinning-gradient {
-        top: 40%;
-        left: 35%;
-        width: 50vh;
-        height: 50vh;
-        transform: scale(0.5);
+        top: 50%; /* Changed from 40% to 50% to center */
+        left: 50%; /* Changed from 35% to 50% to center */
+        width: 75vh; /* Increased from 50vh */
+        height: 75vh; /* Increased from 50vh */
+        transform: translate(-50%, -50%) scale(0.5); /* Added translate(-50%, -50%) to center */
     }
     .hero-radial-gradient {
-        width: 50vh;
-        height: 50vh;
-        transform: scale(0.5);
+        top: 50%; /* Added to center */
+        left: 50%; /* Added to center */
+        width: 75vh; /* Increased from 50vh */
+        height: 75vh; /* Increased from 50vh */
+        transform: translate(-50%, -50%) scale(0.5); /* Added translate(-50%, -50%) to center */
     }
     .hero-linear-gradient {
-        width: 50vh;
-        height: 50vh;
-        transform: scale(0.5);
+        top: 50%; /* Added to center */
+        left: 50%; /* Added to center */
+        width: 75vh; /* Increased from 50vh */
+        height: 75vh; /* Increased from 50vh */
+        transform: translate(-50%, -50%) scale(0.5); /* Added translate(-50%, -50%) to center */
     }
 }
 
@@ -386,3 +389,26 @@
         transform: none !important;
     }
 } 
+
+.hero-pattern-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    mask-position: center bottom;
+    mask-repeat: repeat; /* This will flip the mask on both X and Y axes */
+    mask-mode: alpha;
+    backdrop-filter: blur(50px) saturate(1.2);
+}
+
+.hero-pattern-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, var(--background-color), transparent);
+    z-index: 10;
+}

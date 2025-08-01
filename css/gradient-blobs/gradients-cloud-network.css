@@ -54,22 +54,4 @@
     animation: network-polygon-connect 28s ease-in-out infinite reverse;
 }
 
-.ro-cloud-network-1 {
-    background: repeating-linear-gradient(
-        -28deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 2.1)
-    );
-}
-
-.ro-cloud-network-2 {
-    background: repeating-linear-gradient(
-        -31deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 1.76)
-    );
-} 
+ 

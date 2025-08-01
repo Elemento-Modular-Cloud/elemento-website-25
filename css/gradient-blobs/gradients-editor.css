@@ -51,22 +51,4 @@
     animation: editor-polygon-tool 30s ease-in-out infinite reverse;
 }
 
-.ro-editor-1 {
-    background: repeating-linear-gradient(
-        75deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 1.85)
-    );
-}
-
-.ro-editor-2 {
-    background: repeating-linear-gradient(
-        82deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 2.1)
-    );
-} 
+ 
