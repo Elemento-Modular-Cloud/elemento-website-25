@@ -1,3 +1,118 @@
 /* Technology Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-technology.css'); 
+@import url('./gradient-blobs/gradients-technology.css');
+
+/* Technology-specific enhancements */
+.tech-section {
+    margin-bottom: var(--space-4xl);
+}
+
+.tech-benefits {
+    margin: var(--space-lg) 0;
+}
+
+.tech-benefits h4 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    font-size: 1.1rem;
+}
+
+.tech-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-benefits li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--text-secondary);
+}
+
+.tech-benefits li span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Technology stack icons */
+.tech-stack-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-lg);
+    color: var(--primary-color);
+}
+
+/* Architecture tags */
+.arch-tag {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-right: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.arch-tag-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-right: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+
+/* Stats enhancement */
+.stats .stat-item {
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.stats .stat-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+    color: var(--primary-color);
+}
+
+.stats .stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-heading);
+}
+
+.stats .stat-item p {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tech-benefits li {
+        font-size: 0.9rem;
+    }
+    
+    .arch-tag,
+    .arch-tag-secondary {
+        font-size: 0.7rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
+    .stats .stat-item h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-benefits li {
+        font-size: 0.8rem;
+    }
+    
+    .stats .stat-item h3 {
+        font-size: 1.8rem;
+    }
+} 
