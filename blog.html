@@ -9,14 +9,14 @@
 
 
     <!-- Preload critical resources with optimized loading strategy -->
-    <link rel="preload" href="css/style.css" as="style" crossorigin>
+    <link rel="preload" href="css/style.min.css" as="style" crossorigin>
     <link rel="preload" href="css/themes.css" as="style" crossorigin>
     <link rel="preload" href="js/main.js" as="script" crossorigin>
     <link rel="preload" href="js/navbar.js" as="script" crossorigin>
     <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
     
     <!-- Preload specific stylesheets -->
-    <link rel="preload" href="css/blog.css" as="style" crossorigin>
+    <link rel="preload" href="css/blog.min.css" as="style" crossorigin>
     
     <!-- Preload critical fonts -->
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -231,22 +231,22 @@
 
     <!-- Non-critical stylesheets with optimized loading -->
     <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
     
     <!-- Home Page Styles -->
-    <link rel="stylesheet" href="css/blog.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/blog.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.min.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
     <noscript>
         <link rel="stylesheet" href="css/themes.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
         
         <!-- Home Page Styles -->
-        <link rel="stylesheet" href="css/blog.css">
-        <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
-        <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.css">
+        <link rel="stylesheet" href="css/blog.min.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.min.css">
+        <link rel="stylesheet" href="css/gradient-blobs/gradients-blog.min.css">
     </noscript>
 
     <!-- Optimized font loading -->
@@ -340,11 +340,11 @@
         </section>
     </main>
     <div id="footer-placeholder"></div>
-    <script src="js/navbar.js" defer></script>
+    <script src="js/navbar.min.js" defer></script>
 
-    <script src="js/main.js" defer></script>    
-    <script src="js/footer.js" defer></script>
-    <script src="js/themes.js" defer></script>
+    <script src="js/main.min.js" defer></script>    
+    <script src="js/footer.min.js" defer></script>
+    <script src="js/themes.min.js" defer></script>
     <script>
     fetch('blog-posts/index.json')
       .then(res => res.json())
