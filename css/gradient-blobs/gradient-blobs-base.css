@@ -70,19 +70,31 @@
 
 @keyframes gradient-orbit-clockwise {
     0% {
-        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scale(1);
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1);
+    }
+    15% {
+        transform: translate(-50%, -50%) translateX(35px) translateY(-35px) rotate(45deg) scaleX(0.92) scaleY(0.98);
     }
     25% {
-        transform: translate(-50%, -50%) translateX(30px) translateY(-30px) rotate(90deg) scale(0.95);
+        transform: translate(-50%, -50%) translateX(60px) translateY(-60px) rotate(90deg) scaleX(0.95) scaleY(0.93);
+    }
+    40% {
+        transform: translate(-50%, -50%) translateX(45px) translateY(-75px) rotate(135deg) scaleX(0.88) scaleY(0.96);
     }
     50% {
-        transform: translate(-50%, -50%) translateX(0px) translateY(-60px) rotate(180deg) scale(0.9);
+        transform: translate(-50%, -50%) translateX(0px) translateY(-90px) rotate(180deg) scaleX(0.9) scaleY(0.87);
+    }
+    65% {
+        transform: translate(-50%, -50%) translateX(-45px) translateY(-75px) rotate(225deg) scaleX(0.93) scaleY(0.89);
     }
     75% {
-        transform: translate(-50%, -50%) translateX(-30px) translateY(-30px) rotate(270deg) scale(0.95);
+        transform: translate(-50%, -50%) translateX(-60px) translateY(-60px) rotate(270deg) scaleX(0.95) scaleY(0.91);
+    }
+    85% {
+        transform: translate(-50%, -50%) translateX(-35px) translateY(-35px) rotate(315deg) scaleX(0.97) scaleY(0.94);
     }
     100% {
-        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scale(1);
+        transform: translate(-50%, -50%) translateX(0px) translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
     }
 }
 
@@ -225,7 +237,8 @@
     width: 100%;
     height: 100%;
     /* animation: blur-breathe 7s ease-in-out infinite; */
-    filter: blur(3vh);
+    filter: blur(60px);
+
     will-change: filter;
     margin-left: 17%;
 }
@@ -257,7 +270,7 @@
 }
 
 .mask-slow {
-    animation: circular-orbit-slow 25s linear infinite;
+    animation: circular-orbit-slow 7s linear infinite;
     clip-path: polygon(50% 8%, 62% 15%, 72% 22%, 82% 28%, 90% 32%, 96% 38%, 98% 45%, 92% 52%, 85% 58%, 75% 65%, 65% 70%, 55% 75%, 45% 78%, 35% 80%, 25% 82%, 15% 78%, 8% 72%, 5% 65%, 8% 58%, 15% 52%, 25% 45%, 35% 38%, 45% 32%, 50% 8%);
     border-radius: 50%;
 }
@@ -268,9 +281,9 @@
     left: 50%; /* Changed from 50% to 50% (was already correct) */
     width: 74vmin; /* Increased from 49vmin */
     height: 75vmin; /* Increased from 50vmin */
-    transform: translate(-50%, -53%);
-    animation: gradient-orbit-counter 23s linear infinite;
-    transform-origin: center;
+    transform: translate(-50%, -50%);
+    animation: gradient-orbit-clockwise 23s linear infinite;
+    transform-origin: 51% 53%;
     opacity: 0.9;
     will-change: transform;
     border-radius: 50%;
@@ -281,11 +294,11 @@
     position: absolute;
     top: 50%;
     left: 50%; /* Changed from 50% to 50% (was already correct) */
-    width: 68vmin; /* Increased from 45vmin */
+    width: 80vmin; /* Increased from 45vmin */
     height: 90vmin; /* Increased from 60vmin */
-    transform: translate(-55%, -42%);
-    animation: gradient-orbit-clockwise 25s linear infinite;
-    transform-origin: center;
+    transform: translate(-50%, -50%);
+    animation: gradient-orbit-clockwise 31s linear infinite;
+    transform-origin: 50% 50%;
     opacity: 0.7;
     will-change: transform;
     border-radius: 50%;
@@ -297,10 +310,11 @@
     position: absolute;
     top: 50%;
     left: 50%; /* Changed from 57% to 50% to center properly */
-    width: 56vmin; /* Increased from 37vmin */
-    height: 98vmin; /* Increased from 65vmin */
+    width: 65vmin; /* Increased from 37vmin */
+    height: 65vmin; /* Increased from 65vmin */
     transform: translate(-50%, -50%); /* Changed from translate(-50%, -50%) to center properly */
-    animation: gradient-orbit-slow 30s linear infinite;
+    animation: gradient-orbit-slow 7s linear infinite;
+    transform-origin: 48% 48%;
     opacity: 0.6;
     will-change: transform;
     border-radius: 50%;
@@ -393,13 +407,14 @@
 .hero-pattern-mask {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 35%;
+    width: 65%;
     height: 100%;
-    background-color: transparent;
-    mask-position: center bottom;
-    mask-repeat: repeat; /* This will flip the mask on both X and Y axes */
-    mask-mode: alpha;
+    background: transparent;
+    mask-size: cover;
+    mask-position: center center;
+    mask-repeat: no-repeat; /* This will flip the mask on both X and Y axes */
+    mask-mode: luminance;
     backdrop-filter: blur(50px) saturate(1.2);
 }
 
@@ -408,7 +423,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30%;
-    background: linear-gradient(to top, var(--background-color), transparent);
+    height: 40%;
+    background: linear-gradient(to top, var(--background-color) 10%, transparent 100%);
     z-index: 10;
 }

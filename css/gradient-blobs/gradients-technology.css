@@ -22,7 +22,7 @@
 
 .radial-technology {
     background: radial-gradient(circle at 65% 85%, rgba(120, 120, 255, 1.0), transparent, rgba(150, 80, 255, 1.0), rgba(180, 60, 255, 1.0), transparent);
-    clip-path: ellipse(65% 95% at 60% 80%);
+    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
 }
 
 .linear-technology {
@@ -53,6 +53,4 @@
 
 .hero-pattern-mask {
     mask-image: url('/assets/masks/Asset\ 8.svg');
-    mask-size: contain;
-    mask-repeat: repeat;
 }
