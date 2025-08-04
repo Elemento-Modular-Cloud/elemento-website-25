@@ -436,6 +436,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
 
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
     <!-- Font Awesome font-display: swap override -->
     <style>
         @font-face {
@@ -509,7 +516,7 @@
                     </div>
                     <div class="hero-cta">
                         <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Deploy in Minutes</a>
-                        <a href="#prices" class="btn btn-secondary"><i class="fas fa-tags"></i> View Pricing</a>
+                        <a href="#prices" class="btn btn-secondary"><i class="hn hn-tag"></i> View Pricing</a>
                     </div>
                 </div>
             </div>
@@ -537,27 +544,27 @@
                     <div class="feature-list-container">
                         <ul class="feature-list">
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 RHEL-compatible, KVM-based virtualization platform
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 No vendor lock-in: upstream Linux and open standards
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Secure boot, ECC memory, GPU passthrough
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Zero centralized services — autonomous clustering with C4 protocol
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Nested virtualization-ready (GCP, AWS, Azure)
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Ideal for hybrid, on-premise, and edge computing
                             </li>
                         </ul>
@@ -579,7 +586,7 @@
             <div class="stats-grid">
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-microchip"></i>
+                        <i class="hn hn-cog"></i>
                     </div>
                     <h3>GPU</h3>
                     <p>Automatic passthrough</p>
@@ -587,7 +594,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                        <i class="hn hn-trending"></i>
                     </div>
                     <h3>+70%</h3>
                     <p>VM CPU performance</p>
@@ -603,7 +610,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="hn hn-plane"></i>
                     </div>
                     <h3>10x</h3>
                     <p>Faster Deployments</p>
@@ -655,31 +662,31 @@
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-hdd" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-save" style="color: var(--blue);"></i></div>
                     <h3>Thin Provisioning</h3>
                     <p>Supported via qcow2 format for efficient storage utilization and dynamic disk allocation.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-exchange-alt" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-shuffle" style="color: var(--green);"></i></div>
                     <h3>Live VM Migration</h3>
                     <p>Over fast LAN + shared FS for zero-downtime workload mobility.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-shield-alt" style="color: var(--orange);"></i></div>
+                    <div class="card-icon"><i class="hn hn-lock" style="color: var(--orange);"></i></div>
                     <h3>Secure Boot + vTPM</h3>
                     <p>Full support for secure boot and Virtual Trusted Platform Module for enhanced security.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-terminal" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-code-block" style="color: var(--purple);"></i></div>
                     <h3>Command Line Tools</h3>
                     <p>Native Electros CLI for automation and scripting, plus standard Linux virtualization tools.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-balance-scale" style="color: var(--blue-light);"></i></div>
+                    <div class="card-icon"><i class="hn hn-trending" style="color: var(--blue-light);"></i></div>
                     <h3>Load Balancing</h3>
                     <p>Autonomous via node-level scheduling, no centralized management required.</p>
                 </div>

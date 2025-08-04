@@ -437,6 +437,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
 
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
     <!-- Font Awesome font-display: swap override -->
     <style>
         @font-face {
@@ -508,7 +515,7 @@
                     </div>
                     <div class="hero-cta">
                         <a href="signup.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Get started</a>
-                        <a href="#platform" class="btn btn-secondary"><i class="fas fa-magnifying-glass"></i>Discover</a>
+                        <a href="#platform" class="btn btn-secondary"><i class="hn hn-search"></i>Discover</a>
                     </div>
                 </div>
             </div>
@@ -536,23 +543,23 @@
                     <div class="feature-list-container">
                         <ul class="feature-list">
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Supports 4+ cloud providers (and growing)
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 100% cross-platform (Linux, macOS, Windows)
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Manage VMs, storage, networking via GUI or CLI
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Real-time cost monitoring for cloud workloads
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Deep integration with AtomOS and Meson API
                             </li>
                         </ul>
@@ -582,7 +589,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i class="hn hn-cloud"></i>
                     </div>
                     <h3>4+</h3>
                     <p>Cloud Providers</p>
@@ -590,7 +597,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-terminal"></i>
+                        <i class="hn hn-code-block"></i>
                     </div>
                     <h3>100%</h3>
                     <p>CLI Parity</p>
@@ -598,7 +605,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="hn hn-plane"></i>
                     </div>
                     <h3>Free</h3>
                     <p>With Elemento Account</p>
@@ -617,19 +624,19 @@
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--blue);"></i></div>
                     <h3>Hybrid & Multicloud Orchestration</h3>
                     <p>Deploy VMs across public clouds and private nodes seamlessly, balancing cost, performance, and compliance.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-link" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-link" style="color: var(--green);"></i></div>
                     <h3>Remote Access Built In</h3>
                     <p>Connect via SSH, VNC, or RDP with a single click. GUI and CLI share the same daemon—no context-switching.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-code" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-code" style="color: var(--purple);"></i></div>
                     <h3>Cloud Factory CLI</h3>
                     <p>Automate infrastructure-as-code. Electros CLI powers scripting, CI/CD, and cloud pipeline workflows.</p>
                 </div>
@@ -679,7 +686,7 @@
                         <div class="protocols-grid">
                             <div class="protocol-card">
                                 <div class="protocol-icon">
-                                    <i class="fas fa-terminal" style="color: var(--green);"></i>
+                                    <i class="hn hn-code" style="color: var(--green);"></i>
                                 </div>
                                 <h5>SSH</h5>
                                 <p>Secure shell access for Linux, BSD, and Unix systems</p>
@@ -695,7 +702,7 @@
                             
                             <div class="protocol-card">
                                 <div class="protocol-icon">
-                                    <i class="fas fa-eye" style="color: var(--purple);"></i>
+                                    <i class="hn hn-eye" style="color: var(--purple);"></i>
                                 </div>
                                 <h5>VNC</h5>
                                 <p>Virtual Network Computing for cross-platform graphical access</p>
@@ -703,7 +710,7 @@
                             
                             <div class="protocol-card">
                                 <div class="protocol-icon">
-                                    <i class="fas fa-magic" style="color: var(--orange);"></i>
+                                    <i class="hn hn-sparkles" style="color: var(--orange);"></i>
                                 </div>
                                 <h5>Auto-Selection</h5>
                                 <p>Intelligent protocol detection based on guest OS</p>
@@ -890,7 +897,7 @@
                 
                 <div class="fade-in">
                     <div class="card c4-card">
-                        <div class="feature-icon c4-icon"><i class="fas fa-cogs" style="color: var(--blue);"></i></div>
+                        <div class="feature-icon c4-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                         <h3>Unified Architecture</h3>
                         <p>Both desktop app and CLI share the same core daemons, ensuring consistent behavior and real-time synchronization.</p>
                     </div>

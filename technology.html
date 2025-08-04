@@ -266,6 +266,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
 
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
     <!-- Font Awesome font-display: swap override -->
     <style>
         @font-face {
@@ -401,7 +408,7 @@
                 
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--purple);"></i></div>
+                        <div class="card-icon"><i class="hn hn-grid" style="color: var(--purple);"></i></div>
                         <h3>C4 Protocol</h3>
                         <p>Patented technology enabling standardized multi-cloud integration and resource management across any cloud provider.</p>
                         <div style="margin-top: var(--space-md);">
@@ -449,7 +456,7 @@
                 
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="card-icon"><i class="fas fa-cogs" style="color: var(--blue);"></i></div>
+                        <div class="card-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                         <h3>Kubernetes Native</h3>
                         <p>Built on Kubernetes for seamless container orchestration and management across any infrastructure.</p>
                     </div>
@@ -464,7 +471,7 @@
             <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="card-icon"><i class="fas fa-code" style="color: var(--purple);"></i></div>
+                        <div class="card-icon"><i class="hn hn-code" style="color: var(--purple);"></i></div>
                         <h3>Infrastructure as Code</h3>
                         <p>Manage your entire infrastructure using code with Terraform, Ansible, and other IaC tools.</p>
                     </div>
@@ -535,7 +542,7 @@
                 
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="card-icon"><i class="fas fa-cloud" style="color: var(--blue);"></i></div>
+                        <div class="card-icon"><i class="hn hn-cloud" style="color: var(--blue);"></i></div>
                         <h3>Multi-Cloud</h3>
                         <p>Deploy across multiple cloud providers with unified management and vendor-neutral APIs.</p>
                     </div>
@@ -550,7 +557,7 @@
             <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="card-icon"><i class="fas fa-leaf" style="color: var(--green);"></i></div>
+                        <div class="card-icon"><i class="hn hn-seedlings" style="color: var(--green);"></i></div>
                         <h3>Green Computing</h3>
                         <p>Advanced algorithms optimize for energy efficiency and carbon footprint reduction.</p>
                     </div>
@@ -597,31 +604,31 @@
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-docker" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--blue);"></i></div>
                     <h3>Containerization</h3>
                     <p>Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-tools" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--purple);"></i></div>
                     <h3>Infrastructure as Code</h3>
                     <p>Terraform, Ansible, and Pulumi integration for automated infrastructure management and deployment.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-chart-line" style="color: var(--orange);"></i></div>
+                    <div class="card-icon"><i class="hn hn-trending" style="color: var(--orange);"></i></div>
                     <h3>Monitoring & Observability</h3>
                     <p>Prometheus, Grafana, and ELK stack for comprehensive monitoring, logging, and alerting.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-shield-alt" style="color: var(--red);"></i></div>
+                    <div class="card-icon"><i class="hn hn-lock" style="color: var(--red);"></i></div>
                     <h3>Security & Compliance</h3>
                     <p>Built-in security scanning, compliance frameworks, and enterprise-grade encryption.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--blue);"></i></div>
                     <h3>Networking</h3>
                     <p>Advanced networking with load balancing, service mesh, and global traffic management.</p>
                 </div>
@@ -645,7 +652,7 @@
             
             <div class="grid grid-2">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-cogs" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                     <h3>Control Plane</h3>
                     <p>The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces.</p>
                     <div style="margin-top: var(--space-lg);">
@@ -675,7 +682,7 @@
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-chart-bar" style="color: var(--orange);"></i></div>
+                    <div class="card-icon"><i class="hn hn-trending" style="color: var(--orange);"></i></div>
                     <h3>Observability Stack</h3>
                     <p>Comprehensive monitoring, logging, and analytics that provide insights into performance, costs, and environmental impact.</p>
                     <div style="margin-top: var(--space-lg);">
@@ -697,31 +704,31 @@
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-robot" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--purple);"></i></div>
                     <h3>AI-Powered Optimization</h3>
                     <p>Machine learning algorithms that automatically optimize resource allocation, cost management, and performance tuning.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-globe" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-globe" style="color: var(--green);"></i></div>
                     <h3>Carbon-Aware Computing</h3>
                     <p>Advanced algorithms that consider carbon intensity when making workload placement decisions.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-flask" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-code" style="color: var(--purple);"></i></div>
                     <h3>Research Partnerships</h3>
                     <p>Collaborating with leading universities and research institutions to advance cloud computing technology.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-bolt" style="color: var(--orange);"></i></div>
+                    <div class="card-icon"><i class="hn hn-bolt" style="color: var(--orange);"></i></div>
                     <h3>Edge Computing</h3>
                     <p>Extending our platform to edge locations for low-latency applications and IoT deployments.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-lock" style="color: var(--red);"></i></div>
+                    <div class="card-icon"><i class="hn hn-lock" style="color: var(--red);"></i></div>
                     <h3>Zero-Trust Security</h3>
                     <p>Implementing advanced security models that verify every request and connection.</p>
                 </div>
@@ -734,25 +741,25 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item fade-in">
-                    <div class="stat-icon"><i class="fas fa-check-circle" style="color: var(--green);"></i></div>
+                    <div class="stat-icon"><i class="hn hn-check-circle" style="color: var(--green);"></i></div>
                     <h3>99.99%</h3>
                     <p>Uptime Guarantee</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <div class="stat-icon"><i class="fas fa-tachometer-alt" style="color: var(--orange);"></i></div>
+                    <div class="stat-icon"><i class="hn hn-trending" style="color: var(--orange);"></i></div>
                     <h3>< 10ms</h3>
                     <p>Average Latency</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <div class="stat-icon"><i class="fas fa-leaf" style="color: var(--green);"></i></div>
+                    <div class="stat-icon"><i class="hn hn-seedlings" style="color: var(--green);"></i></div>
                     <h3>40%</h3>
                     <p>Energy Reduction</p>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <div class="stat-icon"><i class="fas fa-cloud" style="color: var(--blue);"></i></div>
+                    <div class="stat-icon"><i class="hn hn-cloud" style="color: var(--blue);"></i></div>
                     <h3>8+</h3>
                     <p>Cloud Providers</p>
                 </div>

@@ -438,6 +438,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
 
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
     <!-- Font Awesome font-display: swap override -->
     <style>
         @font-face {
@@ -509,8 +516,8 @@
                         <p>Elemento’s programmable API proxy turns disconnected providers into a single federated control plane. Instantly manage workloads, costs, and infrastructure across AWS, Azure, GCP, and beyond — using your own cloud accounts.</p>
                     </div>
                     <div class="hero-cta">
-                        <a href="#docs" class="btn btn-primary"><i class="fas fa-book"></i> Explore Documentation</a>
-                        <a href="signup.html" class="btn btn-secondary"><i class="fas fa-cloud-upload-alt"></i> Join as a Provider</a>
+                        <a href="#docs" class="btn btn-primary"><i class="hn hn-book-heart"></i> Explore Documentation</a>
+                        <a href="signup.html" class="btn btn-secondary"><i class="hn hn-upload"></i> Join as a Provider</a>
                     </div>
                 </div>
             </div>
@@ -538,23 +545,23 @@
                     <div class="feature-list-container">
                         <ul class="feature-list">
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 API proxy for AWS, Azure, GCP, and 10+ major CSPs
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Maps CSP-specific APIs into a single Elemento API
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Real-time cost comparison across providers
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Use your existing cloud accounts and credentials
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Deep integration with Electros dashboard and CLI
                             </li>
                         </ul>
@@ -576,7 +583,7 @@
             <div class="stats-grid">
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-network-wired"></i>
+                        <i class="hn hn-grid"></i>
                     </div>
                     <h3>10+</h3>
                     <p>CSP Integrations</p>
@@ -584,7 +591,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-exchange-alt"></i>
+                        <i class="hn hn-shuffle"></i>
                     </div>
                     <h3>100%</h3>
                     <p>API Compatibility</p>
@@ -592,7 +599,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="hn hn-code"></i>
                     </div>
                     <h3>1</h3>
                     <p>Unified API</p>
@@ -600,7 +607,7 @@
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="hn hn-box-usd"></i>
                     </div>
                     <h3>Real-time</h3>
                     <p>Cost Comparison</p>
@@ -638,25 +645,25 @@
             
             <div class="grid grid-2">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-exchange-alt" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-shuffle" style="color: var(--blue);"></i></div>
                     <h3>Universal API Abstraction</h3>
                     <p>Operators learn one API — <span class="pixel-word">Elemento's</span> — while Meson handles the translation to <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">GCP</span>, <span class="pixel-word">on-prem KVM</span>, and more.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-dollar-sign" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-box-usd" style="color: var(--green);"></i></div>
                     <h3>Dynamic Cloud-Cost Comparison</h3>
                     <p><span class="pixel-word">Electros UI</span> surfaces cost-per-VM metrics across your CSP accounts. Meson helps you identify the <span class="pixel-word">best-priced resources</span> across providers in real-time.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-bolt" style="color: var(--orange);"></i></div>
+                    <div class="card-icon"><i class="hn hn-bolt" style="color: var(--orange);"></i></div>
                     <h3>Provider Agnostic Provisioning</h3>
                     <p>Launch a VM wherever you choose, all through the same dashboard or script — <span class="pixel-word">cloud-agnostic PaaS provisioning</span>.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-network-wired" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--purple);"></i></div>
                     <h3>Expandable CSP Integration</h3>
                     <p><span class="pixel-word">10+ major CSPs</span> supported today, with ongoing API integrations and <span class="pixel-word">custom provider support</span> for enterprise customers.</p>
                 </div>
@@ -700,19 +707,19 @@
             
             <div class="grid grid-3" style="margin-top: var(--space-xl);">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-check-circle" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-check-circle" style="color: var(--green);"></i></div>
                     <h4>Production Ready</h4>
                     <p>Loading...</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-clock" style="color: var(--yellow);"></i></div>
+                    <div class="card-icon"><i class="hn hn-clock" style="color: var(--yellow);"></i></div>
                     <h4>Beta Testing</h4>
                     <p>Loading...</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-tools" style="color: var(--red);"></i></div>
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--red);"></i></div>
                     <h4>In Development</h4>
                     <p>Loading...</p>
                 </div>
@@ -736,19 +743,19 @@
                         <h4>Proxy Benefits:</h4>
                         <ul>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Keep your existing CSP accounts and billing
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Real-time cost visibility across all providers
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 No additional fees or markup on resources
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span>
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Single API to learn instead of multiple CSP APIs
                             </li>
                         </ul>
@@ -757,7 +764,7 @@
                 
                 <div class="fade-in">
                     <div class="card c4-card">
-                        <div class="feature-icon c4-icon"><i class="fas fa-shield-alt" style="color: var(--blue);"></i></div>
+                        <div class="feature-icon c4-icon"><i class="hn hn-lock" style="color: var(--blue);"></i></div>
                         <h3>Your Accounts, Your Control</h3>
                         <p>Meson proxies API calls to your existing CSP accounts. You maintain full control and direct billing relationships.</p>
                     </div>
@@ -776,19 +783,19 @@
             
             <div class="grid grid-3">
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-rocket" style="color: var(--blue);"></i></div>
+                    <div class="card-icon"><i class="hn hn-plane" style="color: var(--blue);"></i></div>
                     <h3>Multi-CSP Management</h3>
                     <p>Manage VMs across your <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, and <span class="pixel-word">GCP</span> accounts with a single API — no need to learn multiple CSP APIs.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-globe" style="color: var(--green);"></i></div>
+                    <div class="card-icon"><i class="hn hn-globe" style="color: var(--green);"></i></div>
                     <h3>Cross-Provider Cost Optimization</h3>
                     <p>Compare costs across <span class="pixel-word">multiple CSPs</span> in real-time to choose the most cost-effective option for each workload without vendor lock-in.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-code" style="color: var(--purple);"></i></div>
+                    <div class="card-icon"><i class="hn hn-code" style="color: var(--purple);"></i></div>
                     <h3>DevOps & Infrastructure as Code</h3>
                     <p><span class="pixel-word">Terraform</span> and <span class="pixel-word">DevOps teams</span> can use Meson's unified API for multi-cloud deployments without learning provider-specific syntax.</p>
                 </div>
@@ -835,7 +842,7 @@
                 
                 <div class="fade-in">
                     <div class="card" style="text-align: center; padding: var(--space-3xl);">
-                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);"><i class="fas fa-bolt" style="color: var(--orange);"></i></div>
+                        <div class="feature-icon" style="margin: 0 auto var(--space-xl);"><i class="hn hn-bolt" style="color: var(--orange);"></i></div>
                         <h3>Unified Control</h3>
                         <p>Manage VMs across all providers from a single dashboard, CLI, or API interface.</p>
                     </div>
