@@ -61,4 +61,8 @@
     animation: electros-polygon-energy 24s ease-in-out infinite reverse;
 }
 
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 5.svg');
+}
+
  

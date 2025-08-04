@@ -4,71 +4,52 @@
 
 .gradient-products {
     background: conic-gradient(
-        from 45deg,
-        rgba(0, 220, 80, 1.0),
+        from 0deg,
+        rgba(255, 100, 0, 1.0),
         transparent,
-        rgba(0, 255, 100, 1.0),
+        rgba(255, 150, 50, 1.0),
         transparent,
-        rgba(0, 180, 60, 1.0),
+        rgba(255, 200, 100, 1.0),
         transparent,
-        rgba(20, 255, 120, 1.0),
+        rgba(255, 250, 150, 1.0),
         transparent,
-        rgba(0, 150, 40, 1.0),
-        transparent,
-        rgba(0, 220, 80, 1.0),
+        rgba(255, 100, 0, 1.0),
         transparent
     );
-    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
+    clip-path: polygon(50% 0%, 82% 22%, 90% 32%, 95% 40%, 98% 48%, 99% 55%, 98% 62%, 95% 68%, 90% 75%, 82% 80%, 72% 85%, 62% 88%, 52% 85%, 42% 80%, 32% 75%, 22% 68%, 15% 62%, 10% 55%, 8% 48%, 10% 40%, 15% 32%, 22% 22%, 32% 12%, 42% 0%, 50% 0%);
     border-radius: 50%;
 }
 
 .radial-products {
-    background: radial-gradient(circle at 75% 25%, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0));
-    clip-path: polygon(70% 35%, 75% 30%, 80% 25%, 85% 20%, 88% 15%, 90% 10%, 92% 5%, 90% 8%, 85% 12%, 80% 18%, 75% 25%, 70% 30%, 65% 35%, 60% 40%, 55% 45%, 60% 50%, 65% 55%, 70% 60%, 75% 65%, 80% 70%, 85% 75%, 88% 80%, 90% 85%, 92% 90%, 90% 85%, 85% 80%, 80% 75%, 75% 70%, 70% 65%, 65% 60%, 60% 55%, 55% 50%, 60% 45%, 65% 40%, 70% 35%);
+    background: radial-gradient(ellipse at 30% 70%, rgba(255, 100, 0, 1.0), rgba(255, 150, 50, 1.0), transparent, rgba(255, 200, 100, 1.0), transparent);
+    clip-path: polygon(25% 60%, 32% 55%, 38% 50%, 42% 45%, 45% 40%, 48% 35%, 50% 30%, 48% 25%, 45% 20%, 42% 15%, 38% 10%, 32% 5%, 25% 0%, 18% 5%, 12% 10%, 8% 15%, 5% 20%, 3% 25%, 2% 30%, 3% 35%, 5% 40%, 8% 45%, 12% 50%, 18% 55%, 25% 60%, 32% 65%, 38% 70%, 42% 75%, 45% 80%, 48% 85%, 50% 90%, 52% 95%, 55% 100%, 58% 95%, 62% 90%, 65% 85%, 68% 80%, 72% 75%, 75% 70%, 78% 65%, 82% 60%, 85% 55%, 88% 50%, 92% 45%, 95% 40%, 98% 35%, 100% 30%, 98% 25%, 95% 20%, 92% 15%, 88% 10%, 85% 5%, 82% 0%, 78% 5%, 75% 10%, 72% 15%, 68% 20%, 65% 25%, 62% 30%, 58% 35%, 55% 40%, 52% 45%, 50% 50%, 48% 55%, 45% 60%, 42% 65%, 38% 70%, 32% 75%, 25% 80%, 18% 75%, 12% 70%, 8% 65%, 5% 60%, 3% 55%, 2% 50%, 3% 45%, 5% 40%, 8% 35%, 12% 30%, 18% 25%, 25% 20%, 32% 15%, 38% 10%, 42% 5%, 45% 0%, 48% 5%, 50% 10%, 52% 15%, 55% 20%, 58% 25%, 62% 30%, 65% 35%, 68% 40%, 72% 45%, 75% 50%, 78% 55%, 82% 60%, 85% 65%, 88% 70%, 92% 75%, 95% 80%, 98% 85%, 100% 90%, 98% 95%, 95% 100%, 92% 95%, 88% 90%, 85% 85%, 82% 80%, 78% 75%, 75% 70%, 72% 65%, 68% 60%, 65% 55%, 62% 50%, 58% 45%, 55% 40%, 52% 35%, 50% 30%, 48% 25%, 45% 20%, 42% 15%, 38% 10%, 32% 5%, 25% 0%, 18% 5%, 12% 10%, 8% 15%, 5% 20%, 3% 25%, 2% 30%, 3% 35%, 5% 40%, 8% 45%, 12% 50%, 18% 55%, 25% 60%);
 }
 
 .linear-products {
-    background: linear-gradient(15deg, rgba(0, 220, 80, 1.0), transparent, rgba(0, 255, 100, 1.0), transparent, rgba(20, 255, 120, 1.0), transparent);
-    clip-path: polygon(15% 10%, 25% 8%, 35% 6%, 45% 5%, 55% 6%, 65% 8%, 75% 10%, 85% 12%, 90% 18%, 92% 25%, 90% 35%, 88% 45%, 85% 55%, 80% 65%, 75% 70%, 65% 75%, 55% 78%, 45% 80%, 35% 78%, 25% 70%, 18% 60%, 15% 50%, 12% 40%, 15% 30%, 18% 20%, 15% 10%);
+    background: linear-gradient(60deg, rgba(255, 100, 0, 1.0), transparent, rgba(255, 150, 50, 1.0), transparent, rgba(255, 200, 100, 1.0), transparent);
+    clip-path: polygon(5% 20%, 15% 18%, 25% 15%, 35% 12%, 45% 10%, 55% 12%, 65% 15%, 75% 18%, 82% 22%, 88% 28%, 92% 35%, 95% 42%, 98% 48%, 95% 55%, 92% 62%, 88% 68%, 82% 75%, 75% 80%, 65% 85%, 55% 88%, 45% 90%, 35% 88%, 25% 85%, 15% 80%, 8% 75%, 5% 68%, 3% 62%, 2% 55%, 3% 48%, 5% 42%, 8% 35%, 12% 28%, 18% 22%, 5% 20%);
 }
 
-@keyframes products-polygon-grid {
-    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
-    25% { transform: translateX(1%) translateY(1%) rotate(90deg); }
-    50% { transform: translateX(-1%) translateY(1%) rotate(180deg); }
-    75% { transform: translateX(1%) translateY(-1%) rotate(270deg); }
+@keyframes products-polygon-innovate {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+    33% { transform: translateX(-1.5%) translateY(1%) scale(1.015); }
+    66% { transform: translateX(1%) translateY(-1.5%) scale(0.985); }
 }
 
 .polygon-products-1 {
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    clip-path: polygon(0% 0%, 10% 5%, 20% 8%, 30% 10%, 33% 15%, 33% 25%, 33% 33%, 40% 33%, 50% 33%, 60% 33%, 66% 33%, 66% 40%, 66% 50%, 66% 60%, 66% 66%, 75% 66%, 85% 66%, 95% 66%, 100% 66%, 100% 75%, 100% 85%, 100% 95%, 100% 100%, 90% 100%, 80% 100%, 70% 100%, 60% 100%, 50% 100%, 40% 100%, 30% 100%, 20% 100%, 10% 100%, 0% 100%, 0% 90%, 0% 80%, 0% 70%, 0% 60%, 0% 50%, 0% 40%, 0% 30%, 0% 20%, 0% 10%, 0% 0%);
-    opacity: 0.1;
-    animation: products-polygon-grid 15s linear infinite;
+    background: radial-gradient(circle, var(--primary-color), transparent);
+    clip-path: polygon(3% 12%, 12% 10%, 22% 8%, 32% 6%, 42% 5%, 52% 4%, 62% 5%, 72% 6%, 78% 8%, 84% 12%, 88% 18%, 92% 25%, 94% 32%, 96% 38%, 94% 45%, 92% 52%, 88% 58%, 84% 65%, 78% 72%, 72% 75%, 62% 78%, 52% 80%, 42% 78%, 32% 75%, 22% 72%, 16% 65%, 12% 58%, 8% 52%, 6% 45%, 4% 38%, 6% 32%, 8% 25%, 12% 18%, 16% 12%, 3% 12%);
+    opacity: 0.16;
+    animation: products-polygon-innovate 24s ease-in-out infinite;
 }
 
 .polygon-products-2 {
     background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
-    clip-path: polygon(25% 0%, 35% 5%, 45% 8%, 55% 10%, 65% 12%, 75% 15%, 85% 18%, 95% 20%, 100% 25%, 100% 35%, 100% 45%, 100% 55%, 100% 65%, 100% 75%, 95% 80%, 85% 85%, 75% 90%, 65% 95%, 55% 100%, 45% 95%, 35% 90%, 25% 85%, 15% 80%, 5% 75%, 0% 65%, 0% 55%, 0% 45%, 0% 35%, 0% 25%, 5% 20%, 15% 15%, 25% 0%);
-    opacity: 0.08;
-    animation: products-polygon-grid 20s linear infinite reverse;
+    clip-path: polygon(10% 8%, 20% 6%, 30% 5%, 40% 4%, 50% 3%, 60% 4%, 70% 5%, 78% 8%, 84% 12%, 88% 18%, 92% 25%, 94% 32%, 96% 38%, 94% 45%, 92% 52%, 88% 58%, 84% 65%, 78% 72%, 70% 75%, 60% 78%, 50% 80%, 40% 78%, 30% 75%, 20% 72%, 16% 65%, 12% 58%, 8% 52%, 6% 45%, 4% 38%, 6% 32%, 8% 25%, 12% 18%, 16% 12%, 10% 8%);
+    opacity: 0.1;
+    animation: products-polygon-innovate 28s ease-in-out infinite reverse;
 }
 
-.ro-products-1 {
-    background: repeating-linear-gradient(
-        -12deg,
-        transparent 0px,
-        transparent var(--stripe-width-1),
-        var(--stripe-color-1)  var(--stripe-width-1),
-        var(--stripe-color-2) calc(var(--stripe-width-1) * 1.8)
-    );
-}
-
-.ro-products-2 {
-    background: repeating-linear-gradient(
-        -15deg,
-        transparent 0px,
-        transparent var(--stripe-width-2),
-        var(--stripe-color-1)  var(--stripe-width-2),
-        var(--stripe-color-2) calc(var(--stripe-width-2) * 2)
-    );
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 4.svg');
 } 

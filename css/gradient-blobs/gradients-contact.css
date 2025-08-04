@@ -5,49 +5,56 @@
 .gradient-contact {
     background: conic-gradient(
         from 315deg,
-        rgba(0, 180, 255, 1.0),
+        rgba(150, 255, 0, 1.0),
         transparent,
-        rgba(0, 200, 220, 1.0),
+        rgba(180, 255, 50, 1.0),
         transparent,
-        rgba(0, 200, 140, 1.0),
+        rgba(120, 255, 0, 1.0),
         transparent,
-        rgba(0, 160, 120, 1.0),
+        rgba(200, 255, 80, 1.0),
         transparent,
-        rgba(0, 180, 255, 1.0),
+        rgba(100, 255, 0, 1.0),
+        transparent,
+        rgba(150, 255, 0, 1.0),
         transparent
     );
-    clip-path: polygon(50% 0%, 55% 8%, 65% 15%, 75% 22%, 85% 28%, 95% 32%, 98% 40%, 96% 48%, 90% 55%, 80% 62%, 70% 68%, 60% 75%, 50% 80%, 40% 75%, 30% 68%, 20% 62%, 12% 55%, 8% 48%, 6% 40%, 10% 32%, 20% 28%, 30% 22%, 40% 15%, 48% 8%, 50% 0%);
+    clip-path: polygon(50% 0%, 72% 15%, 82% 25%, 90% 32%, 95% 38%, 98% 45%, 96% 52%, 92% 58%, 85% 65%, 75% 72%, 65% 78%, 55% 82%, 45% 78%, 35% 72%, 25% 65%, 18% 58%, 12% 52%, 8% 45%, 12% 38%, 18% 32%, 28% 25%, 38% 15%, 48% 0%, 50% 0%);
     border-radius: 50%;
 }
 
 .radial-contact {
-    background: radial-gradient(circle at 45% 10%, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), rgba(0, 200, 140, 1.0), transparent);
-    clip-path: polygon(50% 20%, 55% 15%, 60% 10%, 65% 8%, 70% 5%, 75% 8%, 80% 12%, 85% 15%, 90% 20%, 92% 25%, 94% 30%, 96% 35%, 98% 40%, 96% 45%, 94% 50%, 92% 55%, 90% 60%, 85% 65%, 80% 70%, 75% 75%, 70% 80%, 65% 85%, 60% 90%, 55% 95%, 50% 100%, 45% 95%, 40% 90%, 35% 85%, 30% 80%, 25% 75%, 20% 70%, 15% 65%, 10% 60%, 8% 55%, 6% 50%, 4% 45%, 2% 40%, 4% 35%, 6% 30%, 8% 25%, 10% 20%, 15% 15%, 20% 10%, 25% 8%, 30% 5%, 35% 8%, 40% 12%, 45% 15%, 50% 20%);
+    background: radial-gradient(ellipse at 80% 20%, rgba(150, 255, 0, 1.0), rgba(180, 255, 50, 1.0), transparent, rgba(200, 255, 80, 1.0), transparent);
+    clip-path: polygon(75% 15%, 82% 10%, 88% 8%, 92% 5%, 95% 2%, 98% 0%, 95% 5%, 92% 10%, 88% 15%, 82% 20%, 75% 25%, 68% 30%, 62% 35%, 58% 40%, 55% 45%, 52% 50%, 55% 55%, 58% 60%, 62% 65%, 68% 70%, 75% 75%, 82% 80%, 88% 85%, 92% 90%, 95% 95%, 98% 100%, 100% 95%, 100% 90%, 100% 85%, 100% 80%, 100% 75%, 100% 70%, 100% 65%, 100% 60%, 100% 55%, 100% 50%, 100% 45%, 100% 40%, 100% 35%, 100% 30%, 100% 25%, 100% 20%, 100% 15%, 100% 10%, 100% 5%, 100% 0%, 98% 0%, 95% 5%, 92% 10%, 88% 15%, 82% 20%, 75% 25%, 68% 20%, 62% 15%, 58% 10%, 55% 5%, 52% 0%, 55% 5%, 58% 10%, 62% 15%, 68% 20%, 75% 15%);
 }
 
 .linear-contact {
-    background: linear-gradient(300deg, rgba(0, 180, 255, 1.0), transparent, rgba(0, 200, 220, 1.0), transparent, rgba(0, 200, 140, 1.0), transparent);
-    clip-path: polygon(35% 5%, 45% 8%, 55% 10%, 65% 12%, 75% 15%, 85% 18%, 90% 25%, 92% 35%, 88% 45%, 85% 55%, 80% 65%, 75% 70%, 65% 75%, 55% 78%, 45% 80%, 35% 78%, 25% 70%, 18% 60%, 15% 50%, 12% 40%, 15% 30%, 18% 20%, 25% 15%, 35% 5%);
+    background: linear-gradient(225deg, rgba(150, 255, 0, 1.0), transparent, rgba(180, 255, 50, 1.0), transparent, rgba(200, 255, 80, 1.0), transparent);
+    clip-path: polygon(8% 12%, 18% 10%, 28% 8%, 38% 6%, 48% 5%, 58% 6%, 68% 8%, 78% 10%, 85% 12%, 90% 15%, 94% 20%, 96% 25%, 98% 30%, 96% 35%, 94% 40%, 90% 45%, 85% 50%, 78% 55%, 68% 60%, 58% 65%, 48% 68%, 38% 65%, 28% 60%, 18% 55%, 12% 50%, 8% 45%, 5% 40%, 3% 35%, 5% 30%, 8% 25%, 12% 20%, 18% 15%, 8% 12%);
 }
 
-@keyframes contact-polygon-talk {
-    0%, 100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
-    33% { transform: translateX(-1%) translateY(2%) rotate(-1deg) scale(1.02); }
-    66% { transform: translateX(2%) translateY(-1%) rotate(1deg) scale(0.98); }
+@keyframes contact-polygon-wave {
+    0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+    25% { transform: translateX(-0.5%) translateY(1%) scale(1.005); }
+    50% { transform: translateX(1%) translateY(-0.5%) scale(0.995); }
+    75% { transform: translateX(0.5%) translateY(0.5%) scale(1.002); }
 }
 
 .polygon-contact-1 {
-    background: linear-gradient(75deg, var(--primary-color), var(--accent-color));
-    clip-path: polygon(0% 0%, 10% 5%, 20% 8%, 30% 10%, 40% 12%, 50% 15%, 60% 12%, 70% 10%, 80% 8%, 90% 5%, 100% 0%, 100% 10%, 100% 20%, 100% 30%, 100% 40%, 100% 50%, 100% 60%, 100% 75%, 90% 85%, 80% 90%, 70% 95%, 60% 100%, 50% 95%, 40% 90%, 30% 85%, 20% 80%, 10% 75%, 0% 70%, 0% 60%, 0% 50%, 0% 40%, 0% 30%, 0% 20%, 0% 10%, 0% 0%);
-    opacity: 0.7;
-    animation: contact-polygon-talk 22s ease-in-out infinite;
+    background: radial-gradient(circle, var(--primary-color), transparent);
+    clip-path: polygon(3% 5%, 12% 3%, 22% 2%, 32% 1%, 42% 0%, 52% 1%, 62% 2%, 72% 3%, 80% 5%, 85% 8%, 88% 12%, 90% 18%, 92% 25%, 90% 32%, 88% 38%, 85% 45%, 80% 52%, 72% 58%, 62% 62%, 52% 65%, 42% 62%, 32% 58%, 22% 52%, 15% 45%, 10% 38%, 8% 32%, 5% 25%, 8% 18%, 10% 12%, 15% 8%, 3% 5%);
+    opacity: 0.1;
+    animation: contact-polygon-wave 20s ease-in-out infinite;
 }
 
 .polygon-contact-2 {
-    background: radial-gradient(ellipse, var(--accent-color), transparent);
-    clip-path: polygon(10% 10%, 20% 8%, 30% 6%, 40% 5%, 50% 6%, 60% 8%, 70% 10%, 80% 12%, 90% 15%, 95% 25%, 100% 35%, 95% 45%, 90% 55%, 85% 65%, 80% 75%, 75% 85%, 70% 90%, 60% 95%, 50% 100%, 40% 95%, 30% 90%, 20% 85%, 15% 75%, 10% 65%, 5% 55%, 0% 45%, 5% 35%, 10% 25%, 15% 15%, 10% 10%);
-    opacity: 0.5;
-    animation: contact-polygon-talk 26s ease-in-out infinite reverse;
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    clip-path: polygon(10% 3%, 20% 2%, 30% 1%, 40% 0%, 50% 1%, 60% 2%, 70% 3%, 78% 5%, 84% 8%, 88% 12%, 92% 18%, 94% 25%, 92% 32%, 88% 38%, 84% 45%, 78% 52%, 70% 58%, 60% 62%, 50% 65%, 40% 62%, 30% 58%, 20% 52%, 12% 45%, 8% 38%, 5% 32%, 3% 25%, 5% 18%, 8% 12%, 12% 8%, 10% 3%);
+    opacity: 0.06;
+    animation: contact-polygon-wave 25s ease-in-out infinite reverse;
+}
+
+.hero-pattern-mask {
+    mask-image: url('/assets/masks/Asset\ 11.svg');
 }
 
  
