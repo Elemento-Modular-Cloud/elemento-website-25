@@ -3,7 +3,7 @@
 @import url('./gradient-blobs/gradients-contact.css');
 
 .hero-pattern-mask {
-    mask-image: url('/assets/masks/Asset\ 5.svg');
+    mask-image: url('../assets/masks/Asset\ 5.svg');
     mask-size: 70rem 60%;
     transform: scaleY(-1)
 } 
@@ -631,7 +631,7 @@
 }
 
 .hero-pattern-mask {
-    mask-image: url('/assets/masks/Asset\ 6.svg');
+    mask-image: url('../assets/masks/Asset\ 6.svg');
     mask-size: cover;
     mask-repeat: repeat;
 }

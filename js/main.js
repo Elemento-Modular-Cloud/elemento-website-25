@@ -642,7 +642,7 @@ class ElementoWebsite {
         // Load the iubenda fix script immediately (no delay)
         const iubendaFixScript = document.createElement('script');
         iubendaFixScript.type = 'text/javascript';
-        iubendaFixScript.src = 'js/iubenda_fix.js';
+        iubendaFixScript.src = '/js/iubenda_fix.js';
         document.head.appendChild(iubendaFixScript);
     }
 

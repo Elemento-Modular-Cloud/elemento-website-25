@@ -3,7 +3,7 @@
 @import url('./gradient-blobs/gradients-electros.css');
 
 .hero-pattern-mask {
-    mask-image: url('/assets/masks/Asset\ 7.svg');
+    mask-image: url('../assets/masks/Asset\ 7.svg');
     mask-size: 70rem 60%;
     transform: scaleY(-1)
 }
