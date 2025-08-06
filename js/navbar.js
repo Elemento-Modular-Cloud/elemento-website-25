@@ -33,6 +33,11 @@ class Navbar {
         // 2. Local development: /index.html -> no need to go up
         // 3. Local subdirectory: /blog-posts/post.html -> need to go up one level
         
+        // Check if we're in the blog-posts directory
+        if (pathParts.includes('blog-posts')) {
+            return '../';
+        }
+        
         // For GitHub Pages, we need to go up one level from the repository root
         // For local development, we need to go up one level if we're in a subdirectory
         if (pathParts.length > 1) {
@@ -48,61 +53,56 @@ class Navbar {
     render() {
         const basePath = this.getBasePath();
         
-        // Use absolute paths from the root to avoid path issues
-        const pathParts = window.location.pathname.split('/').filter(part => part !== '');
-        const rootPath = "./" //pathParts.length > 1 ? '/' + pathParts[0] + '/' : '/';
-
-        
         return `
             <nav class="navbar">
                 <div class="nav-container">
-                    <a href="${rootPath}index.html" class="logo">
+                    <a href="${basePath}index.html" class="logo">
                         <div class="logo-icon"></div>
                         <span class="elemento-brand">Elemento</span>
                     </a>
                     
                     <ul class="nav-menu">
-                        <li><a href="${rootPath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
+                        <li><a href="${basePath}index.html" class="nav-link ${this.getActiveClass('index.html')}">Home</a></li>
                         <li class="dropdown">
-                            <a href="${rootPath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products <span class="dropdown-arrow">▼</span></a>
+                            <a href="${basePath}products.html" class="nav-link ${this.getActiveClass('products.html')}">Products <span class="dropdown-arrow">▼</span></a>
                             <!-- Mobile dropdown menu integrated into nav-menu -->
                             <div class="dropdown-menu mobile-dropdown">
                                 <ul>
-                                    <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
-                                        <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
+                                    <li><a href="${basePath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                        <img src="${basePath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomos</span>
                                     </a></li>
-                                    <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
-                                        <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
+                                    <li><a href="${basePath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                        <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                         <span class="">Electros</span>
                                     </a></li>
-                                    <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
-                                        <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
+                                    <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                        <img src="${basePath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
                                         <span class="">Cloud Network</span>
                                     </a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="${rootPath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
-                        <li><a href="${rootPath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
-                        <li><a href="${rootPath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
-                        <li><a href="${rootPath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
+                        <li><a href="${basePath}technology.html" class="nav-link ${this.getActiveClass('technology.html')}">Technology</a></li>
+                        <li><a href="${basePath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
+                        <li><a href="${basePath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
+                        <li><a href="${basePath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
                     </ul>
 
                     <!-- Desktop dropdown menu (separate from mobile) -->
                     <div class="dropdown-menu desktop-dropdown">
                         <div class="container">
                             <ul>
-                                <li><a href="${rootPath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
-                                    <img src="${rootPath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
+                                <li><a href="${basePath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                    <img src="${basePath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomos</span>
                                 </a></li>
-                                <li><a href="${rootPath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
-                                    <img src="${rootPath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
+                                <li><a href="${basePath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                    <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                     <span class="">Electros</span>
                                 </a></li>
-                                <li><a href="${rootPath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
-                                    <img src="${rootPath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
+                                <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                    <img src="${basePath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
                                     <span class="">Cloud Network</span>
                                 </a></li>
                             </ul>
