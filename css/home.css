@@ -67,12 +67,6 @@
     line-height: 1.6;
 }
 
-.content-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .hero-detail-image {
     max-width: 100%;
     height: auto;
