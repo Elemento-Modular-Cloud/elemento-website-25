@@ -2214,6 +2214,20 @@ body {
     -webkit-mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
 }
 
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.footer-logo-section h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color);
+    font-family: var(--font-heading);
+}
 
 /* Stat icon styles - reusable for any stats section */
 .stat-icon {

@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="container">
                             <div class="footer-content">
                                 <div class="footer-section">
-                                    <div class="footer-logo-container footer-logo-masked"></div>
-                                    <h4>Elemento</h4>
+                                    <div class="footer-logo-section">
+                                        <div class="footer-logo-container footer-logo-masked"></div>
+                                        <h3>Elemento</h3>
+                                    </div>
                                     <p>Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.</p>
                                 </div>
                             </div>
