@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidature Submitted - Elemento</title>
+    
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../css/themes.css">
+    
+    <!-- Main CSS (contains navbar styles) -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Forms CSS -->
+    <link rel="stylesheet" href="../css/forms.css">
+    
+    <!-- Navbar preload -->
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+</head>
+<body>
+    <!-- Navbar placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="provider-success-container">
+        <div class="form-header">
+            <div class="success-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" 
+                          stroke="#28A745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="form-title">Candidature <span class="pixel-accent">Submitted</span></h1>
+            <p class="form-subtitle">Thank you for your interest in joining the Elemento Cloud Network</p>
+        </div>
+
+        <div class="success-content">
+            <div class="success-message">
+                <h3>What happens next?</h3>
+                <ol class="next-steps">
+                    <li><strong>Review Process:</strong> Our team will review your candidature within 5-7 business days</li>
+                    <li><strong>Technical Assessment:</strong> We'll evaluate your cloud services and technical capabilities</li>
+                    <li><strong>Integration Planning:</strong> If approved, we'll work together on integration requirements</li>
+                    <li><strong>Certification:</strong> Complete the Elemento provider certification process</li>
+                    <li><strong>Go Live:</strong> Launch your services on the Elemento Cloud Network</li>
+                </ol>
+            </div>
+
+            <div class="contact-info">
+                <h4>Questions?</h4>
+                <p>If you have any questions about the process, please contact our partnership team:</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> partnerships@elemento.cloud</p>
+                    <p><strong>Response Time:</strong> Within 24 hours</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="../index.html" class="btn btn-secondary">Return to Homepage</a>
+                <a href="../cloud-network.html" class="btn btn-primary">Learn More About Cloud Network</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/navbar.js" defer></script>
+    <script>
+        // Theme handling
+        function applyThemeFromStorage() {
+            try {
+                let savedTheme = localStorage.getItem('elemento-theme');
+                
+                if (!savedTheme && window.parent !== window) {
+                    try {
+                        savedTheme = window.parent.localStorage.getItem('elemento-theme');
+                    } catch (error) {
+                        console.log('Could not access parent localStorage:', error);
+                    }
+                }
+                
+                if (savedTheme) {
+                    document.body.className = savedTheme;
+                }
+            } catch (error) {
+                console.log('Could not read theme from localStorage:', error);
+            }
+        }
+
+        applyThemeFromStorage();
+
+        window.addEventListener('storage', function(event) {
+            if (event.key === 'elemento-theme' && event.newValue) {
+                document.body.className = event.newValue;
+            }
+        });
+    </script>
+
+    <style>
+        .provider-success-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            background: var(--glassmorphism-background);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glassmorphism-border);
+            border-radius: 12px;
+            box-shadow: var(--glassmorphism-shadow);
+            margin-top: 100px; /* Account for navbar */
+            margin-bottom: var(--space-2xl);
+        }
+
+        .success-icon {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .success-content {
+            margin-top: var(--space-2xl);
+        }
+
+        .success-message {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .success-message h3 {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: var(--space-lg);
+        }
+
+        .next-steps {
+            padding-left: var(--space-lg);
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .next-steps li {
+            margin-bottom: var(--space-md);
+        }
+
+        .next-steps strong {
+            color: var(--text-color);
+        }
+
+        .contact-info {
+            background: rgba(255, 166, 0, 0.05);
+            border: 1px solid rgba(255, 166, 0, 0.2);
+            border-radius: 8px;
+            padding: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-info h4 {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-details {
+            margin-top: var(--space-md);
+        }
+
+        .contact-details p {
+            margin-bottom: var(--space-xs);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .action-buttons .btn {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            .provider-success-container {
+                margin: var(--space-md);
+                padding: var(--space-xl);
+                margin-top: 100px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .action-buttons .btn {
+                min-width: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .provider-success-container {
+                margin: var(--space-sm);
+                padding: var(--space-lg);
+                margin-top: 100px;
+            }
+        }
+    </style>
+</body>
+</html> 

@@ -33,9 +33,15 @@ class Navbar {
         // 2. Blog posts on GitHub Pages: /elemento-website-25/blog-posts/post.html -> should return '../'
         // 3. Local development: /index.html -> should return './'
         // 4. Local blog posts: /blog-posts/post.html -> should return '../'
+        // 5. Forms directory: /forms/form.html -> should return '../'
         
         // Check if we're in the blog-posts directory (works for both GitHub Pages and local)
         if (pathParts.includes('blog-posts')) {
+            return '../';
+        }
+        
+        // Check if we're in the forms directory (works for both GitHub Pages and local)
+        if (pathParts.includes('forms')) {
             return '../';
         }
         
