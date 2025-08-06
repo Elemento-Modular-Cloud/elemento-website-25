@@ -51,7 +51,7 @@
 }
 
 .hero-pattern-mask {
-    mask-image: url('/assets/masks/Asset\ 7.svg');
+    mask-image: url('../../assets/masks/Asset\ 7.svg');
     mask-size: contain;
     mask-repeat: repeat;
 }
