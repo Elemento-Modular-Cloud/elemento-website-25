@@ -29,20 +29,19 @@ class Navbar {
         const pathParts = path.split('/').filter(part => part !== '');
         
         // Handle different deployment scenarios:
-        // 1. GitHub Pages: /elemento-website-25/index.html -> need to go up one level
-        // 2. Local development: /index.html -> no need to go up
-        // 3. Local subdirectory: /blog-posts/post.html -> need to go up one level
+        // 1. GitHub Pages: /elemento-website-25/index.html -> should return './'
+        // 2. Blog posts on GitHub Pages: /elemento-website-25/blog-posts/post.html -> should return '../'
+        // 3. Local development: /index.html -> should return './'
+        // 4. Local blog posts: /blog-posts/post.html -> should return '../'
         
-        // Check if we're in the blog-posts directory
+        // Check if we're in the blog-posts directory (works for both GitHub Pages and local)
         if (pathParts.includes('blog-posts')) {
             return '../';
         }
         
-        // For GitHub Pages, we need to go up one level from the repository root
-        // For local development, we need to go up one level if we're in a subdirectory
-        if (pathParts.length > 1) {
-            return '../';
-        }
+        // For GitHub Pages, if we're in the repository root (e.g., /elemento-website-25/), 
+        // we should use './' for main pages
+        // For local development, if we're at the root, use './'
         return './';
     }
 
