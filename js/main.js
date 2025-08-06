@@ -642,7 +642,13 @@ class ElementoWebsite {
         // Load the iubenda fix script immediately (no delay)
         const iubendaFixScript = document.createElement('script');
         iubendaFixScript.type = 'text/javascript';
-        iubendaFixScript.src = 'js/iubenda_fix.js';
+        
+        // Determine the correct path based on current location
+        const currentScript = document.currentScript || document.querySelector('script[src*="main.js"]');
+        const scriptSrc = currentScript ? currentScript.src : '';
+        const isInBlogPost = scriptSrc.includes('../js/main.js');
+        
+        iubendaFixScript.src = isInBlogPost ? '../js/iubenda_fix.js' : 'js/iubenda_fix.js';
         document.head.appendChild(iubendaFixScript);
     }
 
