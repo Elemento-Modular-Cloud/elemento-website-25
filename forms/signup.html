@@ -92,6 +92,8 @@
                 <label for="terms">I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a> *</label>
             </div>
 
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
             <button type="submit" class="btn btn-primary" id="submitBtn">
                 Get Started
             </button>
@@ -314,6 +316,19 @@
                 console.log('Theme updated from storage event:', event.newValue);
             }
         });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeVIKIrAAAAAKrvdUhKYimepdN8O20zi8DJBB4l"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LeVIKIrAAAAAKrvdUhKYimepdN8O20zi8DJBB4l', {
+                    action: 'contact'
+                })
+                .then(function (token) {
+                    recaptchaResponse.value = token;
+                });
+        });
+        
     </script>
 </body>
 </html>

@@ -76,12 +76,8 @@
                 <input type="checkbox" id="terms" name="terms" value="accepted" required>
                 <label for="terms">I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a> *</label>
             </div>
-
-            <!-- Enhanced security challenge -->
-            <div class="form-group security-challenge">
-                <label for="securityQuestion">Security Question: What is 5 + 5? *</label>
-                <input type="number" id="securityQuestion" name="securityQuestion" required min="10" max="10" placeholder="Enter the answer">
-            </div>
+            
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
                 Send Message
@@ -235,15 +231,6 @@
                 email.style.borderColor = '#DC3545';
                 validationErrors.push('Invalid email format');
                 log('Validation error', 'warn', { field: 'email', error: 'invalid_format', value: email.value });
-            }
-            
-            // Validate security question
-            const securityAnswer = document.getElementById('securityQuestion');
-            if (securityAnswer.value !== '10') {
-                isValid = false;
-                securityAnswer.style.borderColor = '#DC3545';
-                validationErrors.push('Incorrect security answer');
-                log('Validation error', 'warn', { field: 'securityQuestion', error: 'incorrect_answer', value: securityAnswer.value });
             }
             
             // Validate message length
@@ -478,5 +465,21 @@
         
         log('Form script setup completed', 'info');
     </script>
+
+    <!-- Recaptcha v3 -->
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld3IqIrAAAAAKiOaSy03QqwPI-O4v_FD2a35u3x"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Ld3IqIrAAAAAKiOaSy03QqwPI-O4v_FD2a35u3x', {
+                    action: 'contact'
+                })
+                .then(function (token) {
+                    recaptchaResponse.value = token;
+                });
+        });
+        
+    </script>
+
 </body>
 </html>

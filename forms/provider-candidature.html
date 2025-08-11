@@ -385,6 +385,8 @@
                 </div>
             </div>
 
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
             <button type="submit" class="btn btn-primary" id="submitBtn">
                 Submit Candidature
             </button>
@@ -526,6 +528,19 @@
                 document.body.className = event.newValue;
             }
         });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LccJKIrAAAAAGo18TJcUscfco105RqDMBkqE4z6"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LccJKIrAAAAAGo18TJcUscfco105RqDMBkqE4z6', {
+                    action: 'contact'
+                })
+                .then(function (token) {
+                    recaptchaResponse.value = token;
+                });
+        });
+        
     </script>
 </body>
 </html> 
