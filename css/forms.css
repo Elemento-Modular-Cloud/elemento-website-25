@@ -647,3 +647,10 @@ iframe {
         font-size: 1.2rem;
     }
 } 
+
+/* h-captcha centering */
+.h-captcha {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+} 

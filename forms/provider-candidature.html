@@ -385,7 +385,7 @@
                 </div>
             </div>
 
-            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+            <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
                 Submit Candidature
@@ -530,17 +530,6 @@
         });
     </script>
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LccJKIrAAAAAGo18TJcUscfco105RqDMBkqE4z6"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LccJKIrAAAAAGo18TJcUscfco105RqDMBkqE4z6', {
-                    action: 'contact'
-                })
-                .then(function (token) {
-                    recaptchaResponse.value = token;
-                });
-        });
-        
-    </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html> 
