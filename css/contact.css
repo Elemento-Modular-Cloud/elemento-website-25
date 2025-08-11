@@ -175,9 +175,11 @@
 }
 
 .status-indicator {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+    margin-right: var(--space-sm);
 }
 
 .status-indicator.online {
@@ -317,7 +319,7 @@
 @media (max-width: 480px) {
     .enhanced-form-container {
         margin: 0 -1rem;
-        border-radius: 0;
+        border-radius: var(--radius-none);
     }
     
     .form-header,

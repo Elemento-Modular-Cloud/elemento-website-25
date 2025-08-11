@@ -40,7 +40,7 @@
   z-index: 1;
   pointer-events: none;
   filter: blur(50px);
-  border-radius: 100px;
+  border-radius: var(--radius-max);
   mix-blend-mode: hard-light;
 }
 
@@ -49,7 +49,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  border-radius: 16px;
+  border-radius: var(--radius-3xl);
   filter: brightness(0) contrast(1000%);
   opacity: 0.8;
 }
@@ -117,7 +117,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  border-radius: 16px;
+  border-radius: var(--radius-3xl);
   position: relative;
   z-index: 2;
 }
@@ -158,7 +158,7 @@
   font-size: 0.95rem;
   padding: var(--space-sm) var(--space-md);
   background: rgba(var(--primary-color-rgb), 0.1);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   border: 1px solid rgba(var(--primary-color-rgb), 0.2);
   position: relative;
   z-index: 1;
@@ -192,7 +192,7 @@
 
 .team-links .btn-link {
   border: 1px solid var(--glassmorphism-border);
-  border-radius: 24px;
+  border-radius: var(--radius-3xl);
   padding: var(--space-sm) var(--space-lg);
   text-decoration: none;
   color: var(--text-color);
@@ -218,7 +218,7 @@
   width: 180px;
   height: 240px;
   margin-bottom: var(--space-xl);
-  border-radius: 16px;
+  border-radius: var(--radius-3xl);
   background: var(--glassmorphism-background);
   border: 1px solid var(--glassmorphism-border);
 }

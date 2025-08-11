@@ -103,7 +103,7 @@ body {
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glassmorphism-border);
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
     padding: var(--space-2xl);
     box-shadow: var(--glassmorphism-shadow);
     width: 100%;
@@ -155,7 +155,7 @@ body {
     width: 100%;
     padding: var(--space-md);
     border: 1px solid var(--glassmorphism-border);
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     background: var(--input-bg-color);
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
@@ -251,7 +251,7 @@ body {
     justify-content: center;
     padding: var(--space-md) var(--space-xl);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -278,7 +278,7 @@ body {
     background: #28A745;
     color: white;
     padding: var(--space-lg);
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     text-align: center;
     margin-top: var(--space-lg);
     display: none;
@@ -303,7 +303,7 @@ body {
     background: #DC3545;
     color: white;
     padding: var(--space-md);
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     text-align: center;
     margin-top: var(--space-lg);
     display: none;
@@ -346,7 +346,7 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
 }
 
 /* Ensure form container fits properly in iframe */
@@ -360,7 +360,7 @@ iframe {
 .enhanced-form-container {
     position: relative;
     width: 100%;
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glassmorphism-border);
@@ -376,7 +376,7 @@ iframe {
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glassmorphism-border);
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
     box-shadow: var(--glassmorphism-shadow);
     margin-top: 100px; /* Account for navbar */
     margin-bottom: var(--space-2xl);
@@ -425,7 +425,7 @@ iframe {
     width: 4px;
     height: 24px;
     background: var(--primary-color);
-    border-radius: 2px;
+    border-radius: var(--radius-xs);
 }
 
 /* Services Grid Layout */
@@ -439,7 +439,7 @@ iframe {
 .service-category {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glassmorphism-border);
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     padding: var(--space-lg);
     transition: all 0.3s ease;
 }
@@ -466,7 +466,7 @@ iframe {
     width: 3px;
     height: 16px;
     background: var(--primary-color);
-    border-radius: 1.5px;
+    border-radius: var(--radius-xs);
 }
 
 .checkbox-group {
@@ -479,7 +479,7 @@ iframe {
 .checkbox-group .checkbox-label {
     margin: 0;
     padding: var(--space-sm);
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glassmorphism-border);
     transition: all 0.3s ease;
@@ -514,7 +514,7 @@ iframe {
 
 .form-container.provider-form::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
 }
 
 .form-container.provider-form::-webkit-scrollbar-thumb:hover {
@@ -532,7 +532,7 @@ iframe {
 .progress-step {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     background: var(--glassmorphism-border);
     transition: all 0.3s ease;
 }

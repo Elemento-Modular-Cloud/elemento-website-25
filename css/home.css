@@ -6,7 +6,7 @@
 .hero-details {
     background: var(--glassmorphism-background);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: var(--radius-3xl);
     margin: 0 var(--space-lg);
     padding: var(--space-3xl) 0;
 }
@@ -42,7 +42,7 @@
 .feature-item {
     padding: var(--space-md);
     background: var(--glassmorphism-background);
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
     border: 1px solid var(--glassmorphism-border);
     transition: all 0.3s ease;
 }
@@ -70,7 +70,7 @@
 .hero-detail-image {
     max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: var(--radius-2xl);
     box-shadow: var(--glassmorphism-shadow);
     transition: transform 0.3s ease;
 }
@@ -187,7 +187,7 @@
     background: rgba(255, 166, 0, 0.1);
     color: var(--primary-color);
     padding: 0.25rem 0.75rem;
-    border-radius: 12px;
+    border-radius: var(--radius-2xl);
     font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid rgba(255, 166, 0, 0.2);

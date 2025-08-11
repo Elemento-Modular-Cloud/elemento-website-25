@@ -347,10 +347,14 @@
 
 .blog-grid .blog-meta::before {
     content: '';
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 4px;
     height: 4px;
     background: var(--primary-color);
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     opacity: 0.6;
 }
 

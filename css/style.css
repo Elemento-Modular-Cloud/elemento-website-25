@@ -238,7 +238,7 @@ body {
     right: 0;
     height: 2px;
     background: var(--primary-color);
-    border-radius: 1px;
+    border-radius: var(--radius-xs);
 }
 
 .nav-controls {
@@ -253,7 +253,7 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     padding: var(--space-sm);
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     transition: all 0.3s ease;
     color: var(--text-color);
 }
@@ -290,7 +290,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -346,7 +346,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     font-size: 0.95rem;
-    border-radius: 6px;
+    border-radius: var(--radius-lg);
     white-space: nowrap;
     background: transparent;
 }
@@ -375,7 +375,7 @@ body {
     width: 20px;
     height: 2px;
     background: var(--primary-color);
-    border-radius: 1px;
+    border-radius: var(--radius-xs);
 }
 
 /* Add a subtle indicator for dropdown items */
@@ -389,7 +389,7 @@ body {
     height: 2px;
     background: var(--primary-color);
     transition: width 0.3s ease;
-    border-radius: 1px;
+    border-radius: var(--radius-xs);
 }
 
 .dropdown-link:hover::before,
@@ -466,7 +466,7 @@ body {
 .hero-detail-image {
     max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: var(--radius-2xl);
     box-shadow: var(--glassmorphism-shadow);
     transition: transform 0.3s ease;
 }
@@ -639,7 +639,7 @@ body {
     width: 20px;
     height: 2px;
     background: var(--primary-color);
-    border-radius: 1px;
+    border-radius: var(--radius-xs);
 }
 
 /* Add a subtle indicator for dropdown items */
@@ -653,7 +653,7 @@ body {
     height: 2px;
     background: var(--primary-color);
     transition: width 0.3s ease;
-    border-radius: 1px;
+    border-radius: var(--radius-xs);
 }
 
 .dropdown-link:hover::before,
@@ -889,7 +889,7 @@ body {
 .hero-3d-sphere {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     box-shadow: 
         0 0 30px rgba(var(--primary-color-rgb), 0.3),
@@ -906,7 +906,7 @@ body {
     width: 30%;
     height: 30%;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     filter: blur(2px);
 }
 
@@ -1137,7 +1137,7 @@ body {
     width: 80px;
     height: 80px;
     background: var(--primary-color);
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1314,7 +1314,7 @@ body {
         left: auto;
         right: auto;
         margin: 0;
-        border-radius: 0;
+        border-radius: var(--radius-none);
         background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
         box-shadow: 
@@ -1417,7 +1417,7 @@ body {
     .mobile-dropdown .dropdown-link {
         padding: var(--space-sm) var(--space-md);
         margin: 0;
-        border-radius: 0;
+        border-radius: var(--radius-none);
         background: rgba(255, 255, 255, 0.05);
         border-left: 3px solid transparent;
     }
@@ -1800,7 +1800,7 @@ body {
 .blog-content code {
     background: var(--monospace-background-color);
     padding: var(--space-xs) var(--space-sm);
-    border-radius: 4px;
+    border-radius: var(--radius-md);
     font-family: var(--code-font);
     font-size: 0.9rem;
 }

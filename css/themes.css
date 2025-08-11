@@ -99,6 +99,23 @@
     --space-3xl: 4rem;
     --space-4xl: 6rem;
 
+    /* Border radius system - Unified for maximum consistency */
+    --radius-none: 0;
+    --radius-xs: 6px;
+    --radius-sm: 6px;
+    --radius-md: 6px;
+    --radius-lg: 6px;
+    --radius-xl: 6px;
+    --radius-2xl: 6px;
+    --radius-3xl: 6px;
+    --radius-full: 50%;
+    --radius-max: 99999px;
+    
+    /* Legacy border radius variables for backward compatibility */
+    --border-radius: var(--radius-md);
+    --card-border-radius: var(--radius-lg);
+    --button-border-radius: var(--radius-lg);
+
     /* OS Colors */
     --os-linux: #000;
     --os-ubuntu: #E95420;
@@ -145,8 +162,6 @@
     --font-heading: 'Red Hat Display', sans-serif;
     --code-font: 'Red Hat Mono', monospace;
     --font-secondary: 'Open Sans', sans-serif;
-    --card-border-radius: 6px;
-    --button-border-radius: var(--card-border-radius);
     --monospace-background-color: rgba(0, 0, 0, 0.1);
     --experimental-background: rgba(0, 0, 0, 0.1);
     --switch-background-color: var(--text-color);
@@ -564,7 +579,7 @@
 }
 
 .gradient-mask {
-    border-radius: 99999px;
+    border-radius: var(--radius-max);
     position: absolute;
     top: 50%;
     left: 50%;
