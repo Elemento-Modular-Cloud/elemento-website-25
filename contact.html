@@ -452,15 +452,17 @@
                             </div>
                         </div>
                         <div class="checkbox-label">
-                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="true" checked>
                             <label for="newsletter">Subscribe to our newsletter for updates and insights</label>
                         </div>
                         <div class="checkbox-label">
-                            <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                            <input type="checkbox" id="terms" name="terms" value="false" required>
                             <label for="terms">I agree to the <a href="#" style="color: var(--primary-color); text-decoration: none;">Terms of Service</a> and <a href="#" style="color: var(--primary-color); text-decoration: none;">Privacy Policy</a> *</label>
                         </div>
                         <br>
                         <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" style="display: flex; justify-content: center; margin: 20px 0;"></div>
+                        <input type="hidden" name="webhook" value="https://hooks.zapier.com/hooks/catch/14287335/u6abwr2/" />
+
                         <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">
                             Send Message
                         </button>
