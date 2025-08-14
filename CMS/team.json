@@ -5,7 +5,7 @@
     "division": "leadership",
     "highlight": "Ph.D. in Physics",
     "bio": "With a foundation in Nuclear and Subnuclear Physics, I've channeled my scientific rigor into creating robust, scalable cloud solutions.",
-    "photo": "assets/img/team/gfronze.webp",
+    "photo": "CMS/team/gfronze.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/gfronze/" },
       { "type": "Github", "url": "https://github.com/gabrielefronze" }
@@ -17,7 +17,7 @@
     "division": "engineering",
     "highlight": "Physicist, Ph.D. in Complex Systems for Life Sciences",
     "bio": "Curious by nature, I Love coding and data mining. | I studied Complex Systems and now I am leading the tech team to simplify the clouds.",
-    "photo": "assets/img/team/fvalle.webp",
+    "photo": "CMS/team/fvalle.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/filippo-valle/" },
       { "type": "Github", "url": "https://github.com/fvalle1" }
@@ -29,7 +29,7 @@
     "division": "creative",
     "highlight": "Musicologist & Communication Expert",
     "bio": "CMO at Elemento Cloud, bridging strategy, technology, and creativity. Musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.",
-    "photo": "assets/img/team/gsannai.webp",
+    "photo": "CMS/team/gsannai.webp",
     "links": [
       { "type": "Instagram", "url": "https://www.instagram.com/giulia_sunny_/" },
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/giulia-sannai-9b4302256/" }
@@ -41,7 +41,7 @@
     "division": "sales",
     "highlight": "Born networker",
     "bio": "Ambitious sales executive, relentless in achieving goals. Ultratrailer, passionate about history and travel, a curious explorer of cultures and flavors. A natural connector, always ready to create value in relationships.",
-    "photo": "assets/img/team/lbenzi.webp",
+    "photo": "CMS/team/lbenzi.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/luca-benzi-8a9075278/" }
     ]
@@ -52,7 +52,7 @@
     "division": "sales",
     "highlight": "",
     "bio": "I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.",
-    "photo": "assets/img/team/gcosta.webp",
+    "photo": "CMS/team/gcosta.webp",
     "links": [
       { "type": "Instagram", "url": "https://www.linkedin.com/in/gianluca-costa-eretica" }
     ]
@@ -63,7 +63,7 @@
     "division": "engineering",
     "highlight": "Web Dev student & maker",
     "bio": "Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.",
-    "photo": "assets/img/team/mmogna.webp",
+    "photo": "CMS/team/mmogna.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/martino-mogna-88573627b" },
       { "type": "Github", "url": "https://github.com/MMogna/" }
@@ -75,7 +75,7 @@
     "division": "creative",
     "highlight": "Graphic Design Degree",
     "bio": "Shaping visuals and identities always seeking the key to reinterpreting the ordinary",
-    "photo": "assets/img/team/vmorello.webp",
+    "photo": "CMS/team/vmorello.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/vincent-morello/" }
     ]
@@ -86,7 +86,7 @@
     "division": "engineering",
     "highlight": "",
     "bio": "Passionate programmer with a love for computer science and video games, driven by the desire to understand how things work",
-    "photo": "assets/img/team/andrea.jpg",
+    "photo": "CMS/team/andrea.jpg",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/andrea-riccardi-7882031a3/" },
       { "type": "Github", "url": "https://github.com/AndrewRicc" }
@@ -98,7 +98,7 @@
     "division": "engineering",
     "highlight": "",
     "bio": "Software Engineer specialized in artificial intelligence and data. Interested in data processing and acquisition, model optimization, and AI integration.",
-    "photo": "assets/img/team/ngutierrez.png",
+    "photo": "CMS/team/ngutierrez.png",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/nicola-gutierrez" },
       { "type": "Github", "url": "https://github.com/nicolagutierrez" }
@@ -110,7 +110,7 @@
     "division": "engineering",
     "highlight": "Computer Science Student",
     "bio": "R&D Developer at Elemento Cloud and Computer Science student passionate about Linux systems and virtualization technologies. Always eager to explore new tech challenges and learn as much as possible!",
-    "photo": "assets/img/team/ferrando.png",
+    "photo": "CMS/team/ferrando.png",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/filippo-ferrando-damillano-3809431a2/" },
       { "type": "Github", "url": "https://github.com/filippo-ferrando" }
@@ -122,7 +122,7 @@
     "division": "engineering",
     "highlight": "MSc Cloud Engineering",
     "bio": "MSc Cloud Engineer @PoliTO, passionate about computer science, innovation, and economics. Always seeking new challenges and growth opportunities.",
-    "photo": "assets/img/team/pbeci.png",
+    "photo": "CMS/team/pbeci.png",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/paolo-beci-919a28199/" },
       { "type": "Github", "url": "https://github.com/Paolo-Beci" }
@@ -134,7 +134,7 @@
     "division": "business",
     "highlight": "PoliTo Master's Student",
     "bio": "Engineer and computer science teacher. Passionate about mountains, travel and innovation. Always curious, always learning",
-    "photo": "assets/img/team/gborgoni.webp",
+    "photo": "CMS/team/gborgoni.webp",
     "links": [
       { "type": "Linkedin", "url": "http://www.linkedin.com/in/giulia-borgoni-590280269" }
     ]
@@ -145,7 +145,7 @@
     "division": "engineering",
     "highlight": "Computer science student",
     "bio": "I am a computer science student who loves music and low-level programming. I've been fortunate to work with Elemento since 2023.",
-    "photo": "assets/img/team/mgarro.webp",
+    "photo": "CMS/team/mgarro.webp",
     "links": [
       { "type": "Linkedin", "url": "http://www.linkedin.com/in/marco-garro-355453280" },
       { "type": "Github", "url": "https://github.com/Marco-Garro/" }
@@ -157,7 +157,7 @@
     "division": "engineering",
     "highlight": "IT Student",
     "bio": "IT Student and programmer that enjoys photography in his free time.",
-    "photo": "assets/img/team/srobaldo.webp",
+    "photo": "CMS/team/srobaldo.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/simone-robaldo-92800a27b/" },
       { "type": "Github", "url": "https://github.com/C4lopsitta" }
@@ -169,7 +169,7 @@
     "division": "engineering",
     "highlight": "",
     "bio": "Passionate about books and everything related to computer science. I particularly enjoy studying algorithms, multimedia formats, and network protocols.",
-    "photo": "assets/img/team/giorgio.jpg",
+    "photo": "CMS/team/giorgio.jpg",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/giorgiotorchio?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
     ]
@@ -180,7 +180,7 @@
     "division": "engineering",
     "highlight": "MSc Cybersecurity student",
     "bio": "MSc Cybersecurity student @PoliTO, passionate about anything that works autonomously. If I don't understand how it works, I simply take it apart. Yes, I'm curious too!",
-    "photo": "assets/img/team/lorenzo.jpg",
+    "photo": "CMS/team/lorenzo.jpg",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/cancianilorenzo/" },
       { "type": "Github", "url": "https://github.com/cancianilorenzo" }
@@ -192,7 +192,7 @@
     "division": "engineering",
     "highlight": "Master in Complex Systems Physics",
     "bio": "As a master's student in Complex Systems Physics, I have developed a deep interest in Machine Learning, where I combine analytical skills with a passion for data-driven insights.",
-    "photo": "assets/img/team/vittorio.jpg",
+    "photo": "CMS/team/vittorio.jpg",
     "links": [
       { "type": "Linkedin", "url": "http://www.linkedin.com/in/vittorio-garretto-0a82042b1" },
       { "type": "Github", "url": "https://github.com/VittorioGarretto" }

@@ -1,6 +1,6 @@
 console.log('🚀 Starting team data fetch...');
 
-fetch('team.json')
+fetch('CMS/team.json')
   .then(response => {
     console.log('📡 Response received:', response.status, response.statusText);
     if (!response.ok) {

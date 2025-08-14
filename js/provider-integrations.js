@@ -56,10 +56,10 @@ class ProviderIntegrationsHandler {
             console.log('🔍 Attempting to fetch provider-integrations.json...');
             
             // Test if the file exists first
-            const testResponse = await fetch('provider-integrations.json', { method: 'HEAD' });
+            const testResponse = await fetch('CMS/provider-integrations.json', { method: 'HEAD' });
             console.log('🔍 File exists check:', testResponse.status);
             
-            const response = await fetch('provider-integrations.json');
+            const response = await fetch('CMS/provider-integrations.json');
             console.log('📡 Response status:', response.status, response.statusText);
             
             if (!response.ok) {

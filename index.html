@@ -240,6 +240,7 @@
     <link rel="stylesheet" href="css/rocket.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/gradient-blobs/gradients-home.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/success-stories-carousel.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
     <noscript>
@@ -251,6 +252,7 @@
         <link rel="stylesheet" href="css/rocket.css">
         <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
         <link rel="stylesheet" href="css/gradient-blobs/gradients-home.css">
+        <link rel="stylesheet" href="css/success-stories-carousel.css">
     </noscript>
 
     <!-- Optimized font loading -->
@@ -369,6 +371,19 @@
                                 <span>Discover More</span>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section class="section trusted-section">
+            <div class="container carousel-container">                
+                <div id="logo-carousel" class="logo-carousel">
+                    <!-- Logos will be loaded dynamically by JavaScript -->
+                    <div class="logo-carousel-loading">
+                        <div class="loading-spinner"></div>
+                        <p>Loading trusted companies...</p>
                     </div>
                 </div>
             </div>
@@ -597,8 +612,8 @@
             </div>
         </section>
 
-        <!-- Use Cases Section -->
-        <section class="section">
+        <!-- Use Cases Section - Enhanced -->
+        <section class="section use-cases-enhanced">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Perfect For Your Use Case</h2>
@@ -607,7 +622,7 @@
                     </p>
                 </div>
                 
-                <div class="grid grid-3">
+                <div class="use-cases-grid">
                     <div class="use-case-card scroll-animate">
                         <div class="use-case-icon"><i class="hn hn-plane" style="color: var(--accent-color);"></i></div>
                         <h3>Startups & Scale-ups</h3>
@@ -616,6 +631,20 @@
                             <span class="feature-tag">Rapid deployment</span>
                             <span class="feature-tag">Cost control</span>
                             <span class="feature-tag">No lock-in</span>
+                        </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Deploy in minutes</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Scale as you grow</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Enterprise security</span>
+                            </div>
                         </div>
                     </div>
                     
@@ -628,6 +657,20 @@
                             <span class="feature-tag">Compliance ready</span>
                             <span class="feature-tag">Hybrid cloud</span>
                         </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Zero-downtime migration</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Compliance certified</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Multi-cloud support</span>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="use-case-card scroll-animate">
@@ -639,36 +682,112 @@
                             <span class="feature-tag">CI/CD integration</span>
                             <span class="feature-tag">Automated scaling</span>
                         </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-code"></i>
+                                <span>Infrastructure as Code</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Automated workflows</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Tool integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-case-card scroll-animate">
+                        <div class="use-case-icon"><i class="hn hn-graph" style="color: var(--green);"></i></div>
+                        <h3>Data Science & AI</h3>
+                        <p>Accelerate machine learning workflows with GPU-optimized infrastructure. Scale compute resources on-demand and manage data pipelines efficiently across multiple environments.</p>
+                        <div class="use-case-features">
+                            <span class="feature-tag">GPU acceleration</span>
+                            <span class="feature-tag">ML workflows</span>
+                            <span class="feature-tag">Data pipelines</span>
+                        </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-brain"></i>
+                                <span>GPU optimization</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Scalable compute</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-database"></i>
+                                <span>Data management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-case-card scroll-animate">
+                        <div class="use-case-icon"><i class="hn hn-globe" style="color: var(--yellow);"></i></div>
+                        <h3>Global Applications</h3>
+                        <p>Deploy applications globally with edge computing capabilities. Reduce latency and improve user experience with intelligent workload distribution across 235+ data centers.</p>
+                        <div class="use-case-features">
+                            <span class="feature-tag">Edge computing</span>
+                            <span class="feature-tag">Global deployment</span>
+                            <span class="feature-tag">Low latency</span>
+                        </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>Global reach</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Low latency</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-server"></i>
+                                <span>Edge nodes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-case-card scroll-animate">
+                        <div class="use-case-icon"><i class="hn hn-shield" style="color: var(--red);"></i></div>
+                        <h3>Compliance & Security</h3>
+                        <p>Meet strict regulatory requirements with compliance-ready infrastructure. Deploy in sovereign regions with end-to-end encryption and comprehensive audit trails.</p>
+                        <div class="use-case-features">
+                            <span class="feature-tag">GDPR compliant</span>
+                            <span class="feature-tag">SOC 2 certified</span>
+                            <span class="feature-tag">Audit trails</span>
+                        </div>
+                        <div class="use-case-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-lock"></i>
+                                <span>End-to-end encryption</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Compliance ready</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-search"></i>
+                                <span>Audit trails</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section class="section">
+        <!-- Success Stories Carousel Section -->
+        <section class="section success-stories-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Trusted by Innovators</h2>
+                    <h2 class="section-title">Success Stories from Our Customers</h2>
+                    <p class="section-subtitle">
+                        See how organizations are transforming their cloud infrastructure with Elemento
+                    </p>
                 </div>
                 
-                <div class="grid grid-3">
-                    <div class="card scroll-animate">
-                        <h3>Brandsider</h3>
-                        <p>"Elemento helped us modernize without cloud lock-in. Our teams access secure VMs globally, with full data control."</p>
-                        <p><strong>- Marketing Data Intelligence</strong></p>
-                    </div>
-                    
-                    <div class="card scroll-animate">
-                        <h3>Eventvm</h3>
-                        <p>"We cut over 80% of our cloud spend while gaining GPU availability. This is what public cloud should've been."</p>
-                        <p><strong>- Real-Time Video Processing</strong></p>
-                    </div>
-                    
-                    <div class="card scroll-animate">
-                        <h3>Marcopolo Spa</h3>
-                        <p>"We migrated from legacy on-prem to a fully automated cloud stack in 48 hours. No contracts. No friction."</p>
-                        <p><strong>- Manufacturing ERP</strong></p>
-                    </div>
+                <div id="success-stories-carousel">
+                    <!-- Carousel will be rendered here by JavaScript -->
                 </div>
             </div>
         </section>
@@ -791,6 +910,8 @@
     <script src="js/splash-screen.js" defer></script>
     <script src="js/navbar.js" defer></script>
     <script src="js/faq.js" defer></script>
+    <script src="js/success-stories-carousel.js" defer></script>
+    <script src="js/logo-carousel.js" defer></script>
 
     <script src="js/main.js" defer></script>    
     <script src="js/footer.js" defer></script>
