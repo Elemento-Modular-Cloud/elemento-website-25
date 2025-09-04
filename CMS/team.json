@@ -36,30 +36,30 @@
     ]
   },
   {
-    "name": "Luca Benzi",
-    "role": "Frontend CSO – Chief Sales Officer",
-    "division": "sales",
-    "highlight": "Born networker",
-    "bio": "Ambitious sales executive, relentless in achieving goals. Ultratrailer, passionate about history and travel, a curious explorer of cultures and flavors. A natural connector, always ready to create value in relationships.",
-    "photo": "CMS/team/lbenzi.webp",
-    "links": [
-      { "type": "Linkedin", "url": "https://www.linkedin.com/in/luca-benzi-8a9075278/" }
-    ]
-  },
-  {
     "name": "Gianluca Costa",
-    "role": "Backend CSO – Chief Sales Officer",
+    "role": "CSO – Chief Sales Officer",
     "division": "sales",
     "highlight": "",
     "bio": "I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.",
     "photo": "CMS/team/gcosta.webp",
     "links": [
-      { "type": "Instagram", "url": "https://www.linkedin.com/in/gianluca-costa-eretica" }
+      { "type": "Linkedin", "url": "https://www.linkedin.com/in/gianluca-costa-eretica" }
+    ]
+  },
+  {
+    "name": "Stefano Galfré",
+    "role": "CFO – Chief Financial Officer",
+    "division": "sales",
+    "highlight": "",
+    "bio": "I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.",
+    "photo": "CMS/team/sgalfre.webp",
+    "links": [
+      { "type": "Linkedin", "url": "https://www.linkedin.com/in/gianluca-costa-eretica" }
     ]
   },
   {
     "name": "Martino Mogna",
-    "role": "R&D Leader",
+    "role": "R&D Leader - #1 Employee",
     "division": "engineering",
     "highlight": "Web Dev student & maker",
     "bio": "Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.",
@@ -86,7 +86,7 @@
     "division": "engineering",
     "highlight": "",
     "bio": "Passionate programmer with a love for computer science and video games, driven by the desire to understand how things work",
-    "photo": "CMS/team/andrea.jpg",
+    "photo": "CMS/team/ariccardi.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/andrea-riccardi-7882031a3/" },
       { "type": "Github", "url": "https://github.com/AndrewRicc" }
@@ -169,7 +169,7 @@
     "division": "engineering",
     "highlight": "",
     "bio": "Passionate about books and everything related to computer science. I particularly enjoy studying algorithms, multimedia formats, and network protocols.",
-    "photo": "CMS/team/giorgio.jpg",
+    "photo": "CMS/team/gtorchio.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/giorgiotorchio?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
     ]
@@ -180,22 +180,10 @@
     "division": "engineering",
     "highlight": "MSc Cybersecurity student",
     "bio": "MSc Cybersecurity student @PoliTO, passionate about anything that works autonomously. If I don't understand how it works, I simply take it apart. Yes, I'm curious too!",
-    "photo": "CMS/team/lorenzo.jpg",
+    "photo": "CMS/team/lcanciani.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/cancianilorenzo/" },
       { "type": "Github", "url": "https://github.com/cancianilorenzo" }
-    ]
-  },
-  {
-    "name": "Vittorio Garretto",
-    "role": "Research Scientist",
-    "division": "engineering",
-    "highlight": "Master in Complex Systems Physics",
-    "bio": "As a master's student in Complex Systems Physics, I have developed a deep interest in Machine Learning, where I combine analytical skills with a passion for data-driven insights.",
-    "photo": "CMS/team/vittorio.jpg",
-    "links": [
-      { "type": "Linkedin", "url": "http://www.linkedin.com/in/vittorio-garretto-0a82042b1" },
-      { "type": "Github", "url": "https://github.com/VittorioGarretto" }
     ]
   }
 ] 
