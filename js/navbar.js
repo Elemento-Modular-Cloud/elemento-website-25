@@ -75,7 +75,7 @@ class Navbar {
                                 <ul>
                                     <li><a href="${basePath}atomos.html" class="dropdown-link ${this.getActiveClass('atomos.html')}">
                                         <img src="${basePath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
-                                        <span class="">Atomos</span>
+                                        <span class="">AtomOS</span>
                                     </a></li>
                                     <li><a href="${basePath}electros.html" class="dropdown-link ${this.getActiveClass('electros.html')}">
                                         <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
