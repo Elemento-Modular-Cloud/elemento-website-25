@@ -963,6 +963,18 @@ body {
     filter: blur(2px);
 }
 
+.quick-contact-options {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+    justify-content: center;
+    width: 100%;
+}
+
+.quick-contact-btn {
+    gap: var(--space-sm);
+}
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0px) rotate(0deg);

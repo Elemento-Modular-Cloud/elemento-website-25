@@ -17,18 +17,6 @@
     margin-bottom: var(--space-md);
 }
 
-.quick-contact-options {
-    display: flex;
-    gap: var(--space-lg);
-    margin-top: var(--space-xl);
-    justify-content: center;
-    width: 100%;
-}
-
-.quick-contact-btn {
-    gap: var(--space-sm);
-}
-
 /* Contact Information Cards */
 .contact-info-section {
     margin: var(--space-xl) 0;
