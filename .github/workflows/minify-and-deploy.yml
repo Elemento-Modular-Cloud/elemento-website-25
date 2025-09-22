@@ -43,8 +43,8 @@ jobs:
           fi
         done
         
-        # Handle gradient-blobs subdirectory
-        for file in css/gradient-blobs/*.css; do
+        # Handle planet-styles subdirectory
+        for file in css/planet-styles/*.css; do
           if [ -f "$file" ]; then
             echo "Minifying $file..."
             cleancss --compatibility "*" -o "${file%.css}.min.css" "$file"
