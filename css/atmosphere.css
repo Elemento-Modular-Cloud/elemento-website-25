@@ -240,7 +240,7 @@ body {
     bottom: 0;
     width: var(--fadeout-width);
     height: 100vh;
-    background: linear-gradient(90deg, var(--background-color) 0%, rgba(var(--background-color-rgb), .7) 65%, var(--transparent) 100%);
+    background: linear-gradient(90deg, var(--background-color) 0%, rgba(var(--background-color-rgb), .7) 45%, var(--transparent) 100%);
 }
 
 .fadeout::after {
@@ -250,7 +250,7 @@ body {
     bottom: 0;
     width: var(--fadeout-width);
     height: 100vh;
-    background: linear-gradient(-90deg, var(--background-color) 0%, rgba(var(--background-color-rgb), .7) 65%, var(--transparent) 100%);
+    background: linear-gradient(-90deg, var(--background-color) 0%, rgba(var(--background-color-rgb), .7) 45%, var(--transparent) 100%);
 }
 
 /* Orbital Objects */
