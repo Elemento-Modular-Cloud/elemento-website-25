@@ -114,6 +114,24 @@ body {
     z-index: 10;
 }
 
+.hero-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    z-index: 2000;
+    margin-left: calc(50% - 10vw);
+    transform: translateX(-100%);
+    text-align: center;
+
+}
+
+@media (orientation: portrait) {
+    .hero-container {
+        margin: auto;
+        transform: translateY(25%);
+    }
+}
+
 .carousel-container {
     max-width: 100vw;
     overflow: hidden;
@@ -813,10 +831,10 @@ body {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-4xl);
     align-items: center;
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -831,6 +849,7 @@ body {
     font-size: 1.1rem;
     color: var(--primary-color);
     font-weight: 600;
+    margin: auto;
     margin-bottom: var(--space-md);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -857,6 +876,10 @@ body {
     display: flex;
     gap: var(--space-lg);
     flex-wrap: wrap;
+}
+
+.hero-cta {
+    margin: auto;
 }
 
 /* Removed .hero-image and .hero-placeholder styles as they're no longer needed */
