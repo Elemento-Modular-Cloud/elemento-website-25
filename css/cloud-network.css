@@ -1,6 +1,10 @@
 /* Cloud Network Page Styles */
 @import url('./style.css');
 
+.floating-box-icon {
+    color: var(--red);
+}
+
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 4.svg');
     mask-size: 70rem 60%;

@@ -3,10 +3,10 @@
     --gradient-inner: var(--yellow-darker);
     --gradient-outer: #000000;
     --planet-base: #000;
-    --planet-glow-blue: rgba(255, 191, 0, 0.574);
+    --planet-glow-blue: var(--blue);
     --planet-glow-light: rgba(0, 51, 255, 0.4);
     --planet-glow-dark: rgba(255, 170, 33, 0.834);
-    --planet-surface: rgb(255, 187, 0);
+    --planet-surface: var(--accent-color);
     --planet-inset-glow: rgb(255, 137, 26);
     --planet-atmosphere: rgba(110, 0, 0, 0.674);
     

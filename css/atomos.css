@@ -1,6 +1,5 @@
 /* Atomos Page Styles */
 @import url('./style.css');
-
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 2.svg');
     mask-size: 70rem 60%;
@@ -8,6 +7,9 @@
 }
 
 /* AtomOS specific styles - only styles unique to AtomOS page */
+.floating-box-icon {
+    color: var(--blue);
+}
 
 /* AtomOS-specific responsive adjustments */
 @media (max-width: 1000px) {

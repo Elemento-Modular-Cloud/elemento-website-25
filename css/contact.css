@@ -22,6 +22,7 @@
     gap: var(--space-lg);
     margin-top: var(--space-xl);
     justify-content: center;
+    width: 100%;
 }
 
 .quick-contact-btn {
