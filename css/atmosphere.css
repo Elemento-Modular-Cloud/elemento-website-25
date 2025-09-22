@@ -61,14 +61,14 @@
 
 @media (orientation: portrait) {
     .hero-logo {
-        width: 45vw;
-        height: 45vw;
+        width: 60vw;
+        height: 60vw;
         transform: translate(-50%, -200%);
     }
 
     .hero-logo-contrast {
-        width: 45vw;
-        height: 45vw;
+        width: 60vw;
+        height: 60vw;
         transform: translate(-50%, -100%);
     }    
 }

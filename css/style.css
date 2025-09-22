@@ -119,16 +119,36 @@ body {
     margin: 0 auto;
     padding: 0 var(--space-lg);
     z-index: 2000;
-    margin-left: calc(50% - 10vw);
-    transform: translateX(-100%);
     text-align: center;
 
+}
+
+.hero-left {
+    max-width: 550px;
+    text-align: right;
+    margin-left: 50%;
+    transform: translateX(calc(-100% - 10vmax));
+}
+
+.hero-left .hero-tagline, .hero-left .hero-cta{
+    margin-right: 0;
 }
 
 @media (orientation: portrait) {
     .hero-container {
         margin: auto;
         transform: translateY(25%);
+    }
+
+    .hero-left {
+        margin-left: 0;
+        transform: translateX(0);
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-left .hero-tagline, .hero-left .hero-cta{
+        margin: auto;
     }
 }
 
@@ -827,8 +847,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .hero-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -862,6 +880,7 @@ body {
     margin-bottom: var(--space-lg);
     font-family: var(--font-heading);
     line-height: 1.2;
+    width: 100%;
 }
 
 .hero-subtitle {
@@ -2719,5 +2738,328 @@ body {
     .fallback-logos {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Floating Feature Boxes */
+.floating-features {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 40vw;
+    height: 50vh;
+    pointer-events: none;
+}
+
+@media (orientation: portrait) {
+    .floating-features {
+        display: none;
+    }
+}
+
+.floating-box {
+    position: absolute;
+    width: 280px;
+    margin: 0;
+    padding: var(--space-lg);
+    pointer-events: auto;
+    background: var(--glassmorphism-background);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--glassmorphism-shadow);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    animation: orbital-motion-1 12s ease-in-out infinite;
+}
+
+.floating-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--glassmorphism-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.floating-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-color: var(--primary-color);
+}
+
+.floating-box:hover::before {
+    opacity: 0.1;
+}
+
+.floating-box-icon {
+    font-size: 2rem;
+    margin: 0 0 var(--space-sm) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+.floating-box-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0 0 var(--space-xs) 0;
+    font-family: var(--font-heading);
+}
+
+.floating-box-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Individual box positioning and animations - focused on middle 50vh */
+.floating-box-1 {
+    top: 5%;
+    left: 5%;
+    animation: orbital-motion-1 12s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.floating-box-2 {
+    top: 70%;
+    left: 15%;
+    animation: orbital-motion-2 15s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.floating-box-3 {
+    top: 35%;
+    right: 20%;
+    animation: orbital-motion-3 18s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+/* Orbital motion keyframes - boxes orbit around their center point */
+@keyframes orbital-motion-1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(20px, -15px);
+    }
+    50% {
+        transform: translate(0px, -30px);
+    }
+    75% {
+        transform: translate(-20px, -15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes orbital-motion-2 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(15px, 10px);
+    }
+    40% {
+        transform: translate(25px, -10px);
+    }
+    60% {
+        transform: translate(10px, -25px);
+    }
+    80% {
+        transform: translate(-15px, -20px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes orbital-motion-3 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    15% {
+        transform: translate(-10px, 20px);
+    }
+    30% {
+        transform: translate(-25px, 5px);
+    }
+    45% {
+        transform: translate(-20px, -15px);
+    }
+    60% {
+        transform: translate(-5px, -25px);
+    }
+    75% {
+        transform: translate(15px, -20px);
+    }
+    90% {
+        transform: translate(25px, -5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .floating-features {
+        right: 0;
+        width: 35vw;
+        height: 45vh;
+    }
+    
+    .floating-box {
+        width: 240px;
+        padding: var(--space-md);
+    }
+    
+    .floating-box-content h3 {
+        font-size: 1rem;
+    }
+    
+    .floating-box-content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .floating-features {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+        margin-top: var(--space-2xl);
+        padding: 0 var(--space-lg);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+    }
+    
+    .floating-box {
+        position: static;
+        width: 100%;
+        max-width: 200px;
+        justify-self: center;
+        /* Reduced orbital motion for tablet */
+        animation: orbital-motion-tablet 8s ease-in-out infinite;
+    }
+    
+    .floating-box-1 {
+        animation: orbital-motion-tablet 8s ease-in-out infinite;
+        animation-delay: 0s;
+    }
+    
+    .floating-box-2 {
+        animation: orbital-motion-tablet 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+    
+    .floating-box-3 {
+        animation: orbital-motion-tablet 12s ease-in-out infinite;
+        animation-delay: 4s;
+    }
+    
+    .floating-box:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+}
+
+/* Reduced orbital motion for tablet */
+@keyframes orbital-motion-tablet {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(12px, -8px);
+    }
+    50% {
+        transform: translate(0px, -16px);
+    }
+    75% {
+        transform: translate(-12px, -8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-features {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+        margin-top: var(--space-xl);
+    }
+    
+    .floating-box {
+        max-width: 100%;
+        padding: var(--space-sm) var(--space-md);
+        /* Subtle orbital motion for mobile */
+        animation: orbital-motion-mobile 6s ease-in-out infinite;
+    }
+    
+    .floating-box-1 {
+        animation: orbital-motion-mobile 6s ease-in-out infinite;
+        animation-delay: 0s;
+    }
+    
+    .floating-box-2 {
+        animation: orbital-motion-mobile 8s ease-in-out infinite;
+        animation-delay: 1s;
+    }
+    
+    .floating-box-3 {
+        animation: orbital-motion-mobile 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+    
+    .floating-box-icon {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .floating-box-content h3 {
+        font-size: 0.95rem;
+    }
+    
+    .floating-box-content p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Subtle orbital motion for mobile */
+@keyframes orbital-motion-mobile {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(6px, -4px);
+    }
+    50% {
+        transform: translate(0px, -8px);
+    }
+    75% {
+        transform: translate(-6px, -4px);
+    }
+    100% {
+        transform: translate(0px, 0px);
     }
 }
