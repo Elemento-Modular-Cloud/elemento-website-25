@@ -18,19 +18,6 @@
     --transparent: transparent;
 }
 
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow: hidden;
-    background: radial-gradient(ellipse at center, var(--gradient-inner) 0%, var(--gradient-outer) 70%);
-    font-family: 'Arial', sans-serif;
-}
-
 .hero-logo, .hero-logo-contrast {
     position: absolute;
     top: 50%;
