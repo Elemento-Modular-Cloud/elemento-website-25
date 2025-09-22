@@ -1,19 +1,19 @@
 :root {
     --hero-logo-color: var(--green);
     --gradient-inner: var(--yellow-darker);
-    --planet-glow-blue: rgba(0, 255, 128, 0.574);
+    --planet-glow-blue: rgba(132, 0, 255, 0.574);
     --planet-glow-light: rgba(255, 183, 0, 0.4);
-    --planet-glow-dark: rgba(0, 49, 0, 0.3);
-    --planet-surface: rgb(0, 0, 0);
-    --planet-inset-glow: rgb(0, 255, 128);
-    --planet-atmosphere: rgba(0, 255, 128, 0.674);
+    --planet-glow-dark: rgba(48, 0, 49, 0.3);
+    --planet-surface: rgb(58, 0, 138);
+    --planet-inset-glow: rgb(89, 0, 255);
+    --planet-atmosphere: rgba(200, 0, 255, 0.674);
     
     /* Atmosphere colors */
-    --atmosphere-cyan: rgba(0, 255, 128, 0.3);
-    --atmosphere-purple: rgba(0, 128, 255, 0.3);
+    --atmosphere-cyan: rgba(90, 11, 61, 0.3);
+    --atmosphere-purple: rgba(117, 0, 226, 0.489);
     --atmosphere-pink: rgba(255, 170, 0, 0.602);
-    --atmosphere-orange: rgba(0, 255, 128, 0.3);
-    --atmosphere-green: rgba(0, 255, 128, 0.3);
+    --atmosphere-orange: rgba(98, 0, 255, 0.3);
+    --atmosphere-green: rgba(93, 0, 255, 0.3);
 }
 
 .hero-logo, .hero-logo-contrast {

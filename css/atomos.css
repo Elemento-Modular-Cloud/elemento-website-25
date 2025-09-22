@@ -1,6 +1,5 @@
 /* Atomos Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-atomos.css');
 
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 2.svg');

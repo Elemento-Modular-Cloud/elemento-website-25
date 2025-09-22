@@ -240,8 +240,6 @@
     <!-- Home Page Styles -->
     <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/rocket.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/gradient-blobs/gradients-home.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/success-stories-carousel.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
@@ -255,8 +253,6 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/rocket.css">
 
-        <link rel="stylesheet" href="css/gradient-blobs/gradient-blobs-base.css">
-        <link rel="stylesheet" href="css/gradient-blobs/gradients-home.css">
         <link rel="stylesheet" href="css/success-stories-carousel.css">
     </noscript>
 
@@ -408,10 +404,15 @@
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-buttons fade-in">
-                        <div class="hero-tagline">Ready. Set. Cloud.</div>
+                        <!-- Tagline -->
+                        <p class="hero-tagline">Ready. Set. Cloud.</p>
+
+                        <!-- Main Headline -->
                         <h1 class="hero-title">
                             Your Cloud.<br> Your rules. <br><span class="pixel-accent">Your freedom.</span>
                         </h1>
+
+                        <!-- Subheadline -->
                         <div class="hero-subtitle">
                             <p>
                                 Elemento lets you build and run your own cloud infrastructure.
@@ -419,9 +420,20 @@
                                 <br><span class="pixel-accent">No vendor lock-in. Full control. Fast.</span>
                             </p>
                         </div>
-                        <div class="hero-cta">
-                            <a href="signup.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Start now</a>
-                            <a href="#platform" class="btn btn-secondary"><i class="hn hn-lightbulb"></i> Discover More</a>
+
+                        <!-- CTA Buttons -->
+                        <div class="quick-contact-options hero-cta">
+                            <a href="signup.html" class="btn btn-secondary quick-contact-btn rocket-btn">
+                                <div class="rocket-container">
+                                    <i class="fas fa-rocket rocket-icon"></i>
+                                    <i class="fas rocket-flyaway"></i>
+                                </div>
+                                <span>Start now</span>
+                            </a>
+                            <a href="#platform" class="btn btn-primary quick-contact-btn">
+                                <i class="hn hn-lightbulb"></i>
+                                <span>Discover More</span>
+                            </a>
                         </div>
                     </div>
                 </div>

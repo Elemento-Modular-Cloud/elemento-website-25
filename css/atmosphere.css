@@ -10,9 +10,9 @@
     
     /* Additional color variables */
     --base-color: var(--background-color);
-    --base-color-rgba-506: rgba(var(--background-color-rgb), 0.506);
-    --base-color-rgba-189: rgba(var(--background-color-rgb), 0.189);
-    --base-color-rgba-0: rgba(var(--background-color-rgb), 0);
+    --base-color-rgba-506: rgba(var(--white-rgb), 0.506);
+    --base-color-rgba-189: rgba(var(--white-rgb), 0.189);
+    --base-color-rgba-0: rgba(var(--white-rgb), 0);
     --green-rgba-25: rgba(0, 128, 0, 0.25);
     --purple-rgba-25: rgba(128, 0, 122, 0.25);
     --transparent: transparent;
@@ -30,8 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    mask: url('./Atomos.svg');
-    -webkit-mask: url('./Atomos.svg');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-size: 100% 100%;
@@ -252,17 +250,17 @@
 }
 
 .orbit-object-center {
-    bottom: 0%;
+    bottom: 10%;
     left: calc(50% - var(--fadeout-width) * .75 / 2);
     background: conic-gradient(from 0deg, transparent, var(--atmosphere-orange), var(--atmosphere-purple) 50%, transparent 80%);
     animation: rotate-in-place-ccw calc(var(--base-time) * 1.2) linear infinite;
     animation-delay: -0.5s;
-    width: calc(var(--fadeout-width) * .75);
+    width: calc(var(--fadeout-width) * .6);
     height: calc(var(--fadeout-width) * 0.4);
 }
 
 .orbit-object-bottom-center {
-    bottom: 0%;
+    bottom: -15%;
     left: calc(50% - var(--fadeout-width) * 0.9 / 2);
     background: conic-gradient(from 0deg, transparent, var(--atmosphere-purple), var(--atmosphere-green) 50%, transparent 80%);
     animation: rotate-in-place-cw calc(var(--base-time) * 0.85) linear infinite;

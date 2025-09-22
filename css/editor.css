@@ -1,6 +1,5 @@
 /* Editor Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-editor.css');
 
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 6.svg');
