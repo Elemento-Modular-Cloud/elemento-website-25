@@ -143,6 +143,7 @@
     --subtitle-color: var(--black);
     --secondary-color: var(--blue-light);
     --background-color: var(--white);
+    --background-color-rgb: var(--white-rgb);
     --stripe-color-1: rgba(var(--white-rgb), var(--stripe-opacity-1));
     --stripe-color-2: rgba(var(--white-rgb), var(--stripe-opacity-2));
     --text-color: var(--grey-darker);
@@ -170,6 +171,10 @@
     --svg-tile-stroke: var(--grey);
     --svg-tile-color: var(--white-dark);
     --svg-text-color: var(--text-color);
+    --planet-color: var(--white);
+    --planet-halo-color: var(--accent-color);
+    --particles-color-1: rgba(var(--black-rgb), 1);
+    --particles-color-2: rgba(var(--black-rgb), 0.6);
 
     /* Glassmorphism gradient variables */
     --glassmorphism-gradient: linear-gradient(
@@ -286,6 +291,7 @@
     --subtitle-color: var(--grey-light);
     --secondary-color: var(--blue-light);
     --background-color: var(--black-rgba);
+    --background-color-rgb: var(--black-rgb);
     --stripe-color-1: rgba(var(--black-rgb), var(--stripe-opacity-1));
     --stripe-color-2: rgba(var(--black-rgb), var(--stripe-opacity-2));
     --text-color: var(--grey-light);
@@ -307,6 +313,10 @@
     --svg-tile-stroke: var(--grey-dark);
     --svg-tile-color: var(--card-bg-color);
     --svg-text-color: var(--text-color);
+    --planet-color: var(--background-color);
+    --planet-halo-color: #fff;
+    --particles-color-1: rgba(var(--white-rgb), 1);
+    --particles-color-2: rgba(var(--white-rgb), 0.6);
 
     /* Glassmorphism gradient variables for dark theme */
     --glassmorphism-gradient: linear-gradient(
@@ -424,6 +434,7 @@
     --subtitle-color: var(--white-light);
     --secondary-color: var(--blue-light);
     --background-color: var(--black-dark);
+    --background-color-rgb: var(--black-dark-rgb);
     --stripe-color-1: rgba(var(--black-dark-rgb), var(--stripe-opacity-1));
     --stripe-color-2: rgba(var(--black-dark-rgb), var(--stripe-opacity-2));
     --text-color: var(--white-light);
@@ -445,6 +456,10 @@
     --svg-tile-stroke: var(--black-light);
     --svg-tile-color: var(--card-bg-color);
     --svg-text-color: var(--text-color);
+    --planet-color: var(--background-color);
+    --planet-halo-color: #fff;
+    --particles-color-1: rgba(var(--white-light-rgb), 1);
+    --particles-color-2: rgba(var(--white-light-rgb), 0.6);
 
     /* Glassmorphism gradient variables for high contrast theme */
     --glassmorphism-gradient: linear-gradient(

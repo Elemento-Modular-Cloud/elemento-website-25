@@ -1,0 +1,37 @@
+:root {
+    --hero-logo-color: var(--accent-color);
+    --gradient-inner: var(--yellow-darker);
+    --planet-glow-blue: rgba(255, 191, 0, 0.574);
+    --planet-glow-light: rgba(255, 183, 0, 0.4);
+    --planet-glow-dark: rgba(83, 19, 0, 0.3);
+    --planet-surface: rgb(0, 0, 0);
+    --planet-inset-glow: rgb(255, 179, 26);
+    --planet-atmosphere: rgba(255, 157, 0, 0.674);
+    
+    /* Atmosphere colors */
+    --atmosphere-cyan: rgba(217, 255, 0, 0.3);
+    --atmosphere-purple: rgba(255, 145, 0, 0.3);
+    --atmosphere-pink: rgba(255, 170, 0, 0.602);
+    --atmosphere-orange: rgba(0, 132, 255, 0.3);
+    --atmosphere-green: rgba(255, 170, 0, 0.3);
+}
+
+.hero-logo, .hero-logo-contrast {
+    /* transform: translate(20%, -50%); */
+    mask: url('../../assets/logos/Electros.svg');
+    -webkit-mask: url('../../assets/logos/Electros.svg');
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mix-blend-mode: overlay;
+}
+/* 
+.hero-logo-contrast {   
+    transform: translate(20%, -50%);
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    background: radial-gradient(circle, var(--logo-color) 20%, transparent);
+} */
