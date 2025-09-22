@@ -1,6 +1,5 @@
 /* Technology Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-technology.css');
 
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 8.svg');

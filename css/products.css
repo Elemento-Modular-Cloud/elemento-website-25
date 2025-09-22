@@ -1,6 +1,5 @@
 /* Products Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-products.css');
 
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 10.svg');

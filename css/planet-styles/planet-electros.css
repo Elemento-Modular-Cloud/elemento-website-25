@@ -26,12 +26,4 @@
     -webkit-mask-size: 100% 100%;
     mask-position: center;
     -webkit-mask-position: center;
-    mix-blend-mode: overlay;
 }
-/* 
-.hero-logo-contrast {   
-    transform: translate(20%, -50%);
-    mix-blend-mode: screen;
-    opacity: 0.7;
-    background: radial-gradient(circle, var(--logo-color) 20%, transparent);
-} */

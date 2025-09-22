@@ -1,6 +1,5 @@
 /* Blog Page Styles */
 @import url('./style.css');
-@import url('./gradient-blobs/gradients-blog.css');
 
 .hero-pattern-mask {
     mask-image: url('../assets/masks/Asset\ 3.svg');
