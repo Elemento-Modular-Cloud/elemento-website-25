@@ -18,8 +18,8 @@
 
 .hero-logo, .hero-logo-contrast {
     /* transform: translate(20%, -50%); */
-    mask: url('../../assets/logos/Cloud Network.svg');
-    -webkit-mask: url('../../assets/logos/Cloud Network.svg');
+    mask: url('../../assets/logos/Atomosphere.svg');
+    -webkit-mask: url('../../assets/logos/Atomosphere.svg');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-size: 100% 100%;
