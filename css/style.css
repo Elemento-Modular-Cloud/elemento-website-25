@@ -125,13 +125,13 @@ body {
 
 .hero-left {
     max-width: 550px;
-    text-align: right;
+    text-align: left;
     margin-left: 50%;
     transform: translateX(calc(-100% - 10vmax));
 }
 
 .hero-left .hero-tagline, .hero-left .hero-cta{
-    margin-right: 0;
+    margin-left: 0;
 }
 
 @media (orientation: portrait) {
