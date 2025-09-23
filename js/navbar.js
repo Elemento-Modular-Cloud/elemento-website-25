@@ -82,8 +82,8 @@ class Navbar {
                                         <span class="">Electros</span>
                                     </a></li>
                                     <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
-                                        <img src="${basePath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
-                                        <span class="">Cloud Network</span>
+                                        <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
+                                        <span class="">Atomosphere</span>
                                     </a></li>
                                 </ul>
                             </div>
@@ -107,8 +107,8 @@ class Navbar {
                                     <span class="">Electros</span>
                                 </a></li>
                                 <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
-                                    <img src="${basePath}assets/logos/Cloud Network.svg" alt="Cloud Network icon" class="product-icon" width="20" height="20">
-                                    <span class="">Cloud Network</span>
+                                    <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
+                                    <span class="">Atomosphere</span>
                                 </a></li>
                             </ul>
                         </div>

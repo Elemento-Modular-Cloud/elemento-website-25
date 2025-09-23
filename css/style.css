@@ -636,7 +636,7 @@ body {
 
 .hero-product-icon.cloud-net {
     background-color: var(--cloud-net-color);
-    --icon-mask-url: url('../assets/logos/Cloud Network.svg');
+    --icon-mask-url: url('../assets/logos/Atomosphere.svg');
 }
 
 /* Hero title group - keeps icon and title together */
