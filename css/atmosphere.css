@@ -200,7 +200,7 @@
     position: absolute;
     bottom: 70%;
     left: 50%;
-    width: 2px;
+    width: 10px;
     height: 300px;
     transform: translateX(-50%);
     background: var(--base-color);
