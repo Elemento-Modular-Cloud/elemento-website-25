@@ -138,7 +138,8 @@ body {
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
+    margin-bottom: var(--space-lg);
 }
 
 .form-group label {
@@ -370,9 +371,10 @@ iframe {
 
 /* Provider Form Specific Styles */
 .provider-form-container {
-    max-width: 1200px;
+    max-width: 1400px;
+    width: 95%;
     margin: 0 auto;
-    padding: var(--space-2xl);
+    padding: var(--space-3xl);
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glassmorphism-border);
@@ -398,9 +400,19 @@ iframe {
 }
 
 .form-section {
-    margin-bottom: var(--space-3xl);
-    padding-bottom: var(--space-2xl);
+    margin-bottom: var(--space-4xl);
+    padding: var(--space-2xl);
+    padding-bottom: var(--space-3xl);
     border-bottom: 1px solid var(--glassmorphism-border);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+
+.form-section:hover {
+    background: rgba(255, 255, 255, 0.02);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .form-section:last-child {
@@ -431,9 +443,9 @@ iframe {
 /* Services Grid Layout */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-xl);
-    margin-top: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-xl);
 }
 
 .service-category {
@@ -471,9 +483,9 @@ iframe {
 
 .checkbox-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-sm);
-    margin-top: var(--space-sm);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
 }
 
 .checkbox-group .checkbox-label {
@@ -582,15 +594,48 @@ iframe {
 }
 
 /* Responsive adjustments for provider form */
-@media (max-width: 1200px) {
+@media (min-width: 1600px) {
     .provider-form-container {
-        max-width: 100%;
+        max-width: 1600px;
+        padding: var(--space-4xl);
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: var(--space-3xl);
+    }
+    
+    .form-section {
+        padding: var(--space-3xl);
+    }
+}
+
+@media (max-width: 1400px) {
+    .provider-form-container {
+        max-width: 95%;
         margin: var(--space-lg);
         margin-top: 100px;
     }
     
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 1200px) {
+    .provider-form-container {
+        max-width: 100%;
+        margin: var(--space-lg);
+        margin-top: 100px;
+        padding: var(--space-2xl);
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .form-section {
+        padding: var(--space-xl);
     }
 }
 
