@@ -399,6 +399,7 @@
     </div>
 
     <script src="../js/navbar.js" defer></script>
+    <script src="../js/themes.js" defer></script>
     <script>
         // Character count functionality
         function updateCharacterCount(textareaId, countId, maxLength) {
@@ -501,11 +502,27 @@
             setTimeout(() => errorDiv.classList.remove('show'), 5000);
         }
 
-        // Theme handling
+        // Listen for theme changes from parent
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'theme-change') {
+                document.body.className = event.data.theme;
+            }
+        });
+
+        // Request current theme from parent on load
+        if (window.parent !== window) {
+            window.parent.postMessage({
+                type: 'request-theme'
+            }, '*');
+        }
+
+        // Function to apply theme from localStorage
         function applyThemeFromStorage() {
             try {
+                // First try to get theme from current window's localStorage
                 let savedTheme = localStorage.getItem('elemento-theme');
                 
+                // If not found and we're in an iframe, try parent window
                 if (!savedTheme && window.parent !== window) {
                     try {
                         savedTheme = window.parent.localStorage.getItem('elemento-theme');
@@ -516,17 +533,21 @@
                 
                 if (savedTheme) {
                     document.body.className = savedTheme;
+                    console.log('Applied theme from localStorage:', savedTheme);
                 }
             } catch (error) {
                 console.log('Could not read theme from localStorage:', error);
             }
         }
 
+        // Apply theme on page load
         applyThemeFromStorage();
 
+        // Listen for localStorage changes from other tabs/windows
         window.addEventListener('storage', function(event) {
             if (event.key === 'elemento-theme' && event.newValue) {
                 document.body.className = event.newValue;
+                console.log('Theme updated from storage event:', event.newValue);
             }
         });
     </script>
