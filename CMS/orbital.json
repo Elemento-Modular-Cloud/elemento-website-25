@@ -1,0 +1,179 @@
+[
+  {
+    "name": "Orbital Starter",
+    "description": "Entry-level server configuration for small deployments and development environments",
+    "specs": {
+      "cpu": "Intel Xeon E-2236 (6 cores, 3.4 GHz)",
+      "ram": "32 GB DDR4 ECC",
+      "storage": "2x 480 GB NVMe SSD (RAID 1)",
+      "network": "2x 1 Gbps Ethernet",
+      "gpu": "None"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "Basic virtualization capabilities",
+      "Remote management via Electros",
+      "Standard warranty and support"
+    ],
+    "use_cases": [
+      "Development environments",
+      "Small business applications",
+      "Testing and staging",
+      "Lightweight workloads"
+    ],
+    "pricing": {
+      "monthly": "€299",
+      "setup": "€199"
+    },
+    "availability": "In Stock"
+  },
+  {
+    "name": "Orbital Professional",
+    "description": "Mid-range server configuration for production workloads and medium-scale deployments",
+    "specs": {
+      "cpu": "Intel Xeon Gold 5218R (20 cores, 2.1 GHz)",
+      "ram": "128 GB DDR4 ECC",
+      "storage": "4x 960 GB NVMe SSD (RAID 10)",
+      "network": "2x 10 Gbps Ethernet",
+      "gpu": "NVIDIA T4 (16 GB VRAM)"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "GPU passthrough support",
+      "High-performance virtualization",
+      "Advanced clustering capabilities",
+      "24/7 monitoring and support"
+    ],
+    "use_cases": [
+      "Production applications",
+      "AI/ML workloads",
+      "Database servers",
+      "High-availability systems"
+    ],
+    "pricing": {
+      "monthly": "€799",
+      "setup": "€399"
+    },
+    "availability": "In Stock"
+  },
+  {
+    "name": "Orbital Enterprise",
+    "description": "High-performance server configuration for enterprise workloads and large-scale deployments",
+    "specs": {
+      "cpu": "Intel Xeon Platinum 8380 (40 cores, 2.3 GHz)",
+      "ram": "256 GB DDR4 ECC",
+      "storage": "8x 1.92 TB NVMe SSD (RAID 10)",
+      "network": "4x 25 Gbps Ethernet",
+      "gpu": "2x NVIDIA A100 (40 GB VRAM each)"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "Dual GPU configuration",
+      "Maximum virtualization density",
+      "Enterprise clustering and failover",
+      "Dedicated support team",
+      "Custom configuration options"
+    ],
+    "use_cases": [
+      "Enterprise applications",
+      "High-performance computing",
+      "Large-scale AI/ML training",
+      "Mission-critical systems",
+      "Multi-tenant environments"
+    ],
+    "pricing": {
+      "monthly": "€1,999",
+      "setup": "€999"
+    },
+    "availability": "In Stock"
+  },
+  {
+    "name": "Orbital Edge",
+    "description": "Compact server configuration optimized for edge computing and remote locations",
+    "specs": {
+      "cpu": "Intel Xeon E-2288G (8 cores, 3.7 GHz)",
+      "ram": "64 GB DDR4 ECC",
+      "storage": "2x 1 TB NVMe SSD (RAID 1)",
+      "network": "2x 1 Gbps Ethernet + WiFi 6",
+      "gpu": "Intel UHD Graphics 630"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "Edge-optimized form factor",
+      "Low power consumption",
+      "Remote management capabilities",
+      "Ruggedized design"
+    ],
+    "use_cases": [
+      "Edge computing",
+      "Remote office deployments",
+      "IoT data processing",
+      "Branch office infrastructure"
+    ],
+    "pricing": {
+      "monthly": "€499",
+      "setup": "€299"
+    },
+    "availability": "In Stock"
+  },
+  {
+    "name": "Orbital Storage",
+    "description": "High-capacity server configuration optimized for storage and backup workloads",
+    "specs": {
+      "cpu": "Intel Xeon Silver 4314 (16 cores, 2.4 GHz)",
+      "ram": "64 GB DDR4 ECC",
+      "storage": "12x 4 TB SATA SSD (RAID 6)",
+      "network": "2x 10 Gbps Ethernet",
+      "gpu": "None"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "Massive storage capacity",
+      "Data redundancy and protection",
+      "Backup and archival capabilities",
+      "Storage optimization features"
+    ],
+    "use_cases": [
+      "Data archival",
+      "Backup systems",
+      "File servers",
+      "Media storage",
+      "Compliance storage"
+    ],
+    "pricing": {
+      "monthly": "€699",
+      "setup": "€399"
+    },
+    "availability": "In Stock"
+  },
+  {
+    "name": "Orbital Custom",
+    "description": "Fully customizable server configuration tailored to your specific requirements",
+    "specs": {
+      "cpu": "Custom selection",
+      "ram": "Custom selection",
+      "storage": "Custom selection",
+      "network": "Custom selection",
+      "gpu": "Custom selection"
+    },
+    "features": [
+      "AtomOS included with perpetual licensing",
+      "Fully customizable hardware",
+      "Expert consultation included",
+      "Custom integration support",
+      "Flexible deployment options"
+    ],
+    "use_cases": [
+      "Specialized workloads",
+      "Unique requirements",
+      "Legacy system integration",
+      "Performance optimization",
+      "Compliance requirements"
+    ],
+    "pricing": {
+      "monthly": "Contact us",
+      "setup": "Contact us"
+    },
+    "availability": "Custom Quote"
+  }
+]

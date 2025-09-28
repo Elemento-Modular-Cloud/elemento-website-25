@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="dellGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0076CE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A651;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dell Technologies Logo -->
+  <rect x="10" y="15" width="8" height="30" fill="url(#dellGradient)" rx="2"/>
+  <rect x="22" y="15" width="8" height="30" fill="url(#dellGradient)" rx="2"/>
+  <rect x="34" y="15" width="8" height="30" fill="url(#dellGradient)" rx="2"/>
+  
+  <!-- Text -->
+  <text x="50" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Dell</text>
+  <text x="50" y="40" font-family="Arial, sans-serif" font-size="12" fill="#666">Technologies</text>
+</svg>
