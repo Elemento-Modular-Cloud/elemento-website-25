@@ -2773,7 +2773,7 @@ body {
 
 .floating-box {
     position: absolute;
-    width: 280px;
+    width: 15vw;
     margin: 0;
     padding: var(--space-lg);
     pointer-events: auto;
@@ -2843,7 +2843,7 @@ body {
 
 /* Individual box positioning and animations - focused on middle 50vh */
 .floating-box-1 {
-    top: 5%;
+    top: 0%;
     left: 5%;
     animation: orbital-motion-1 12s ease-in-out infinite;
     animation-delay: 0s;
@@ -2858,7 +2858,7 @@ body {
 
 .floating-box-3 {
     top: 35%;
-    right: 20%;
+    left: 34%;
     animation: orbital-motion-3 18s ease-in-out infinite;
     animation-delay: 6s;
 }

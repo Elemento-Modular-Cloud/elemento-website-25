@@ -20,7 +20,7 @@ class Navbar {
 
     // Add method to check if current page is a product page
     isProductPage() {
-        const productPages = ['atomos.html', 'electros.html', 'cloud-network.html', 'products.html'];
+        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'products.html'];
         return productPages.includes(this.currentPage);
     }
 
@@ -81,7 +81,7 @@ class Navbar {
                                         <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                         <span class="">Electros</span>
                                     </a></li>
-                                    <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                    <li><a href="${basePath}atomosphere.html" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
                                         <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomosphere</span>
                                     </a></li>
@@ -106,7 +106,7 @@ class Navbar {
                                     <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                     <span class="">Electros</span>
                                 </a></li>
-                                <li><a href="${basePath}cloud-network.html" class="dropdown-link ${this.getActiveClass('cloud-network.html')}">
+                                <li><a href="${basePath}atomosphere.html" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
                                     <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomosphere</span>
                                 </a></li>
