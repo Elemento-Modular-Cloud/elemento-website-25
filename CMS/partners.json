@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Dell Technologies",
+    "description": "Global technology leader providing infrastructure solutions for enterprise environments",
+    "logo": "assets/logos/dell-technologies.svg",
+    "website": "https://www.dell.com",
+    "partnership_type": "Strategic Partner",
+    "description_short": "Enterprise infrastructure solutions"
+  },
+  {
+    "name": "Data-Forge",
+    "description": "Specialized data management and analytics solutions provider",
+    "logo": "assets/logos/data-forge.svg", 
+    "website": "https://www.data-forge.com",
+    "partnership_type": "Technology Partner",
+    "description_short": "Data management and analytics"
+  }
+]

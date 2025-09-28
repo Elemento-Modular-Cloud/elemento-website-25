@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Elemento Cloud Platform</title>
-    <meta name="description" content="Explore Elemento's comprehensive cloud platform products including AtomOS hypervisor, Electros multicloud dashboard, and Atomosphere API proxy for unified infrastructure management.">
+    <title>Orbital — Hardware Servers with AtomOS | Elemento Cloud</title>
+    <meta name="description" content="Orbital servers are pre-configured hardware solutions with AtomOS included. Choose from various configurations for development, production, and enterprise workloads.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
@@ -19,7 +19,7 @@
     <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
     
     <!-- Preload specific stylesheets -->
-    <link rel="preload" href="css/products.css" as="style" crossorigin>
+    <link rel="preload" href="css/orbital.css" as="style" crossorigin>
     
     <!-- Preload critical fonts -->
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -244,6 +244,11 @@
             margin: auto;
             border-radius: 0 0 10px 10px;
             background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.25);
             padding: 0;
             z-index: 1001;
             opacity: 0;
@@ -401,20 +406,20 @@
     <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/atmosphere.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/planet-styles/planet-products.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/planet-styles/planet-orbital.css" media="print" onload="this.media='all'">
     
-    <!-- Products Page Styles -->
-    <link rel="stylesheet" href="css/products.css" media="print" onload="this.media='all'">
+    <!-- Orbital Page Styles -->
+    <link rel="stylesheet" href="css/orbital.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
     <noscript>
         <link rel="stylesheet" href="css/themes.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/atmosphere.css">
-        <link rel="stylesheet" href="css/planet-styles/planet-products.css">
+        <link rel="stylesheet" href="css/planet-styles/planet-orbital.css">
         
-        <!-- Products Page Styles -->
-        <link rel="stylesheet" href="css/products.css">
+        <!-- Orbital Page Styles -->
+        <link rel="stylesheet" href="css/orbital.css">
     </noscript>
 
     <!-- Optimized font loading -->
@@ -554,339 +559,393 @@
                 <div class="particle particle-49"></div>
                 <div class="particle particle-50"></div>
             </div>
+    
+            <div class="hero-logo-contrast"></div>
+            <div class="hero-logo"></div>
         </div>
         
-        <div class="hero-container">
+        <div class="hero-container hero-left">
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
-                    <div class="hero-tagline">Build. Deploy. Scale.</div>
-                    <h1 class="hero-title">Meet the <span class="emphasis-pixel">Elemento</span> Products</h1>
+                    <div class="hero-tagline">On-Premise. Complete. Secure.</div>
+                    <h1 class="hero-title">
+                        Orbital:<br>
+                        <span class="pixel-accent">Pre-Configured</span> On-Premise Servers
+                    </h1>
                     <div class="hero-subtitle">
-                        <p>A complete <span class="emphasis-pixel">vendor-neutral</span> platform that transforms any infrastructure into a <span class="emphasis-pixel">scalable, production-ready</span> cloud.</p>
+                        <p>Orbital servers come with <span class="emphasis-pixel">AtomOS included</span> with perpetual licensing on all our servers. Deploy exclusively on-premise with various configurations designed for development, production, and enterprise workloads.</p>
                     </div>
+                    <div class="hero-cta">
+                        <a href="#configurations" class="btn btn-primary"><i class="fas fa-server"></i> View Configurations</a>
+                        <a href="#pricing" class="btn btn-secondary"><i class="hn hn-tag"></i> View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Feature Boxes -->
+        <div class="floating-features">
+            <div class="floating-box floating-box-1">
+                <div class="floating-box-icon">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                </div>
+                <div class="floating-box-content">
+                    <h3>AtomOS Included</h3>
+                    <p>Every Orbital server comes with AtomOS pre-installed and perpetual licensing included</p>
+                </div>
+            </div>
+            
+            <div class="floating-box floating-box-2">
+                <div class="floating-box-icon">
+                    <i class="hn hn hn-home"></i>
+                </div>
+                <div class="floating-box-content">
+                    <h3>Perfect for On-Premise</h3>
+                    <p>Deploy exclusively in your own data center or colocation facility for complete control and data sovereignty</p>
+                </div>
+            </div>
+            
+            <div class="floating-box floating-box-3">
+                <div class="floating-box-icon">
+                    <i class="hn hn-download-alt-solid"></i>
+                </div>
+                <div class="floating-box-content">
+                    <h3>Full Support</h3>
+                    <p>Complete hardware and software support with remote management via Electros</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Overview Section -->
-    <section class="section" style="padding-top: 120px;">
+    <!-- Page Header -->
+    <section class="section section-header-padded">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">One Platform, Four Core Products</h2>
-                <p class="section-subtitle">Build your cloud with vendor-neutral, high-performance components that work seamlessly together.</p>
+                <h2 class="section-title">The <span class="highlight-pixel">Complete On-Premise Solution</span> for Your Cloud Factory</h2>
+            </div>
+        </div>
+        <div class="container">            
+            <div class="grid grid-2 grid-centered">
+                <div class="fade-in">
+                    <p>
+                        <span class="pixel-brand">Orbital</span> servers are pre-configured hardware solutions designed exclusively for <span class="pixel-word">on-premise deployment</span>. Each server comes with <span class="pixel-word">AtomOS pre-installed</span> and <span class="pixel-word">perpetual licensing included</span>, eliminating the complexity of hardware procurement and software installation.
+                    </p>
+                    <br>
+                    <p>
+                        Whether you need a <span class="pixel-word">development server</span>, <span class="pixel-word">production cluster</span>, or <span class="pixel-word">enterprise deployment</span>, Orbital provides the perfect on-premise foundation for your cloud factory infrastructure with complete data sovereignty and control.
+                    </p>
+                    
+                    <div class="feature-list-container">
+                        <ul class="feature-list">
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                AtomOS included with perpetual licensing
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Pre-configured and ready to deploy
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Multiple configurations for different workloads
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Full hardware and software support
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Remote management via Electros
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                On-premise deployment only
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Complete data sovereignty
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#configurations" class="btn btn-primary">Explore Configurations</a>
+                </div>
+                
+                <div class="content-image">
+                    <img src="./assets/img/Orbital - Hero - 1.webp" alt="Orbital Server Hardware" class="hero-detail-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="hn hn-technology"></i>
+                    </div>
+                    <h3>6</h3>
+                    <p>Server Configurations</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="hn hn-seedlings-solid"></i>
+                    </div>
+                    <h3>100%</h3>
+                    <p>Energy Efficient</p>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="hn hn-refresh-solid"></i>
+                    </div>
+                    <h3>Perpetual</h3>
+                    <p>AtomOS Included</p>
+                </div>
+
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="hn hn-box-usd"></i>
+                    </div>
+                    <h3>&#8734;</h3>
+                    <p>Configurable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Configurations Section -->
+    <section class="section features" id="configurations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Orbital Server Configurations</h2>
+                <p class="section-subtitle">Choose the perfect hardware configuration for your workload requirements</p>
+            </div>
+            
+            <div id="orbital-configurations" class="grid grid-2">
+                <!-- Configurations will be loaded dynamically from orbital.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Orbital Servers?</h2>
+                <p class="section-subtitle">Complete hardware and software solutions designed for cloud factory operations</p>
             </div>
             
             <div class="grid grid-2">
-                <div class="card fade-in">
-                    <img src="./assets/logos/Atomos.svg" alt="AtomOS" class="product-icon-large" width="64" height="64">
-                    <h3>AtomOS</h3>
-                    <p>Linux hypervisor for bare-metal and on-premise clouds. RHEL-compatible, GPU-ready, with autonomous clustering via C4 protocol.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <a href="atomos.html" class="btn btn-primary">Learn More</a>
+                <div class="fade-in">
+                    <h3><span class="highlight-pixel">AtomOS Included</span></h3>
+                    <p>Every Orbital server comes with AtomOS pre-installed and perpetual licensing included. No additional software costs or complex installation procedures.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Software Benefits:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                AtomOS pre-installed and configured
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Perpetual licensing included
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Ready for immediate deployment
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Full software support included
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <div class="card fade-in">
-                    <img src="./assets/logos/Electros.svg" alt="Electros" class="product-icon-large" width="64" height="64">
-                    <h3>Electros</h3>
-                    <p>Universal multicloud dashboard and CLI for managing VMs across public clouds and on-prem infrastructure from a single interface.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <a href="electros.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <img src="./assets/logos/Atmosfera.svg" alt="Atomosphere" class="product-icon-large" width="64" height="64">
-                    <h3>Atomosphere</h3>
-                    <p>Meson API proxy that unifies 10+ cloud providers into a single programmable interface while preserving your existing accounts.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <a href="atomosphere.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <img src="./assets/logos/Orbital.svg" alt="Orbital" class="product-icon-large" width="64" height="64">
-                    <h3>Orbital</h3>
-                    <p>Pre-configured hardware servers with AtomOS included and perpetual licensing. Choose from various configurations for development, production, and enterprise workloads.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <a href="orbital.html" class="btn btn-primary">Learn More</a>
+                <div class="fade-in">
+                    <h3><span class="highlight-pixel">Hardware Optimized</span></h3>
+                    <p>Each Orbital configuration is carefully selected and tested for optimal performance with AtomOS and virtualization workloads.</p>
+                    
+                    <div style="margin: var(--space-lg) 0;">
+                        <h4>Hardware Benefits:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Enterprise-grade components
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Tested and validated configurations
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Optimized for virtualization
+                            </li>
+                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+                                <span style="color: var(--primary-color);">✓</span>
+                                Comprehensive warranty coverage
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
+    <!-- Partners Section -->
+    <section class="section partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by <span class="highlight-pixel">Industry Leaders</span></h2>
+                <p class="section-subtitle">Our strategic partnerships ensure enterprise-grade solutions and support</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card fade-in">
+                    <div class="partner-logo-container">
+                        <img src="assets/logos/dell-technologies.svg" alt="Dell Technologies" class="partner-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="partner-logo-fallback" style="display: none;">
+                            <span class="partner-name-fallback">Dell Technologies</span>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Dell Technologies</h3>
+                        <p class="partner-type">Strategic Partner</p>
+                        <p class="partner-description">Global technology leader providing infrastructure solutions for enterprise environments</p>
+                    </div>
+                </div>
+                
+                <div class="partner-card fade-in">
+                    <div class="partner-logo-container">
+                        <img src="assets/logos/data-forge.svg" alt="Data-Forge" class="partner-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="partner-logo-fallback" style="display: none;">
+                            <span class="partner-name-fallback">Data-Forge</span>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Data-Forge</h3>
+                        <p class="partner-type">Technology Partner</p>
+                        <p class="partner-description">Specialized data management and analytics solutions provider</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Options Section -->
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Four Ways to Deploy Your Cloud</h2>
-                <p class="section-subtitle">Choose the deployment model that fits your infrastructure needs and preferences</p>
+                <h2 class="section-title">On-Premise Deployment</h2>
+                <p class="section-subtitle">Orbital servers are designed for on-premise infrastructure deployment</p>
             </div>
             
             <div class="grid grid-2">
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-building" style="color: var(--blue);"></i></div>
-                    <h3>1. Private AtomOS</h3>
-                    <p>Deploy AtomOS on your own private servers. Full control over hardware, networking, and security with autonomous clustering via C4 protocol.</p>
+                    <h3>Your Data Center</h3>
+                    <p>Deploy Orbital servers directly in your own data center for maximum control, security, and compliance requirements.</p>
                     <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Self-Hosted</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Full Control</span>
+                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Full Control</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Compliance</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Security</span>
                     </div>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-server" style="color: var(--green);"></i></div>
-                    <h3>2. Colocation AtomOS</h3>
-                    <p>Deploy AtomOS on bare-metal cloud servers from providers like Hetzner, OVH, or Scaleway. Enterprise-grade virtualization with dedicated hardware.</p>
+                    <h3>Colocation Facilities</h3>
+                    <p>Deploy Orbital servers in professional colocation facilities with redundant power, cooling, and connectivity while maintaining on-premise control.</p>
                     <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Bare Metal</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Dedicated</span>
+                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Professional</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Redundant</span>
+                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">On-Premise</span>
                     </div>
                 </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-cloud" style="color: var(--purple);"></i></div>
-                    <h3>3. Shared AtomOS</h3>
-                    <p>Use VMs from Elemento's shared AtomOS infrastructure. Managed by Elemento with enterprise features and support included.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Managed</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Shared</span>
+            </div>
+            
+            <div class="on-premise-benefits" style="margin-top: var(--space-3xl); padding: var(--space-xl); background: linear-gradient(135deg, rgba(255, 166, 0, 0.05) 0%, rgba(0, 123, 255, 0.05) 100%); border-radius: var(--radius-lg); border: 1px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="text-align: center; margin-bottom: var(--space-lg); color: var(--text-color);">Why On-Premise Deployment?</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h4><span class="highlight-pixel">Data Sovereignty</span></h4>
+                        <p>Keep your data within your own infrastructure, ensuring complete control over sensitive information and compliance with data protection regulations.</p>
                     </div>
-                </div>
-                
-                <div class="card fade-in">
-                    <div class="card-icon"><i class="fas fa-globe" style="color: var(--orange);"></i></div>
-                    <h3>4. Native CSP VMs</h3>
-                    <p>Deploy native VMs (EC2-like) directly on cloud providers through Atmosphere. Access AWS, Azure, GCP with unified management.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: var(--black); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Native</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Multi-Cloud</span>
+                    <div>
+                        <h4><span class="highlight-pixel">Performance & Latency</span></h4>
+                        <p>Eliminate network latency and bandwidth limitations by running your workloads directly on your premises with local data access.</p>
+                    </div>
+                    <div>
+                        <h4><span class="highlight-pixel">Security & Compliance</span></h4>
+                        <p>Maintain complete control over your security posture and meet strict compliance requirements for regulated industries.</p>
+                    </div>
+                    <div>
+                        <h4><span class="highlight-pixel">Cost Predictability</span></h4>
+                        <p>Fixed hardware costs with no variable cloud pricing, making it easier to budget and plan for long-term infrastructure investments.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Deployment Comparison Section -->
+    <!-- FAQ Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Deployment Model Comparison</h2>
-                <p class="section-subtitle">Choose the right deployment model for your infrastructure requirements</p>
-            </div>
-            
-            <div class="comparison-table fade-in">
-                <div class="table-container comparison-table-container">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr class="comparison-table-header">
-                                <th>Feature</th>
-                                <th>Private AtomOS</th>
-                                <th>Colocation AtomOS</th>
-                                <th>Shared AtomOS</th>
-                                <th>Native CSP VMs</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">Hardware Control</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Dedicated</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Shared</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Virtual</td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">Management Overhead</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> High</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Medium</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Low</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Low</td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">Cost Control</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Maximum</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> High</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-check" style="color: var(--green);"></i> High</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Variable</td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">Security & Compliance</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full Control</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> High</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Managed</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Provider</td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">Performance</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Maximum</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> High</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Shared</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Variable</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Platform Benefits Section-->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Elemento?</h2>
-                <p class="section-subtitle">Vendor-neutral, cost-effective, and self-hostable cloud platform</p>
-            </div>
-            
-            <div class="grid grid-2">
-                <div class="fade-in">
-                    <h3><span class="highlight-pixel">Vendor Neutral & Flexible</span></h3>
-                    <p>No vendor lock-in. Use your existing cloud accounts, infrastructure, and tools. Elemento works with your current setup, not against it.</p>
-                    
-                    <div style="margin: var(--space-lg) 0;">
-                        <h4>Freedom Benefits:</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Keep existing CSP accounts and billing
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                No markup or middleman fees
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Self-hostable on your infrastructure
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Open standards and upstream Linux
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-top: var(--space-lg);">
-                        <p><strong>Proven at scale:</strong> powering <strong>10k+</strong> VMs and <strong>235+</strong> global data centers worldwide.</p>
-                    </div>
-                </div>
-                
-                <div class="fade-in">
-                    <h3><span class="highlight-pixel">Cost Effective</span></h3>
-                    <p>Server-based pricing instead of per-CPU or per-VM licensing. Encourages efficient resource utilization and reduces total cost of ownership.</p>
-                    
-                    <div style="margin: var(--space-lg) 0;">
-                        <h4>Cost Benefits:</h4>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Predictable server-based licensing
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Real-time cost comparison across providers
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                Green computing incentives
-                            </li>
-                            <li style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm);">
-                                <span style="color: var(--primary-color);">✓</span>
-                                No hidden fees or vendor lock-in costs
-                            </li>
-                        </ul>
-                    </div>
-                
-                <div style="margin-top: var(--space-lg);">
-                    <p><strong>Impact metrics:</strong> <strong>25% average cost savings</strong> and <strong>30% lower energy consumption</strong> for multi-cloud deployments.</p>
-                </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="section features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Perfect For Modern Cloud Deployments</h2>
-                <p class="section-subtitle">From startups to enterprises, Elemento scales with your needs</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about Orbital servers and deployment</p>
             </div>
             
             <div class="grid grid-2">
                 <div class="card fade-in">
-                    <h3>Enterprise Private Clouds</h3>
-                    <p>Deploy AtomOS on private infrastructure for maximum control, security, and compliance. Perfect for regulated industries and data sovereignty requirements.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Private</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Compliance</span>
-                    </div>
+                    <h4>What's included with Orbital servers?</h4>
+                    <p>Each Orbital server includes the hardware, AtomOS pre-installed with perpetual licensing, and comprehensive support. No additional software licensing required.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>Cost Optimization</h3>
-                    <p>Compare costs across deployment models and providers in real-time. Migrate workloads between private, colocation, and cloud infrastructure seamlessly.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Cost Control</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Flexibility</span>
-                    </div>
+                    <h4>Are Orbital servers only for on-premise deployment?</h4>
+                    <p>Yes, Orbital servers are designed exclusively for on-premise deployment in your own data center or colocation facilities. This ensures maximum control, security, and compliance.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>DevOps & Infrastructure as Code</h3>
-                    <p>Use Electros CLI and unified APIs to automate deployments across all four deployment models with consistent tooling and workflows.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Automation</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">IaC</span>
-                    </div>
+                    <h4>Can I customize Orbital configurations?</h4>
+                    <p>Yes, we offer custom configurations through our Orbital Custom option. Our team will work with you to design the perfect solution for your specific requirements.</p>
                 </div>
                 
                 <div class="card fade-in">
-                    <h3>Hybrid & Multi-Cloud</h3>
-                    <p>Mix deployment models based on workload requirements. Use private AtomOS for sensitive data, shared for development, and native CSP for burst capacity.</p>
-                    <div style="margin-top: var(--space-lg);">
-                        <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Hybrid</span>
-                        <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">Multi-Cloud</span>
-                    </div>
+                    <h4>What support is included?</h4>
+                    <p>All Orbital servers include comprehensive hardware and software support, remote management capabilities, and access to our technical team.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>How does the perpetual licensing work?</h4>
+                    <p>AtomOS perpetual licensing means you own the software license forever with no recurring fees. Updates and support are included for the life of the server.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <h4>What are the benefits of on-premise deployment?</h4>
+                    <p>On-premise deployment provides data sovereignty, eliminates latency, ensures compliance, and offers predictable costs with no variable cloud pricing.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Platform Architecture Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Platform Architecture</h2>
-                <p class="section-subtitle">How Elemento's three core products work together</p>
-            </div>
-
-            <div class="fade-in" style="text-align: center;">
-                <div class="use-case-card diagram-svg" src="./assets/diagrams/Products.svg" style="max-height: 640px !important; padding: 20px;">
-                    <!-- SVG will be injected here programmatically -->
-                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
-                        <p>Loading diagram...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- CTA Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ready to Bring Your Cloud to Life?</h2>
-                <p class="section-subtitle">Join organizations transforming their infrastructure with vendor-neutral, cost-effective cloud solutions</p>
+                <h2 class="section-title">Ready to deploy your cloud factory infrastructure?</h2>
+                <p class="section-subtitle">Get started with Orbital servers and experience the power of pre-configured hardware with AtomOS</p>
             </div>
             
             <div class="text-center">
-                <a href="signup.html" class="btn btn-primary">Start Your Free Trial</a>
-                <a href="technology.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">Learn About Our Technology</a>
+                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                <a href="products.html" class="btn btn-secondary" style="margin-left: var(--space-lg);">View All Products</a>
             </div>
         </div>
     </section>
@@ -898,9 +957,9 @@
     <script src="js/splash-screen.js" defer></script>
     <script src="js/navbar.js" defer></script>
     <script src="js/faq.js" defer></script>
-
+    <script src="js/orbital.js" defer></script>
     <script src="js/main.js" defer></script>    
     <script src="js/footer.js" defer></script>
     <script src="js/themes.js" defer></script>
 </body>
-</html> 
+</html>

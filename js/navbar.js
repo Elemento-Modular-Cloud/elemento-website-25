@@ -20,7 +20,7 @@ class Navbar {
 
     // Add method to check if current page is a product page
     isProductPage() {
-        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'products.html'];
+        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'orbital.html', 'products.html'];
         return productPages.includes(this.currentPage);
     }
 
@@ -85,6 +85,10 @@ class Navbar {
                                         <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomosphere</span>
                                     </a></li>
+                                    <li><a href="${basePath}orbital.html" class="dropdown-link ${this.getActiveClass('orbital.html')}">
+                                        <img src="${basePath}assets/logos/Orbital.svg" alt="Orbital icon" class="product-icon" width="20" height="20">
+                                        <span class="">Orbital</span>
+                                    </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -109,6 +113,10 @@ class Navbar {
                                 <li><a href="${basePath}atomosphere.html" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
                                     <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomosphere</span>
+                                </a></li>
+                                <li><a href="${basePath}orbital.html" class="dropdown-link ${this.getActiveClass('orbital.html')}">
+                                    <img src="${basePath}assets/logos/Orbital.svg" alt="Orbital icon" class="product-icon" width="20" height="20">
+                                    <span class="">Orbital</span>
                                 </a></li>
                             </ul>
                         </div>
