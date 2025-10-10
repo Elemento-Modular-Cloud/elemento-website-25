@@ -132,41 +132,81 @@
 }
 
 .protocol-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-lg);
-    text-align: center;
+    background: var(--glassmorphism-background);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--card-border-radius);
+    padding: var(--space-xl);
+    box-shadow: var(--glassmorphism-shadow);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.protocol-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--glassmorphism-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .protocol-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border-color: var(--accent-color);
+    transform: translateY(-4px);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    border-color: var(--glassmorphism-border);
+}
+
+.protocol-card:hover::before {
+    opacity: 1;
+}
+
+.protocol-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .protocol-icon {
-    font-size: 2rem;
-    margin-bottom: var(--space-sm);
+    font-size: 2.5rem;
+    margin-bottom: var(--space-lg);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.protocol-card:hover .protocol-icon {
+    transform: scale(1.05);
 }
 
 .protocol-card h5 {
-    margin-bottom: var(--space-sm);
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
 }
 
 .protocol-card p {
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0;
+    flex-grow: 1;
 }
 
 /* Responsive adjustments */
@@ -185,7 +225,21 @@
     }
     
     .protocol-card {
-        padding: var(--space-md);
+        padding: var(--space-lg);
+    }
+    
+    .protocol-icon {
+        font-size: 2rem;
+        height: 3rem;
+        margin-bottom: var(--space-md);
+    }
+    
+    .protocol-card h5 {
+        font-size: 1.1rem;
+    }
+    
+    .protocol-card p {
+        font-size: 0.9rem;
     }
 }
 

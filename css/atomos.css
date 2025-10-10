@@ -11,6 +11,34 @@
     color: var(--blue);
 }
 
+/* AtomOS column highlighting */
+.comparison-table-cell-primary {
+    background: linear-gradient(135deg, rgba(255, 166, 0, 0.1), rgba(255, 166, 0, 0.05));
+    border-left: 3px solid var(--accent-color);
+    border-right: 3px solid var(--accent-color);
+    position: relative;
+}
+
+.comparison-table-cell-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 166, 0, 0.05), transparent);
+    pointer-events: none;
+}
+
+/* Highlight the AtomOS header cell */
+.comparison-table-header th:last-child {
+    background: linear-gradient(135deg, rgba(255, 166, 0, 0.15), rgba(255, 166, 0, 0.08));
+    border-left: 3px solid var(--accent-color);
+    border-right: 3px solid var(--accent-color);
+    color: var(--accent-color);
+    font-weight: 900;
+}
+
 /* AtomOS-specific responsive adjustments */
 @media (max-width: 1000px) {
     /* AtomOS-specific mobile adjustments if needed */

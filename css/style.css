@@ -1962,6 +1962,12 @@ body {
 
 .feature-check {
     color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
 }
 
 /* Installation card styles - reusable for any installation guide */
@@ -2166,6 +2172,12 @@ body {
 
 .c4-benefits .feature-check {
     color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
 }
 
 .c4-card {
@@ -2214,6 +2226,12 @@ body {
 
 .plan-features .feature-check {
     color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
 }
 
 .plan-cta {
@@ -2249,6 +2267,12 @@ body {
 
 .green-benefits .feature-check {
     color: var(--success-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
 }
 
 .green-card {
