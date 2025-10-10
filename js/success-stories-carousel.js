@@ -5,7 +5,8 @@ class SuccessStoriesCarousel {
         this.stories = [];
         this.currentIndex = 0;
         this.autoplayInterval = null;
-        this.autoplayDelay = 10000; // 10 seconds
+        this.autoplayDelay = 8000; // 8 seconds - better for engagement
+        this.autoplayRestartDelay = 3000; // 3 seconds delay before restarting after user interaction
         
         this.init();
     }
@@ -43,17 +44,21 @@ class SuccessStoriesCarousel {
         
         this.container.innerHTML = `
             <div class="success-stories-carousel">
+                <button class="carousel-btn carousel-prev" aria-label="Previous story">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
                 <div class="carousel" title="Hover to pause autoplay">
                     <div class="carousel-track">
                         ${this.stories.map((story, index) => this.renderStory(story, index)).join('')}
                     </div>
                 </div>
                 
+                <button class="carousel-btn carousel-next" aria-label="Next story">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
                 <div class="carousel-controls">
-                    <button class="carousel-btn carousel-prev" aria-label="Previous story">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    
                     <div class="carousel-indicators">
                         ${this.stories.map((_, index) => `
                             <button class="carousel-indicator ${index === 0 ? 'active' : ''}" 
@@ -62,10 +67,6 @@ class SuccessStoriesCarousel {
                             </button>
                         `).join('')}
                     </div>
-                    
-                    <button class="carousel-btn carousel-next" aria-label="Next story">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
                 </div>
                 
                 <div class="carousel-hint">
@@ -238,6 +239,13 @@ class SuccessStoriesCarousel {
         }
     }
     
+    delayedStartAutoplay() {
+        console.log('⏰ Starting delayed autoplay restart');
+        setTimeout(() => {
+            this.startAutoplay();
+        }, this.autoplayRestartDelay);
+    }
+    
     bindEvents() {
         // Previous/Next buttons
         const prevBtn = this.container.querySelector('.carousel-prev');
@@ -247,7 +255,7 @@ class SuccessStoriesCarousel {
             prevBtn.addEventListener('click', () => {
                 this.stopAutoplay();
                 this.prev();
-                this.startAutoplay();
+                this.delayedStartAutoplay();
             });
         }
         
@@ -255,7 +263,7 @@ class SuccessStoriesCarousel {
             nextBtn.addEventListener('click', () => {
                 this.stopAutoplay();
                 this.next();
-                this.startAutoplay();
+                this.delayedStartAutoplay();
             });
         }
         
@@ -265,7 +273,7 @@ class SuccessStoriesCarousel {
             indicator.addEventListener('click', () => {
                 this.stopAutoplay();
                 this.goTo(index);
-                this.startAutoplay();
+                this.delayedStartAutoplay();
             });
         });
         
@@ -304,11 +312,11 @@ class SuccessStoriesCarousel {
             if (e.key === 'ArrowLeft') {
                 this.stopAutoplay();
                 this.prev();
-                this.startAutoplay();
+                this.delayedStartAutoplay();
             } else if (e.key === 'ArrowRight') {
                 this.stopAutoplay();
                 this.next();
-                this.startAutoplay();
+                this.delayedStartAutoplay();
             }
         });
     }

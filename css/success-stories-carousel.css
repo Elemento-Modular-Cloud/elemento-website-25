@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: var(--space-2xl) 0;
     transition: all 0.3s ease;
-    min-height: 600px;
+    min-height: 500px;
     overflow: visible;
 }
 
@@ -28,7 +28,7 @@
     font-size: 0.8rem;
     z-index: 10;
     opacity: 0.8;
-    animation: fadeInOut 2s ease-in-out;
+    animation: fadeInOut 1.5s ease-in-out;
 }
 
 @keyframes fadeInOut {
@@ -36,7 +36,7 @@
     50% { opacity: 0.8; }
 }
 
-.carousel-container {
+.carousel {
     position: relative;
     overflow: visible;
     border-radius: var(--radius-3xl);
@@ -49,7 +49,7 @@
     height: auto;
 }
 
-.carousel-container:hover {
+.carousel:hover {
     cursor: pointer;
 }
 
@@ -58,7 +58,14 @@
     width: 100%;
     height: auto;
     min-height: 600px;
+    height: fit-content;
     overflow: visible;
+}
+
+@media (max-width: 768px) {
+    .carousel-track {
+        min-height: 1000px;
+    }
 }
 
 .carousel-slide {
@@ -68,7 +75,7 @@
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 1;
     pointer-events: none;
 }
@@ -92,7 +99,8 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--space-2xl);
     align-items: start;
-    /* min-height: 400px; */
+    min-height: 450px;
+    height: max-content;
     max-width: 100%;
     overflow: visible;
 }
@@ -226,8 +234,8 @@
 
 .story-results li {
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: var(--space-sm);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
     padding-left: var(--space-lg);
     position: relative;
     word-wrap: break-word;
@@ -256,14 +264,22 @@
     justify-content: center;
     gap: var(--space-xl);
     margin-top: var(--space-xl);
+    width: 100%;
+    position: absolute;
+    bottom: var(--space-lg);
+    left: 0;
+    right: 0;
 }
 
 .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background: var(--glassmorphism-background);
     border: 1px solid var(--glassmorphism-border);
     color: var(--text-color);
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
@@ -271,16 +287,27 @@
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.carousel-btn.carousel-prev {
+    left: -28px;
+}
+
+.carousel-btn.carousel-next {
+    right: -28px;
 }
 
 .carousel-btn:hover {
     background: var(--primary-color);
     color: white;
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 .carousel-btn:active {
-    transform: scale(0.95);
+    transform: translateY(-50%) scale(0.95);
 }
 
 .carousel-indicators {
@@ -422,6 +449,19 @@
 
 /* Responsive Design */
 @media (max-width: 1000px) {
+    .carousel-btn {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .carousel-btn.carousel-prev {
+        left: -24px;
+    }
+    
+    .carousel-btn.carousel-next {
+        right: -24px;
+    }
+    
     .story-card {
         grid-template-columns: 1fr;
         gap: var(--space-xl);
@@ -456,6 +496,19 @@
     .success-stories-carousel {
         padding: var(--space-lg) 0;
         margin: 0 var(--space-md);
+    }
+    
+    .carousel-btn {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .carousel-btn.carousel-prev {
+        left: -22px;
+    }
+    
+    .carousel-btn.carousel-next {
+        right: -22px;
     }
     
     .story-card {
@@ -518,6 +571,19 @@
     .success-stories-carousel {
         margin: 0 var(--space-sm);
         padding: var(--space-md) 0;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-btn.carousel-prev {
+        left: -20px;
+    }
+    
+    .carousel-btn.carousel-next {
+        right: -20px;
     }
     
     .story-card {
@@ -604,9 +670,9 @@
 }
 
 .carousel-slide.sliding-in {
-    animation: slideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .carousel-slide.sliding-out {
-    animation: slideOut 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideOut 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
