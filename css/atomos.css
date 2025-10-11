@@ -31,13 +31,13 @@
 }
 
 /* Highlight the AtomOS header cell */
-.comparison-table-header th:last-child {
+/* .comparison-table-header th:last-child {
     background: linear-gradient(135deg, rgba(255, 166, 0, 0.15), rgba(255, 166, 0, 0.08));
     border-left: 3px solid var(--accent-color);
     border-right: 3px solid var(--accent-color);
     color: var(--accent-color);
     font-weight: 900;
-}
+} */
 
 /* AtomOS-specific responsive adjustments */
 @media (max-width: 1000px) {
