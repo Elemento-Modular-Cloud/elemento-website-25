@@ -655,16 +655,64 @@
                         <strong><i class="fas fa-rocket" style="color: var(--accent-color);"></i> AtomOS Installation Guide</strong>
                     </div>
                     <div class="terminal-step">
-                        <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install Linux OS (Rocky/Alma 9, Fedora ≥38, Ubuntu ≥24, Debian 12)
+                        <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install Linux OS based on what kind of node you desire:
+                        <ul style="margin-left: 1rem;">
+                            <li><strong><i class="fas fa-microchip"></i></strong> only compute node: Alma/Rocky 9</li>
+                            <li><strong><i class="fas fa-hard-drive"></i></strong> only storage node:Rocky/Alma 9, Fedora ≥38, Ubuntu ≥24, Debian 12</li></li>
+                            <li><strong><i class="fas fa-robot"></i></strong> complete installation (compute + storage): Alma/Rocky 9</li>
+                        </ul>
+                    </div>
+                    <div class="terminal-step">
+                        <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Install the AtomOS CLI tool Nucleus:<br><code class="terminal-code">curl -fsSL https://repo.elemento.cloud/get-atomos.sh | sudo bash</code>
+                    </div>
+                    <div class="terminal-footer">
+                        <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Now you can use Nucleus CLI to install AtomOS</strong>
+                    </div>
+                </div>
+                <div class="terminal-container" style="margin-top: 1rem;">
+                    <div class="terminal-header">
+                        <strong><i class="fas fa-rocket" style="color: var(--accent-color);"></i></strong> Install the AtomOS services
+                    </div>
+                    <div class="terminal-step">
+                        <strong><i class="fas fa-circle-info" style="color: var(--blue);"></i></strong> Use <code class="terminal-code">on-prem</code> for local installations or <code class="terminal-code">cloud</code>  if you are on a CSP bare metal.
                     </div>
                     <div class="terminal-step-success">
-                        <strong><i class="fas fa-terminal" style="color: var(--green);"></i> 2.</strong> Run installation script: <code class="terminal-code">curl https://repo.elemento.cloud/get-atomos.sh | bash</code>
+                        <strong>
+                            <i class="fas fa-terminal" style="color: var(--green);"></i>
+                            <i class="fas fa-hard-drive" style="color: var(--green);"></i> 3.
+                        </strong> 
+                        Install for a pure storage node:<br><code class="terminal-code">sudo nucleus --install storage &lt;on-prem | cloud&gt;</code>
                     </div>
                     <div class="terminal-step-success">
-                        <strong><i class="fas fa-globe" style="color: var(--blue-light);"></i> 3.</strong> Reboot and access Web UI at <code class="terminal-code">localhost:9090</code>, configure VM storage
+                        <strong>
+                            <i class="fas fa-terminal" style="color: var(--green);"></i>
+                            <i class="fas fa-microchip" style="color: var(--green);"></i> 3.
+                        </strong> 
+                        Install for a pure compute node:<br><code class="terminal-code">sudo nucleus --install compute &lt;on-prem | cloud&gt;</code>
                     </div>
-                    <div class="terminal-success">
-                        <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 4.</strong> Install Electros to launch and manage VMs from anywhere
+                    <div class="terminal-step-success">
+                        <strong>
+                            <i class="fas fa-terminal" style="color: var(--green);"></i>
+                            <i class="fas fa-robot" style="color: var(--green);"></i> 3.
+                        </strong> 
+                        Install for a complete AtomOS version:<br><code class="terminal-code">sudo nucleus --install full &lt;on-prem | cloud&gt;</code>
+                    </div>
+                    <div class="terminal-step">
+                        <strong><i class="fas fa-gear" style="color: var(--blue);"></i> 4.</strong> Follow Nucleus indications to conclude the configuration:
+                        <ul style="margin-left: 1rem;">
+                            <li><i class="fas fa-download" style="color: var(--blue);"></i> Install additiona modules (ZFS, GlusterFS)</li>
+                            <li><i class="fas fa-hard-drive" style="color: var(--blue);"></i> Setup the storage</li>
+                            <li><i class="fas fa-ethernet" style="color: var(--blue);"></i> Setup the network</li>
+                        </ul>
+                    </div>
+                    <div class="terminal-step-success">
+                        <strong><i class="fas fa-globe" style="color: var(--blue-light);"></i> 5.</strong> Access Web UI at <code class="terminal-code">localhost:9090</code>
+                    </div>
+                    <div class="terminal-step-success">
+                        <strong><i class="fas fa-power-off" style="color: var(--blue-light);"></i> 6.</strong> Reboot the host.
+                    </div>
+                    <div class="terminal-step-success">
+                        <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 7.</strong> Install <strong>Electros</strong> to launch and manage VMs from anywhere
                     </div>
                     <div class="terminal-footer">
                         <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to deploy your first VM in minutes!</strong>
