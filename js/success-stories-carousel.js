@@ -277,8 +277,8 @@ class SuccessStoriesCarousel {
             });
         });
         
-        // Pause autoplay on hover - Enhanced with better targeting
-        const carousel = this.container.querySelector('.success-stories-carousel');
+        // Pause autoplay on hover - Use the .carousel element instead
+        const carousel = this.container.querySelector('.carousel');
         if (carousel) {
             console.log('🎯 Setting up hover events for carousel');
             carousel.addEventListener('mouseenter', (e) => {
@@ -293,18 +293,21 @@ class SuccessStoriesCarousel {
             console.error('❌ Could not find carousel element for hover events');
         }
         
-        // Also pause on hover for individual slides
-        const slides = this.container.querySelectorAll('.carousel-slide');
-        console.log(`🎯 Setting up hover events for ${slides.length} slides`);
-        slides.forEach((slide, index) => {
-            slide.addEventListener('mouseenter', (e) => {
-                console.log(`🖱️ Mouse entered slide ${index} - stopping autoplay`, e.target);
+        // Alternative: Use event delegation on the container
+        this.container.addEventListener('mouseenter', (e) => {
+            // Only stop if hovering over the actual carousel content
+            if (e.target.closest('.carousel')) {
+                console.log('️ Mouse entered carousel area - stopping autoplay', e.target);
                 this.stopAutoplay();
-            });
-            slide.addEventListener('mouseleave', (e) => {
-                console.log(`🖱️ Mouse left slide ${index} - resuming autoplay`, e.target);
+            }
+        });
+        
+        this.container.addEventListener('mouseleave', (e) => {
+            // Only resume if leaving the carousel area completely
+            if (!e.relatedTarget || !this.container.contains(e.relatedTarget)) {
+                console.log('🖱️ Mouse left carousel area - resuming autoplay', e.target);
                 this.startAutoplay();
-            });
+            }
         });
         
         // Keyboard navigation

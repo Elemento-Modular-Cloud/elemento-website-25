@@ -25,7 +25,7 @@
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <!-- Critical CSS - Load immediately to prevent FOUT -->
     <style>
         /* Critical rendering path styles - Load immediately to prevent font flash */
         :root {
@@ -315,78 +315,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="atmosphere-container">
-            <div class="fadeout"></div>
-            
-            <!-- Static atmosphere elements -->
-            <div class="atmosphere-wrapper">
-                <div class="atmosphere"></div>
-                <div class="center-glow"></div>
-                <div class="atmosphere-left"></div>
-                <div class="atmosphere-right"></div>
-            </div>
-    
-            <div class="orbit-object orbit-object-center"></div>
-            <div class="orbit-object orbit-object-bottom-center"></div>
-            <div class="planet-radial-glow"></div>
-            <div class="planet-linear-glow"></div>
-            <div class="planet"></div>
-            <div class="planet-halo"></div>
-            
-            <!-- Particle System -->
-            <div class="particles-container">
-                <div class="particle particle-1"></div>
-                <div class="particle particle-2"></div>
-                <div class="particle particle-3"></div>
-                <div class="particle particle-4"></div>
-                <div class="particle particle-5"></div>
-                <div class="particle particle-6"></div>
-                <div class="particle particle-7"></div>
-                <div class="particle particle-8"></div>
-                <div class="particle particle-9"></div>
-                <div class="particle particle-10"></div>
-                <div class="particle particle-11"></div>
-                <div class="particle particle-12"></div>
-                <div class="particle particle-13"></div>
-                <div class="particle particle-14"></div>
-                <div class="particle particle-15"></div>
-                <div class="particle particle-16"></div>
-                <div class="particle particle-17"></div>
-                <div class="particle particle-18"></div>
-                <div class="particle particle-19"></div>
-                <div class="particle particle-20"></div>
-                <div class="particle particle-21"></div>
-                <div class="particle particle-22"></div>
-                <div class="particle particle-23"></div>
-                <div class="particle particle-24"></div>
-                <div class="particle particle-25"></div>
-                <div class="particle particle-26"></div>
-                <div class="particle particle-27"></div>
-                <div class="particle particle-28"></div>
-                <div class="particle particle-29"></div>
-                <div class="particle particle-30"></div>
-                <div class="particle particle-31"></div>
-                <div class="particle particle-32"></div>
-                <div class="particle particle-33"></div>
-                <div class="particle particle-34"></div>
-                <div class="particle particle-35"></div>
-                <div class="particle particle-36"></div>
-                <div class="particle particle-37"></div>
-                <div class="particle particle-38"></div>
-                <div class="particle particle-39"></div>
-                <div class="particle particle-40"></div>
-                <div class="particle particle-41"></div>
-                <div class="particle particle-42"></div>
-                <div class="particle particle-43"></div>
-                <div class="particle particle-44"></div>
-                <div class="particle particle-45"></div>
-                <div class="particle particle-46"></div>
-                <div class="particle particle-47"></div>
-                <div class="particle particle-48"></div>
-                <div class="particle particle-49"></div>
-                <div class="particle particle-50"></div>
-            </div>
-        </div>
+        <!-- Atmosphere Hero Placeholder -->
+        <div id="atmosphere-hero-placeholder"></div>
         
         <div class="hero-container">
             <div class="hero-content">
@@ -579,6 +509,7 @@
 
     <script src="js/main.js" defer></script>    
     <script src="js/footer.js" defer></script>
+    <script src="js/atmosphere_hero.js" defer></script>
     <script src="js/themes.js" defer></script>
 </body>
 </html> 
