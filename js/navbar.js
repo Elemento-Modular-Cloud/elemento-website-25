@@ -20,7 +20,7 @@ class Navbar {
 
     // Add method to check if current page is a product page
     isProductPage() {
-        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'orbital.html', 'products.html'];
+        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', /* 'orbital.html', */ 'products.html'];
         return productPages.includes(this.currentPage);
     }
 

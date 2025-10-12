@@ -14,7 +14,7 @@ Disallow: /cms/
 Disallow: /venv/
 Disallow: /editor.html
 Disallow: /signup-success.html
-Disallow: /orbital.html
+# Disallow: /orbital.html
 
 # Allow all other content
 Allow: /assets/
