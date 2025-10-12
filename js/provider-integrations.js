@@ -66,9 +66,14 @@ class ProviderIntegrationsHandler {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             
-            this.providers = await response.json();
-            console.log('📊 Loaded provider data:', this.providers.length, 'providers');
+            const data = await response.json();
+            console.log('📊 Loaded provider data:', data);
+            
+            // Transform the new format to the expected format
+            this.providers = this.transformProviderData(data);
+            console.log('📋 Transformed providers:', this.providers.length, 'providers');
             console.log('📋 First provider:', this.providers[0]);
+            
             this.renderTable();
             this.renderStatusCards();
         } catch (error) {
@@ -94,16 +99,60 @@ class ProviderIntegrationsHandler {
     }
 
     /**
+     * Transform the new JSON format to the expected format
+     */
+    transformProviderData(data) {
+        const providers = [];
+        const supportedProviders = data.ELEMENTO_SUPPORTED_PROVIDERS;
+        
+        for (const [key, provider] of Object.entries(supportedProviders)) {
+            const transformedProvider = {
+                provider: provider.display_name,
+                status: provider.status,
+                vmManagement: 'na',
+                storageAas: 'na', 
+                networking: 'na',
+                k8s: 'na',
+                costApi: 'na'
+            };
+            
+            // Map services to the expected format
+            provider.services.forEach(service => {
+                switch (service.name) {
+                    case 'vmManagement':
+                        transformedProvider.vmManagement = service.support_level;
+                        break;
+                    case 'STaaS':
+                        transformedProvider.storageAas = service.support_level;
+                        break;
+                    case 'networking':
+                        transformedProvider.networking = service.support_level;
+                        break;
+                    case 'k8s':
+                        transformedProvider.k8s = service.support_level;
+                        break;
+                    case 'costApi':
+                        transformedProvider.costApi = service.support_level;
+                        break;
+                }
+            });
+            
+            providers.push(transformedProvider);
+        }
+        
+        return providers;
+    }
+
+    /**
      * Render the comparison table
      */
     renderTable() {
         if (!this.tableContainer) return;
 
-        // Sort providers by status priority
-        const sortedProviders = this.sortProvidersByStatus(this.providers);
-        console.log('📊 Sorted providers by status:', sortedProviders.map(p => `${p.provider} (${p.status})`));
+        // Use providers in their original JSON order
+        console.log('📊 Providers in JSON order:', this.providers.map(p => `${p.provider} (${p.status})`));
 
-        const html = sortedProviders.map((provider, index) => {
+        const html = this.providers.map((provider, index) => {
             const rowClass = index % 2 === 0 ? 'comparison-table-row-alt' : 'comparison-table-row';
             
             return `
@@ -193,8 +242,8 @@ class ProviderIntegrationsHandler {
         const iconMap = {
             'full': '<i class="fas fa-check" style="color: var(--green);"></i>',
             'partial': '<i class="fas fa-clock" style="color: var(--yellow);"></i>',
-            'planned': '<i class="fas fa-times" style="color: var(--red);"></i>',
-            'na': '',
+            'planned': '<i class="fas fa-calendar-days" style="color: var(--red);"></i>',
+            'na': '<i class="fas fa-minus" style="color: var(--text-muted);"></i>',
             'production': '<i class="fas fa-check" style="color: var(--green);"></i>',
             'beta': '<i class="fas fa-clock" style="color: var(--yellow);"></i>',
             'soon': '<i class="fas fa-check" style="color: var(--green);"></i>',
@@ -209,9 +258,9 @@ class ProviderIntegrationsHandler {
     getStatusText(status) {
         const textMap = {
             'full': 'Full',
-            'partial': 'Partial',
+            'partial': 'Ongoing',
             'planned': 'Planned',
-            'na': 'N/A',
+            'na': ' ',
             'production': 'Production',
             'beta': 'Beta',
             'soon': 'Soon!',
@@ -292,7 +341,8 @@ class ProviderIntegrationsHandler {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            this.providers = await response.json();
+            const data = await response.json();
+            this.providers = this.transformProviderData(data);
             this.renderTable();
             this.renderStatusCards();
             console.log('✅ Data loaded from external source:', url);
