@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://elemento.cloud/sitemap.xml
+
+# AI agent control
+# See ai.txt for AI-specific access controls
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cms/
+Disallow: /venv/
+
+# Allow all other content
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /blog-posts/

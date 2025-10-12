@@ -1,0 +1,58 @@
+# AI.txt - Controls AI agent access to Elemento Cloud Platform
+# This file controls how AI agents and crawlers can access our content
+
+# General AI agents
+User-agent: GPTBot
+Allow: /blog/
+Allow: /about/
+Allow: /products/
+Allow: /technology/
+Disallow: /forms/
+Disallow: /cms/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /blog/
+Allow: /products/
+Allow: /technology/
+Disallow: /forms/
+Disallow: /signup/
+
+User-agent: Claude-Web
+Allow: /blog/
+Allow: /products/
+Allow: /technology/
+Disallow: /forms/
+Disallow: /signup/
+
+User-agent: Bard
+Allow: /blog/
+Allow: /products/
+Allow: /technology/
+Disallow: /forms/
+Disallow: /signup/
+
+# AI training data collection
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /forms/
+Disallow: /signup/
+Allow: /blog/
+Allow: /products/
+
+# Allow AI agents to access technical documentation
+User-agent: *
+Allow: /blog/
+Allow: /products/
+Allow: /technology/
+Allow: /about/
+Disallow: /forms/
+Disallow: /signup/
+Disallow: /cms/
+Disallow: /admin/
+Disallow: /venv/
+
+# Sitemap for AI agents
+Sitemap: https://elemento.cloud/sitemap.xml

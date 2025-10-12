@@ -6,9 +6,66 @@
     <title>AtomOS — Powering Your Cloud with Linux Hypervisor | Elemento Cloud</title>
     <meta name="description" content="AtomOS is a lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/atomos.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
+    <meta property="og:description" content="Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
+    <meta property="og:image" content="https://elemento.cloud/assets/img/Atomos - Hero - 1.webp">
+    <meta property="og:url" content="https://elemento.cloud/atomos.html">
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Elemento">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
+    <meta name="twitter:description" content="Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
+    <meta name="twitter:image" content="https://elemento.cloud/assets/img/Atomos - Hero - 1.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="AtomOS, Linux hypervisor, KVM, QEMU, RHEL compatible, GPU passthrough, virtualization, bare metal, on-premise cloud, C4 protocol">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
     <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Structured Data (Schema.org) for AtomOS Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AtomOS",
+      "description": "Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.",
+      "url": "https://elemento.cloud/atomos.html",
+      "applicationCategory": "Virtualization Software",
+      "operatingSystem": "Linux",
+      "softwareVersion": "Latest",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Free Community Edition - 2 VMs per server"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Elemento",
+        "url": "https://elemento.cloud"
+      },
+      "featureList": [
+        "KVM-based hypervisor",
+        "RHEL compatible",
+        "GPU passthrough support",
+        "Autonomous clustering with C4 protocol",
+        "Secure boot and ECC memory support",
+        "Live VM migration",
+        "Nested virtualization"
+      ]
+    }
+    </script>
     
     <!-- Preload critical resources with optimized loading strategy -->
     <link rel="preload" href="css/style.css" as="style" crossorigin>
@@ -409,6 +466,7 @@
     
     <!-- Home Page Styles -->
     <link rel="stylesheet" href="css/atomos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
     <noscript>
@@ -484,6 +542,23 @@
 
     <!-- Navigation -->
     <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/products.html" class="breadcrumb-link">Products</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+                    AtomOS
+                </li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -1137,6 +1212,39 @@
                 <div class="card fade-in">
                     <h4>Is AtomOS open-source?</h4>
                     <p>Core hypervisor is open. Electros and C4 protocol orchestration layers are licensed with commercial support options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Your Cloud Infrastructure</h2>
+                <p class="section-subtitle">AtomOS works seamlessly with other Elemento products to create a complete cloud platform</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <img src="./assets/logos/Electros.svg" alt="Electros" class="product-icon-medium" width="48" height="48">
+                    <h3>Electros</h3>
+                    <p>Universal multicloud dashboard and CLI for managing VMs across public clouds and on-prem infrastructure from a single interface.</p>
+                    <a href="electros.html" class="btn btn-primary">Learn About Electros</a>
+                </div>
+                
+                <div class="card fade-in">
+                    <img src="./assets/logos/Atomosphere.svg" alt="Atomosphere" class="product-icon-medium" width="48" height="48">
+                    <h3>Atomosphere</h3>
+                    <p>Unified API that maps every cloud provider into a single programmable interface for seamless orchestration.</p>
+                    <a href="atomosphere.html" class="btn btn-primary">Learn About Atomosphere</a>
+                </div>
+                
+                <div class="card fade-in">
+                    <img src="./assets/logos/Orbital.svg" alt="Orbital" class="product-icon-medium" width="48" height="48">
+                    <h3>Orbital</h3>
+                    <p>Pre-configured hardware servers with AtomOS included and perpetual licensing for development and production workloads.</p>
+                    <a href="orbital.html" class="btn btn-primary">Learn About Orbital</a>
                 </div>
             </div>
         </div>
