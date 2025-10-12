@@ -32,6 +32,28 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
     <link rel="manifest" href="site.webmanifest">
     
+    <!-- Breadcrumb Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elemento.cloud/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://elemento.cloud/about.html"
+        }
+      ]
+    }
+    </script>
+    
     <!-- Preload critical resources with optimized loading strategy -->
     <link rel="preload" href="css/style.css" as="style" crossorigin>
     <link rel="preload" href="css/themes.css" as="style" crossorigin>

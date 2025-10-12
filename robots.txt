@@ -7,14 +7,33 @@ Sitemap: https://elemento.cloud/sitemap.xml
 # AI agent control
 # See ai.txt for AI-specific access controls
 
-# Disallow admin and private areas (if any)
+# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /cms/
 Disallow: /venv/
+Disallow: /editor.html
+Disallow: /signup-success.html
 
 # Allow all other content
 Allow: /assets/
 Allow: /css/
 Allow: /js/
 Allow: /blog-posts/
+Allow: /forms/
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2

@@ -9,6 +9,11 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://elemento.cloud/">
     
+    <!-- Hreflang tags for internationalization -->
+    <link rel="alternate" hreflang="en" href="https://elemento.cloud/">
+    <link rel="alternate" hreflang="it" href="https://elemento.cloud/it/">
+    <link rel="alternate" hreflang="x-default" href="https://elemento.cloud/">
+    
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Elemento - Cloud Platform">
     <meta property="og:description" content="Vendor-neutral, cost-saving, green, high-performance, self-hostable cloud platform with infrastructure-as-code readiness.">
@@ -71,6 +76,80 @@
         "description": "Vendor-neutral cloud platform with AtomOS hypervisor, Electros dashboard, and Atomosphere API",
         "category": "Cloud Computing Platform"
       }
+    }
+    </script>
+
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does Elemento differ from traditional cloud providers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elemento is a vendor-neutral cloud platform that abstracts away the differences between cloud providers. Unlike traditional providers that lock you into their ecosystem, Elemento gives you a unified interface to deploy and manage workloads across AWS, Azure, Google Cloud, and your own infrastructure. This means you can move workloads freely without rewriting applications or changing your deployment processes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the cost savings compared to public cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers typically save 60-80% on cloud costs through intelligent workload placement, real-time pricing optimization, and the ability to run workloads on your own hardware. Elemento enables real-time arbitrage across cloud providers and can automatically move workloads to the most cost-effective infrastructure while maintaining performance and reliability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How secure is the platform for enterprise use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elemento provides bank-grade security with end-to-end encryption, compliance-ready architecture, and the ability to run in your own data center for maximum control. We support SOC 2, GDPR, and industry-specific compliance requirements. All data is encrypted in transit and at rest, with optional customer-managed encryption keys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I migrate my existing applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Elemento supports migration from existing cloud providers and on-premises infrastructure. Our platform is compatible with standard virtualization technologies and container platforms. We provide migration tools and support to help you move workloads with minimal downtime. Most applications require no code changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of support and documentation is available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide comprehensive documentation, video tutorials, and a knowledge base. Enterprise customers get dedicated support with SLAs, while community users can access our active community forum and GitHub repositories. We also offer training programs and workshops for teams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the free tier work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elemento offers a generous free tier that includes up to 2 VMs on AtomOS, basic Electros features, and access to Atomosphere API. This is perfect for testing, development, and small projects. You can upgrade to paid plans anytime for additional features, support, and higher usage limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Elemento support Kubernetes and containers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Elemento fully supports Kubernetes and container workloads. You can deploy and manage Kubernetes clusters across any cloud provider, and our platform provides additional orchestration capabilities on top of Kubernetes. We also support Docker containers, Helm charts, and other container-native tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What regions and data centers are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elemento supports 235+ data centers worldwide across all major cloud providers. This includes AWS regions, Azure regions, Google Cloud regions, and numerous edge locations. You can deploy workloads in any region and easily move them between regions for optimal performance and compliance."
+          }
+        }
+      ]
     }
     </script>
 
@@ -406,9 +485,9 @@
                         <!-- Subheadline -->
                         <div class="hero-subtitle">
                             <p>
-                                Elemento lets you build and run your own cloud infrastructure.
-                                You choose where it runs (on-prem, hybrid, or public cloud), and we automate everything.
-                                <br><span class="pixel-accent">No vendor lock-in. Full control. Fast.</span>
+                                Elemento lets you build and run your own cloud infrastructure with complete freedom.
+                                You choose where it runs (on-premises, hybrid cloud, or public cloud), and we automate everything for you.
+                                <br><span class="pixel-accent">No vendor lock-in. Full control. Fast deployment.</span>
                             </p>
                         </div>
 
@@ -483,7 +562,7 @@
 
                     </div>
                     <div class="content-image">
-                        <img src="./assets/img/Home - Hero - 1 ALT - small.webp" alt="Elemento Cloud Factory Architecture" class="hero-detail-image" style="object-position: right;">
+                        <img src="./assets/img/Home - Hero - 1 ALT - small.webp" alt="Elemento Cloud Factory Architecture showing unified cloud management across multiple providers and data centers" class="hero-detail-image" style="object-position: right;" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -500,7 +579,7 @@
 
                 <div class="grid grid-3">
                     <div class="product-card scroll-animate">
-                        <img src="./assets/logos/Atomos.svg" alt="AtomOS" class="product-icon-medium" width="48" height="48">
+                        <img src="./assets/logos/Atomos.svg" alt="AtomOS hypervisor logo - Linux-based hypervisor for cloud infrastructure" class="product-icon-medium" width="48" height="48">
                         <h3>AtomOS</h3>
                         <h4>The Hypervisor That Works Like a Cloud Kernel</h4>
                         <p>Production-grade, KVM-based hypervisor for running VMs on bare metal, edge, or enterprise clusters. Deploy in minutes with enterprise-grade security, GPU passthrough support, and full RHEL compatibility.</p>
@@ -513,7 +592,7 @@
                     </div>
                     
                     <div class="product-card scroll-animate highlighted">
-                        <img src="./assets/logos/Electros.svg" alt="Electros" class="product-icon-medium" width="48" height="48">
+                        <img src="./assets/logos/Electros.svg" alt="Electros dashboard logo - Universal multicloud management interface" class="product-icon-medium" width="48" height="48">
                         <h3>Electros</h3>
                         <h4>Your Cloud Control Center</h4>
                         <p>Unified GUI and CLI to deploy, monitor, and orchestrate virtual machines across any cloud or infrastructure. Control your entire cloud environment from one intuitive interface with real-time insights, automated scaling, and cross-platform compatibility.</p>
@@ -526,7 +605,7 @@
                     </div>
                     
                     <div class="product-card scroll-animate">
-                        <img src="./assets/logos/Atomosphere.svg" alt="Atomosphere" class="product-icon-medium" width="48" height="48">
+                        <img src="./assets/logos/Atomosphere.svg" alt="Atomosphere API logo - Federated multicloud gateway connecting 235+ data centers" class="product-icon-medium" width="48" height="48">
                         <h3>Atomosphere</h3>
                         <h4>The API Layer for Federated Cloud</h4>
                         <p>Unified API that maps every cloud provider into a single programmable interface for seamless orchestration. Access 235+ data centers worldwide with intelligent cost optimization and dynamic failover capabilities.</p>
