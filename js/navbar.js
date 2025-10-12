@@ -85,10 +85,6 @@ class Navbar {
                                         <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomosphere</span>
                                     </a></li>
-                                    <li><a href="${basePath}orbital.html" class="dropdown-link ${this.getActiveClass('orbital.html')}">
-                                        <img src="${basePath}assets/logos/Orbital.svg" alt="Orbital icon" class="product-icon" width="20" height="20">
-                                        <span class="">Orbital</span>
-                                    </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -113,10 +109,6 @@ class Navbar {
                                 <li><a href="${basePath}atomosphere.html" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
                                     <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomosphere</span>
-                                </a></li>
-                                <li><a href="${basePath}orbital.html" class="dropdown-link ${this.getActiveClass('orbital.html')}">
-                                    <img src="${basePath}assets/logos/Orbital.svg" alt="Orbital icon" class="product-icon" width="20" height="20">
-                                    <span class="">Orbital</span>
                                 </a></li>
                             </ul>
                         </div>
