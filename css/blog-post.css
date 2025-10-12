@@ -493,22 +493,3 @@
         transform: none;
     }
 }
-
-/* Enhanced Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    .blog-post {
-        background: rgba(26, 28, 32, 0.8);
-    }
-    
-    .blog-summary {
-        background: rgba(255, 166, 0, 0.1);
-    }
-    
-    .blog-content blockquote {
-        background: rgba(255, 166, 0, 0.1);
-    }
-    
-    .blog-references {
-        background: rgba(255, 166, 0, 0.1);
-    }
-}
