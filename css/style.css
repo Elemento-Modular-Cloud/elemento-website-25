@@ -2890,8 +2890,42 @@ body {
 
 @media (orientation: portrait) {
     .floating-features {
-        display: none;
+        display: none !important;
     }
+    
+    /* Center hero content on portrait orientation for product pages */
+    .hero-container {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-vert-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .hero-title {
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        text-align: center;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+        text-align: center;
+    }
+
 }
 
 .floating-box {
