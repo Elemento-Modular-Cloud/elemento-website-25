@@ -1102,6 +1102,105 @@ body {
     opacity: 0.8;
 }
 
+/* Footer Social Links Styling */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--glassmorphism-background);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--card-border-radius, 12px);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--glassmorphism-gradient);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glassmorphism-shadow), 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.social-link:hover::before {
+    left: 0;
+}
+
+.social-link i {
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Individual social platform colors on hover */
+.social-link[href*="youtube"]:hover {
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+.social-link[href*="linkedin"]:hover {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.social-link[href*="github"]:hover {
+    color: #333;
+    border-color: #333;
+}
+
+.social-link[href*="facebook"]:hover {
+    color: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-link[href*="instagram"]:hover {
+    color: #e4405f;
+    border-color: #e4405f;
+}
+
+/* Responsive adjustments for social links */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-link {
+        flex: 1;
+        min-width: 120px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /* Form styles */
 .contact-form {
     background: var(--glassmorphism-background);
