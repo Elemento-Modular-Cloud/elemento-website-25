@@ -639,4 +639,28 @@
     }
 }
 
+/* Link accessibility - Ultra-subtle dotted underline */
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(var(--accent-color-rgb), 0.6); /* Semi-transparent */
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.4px;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
+
+a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
  
