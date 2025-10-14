@@ -342,24 +342,6 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
     </noscript>
-    
-    <!-- Font Awesome with optimized loading -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </noscript>
-
-    <!-- PixelIconLibrary with optimized loading -->
-    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
-    </noscript>
-
-    <!-- Font Awesome font-display: swap override -->
-    <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
 </head>
 <body class="" style="overflow: hidden;">
 
@@ -413,7 +395,9 @@
         
         // Show iframe when loaded
         iframe.addEventListener('load', function() {
-            iframeLoading.style.display = 'none';
+            if (iframeLoading) {
+                iframeLoading.style.display = 'none';
+            }
             iframe.style.display = 'block';
             
             // Send current theme to iframe
