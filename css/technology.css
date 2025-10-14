@@ -1,12 +1,6 @@
 /* Technology Page Styles */
 @import url('./style.css');
 
-.hero-pattern-mask {
-    mask-image: url('../assets/masks/Asset\ 8.svg');
-    mask-size: 70rem 60%;
-    transform: scaleY(-1)
-}
-
 /* Technology-specific enhancements */
 .tech-section {
     margin-bottom: var(--space-4xl);

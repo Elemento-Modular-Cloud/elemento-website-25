@@ -1,8 +1,2 @@
 /* Products Page Styles */
 @import url('./style.css');
-
-.hero-pattern-mask {
-    mask-image: url('../assets/masks/Asset\ 10.svg');
-    mask-size: 70rem 60%;
-    transform: scaleY(-1)
-}

@@ -1,12 +1,6 @@
 /* Blog Page Styles */
 @import url('./style.css');
 
-.hero-pattern-mask {
-    mask-image: url('../assets/masks/Asset\ 3.svg');
-    mask-size: 70rem 60%;
-    transform: scaleY(-1)
-}
-
 /* Blog View Controls */
 .blog-controls {
     display: flex;
