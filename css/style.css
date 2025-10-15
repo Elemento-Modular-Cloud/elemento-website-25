@@ -313,8 +313,9 @@ body {
 
 .mobile-menu-btn {
     display: none;
-    flex-direction: column;
-    gap: 4px;
+    position: relative;
+    width: 24px;
+    height: 18px;
     background: none;
     border: none;
     cursor: pointer;
@@ -322,10 +323,25 @@ body {
 }
 
 .mobile-menu-btn span {
+    position: absolute;
     width: 24px;
     height: 2px;
     background: var(--text-color);
     transition: all 0.3s ease;
+    left: 0;
+    transform-origin: center;
+}
+
+.mobile-menu-btn span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    top: 8px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+    top: 16px;
 }
 
 /* Dropdown styles */
@@ -1393,6 +1409,12 @@ body {
         box-shadow: 
             0 8px 32px rgba(0, 0, 0, 0.15),
             inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+        /* Ensure mobile menu is scrollable within viewport */
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: calc(var(--space-xl) + env(safe-area-inset-bottom));
     }
     
     .nav-menu::after {
@@ -1625,7 +1647,8 @@ body {
     }
     
     .mobile-menu-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg);
+        top: 8px;
     }
     
     .mobile-menu-btn.active span:nth-child(2) {
@@ -1633,7 +1656,8 @@ body {
     }
     
     .mobile-menu-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg);
+        top: 8px;
     }
     
     /* Hero responsive */
