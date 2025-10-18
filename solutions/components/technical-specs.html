@@ -1,0 +1,19 @@
+<section class="section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="specs-grid">
+            <!-- repeat:item -->
+            <div class="spec-item scroll-animate">
+                <h3>{{item.label}}</h3>
+                <div class="spec-value">{{item.value}}</div>
+                <p>{{item.description}}</p>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+    </div>
+</section>
+

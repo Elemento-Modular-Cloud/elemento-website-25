@@ -1,0 +1,150 @@
+<section class="section gpu-cluster-demo">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="gpu-cluster-visualization">
+            <div class="cluster-dashboard">
+                <div class="dashboard-header">
+                    <h3>GPU Cluster Management</h3>
+                    <div class="cluster-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">3 Clusters Active</span>
+                    </div>
+                </div>
+                
+                <div class="cluster-grid">
+                    <div class="cluster-card">
+                        <div class="cluster-header">
+                            <h4>AWS Cluster</h4>
+                            <div class="cluster-status-badge active">Active</div>
+                        </div>
+                        <div class="cluster-metrics">
+                            <div class="metric">
+                                <span class="metric-label">GPUs</span>
+                                <span class="metric-value">8/16</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Memory</span>
+                                <span class="metric-value">64GB</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Utilization</span>
+                                <span class="metric-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="cluster-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cluster-card">
+                        <div class="cluster-header">
+                            <h4>Azure Cluster</h4>
+                            <div class="cluster-status-badge active">Active</div>
+                        </div>
+                        <div class="cluster-metrics">
+                            <div class="metric">
+                                <span class="metric-label">GPUs</span>
+                                <span class="metric-value">4/8</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Memory</span>
+                                <span class="metric-value">32GB</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Utilization</span>
+                                <span class="metric-value">60%</span>
+                            </div>
+                        </div>
+                        <div class="cluster-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cluster-card">
+                        <div class="cluster-header">
+                            <h4>On-Premise</h4>
+                            <div class="cluster-status-badge active">Active</div>
+                        </div>
+                        <div class="cluster-metrics">
+                            <div class="metric">
+                                <span class="metric-label">GPUs</span>
+                                <span class="metric-value">2/4</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Memory</span>
+                                <span class="metric-value">16GB</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Utilization</span>
+                                <span class="metric-value">40%</span>
+                            </div>
+                        </div>
+                        <div class="cluster-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gpu-features">
+            <!-- repeat:item -->
+            <div class="feature-card scroll-animate">
+                <div class="feature-icon">
+                    <i class="{{item.icon}}"></i>
+                </div>
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+        
+        <div class="framework-integration">
+            <div class="integration-header">
+                <h3>Framework Integration</h3>
+                <p>Native support for popular AI/ML frameworks and tools</p>
+            </div>
+            
+            <div class="framework-grid">
+                <div class="framework-item">
+                    <div class="framework-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4>TensorFlow</h4>
+                    <p>GPU acceleration and distributed training</p>
+                </div>
+                <div class="framework-item">
+                    <div class="framework-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4>PyTorch</h4>
+                    <p>CUDA integration and model optimization</p>
+                </div>
+                <div class="framework-item">
+                    <div class="framework-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h4>Kubernetes</h4>
+                    <p>Auto-scaling and workload orchestration</p>
+                </div>
+                <div class="framework-item">
+                    <div class="framework-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Jupyter</h4>
+                    <p>Interactive development environment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

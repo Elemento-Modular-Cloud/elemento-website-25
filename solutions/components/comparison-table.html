@@ -1,0 +1,24 @@
+<section class="section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="table-container scroll-animate">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <!-- repeat:item -->
+                        <th>{{item.header}}</th>
+                        <!-- endrepeat:item -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be populated by JavaScript based on rowsData -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+

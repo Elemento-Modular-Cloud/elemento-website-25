@@ -45,6 +45,11 @@ class Navbar {
             return '../';
         }
         
+        // Check if we're in the solutions directory (works for both GitHub Pages and local)
+        if (pathParts.includes('solutions')) {
+            return '../';
+        }
+        
         // For GitHub Pages, if we're in the repository root (e.g., /elemento-website-25/), 
         // we should use './' for main pages
         // For local development, if we're at the root, use './'

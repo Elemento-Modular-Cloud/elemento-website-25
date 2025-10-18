@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/Data Science Startups & Research Labs | Elemento</title>
+    <meta name="description" content="Train, deploy, and scale AI workloads seamlessly across clouds and on-prem nodes. Elemento provides GPU cluster management and multi-cloud AI environments.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/solutions/ai-startups.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AI/Data Science Startups & Research Labs | Elemento">
+    <meta property="og:description" content="Train, deploy, and scale AI workloads seamlessly across clouds and on-prem nodes with Elemento's GPU cluster management.">
+    <meta property="og:image" content="/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/solutions/ai-startups.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI/Data Science Startups & Research Labs | Elemento">
+    <meta name="twitter:description" content="Train, deploy, and scale AI workloads seamlessly across clouds and on-prem nodes with Elemento's GPU cluster management.">
+    <meta name="twitter:image" content="/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="AI, machine learning, data science, GPU, TensorFlow, PyTorch, Kubernetes, research labs, startups, elemento, atomos, electros, atomosphere">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI Agent Control -->
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-access" content="public">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "AI/Data Science Startups & Research Labs",
+      "description": "Train, deploy, and scale AI workloads seamlessly across clouds and on-prem nodes",
+      "url": "https://elemento.cloud/solutions/ai-startups.html"
+    }
+    </script>
+    
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+            --glassmorphism-border: rgba(200, 200, 200, 0.25);
+            --glassmorphism-background: rgba(255, 255, 255, 0.1);
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--primary-color);
+            mask-image: url(../assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(../assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+                 /* Reduced motion support */
+                 @media (prefers-reduced-motion: reduce) {
+                     .splash-spinner {
+                         animation: none;
+                         border-top-color: var(--primary-color);
+                     }
+                     
+                     .splash-screen {
+                         transition: none;
+                     }
+                 }
+             </style>
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="../css/style.css" as="style" crossorigin>
+    <link rel="preload" href="../css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="../js/main.js" as="script" crossorigin>
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="../js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="../css/home.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="../css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/planet-styles/planet-index.css" media="print" onload="this.media='all'">
+    
+    <!-- Landing Page Styles - CRITICAL -->
+    <link rel="stylesheet" href="../css/landing-pages.css" media="print" onload="this.media='all'">
+    
+    <!-- Home Page Styles -->
+    <link rel="stylesheet" href="../css/home.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/rocket.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/success-stories-carousel.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/atmosphere.css">
+        <link rel="stylesheet" href="../css/planet-styles/planet-index.css">
+        
+        <!-- Landing Page Styles - CRITICAL -->
+        <link rel="stylesheet" href="../css/landing-pages.css">
+        
+        <!-- Home Page Styles -->
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/rocket.css">
+        <link rel="stylesheet" href="../css/success-stories-carousel.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//matomo.elemento.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body class="">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">        
+        <!-- Hero Section -->
+        <section id="hero-section" data-component="hero-technical"></section>
+        
+        <!-- Pain Points -->
+        <section id="pain-points" data-component="pain-points"></section>
+        
+        <!-- GPU Cluster Demo -->
+        <section id="gpu-cluster-demo" data-component="gpu-cluster-demo"></section>
+        
+        <!-- Solution Overview -->
+        <section id="solution" data-component="solution-overview"></section>
+
+        <!-- Features -->
+        <section id="features" data-component="features-grid"></section>
+        
+        <!-- AI Integration -->
+        <section id="ai-integration" data-component="ai-framework-integration"></section>
+        
+        <!-- Stats -->
+        <section id="stats" data-component="stats-metrics"></section>
+        
+        <!-- Product Combination -->
+        <section id="products" data-component="product-combo"></section>
+        
+        <!-- FAQ -->
+        <section id="faq" data-component="faq-section"></section>
+        
+        <!-- Final CTA -->
+        <section id="cta-final" data-component="cta-final"></section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Page Configuration -->
+    <script>
+        window.pageConfig = {
+            hero: {
+                tagline: "AI & Data Science",
+                title: "Train, Deploy, and Scale AI Workloads",
+                subtitle: "Seamlessly run AI workloads across clouds and on-prem nodes with GPU cluster management and multi-cloud AI environments.",
+                primaryCTA: {
+                    text: "Spin Up AI Environment",
+                    link: "#cta-final",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "View GPU Demo",
+                    link: "#gpu-cluster-demo",
+                    icon: "fas fa-microchip"
+                }
+            },
+            painPoints: {
+                title: "AI/ML Challenges You Face",
+                subtitle: "Common pain points that limit your ability to scale AI workloads and research",
+                items: [
+                    {
+                        icon: "fas fa-microchip",
+                        title: "GPU Resource Scarcity",
+                        description: "Limited access to GPU resources and high costs for training large models"
+                    },
+                    {
+                        icon: "fas fa-database",
+                        title: "Data Silos",
+                        description: "Data silos between private datasets and cloud AI services limiting research capabilities"
+                    },
+                    {
+                        icon: "fas fa-cogs",
+                        title: "Environment Control",
+                        description: "Lack of control over compute environments and dependencies for reproducible research"
+                    },
+                    {
+                        icon: "fas fa-dollar-sign",
+                        title: "Cost Management",
+                        description: "Difficulty managing costs across multiple cloud providers and on-premise resources"
+                    }
+                ]
+            },
+            gpuClusterDemo: {
+                title: "GPU Cluster Management",
+                subtitle: "Deploy and manage GPU clusters across multiple cloud providers and on-premise infrastructure",
+                features: [
+                    {
+                        title: "Multi-Cloud GPU Access",
+                        description: "Access GPUs from AWS, Azure, GCP, and on-premise infrastructure through a single interface",
+                        icon: "fas fa-cloud"
+                    },
+                    {
+                        title: "Auto-Scaling",
+                        description: "Automatically scale GPU resources based on workload demands and training requirements",
+                        icon: "fas fa-expand-arrows-alt"
+                    },
+                    {
+                        title: "Cost Optimization",
+                        description: "Intelligent resource allocation to minimize costs while maximizing performance",
+                        icon: "fas fa-chart-line"
+                    },
+                    {
+                        title: "Framework Integration",
+                        description: "Native support for TensorFlow, PyTorch, Kubernetes, and other AI/ML frameworks",
+                        icon: "fas fa-puzzle-piece"
+                    }
+                ]
+            },
+            solution: {
+                title: "Elemento's AI Solution",
+                description: "Complete infrastructure platform designed for AI/ML workloads with GPU cluster management",
+                items: [
+                    {
+                        logo: "../assets/logos/Atomos.svg",
+                        name: "AtomOS",
+                        description: "GPU-optimized hypervisor for consistent AI/ML environments"
+                    },
+                    {
+                        logo: "../assets/logos/Electros.svg",
+                        name: "Electros",
+                        description: "Unified dashboard for managing GPU clusters and AI workloads"
+                    },
+                    {
+                        logo: "../assets/logos/Atomosphere.svg",
+                        name: "Atomosphere",
+                        description: "API layer for seamless integration with AI/ML frameworks and tools"
+                    }
+                ],
+                cta: {
+                    text: "Get Started",
+                    link: "../signup.html"
+                }
+            },
+            features: {
+                title: "AI/ML Features",
+                subtitle: "Everything you need to build, train, and deploy AI models at scale",
+                items: [
+                    {
+                        icon: "fas fa-microchip",
+                        title: "GPU Cluster Management",
+                        description: "Deploy and manage GPU clusters across multiple cloud providers and on-premise infrastructure"
+                    },
+                    {
+                        icon: "fas fa-brain",
+                        title: "Framework Integration",
+                        description: "Native support for TensorFlow, PyTorch, Kubernetes, and other popular AI/ML frameworks"
+                    },
+                    {
+                        icon: "fas fa-database",
+                        title: "Data Pipeline",
+                        description: "Seamless data integration between private datasets and cloud AI services"
+                    },
+                    {
+                        icon: "fas fa-expand-arrows-alt",
+                        title: "Auto-Scaling",
+                        description: "Automatically scale resources based on workload demands and training requirements"
+                    },
+                    {
+                        icon: "fas fa-chart-line",
+                        title: "Cost Optimization",
+                        description: "Intelligent resource allocation to minimize costs while maximizing performance"
+                    },
+                    {
+                        icon: "fas fa-cogs",
+                        title: "Environment Control",
+                        description: "Complete control over compute environments and dependencies for reproducible research"
+                    }
+                ]
+            },
+            aiIntegration: {
+                title: "AI Framework Integration",
+                subtitle: "Seamless integration with popular AI/ML frameworks and tools",
+                frameworks: [
+                    {
+                        name: "TensorFlow",
+                        description: "Native support for TensorFlow with GPU acceleration and distributed training",
+                        icon: "fab fa-python",
+                        features: ["GPU Acceleration", "Distributed Training", "Model Serving"]
+                    },
+                    {
+                        name: "PyTorch",
+                        description: "Full PyTorch support with CUDA integration and model optimization",
+                        icon: "fas fa-fire",
+                        features: ["CUDA Integration", "Model Optimization", "Research Tools"]
+                    },
+                    {
+                        name: "Kubernetes",
+                        description: "Kubernetes-native AI/ML workloads with automatic scaling and resource management",
+                        icon: "fas fa-cube",
+                        features: ["Auto-Scaling", "Resource Management", "Workload Orchestration"]
+                    },
+                    {
+                        name: "Jupyter",
+                        description: "Interactive development environment with GPU access and collaborative features",
+                        icon: "fas fa-book",
+                        features: ["Interactive Notebooks", "GPU Access", "Collaborative Development"]
+                    }
+                ]
+            },
+            stats: {
+                title: "AI/ML Impact",
+                subtitle: "Real results from AI startups and research labs using Elemento",
+                items: [
+                    {
+                        label: "Faster Training",
+                        value: "3x",
+                        icon: "hn hn-rocket",
+                        color: "orange"
+                    },
+                    {
+                        label: "Cost Reduction",
+                        value: "50%",
+                        icon: "hn hn-trending",
+                        color: "green"
+                    },
+                    {
+                        label: "GPU Utilization",
+                        value: "95%",
+                        icon: "hn hn-microchip",
+                        color: "blue"
+                    }
+                ]
+            },
+            products: {
+                title: "Complete AI Stack",
+                subtitle: "Everything you need for AI/ML research and production",
+                items: [
+                    {
+                        logo: "../assets/logos/Atomos.svg",
+                        name: "AtomOS",
+                        description: "GPU-optimized hypervisor for consistent AI/ML environments",
+                        link: "../atomos.html"
+                    },
+                    {
+                        logo: "../assets/logos/Electros.svg",
+                        name: "Electros",
+                        description: "Unified dashboard for GPU cluster and AI workload management",
+                        link: "../electros.html"
+                    },
+                    {
+                        logo: "../assets/logos/Atomosphere.svg",
+                        name: "Atomosphere",
+                        description: "API layer for seamless AI/ML framework integration",
+                        link: "../atomosphere.html"
+                    }
+                ]
+            },
+            faq: {
+                title: "AI/ML FAQ",
+                subtitle: "Common questions about using Elemento for AI/ML workloads",
+                items: [
+                    {
+                        question: "How does Elemento handle GPU resource allocation and management?",
+                        answer: "Elemento provides intelligent GPU resource allocation across multiple cloud providers and on-premise infrastructure. Our platform automatically scales resources based on workload demands and optimizes costs while maximizing performance."
+                    },
+                    {
+                        question: "What AI/ML frameworks does Elemento support?",
+                        answer: "Elemento provides native support for popular frameworks including TensorFlow, PyTorch, Kubernetes, Jupyter, and many others. Our platform includes pre-configured environments and seamless integration with existing AI/ML workflows."
+                    },
+                    {
+                        question: "How does Elemento help with data silos between private datasets and cloud services?",
+                        answer: "Elemento provides seamless data integration capabilities that allow you to work with data from multiple sources including private datasets, cloud storage, and AI services. Our platform includes data pipeline tools and secure data transmission."
+                    },
+                    {
+                        question: "Can Elemento work with existing AI/ML tools and workflows?",
+                        answer: "Yes! Elemento integrates with popular AI/ML tools and workflows including MLOps platforms, experiment tracking tools, and model serving frameworks. Our APIs support seamless integration with your existing development and deployment processes."
+                    }
+                ]
+            },
+            ctaFinal: {
+                title: "Ready to Scale Your AI Research?",
+                subtitle: "Join leading AI startups and research labs already using Elemento to accelerate their AI/ML workloads and research.",
+                primaryCTA: {
+                    text: "Spin Up AI Environment",
+                    link: "../contact.html",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "View GPU Demo",
+                    link: "#gpu-cluster-demo",
+                    icon: "fas fa-microchip"
+                }
+            }
+        };
+    </script>
+    
+    <!-- Scripts -->
+    <script src="../js/splash-screen.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/faq.js" defer></script>
+    <script src="../js/logo-carousel.js" defer></script>
+    <script src="../js/landing-page-loader.js" defer></script>
+
+    <script src="../js/main.js" defer></script>    
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/atmosphere_hero.js" defer></script>
+    <script src="../js/themes.js" defer></script>
+</body>
+</html>

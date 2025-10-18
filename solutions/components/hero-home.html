@@ -1,0 +1,36 @@
+<section class="hero" role="banner" aria-label="Elemento Homepage Hero">
+    <!-- Atmosphere Hero Placeholder -->
+    <div id="atmosphere-hero-placeholder"></div>
+
+    <div class="hero-container hero-vert-center">
+        <div class="hero-content">
+            <div class="hero-buttons fade-in">
+                <!-- Tagline -->
+                <p class="hero-tagline">{{tagline}}</p>
+
+                <!-- Main Headline -->
+                <h1 class="hero-title">{{title}}</h1>
+
+                <!-- Subheadline -->
+                <div class="hero-subtitle">
+                    <p>{{subtitle}}</p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="quick-contact-options hero-cta">
+                    <a href="{{primaryCTA.link}}" class="btn btn-secondary quick-contact-btn rocket-btn">
+                        <div class="rocket-container">
+                            <i class="{{primaryCTA.icon}} rocket-icon"></i>
+                            <i class="fas rocket-flyaway"></i>
+                        </div>
+                        <span>{{primaryCTA.text}}</span>
+                    </a>
+                    <a href="{{secondaryCTA.link}}" class="btn btn-primary quick-contact-btn">
+                        <i class="{{secondaryCTA.icon}}"></i>
+                        <span>{{secondaryCTA.text}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

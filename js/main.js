@@ -647,8 +647,16 @@ class ElementoWebsite {
         const currentScript = document.currentScript || document.querySelector('script[src*="main.js"]');
         const scriptSrc = currentScript ? currentScript.src : '';
         const isInBlogPost = scriptSrc.includes('../js/main.js');
+        const isInSolutions = window.location.pathname.includes('solutions/');
         
-        iubendaFixScript.src = isInBlogPost ? '../js/iubenda_fix.js' : 'js/iubenda_fix.js';
+        let iubendaPath;
+        if (isInBlogPost || isInSolutions) {
+            iubendaPath = '../js/iubenda_fix.js';
+        } else {
+            iubendaPath = 'js/iubenda_fix.js';
+        }
+        
+        iubendaFixScript.src = iubendaPath;
         document.head.appendChild(iubendaFixScript);
     }
 

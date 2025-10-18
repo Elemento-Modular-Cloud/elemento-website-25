@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Infrastructure for CI/CD Pipelines | Elemento</title>
+    <meta name="description" content="Build cloud-agnostic CI/CD pipelines with Elemento. Deploy faster, scale efficiently, and maintain consistency across all environments with our unified platform.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/solutions/devops-cicd.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DevOps Infrastructure for CI/CD Pipelines | Elemento">
+    <meta property="og:description" content="Build cloud-agnostic CI/CD pipelines with Elemento. Deploy faster, scale efficiently, and maintain consistency across all environments.">
+    <meta property="og:image" content="/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/solutions/devops-cicd.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevOps Infrastructure for CI/CD Pipelines | Elemento">
+    <meta name="twitter:description" content="Build cloud-agnostic CI/CD pipelines with Elemento. Deploy faster, scale efficiently, and maintain consistency across all environments.">
+    <meta name="twitter:image" content="/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="devops, cicd, continuous integration, continuous deployment, cloud infrastructure, automation, elemento, atomos, electros, atomosphere">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI Agent Control -->
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-access" content="public">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "DevOps Infrastructure for CI/CD Pipelines",
+      "description": "Build cloud-agnostic CI/CD pipelines with Elemento",
+      "url": "https://elemento.cloud/solutions/devops-cicd.html"
+    }
+    </script>
+    
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+            --glassmorphism-border: rgba(200, 200, 200, 0.25);
+            --glassmorphism-background: rgba(255, 255, 255, 0.1);
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--primary-color);
+            mask-image: url(../assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(../assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+                 /* Reduced motion support */
+                 @media (prefers-reduced-motion: reduce) {
+                     .splash-spinner {
+                         animation: none;
+                         border-top-color: var(--primary-color);
+                     }
+                     
+                     .splash-screen {
+                         transition: none;
+                     }
+                 }
+             </style>
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="../css/style.css" as="style" crossorigin>
+    <link rel="preload" href="../css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="../js/main.js" as="script" crossorigin>
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="../js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="../css/home.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="../css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/planet-styles/planet-index.css" media="print" onload="this.media='all'">
+    
+    <!-- Landing Page Styles - CRITICAL -->
+    <link rel="stylesheet" href="../css/landing-pages.css" media="print" onload="this.media='all'">
+    
+    <!-- Home Page Styles -->
+    <link rel="stylesheet" href="../css/home.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/rocket.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/success-stories-carousel.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/atmosphere.css">
+        <link rel="stylesheet" href="../css/planet-styles/planet-index.css">
+        
+        <!-- Landing Page Styles - CRITICAL -->
+        <link rel="stylesheet" href="../css/landing-pages.css">
+        
+        <!-- Home Page Styles -->
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/rocket.css">
+        <link rel="stylesheet" href="../css/success-stories-carousel.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//matomo.elemento.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body class="">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">        
+        <!-- Hero Section -->
+        <section id="hero-section" data-component="hero-technical"></section>
+        
+        <!-- Pain Points -->
+        <section id="pain-points" data-component="pain-points"></section>
+        
+        <!-- Solution Overview -->
+        <section id="solution" data-component="solution-overview"></section>
+
+        <!-- Features -->
+        <section id="features" data-component="features-grid"></section>
+        
+        <!-- Use Case -->
+        <section id="use-case" data-component="use-case-walkthrough"></section>
+        
+        <!-- Code Example -->
+        <section id="code-example" data-component="code-example"></section>
+        
+        <!-- Stats -->
+        <section id="stats" data-component="stats-metrics"></section>
+        
+        <!-- Product Combination -->
+        <section id="products" data-component="product-combo"></section>
+        
+        <!-- FAQ -->
+        <section id="faq" data-component="faq-section"></section>
+        
+        <!-- Final CTA -->
+        <section id="cta-final" data-component="cta-final"></section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Page Configuration -->
+    <script>
+        window.pageConfig = {
+            hero: {
+                tagline: "DevOps Infrastructure",
+                title: "Build Cloud-Agnostic CI/CD Pipelines",
+                subtitle: "Deploy faster, scale efficiently, and maintain consistency across all environments with our unified platform.",
+                primaryCTA: {
+                    text: "Start Building",
+                    link: "#features",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "Learn More",
+                    link: "#features",
+                    icon: "hn hn-lightbulb"
+                }
+            },
+            painPoints: {
+                title: "DevOps Challenges You Face",
+                subtitle: "Common pain points that slow down your development and deployment processes",
+                items: [
+                    {
+                        icon: "fas fa-clock",
+                        title: "Slow Deployment Cycles",
+                        description: "Manual processes and environment inconsistencies causing delays in releases"
+                    },
+                    {
+                        icon: "fas fa-exclamation-triangle",
+                        title: "Environment Drift",
+                        description: "Production issues due to differences between dev, staging, and production environments"
+                    },
+                    {
+                        icon: "fas fa-lock",
+                        title: "Vendor Lock-in",
+                        description: "Tied to specific cloud providers, limiting flexibility and increasing costs"
+                    },
+                    {
+                        icon: "fas fa-chart-line",
+                        title: "Scaling Complexity",
+                        description: "Difficulty scaling infrastructure and managing resources across multiple environments"
+                    }
+                ]
+            },
+            solution: {
+                title: "Elemento's DevOps Solution",
+                description: "Unified infrastructure management that eliminates environment drift and accelerates your CI/CD pipelines",
+                items: [
+                    {
+                        logo: "../assets/logos/Atomos.svg",
+                        name: "AtomOS",
+                        description: "Consistent hypervisor environment across all deployments"
+                    },
+                    {
+                        logo: "../assets/logos/Electros.svg",
+                        name: "Electros",
+                        description: "Unified dashboard for managing all your infrastructure"
+                    },
+                    {
+                        logo: "../assets/logos/Atomosphere.svg",
+                        name: "Atomosphere",
+                        description: "API layer for seamless cloud provider integration"
+                    }
+                ],
+                cta: {
+                    text: "Get Started",
+                    link: "../signup.html"
+                }
+            },
+            features: {
+                title: "DevOps Features",
+                subtitle: "Everything you need to streamline your development and deployment processes",
+                items: [
+                    {
+                        icon: "fas fa-code-branch",
+                        title: "Infrastructure as Code",
+                        description: "Define and version your infrastructure alongside your application code"
+                    },
+                    {
+                        icon: "fas fa-rocket",
+                        title: "Automated Deployments",
+                        description: "Deploy to any cloud provider with consistent, repeatable processes"
+                    },
+                    {
+                        icon: "fas fa-shield-alt",
+                        title: "Environment Consistency",
+                        description: "Identical environments from development to production"
+                    },
+                    {
+                        icon: "fas fa-chart-line",
+                        title: "Auto-scaling",
+                        description: "Automatically scale resources based on demand and performance metrics"
+                    },
+                    {
+                        icon: "fas fa-eye",
+                        title: "Real-time Monitoring",
+                        description: "Comprehensive monitoring and logging across all environments"
+                    },
+                    {
+                        icon: "fas fa-lock",
+                        title: "Security & Compliance",
+                        description: "Built-in security features and compliance-ready architecture"
+                    }
+                ]
+            },
+            useCase: {
+                title: "How It Works",
+                subtitle: "From code commit to production deployment in minutes",
+                items: [
+                    {
+                        number: "1",
+                        title: "Code Commit",
+                        description: "Developers commit code to your repository, triggering the CI/CD pipeline"
+                    },
+                    {
+                        number: "2",
+                        title: "Build & Test",
+                        description: "Elemento automatically builds your application and runs tests in a consistent environment"
+                    },
+                    {
+                        number: "3",
+                        title: "Deploy",
+                        description: "Deploy to staging and production environments with identical infrastructure"
+                    },
+                    {
+                        number: "4",
+                        title: "Monitor",
+                        description: "Monitor performance and scale resources automatically based on demand"
+                    }
+                ]
+            },
+            codeExample: {
+                title: "Infrastructure as Code",
+                subtitle: "Define your infrastructure with simple, declarative configuration",
+                code: `# Define your infrastructure
+apiVersion: elemento.cloud/v1
+kind: Infrastructure
+metadata:
+  name: devops-pipeline
+spec:
+  environments:
+    - name: staging
+      replicas: 2
+      resources:
+        cpu: "1"
+        memory: "2Gi"
+    - name: production
+      replicas: 5
+      resources:
+        cpu: "2"
+        memory: "4Gi"
+  deployment:
+    strategy: rolling
+    healthCheck:
+      path: /health
+      interval: 30s`,
+                cta: {
+                    text: "View Documentation",
+                    link: "../products.html"
+                }
+            },
+            stats: {
+                title: "DevOps Impact",
+                subtitle: "Real results from teams using Elemento for CI/CD",
+                items: [
+                    {
+                        label: "Faster Deployments",
+                        value: "75%",
+                        icon: "hn hn-rocket",
+                        color: "orange"
+                    },
+                    {
+                        label: "Reduced Downtime",
+                        value: "90%",
+                        icon: "hn hn-check-circle",
+                        color: "green"
+                    },
+                    {
+                        label: "Cost Savings",
+                        value: "60%",
+                        icon: "hn hn-trending",
+                        color: "blue"
+                    }
+                ]
+            },
+            products: {
+                title: "Complete DevOps Stack",
+                subtitle: "Everything you need for modern DevOps workflows",
+                items: [
+                    {
+                        logo: "../assets/logos/Atomos.svg",
+                        name: "AtomOS",
+                        description: "Production-grade hypervisor for consistent environments",
+                        link: "../atomos.html"
+                    },
+                    {
+                        logo: "../assets/logos/Electros.svg",
+                        name: "Electros",
+                        description: "Unified dashboard for infrastructure management",
+                        link: "../electros.html"
+                    },
+                    {
+                        logo: "../assets/logos/Atomosphere.svg",
+                        name: "Atomosphere",
+                        description: "API layer for multi-cloud orchestration",
+                        link: "../atomosphere.html"
+                    }
+                ]
+            },
+            faq: {
+                title: "DevOps FAQ",
+                subtitle: "Common questions about using Elemento for DevOps",
+                items: [
+                    {
+                        question: "How does Elemento improve CI/CD pipelines?",
+                        answer: "Elemento provides consistent environments across all stages of your pipeline, eliminating environment drift and reducing deployment failures. Our unified platform ensures your staging environment is identical to production."
+                    },
+                    {
+                        question: "Can I use my existing CI/CD tools?",
+                        answer: "Yes! Elemento integrates with popular CI/CD tools like Jenkins, GitLab CI, GitHub Actions, and Azure DevOps. You can use your existing workflows while gaining the benefits of consistent infrastructure."
+                    },
+                    {
+                        question: "How does Elemento handle different cloud providers?",
+                        answer: "Elemento abstracts away cloud provider differences, allowing you to deploy the same infrastructure configuration across AWS, Azure, Google Cloud, or your own data centers. This eliminates vendor lock-in and provides true multi-cloud flexibility."
+                    },
+                    {
+                        question: "What about security and compliance?",
+                        answer: "Elemento provides enterprise-grade security with built-in encryption, access controls, and audit logging. We support SOC 2, GDPR, and other compliance requirements, making it suitable for regulated industries."
+                    }
+                ]
+            },
+            ctaFinal: {
+                title: "Ready to Transform Your DevOps?",
+                subtitle: "Join thousands of teams already using Elemento to streamline their CI/CD pipelines and accelerate development.",
+                primaryCTA: {
+                    text: "Start Free Trial",
+                    link: "#faq",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "Contact Sales",
+                    link: "#faq",
+                    icon: "fas fa-phone"
+                }
+            }
+        };
+    </script>
+    
+    <!-- Scripts -->
+    <script src="../js/splash-screen.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/faq.js" defer></script>
+    <script src="../js/logo-carousel.js" defer></script>
+    <script src="../js/landing-page-loader.js" defer></script>
+
+    <script src="../js/main.js" defer></script>    
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/atmosphere_hero.js" defer></script>
+    <script src="../js/themes.js" defer></script>
+</body>
+</html>

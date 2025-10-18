@@ -1,0 +1,65 @@
+<section class="section multi-tenant-architecture">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="architecture-diagram">
+            <!-- repeat:item -->
+            <div class="architecture-layer scroll-animate">
+                <div class="layer-header">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                </div>
+                <div class="layer-components">
+                    <!-- repeat:component -->
+                    <div class="component-item">
+                        <div class="component-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span class="component-name">{{component}}</span>
+                    </div>
+                    <!-- endrepeat:component -->
+                </div>
+                <div class="layer-connector">
+                    <div class="connector-line"></div>
+                </div>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+        
+        <div class="architecture-benefits">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Secure Isolation</h4>
+                    <p>Complete tenant isolation at the hypervisor level with encrypted data transmission</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Scalable Resources</h4>
+                    <p>Dynamic resource allocation and scaling based on tenant requirements and usage patterns</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Automated Management</h4>
+                    <p>Automated provisioning, monitoring, and maintenance across all tenant environments</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h4>Cost Optimization</h4>
+                    <p>Efficient resource sharing and usage-based billing for optimal cost management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

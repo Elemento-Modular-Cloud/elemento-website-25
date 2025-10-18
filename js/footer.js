@@ -4,13 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     if (footerPlaceholder) {
         // Determine the correct path to the footer component
         const isInBlogPost = window.location.pathname.includes('blog-posts/');
-        const footerPath = isInBlogPost ? '../components/footer.html' : 'components/footer.html';
+        const isInSolutions = window.location.pathname.includes('solutions/');
+        let footerPath;
+        
+        if (isInBlogPost) {
+            footerPath = '../components/footer.html';
+        } else if (isInSolutions) {
+            footerPath = '../components/footer.html';
+        } else {
+            footerPath = 'components/footer.html';
+        }
         
         fetch(footerPath)
             .then(response => response.text())
             .then(html => {
-                // If we're in a blog post, we need to adjust the asset paths
-                if (isInBlogPost) {
+                // If we're in a blog post or solutions page, we need to adjust the asset paths
+                if (isInBlogPost || isInSolutions) {
                     html = html.replace(/src="assets\//g, 'src="../assets/');
                     html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
                 }

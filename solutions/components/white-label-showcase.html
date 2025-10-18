@@ -1,0 +1,121 @@
+<section class="section white-label-showcase">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="white-label-demo">
+            <div class="demo-container">
+                <div class="demo-header">
+                    <div class="demo-branding">
+                        <div class="demo-logo">Your Brand</div>
+                        <div class="demo-nav">
+                            <span class="nav-item active">Dashboard</span>
+                            <span class="nav-item">Infrastructure</span>
+                            <span class="nav-item">Analytics</span>
+                            <span class="nav-item">Billing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="demo-sidebar">
+                        <div class="sidebar-section">
+                            <h4>Client Environments</h4>
+                            <div class="client-list">
+                                <div class="client-item active">
+                                    <div class="client-icon">A</div>
+                                    <div class="client-info">
+                                        <div class="client-name">Acme Corp</div>
+                                        <div class="client-status">Active</div>
+                                    </div>
+                                </div>
+                                <div class="client-item">
+                                    <div class="client-icon">B</div>
+                                    <div class="client-info">
+                                        <div class="client-name">Beta Industries</div>
+                                        <div class="client-status">Active</div>
+                                    </div>
+                                </div>
+                                <div class="client-item">
+                                    <div class="client-icon">C</div>
+                                    <div class="client-info">
+                                        <div class="client-name">Gamma Solutions</div>
+                                        <div class="client-status">Pending</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-main">
+                        <div class="demo-metrics">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-value">24</div>
+                                    <div class="metric-label">Active Servers</div>
+                                </div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-value">156</div>
+                                    <div class="metric-label">Users</div>
+                                </div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-value">98.5%</div>
+                                    <div class="metric-label">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-chart">
+                            <div class="chart-header">
+                                <h4>Resource Usage</h4>
+                                <div class="chart-controls">
+                                    <button class="btn-small active">7D</button>
+                                    <button class="btn-small">30D</button>
+                                    <button class="btn-small">90D</button>
+                                </div>
+                            </div>
+                            <div class="chart-placeholder">
+                                <div class="chart-bars">
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 80%"></div>
+                                    <div class="bar" style="height: 45%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                    <div class="bar" style="height: 70%"></div>
+                                    <div class="bar" style="height: 85%"></div>
+                                    <div class="bar" style="height: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="white-label-features">
+            <!-- repeat:item -->
+            <div class="feature-card scroll-animate">
+                <div class="feature-icon">
+                    <i class="{{item.icon}}"></i>
+                </div>
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+    </div>
+</section>

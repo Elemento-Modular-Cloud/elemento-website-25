@@ -1,0 +1,19 @@
+<section class="section stats">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="stats-grid">
+            <!-- repeat:item -->
+            <div class="stat-item fade-in visible">
+                <div class="stat-icon"><i class="{{item.icon}}" style="color: var(--{{item.color}});"></i></div>
+                <h3>{{item.value}}</h3>
+                <p>{{item.label}}</p>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+    </div>
+</section>
+

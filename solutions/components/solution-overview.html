@@ -1,0 +1,23 @@
+<section class="section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{description}}</p>
+        </div>
+        
+        <div class="grid {{gridClass}}">
+            <!-- repeat:item -->
+            <div class="product-card scroll-animate">
+                <img src="{{item.logo}}" alt="{{item.name}}" class="product-icon-medium">
+                <h3>{{item.name}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+        
+        <div class="text-center mt-3xl">
+            <a href="{{cta.link}}" class="btn btn-primary">{{cta.text}}</a>
+        </div>
+    </div>
+</section>
+

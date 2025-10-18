@@ -1,0 +1,23 @@
+<section class="section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="faq-container">
+            <!-- repeat:item -->
+            <div class="faq-item scroll-animate">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    <span>{{item.question}}</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>{{item.answer}}</p>
+                </div>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,93 @@
+<section class="section security-architecture">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="security-layers">
+            <!-- repeat:item -->
+            <div class="security-layer scroll-animate">
+                <div class="layer-icon">
+                    <i class="{{item.icon}}"></i>
+                </div>
+                <div class="layer-content">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            <!-- endrepeat:item -->
+        </div>
+        
+        <div class="security-diagram">
+            <div class="diagram-container">
+                <div class="security-ring outer">
+                    <div class="ring-label">Network Security</div>
+                    <div class="ring-features">
+                        <span>Firewall</span>
+                        <span>DDoS Protection</span>
+                        <span>VPN</span>
+                    </div>
+                </div>
+                
+                <div class="security-ring middle">
+                    <div class="ring-label">Application Security</div>
+                    <div class="ring-features">
+                        <span>WAF</span>
+                        <span>API Security</span>
+                        <span>Authentication</span>
+                    </div>
+                </div>
+                
+                <div class="security-ring inner">
+                    <div class="ring-label">Data Security</div>
+                    <div class="ring-features">
+                        <span>Encryption</span>
+                        <span>Key Management</span>
+                        <span>Access Control</span>
+                    </div>
+                </div>
+                
+                <div class="security-core">
+                    <div class="core-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="core-label">Elemento Core</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="security-metrics">
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="metric-value">AES-256</div>
+                    <div class="metric-label">Encryption Standard</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="metric-value">RSA-4096</div>
+                    <div class="metric-label">Key Management</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="metric-value">MFA</div>
+                    <div class="metric-label">Multi-Factor Auth</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="metric-value">24/7</div>
+                    <div class="metric-label">Audit Logging</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

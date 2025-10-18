@@ -1,0 +1,70 @@
+<section class="section case-study">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">{{title}}</h2>
+            <p class="section-subtitle">{{subtitle}}</p>
+        </div>
+        
+        <div class="case-study-content">
+            <div class="case-study-text">
+                <p class="case-study-description">{{content}}</p>
+            </div>
+            
+            <div class="case-study-metrics">
+                <!-- repeat:item -->
+                <div class="metric-card scroll-animate">
+                    <div class="metric-icon">
+                        <i class="{{item.icon}}"></i>
+                    </div>
+                    <div class="metric-value">{{item.value}}</div>
+                    <div class="metric-label">{{item.label}}</div>
+                </div>
+                <!-- endrepeat:item -->
+            </div>
+        </div>
+        
+        <div class="case-study-visual">
+            <div class="before-after-comparison">
+                <div class="comparison-item">
+                    <h4>Before Elemento</h4>
+                    <div class="comparison-metrics">
+                        <div class="metric">
+                            <span class="metric-value">60%</span>
+                            <span class="metric-label">Unplanned Downtime</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">$5.2M</span>
+                            <span class="metric-label">Annual Maintenance Cost</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">72h</span>
+                            <span class="metric-label">Average Repair Time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comparison-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="comparison-item">
+                    <h4>After Elemento</h4>
+                    <div class="comparison-metrics">
+                        <div class="metric">
+                            <span class="metric-value">36%</span>
+                            <span class="metric-label">Unplanned Downtime</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">$2.9M</span>
+                            <span class="metric-label">Annual Maintenance Cost</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">24h</span>
+                            <span class="metric-label">Average Repair Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

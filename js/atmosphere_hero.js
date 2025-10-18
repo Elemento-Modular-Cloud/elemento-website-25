@@ -1,16 +1,17 @@
 // Atmosphere Hero loader
-document.addEventListener('DOMContentLoaded', function() {
+function loadAtmosphereHero() {
     const atmosphereHeroPlaceholder = document.getElementById('atmosphere-hero-placeholder');
     if (atmosphereHeroPlaceholder) {
         // Determine the correct path to the atmosphere hero component
         const isInBlogPost = window.location.pathname.includes('blog-posts/');
-        const atmosphereHeroPath = isInBlogPost ? '../components/atmosphere_hero.html' : 'components/atmosphere_hero.html';
+        const isInSolutions = window.location.pathname.includes('solutions/');
+        const atmosphereHeroPath = (isInBlogPost || isInSolutions) ? '../components/atmosphere_hero.html' : 'components/atmosphere_hero.html';
         
         fetch(atmosphereHeroPath)
             .then(response => response.text())
             .then(html => {
-                // If we're in a blog post, we need to adjust the asset paths
-                if (isInBlogPost) {
+                // If we're in a blog post or solutions directory, we need to adjust the asset paths
+                if (isInBlogPost || isInSolutions) {
                     html = html.replace(/src="assets\//g, 'src="../assets/');
                     html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
                 }
@@ -95,6 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 `;
                 atmosphereHeroPlaceholder.innerHTML = fallbackHtml;
             });
+    } else {
+        console.log('Atmosphere hero placeholder not found, will retry...');
     }
-});
+}
+
+// Try to load atmosphere hero immediately
+loadAtmosphereHero();
+
+// Also try after a short delay in case components are still loading
+setTimeout(loadAtmosphereHero, 1000);
+
+// Listen for custom event when components are loaded
+document.addEventListener('componentsLoaded', loadAtmosphereHero);
 
