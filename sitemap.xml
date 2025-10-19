@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://elemento.cloud/</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,65 +11,151 @@
   <!-- Main product pages -->
   <url>
     <loc>https://elemento.cloud/atomos.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/electros.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/atomosphere.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-<!--   
+  
   <url>
     <loc>https://elemento.cloud/orbital.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url> -->
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/404.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
   
   <!-- Company pages -->
   <url>
     <loc>https://elemento.cloud/about.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/contact.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/products.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/technology.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <!-- Solutions pages -->
+  <url>
+    <loc>https://elemento.cloud/solutions/ai.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/solutions/devops.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/solutions/industrial.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/solutions/public-sector.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/solutions/regulated.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/solutions/system-integrators.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Technology pages -->
+  <url>
+    <loc>https://elemento.cloud/technology/atomos.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/technology/cloud-network.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/technology/electros.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/technology/index.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/technology/install-atomos.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <!-- Blog and content -->
   <url>
     <loc>https://elemento.cloud/blog.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -155,13 +241,6 @@
   <url>
     <loc>https://elemento.cloud/blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html</loc>
     <lastmod>2023-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://elemento.cloud/blog-posts/2024-09-12-the-benefits-of-virtualization-for-cloud-computing-resource-optimization-and-operational-agility.html</loc>
-    <lastmod>2024-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -300,13 +379,6 @@
   </url>
   
   <url>
-    <loc>https://elemento.cloud/blog-posts/2024-11-11-the-evolution-of-cloud-computing-from-the-early-ideas-of-john-mccarthy-to-modern-platforms.html</loc>
-    <lastmod>2024-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://elemento.cloud/blog-posts/2025-03-31-the-triumph-of-cloud-computing-reaching-1-000-billion-in-revenues-by-2027.html</loc>
     <lastmod>2025-03-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -316,13 +388,6 @@
   <url>
     <loc>https://elemento.cloud/blog-posts/2023-08-09-common-mistakes-and-how-to-avoid-them-in-creating-a-cloud-strategy-gartners-recommendations.html</loc>
     <lastmod>2023-08-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://elemento.cloud/blog-posts/2024-06-04-public-private-hybrid-and-multicloud-understanding-the-different-options.html</loc>
-    <lastmod>2024-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -405,29 +470,8 @@
   </url>
   
   <url>
-    <loc>https://elemento.cloud/blog-posts/2024-03-16-italys-national-cloud.html</loc>
-    <lastmod>2024-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://elemento.cloud/blog-posts/2023-10-08-edge-computing-insights-from-gartner-research.html</loc>
     <lastmod>2023-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://elemento.cloud/blog-posts/2024-10-22-the-european-open-science-cloud-towards-a-global-data-space-for-research.html</loc>
-    <lastmod>2024-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://elemento.cloud/blog-posts/2024-12-01-the-future-of-cloud-computing-in-2023-revolutionary-trends-and-looming-challenges.html</loc>
-    <lastmod>2024-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -442,22 +486,51 @@
   <!-- Forms and signup -->
   <url>
     <loc>https://elemento.cloud/signup.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://elemento.cloud/signup-success.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  
+  <!-- Forms pages -->
+  <url>
+    <loc>https://elemento.cloud/forms/getintouch.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/forms/provider-candidature.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/forms/provider-success.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://elemento.cloud/forms/signup.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <!-- Editor page -->
   <url>
     <loc>https://elemento.cloud/editor.html</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
