@@ -33,8 +33,8 @@
 }
 
 .feature-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
 }
 
@@ -132,8 +132,8 @@
 }
 
 .product-card .product-icon-medium {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto 1.5rem;
     transition: transform 0.3s ease;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
@@ -523,15 +523,13 @@
     }
     
     .product-card .product-icon-medium {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 }
 
 /* Enhanced Use Cases Section */
 .use-cases-enhanced {
-    background: var(--glassmorphism-background);
-    backdrop-filter: blur(10px);
     border-radius: var(--radius-3xl);
     margin: 0 var(--space-lg);
     padding: var(--space-3xl) 0;
@@ -583,6 +581,8 @@
 
 .use-cases-enhanced .use-case-icon {
     font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--space-lg);
     display: flex;
     align-items: center;

@@ -64,20 +64,7 @@
     </script>
     
     <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
-    <style>
-        /* Critical rendering path styles - Load immediately to prevent font flash */
-        :root {
-            --background-color: #F5F5FA;
-            --text-color: #1A1C20;
-            --primary-color: #FFA600;
-            --font-primary: 'Open Sans', sans-serif;
-            --font-heading: 'Red Hat Display', sans-serif;
-            --border-color: #e0e0e0;
-            --logo-filter: none;
-            --glassmorphism-border: rgba(200, 200, 200, 0.25);
-            --glassmorphism-background: rgba(255, 255, 255, 0.1);
-        }
-    
+    <style>    
         /* Critical base styles */
         html { 
             scroll-behavior: smooth; 
@@ -361,8 +348,42 @@
         <!-- Pain Points -->
         <section id="pain-points" data-component="pain-points"></section>
         
-        <!-- Security Architecture -->
-        <section id="security-architecture" data-component="security-architecture"></section>
+        <!-- Compliance Overview Section -->
+        <section class="section hero-details">
+            <div class="container">
+                <div class="content-with-image">
+                    <div class="content-text">
+                        <h2>Enterprise <span class="pixel-accent">Compliance</span> & <span class="pixel-word">Data Sovereignty</span></h2>
+                        <p>Meet the most stringent regulatory requirements with <span class="pixel-word">enterprise-grade security</span> and built-in compliance controls. Elemento provides complete data sovereignty, audit trails, and regulatory compliance for healthcare, finance, and government organizations.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Regulatory Compliance</span></h3>
+                                <p>Built-in support for HIPAA, GDPR, SOC 2, ISO 27001, and other major regulatory frameworks</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Data Sovereignty</span></h3>
+                                <p>Complete control over data residency with encryption and access controls for sensitive workloads</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Audit Trails</span></h3>
+                                <p>Comprehensive logging and monitoring for compliance reporting and regulatory audits</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Zero-Trust Security</span></h3>
+                                <p>Identity-based access control with multi-factor authentication and network segmentation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="../assets/img/Cloud Network - Hero - 2.webp" alt="Secure cloud infrastructure for regulated environments" class="hero-detail-image" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Case Walkthrough -->
+        <section id="use-case" data-component="use-case-walkthrough"></section>
         
         <!-- Solution Overview -->
         <section id="solution" data-component="solution-overview"></section>
@@ -370,14 +391,115 @@
         <!-- Features -->
         <section id="features" data-component="features-grid"></section>
         
-        <!-- Compliance -->
-        <section id="compliance" data-component="compliance-certifications"></section>
+        <!-- Code Example -->
+        <section id="code-example" data-component="code-example"></section>
+
+        <!-- Compliance Products Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Compliance-Ready Infrastructure</h2>
+                    <p class="section-subtitle">Enterprise-grade platform designed for regulated environments with built-in security, compliance controls, and audit capabilities.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="product-card scroll-animate">
+                        <div class="use-case-icon centered" data-icon-type="atomos">
+                            <img src="../assets/logos/Atomos.svg" alt="AtomOS hypervisor for regulated environments">
+                        </div>
+                        <h3>AtomOS</h3>
+                        <h4>Secure Hypervisor</h4>
+                        <p>Production-grade hypervisor with enterprise security features, encryption at rest, and compliance-ready architecture. Deploy in air-gapped environments with full audit trail support.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Encryption at rest</span>
+                            <span class="feature-tag">Air-gapped deployment</span>
+                            <span class="feature-tag">Audit trails</span>
+                        </div>
+                        <a href="../atomos.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="product-card scroll-animate highlighted">
+                        <div class="use-case-icon centered" data-icon-type="electros">
+                            <img src="../assets/logos/Electros.svg" alt="Electros dashboard for compliance monitoring">
+                        </div>
+                        <h3>Electros</h3>
+                        <h4>Compliance Dashboard</h4>
+                        <p>Unified dashboard with compliance monitoring, audit reporting, and security controls. Real-time alerts, access logging, and automated compliance reporting for regulatory requirements.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Compliance monitoring</span>
+                            <span class="feature-tag">Audit reporting</span>
+                            <span class="feature-tag">Security controls</span>
+                        </div>
+                        <a href="../electros.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="use-case-icon centered" data-icon-type="atomosphere">
+                            <img src="../assets/logos/Atomosphere.svg" alt="Atomosphere API for secure data integration">
+                        </div>
+                        <h3>Atomosphere</h3>
+                        <h4>Secure Data Gateway</h4>
+                        <p>Encrypted API layer with data sovereignty controls and compliance reporting. Secure data transmission with end-to-end encryption and regulatory compliance monitoring.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">End-to-end encryption</span>
+                            <span class="feature-tag">Data sovereignty</span>
+                            <span class="feature-tag">Compliance monitoring</span>
+                        </div>
+                        <a href="../atomosphere.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- Stats -->
         <section id="stats" data-component="stats-metrics"></section>
         
+        <!-- Related Resources -->
+        <section id="related-resources" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Related Resources</h2>
+                    <p class="section-subtitle">Explore security best practices, compliance strategies, and data protection for regulated environments.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7c1d1d5c369ef6cd7ba_65a43f2e65969e03214a0f5b_Thales_main-_2.webp" alt="Thales Security Report" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>Thales Annual Report: Escalating Ransomware Attacks</h3>
+                            <p>Understand the growing security threats and digital sovereignty requirements for regulated industries.</p>
+                            <a href="../blog-posts/2024-08-03-thales-annual-report-escalating-ransomware-attacks-and-cloud-data-risks-sound-digital-sovereignty-alarm.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7c4aff7b24a0ce4fcb2_6537c8b96a80af01ffa47a66_cyber_2.webp" alt="Cybersecurity Importance" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>The Importance of Cybersecurity in the Digital Age</h3>
+                            <p>Learn about critical cybersecurity measures and compliance requirements for sensitive data protection.</p>
+                            <a href="../blog-posts/2024-12-21-the-importance-of-cybersecurity-in-the-digital-age.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7c0d4c1c37afcd28b68_66ed44b13241a237ae2d52e3_a-photo-of-a-digital-padlock-with-a-cloud-imprint--9T-kDogDQLKfEN2OeXG_pA-_VYgpuVwQxyi544yJKEIiQ.png" alt="Cloud Backup Security" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>Keep Your Business Secure: The Importance of Cloud Backup</h3>
+                            <p>Discover essential data protection strategies and secure backup solutions for regulated environments.</p>
+                            <a href="../blog-posts/2024-04-05-keep-your-business-secure-the-importance-of-cloud-backup.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Product Combination -->
-        <section id="products" data-component="product-combo"></section>
         
         <!-- FAQ -->
         <section id="faq" data-component="faq-section"></section>
@@ -397,13 +519,13 @@
                 title: "Run Sensitive Workloads with Full Data Governance",
                 subtitle: "Elemento provides enterprise-grade security with built-in compliance for healthcare, finance, and other regulated industries.",
                 primaryCTA: {
-                    text: "Schedule Consultation",
-                    link: "#cta-final",
+                    text: "Schedule Compliance Review",
+                    link: "../contact.html",
                     icon: "fas fa-calendar-check"
                 },
                 secondaryCTA: {
-                    text: "View Security",
-                    link: "#security-architecture",
+                    text: "Explore Security Platform",
+                    link: "../products.html",
                     icon: "fas fa-shield-alt"
                 }
             },
@@ -433,29 +555,29 @@
                     }
                 ]
             },
-            securityArchitecture: {
-                title: "Security Architecture",
-                subtitle: "Enterprise-grade security with comprehensive encryption, isolation, and audit capabilities",
-                features: [
+            useCase: {
+                title: "Compliance Workflow",
+                subtitle: "From data collection to audit reporting with full compliance and security",
+                items: [
                     {
-                        title: "End-to-End Encryption",
-                        description: "AES-256 encryption for data at rest and in transit with key management",
-                        icon: "fas fa-key"
+                        number: "1",
+                        title: "Data Collection",
+                        description: "Secure collection of sensitive data with encryption and access controls"
                     },
                     {
-                        title: "Zero-Trust Architecture",
-                        description: "Identity-based access control with multi-factor authentication",
-                        icon: "fas fa-user-shield"
+                        number: "2",
+                        title: "Processing & Storage",
+                        description: "Process data in compliant environments with audit trails and monitoring"
                     },
                     {
-                        title: "Network Isolation",
-                        description: "Complete network segmentation and micro-segmentation capabilities",
-                        icon: "fas fa-network-wired"
+                        number: "3",
+                        title: "Access Control",
+                        description: "Role-based access control with multi-factor authentication and monitoring"
                     },
                     {
-                        title: "Audit Logging",
-                        description: "Comprehensive audit trails for all system access and data operations",
-                        icon: "fas fa-clipboard-list"
+                        number: "4",
+                        title: "Audit & Reporting",
+                        description: "Generate compliance reports and audit trails for regulatory requirements"
                     }
                 ]
             },
@@ -480,8 +602,8 @@
                     }
                 ],
                 cta: {
-                    text: "Get Started",
-                    link: "../signup.html"
+                    text: "See Compliance Stack",
+                    link: "../products.html"
                 }
             },
             features: {
@@ -520,47 +642,37 @@
                     }
                 ]
             },
-            compliance: {
-                title: "Compliance & Certifications",
-                subtitle: "Built-in support for major regulatory frameworks and industry standards",
-                certifications: [
-                    {
-                        name: "GDPR",
-                        description: "General Data Protection Regulation compliance for EU data processing",
-                        status: "Certified",
-                        icon: "fas fa-shield-alt"
-                    },
-                    {
-                        name: "HIPAA",
-                        description: "Health Insurance Portability and Accountability Act for healthcare data",
-                        status: "Certified",
-                        icon: "fas fa-heartbeat"
-                    },
-                    {
-                        name: "SOC 2",
-                        description: "Service Organization Control 2 for security, availability, and confidentiality",
-                        status: "Certified",
-                        icon: "fas fa-certificate"
-                    },
-                    {
-                        name: "ISO 27001",
-                        description: "Information Security Management System standard",
-                        status: "Certified",
-                        icon: "fas fa-lock"
-                    },
-                    {
-                        name: "PCI DSS",
-                        description: "Payment Card Industry Data Security Standard for financial data",
-                        status: "Certified",
-                        icon: "fas fa-credit-card"
-                    },
-                    {
-                        name: "FedRAMP",
-                        description: "Federal Risk and Authorization Management Program for government",
-                        status: "In Progress",
-                        icon: "fas fa-landmark"
-                    }
-                ]
+            codeExample: {
+                title: "Compliance Configuration",
+                subtitle: "Define your compliance requirements with simple, declarative configuration",
+                code: `# Compliance Configuration
+apiVersion: elemento.cloud/v1
+kind: ComplianceEnvironment
+metadata:
+  name: healthcare-data-platform
+spec:
+  compliance:
+    standards: ["HIPAA", "SOC2", "ISO27001"]
+    dataResidency: "US-East"
+    encryption:
+      atRest: "AES-256"
+      inTransit: "TLS-1.3"
+  accessControl:
+    authentication: "multi-factor"
+    authorization: "role-based"
+    auditLogging: true
+  dataGovernance:
+    retention: "7y"
+    backup: "encrypted"
+    monitoring: "continuous"
+  security:
+    networkIsolation: true
+    microSegmentation: true
+    threatDetection: "enabled"`,
+                cta: {
+                    text: "View Security Configuration",
+                    link: "../technology.html"
+                }
             },
             stats: {
                 title: "Compliance Impact",
@@ -569,44 +681,20 @@
                     {
                         label: "Faster Compliance",
                         value: "70%",
-                        icon: "hn hn-rocket",
+                        icon: "fas fa-rocket",
                         color: "orange"
                     },
                     {
                         label: "Security Improvement",
                         value: "95%",
-                        icon: "hn hn-shield",
+                        icon: "fas fa-shield-alt",
                         color: "green"
                     },
                     {
                         label: "Cost Reduction",
                         value: "40%",
-                        icon: "hn hn-trending",
+                        icon: "fas fa-chart-line",
                         color: "blue"
-                    }
-                ]
-            },
-            products: {
-                title: "Complete Compliance Stack",
-                subtitle: "Everything you need for regulated environment infrastructure",
-                items: [
-                    {
-                        logo: "../assets/logos/Atomos.svg",
-                        name: "AtomOS",
-                        description: "Secure hypervisor with built-in compliance controls and audit capabilities",
-                        link: "../atomos.html"
-                    },
-                    {
-                        logo: "../assets/logos/Electros.svg",
-                        name: "Electros",
-                        description: "Compliance-ready dashboard with audit trails and reporting",
-                        link: "../electros.html"
-                    },
-                    {
-                        logo: "../assets/logos/Atomosphere.svg",
-                        name: "Atomosphere",
-                        description: "Secure API layer with encryption and access controls",
-                        link: "../atomosphere.html"
                     }
                 ]
             },
@@ -636,13 +724,13 @@
                 title: "Ready to Secure Your Regulated Workloads?",
                 subtitle: "Join leading healthcare, finance, and government organizations already using Elemento to meet compliance requirements while leveraging cloud technology.",
                 primaryCTA: {
-                    text: "Schedule Consultation",
-                    link: "../contact.html",
+                    text: "Start Secure Deployment",
+                    link: "../signup.html",
                     icon: "fas fa-calendar-check"
                 },
                 secondaryCTA: {
-                    text: "View Certifications",
-                    link: "#compliance",
+                    text: "Explore Compliance Solutions",
+                    link: "../products.html",
                     icon: "fas fa-certificate"
                 }
             }

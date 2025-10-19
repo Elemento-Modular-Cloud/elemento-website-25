@@ -2467,6 +2467,11 @@ body {
     margin: 0 auto;
 }
 
+/* FAQ Grid Layout */
+.grid .faq-item {
+    width: 100%;
+}
+
 .faq-item {
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
