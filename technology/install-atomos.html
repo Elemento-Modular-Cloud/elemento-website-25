@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide — AtomOS & Electros | Elemento Cloud</title>
+    <meta name="description" content="Complete installation guide for AtomOS hypervisor and Electros multicloud dashboard. Get both products running in minutes with step-by-step instructions.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/technology/install-atomos.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Installation Guide — AtomOS & Electros | Elemento Cloud">
+    <meta property="og:description" content="Complete installation guide for AtomOS hypervisor and Electros multicloud dashboard. Get both products running in minutes with step-by-step instructions.">
+    <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/technology/install-atomos.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Elemento">
+    <meta property="og:logo" content="/assets/logos/Elemento.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Installation Guide — AtomOS & Electros | Elemento Cloud">
+    <meta name="twitter:description" content="Complete installation guide for AtomOS hypervisor and Electros multicloud dashboard. Get both products running in minutes with step-by-step instructions.">
+    <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="AtomOS installation, Electros installation, Linux hypervisor, multicloud dashboard, installation guide, Nucleus CLI, Elemento Cloud">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="../css/style.css" as="style" crossorigin>
+    <link rel="preload" href="../css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="../js/main.js" as="script" crossorigin>
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="../js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="../css/atomos.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical heading styles to prevent layout shifts */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Critical hero title styles */
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        /* Critical hero tagline styles */
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent-color);
+            mask-image: url(../assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(../assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+    </style>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="../css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/atomos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/breadcrumb.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/install-guide.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/atomos.css">
+        <link rel="stylesheet" href="../css/breadcrumb.css">
+        <link rel="stylesheet" href="../css/install-guide.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//matomo.elemento.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body class="install-page">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/technology.html" class="breadcrumb-link">Technology</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+                    Installation Guide
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Installation Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Install AtomOS and Electros with a few easy steps</h2>
+            </div>
+            
+            <!-- Navigation Tabs -->
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="showTab('atomos')">
+                    <i class="fas fa-server"></i> AtomOS Hypervisor
+                </button>
+                <button class="nav-tab" onclick="showTab('electros')">
+                    <i class="fas fa-desktop"></i> Electros Dashboard
+                </button>
+            </div>
+
+            <!-- AtomOS Installation Content -->
+            <div id="atomos-tab" class="tab-content active">
+                <div class="section-header">
+                    <h2 class="section-title">AtomOS Installation Guide</h2>
+                    <p class="section-subtitle">Deploy the Linux hypervisor for your infrastructure in 3 minutes</p>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="requirements-grid">
+                    <div class="requirements-card">
+                        <h4><i class="fas fa-microchip"></i> Hardware Requirements</h4>
+                        <ul>
+                            <li>64-bit x86_64 processor with virtualization support (Intel VT-x or AMD-V)</li>
+                            <li>Minimum 4GB RAM (8GB+ recommended)</li>
+                            <li>20GB+ free disk space</li>
+                            <li>Network interface for cluster communication</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-card">
+                        <h4><i class="fas fa-server"></i> Supported Operating Systems</h4>
+                        <ul>
+                            <li><strong>Recommended:</strong> AlmaLinux 9, Rocky Linux 9</li>
+                            <li><strong>Storage nodes:</strong> Fedora ≥38, Ubuntu ≥24, Debian 12</li>
+                            <li><strong>Cloud:</strong> AWS, GCP, Azure bare metal instances</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="installation-card">
+                    <div class="card-header">
+                        <i class="fas fa-rocket"></i>
+                        AtomOS Installation Guide
+                    </div>
+                    <div class="card-content">
+                        <div class="terminal-container">
+                            <div class="terminal-header">
+                                <strong><i class="fas fa-rocket"></i> Quick Setup</strong>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="terminal-step">
+                                    <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install Linux OS based on what kind of node you desire:
+                                    <ul style="margin-left: 1rem;">
+                                        <li><strong><i class="fas fa-microchip"></i></strong> compute-only node: AlmaLinux/Rocky Linux 9</li>
+                                        <li><strong><i class="fas fa-hard-drive"></i></strong> storage-only node: Rocky Linux/AlmaLinux 9, Fedora ≥38, Ubuntu ≥24, Debian 12</li>
+                                        <li><strong><i class="fas fa-robot"></i></strong> complete installation (compute + storage): AlmaLinux/Rocky Linux 9</li>
+                                    </ul>
+                                </div>
+                                <div class="terminal-step">
+                                    <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Install the AtomOS CLI tool Nucleus:<br>
+                                    <code class="terminal-code">curl -fsSL https://repo.elemento.cloud/get-atomos.sh | sudo bash</code>
+                                </div>
+                                <div class="terminal-footer">
+                                    <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Now you can use Nucleus CLI to install AtomOS</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-container">
+                            <div class="terminal-header">
+                                <strong><i class="fas fa-cogs"></i> Install AtomOS Services</strong>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="terminal-step">
+                                    <strong><i class="fas fa-circle-info" style="color: var(--blue);"></i></strong> Use <code class="terminal-code">on-prem</code> for local installations or <code class="terminal-code">cloud</code> if you are on a CSP bare metal.
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong>
+                                        <i class="fas fa-terminal" style="color: var(--green);"></i>
+                                        <i class="fas fa-hard-drive" style="color: var(--green);"></i> 3.
+                                    </strong> 
+                                    Install for a storage-only node:<br><code class="terminal-code">sudo nucleus --install storage &lt;on-prem | cloud&gt;</code>
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong>
+                                        <i class="fas fa-terminal" style="color: var(--green);"></i>
+                                        <i class="fas fa-microchip" style="color: var(--green);"></i> 3.
+                                    </strong> 
+                                    Install for a compute-only node:<br><code class="terminal-code">sudo nucleus --install compute &lt;on-prem | cloud&gt;</code>
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong>
+                                        <i class="fas fa-terminal" style="color: var(--green);"></i>
+                                        <i class="fas fa-robot" style="color: var(--green);"></i> 3.
+                                    </strong> 
+                                    Install for a complete AtomOS version:<br><code class="terminal-code">sudo nucleus --install full &lt;on-prem | cloud&gt;</code>
+                                </div>
+                                <div class="terminal-step">
+                                    <strong><i class="fas fa-gear" style="color: var(--blue);"></i> 4.</strong> Follow Nucleus indications to conclude the configuration:
+                                    <ul style="margin-left: 1rem;">
+                                        <li><i class="fas fa-download" style="color: var(--blue);"></i> Install additional modules (ZFS, GlusterFS)</li>
+                                        <li><i class="fas fa-hard-drive" style="color: var(--blue);"></i> Setup the storage</li>
+                                        <li><i class="fas fa-ethernet" style="color: var(--blue);"></i> Setup the network</li>
+                                    </ul>
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong><i class="fas fa-globe" style="color: var(--blue-light);"></i> 5.</strong> Access Web UI at <code class="terminal-code">localhost:9090</code>
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong><i class="fas fa-power-off" style="color: var(--blue-light);"></i> 6.</strong> Reboot the host.
+                                </div>
+                                <div class="terminal-step-success">
+                                    <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 7.</strong> Install <strong>Electros</strong> to launch and manage VMs from anywhere
+                                </div>
+                                <div class="terminal-footer">
+                                    <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to deploy your first VM in minutes!</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electros Installation Content -->
+            <div id="electros-tab" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Electros Installation Guide</h2>
+                    <p class="section-subtitle">Get the universal multicloud dashboard running on your system</p>
+                </div>
+                
+                <!-- System Requirements -->
+                <div class="requirements-grid">
+                    <div class="requirements-card">
+                        <h4><i class="fas fa-desktop"></i> Desktop Application</h4>
+                        <ul>
+                            <li><strong>Linux:</strong> Any modern distribution with AppImage support</li>
+                            <li><strong>macOS:</strong> macOS 10.14+ (Intel) or macOS 11+ (Apple Silicon)</li>
+                            <li><strong>Windows:</strong> Windows 10/11 (x64)</li>
+                            <li>Minimum 2GB RAM, 100MB disk space</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-card">
+                        <h4><i class="fas fa-terminal"></i> CLI Installation</h4>
+                        <ul>
+                            <li>Python 3.9 or higher</li>
+                            <li>pip package manager</li>
+                            <li>Network access to cloud providers</li>
+                            <li>SSH client for remote access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Desktop Installation -->
+                <div class="card fade-in">
+                    <h3><i class="fas fa-desktop" style="color: var(--blue);"></i> Desktop Application Installation</h3>
+                    <p>Download native applications for your operating system with full GUI capabilities.</p>
+                    
+                    <div class="download-buttons">
+                        <!-- Linux -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-linux" style="color: var(--orange);"></i> Linux</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="ai-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64 AppImage
+                                </a>
+                                <a href="#" id="ai-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> ARM64 AppImage
+                                </a>
+                            </div>
+                            <small class="download-info">Universal Linux packages</small>
+                        </div>
+                        
+                        <!-- macOS -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-apple" style="color: var(--gray);"></i> macOS</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="dmg-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Intel (x64)
+                                </a>
+                                <a href="#" id="dmg-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> Apple Silicon (ARM64)
+                                </a>
+                            </div>
+                            <small class="download-info">Native macOS binaries</small>
+                        </div>
+                        
+                        <!-- Windows -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-windows" style="color: var(--blue);"></i> Windows</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="exe-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64
+                                </a>
+                            </div>
+                            <small class="download-info">Windows 10/11 (x64 only)</small>
+                        </div>
+                        
+                        <!-- Ubuntu/Debian -->
+                        <div class="download-option">
+                            <h4><i class="fab fa-ubuntu" style="color: var(--orange);"></i> Ubuntu/Debian</h4>
+                            <div class="arch-buttons">
+                                <a href="#" id="deb-x64-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> x64 Package
+                                </a>
+                                <a href="#" id="deb-arm-btn" class="btn btn-primary">
+                                    <i class="fas fa-download"></i> ARM64 Package
+                                </a>
+                            </div>
+                            <small class="download-info">Native Ubuntu/Debian packages</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CLI Installation -->
+                <div class="card fade-in installation-card">
+                    <div class="terminal-container">
+                        <div class="terminal-header">
+                            <strong><i class="fas fa-download" style="color: var(--accent-color);"></i> Electros CLI Installation Guide</strong>
+                        </div>
+                        <div class="terminal-step">
+                            <strong><i class="fas fa-desktop" style="color: var(--blue);"></i> 1.</strong> Make sure you have Python 3.9+ installed
+                        </div>
+                        <div class="terminal-step-success">
+                            <strong><i class="fas fa-terminal" style="color: var(--green);"></i> 2.</strong> CLI install: <code class="terminal-code">python3 -m pip install elemento-cli</code>
+                        </div>
+                        <div class="terminal-step-success">
+                            <strong><i class="fas fa-cog" style="color: var(--blue-light);"></i> 3.</strong> Configure Electros CLI from ~/.elemento/config
+                        </div>
+                        <div class="terminal-success">
+                            <strong><i class="fas fa-rocket" style="color: var(--purple);"></i> 4.</strong> Start managing VMs across all your clouds!
+                        </div>
+                        <div class="terminal-footer">
+                            <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to manage your multicloud infrastructure!</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../js/splash-screen.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/themes.js" defer></script>
+    <script src="../js/main.js" defer></script>
+
+    <!-- Tab switching script -->
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

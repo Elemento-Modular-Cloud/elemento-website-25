@@ -648,9 +648,10 @@ class ElementoWebsite {
         const scriptSrc = currentScript ? currentScript.src : '';
         const isInBlogPost = scriptSrc.includes('../js/main.js');
         const isInSolutions = window.location.pathname.includes('solutions/');
+        const isInTechnology = window.location.pathname.includes('technology/');
         
         let iubendaPath;
-        if (isInBlogPost || isInSolutions) {
+        if (isInBlogPost || isInSolutions || isInTechnology) {
             iubendaPath = '../js/iubenda_fix.js';
         } else {
             iubendaPath = 'js/iubenda_fix.js';

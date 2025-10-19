@@ -5,11 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Determine the correct path to the footer component
         const isInBlogPost = window.location.pathname.includes('blog-posts/');
         const isInSolutions = window.location.pathname.includes('solutions/');
+        const isInTechnology = window.location.pathname.includes('technology/');
         let footerPath;
         
         if (isInBlogPost) {
             footerPath = '../components/footer.html';
         } else if (isInSolutions) {
+            footerPath = '../components/footer.html';
+        } else if (isInTechnology) {
             footerPath = '../components/footer.html';
         } else {
             footerPath = 'components/footer.html';
@@ -18,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch(footerPath)
             .then(response => response.text())
             .then(html => {
-                // If we're in a blog post or solutions page, we need to adjust the asset paths
-                if (isInBlogPost || isInSolutions) {
+                // If we're in a blog post, solutions, or technology page, we need to adjust the asset paths
+                if (isInBlogPost || isInSolutions || isInTechnology) {
                     html = html.replace(/src="assets\//g, 'src="../assets/');
                     html = html.replace(/href="([^"]*\.html)"/g, 'href="../$1"');
                 }
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Apply the masking styles for the fallback case
                 const fallbackLogo = footerPlaceholder.querySelector('.footer-logo-masked');
                 if (fallbackLogo) {
-                    const logoPath = isInBlogPost ? '../assets/logos/Elemento.svg' : 'assets/logos/Elemento.svg';
+                    const logoPath = (isInBlogPost || isInSolutions || isInTechnology) ? '../assets/logos/Elemento.svg' : 'assets/logos/Elemento.svg';
                     fallbackLogo.style.filter = 'brightness(0) saturate(100%)';
                     fallbackLogo.style.mask = `url('${logoPath}') no-repeat center`;
                     fallbackLogo.style.maskSize = 'contain';
