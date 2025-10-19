@@ -2,7 +2,7 @@
 
 // Theme configuration
 const themes = ['theme-light', 'theme-dark', 'theme-high-contrast'];
-const DEFAULT_THEME_INDEX = 2; // 0 = light, 1 = dark, 2 = high-contrast
+const DEFAULT_THEME_INDEX = 0; // 0 = light, 1 = dark, 2 = high-contrast
 const DEFAULT_THEME = themes[DEFAULT_THEME_INDEX];
 const themeIcons = [
     `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -36,7 +36,7 @@ function initThemeSwitcher() {
                 ${themeIcons[currentThemeIndex]}
             </button>
         `;
-        document.body.appendChild(themeSwitcher);
+        // document.body.appendChild(themeSwitcher);
         
         // Add event listener to the new button
         const newThemeToggleBtn = themeSwitcher.querySelector(btnClass);
@@ -203,7 +203,7 @@ function initThemeSystem() {
     loadSavedTheme();
     
     // Initialize theme switcher
-    // initThemeSwitcher();
+    initThemeSwitcher();
     
     // Add keyboard shortcut (Ctrl/Cmd + T)
     document.addEventListener('keydown', (e) => {

@@ -58,20 +58,17 @@
     <!-- Critical CSS -->
     <style>
         :root {
-            --background-color: #F5F5FA;
-            --text-color: #1A1C20;
-            --primary-color: #FFA600;
+            /* Theme variables will be loaded from themes.css */
             --font-primary: 'Open Sans', sans-serif;
             --font-heading: 'Red Hat Display', sans-serif;
-            --border-color: #e0e0e0;
         }
         
         body { 
             margin: 0; 
             padding: 0; 
             font-family: var(--font-primary);
-            color: var(--text-color);
-            background-color: var(--background-color);
+            color: var(--text-color, #1A1C20);
+            background-color: var(--background-color, #F5F5FA);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -90,100 +87,393 @@
             min-height: 100vh;
             text-align: center;
             padding: 2rem 0;
+            position: relative;
+            padding-top: 13vh;
+        }
+        
+        /* Logo Section */
+        .logo-section {
+            margin-bottom: 2rem;
+        }
+        
+        .error-logo {
+            height: 60px;
+            width: auto;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+        
+        .error-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        /* Animated 404 Visual */
+        .error-visual {
+            position: relative;
+            margin-bottom: 2rem;
         }
         
         .error-code {
             font-size: 8rem;
             font-weight: 800;
-            color: var(--primary-color);
+            color: var(--primary-color, #FFA600);
             margin-bottom: 1rem;
             font-family: var(--font-heading);
+            position: relative;
+            z-index: 2;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        /* Floating Elements Animation */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 200px;
+            pointer-events: none;
+        }
+        
+        .floating-element {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color, #FFA600);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        .element-1 {
+            top: 20px;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .element-2 {
+            top: 60px;
+            right: 15%;
+            animation-delay: 1.5s;
+        }
+        
+        .element-3 {
+            top: 100px;
+            left: 20%;
+            animation-delay: 3s;
+        }
+        
+        .element-4 {
+            top: 140px;
+            right: 25%;
+            animation-delay: 4.5s;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 0.8;
+            }
         }
         
         .error-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--text-color);
+            color: var(--text-color, #1A1C20);
             margin-bottom: 1rem;
             font-family: var(--font-heading);
         }
         
         .error-description {
             font-size: 1.2rem;
-            color: var(--text-color);
+            color: var(--text-color, #1A1C20);
             margin-bottom: 2rem;
             max-width: 600px;
         }
         
+        /* Search Section */
+        .search-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 166, 0, 0.2);
+        }
+        
+        .search-section h3 {
+            margin-bottom: 1rem;
+            color: var(--text-color, #1A1C20);
+        }
+        
+        .search-container {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border-color, #e0e0e0);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color, #FFA600);
+            box-shadow: 0 0 0 3px rgba(255, 166, 0, 0.1);
+        }
+        
+        .search-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--primary-color, #FFA600);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            background: #e69500;
+            transform: translateY(-1px);
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            margin: 2rem 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             padding: 1rem 2rem;
-            background: var(--primary-color);
+            background: var(--primary-color, #FFA600);
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin: 0.5rem;
+            border: none;
+            cursor: pointer;
         }
         
         .btn:hover {
             background: #e69500;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 166, 0, 0.3);
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
         }
         
         .btn-secondary {
             background: transparent;
-            color: var(--text-color);
-            border: 2px solid var(--primary-color);
+            color: var(--text-color, #1A1C20);
+            border: 2px solid var(--primary-color, #FFA600);
         }
         
         .btn-secondary:hover {
-            background: var(--primary-color);
+            background: var(--primary-color, #FFA600);
             color: white;
         }
         
+        .btn-outline {
+            background: transparent;
+            color: var(--text-color, #1A1C20);
+            border: 2px solid var(--border-color, #e0e0e0);
+        }
+        
+        .btn-outline:hover {
+            background: var(--text-color, #1A1C20);
+            color: white;
+            border-color: var(--text-color, #1A1C20);
+        }
+        
+        /* Enhanced Suggestions */
         .suggestions {
             margin-top: 3rem;
-            max-width: 800px;
+            max-width: 1000px;
         }
         
         .suggestions h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-color);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--text-color, #1A1C20);
         }
         
-        .suggestion-links {
+        .suggestion-categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
             margin-top: 1rem;
         }
         
+        .category h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color, #FFA600);
+            font-weight: 600;
+        }
+        
+        .suggestion-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
         .suggestion-link {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
             text-decoration: none;
-            color: var(--text-color);
+            color: var(--text-color, #1A1C20);
             transition: all 0.3s ease;
+            border: 1px solid transparent;
         }
         
         .suggestion-link:hover {
             background: rgba(255, 166, 0, 0.1);
             transform: translateY(-2px);
+            border-color: rgba(255, 166, 0, 0.3);
+        }
+        
+        .link-icon {
+            font-size: 1.5rem;
+            width: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .link-icon i {
+            color: var(--primary-color, #FFA600);
+        }
+        
+        .suggestion-link div {
+            flex: 1;
+        }
+        
+        .suggestion-link strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .suggestion-link small {
+            color: var(--grey, #8A8D95);
+            font-size: 0.9rem;
+        }
+        
+        /* Help Section */
+        .help-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 166, 0, 0.1);
+        }
+        
+        .help-section h3 {
+            margin-bottom: 1rem;
+            color: var(--text-color, #1A1C20);
+        }
+        
+        .help-section p {
+            margin-bottom: 1.5rem;
+            color: var(--grey, #8A8D95);
+        }
+        
+        .help-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .help-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 166, 0, 0.1);
+            color: var(--text-color, #1A1C20);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 166, 0, 0.2);
+        }
+        
+        .help-link:hover {
+            background: rgba(255, 166, 0, 0.2);
+            transform: translateY(-1px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .suggestion-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .help-actions {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
     
     <!-- Non-critical stylesheets -->
-    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="css/themes.css">
-        <link rel="stylesheet" href="css/style.css">
-    </noscript>
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Pixel Icon Library -->
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
@@ -207,56 +497,211 @@
     <!-- 404 Error Content -->
     <div class="error-container">
         <div class="container">
-            <div class="error-code">404</div>
-            <h1 class="error-title">Page Not Found</h1>
-            <p class="error-description">
-                Sorry, the page you're looking for doesn't exist or has been moved. 
-                Don't worry though - our cloud platform is still here to help you build amazing things!
-            </p>
             
-            <div>
-                <a href="/" class="btn">Go Home</a>
-                <a href="/products.html" class="btn btn-secondary">Explore Products</a>
+            <!-- Animated 404 -->
+            <div class="error-visual">
+                <div class="error-code">404</div>
+                <div class="floating-elements">
+                    <div class="floating-element element-1"></div>
+                    <div class="floating-element element-2"></div>
+                    <div class="floating-element element-3"></div>
+                    <div class="floating-element element-4"></div>
+                </div>
             </div>
             
-            <div class="suggestions">
-                <h3>Popular Pages</h3>
-                <div class="suggestion-links">
-                    <a href="/products.html" class="suggestion-link">
-                        <strong>Products</strong><br>
-                        Discover our cloud platform
-                    </a>
-                    <a href="/about.html" class="suggestion-link">
-                        <strong>About Us</strong><br>
-                        Learn about our mission
-                    </a>
-                    <a href="/contact.html" class="suggestion-link">
-                        <strong>Contact</strong><br>
-                        Get in touch with us
-                    </a>
-                    <a href="/blog.html" class="suggestion-link">
-                        <strong>Blog</strong><br>
-                        Read our latest insights
-                    </a>
-                    <a href="/technology.html" class="suggestion-link">
-                        <strong>Technology</strong><br>
-                        Explore our tech stack
-                    </a>
-                    <a href="/signup.html" class="suggestion-link">
-                        <strong>Get Started</strong><br>
-                        Start your free trial
-                    </a>
+            <h1 class="error-title">Oops! Page Not Found</h1>
+            <p class="error-description">
+                Looks like this page got lost in the cloud! Don't worry though - our platform is still here to help you build amazing things.
+            </p>
+            
+            <!-- Search Section -->
+            <div class="search-section">
+                <h3>Can't find what you're looking for?</h3>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search our website..." class="search-input">
+                    <button class="search-btn" onclick="performSearch()">Search</button>
                 </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary"><i class="fas fa-home"></i> Go Home</a>
+                <a href="/products.html" class="btn btn-secondary"><i class="fas fa-rocket"></i> Explore Products</a>
+                <a href="/contact.html" class="btn btn-outline"><i class="fas fa-comments"></i> Get Help</a>
+            </div>
+            
+            <!-- Enhanced Suggestions -->
+            <div class="suggestions">
+                <h3>Popular Destinations</h3>
+                <div class="suggestion-categories">
+                    <div class="category">
+                        <h4>Products</h4>
+                        <div class="suggestion-links">
+                            <a href="/products.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-cloud"></i></span>
+                                <div>
+                                    <strong>Cloud Platform</strong>
+                                    <small>Discover our solutions</small>
+                                </div>
+                            </a>
+                            <a href="/atomos.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-atom"></i></span>
+                                <div>
+                                    <strong>Atomos</strong>
+                                    <small>Container platform</small>
+                                </div>
+                            </a>
+                            <a href="/electros.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-bolt"></i></span>
+                                <div>
+                                    <strong>Electros</strong>
+                                    <small>Edge computing</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="category">
+                        <h4>Resources</h4>
+                        <div class="suggestion-links">
+                            <a href="/blog.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-blog"></i></span>
+                                <div>
+                                    <strong>Blog</strong>
+                                    <small>Latest insights</small>
+                                </div>
+                            </a>
+                            <a href="/technology.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-cogs"></i></span>
+                                <div>
+                                    <strong>Technology</strong>
+                                    <small>Our tech stack</small>
+                                </div>
+                            </a>
+                            <a href="/about.html" class="suggestion-link">
+                                <span class="link-icon"><i class="fas fa-users"></i></span>
+                                <div>
+                                    <strong>About Us</strong>
+                                    <small>Our mission</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
+
     
     <!-- Scripts -->
     <script src="js/navbar.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/footer.js" defer></script>
+    
+    <!-- Ensure navbar theme toggle is available before themes.js runs -->
+    <script>
+        // Wait for navbar to load before themes.js initializes
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkForNavbarToggle = () => {
+                const navbarToggle = document.querySelector('.theme-toggle');
+                if (navbarToggle) {
+                    console.log('404 page: Navbar theme toggle found, themes.js can proceed');
+                } else {
+                    setTimeout(checkForNavbarToggle, 50);
+                }
+            };
+            checkForNavbarToggle();
+        });
+    </script>
+    
+    <script src="js/themes.js" defer></script>
+    
+    <!-- 404 Page Specific Scripts -->
+    <script>
+        // Search functionality
+        function performSearch() {
+            const searchInput = document.getElementById('search-input');
+            const query = searchInput.value.trim();
+            
+            if (query) {
+                // Simple search implementation - redirect to blog with search query
+                // In a real implementation, you'd have a proper search endpoint
+                const searchUrl = `/blog.html?search=${encodeURIComponent(query)}`;
+                window.location.href = searchUrl;
+            } else {
+                // If no query, show all blog posts
+                window.location.href = '/blog.html';
+            }
+        }
+        
+        // Wait for navbar to load before initializing theme system
+        function waitForNavbar() {
+            return new Promise((resolve) => {
+                const checkNavbar = () => {
+                    const themeToggle = document.querySelector('.theme-toggle');
+                    if (themeToggle) {
+                        resolve();
+                    } else {
+                        setTimeout(checkNavbar, 100);
+                    }
+                };
+                checkNavbar();
+            });
+        }
+        
+        // Initialize theme system after navbar is ready
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Wait for navbar to load
+            await waitForNavbar();
+            
+            // Now initialize the theme system
+            if (window.ElementoThemes) {
+                console.log('404 page: Theme system ready, initializing...');
+                // The theme system should now work with the navbar's theme toggle
+                
+                // Prevent themes.js from creating a duplicate theme switcher
+                // by ensuring the navbar's theme toggle is already available
+                const existingToggle = document.querySelector('.theme-toggle');
+                if (existingToggle) {
+                    console.log('404 page: Using existing navbar theme toggle');
+                    // The navbar's theme toggle will be handled by navbar.js
+                }
+            }
+            
+            // Initialize search functionality
+            const searchInput = document.getElementById('search-input');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        performSearch();
+                    }
+                });
+            }
+            
+            // Add interactive animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe suggestion links for animation
+            const suggestionLinks = document.querySelectorAll('.suggestion-link');
+            suggestionLinks.forEach(link => {
+                link.style.opacity = '0';
+                link.style.transform = 'translateY(20px)';
+                link.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(link);
+            });
+        });
+    </script>
 </body>
 </html>
+
