@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMware Alternative - Modern Virtualization Platform | Elemento</title>
+    <meta name="description" content="Replace VMware with Elemento's modern virtualization platform. Get better performance, lower costs, and cloud-native architecture with our unified infrastructure solution.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/solutions/vmware-alternative.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VMware Alternative - Modern Virtualization Platform | Elemento">
+    <meta property="og:description" content="Replace VMware with Elemento's modern virtualization platform. Get better performance, lower costs, and cloud-native architecture.">
+    <meta property="og:image" content="/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/solutions/vmware-alternative.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VMware Alternative - Modern Virtualization Platform | Elemento">
+    <meta name="twitter:description" content="Replace VMware with Elemento's modern virtualization platform. Get better performance, lower costs, and cloud-native architecture.">
+    <meta name="twitter:image" content="/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="vmware alternative, virtualization, hypervisor, cloud migration, infrastructure modernization, elemento, atomos, electros, atomosphere">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI Agent Control -->
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-access" content="public">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "VMware Alternative - Modern Virtualization Platform",
+      "description": "Replace VMware with Elemento's modern virtualization platform",
+      "url": "https://elemento.cloud/solutions/vmware-alternative.html"
+    }
+    </script>
+    
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+            --glassmorphism-border: rgba(200, 200, 200, 0.25);
+            --glassmorphism-background: rgba(255, 255, 255, 0.1);
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--primary-color);
+            mask-image: url(../assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(../assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+                 /* Reduced motion support */
+                 @media (prefers-reduced-motion: reduce) {
+                     .splash-spinner {
+                         animation: none;
+                         border-top-color: var(--primary-color);
+                     }
+                     
+                     .splash-screen {
+                         transition: none;
+                     }
+                 }
+             </style>
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="../css/style.css" as="style" crossorigin>
+    <link rel="preload" href="../css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="../js/main.js" as="script" crossorigin>
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="../js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="../css/home.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="../css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/planet-styles/planet-index.css" media="print" onload="this.media='all'">
+    
+    <!-- Landing Page Styles - CRITICAL -->
+    <link rel="stylesheet" href="../css/landing-pages.css" media="print" onload="this.media='all'">
+    
+    <!-- Home Page Styles -->
+    <link rel="stylesheet" href="../css/home.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/rocket.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../css/success-stories-carousel.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/atmosphere.css">
+        <link rel="stylesheet" href="../css/planet-styles/planet-index.css">
+        
+        <!-- Landing Page Styles - CRITICAL -->
+        <link rel="stylesheet" href="../css/landing-pages.css">
+        
+        <!-- Home Page Styles -->
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/rocket.css">
+        <link rel="stylesheet" href="../css/success-stories-carousel.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <link rel="preload" href="../assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+        var u="//matomo.elemento.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body class="">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">        
+        <!-- Hero Section -->
+        <section id="hero-section" data-component="hero-technical"></section>
+        
+        <!-- Pain Points -->
+        <section id="pain-points" data-component="pain-points"></section>
+        
+        <!-- VMware Alternative Overview Section -->
+        <section class="section hero-details">
+            <div class="container">
+                <div class="content-with-image">
+                    <div class="content-text">
+                        <h2>Replace <span class="pixel-accent">VMware</span> with <span class="pixel-word">Modern Infrastructure</span></h2>
+                        <p>Upgrade from legacy VMware infrastructure to Elemento's cloud-native platform. Get better performance, lower costs, and seamless cloud integration with our unified virtualization solution.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Cloud-Native Architecture</span></h3>
+                                <p>Modern container-native virtualization with Kubernetes integration and cloud provider APIs</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Cost Reduction</span></h3>
+                                <p>Significantly lower licensing costs compared to VMware with better resource utilization</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Hybrid Cloud Ready</span></h3>
+                                <p>Seamless migration between on-premise and cloud environments with consistent management</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3><span class="highlight-pixel">Modern Management</span></h3>
+                                <p>API-first approach with infrastructure as code and automated operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="../assets/img/Atomos - Hero - 1.webp" alt="Modern virtualization infrastructure replacing VMware" class="hero-detail-image" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- VMware Comparison Table -->
+        <section class="section features" id="vmware-comparison">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">VMware vSphere vs AtomOS — Hypervisor Comparison</h2>
+                    <p class="section-subtitle">How AtomOS compares to the industry-leading virtualization platform</p>
+                </div>
+                
+                <div class="comparison-table fade-in">
+                    <div class="table-container comparison-table-container">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr class="comparison-table-header">
+                                    <th>Feature</th>
+                                    <th>VMware vSphere</th>
+                                    <th class="comparison-table-cell-primary">Elemento AtomOS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="comparison-table-row-alt">
+                                    <td class="comparison-table-cell">Hypervisor Class</td>
+                                    <td class="comparison-table-cell-secondary">Type 1</td>
+                                    <td class="comparison-table-cell-primary">Type 1</td>
+                                </tr>
+                                <tr class="comparison-table-row">
+                                    <td class="comparison-table-cell">Operating System</td>
+                                    <td class="comparison-table-cell-secondary">Proprietary Kernel</td>
+                                    <td class="comparison-table-cell-primary">Rocky/Alma Linux (RHEL binary compatible)</td>
+                                </tr>
+                                <tr class="comparison-table-row-alt">
+                                    <td class="comparison-table-cell">Virtualization Engine</td>
+                                    <td class="comparison-table-cell-secondary">Proprietary Closed-Source</td>
+                                    <td class="comparison-table-cell-primary">Upstream "Vanilla" KVM/QEMU</td>
+                                </tr>
+                                <tr class="comparison-table-row">
+                                    <td class="comparison-table-cell">Management</td>
+                                    <td class="comparison-table-cell-secondary">vCenter Server VM</td>
+                                    <td class="comparison-table-cell-primary">Electros (Web UI + CLI) & REST API</td>
+                                </tr>
+                                <tr class="comparison-table-row-alt">
+                                    <td class="comparison-table-cell">Licensing</td>
+                                    <td class="comparison-table-cell-secondary">Commercial, CPU-based</td>
+                                    <td class="comparison-table-cell-primary">Server-based (not CPU cores or VM count)</td>
+                                </tr>
+                                <tr class="comparison-table-row">
+                                    <td class="comparison-table-cell">Cluster Setup</td>
+                                    <td class="comparison-table-cell-secondary">Manual w/ License</td>
+                                    <td class="comparison-table-cell-primary">Auto-discovery w/ License (C4 protocol)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Case Walkthrough -->
+        <section id="use-case" data-component="use-case-walkthrough"></section>
+        
+        <!-- Solution Overview -->
+        <section id="solution" data-component="solution-overview"></section>
+
+        <!-- Features -->
+        <section id="features" data-component="features-grid"></section>
+
+        <!-- VMware Migration Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">VMware Migration Made Simple</h2>
+                    <p class="section-subtitle">Complete platform designed to replace VMware with modern, cloud-native infrastructure.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="product-card scroll-animate">
+                        <div class="use-case-icon centered" data-icon-type="atomos">
+                            <img src="../assets/logos/Atomos.svg" alt="AtomOS hypervisor replacing VMware">
+                        </div>
+                        <h3>AtomOS</h3>
+                        <h4>Modern Hypervisor</h4>
+                        <p>Production-grade hypervisor with better performance than VMware vSphere. Native cloud integration, container support, and automated management capabilities.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">VMware migration</span>
+                            <span class="feature-tag">Container support</span>
+                            <span class="feature-tag">Cloud integration</span>
+                        </div>
+                        <a href="../atomos.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="use-case-icon centered" data-icon-type="electros">
+                            <img src="../assets/logos/Electros.svg" alt="Electros management console">
+                        </div>
+                        <h3>Electros</h3>
+                        <h4>Unified Management</h4>
+                        <p>Replace VMware vCenter with modern management console. Unified dashboard for on-premise and cloud infrastructure with API-first operations.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">vCenter replacement</span>
+                            <span class="feature-tag">API management</span>
+                            <span class="feature-tag">Multi-cloud support</span>
+                        </div>
+                        <a href="../electros.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section id="stats" data-component="stats-metrics"></section>
+        
+        <!-- Related Resources -->
+        <section id="related-resources" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Related Resources</h2>
+                    <p class="section-subtitle">Learn more about modernizing your infrastructure and migrating from VMware.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7baf1c1f94cdf10f467_65f2a8eea64b5c34cf999cf9_cloud_Zero_touch_operations-2_2.webp" alt="Cloud Zero-Touch Operations" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>Cloud Zero-Touch Operations</h3>
+                            <p>Explore how modern infrastructure automation can replace manual VMware management processes.</p>
+                            <a href="../blog-posts/2023-07-20-cloud-zero-touch-operations-perspectives-and-challenges-of-full-automation-in-cloudops.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7c1ecf40acc10e3a930_64c7a9daf5cc7e5c0d6b1208_main_Large.jpeg" alt="The 5Rs Migration Strategies" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>The 5Rs: Powerful Cloud Migration Strategies</h3>
+                            <p>Learn the essential strategies for migrating from VMware to modern cloud infrastructure.</p>
+                            <a href="../blog-posts/2024-08-23-the-5rs-powerful-cloud-migration-strategies.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-card scroll-animate">
+                        <div class="blog-image">
+                            <img src="../blog-posts/img/67e6b7c25cdcfe46836be187_6557dc6f72577e0c0a782612_main_the_benefits_2.webp" alt="Virtualization Benefits" loading="lazy" decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <h3>The Benefits of Virtualization for Cloud Computing</h3>
+                            <p>Understand how modern virtualization optimizes infrastructure for better performance and cost efficiency.</p>
+                            <a href="../blog-posts/2024-09-12-the-benefits-of-virtualization-for-cloud-computing-resource-optimization-and-operational-agility.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section id="faq" data-component="faq-section"></section>
+        
+        <!-- Final CTA -->
+        <section id="cta-final" data-component="cta-final"></section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Page Configuration -->
+    <script>
+        window.pageConfig = {
+            hero: {
+                tagline: "VMware Alternative",
+                title: "Replace VMware with Modern Infrastructure",
+                subtitle: "Upgrade from legacy VMware to Elemento's cloud-native platform. Get better performance, lower costs, and seamless cloud integration.",
+                primaryCTA: {
+                    text: "Start Migration",
+                    link: "../signup.html",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "Compare Solutions",
+                    link: "#vmware-comparison",
+                    icon: "fas fa-balance-scale"
+                }
+            },
+            painPoints: {
+                title: "VMware Challenges You Face",
+                subtitle: "Common pain points with legacy VMware infrastructure that limit your modernization efforts",
+                items: [
+                    {
+                        icon: "fas fa-dollar-sign",
+                        title: "High Licensing Costs",
+                        description: "Expensive VMware licensing fees and complex pricing models that increase operational costs"
+                    },
+                    {
+                        icon: "fas fa-cloud",
+                        title: "Limited Cloud Integration",
+                        description: "Difficulty integrating VMware infrastructure with modern cloud services and APIs"
+                    },
+                    {
+                        icon: "fas fa-cogs",
+                        title: "Complex Management",
+                        description: "Complex VMware management tools and limited automation capabilities for modern workflows"
+                    },
+                    {
+                        icon: "fas fa-lock",
+                        title: "Vendor Lock-in",
+                        description: "Tied to VMware ecosystem with limited flexibility for multi-cloud and hybrid deployments"
+                    }
+                ]
+            },
+            useCase: {
+                title: "VMware Migration Process",
+                subtitle: "From legacy VMware infrastructure to modern cloud-native platform",
+                items: [
+                    {
+                        number: "1",
+                        title: "Assessment",
+                        description: "Analyze existing VMware infrastructure and identify migration opportunities"
+                    },
+                    {
+                        number: "2",
+                        title: "Planning",
+                        description: "Create migration plan with Elemento's modern infrastructure components"
+                    },
+                    {
+                        number: "3",
+                        title: "Migration",
+                        description: "Migrate VMs and workloads to Elemento's cloud-native platform"
+                    },
+                    {
+                        number: "4",
+                        title: "Optimization",
+                        description: "Optimize performance and costs with modern management and automation"
+                    }
+                ]
+            },
+            solution: {
+                title: "Elemento's VMware Alternative",
+                description: "Complete platform designed to replace VMware with modern, cloud-native infrastructure",
+                items: [
+                    {
+                        logo: "../assets/logos/Atomos.svg",
+                        name: "AtomOS",
+                        description: "Modern hypervisor replacing VMware vSphere with better performance"
+                    },
+                    {
+                        logo: "../assets/logos/Electros.svg",
+                        name: "Electros",
+                        description: "Unified management console replacing VMware vCenter"
+                    }
+                ],
+                cta: {
+                    text: "Get AtomOS now!",
+                    link: "../atomos.html"
+                }
+            },
+            features: {
+                title: "VMware Alternative Features",
+                subtitle: "Everything you need to replace VMware with modern infrastructure",
+                items: [
+                    {
+                        icon: "fas fa-server",
+                        title: "Modern Hypervisor",
+                        description: "Production-grade hypervisor with better performance than VMware vSphere"
+                    },
+                    {
+                        icon: "fas fa-chart-line",
+                        title: "Cost Optimization",
+                        description: "Significantly lower costs compared to VMware licensing and better resource utilization"
+                    },
+                    {
+                        icon: "fas fa-cloud",
+                        title: "Cloud Integration",
+                        description: "Native integration with AWS, Azure, GCP, and other cloud providers"
+                    },
+                    {
+                        icon: "fas fa-cogs",
+                        title: "Automated Management",
+                        description: "API-first approach with infrastructure as code and automated operations"
+                    },
+                    {
+                        icon: "fas fa-shield-alt",
+                        title: "Security & Compliance",
+                        description: "Enterprise-grade security with built-in compliance and audit capabilities"
+                    },
+                    {
+                        icon: "fas fa-expand-arrows-alt",
+                        title: "Scalability",
+                        description: "Auto-scaling and resource optimization for dynamic workloads"
+                    }
+                ]
+            },
+            stats: {
+                title: "VMware Alternative Impact",
+                subtitle: "Real results from organizations migrating from VMware to Elemento",
+                items: [
+                    {
+                        label: "Cost Reduction",
+                        value: "70%",
+                        icon: "fas fa-chart-line",
+                        color: "green"
+                    },
+                    {
+                        label: "Performance Gain",
+                        value: "40%",
+                        icon: "fas fa-rocket",
+                        color: "orange"
+                    },
+                    {
+                        label: "Migration Time",
+                        value: "30 days",
+                        icon: "fas fa-clock",
+                        color: "blue"
+                    }
+                ]
+            },
+            faq: {
+                title: "VMware Alternative FAQ",
+                subtitle: "Common questions about migrating from VMware to Elemento",
+                items: [
+                    {
+                        question: "How does Elemento compare to VMware in terms of performance and features?",
+                        answer: "Elemento provides better performance than VMware vSphere with modern cloud-native architecture. Our platform includes native container support, cloud integration, and API-first management that VMware lacks. We offer equivalent or better functionality at significantly lower costs."
+                    },
+                    {
+                        question: "What is the migration process from VMware to Elemento?",
+                        answer: "Our migration process is designed to be straightforward with minimal downtime. We provide assessment tools, migration planning, and automated migration scripts. Most organizations complete the migration within 30 days with our support team guiding the process."
+                    },
+                    {
+                        question: "Can Elemento integrate with existing VMware tools and workflows?",
+                        answer: "Yes! Elemento provides compatibility layers and migration tools for existing VMware environments. We support common VMware APIs and provide gradual migration paths to minimize disruption to your operations."
+                    },
+                    {
+                        question: "What about support and training for the migration?",
+                        answer: "Elemento provides comprehensive support throughout the migration process including training for your team, documentation, and ongoing support. Our team works closely with you to ensure a smooth transition from VMware to our modern platform."
+                    }
+                ]
+            },
+            ctaFinal: {
+                title: "Ready to Replace VMware?",
+                subtitle: "Join organizations already using Elemento to modernize their infrastructure and reduce costs.",
+                primaryCTA: {
+                    text: "Start Migration",
+                    link: "../signup.html",
+                    icon: "fas fa-rocket"
+                },
+                secondaryCTA: {
+                    text: "Schedule Migration Demo",
+                    link: "../contact.html",
+                    icon: "fas fa-calendar"
+                }
+            }
+        };
+    </script>
+    
+    <!-- Scripts -->
+    <script src="../js/splash-screen.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/faq.js" defer></script>
+    <script src="../js/logo-carousel.js" defer></script>
+    <script src="../js/landing-page-loader.js" defer></script>
+
+    <script src="../js/main.js" defer></script>    
+    <script src="../js/footer.js" defer></script>
+    <script src="../js/atmosphere_hero.js" defer></script>
+    <script src="../js/themes.js" defer></script>
+</body>
+</html>
