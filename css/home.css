@@ -2,9 +2,7 @@
 @import url('./style.css');
 
 /* Hero Details Section */
-.hero-details {
-    background: var(--glassmorphism-background);
-    backdrop-filter: blur(10px);
+.hero-details { 
     border-radius: var(--radius-3xl);
     margin: 0 var(--space-lg);
     padding: var(--space-3xl) 0;
