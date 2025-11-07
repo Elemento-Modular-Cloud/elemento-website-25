@@ -60,11 +60,33 @@ class Navbar {
         return this.currentPage === page ? 'active' : '';
     }
 
+    // Check if current page is home page
+    isHomePage() {
+        return this.currentPage === 'index.html' || this.currentPage === '';
+    }
+
+    // Render announcement banner (only on home page)
+    renderBanner() {
+        if (!this.isHomePage()) {
+            return '';
+        }
+        
+        return `
+            <a href="https://www.eventbrite.it/e/elemento-keynote-2025-the-cloud-unification-tickets-1717118911889?aff=Website" class="announcement-banner" aria-label="Keynote announcement" target="_blank" rel="noopener noreferrer">
+                <div class="banner-content">
+                    <span class="banner-text">Join us for our Keynote 2025 in Torino on November 21st!</span>
+                    <span class="banner-cta">click here to register</span>
+                </div>
+            </a>
+        `;
+    }
+
     render() {
         const basePath = this.getBasePath();
         
         return `
-            <nav class="navbar">
+            ${this.renderBanner()}
+            <nav class="navbar ${this.isHomePage() ? 'has-banner' : ''}">
                 <div class="nav-container">
                     <a href="${basePath}index.html" class="logo">
                         <div class="logo-icon"></div>

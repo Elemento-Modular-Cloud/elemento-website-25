@@ -196,6 +196,136 @@ body {
     font-family: var(--font-secondary);
 }
 
+/* Announcement Banner */
+.announcement-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15; /* Above navbar (9998), below splash screen (9999) */
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 60px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.05rem;
+}
+
+.announcement-banner::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url('../assets/img/keynote_2025_bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: -1;
+    animation: bg-scale-rotate 20s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+@keyframes bg-scale-rotate {
+    0% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    25% {
+        transform: scaleX(1.1) rotate(0.5deg);
+    }
+    50% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    75% {
+        transform: scaleX(1.1) rotate(-0.5deg);
+    }
+    100% {
+        transform: scaleX(1) rotate(0deg);
+    }
+}
+
+.announcement-banner:hover {
+    opacity: 0.95;
+    text-decoration: none;
+    color: #000000;
+}
+
+.banner-text {
+    font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 20px #ffffff, 0 4px 8px rgba(255, 166, 0, 0.5);
+}
+
+.banner-cta {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-style: italic;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive banner styles */
+@media (max-width: 768px) {
+    .announcement-banner {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.95rem;
+        height: 60px;
+    }
+    
+    .banner-text {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .navbar.has-banner {
+        top: 60px; /* Slightly smaller banner on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-banner {
+        padding: 0.35rem 0.625rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        height: 60px;
+    }
+    
+    .banner-text {
+        font-size: 0.95rem;
+        font-weight: 700;
+    }
+    
+    .navbar.has-banner {
+        top: 60px; /* Even smaller banner on small mobile */
+    }
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -207,6 +337,11 @@ body {
     border-bottom: 1px solid var(--glassmorphism-border);
     box-shadow: var(--glassmorphism-shadow);
     transition: all 0.3s ease;
+}
+
+/* Adjust navbar position when banner is present */
+.navbar.has-banner {
+    top: 60px; /* Banner height + spacing to prevent overlap */
 }
 
 /* Add backdrop-filter to pseudo-element for navbar */
@@ -368,6 +503,11 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
     width: 100%;
+}
+
+/* Shift dropdown menu down on home page when banner is present */
+.navbar.has-banner .desktop-dropdown {
+    top: 140px; /* 80px (default) + 60px (banner offset) */
 }
 
 /* Hide mobile dropdown on desktop */
