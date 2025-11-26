@@ -72,10 +72,10 @@ class Navbar {
         }
         
         return `
-            <a href="https://www.eventbrite.it/e/elemento-keynote-2025-the-cloud-unification-tickets-1717118911889?aff=Website" class="announcement-banner" aria-label="Keynote announcement" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtube.com/live/urhPkWeF3Yg" class="announcement-banner" aria-label="Keynote 2025 YouTube recording" target="_blank" rel="noopener noreferrer">
                 <div class="banner-content">
-                    <span class="banner-text">Join us for our Keynote 2025 in Torino on November 21st!</span>
-                    <span class="banner-cta">click here to register</span>
+                    <span class="banner-text">Recover our Keynote 2025!</span>
+                    <span class="banner-cta">click here to watch the recording</span>
                 </div>
             </a>
         `;
