@@ -429,6 +429,8 @@
         })();
     </script>
     <!-- End Matomo Code -->
+    <!-- Cloudflare Turnstile - explicit render mode (no async/defer to allow turnstile.ready) -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
 </head>
 <body class="">
 
@@ -591,8 +593,9 @@
                             <input type="checkbox" id="terms" name="terms" value="false" required>
                             <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *</label>
                         </div>
-                        <br>
-                        <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" style="display: flex; justify-content: center; margin: 20px 0;"></div>
+                        <div class="recaptcha-container">
+                            <div id="cf-turnstile-container"></div>
+                        </div>
                         <input type="hidden" name="webhook" value="https://hooks.zapier.com/hooks/catch/14287335/u6abwr2/" />
 
                         <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">
@@ -907,7 +910,85 @@
     
     <!-- Enhanced Contact Page Script -->
     <script src="js/contact.js" defer></script>
+    
+    <script>
+        // Turnstile configuration shared with other forms
+        const TURNSTILE_SITE_KEY = '0x4AAAAAACEgX8xU2owBQaIs';
+        console.log('[Turnstile][contact-page] Script block loaded. window.turnstile =', window.turnstile);
 
+        function getTurnstileTheme() {
+            const classes = Array.from(document.body.classList);
+
+            let theme = 'light';
+            if (classes.includes('theme-dark') || classes.includes('theme-high-contrast')) {
+                theme = 'dark';
+            }
+
+            console.log('[Turnstile][contact-page] Resolved theme', { bodyClasses: classes, theme });
+            return theme;
+        }
+
+        function mountTurnstile() {
+            console.log('[Turnstile][contact-page] mountTurnstile called');
+            const container = document.getElementById('cf-turnstile-container');
+
+            if (!container) {
+                console.warn('[Turnstile][contact-page] Container not found');
+                return;
+            }
+
+            if (!window.turnstile) {
+                console.warn('[Turnstile][contact-page] window.turnstile is not available yet');
+                return;
+            }
+
+            if (typeof turnstile.render !== 'function') {
+                console.warn('[Turnstile][contact-page] turnstile.render is not a function', turnstile);
+                return;
+            }
+
+            container.innerHTML = '';
+
+            const theme = getTurnstileTheme();
+            console.log('[Turnstile][contact-page] Rendering with theme', theme);
+
+            try {
+                turnstile.render(container, {
+                    sitekey: TURNSTILE_SITE_KEY,
+                    theme
+                });
+                console.log('[Turnstile][contact-page] Render call completed');
+            } catch (err) {
+                console.error('[Turnstile][contact-page] Error during render', err);
+            }
+        }
+
+        if (window.turnstile && typeof turnstile.ready === 'function') {
+            console.log('[Turnstile][contact-page] turnstile.ready available immediately, registering callback');
+            turnstile.ready(mountTurnstile);
+        } else {
+            console.log('[Turnstile][contact-page] turnstile.ready not yet available, waiting for window load');
+            window.addEventListener('load', () => {
+                console.log('[Turnstile][contact-page] window load event fired. window.turnstile =', window.turnstile);
+                if (window.turnstile && typeof turnstile.ready === 'function') {
+                    console.log('[Turnstile][contact-page] turnstile.ready available on load, registering callback');
+                    turnstile.ready(mountTurnstile);
+                } else {
+                    console.warn('[Turnstile][contact-page] turnstile.ready still not available after load');
+                }
+            });
+        }
+
+        // Keep Turnstile theme in sync when theme changes via storage
+        window.addEventListener('storage', function(event) {
+            if (event.key === 'elemento-theme' && event.newValue) {
+                console.log('[Turnstile][contact-page] Theme updated from storage event:', event.newValue);
+                document.body.className = event.newValue;
+                mountTurnstile();
+            }
+        });
+    </script>
+    
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html> 
