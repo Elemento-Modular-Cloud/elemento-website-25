@@ -39,6 +39,8 @@
         })();
     </script>
     <!-- End Matomo Code -->
+    <!-- Cloudflare Turnstile - explicit render mode -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
 </head>
 <body>
     <!-- Navbar placeholder -->
@@ -400,7 +402,9 @@
                 </div>
             </div>
 
-            <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+            <div class="recaptcha-container">
+                <div id="cf-turnstile-container"></div>
+            </div>
             <input type="hidden" name="webhook" value="https://hooks.zapier.com/hooks/catch/14287335/u6abwr2/" />
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -416,6 +420,73 @@
     <script src="../js/navbar.js" defer></script>
     <script src="../js/themes.js" defer></script>
     <script>
+        // Turnstile configuration (shared with signup form)
+        const TURNSTILE_SITE_KEY = '0x4AAAAAACEgX8xU2owBQaIs';
+        console.log('[Turnstile][provider] Script block loaded. window.turnstile =', window.turnstile);
+
+        function getTurnstileTheme() {
+            const classes = Array.from(document.body.classList);
+
+            let theme = 'light';
+            if (classes.includes('theme-dark') || classes.includes('theme-high-contrast')) {
+                theme = 'dark';
+            }
+
+            console.log('[Turnstile][provider] Resolved theme', { bodyClasses: classes, theme });
+            return theme;
+        }
+
+        function mountTurnstile() {
+            console.log('[Turnstile][provider] mountTurnstile called');
+            const container = document.getElementById('cf-turnstile-container');
+
+            if (!container) {
+                console.warn('[Turnstile][provider] Container not found');
+                return;
+            }
+
+            if (!window.turnstile) {
+                console.warn('[Turnstile][provider] window.turnstile is not available yet');
+                return;
+            }
+
+            if (typeof turnstile.render !== 'function') {
+                console.warn('[Turnstile][provider] turnstile.render is not a function', turnstile);
+                return;
+            }
+
+            container.innerHTML = '';
+
+            const theme = getTurnstileTheme();
+            console.log('[Turnstile][provider] Rendering with theme', theme);
+
+            try {
+                turnstile.render(container, {
+                    sitekey: TURNSTILE_SITE_KEY,
+                    theme
+                });
+                console.log('[Turnstile][provider] Render call completed');
+            } catch (err) {
+                console.error('[Turnstile][provider] Error during render', err);
+            }
+        }
+
+        if (window.turnstile && typeof turnstile.ready === 'function') {
+            console.log('[Turnstile][provider] turnstile.ready available immediately, registering callback');
+            turnstile.ready(mountTurnstile);
+        } else {
+            console.log('[Turnstile][provider] turnstile.ready not yet available, waiting for window load');
+            window.addEventListener('load', () => {
+                console.log('[Turnstile][provider] window load event fired. window.turnstile =', window.turnstile);
+                if (window.turnstile && typeof turnstile.ready === 'function') {
+                    console.log('[Turnstile][provider] turnstile.ready available on load, registering callback');
+                    turnstile.ready(mountTurnstile);
+                } else {
+                    console.warn('[Turnstile][provider] turnstile.ready still not available after load');
+                }
+            });
+        }
+
         // Character count functionality
         function updateCharacterCount(textareaId, countId, maxLength) {
             const textarea = document.getElementById(textareaId);
@@ -521,6 +592,7 @@
         window.addEventListener('message', function(event) {
             if (event.data.type === 'theme-change') {
                 document.body.className = event.data.theme;
+                mountTurnstile();
             }
         });
 
@@ -529,6 +601,9 @@
             window.parent.postMessage({
                 type: 'request-theme'
             }, '*');
+        } else {
+            // Not embedded: mount Turnstile based on local state
+            mountTurnstile();
         }
 
         // Function to apply theme from localStorage
@@ -549,6 +624,10 @@
                 if (savedTheme) {
                     document.body.className = savedTheme;
                     console.log('Applied theme from localStorage:', savedTheme);
+                    mountTurnstile();
+                } else {
+                    // No stored theme: still mount Turnstile with default
+                    mountTurnstile();
                 }
             } catch (error) {
                 console.log('Could not read theme from localStorage:', error);
