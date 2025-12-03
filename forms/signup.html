@@ -30,8 +30,8 @@
         })();
     </script>
     <!-- End Matomo Code -->
-     <!-- Cloudflare Turnstile -->
-     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- Cloudflare Turnstile - explicit render mode (no async/defer to allow turnstile.ready) -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
 </head>
 <body>
     <div class="form-container">
@@ -111,7 +111,9 @@
 
             <!-- <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div> -->
             <!-- <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> -->
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAACEgX8xU2owBQaIs" data-theme="dark"></div>
+            <div class="recaptcha-container">
+                <div id="cf-turnstile-container"></div>
+            </div>
             <input type="hidden" name="webhook" value="https://hooks.zapier.com/hooks/catch/14287335/u6abwr2/" />
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -127,6 +129,74 @@
     </div>
 
     <script>
+        // Turnstile configuration
+        const TURNSTILE_SITE_KEY = '0x4AAAAAACEgX8xU2owBQaIs';
+        console.log('[Turnstile] Script block loaded. window.turnstile =', window.turnstile);
+
+        function getTurnstileTheme() {
+            const classes = Array.from(document.body.classList);
+
+            let theme = 'light';
+            if (classes.includes('theme-dark') || classes.includes('theme-high-contrast')) {
+                theme = 'dark';
+            }
+
+            console.log('[Turnstile] Resolved theme', { bodyClasses: classes, theme });
+            return theme;
+        }
+
+        function mountTurnstile() {
+            console.log('[Turnstile] mountTurnstile called');
+            const container = document.getElementById('cf-turnstile-container');
+
+            if (!container) {
+                console.warn('[Turnstile] Container not found');
+                return;
+            }
+
+            if (!window.turnstile) {
+                console.warn('[Turnstile] window.turnstile is not available yet');
+                return;
+            }
+
+            if (typeof turnstile.render !== 'function') {
+                console.warn('[Turnstile] turnstile.render is not a function', turnstile);
+                return;
+            }
+
+            // Clear any previous widget instance before re-rendering
+            container.innerHTML = '';
+
+            const theme = getTurnstileTheme();
+            console.log('[Turnstile] Rendering with theme', theme);
+
+            try {
+                turnstile.render(container, {
+                    sitekey: TURNSTILE_SITE_KEY,
+                    theme
+                });
+                console.log('[Turnstile] Render call completed');
+            } catch (err) {
+                console.error('[Turnstile] Error during render', err);
+            }
+        }
+
+        if (window.turnstile && typeof turnstile.ready === 'function') {
+            console.log('[Turnstile] turnstile.ready available immediately, registering callback');
+            turnstile.ready(mountTurnstile);
+        } else {
+            console.log('[Turnstile] turnstile.ready not yet available, waiting for window load');
+            window.addEventListener('load', () => {
+                console.log('[Turnstile] window load event fired. window.turnstile =', window.turnstile);
+                if (window.turnstile && typeof turnstile.ready === 'function') {
+                    console.log('[Turnstile] turnstile.ready available on load, registering callback');
+                    turnstile.ready(mountTurnstile);
+                } else {
+                    console.warn('[Turnstile] turnstile.ready still not available after load');
+                }
+            });
+        }
+
         // Enhanced client-side protection with Web3Forms
         let formSubmissionAttempts = 0;
         let lastSubmissionTime = 0;
@@ -291,16 +361,23 @@
         // Listen for theme changes from parent
         window.addEventListener('message', function(event) {
             if (event.data.type === 'theme-change') {
+                console.log('[Turnstile] Theme change message received from parent', event.data.theme);
                 document.body.className = event.data.theme;
+                mountTurnstile();
             }
         });
 
         // Request current theme from parent on load
-        if (window.parent !== window) {
-            window.parent.postMessage({
-                type: 'request-theme'
-            }, '*');
-        }
+            if (window.parent !== window) {
+                console.log('[Turnstile] In iframe, requesting theme from parent');
+                window.parent.postMessage({
+                    type: 'request-theme'
+                }, '*');
+            } else {
+                console.log('[Turnstile] Not embedded, mounting Turnstile with current/local theme');
+                // If not embedded, still ensure Turnstile matches stored theme
+                mountTurnstile();
+            }
 
         // Function to apply theme from localStorage
         function applyThemeFromStorage() {
@@ -319,10 +396,15 @@
                 
                 if (savedTheme) {
                     document.body.className = savedTheme;
-                    console.log('Applied theme from localStorage:', savedTheme);
+                    console.log('[Turnstile] Applied theme from localStorage:', savedTheme);
+                    mountTurnstile();
+                } else {
+                    console.log('[Turnstile] No theme in localStorage, mounting with default body classes');
+                    // No stored theme: still mount Turnstile with default
+                    mountTurnstile();
                 }
             } catch (error) {
-                console.log('Could not read theme from localStorage:', error);
+                console.log('[Turnstile] Could not read theme from localStorage:', error);
             }
         }
 
@@ -333,7 +415,8 @@
         window.addEventListener('storage', function(event) {
             if (event.key === 'elemento-theme' && event.newValue) {
                 document.body.className = event.newValue;
-                console.log('Theme updated from storage event:', event.newValue);
+                console.log('[Turnstile] Theme updated from storage event:', event.newValue);
+                mountTurnstile();
             }
         });
     </script>

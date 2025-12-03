@@ -229,6 +229,8 @@ body {
     margin: var(--space-lg) 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 80px; /* Reserve space to prevent layout shift when Turnstile loads */
 }
 
 .g-recaptcha {
