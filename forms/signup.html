@@ -107,7 +107,8 @@
                 <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *</label>
             </div>
 
-            <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+            <!-- <div class="h-captcha" data-captcha="true" data-theme="dark" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div> -->
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
             <input type="hidden" name="webhook" value="https://hooks.zapier.com/hooks/catch/14287335/u6abwr2/" />
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -334,6 +335,21 @@
         });
     </script>
 
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+     <!-- Recaptcha v3 -->
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le_4x8sAAAAAHJrKNwbJUakP2hkcilketrulwTX"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6Le_4x8sAAAAAHJrKNwbJUakP2hkcilketrulwTX', {
+                    action: 'contact'
+                })
+                .then(function (token) {
+                    recaptchaResponse.value = token;
+                });
+        });
+        
+    </script>
+
 </body>
 </html>
