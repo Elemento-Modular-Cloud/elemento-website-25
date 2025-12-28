@@ -51,7 +51,7 @@
     "role": "CFO – Chief Financial Officer",
     "division": "sales",
     "highlight": "",
-    "bio": "I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.",
+    "bio": "As CFO, I bring financial expertise and strategic vision to Elemento Cloud, ensuring sustainable growth and sound fiscal management.",
     "photo": "CMS/team/sgalfre.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/stefano-galfre" }
@@ -185,5 +185,14 @@
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/cancianilorenzo/" },
       { "type": "Github", "url": "https://github.com/cancianilorenzo" }
     ]
+  },
+  {
+    "name": "Pamela Gerbotto",
+    "role": "Support Specialist",
+    "division": "engineering",
+    "highlight": "",
+    "bio": "As Support Specialist, I provide technical assistance and ensure smooth customer experiences, bridging the gap between users and our solutions.",
+    "photo": "",
+    "links": []
   }
 ] 
