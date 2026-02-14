@@ -50,8 +50,8 @@
     "name": "Stefano Galfré",
     "role": "CFO – Chief Financial Officer",
     "division": "sales",
-    "highlight": "",
-    "bio": "As CFO, I bring financial expertise and strategic vision to Elemento Cloud, ensuring sustainable growth and sound fiscal management.",
+    "highlight": "MSc Economics and Management of Innovation and Technology @ Bocconi University",
+    "bio": "With experience in M&A, corporate strategy and venture building, and a background in economics, entrepreneurship and innovation. I bridge finance and tech at Elemento.",
     "photo": "CMS/team/sgalfre.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/stefano-galfre" }
@@ -61,7 +61,7 @@
     "name": "Martino Mogna",
     "role": "R&D Leader - #1 Employee",
     "division": "engineering",
-    "highlight": "Web Dev student & maker",
+    "highlight": "Dev & Maker",
     "bio": "Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.",
     "photo": "CMS/team/mmogna.webp",
     "links": [
@@ -106,9 +106,9 @@
   },
   {
     "name": "Filippo Ferrando Damillano",
-    "role": "Cloud Software Developer",
+    "role": "Software Developer",
     "division": "engineering",
-    "highlight": "Computer Science Student",
+    "highlight": "MSc Cybersecurity student @ PoliTO",
     "bio": "R&D Developer at Elemento Cloud and Computer Science student passionate about Linux systems and virtualization technologies. Always eager to explore new tech challenges and learn as much as possible!",
     "photo": "CMS/team/ferrando.png",
     "links": [
@@ -143,7 +143,7 @@
     "name": "Marco Garro",
     "role": "Cloud Software Developer",
     "division": "engineering",
-    "highlight": "Computer science student",
+    "highlight": "Computer Science Student",
     "bio": "I am a computer science student who loves music and low-level programming. I've been fortunate to work with Elemento since 2023.",
     "photo": "CMS/team/mgarro.webp",
     "links": [
@@ -155,7 +155,7 @@
     "name": "Simone Robaldo",
     "role": "Cloud Software Developer",
     "division": "engineering",
-    "highlight": "IT Student",
+    "highlight": "Software Developer",
     "bio": "IT Student and programmer that enjoys photography in his free time.",
     "photo": "CMS/team/srobaldo.webp",
     "links": [
@@ -165,9 +165,9 @@
   },
   {
     "name": "Giorgio Torchio",
-    "role": "Cloud Software Developer",
+    "role": "Software Developer",
     "division": "engineering",
-    "highlight": "",
+    "highlight": "Computer Science Student",
     "bio": "Passionate about books and everything related to computer science. I particularly enjoy studying algorithms, multimedia formats, and network protocols.",
     "photo": "CMS/team/gtorchio.webp",
     "links": [
@@ -191,7 +191,7 @@
     "role": "Support Specialist",
     "division": "engineering",
     "highlight": "",
-    "bio": "As Support Specialist, I provide technical assistance and ensure smooth customer experiences, bridging the gap between users and our solutions.",
+    "bio": "Imaginative and curious about how things work and how they’re thought, I’m passionate about nature, video games and photography.",
     "photo": "CMS/team/pgerbotto.webp",
     "links": []
   }
