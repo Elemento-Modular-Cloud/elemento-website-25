@@ -1,0 +1,612 @@
+/* AtomOS Price Calculator — theme-only, no color overrides */
+
+/* Cost calculator block: tighter title spacing */
+.cost-calculator-block .section-header {
+    margin-bottom: 1rem;
+}
+.cost-calculator-block .section-title {
+    margin-bottom: 0.5rem;
+}
+.cost-calculator-block .section-subtitle {
+    margin-bottom: 0;
+}
+.cost-calculator-block > .fade-in {
+    margin-top: 0.75rem;
+}
+
+.atomos-calculator-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.5rem 0 1.5rem;
+}
+
+.atomos-calculator-container .atomos-calculator-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.atomos-calculator-container .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+.atomos-calculator-container .calculator-card {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Config section (always visible) */
+.atomos-calculator-container .atomos-config-section {
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--radius-lg, 12px);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.atomos-calculator-container .atomos-config-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.atomos-calculator-container .atomos-config-section .input-section {
+    padding: 0.25rem 1.25rem 1rem;
+}
+
+/* Spoiler (details/summary) styling */
+.atomos-calculator-container .atomos-spoiler {
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--radius-lg, 12px);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.atomos-calculator-container .atomos-spoiler:last-of-type {
+    margin-bottom: 0;
+}
+
+.atomos-calculator-container .atomos-spoiler-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--text-color);
+    background: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.atomos-calculator-container .atomos-spoiler-summary::-webkit-details-marker,
+.atomos-calculator-container .atomos-spoiler-summary::marker {
+    display: none;
+}
+
+.atomos-calculator-container .atomos-spoiler-summary::after {
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--text-muted);
+    transition: transform 0.2s ease;
+}
+
+.atomos-calculator-container .atomos-spoiler[open] .atomos-spoiler-summary::after {
+    transform: rotate(180deg);
+}
+
+.atomos-calculator-container .atomos-spoiler-summary:hover {
+    background: var(--input-bg-color);
+}
+
+.atomos-calculator-container .atomos-spoiler-details .config-note {
+    padding: 0 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.atomos-calculator-container .atomos-spoiler-details .comparison-table-wrap,
+.atomos-calculator-container .atomos-spoiler-details .comparison-chart,
+.atomos-calculator-container .atomos-spoiler-details .support-level-section,
+.atomos-calculator-container .atomos-spoiler-details .results-grid,
+.atomos-calculator-container .atomos-spoiler-details .metrics-row {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.atomos-calculator-container .atomos-spoiler-details .disclaimer {
+    padding: 0 1.25rem 0;
+    margin-bottom: 0;
+}
+
+.atomos-calculator-container .step-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.atomos-calculator-container .step-badge {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    color: var(--button-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.atomos-calculator-container .step-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.atomos-calculator-container .slider-input-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.atomos-calculator-container .slider-input-group .slider-wrap {
+    flex: 1;
+    min-width: 0;
+}
+
+.atomos-calculator-container .slider-input-group input[type="range"] {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--input-bg-color);
+    border-radius: 4px;
+}
+
+.atomos-calculator-container .slider-input-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.atomos-calculator-container .slider-input-group input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.atomos-calculator-container .slider-input-group .slider-value {
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.atomos-calculator-container .slider-input-group .slider-value input {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.atomos-calculator-container .input-section h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0.5rem;
+}
+
+.atomos-calculator-container .input-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.atomos-calculator-container .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.atomos-calculator-container .input-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.atomos-calculator-container .input-group select,
+.atomos-calculator-container .input-group input {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--radius-md, 8px);
+    font-size: 0.95rem;
+    background: var(--glassmorphism-background);
+    color: var(--text-color);
+}
+
+.atomos-calculator-container .input-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding-right: 2.25rem;
+    cursor: pointer;
+    min-height: 2.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23FFA600' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+}
+
+.atomos-calculator-container .input-group select:hover {
+    border-color: var(--grey);
+}
+
+.atomos-calculator-container .input-group select:focus,
+.atomos-calculator-container .input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(var(--yellow-rgb), 0.2);
+}
+
+.atomos-calculator-container .input-group input[type="number"] {
+    -moz-appearance: textfield;
+}
+.atomos-calculator-container .input-group input[type="number"]::-webkit-outer-spin-button,
+.atomos-calculator-container .input-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.atomos-calculator-container .config-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Support level cards */
+.atomos-calculator-container .support-level-section {
+    margin-bottom: 1.5rem;
+}
+
+.atomos-calculator-container .support-level-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--text-color);
+}
+
+.atomos-calculator-container .support-level-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.atomos-calculator-container .support-level-card {
+    flex: 1;
+    min-width: 140px;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--glassmorphism-border);
+    border-radius: var(--radius-lg, 10px);
+    background: var(--glassmorphism-background);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.atomos-calculator-container .support-level-card:hover {
+    border-color: var(--primary-color);
+    background: var(--input-bg-color);
+}
+
+.atomos-calculator-container .support-level-card.selected {
+    border-color: var(--primary-color);
+    background: var(--hover-color);
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .support-level-card .support-level-name {
+    font-weight: 700;
+}
+
+.atomos-calculator-container .support-level-card .support-level-price {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.atomos-calculator-container .comparison-table-wrap {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--radius-lg, 10px);
+}
+
+.atomos-calculator-container .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.atomos-calculator-container .comparison-table th,
+.atomos-calculator-container .comparison-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .comparison-table th {
+    font-weight: 600;
+    background: var(--input-bg-color);
+}
+
+.atomos-calculator-container .comparison-table th:first-child {
+    min-width: 180px;
+}
+
+.atomos-calculator-container .comparison-table th.vmware-col {
+    background: var(--experimental-background);
+}
+
+.atomos-calculator-container .comparison-table th.atomos-col {
+    background: var(--hover-color);
+    border-left: 3px solid var(--primary-color);
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .comparison-table td.atomos-col {
+    background: var(--hover-color);
+    font-weight: 600;
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .comparison-table .row-total {
+    font-weight: 700;
+    font-size: 1rem;
+    background: var(--input-bg-color);
+}
+
+.atomos-calculator-container .comparison-table .row-total td.atomos-col {
+    background: var(--hover-color);
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+    .atomos-calculator-container .results-grid { grid-template-columns: 1fr; }
+}
+
+.atomos-calculator-container .result-card {
+    padding: 1.25rem;
+    border-radius: var(--radius-lg, 10px);
+    border: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .result-card.vmware {
+    background: var(--input-bg-color);
+}
+
+.atomos-calculator-container .result-card.atomos {
+    background: var(--hover-color);
+    border-left: 4px solid var(--primary-color);
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .result-card.atomos .label,
+.atomos-calculator-container .result-card.atomos .value,
+.atomos-calculator-container .result-card.atomos .detail {
+    color: var(--button-text-color);
+}
+
+.atomos-calculator-container .result-card .label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.atomos-calculator-container .result-card .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.atomos-calculator-container .result-card .detail {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+}
+
+.atomos-calculator-container .metrics-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.atomos-calculator-container .metric-box {
+    background: var(--input-bg-color);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md, 8px);
+    text-align: center;
+    border: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .metric-box .metric-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.atomos-calculator-container .metric-box .metric-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+}
+
+.atomos-calculator-container .savings-banner {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color-dark) 100%);
+    color: var(--button-text-color);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg, 12px);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.atomos-calculator-container .savings-banner .savings-percent {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+}
+
+.atomos-calculator-container .savings-banner .savings-amount {
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+.atomos-calculator-container .savings-banner .savings-sub {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.atomos-calculator-container .disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .comparison-chart {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background: var(--input-bg-color);
+    border-radius: var(--radius-lg, 10px);
+    border: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .comparison-chart-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.atomos-calculator-container .chart-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.atomos-calculator-container .chart-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.atomos-calculator-container .chart-bar-label {
+    width: 140px;
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.atomos-calculator-container .chart-bar-track {
+    flex: 1;
+    min-width: 0;
+    height: 32px;
+    background: var(--experimental-background);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.atomos-calculator-container .chart-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.4s ease;
+}
+
+.atomos-calculator-container .chart-bar-fill.vmware {
+    background: var(--grey-dark);
+}
+
+.atomos-calculator-container .chart-bar-fill.atomos {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color-dark) 100%);
+}
+
+.atomos-calculator-container .chart-bar-value {
+    width: 90px;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.atomos-calculator-container .chart-legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glassmorphism-border);
+}
+
+.atomos-calculator-container .chart-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.atomos-calculator-container .chart-legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.atomos-calculator-container .chart-legend-swatch.vmware {
+    background: var(--grey-dark);
+}
+
+.atomos-calculator-container .chart-legend-swatch.atomos {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color-dark) 100%);
+}
+
+@media (max-width: 600px) {
+    .atomos-calculator-container .chart-bar-row {
+        flex-wrap: wrap;
+    }
+    .atomos-calculator-container .chart-bar-label {
+        width: 100%;
+    }
+    .atomos-calculator-container .chart-bar-value {
+        width: 100%;
+        text-align: left;
+    }
+}

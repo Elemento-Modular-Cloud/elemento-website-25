@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Costs — AtomOS vs VMware | Elemento Cloud</title>
+    <meta name="description" content="Calculate how much you could save with AtomOS compared to VMware. Compare virtualization costs and discover enterprise-level reliability at a fraction of the price.">
+    
+    <link rel="canonical" href="https://elemento.cloud/compare-costs.html">
+    
+    <meta property="og:title" content="Compare Costs — AtomOS vs VMware | Elemento Cloud">
+    <meta property="og:description" content="Calculate how much you could save with AtomOS compared to VMware. Compare virtualization costs and discover enterprise-level reliability.">
+    <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/compare-costs.html">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compare Costs — AtomOS vs VMware | Elemento Cloud">
+    <meta name="twitter:description" content="Calculate how much you could save with AtomOS compared to VMware.">
+    
+    <meta name="keywords" content="AtomOS, VMware, cost comparison, virtualization, hypervisor, cost savings, vSphere alternative">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Compare Costs — AtomOS vs VMware",
+      "description": "Calculate how much you could save with AtomOS compared to VMware",
+      "url": "https://elemento.cloud/compare-costs.html"
+    }
+    </script>
+    
+    <link rel="preload" href="css/style.css" as="style" crossorigin>
+    <link rel="preload" href="css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="js/main.js" as="script" crossorigin>
+    <link rel="preload" href="js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
+    
+    <style>
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; padding: 0; font-family: var(--font-primary); color: var(--text-color); background-color: var(--background-color); line-height: 1.6; overflow-x: hidden; }
+        .splash-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--background-color); display: flex; align-items: center; justify-content: center; z-index: 9999; opacity: 1; visibility: visible; transition: opacity 0.25s ease-out, visibility 0.25s ease-out; }
+        .splash-screen.hidden { opacity: 0; visibility: hidden; }
+        .splash-content { text-align: center; max-width: 300px; }
+        .splash-logo { margin-bottom: 2rem; }
+        .splash-logo-img { width: 120px; height: 120px; background-color: var(--primary-color); mask-image: url(assets/logos/Elemento.svg); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(assets/logos/Elemento.svg); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; }
+    </style>
+
+    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/atomos-calculator.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/atmosphere.css">
+        <link rel="stylesheet" href="css/atomos-calculator.css">
+        <link rel="stylesheet" href="css/breadcrumb.css">
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+                <li class="breadcrumb-item"><a href="atomos.html" class="breadcrumb-link">AtomOS</a></li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">Compare Costs</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="cost-calculator-block">
+                <div class="section-header" id="cost-calculator">
+                    <h2 class="section-title">Compare Costs — AtomOS vs VMware</h2>
+                    <p class="section-subtitle">Calculate how much you could save with AtomOS compared to VMware. Discover how our virtualization solution helps you escape rising costs, without compromising enterprise-level reliability.</p>
+                </div>
+                <div class="fade-in" data-atomos-calculator></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to switch?</h2>
+                <p class="section-subtitle">Get AtomOS for your infrastructure and start saving today.</p>
+            </div>
+            <div class="text-center">
+                <a href="https://atomos.elemento.cloud" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-cart-shopping"></i> Buy AtomOS</a>
+                <a href="atomos.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/splash-screen.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/themes.js" defer></script>
+    <script src="js/atomos-calculator.js" defer></script>
+</body>
+</html>

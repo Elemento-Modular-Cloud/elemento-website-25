@@ -1,0 +1,202 @@
+<div class="atomos-calculator-container calculator-container">
+    <div class="calculator-card">
+        <!-- Configure -->
+        <div class="atomos-config-section">
+            <div class="atomos-config-header">
+                <span class="step-title">Configure your infrastructure</span>
+            </div>
+            <div class="input-section">
+            <h3>Compute</h3>
+            <div class="input-group">
+                <label for="atomos-calc-hosts">Number of hosts</label>
+                <div class="slider-input-group">
+                    <div class="slider-wrap">
+                        <input type="range" id="atomos-calc-hosts-slider" min="1" max="50" value="8">
+                    </div>
+                    <div class="slider-value">
+                        <input type="number" id="atomos-calc-hosts" min="1" max="500" value="8">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="atomos-calc-cores">Cores per host</label>
+                <div class="slider-input-group">
+                    <div class="slider-wrap">
+                        <input type="range" id="atomos-calc-cores-slider" min="8" max="128" value="32">
+                    </div>
+                    <div class="slider-value">
+                        <input type="number" id="atomos-calc-cores" min="4" max="256" value="32">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="atomos-calc-vms">Total VMs</label>
+                <div class="slider-input-group">
+                    <div class="slider-wrap">
+                        <input type="range" id="atomos-calc-vms-slider" min="1" max="500" value="60">
+                    </div>
+                    <div class="slider-value">
+                        <input type="number" id="atomos-calc-vms" min="1" max="10000" value="60">
+                    </div>
+                </div>
+            </div>
+            <p class="config-note">VMware licenses per core (minimum 16 cores per CPU).</p>
+
+            <h3>Subscription & comparison</h3>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="atomos-calc-subscription">Subscription length</label>
+                    <select id="atomos-calc-subscription">
+                        <option value="1">1 year</option>
+                        <option value="3" selected>3 years</option>
+                        <option value="5">5 years</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="atomos-calc-storage">Storage capacity (vSAN)</label>
+                    <select id="atomos-calc-storage">
+                        <option value="2">2 TB</option>
+                        <option value="6">6 TB</option>
+                        <option value="12" selected>12 TB</option>
+                        <option value="24">24 TB</option>
+                        <option value="48">48 TB</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="atomos-calc-comparison">Compare to</label>
+                    <select id="atomos-calc-comparison">
+                        <option value="vsphere-foundation">VMware vSphere Foundation + vSAN</option>
+                        <option value="cloud-foundation">VMware Cloud Foundation (VCF)</option>
+                    </select>
+                </div>
+            </div>
+            <p class="config-note">Storage tier affects VMware vSAN pricing. AtomOS uses your existing storage.</p>
+            </div>
+        </div>
+
+        <div class="savings-banner" id="atomos-calc-savings-banner">
+            <div class="savings-percent" id="atomos-calc-savings-percent">—</div>
+            <div class="savings-amount" id="atomos-calc-savings-amount">—</div>
+            <div class="savings-sub" id="atomos-calc-savings-sub">—</div>
+        </div>
+
+        <div class="comparison-chart">
+            <div class="comparison-chart-title">Cost comparison</div>
+            <div class="chart-bars">
+                <div class="chart-bar-row">
+                    <span class="chart-bar-label" id="atomos-calc-chart-vmware-label">VMware</span>
+                    <div class="chart-bar-track">
+                        <div class="chart-bar-fill vmware" id="atomos-calc-chart-vmware-fill" style="width: 0%"></div>
+                    </div>
+                    <span class="chart-bar-value" id="atomos-calc-chart-vmware-value">—</span>
+                </div>
+                <div class="chart-bar-row">
+                    <span class="chart-bar-label">AtomOS</span>
+                    <div class="chart-bar-track">
+                        <div class="chart-bar-fill atomos" id="atomos-calc-chart-atomos-fill" style="width: 0%"></div>
+                    </div>
+                    <span class="chart-bar-value" id="atomos-calc-chart-atomos-value">—</span>
+                </div>
+            </div>
+            <div class="chart-legend">
+                <div class="chart-legend-item">
+                    <span class="chart-legend-swatch vmware"></span>
+                    <span id="atomos-calc-chart-legend-vmware">VMware</span>
+                </div>
+                <div class="chart-legend-item">
+                    <span class="chart-legend-swatch atomos"></span>
+                    <span>AtomOS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details -->
+        <details class="atomos-spoiler atomos-spoiler-details">
+            <summary class="atomos-spoiler-summary">
+                <span class="step-title">How did we compute that?</span>
+            </summary>
+            <p class="config-note" style="margin-top: 0;">Detailed breakdown of the cost comparison and computation.</p>
+
+        <div class="comparison-table-wrap">
+            <table class="comparison-table atomos-calc-table">
+                <thead>
+                    <tr>
+                        <th>Cost component</th>
+                        <th class="vmware-col" id="atomos-calc-vmware-table-label">VMware vSphere Foundation + vSAN</th>
+                        <th class="atomos-col">AtomOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hypervisor licensing</td>
+                        <td id="atomos-calc-vmware-hypervisor">—</td>
+                        <td class="atomos-col" id="atomos-calc-atomos-hypervisor">—</td>
+                    </tr>
+                    <tr>
+                        <td>Storage / vSAN</td>
+                        <td id="atomos-calc-vmware-storage">—</td>
+                        <td class="atomos-col" id="atomos-calc-atomos-storage">—</td>
+                    </tr>
+                    <tr>
+                        <td>Management & support</td>
+                        <td id="atomos-calc-vmware-support">—</td>
+                        <td class="atomos-col" id="atomos-calc-atomos-support-cost">—</td>
+                    </tr>
+                    <tr class="row-total">
+                        <td>Total cost</td>
+                        <td id="atomos-calc-vmware-total">—</td>
+                        <td class="atomos-col" id="atomos-calc-atomos-total">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+            <div class="support-level-section">
+                <h3 class="support-level-title">Choose AtomOS support level</h3>
+                <div class="support-level-cards">
+                    <input type="hidden" id="atomos-calc-support-tier" value="base">
+                    <button type="button" class="support-level-card selected" data-value="base" aria-pressed="true">
+                        <span class="support-level-name">Base</span>
+                        <span class="support-level-price">€1,200/host/year</span>
+                    </button>
+                    <button type="button" class="support-level-card" data-value="pro" aria-pressed="false">
+                        <span class="support-level-name">Pro</span>
+                        <span class="support-level-price">€2,000/host/year</span>
+                    </button>
+                </div>
+            </div>
+
+        <div class="results-grid">
+            <div class="result-card vmware">
+                <div class="label" id="atomos-calc-vmware-label">VMware total</div>
+                <div class="value" id="atomos-calc-vmware-cost">—</div>
+                <div class="detail" id="atomos-calc-vmware-detail">—</div>
+            </div>
+            <div class="result-card atomos">
+                <div class="label">AtomOS total</div>
+                <div class="value" id="atomos-calc-atomos-cost">—</div>
+                <div class="detail" id="atomos-calc-atomos-detail">—</div>
+            </div>
+        </div>
+
+        <div class="metrics-row">
+            <div class="metric-box">
+                <div class="metric-value" id="atomos-calc-metric-savings-pct">—</div>
+                <div class="metric-label">Savings %</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-value" id="atomos-calc-metric-cost-per-vm">—</div>
+                <div class="metric-label">VMware cost per VM/year</div>
+            </div>
+            <div class="metric-box">
+                <div class="metric-value" id="atomos-calc-metric-cost-per-host">—</div>
+                <div class="metric-label">VMware cost per host/year</div>
+            </div>
+        </div>
+
+        <p class="disclaimer">
+            Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). This calculator uses AtomOS paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes.
+        </p>
+        </details>
+    </div>
+</div>

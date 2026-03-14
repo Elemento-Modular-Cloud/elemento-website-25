@@ -489,6 +489,7 @@
     
     <!-- Home Page Styles -->
     <link rel="stylesheet" href="css/atomos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/atomos-calculator.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
@@ -500,6 +501,7 @@
 
         <!-- Home Page Styles -->
         <link rel="stylesheet" href="css/atomos.css">
+        <link rel="stylesheet" href="css/atomos-calculator.css">
     </noscript>
 
     <!-- Optimized font loading -->
@@ -992,6 +994,15 @@
                     </table>
                 </div>
             </div>
+
+            <div class="cost-calculator-block">
+                <div class="section-header" style="margin-top: 9.5rem;" id="cost-calculator">
+                    <h2 class="section-title">Compare Costs — AtomOS vs VMware</h2>
+                    <p class="section-subtitle">Calculate how much you could save with AtomOS compared to VMware</p>
+                    <p style="margin-top: 0.5rem;"><a href="compare-costs.html" style="font-size: 0.9rem; color: var(--text-muted);">Standalone calculator page →</a></p>
+                </div>
+                <div class="fade-in" data-atomos-calculator></div>
+            </div>
         </div>
     </section>
 
@@ -1371,5 +1382,6 @@
     <script src="js/footer.js" defer></script>
     <script src="js/atmosphere_hero_with_logo.js" defer></script>
     <script src="js/themes.js" defer></script>
+    <script src="js/atomos-calculator.js" defer></script>
 </body>
 </html> 
