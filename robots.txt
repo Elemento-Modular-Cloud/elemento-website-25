@@ -23,18 +23,16 @@ Allow: /js/
 Allow: /blog-posts/
 Allow: /forms/
 
-# Crawl delay for better server performance
-Crawl-delay: 1
+# Note: Crawl-delay is not supported by Googlebot and is ignored by most major crawlers.
+# It was historically used by some bots (e.g. Bingbot) but is non-standard.
+# Removed to avoid confusion. Use server-side rate limiting if needed.
 
 # Specific bot instructions
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
-Crawl-delay: 2
