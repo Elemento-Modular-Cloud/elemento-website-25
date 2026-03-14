@@ -299,14 +299,17 @@
                 const costPerHostYear = inputs.hosts > 0 ? Math.round(comp.total / inputs.years / inputs.hosts) : 0;
                 const compLabel = comparisonLabels[inputs.comparison];
                 const compShort = comparisonShortLabels[inputs.comparison] || compLabel;
+                const detailSuffix = (inputs.comparison === 'nutanix' || inputs.comparison === 'sangfor') ? 'nodes' : 'cores';
+                const compDetail = `Over ${inputs.years} year${inputs.years > 1 ? 's' : ''} • ${inputs.totalCores} ${detailSuffix}`;
+                const atomosDetail = `${inputs.atomosSupport === 'pro' ? 'Pro' : 'Base'} support • ${inputs.hosts} host${inputs.hosts > 1 ? 's' : ''}`;
                 const fmt = (n) => `${CONFIG.currency} ${n.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
                 const data = {
                     title: `Elemento AtomOS vs ${compLabel}`,
                     compLabel,
                     compShort,
                     config: { hosts: inputs.hosts, cores: inputs.coresPerHost, vms: inputs.vms, storageTB: inputs.storageTB, years: inputs.years, support: inputs.atomosSupport, hasStorage: comparisonsWithStoragePricing.includes(inputs.comparison) },
-                    comp: { hypervisor: comp.hypervisor, storage: comp.storage, support: comp.support, total: comp.total },
-                    atomos: { license: atomosLicense, support: atomosSupportCost, total: atomosTotal },
+                    comp: { hypervisor: comp.hypervisor, storage: comp.storage, support: comp.support, total: comp.total, detail: compDetail },
+                    atomos: { license: atomosLicense, support: atomosSupportCost, total: atomosTotal, detail: atomosDetail },
                     savings: { amount: savings, percent: savingsPercent },
                     metrics: { costPerVMYear, costPerHostYear },
                     fmt
@@ -405,13 +408,48 @@
         doc.setFont(undefined, 'normal');
         y += 6;
         doc.text(`Save ${data.fmt(data.savings.amount)} (${data.savings.percent}%) over ${data.config.years} year${data.config.years > 1 ? 's' : ''} with Elemento AtomOS`, 14, y);
+        y += 12;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Detailed breakdown of the cost comparison and computation.', 14, y);
         y += 8;
-        doc.text(`Cost per VM/year: ${data.fmt(data.metrics.costPerVMYear)}  |  Cost per host/year: ${data.fmt(data.metrics.costPerHostYear)}`, 14, y);
+        
+        doc.setFont(undefined, 'normal');
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'bold');
+        doc.text('Elemento AtomOS support level', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        const supportName = data.config.support === 'pro' ? 'Pro' : 'Base';
+        const supportPrice = data.config.support === 'pro' ? '€2,000' : '€1,200';
+        doc.text(`Selected: ${supportName} (${supportPrice}/host/year)`, 14, y);
+        y += 10;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Result summary', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        doc.text(`${data.compShort} total: ${data.fmt(data.comp.total)} — ${data.comp.detail}`, 14, y);
+        y += 5;
+        doc.text(`Elemento AtomOS total: ${data.fmt(data.atomos.total)} — ${data.atomos.detail}`, 14, y);
+        y += 10;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Metrics', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        doc.text(`Savings: ${data.savings.percent}%  |  ${data.compShort} cost per VM/year: ${data.fmt(data.metrics.costPerVMYear)}  |  Cost per host/year: ${data.fmt(data.metrics.costPerHostYear)}`, 14, y);
         y += 14;
+
+        const pageH = doc.internal.pageSize.getHeight();
+        if (y > pageH - 40) {
+            doc.addPage();
+            y = 20;
+        }
 
         doc.setFontSize(8);
         doc.setTextColor(100, 100, 100);
-        doc.text('Estimates based on published list pricing. Actual costs may vary. Contact sales for exact quotes. — Elemento | elemento.cloud', 14, y, { maxWidth: pageW - 28 });
+        doc.text('Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. Elemento AtomOS: paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes. — Elemento | elemento.cloud', 14, y, { maxWidth: pageW - 28 });
         doc.setTextColor(0, 0, 0);
 
         const filename = `Elemento-AtomOS-vs-${data.compLabel.replace(/[^a-zA-Z0-9]/g, '-')}-${new Date().toISOString().slice(0, 10)}.pdf`;
