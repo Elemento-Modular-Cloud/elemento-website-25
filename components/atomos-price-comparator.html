@@ -6,7 +6,27 @@
                 <span class="step-title">Configure your infrastructure</span>
             </div>
             <div class="input-section">
-            <h3>Compute</h3>
+            <div class="input-row atomos-calc-top-row">
+                <div class="input-group">
+                    <label for="atomos-calc-subscription">Subscription length</label>
+                    <select id="atomos-calc-subscription">
+                        <option value="1">1 year</option>
+                        <option value="3" selected>3 years</option>
+                        <option value="5">5 years</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="atomos-calc-comparison">Compare to</label>
+                    <select id="atomos-calc-comparison">
+                        <option value="vsphere-foundation">VMware vSphere Foundation + vSAN</option>
+                        <option value="cloud-foundation">VMware Cloud Foundation (VCF)</option>
+                        <option value="nutanix">Nutanix (AHV + HCI)</option>
+                        <option value="sangfor">Sangfor HCI</option>
+                        <option value="hyperv">Microsoft Hyper-V (Windows Server)</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="input-group">
                 <label for="atomos-calc-hosts">Number of hosts</label>
                 <div class="slider-input-group">
@@ -18,8 +38,11 @@
                     </div>
                 </div>
             </div>
-            <div class="input-group">
-                <label for="atomos-calc-cores">Cores per host</label>
+            <div class="input-group" id="atomos-calc-cores-wrap">
+                <div class="atomos-label-row">
+                    <label for="atomos-calc-cores">Cores per host</label>
+                    <span class="atomos-disabled-hint" id="atomos-calc-cores-hint" aria-hidden="true">Pricing doesn't depend on this</span>
+                </div>
                 <div class="slider-input-group">
                     <div class="slider-wrap">
                         <input type="range" id="atomos-calc-cores-slider" min="8" max="128" value="32">
@@ -29,8 +52,25 @@
                     </div>
                 </div>
             </div>
-            <div class="input-group">
-                <label for="atomos-calc-vms">Total VMs</label>
+            <div class="input-group atomos-storage-input" id="atomos-calc-storage-wrap">
+                <div class="atomos-label-row">
+                    <label for="atomos-calc-storage">Storage capacity (vSAN)</label>
+                    <span class="atomos-disabled-hint" id="atomos-calc-storage-hint" aria-hidden="true">Pricing doesn't depend on this</span>
+                </div>
+                <div class="slider-input-group">
+                    <div class="slider-wrap">
+                        <input type="range" id="atomos-calc-storage-slider" min="2" max="48" value="12" step="1">
+                    </div>
+                    <div class="slider-value">
+                        <input type="number" id="atomos-calc-storage" min="2" max="48" value="12">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group" id="atomos-calc-vms-wrap">
+                <div class="atomos-label-row">
+                    <label for="atomos-calc-vms">Total VMs</label>
+                    <span class="atomos-compute-hint">Only used for cost per VM</span>
+                </div>
                 <div class="slider-input-group">
                     <div class="slider-wrap">
                         <input type="range" id="atomos-calc-vms-slider" min="1" max="500" value="60">
@@ -40,37 +80,7 @@
                     </div>
                 </div>
             </div>
-            <p class="config-note">VMware licenses per core (minimum 16 cores per CPU).</p>
-
-            <h3>Subscription & comparison</h3>
-            <div class="input-row">
-                <div class="input-group">
-                    <label for="atomos-calc-subscription">Subscription length</label>
-                    <select id="atomos-calc-subscription">
-                        <option value="1">1 year</option>
-                        <option value="3" selected>3 years</option>
-                        <option value="5">5 years</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="atomos-calc-storage">Storage capacity (vSAN)</label>
-                    <select id="atomos-calc-storage">
-                        <option value="2">2 TB</option>
-                        <option value="6">6 TB</option>
-                        <option value="12" selected>12 TB</option>
-                        <option value="24">24 TB</option>
-                        <option value="48">48 TB</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="atomos-calc-comparison">Compare to</label>
-                    <select id="atomos-calc-comparison">
-                        <option value="vsphere-foundation">VMware vSphere Foundation + vSAN</option>
-                        <option value="cloud-foundation">VMware Cloud Foundation (VCF)</option>
-                    </select>
-                </div>
-            </div>
-            <p class="config-note">Storage tier affects VMware vSAN pricing. AtomOS uses your existing storage.</p>
+            <p class="config-note">VMware licenses per core (minimum 16 cores per CPU). Storage tier affects VMware vSAN pricing. AtomOS uses your existing storage. Nutanix, Sangfor, and Hyper-V estimates use published or typical list pricing; contact vendors for exact quotes.</p>
             </div>
         </div>
 
@@ -81,7 +91,7 @@
         </div>
 
         <div class="comparison-chart">
-            <div class="comparison-chart-title">Cost comparison</div>
+            <div class="comparison-chart-title" id="atomos-calc-chart-title">Cost comparison</div>
             <div class="chart-bars">
                 <div class="chart-bar-row">
                     <span class="chart-bar-label" id="atomos-calc-chart-vmware-label">VMware</span>
@@ -113,9 +123,9 @@
         <!-- Details -->
         <details class="atomos-spoiler atomos-spoiler-details">
             <summary class="atomos-spoiler-summary">
-                <span class="step-title">How did we compute that?</span>
+                <span class="step-title" id="atomos-calc-details-summary">How did we compute that?</span>
             </summary>
-            <p class="config-note" style="margin-top: 0;">Detailed breakdown of the cost comparison and computation.</p>
+            <p class="config-note" style="margin-top: 0;" id="atomos-calc-details-intro">Detailed breakdown of the cost comparison and computation.</p>
 
         <div class="comparison-table-wrap">
             <table class="comparison-table atomos-calc-table">
@@ -186,16 +196,16 @@
             </div>
             <div class="metric-box">
                 <div class="metric-value" id="atomos-calc-metric-cost-per-vm">—</div>
-                <div class="metric-label">VMware cost per VM/year</div>
+                <div class="metric-label" id="atomos-calc-metric-label-vm">VMware cost per VM/year</div>
             </div>
             <div class="metric-box">
                 <div class="metric-value" id="atomos-calc-metric-cost-per-host">—</div>
-                <div class="metric-label">VMware cost per host/year</div>
+                <div class="metric-label" id="atomos-calc-metric-label-host">VMware cost per host/year</div>
             </div>
         </div>
 
         <p class="disclaimer">
-            Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). This calculator uses AtomOS paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes.
+            Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. AtomOS: paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes.
         </p>
         </details>
     </div>
