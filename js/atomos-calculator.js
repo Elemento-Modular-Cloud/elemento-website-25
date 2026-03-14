@@ -223,6 +223,15 @@
             if (coresHint) coresHint.setAttribute('aria-hidden', coresEnabled);
         }
 
+        function updateSliderFill(s) {
+            if (!s) return;
+            const min = parseInt(s.min, 10) || 0;
+            const max = parseInt(s.max, 10) || 100;
+            const val = parseInt(s.value, 10) || min;
+            const pct = max > min ? ((val - min) / (max - min)) * 100 : 0;
+            s.style.setProperty('--slider-fill-percent', String(pct));
+        }
+
         const sliderInputPairs = [
             { slider: 'atomos-calc-hosts-slider', input: 'atomos-calc-hosts', min: 1, max: 500 },
             { slider: 'atomos-calc-cores-slider', input: 'atomos-calc-cores', min: 8, max: 256 },
@@ -235,8 +244,10 @@
             const i = $(input);
             if (!s || !i) return;
             const sliderMax = parseInt(s.max, 10);
+            updateSliderFill(s);
             s.addEventListener('input', () => {
                 i.value = s.value;
+                updateSliderFill(s);
                 calculate();
             });
             function syncFromInput() {
@@ -245,6 +256,7 @@
                 v = Math.max(min, Math.min(max, v));
                 i.value = v;
                 s.value = Math.min(v, sliderMax);
+                updateSliderFill(s);
                 calculate();
             }
             i.addEventListener('input', syncFromInput);
@@ -272,7 +284,138 @@
             });
         });
 
+        const pdfBtn = $('atomos-calc-download-pdf');
+        if (pdfBtn) {
+            pdfBtn.addEventListener('click', () => {
+                const inputs = getInputs();
+                const comp = getCompetitorCosts(inputs.comparison, inputs.hosts, inputs.totalCores, inputs.storageTB, inputs.years);
+                const atomosLicense = inputs.hosts * CONFIG.atomosPerHostYear * inputs.years;
+                const supportPerHost = inputs.atomosSupport === 'pro' ? CONFIG.atomosSupportPro : CONFIG.atomosSupportBase;
+                const atomosSupportCost = inputs.hosts * supportPerHost * inputs.years;
+                const atomosTotal = atomosLicense + atomosSupportCost;
+                const savings = comp.total - atomosTotal;
+                const savingsPercent = comp.total > 0 ? Math.round((savings / comp.total) * 100) : 0;
+                const costPerVMYear = inputs.vms > 0 ? Math.round(comp.total / inputs.years / inputs.vms) : 0;
+                const costPerHostYear = inputs.hosts > 0 ? Math.round(comp.total / inputs.years / inputs.hosts) : 0;
+                const compLabel = comparisonLabels[inputs.comparison];
+                const compShort = comparisonShortLabels[inputs.comparison] || compLabel;
+                const fmt = (n) => `${CONFIG.currency} ${n.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+                const data = {
+                    title: `Elemento AtomOS vs ${compLabel}`,
+                    compLabel,
+                    compShort,
+                    config: { hosts: inputs.hosts, cores: inputs.coresPerHost, vms: inputs.vms, storageTB: inputs.storageTB, years: inputs.years, support: inputs.atomosSupport, hasStorage: comparisonsWithStoragePricing.includes(inputs.comparison) },
+                    comp: { hypervisor: comp.hypervisor, storage: comp.storage, support: comp.support, total: comp.total },
+                    atomos: { license: atomosLicense, support: atomosSupportCost, total: atomosTotal },
+                    savings: { amount: savings, percent: savingsPercent },
+                    metrics: { costPerVMYear, costPerHostYear },
+                    fmt
+                };
+                exportToPdf(data);
+            });
+        }
+
         calculate();
+    }
+
+    function exportToPdf(data) {
+        if (typeof window.jspdf === 'undefined') {
+            console.error('jsPDF not loaded');
+            alert('PDF export is not available. Please ensure jsPDF is loaded.');
+            return;
+        }
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        const pageW = doc.internal.pageSize.getWidth();
+        let y = 18;
+
+        doc.setFontSize(11);
+        doc.setTextColor(255, 166, 0);
+        doc.setFont(undefined, 'bold');
+        doc.text('Elemento', 14, y);
+        doc.setTextColor(0, 0, 0);
+        doc.setFont(undefined, 'normal');
+        doc.setFontSize(9);
+        doc.setTextColor(100, 100, 100);
+        doc.text('elemento.cloud', pageW - 14, y, { align: 'right' });
+        doc.setTextColor(0, 0, 0);
+        y += 4;
+        doc.setDrawColor(255, 166, 0);
+        doc.setLineWidth(0.5);
+        doc.line(14, y, pageW - 14, y);
+        y += 12;
+
+        doc.setFontSize(18);
+        doc.text('Price Comparison Report', pageW / 2, y, { align: 'center' });
+        y += 10;
+
+        doc.setFontSize(14);
+        doc.text(data.title, pageW / 2, y, { align: 'center' });
+        y += 8;
+
+        doc.setFontSize(9);
+        doc.setTextColor(100, 100, 100);
+        doc.text('Generated on ' + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), pageW / 2, y, { align: 'center' });
+        doc.setTextColor(0, 0, 0);
+        y += 14;
+
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'bold');
+        doc.text('Configuration', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        doc.text(`Hosts: ${data.config.hosts}  |  Cores per host: ${data.config.cores}  |  VMs: ${data.config.vms}  |  Years: ${data.config.years}`, 14, y);
+        y += 5;
+        if (data.config.hasStorage) doc.text(`Storage (vSAN): ${data.config.storageTB} TB  |  Elemento AtomOS support: ${data.config.support === 'pro' ? 'Pro' : 'Base'}`, 14, y);
+        else doc.text(`Elemento AtomOS support: ${data.config.support === 'pro' ? 'Pro' : 'Base'}`, 14, y);
+        y += 12;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Cost breakdown', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        const col1 = 14;
+        const col2 = 95;
+        const col3 = 155;
+        doc.text('Component', col1, y);
+        doc.text(data.compShort, col2, y);
+        doc.text('Elemento AtomOS', col3, y);
+        y += 6;
+        doc.text('Hypervisor licensing', col1, y);
+        doc.text(data.comp.hypervisor > 0 ? data.fmt(data.comp.hypervisor) : 'Included', col2, y);
+        doc.text(data.fmt(data.atomos.license), col3, y);
+        y += 5;
+        doc.text('Storage / vSAN', col1, y);
+        doc.text(data.comp.storage > 0 ? data.fmt(data.comp.storage) : 'Included', col2, y);
+        doc.text('Included', col3, y);
+        y += 5;
+        doc.text('Management & support', col1, y);
+        doc.text(data.comp.support > 0 ? data.fmt(data.comp.support) : 'Included', col2, y);
+        doc.text(data.fmt(data.atomos.support), col3, y);
+        y += 6;
+        doc.setFont(undefined, 'bold');
+        doc.text('Total cost', col1, y);
+        doc.text(data.fmt(data.comp.total), col2, y);
+        doc.text(data.fmt(data.atomos.total), col3, y);
+        doc.setFont(undefined, 'normal');
+        y += 12;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Savings', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 6;
+        doc.text(`Save ${data.fmt(data.savings.amount)} (${data.savings.percent}%) over ${data.config.years} year${data.config.years > 1 ? 's' : ''} with Elemento AtomOS`, 14, y);
+        y += 8;
+        doc.text(`Cost per VM/year: ${data.fmt(data.metrics.costPerVMYear)}  |  Cost per host/year: ${data.fmt(data.metrics.costPerHostYear)}`, 14, y);
+        y += 14;
+
+        doc.setFontSize(8);
+        doc.setTextColor(100, 100, 100);
+        doc.text('Estimates based on published list pricing. Actual costs may vary. Contact sales for exact quotes. — Elemento | elemento.cloud', 14, y, { maxWidth: pageW - 28 });
+        doc.setTextColor(0, 0, 0);
+
+        const filename = `Elemento-AtomOS-vs-${data.compLabel.replace(/[^a-zA-Z0-9]/g, '-')}-${new Date().toISOString().slice(0, 10)}.pdf`;
+        doc.save(filename);
     }
 
     async function init() {
