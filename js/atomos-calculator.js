@@ -421,7 +421,7 @@
         doc.setFont(undefined, 'normal');
         y += 6;
         const supportName = data.config.support === 'pro' ? 'Pro' : 'Base';
-        const supportPrice = data.config.support === 'pro' ? '€2,000' : '€1,200';
+        const supportPrice = data.confi`g.support === 'pro' ? '€2,000' : '€1,200';
         doc.text(`Selected: ${supportName} (${supportPrice}/host/year)`, 14, y);
         y += 10;
 

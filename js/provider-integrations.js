@@ -99,6 +99,19 @@ class ProviderIntegrationsHandler {
     }
 
     /**
+     * Merge object (STaaS) and block storage levels for the single Storage-aaS column.
+     * Uses the stronger of the two: full > partial > planned > na.
+     */
+    mergeStorageLevels(staasLevel, blockLevel) {
+        const order = ['na', 'planned', 'partial', 'full'];
+        const ia = order.indexOf(staasLevel);
+        const ib = order.indexOf(blockLevel);
+        const a = ia === -1 ? 0 : ia;
+        const b = ib === -1 ? 0 : ib;
+        return order[Math.max(a, b)];
+    }
+
+    /**
      * Transform the new JSON format to the expected format
      */
     transformProviderData(data) {
@@ -106,6 +119,8 @@ class ProviderIntegrationsHandler {
         const supportedProviders = data.ELEMENTO_SUPPORTED_PROVIDERS;
         
         for (const [key, provider] of Object.entries(supportedProviders)) {
+            let staasLevel = 'na';
+            let blockLevel = 'na';
             const transformedProvider = {
                 provider: provider.display_name,
                 status: provider.status,
@@ -113,7 +128,7 @@ class ProviderIntegrationsHandler {
                 storageAas: 'na', 
                 networking: 'na',
                 k8s: 'na',
-                costApi: 'na'
+                bareMetal: 'na'
             };
             
             // Map services to the expected format
@@ -123,7 +138,10 @@ class ProviderIntegrationsHandler {
                         transformedProvider.vmManagement = service.support_level;
                         break;
                     case 'STaaS':
-                        transformedProvider.storageAas = service.support_level;
+                        staasLevel = service.support_level;
+                        break;
+                    case 'blockStorage':
+                        blockLevel = service.support_level;
                         break;
                     case 'networking':
                         transformedProvider.networking = service.support_level;
@@ -131,11 +149,13 @@ class ProviderIntegrationsHandler {
                     case 'k8s':
                         transformedProvider.k8s = service.support_level;
                         break;
-                    case 'costApi':
-                        transformedProvider.costApi = service.support_level;
+                    case 'bareMetal':
+                        transformedProvider.bareMetal = service.support_level;
                         break;
                 }
             });
+
+            transformedProvider.storageAas = this.mergeStorageLevels(staasLevel, blockLevel);
             
             providers.push(transformedProvider);
         }
@@ -162,7 +182,7 @@ class ProviderIntegrationsHandler {
                     <td class="comparison-table-cell-${this.getStatusClass(provider.storageAas)}">${this.getStatusIcon(provider.storageAas)} ${this.getStatusText(provider.storageAas)}</td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.networking)}">${this.getStatusIcon(provider.networking)} ${this.getStatusText(provider.networking)}</td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.k8s)}">${this.getStatusIcon(provider.k8s)} ${this.getStatusText(provider.k8s)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.costApi)}">${this.getStatusIcon(provider.costApi)} ${this.getStatusText(provider.costApi)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.bareMetal)}">${this.getStatusIcon(provider.bareMetal)} ${this.getStatusText(provider.bareMetal)}</td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.status)}">${this.getStatusBadge(provider.status)}</td>
                 </tr>
             `;
