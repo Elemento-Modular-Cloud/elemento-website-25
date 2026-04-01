@@ -65,12 +65,12 @@ class Navbar {
         return this.currentPage === 'index.html' || this.currentPage === '';
     }
 
-    // Render announcement banner (only on home page)
+    // Home top announcement banner (e.g. Keynote) — remove `return ''` and uncomment block to restore
     renderBanner() {
         if (!this.isHomePage()) {
             return '';
         }
-        
+        /*
         return `
             <a href="https://youtube.com/live/urhPkWeF3Yg" class="announcement-banner" aria-label="Keynote 2025 YouTube recording" target="_blank" rel="noopener noreferrer">
                 <div class="banner-content">
@@ -79,14 +79,17 @@ class Navbar {
                 </div>
             </a>
         `;
+        */
+        return '';
     }
 
     render() {
         const basePath = this.getBasePath();
-        
+        const bannerHtml = this.renderBanner();
+
         return `
-            ${this.renderBanner()}
-            <nav class="navbar ${this.isHomePage() ? 'has-banner' : ''}">
+            ${bannerHtml}
+            <nav class="navbar ${bannerHtml ? 'has-banner' : ''}">
                 <div class="nav-container">
                     <a href="${basePath}index.html" class="logo">
                         <div class="logo-icon"></div>

@@ -4,12 +4,23 @@ Blog Post Generator Script
 Generates HTML blog posts from CSV data and updates the blog index.
 """
 
+import argparse
 import csv
+import html
 import json
 import os
 import re
 from datetime import datetime
 from pathlib import Path
+
+BASE_URL = "https://elemento.cloud"
+
+MARK_ITEMLIST_START = "    <!-- BLOG_ITEMLIST_JSONLD_START -->"
+MARK_ITEMLIST_END = "    <!-- BLOG_ITEMLIST_JSONLD_END -->"
+MARK_POST_LINKS_START = "        <!-- BLOG_POST_LINKS_START -->"
+MARK_POST_LINKS_END = "        <!-- BLOG_POST_LINKS_END -->"
+MARK_SITEMAP_START = "  <!-- BLOG_SITEMAP_POSTS_START -->"
+MARK_SITEMAP_END = "  <!-- BLOG_SITEMAP_POSTS_END -->"
 
 def clean_html_content(content):
     """Clean and format HTML content from the CSV."""
@@ -184,13 +195,13 @@ def generate_blog_post_html(post_data):
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
-        (function() {
+        (function() {{
         var u="//matomo.elemento.cloud/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
         _paq.push(['setSiteId', '1']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
+        }})();
     </script>
     <!-- End Matomo Code -->
 </head>
@@ -281,6 +292,109 @@ def update_blog_index(blog_posts_data):
     
     return index_data
 
+
+def _inject_between_markers(content, start_marker, end_marker, middle):
+    pattern = re.escape(start_marker) + r"[\s\S]*?" + re.escape(end_marker)
+    if not re.search(pattern, content):
+        raise ValueError(f"Could not find marker pair:\n{start_marker}\n…\n{end_marker}")
+    replacement = start_marker + "\n" + middle.rstrip() + "\n" + end_marker
+    return re.sub(pattern, replacement, content, count=1)
+
+
+def build_itemlist_json_ld_block(index_data):
+    items = []
+    for i, post in enumerate(index_data, start=1):
+        items.append({
+            "@type": "ListItem",
+            "position": i,
+            "name": post["title"],
+            "url": f"{BASE_URL}/blog-posts/{post['filename']}",
+        })
+    doc = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": items,
+    }
+    raw_json = json.dumps(doc, ensure_ascii=False, indent=2)
+    lines = ['    <script type="application/ld+json">']
+    for line in raw_json.split("\n"):
+        lines.append("    " + line)
+    lines.append("    </script>")
+    return "\n".join(lines)
+
+
+def build_blog_post_nav_block(index_data):
+    lis = []
+    for post in index_data:
+        title = html.escape(post["title"])
+        fn = post["filename"]
+        lis.append(
+            f'                <li><a href="blog-posts/{fn}" tabindex="-1">{title}</a></li>'
+        )
+    return (
+        '        <nav class="blog-all-articles blog-all-articles--crawl-only" '
+        'aria-label="All articles for indexing">\n'
+        '            <h2 class="blog-all-articles-heading">All articles</h2>\n'
+        '            <ul class="blog-all-articles-list">\n'
+        + "\n".join(lis) + "\n"
+        '            </ul>\n'
+        '        </nav>'
+    )
+
+
+def build_sitemap_blog_posts_block(index_data):
+    chunks = []
+    for post in index_data:
+        d = post["date"]
+        fn = post["filename"]
+        chunks.append("  <url>")
+        chunks.append(f"    <loc>{BASE_URL}/blog-posts/{fn}</loc>")
+        chunks.append(f"    <lastmod>{d}</lastmod>")
+        chunks.append("    <changefreq>monthly</changefreq>")
+        chunks.append("    <priority>0.6</priority>")
+        chunks.append("  </url>")
+    return "\n".join(chunks)
+
+
+def refresh_blog_seo_files(index_data, repo_root="."):
+    """Update crawlable blog hub markup, ItemList JSON-LD, and sitemap blog URLs from index_data."""
+    root = Path(repo_root)
+
+    blog_path = root / "blog.html"
+    blog_text = blog_path.read_text(encoding="utf-8")
+    blog_text = _inject_between_markers(
+        blog_text,
+        MARK_ITEMLIST_START,
+        MARK_ITEMLIST_END,
+        build_itemlist_json_ld_block(index_data),
+    )
+    blog_text = _inject_between_markers(
+        blog_text,
+        MARK_POST_LINKS_START,
+        MARK_POST_LINKS_END,
+        build_blog_post_nav_block(index_data),
+    )
+    blog_path.write_text(blog_text, encoding="utf-8")
+
+    sitemap_path = root / "sitemap.xml"
+    sitemap_text = sitemap_path.read_text(encoding="utf-8")
+    sitemap_text = _inject_between_markers(
+        sitemap_text,
+        MARK_SITEMAP_START,
+        MARK_SITEMAP_END,
+        build_sitemap_blog_posts_block(index_data),
+    )
+    sitemap_path.write_text(sitemap_text, encoding="utf-8")
+
+
+def load_index_and_refresh_seo(repo_root="."):
+    index_path = Path(repo_root) / "blog-posts" / "index.json"
+    with open(index_path, encoding="utf-8") as f:
+        index_data = json.load(f)
+    refresh_blog_seo_files(index_data, repo_root)
+    print(f"Refreshed blog.html and sitemap.xml for {len(index_data)} posts.")
+
+
 def main():
     """Main function to generate blog posts from CSV."""
     
@@ -324,6 +438,12 @@ def main():
             json.dump(index_data, f, indent=2, ensure_ascii=False)
         
         print(f"\nUpdated index.json with {len(index_data)} posts")
+
+        try:
+            refresh_blog_seo_files(index_data, ".")
+            print("Updated blog.html (ItemList + article links) and sitemap.xml blog post URLs")
+        except Exception as seo_err:
+            print(f"Warning: blog/sitemap SEO refresh failed: {seo_err}")
         
     except Exception as e:
         print(f"Error updating index.json: {e}")
@@ -334,4 +454,14 @@ def main():
         print(f"  - {filename}")
 
 if __name__ == "__main__":
-    main() 
+    parser = argparse.ArgumentParser(description="Generate blog posts from CSV and refresh SEO artifacts.")
+    parser.add_argument(
+        "--refresh-blog-seo",
+        action="store_true",
+        help="Only update blog.html and sitemap.xml from blog-posts/index.json (no CSV / HTML regen).",
+    )
+    args = parser.parse_args()
+    if args.refresh_blog_seo:
+        load_index_and_refresh_seo(".")
+    else:
+        main()
