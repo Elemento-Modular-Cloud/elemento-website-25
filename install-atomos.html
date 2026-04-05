@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="keywords" content="AtomOS installation, Electros installation, Linux hypervisor, multicloud dashboard, installation guide, Nucleus CLI, Elemento Cloud">
+    <meta name="keywords" content="AtomOS installation, Electros installation, Linux hypervisor, multicloud dashboard, installation guide, AtomOS CLI, Elemento Cloud">
     <meta name="author" content="Elemento">
     <meta name="robots" content="index, follow">
     
@@ -372,11 +372,11 @@
                                     </ul>
                                 </div>
                                 <div class="terminal-step">
-                                    <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Install the AtomOS CLI tool Nucleus:<br>
+                                    <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Install the AtomOS CLI tool:<br>
                                     <code class="terminal-code">curl -fsSL https://repo.elemento.cloud/get-atomos.sh | sudo bash</code>
                                 </div>
                                 <div class="terminal-footer">
-                                    <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Now you can use Nucleus CLI to install AtomOS</strong>
+                                    <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Now you can use AtomOS CLI to install AtomOS</strong>
                                 </div>
                             </div>
                         </div>
@@ -394,24 +394,24 @@
                                         <i class="fas fa-terminal" style="color: var(--green);"></i>
                                         <i class="fas fa-hard-drive" style="color: var(--green);"></i> 3.
                                     </strong> 
-                                    Install for a storage-only node:<br><code class="terminal-code">sudo nucleus --install storage &lt;on-prem | cloud&gt;</code>
+                                    Install for a storage-only node:<br><code class="terminal-code">sudo atomos-cli --install storage &lt;on-prem | cloud&gt;</code>
                                 </div>
                                 <div class="terminal-step-success">
                                     <strong>
                                         <i class="fas fa-terminal" style="color: var(--green);"></i>
                                         <i class="fas fa-microchip" style="color: var(--green);"></i> 3.
                                     </strong> 
-                                    Install for a compute-only node:<br><code class="terminal-code">sudo nucleus --install compute &lt;on-prem | cloud&gt;</code>
+                                    Install for a compute-only node:<br><code class="terminal-code">sudo atomos-cli --install compute &lt;on-prem | cloud&gt;</code>
                                 </div>
                                 <div class="terminal-step-success">
                                     <strong>
                                         <i class="fas fa-terminal" style="color: var(--green);"></i>
                                         <i class="fas fa-robot" style="color: var(--green);"></i> 3.
                                     </strong> 
-                                    Install for a complete AtomOS version:<br><code class="terminal-code">sudo nucleus --install full &lt;on-prem | cloud&gt;</code>
+                                    Install for a complete AtomOS version:<br><code class="terminal-code">sudo atomos-cli --install full &lt;on-prem | cloud&gt;</code>
                                 </div>
                                 <div class="terminal-step">
-                                    <strong><i class="fas fa-gear" style="color: var(--blue);"></i> 4.</strong> Follow Nucleus indications to conclude the configuration:
+                                    <strong><i class="fas fa-gear" style="color: var(--blue);"></i> 4.</strong> Follow AtomOS CLI indications to conclude the configuration:
                                     <ul style="margin-left: 1rem;">
                                         <li><i class="fas fa-download" style="color: var(--blue);"></i> Install additional modules (ZFS, GlusterFS)</li>
                                         <li><i class="fas fa-hard-drive" style="color: var(--blue);"></i> Setup the storage</li>
