@@ -287,13 +287,16 @@
 
 /* Technical Specifications */
 .specs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-xl);
     margin-top: var(--space-2xl);
 }
 
 .spec-item {
+    flex: 1 1 320px;
+    max-width: calc((100% - 2 * var(--space-xl)) / 3);
     background: var(--glassmorphism-background);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glassmorphism-border);
@@ -308,6 +311,41 @@
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.spec-item-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.spec-item-icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(255, 166, 0, 0.12);
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.spec-item:hover .spec-item-icon {
+    transform: scale(1.06);
+    background: rgba(255, 166, 0, 0.2);
+}
+
+.spec-item-header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    line-height: 1.25;
 }
 
 .spec-item h4 {
@@ -345,8 +383,12 @@
 
 @media (max-width: 1000px) {
     .specs-grid {
-        grid-template-columns: 1fr;
         gap: var(--space-lg);
+    }
+
+    .spec-item {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
 

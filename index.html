@@ -713,37 +713,123 @@
                     <h2 class="section-title">Technical Specifications</h2>
                     <p class="section-subtitle">
                         Enterprise-grade infrastructure designed for modern cloud-native applications.
+                        Full reference available in our <a href="https://bookstack.elemento.cloud" target="_blank" rel="noopener noreferrer">technical documentation</a>.
                     </p>
                 </div>
                 
                 <div class="specs-grid">
                     <div class="spec-item scroll-animate">
-                        <h3>Supported Guests</h3>
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                            <h3>AtomOS Host Requirements</h3>
+                        </div>
                         <ul>
-                            <li>Linux (Ubuntu, CentOS, RHEL)</li>
-                            <li>Windows Server 2019/2022</li>
-                            <li>macOS (development)</li>
+                            <li>64-bit x86_64 CPU with Intel VT-x or AMD-V</li>
+                            <li>4 GB RAM minimum (8 GB+ recommended)</li>
+                            <li>20 GB+ free disk space</li>
+                            <li>AlmaLinux 9 / Rocky Linux 9 (compute &amp; full)</li>
+                            <li>AlmaLinux 9, Rocky 9 or Ubuntu &ge;24 (storage nodes)</li>
+                            <li>Mainline Linux kernel, RHEL-compliant userspace</li>
                         </ul>
                     </div>
-                    
+
                     <div class="spec-item scroll-animate">
-                        <h3>Cloud Providers</h3>
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                            <h3>Supported Guests</h3>
+                        </div>
                         <ul>
-                            <li>AWS EC2, Block Storage & Bare Metal</li>
-                            <li>Azure VMs, Block Storage & Bare Metal</li>
-                            <li>Google Cloud Compute & Block Storage</li>
-                            <li>On-premises infrastructure</li>
-                            <li>Edge nodes</li>
+                            <li>Linux: Ubuntu, AlmaLinux, Rocky, RHEL, Debian, CentOS</li>
+                            <li>Windows Server 2019 / 2022, Windows 10 / 11</li>
+                            <li>BSD family and custom KVM-compatible images</li>
+                            <li>Nested virtualization (GCP, AWS, Azure bare metal)</li>
+                            <li>GPU-accelerated guests via automatic passthrough</li>
                         </ul>
                     </div>
-                    
+
                     <div class="spec-item scroll-animate">
-                        <h3>Performance</h3>
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+                            <h3>Cloud Providers &amp; Federation</h3>
+                        </div>
+                        <ul>
+                            <li>AWS EC2, EBS &amp; Bare Metal</li>
+                            <li>Azure VMs, Disks &amp; Bare Metal</li>
+                            <li>Google Cloud Compute &amp; Persistent Disk</li>
+                            <li>10+ CSPs unified via Meson API proxy</li>
+                            <li>235+ data centers reachable through Atomosphere</li>
+                            <li>On-premises, colocation and edge nodes</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-item scroll-animate">
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                            <h3>Clustering &amp; Networking</h3>
+                        </div>
+                        <ul>
+                            <li>Autonomous clustering with <strong>C4 protocol</strong></li>
+                            <li>Zero centralized services — no controller VM required</li>
+                            <li>Live VM migration across nodes</li>
+                            <li>Software-defined networking &amp; VLAN segmentation</li>
+                            <li>Multi-region &amp; hybrid (public + private) deployments</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-item scroll-animate">
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-hard-drive" aria-hidden="true"></i></div>
+                            <h3>Storage</h3>
+                        </div>
+                        <ul>
+                            <li>Local block storage on compute nodes</li>
+                            <li>Distributed storage via ZFS and GlusterFS modules</li>
+                            <li>Dedicated storage-only nodes (AlmaLinux 9 / Ubuntu &ge;24)</li>
+                            <li>Snapshotting, thin provisioning and live resize</li>
+                            <li>Integration with cloud block storage (EBS, Azure Disks, GCP PD)</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-item scroll-animate">
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                            <h3>Security &amp; Compliance</h3>
+                        </div>
+                        <ul>
+                            <li>Secure Boot and ECC memory support</li>
+                            <li>GPU passthrough with IOMMU isolation</li>
+                            <li>Upstream Linux security updates (no vendor backports)</li>
+                            <li>Data sovereignty via self-hostable deployments</li>
+                            <li>Role-based access control through Electros</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-item scroll-animate">
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-sliders" aria-hidden="true"></i></div>
+                            <h3>Management &amp; Tooling</h3>
+                        </div>
+                        <ul>
+                            <li>Electros desktop: Linux AppImage, macOS (Intel / Apple Silicon), Windows 10/11 x64, .deb packages</li>
+                            <li>Electros CLI via <code>pip install elemento-cli</code> (Python 3.9+)</li>
+                            <li>Local Cockpit-based Web UI on <code>:9090</code></li>
+                            <li>Unified REST API through Meson gateway</li>
+                            <li>Terraform / IaC-ready for DevOps pipelines</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-item scroll-animate">
+                        <div class="spec-item-header">
+                            <div class="spec-item-icon"><i class="fas fa-gauge-high" aria-hidden="true"></i></div>
+                            <h3>Performance</h3>
+                        </div>
                         <ul>
                             <li>Sub-second VM provisioning</li>
-                            <li>99.9% uptime SLA</li>
-                            <li>Auto-scaling capabilities</li>
-                            <li>Multi-region deployment</li>
+                            <li>+70% VM CPU performance vs. legacy stacks</li>
+                            <li>1000+ VMs per host at scale</li>
+                            <li>99.9% uptime SLA with autonomous failover</li>
+                            <li>Real-time cross-CSP cost comparison</li>
+                            <li>Dynamic auto-scaling &amp; multi-region deployment</li>
                         </ul>
                     </div>
                 </div>
