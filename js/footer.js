@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                             <div class="footer-bottom">
-                                <p>&copy; 2024 Elemento. All rights reserved.</p>
+                                <p>&copy; 2026 Elemento. All rights reserved.</p>
                             </div>
                         </div>
                     </section>
