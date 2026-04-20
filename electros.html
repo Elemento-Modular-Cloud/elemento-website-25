@@ -579,8 +579,8 @@
                     <i class="hn hn-code"></i>
                 </div>
                 <div class="floating-box-content">
-                    <h3>CLI & GUI Parity</h3>
-                    <p>Same powerful daemons power both desktop app and command-line interface</p>
+                    <h3>Automation-ready CLI</h3>
+                    <p>Use elemento-cli for scripting and pipelines alongside the desktop app</p>
                 </div>
             </div>
         </div>
@@ -635,8 +635,8 @@
                     <div class="stat-icon">
                         <i class="fas fa-desktop"></i>
                     </div>
-                    <h3>3</h3>
-                    <p>Platforms Supported</p>
+                    <h3>4</h3>
+                    <p>Surfaces to run<br><small>Linux, macOS, Windows apps, plus elemento-cli</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
@@ -644,26 +644,39 @@
                         <i class="hn hn-cloud"></i>
                     </div>
                     <h3>4+</h3>
-                    <p>Cloud Providers</p>
+                    <p>Cloud & hybrid targets<br><small>AWS, Azure, Google Cloud, and on-prem infrastructure</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
-                        <i class="hn hn-plane"></i>
+                        <i class="hn hn-cog"></i>
                     </div>
-                    <h3>Free</h3>
-                    <p>With Elemento Account</p>
+                    <h3>2</h3>
+                    <p>Stack integrations<br><small>AtomOS and Meson API for provisioning and control</small></p>
+                </div>
+
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="hn hn-code"></i>
+                    </div>
+                    <h3>7</h3>
+                    <p>Ship-ready builds<br><small>AppImage, DMG, EXE, and DEB—x64 and ARM64 where supported</small></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section intro-text">
+    <section class="section intro-text electros-customer-voice">
         <div class="container">
-            <h2>Anything you want, <span class="pixel-brand">always</span></h2>
-            <p>Electros gives you access to millions of computers worldwide. This means you can find anything, from a beefy server with several hundred CPU cores to an AI powerhouse full of GPUs.</p>
-            <br>
-            <p>And if you need something even more exotic, you can get it on-prem and use it with the same interface.</p>
+            <figure class="electros-statement-figure" aria-label="Customer statement">
+                <div class="electros-statement-balloon">
+                    <blockquote>
+                        <p>We used to juggle a dozen consoles. With <span class="pixel-brand">Electros</span>, it feels like one window onto <span class="emphasis-pixel">millions</span> of machines worldwide—whether we need a <span class="emphasis-pixel">beefy CPU host</span>, a <span class="emphasis-pixel">GPU-heavy</span> stack for AI, or something in between.</p>
+                        <p>When we need something <span class="emphasis-pixel">more exotic on-prem</span>, we still reach for the <span class="emphasis-pixel">same interface</span>. That consistency is what sold us.</p>
+                    </blockquote>
+                </div>
+            </figure>
         </div>
     </section>
 
@@ -685,7 +698,7 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-link" style="color: var(--green);"></i></div>
                     <h3>Remote Access Built In</h3>
-                    <p>Connect via SSH, VNC, or RDP with a single click. GUI and CLI share the same daemon—no context-switching.</p>
+                    <p>Connect via SSH, VNC, or RDP with a single click from the desktop app.</p>
                 </div>
                 
                 <div class="card fade-in">
@@ -929,18 +942,18 @@
             </div>
             <div class="grid grid-2 c4-content">
                 <div class="fade-in">
-                    <p>Electros combines a robust GUI and CLI, interacting with core daemons to deliver consistent behavior. It automatically selects the appropriate protocol based on the guest OS—SSH for Linux, RDP/VNC for Windows—and ensures smooth operations across multi- and hybrid-cloud environments.</p>
+                    <p>Electros combines a desktop app with elemento-cli, backed by core services for hybrid and multicloud work. It automatically selects the appropriate protocol based on the guest OS—SSH for Linux, RDP/VNC for Windows—and keeps operations coherent across environments.</p>
                     <div class="c4-benefits">
                         <h4>Technical Architecture:</h4>
                         <ul>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span> Shared core daemons between GUI and CLI interfaces
+                                <span class="feature-check"><i class="fas fa-check"></i></span> Shared core services underpin the desktop app and CLI (coverage still expanding)
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span> Automatic protocol selection based on guest OS
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span> Real-time synchronization between interfaces
+                                <span class="feature-check"><i class="fas fa-check"></i></span> GUI and CLI gain overlapping workflows over time—not every action exists in both yet
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span> Multi- and hybrid-cloud ready
@@ -952,7 +965,7 @@
                     <div class="card c4-card">
                         <div class="feature-icon c4-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                         <h3>Unified Architecture</h3>
-                        <p>Both desktop app and CLI leverage the same core processes, providing consistent management, real-time updates, and seamless control of VMs, storage, and network.</p>
+                        <p>Desktop and CLI build on the same foundations for VMs, storage, and networking. Today some flows are richer in one surface than the other; alignment improves with each release.</p>
                     </div>
                 </div>
             </div>
@@ -997,9 +1010,9 @@
                                 <td class="comparison-table-cell"></td>
                             </tr>
                             <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">CLI Parity</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Full Support</td>
-                                <td class="comparison-table-cell">Identical functionality in both CLI and GUI</td>
+                                <td class="comparison-table-cell">CLI vs. GUI coverage</td>
+                                <td class="comparison-table-cell-warning"><i class="fas fa-clock" style="color: var(--yellow);"></i> Expanding</td>
+                                <td class="comparison-table-cell">Shared core services; not every workflow is available in both yet</td>
                             </tr>
                             <tr class="comparison-table-row-alt">
                                 <td class="comparison-table-cell">Licensing</td>
@@ -1029,7 +1042,7 @@
                 
                 <div class="card fade-in">
                     <h4>Can I mix GUI and CLI workflows?</h4>
-                    <p>Absolutely—both interfaces share the same core daemons, so actions done in one reflect in the other.</p>
+                    <p>Yes. Both use the same core services, but coverage differs—some tasks are desktop-first or CLI-first today. Check release notes for what each surface supports.</p>
                 </div>
                 
                 <div class="card fade-in">

@@ -283,3 +283,101 @@
 .floating-box-icon {
     color: var(--accent-color);
 }
+
+/* Customer testimonial — uses theme tokens only (no undefined --bg-secondary) */
+.electros-customer-voice .container {
+    display: flex;
+    justify-content: center;
+}
+
+.electros-statement-figure {
+    max-width: 44rem;
+    margin: 0;
+    width: 100%;
+}
+
+.electros-statement-balloon {
+    position: relative;
+    isolation: isolate;
+    border: 1px solid color-mix(in srgb, var(--text-secondary) 22%, var(--card-bg-color));
+    border-radius: 12px;
+    padding: var(--space-xl) var(--space-2xl);
+    background: color-mix(in srgb, var(--card-bg-color) 94%, var(--background-color));
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--primary-color) 12%, transparent),
+        0 24px 48px rgba(0, 0, 0, 0.12);
+}
+
+.theme-dark .electros-statement-balloon,
+.theme-high-contrast .electros-statement-balloon {
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--primary-color) 18%, transparent),
+        0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Top-left accent bar (letterhead), not full width */
+.electros-statement-balloon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(5.5rem, 28%);
+    height: 3px;
+    border-radius: 12px 0 2px 0;
+    background: var(--primary-color);
+}
+
+/* No ::after tail — border triangles + drop-shadow cause square artifacts in several engines */
+
+.electros-statement-balloon blockquote {
+    margin: 0;
+    padding-top: var(--space-xs);
+    border: none;
+    position: relative;
+}
+
+.electros-statement-balloon blockquote::before {
+    content: '\201C';
+    display: block;
+    font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif;
+    font-size: clamp(1.75rem, 4.5vw, 2.35rem);
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    opacity: 0.95;
+}
+
+.electros-statement-balloon blockquote::after {
+    content: '\201D';
+    display: block;
+    font-family: 'Argent Pixel Italic', 'Red Hat Display', sans-serif;
+    font-size: clamp(1.75rem, 4.5vw, 2.35rem);
+    line-height: 1;
+    color: var(--primary-color);
+    margin-top: var(--space-md);
+    text-align: right;
+    opacity: 0.95;
+}
+
+.electros-statement-balloon blockquote p {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    letter-spacing: 0.01em;
+}
+
+.electros-statement-balloon blockquote p + p {
+    margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+    .electros-statement-balloon {
+        padding: var(--space-lg) var(--space-lg);
+        border-radius: 10px;
+    }
+
+    .electros-statement-balloon::before {
+        border-radius: 10px 0 2px 0;
+    }
+}
