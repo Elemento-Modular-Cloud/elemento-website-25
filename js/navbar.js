@@ -122,6 +122,7 @@ class Navbar {
                         <li><a href="${basePath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
                         <li><a href="${basePath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
                         <li><a href="${basePath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
+                        <li><a href="${basePath}signup.html" class="nav-link nav-cta-link">Start Now</a></li>
                     </ul>
 
                     <!-- Desktop dropdown menu (separate from mobile) -->

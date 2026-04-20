@@ -42,63 +42,63 @@
 
 @keyframes rocket-fly {
     0% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     1% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(1deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(1deg);
         opacity: 1;
     }
     2% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     4% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(1deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(1deg);
         opacity: 1;
     }
     8% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     10% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(1deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(1deg);
         opacity: 1;
     }
     12% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
     15% {
-        transform: translate(-50%, -50%) translateX(3vh) translateY(-3vh) scale(1.2) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(3vh) translateY(-3vh) scale(1) rotate(0deg);
         opacity: 1;
     }
     25% {
-        transform: translate(-50%, -50%) translateX(15vh) translateY(-15vh) scale(1.15) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(15vh) translateY(-15vh) scale(1) rotate(0deg);
         opacity: 1;
     }
     40% {
-        transform: translate(-50%, -50%) translateX(35vh) translateY(-35vh) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(35vh) translateY(-35vh) scale(1) rotate(0deg);
         opacity: 1;
     }
     60% {
-        transform: translate(-50%, -50%) translateX(55vh) translateY(-55vh) scale(1.0) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(55vh) translateY(-55vh) scale(1) rotate(0deg);
         opacity: 1;
     }
     80% {
-        transform: translate(-50%, -50%) translateX(75vh) translateY(-75vh) scale(0.9) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(75vh) translateY(-75vh) scale(1) rotate(0deg);
         opacity: 1;
     }
     90% {
-        transform: translate(-50%, -50%) translateX(100vh) translateY(-100vh) scale(0.8) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(100vh) translateY(-100vh) scale(1) rotate(0deg);
         opacity: 0;
     }
     95% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 0;
     }
     100% {
-        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1.1) rotate(0deg);
+        transform: translate(-50%, -50%) translateX(0) translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
 }
