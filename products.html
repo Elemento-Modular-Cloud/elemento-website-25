@@ -521,6 +521,16 @@
                 background: rgba(255, 255, 255, 0.15);
             }
         }
+
+        /* Center the last card when a 2-column grid has an odd item count */
+        @media (min-width: 1001px) {
+            .products-grid-centered-last > .card:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: 100%;
+                max-width: calc((100% - var(--space-xl)) / 2);
+            }
+        }
     </style>
 
     <!-- Non-critical stylesheets with optimized loading -->
@@ -647,11 +657,11 @@
     <section class="section" style="padding-top: 120px;">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">One Platform, Four Core Products</h2>
+                <h2 class="section-title">One Platform, three Products</h2>
                 <p class="section-subtitle">Build your cloud with vendor-neutral, high-performance components that work seamlessly together. Learn about our <a href="about.html">company mission</a> and <a href="technology.html">technical architecture</a>.</p>
             </div>
             
-            <div class="grid grid-2">
+            <div class="grid grid-2 products-grid-centered-last">
                 <div class="card fade-in">
                     <img src="./assets/logos/Atomos.svg" alt="AtomOS" class="product-icon-large" width="64" height="64">
                     <h3>AtomOS</h3>
@@ -773,7 +783,7 @@
                             </tr>
                             <tr class="comparison-table-row">
                                 <td class="comparison-table-cell">Management Overhead</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> High</td>
+                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i> High*</td>
                                 <td class="comparison-table-cell-warning"><i class="fas fa-minus" style="color: var(--yellow);"></i> Medium</td>
                                 <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Low</td>
                                 <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i> Low</td>
@@ -802,6 +812,9 @@
                         </tbody>
                     </table>
                 </div>
+                <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--text-secondary);">
+                    * Higher overhead because the servers are yours, so your team is responsible for managing and maintaining them.
+                </p>
             </div>
         </div>
     </section>
