@@ -114,4 +114,82 @@
     .stats .stat-item h3 {
         font-size: 1.8rem;
     }
+}
+
+/* BookStack / documentation hub */
+.doc-hub {
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--primary-color) 8%, var(--background-color)) 0%,
+        var(--background-color) 45%,
+        color-mix(in srgb, var(--blue) 6%, var(--background-color)) 100%
+    );
+    border-radius: var(--radius-md, 12px);
+    padding: var(--space-2xl);
+    margin-top: var(--space-xl);
+}
+
+.doc-hub-lead {
+    max-width: 52rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.doc-hub-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.doc-hub-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--text-color) 12%, transparent);
+}
+
+a.doc-hub-card:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.doc-hub-card .card-icon {
+    font-size: 2rem;
+}
+
+.doc-hub-card h3 {
+    margin-top: 0;
+}
+
+.doc-hub-card p {
+    flex-grow: 1;
+    margin-bottom: var(--space-md);
+}
+
+.doc-hub-card .doc-hub-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.doc-hub-card .doc-hub-cta i {
+    font-size: 0.85em;
+    transition: transform 0.2s ease;
+}
+
+a.doc-hub-card:hover .doc-hub-cta i {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .doc-hub {
+        padding: var(--space-xl);
+    }
 } 

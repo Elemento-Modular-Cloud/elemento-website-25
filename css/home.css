@@ -834,3 +834,37 @@
         min-width: 680px;
     }
 }
+
+/* Final CTA stats — scoped under .cta-stats so carousel .stat-label rules do not override */
+.cta-stats {
+    margin: var(--space-2xl) 0;
+}
+
+.cta-stats .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-heading);
+}
+
+.cta-stats .stat-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (max-width: 1000px) {
+    .cta-stats .grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-stats .stat-number {
+        font-size: 2rem;
+    }
+}

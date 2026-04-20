@@ -404,6 +404,10 @@
                             <i class="hn hn-lightbulb-solid"></i>
                             <span>What's C4?</span>
                         </a>
+                        <a href="https://bookstack.elemento.cloud" class="btn btn-secondary quick-contact-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                            <span>Technical wiki</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -426,7 +430,7 @@
                     </p>
                     <br>
                     <p>
-                        Our architecture integrates the <span class="pixel-word">C4 Protocol</span> for standardized multi-cloud connectivity, <span class="pixel-word">Kubernetes</span> for container orchestration, and <span class="pixel-word">Infrastructure as Code</span> to automate deployments. Explore our <a href="products.html">product implementations</a> and learn about our <a href="about.html">company vision</a>.
+                        Our architecture integrates the <span class="pixel-word">C4 Protocol</span> for standardized multi-cloud connectivity, <span class="pixel-word">Kubernetes</span> for container orchestration, and <span class="pixel-word">Infrastructure as Code</span> to automate deployments. For architecture diagrams, install guides, and protocol detail, see our <a href="https://bookstack.elemento.cloud" target="_blank" rel="noopener noreferrer">technical documentation on BookStack</a>. Explore our <a href="products.html">product implementations</a> and learn about our <a href="about.html">company vision</a>.
                     </p>
                     <br>
                     <p>
@@ -447,6 +451,10 @@
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
                                 Vendor lock-in prevention
                             </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Public BookStack wiki (C4, AtomOS, Electros, runbooks)
+                            </li>
                         </ul>
                     </div>
                     
@@ -461,6 +469,59 @@
     </section>
 
     
+    <!-- Technical documentation hub (BookStack) -->
+    <section class="section section-header-padded" id="docs">
+        <div class="container doc-hub">
+            <div class="section-header text-center">
+                <h2 class="section-title">Technical documentation</h2>
+                <p class="section-subtitle">Structured guides and specs on our BookStack wiki</p>
+                <p class="doc-hub-lead">The same material we use for onboarding and integration lives in one place: starter packs, C4 whitepapers and protocol specs, AtomOS and Nucleus CLI install guides, Electros tech notes, comparison tables against legacy hypervisors, and reference architecture. Follow the links below to read the full chapters.</p>
+            </div>
+            <div class="grid grid-3">
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud/books/elemento-cloud-network" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="hn hn-globe" style="color: var(--blue);"></i></div>
+                    <h3>Elemento Cloud Network</h3>
+                    <p>API gateway patterns that connect existing clouds, plus starter content that ties together C4, installs, and deeper technical packs.</p>
+                    <span class="doc-hub-cta">Open book <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud/books/comparison-tables" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--purple);"></i></div>
+                    <h3>AtomOS comparison tables</h3>
+                    <p>Feature-by-feature views of our Linux KVM-based hypervisor versus VMware ESXi, with guest OS coverage and filesystem versus disk-image compatibility matrices.</p>
+                    <span class="doc-hub-cta">View comparisons <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud/books" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="fas fa-mobile-screen-button" style="color: var(--orange);"></i></div>
+                    <h3>Electros</h3>
+                    <p>Desktop and mobile documentation for deploying, managing, using, and retiring VMs consistently across providers.</p>
+                    <span class="doc-hub-cta">Browse books <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud/books/elemento-cloud-network" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="hn hn-code" style="color: var(--green);"></i></div>
+                    <h3>C4 whitepaper &amp; specs</h3>
+                    <p>Formal write-up on cloud service composition with the C4 protocol and the connector specification your integrations can target.</p>
+                    <span class="doc-hub-cta">Read in wiki <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud/books/elemento-cloud-network" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
+                    <h3>Meson tech pack</h3>
+                    <p>How we translate existing cloud provider APIs into the shapes Elemento expects, so integrations stay maintainable.</p>
+                    <span class="doc-hub-cta">Open tech pack <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card fade-in doc-hub-card" href="https://bookstack.elemento.cloud" target="_blank" rel="noopener noreferrer">
+                    <div class="card-icon"><i class="fas fa-terminal" style="color: var(--red);"></i></div>
+                    <h3>Nucleus CLI &amp; install</h3>
+                    <p>Command-line workflows for installing, configuring, and operating AtomOS alongside guided setup and private-cloud demos.</p>
+                    <span class="doc-hub-cta">Search wiki <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+            </div>
+            <div class="text-center" style="margin-top: var(--space-2xl);">
+                <a href="https://bookstack.elemento.cloud" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open BookStack</a>
+                <a href="https://bookstack.elemento.cloud/books" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">All books</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Technology Overview -->
     <section class="section" style="padding-top: 120px;">
         <div class="container">
@@ -478,7 +539,7 @@
             <div class="grid grid-2" style="align-items: center; gap: var(--space-4xl);">
                 <div class="fade-in">
                     <h2>C4 Protocol - Cloud Computing Common Connector</h2>
-                    <p>Our patented C4 Protocol (patented in Italy, patent pending worldwide) is a standardized protocol that enables cloud service providers to integrate seamlessly with enterprise-grade multi-cloud management platforms. This revolutionary technology simplifies cloud provider integration and expands market reach. Learn about our <a href="products.html">product ecosystem</a> and <a href="blog.html">technical insights</a>.</p>
+                    <p>Our patented C4 Protocol (patented in Italy, patent pending worldwide) is a standardized protocol that enables cloud service providers to integrate seamlessly with enterprise-grade multi-cloud management platforms. This revolutionary technology simplifies cloud provider integration and expands market reach. The <a href="https://bookstack.elemento.cloud/books/elemento-cloud-network" target="_blank" rel="noopener noreferrer">Elemento Cloud Network</a> book on BookStack hosts the C4 whitepaper, connector specification, and Meson tech pack for mapping existing provider APIs into C4-shaped services. Learn about our <a href="products.html">product ecosystem</a> and <a href="blog.html">technical insights</a>.</p>
                     
                     <div style="margin: var(--space-lg) 0;">
                         <h3>Key Features:</h3>
@@ -555,7 +616,7 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                     <h3>Control Plane</h3>
-                    <p>The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces.</p>
+                    <p>The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces. Documentation describes this as the <a href="https://bookstack.elemento.cloud/books/elemento-cloud-network" target="_blank" rel="noopener noreferrer">Elemento Cloud Network</a> gateway that links existing clouds into a single operational model.</p>
                     <div style="margin-top: var(--space-lg);">
                         <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Kubernetes</span>
                         <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">API Gateway</span>
@@ -575,7 +636,7 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-desktop" style="color: var(--purple);"></i></div>
                     <h3>Management Layer</h3>
-                    <p>User interfaces, APIs, and automation tools that provide access to platform capabilities and enable infrastructure as code.</p>
+                    <p>User interfaces, APIs, and automation tools that provide access to platform capabilities and enable infrastructure as code. <strong>Electros</strong> covers desktop and mobile control planes for the full VM lifecycle on any cloud, while <strong>Nucleus</strong> documents the CLI for installing and operating AtomOS—both are indexed on <a href="https://bookstack.elemento.cloud" target="_blank" rel="noopener noreferrer">BookStack</a>.</p>
                     <div style="margin-top: var(--space-lg);">
                         <span style="background: var(--primary-color); color: white; padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem;">Web UI</span>
                         <span style="background: var(--bg-secondary); color: var(--text-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.8rem; margin-left: var(--space-sm);">CLI</span>
@@ -606,8 +667,8 @@
             <div class="grid grid-3">
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-grid" style="color: var(--blue);"></i></div>
-                    <h3>Containerization</h3>
-                    <p>Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment.</p>
+                    <h3>Containerization &amp; AtomOS</h3>
+                    <p>Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment. AtomOS is our Linux KVM-based hypervisor; the wiki publishes ESXi-oriented <a href="https://bookstack.elemento.cloud/books/comparison-tables" target="_blank" rel="noopener noreferrer">comparison tables</a>, guest OS notes, and filesystem versus disk-image guidance.</p>
                 </div>
                 
                 <div class="card fade-in">
@@ -644,7 +705,6 @@
     </section>
 
     <!-- Performance Metrics Section -->
-    <!-------------------------------CONTROLLARE SE CORRETTE--------------------------------------------------------> 
     <section class="section stats">
         <div class="container">
             <div class="stats-grid">
@@ -799,6 +859,7 @@
             <div class="text-center">
                 <a href="signup.html" class="btn btn-primary">Start Free Trial</a>
                 <a href="products.html" class="btn btn-secondary">Explore Products</a>
+                <a href="https://bookstack.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Technical wiki</a>
             </div>
         </div>
     </section>
