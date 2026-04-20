@@ -86,6 +86,23 @@
     letter-spacing: 1px;
 }
 
+.hero-subtitle-lead {
+    font-size: 1.7rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.hero-container-wide,
+.hero-container-wide .hero-content {
+    max-width: 900px;
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle-lead {
+        font-size: 1.35rem;
+    }
+}
+
 /* Product Cards - Enhanced Styling */
 .product-card {
     background: var(--glassmorphism-background);
