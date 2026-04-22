@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="footer-content">
                                 <div class="footer-section">
                                     <div class="footer-logo-section">
-                                        <div class="footer-logo-container footer-logo-masked"></div>
-                                        <h3>Elemento</h3>
+                                        <div class="footer-logo-container footer-logo-masked" role="img" aria-label="Elemento Modular Cloud"></div>
                                     </div>
                                     <p>Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.</p>
                                 </div>
@@ -54,14 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Apply the masking styles for the fallback case
                 const fallbackLogo = footerPlaceholder.querySelector('.footer-logo-masked');
                 if (fallbackLogo) {
-                    const logoPath = (isInBlogPost || isInSolutions || isInTechnology) ? '../assets/logos/Elemento.svg' : 'assets/logos/Elemento.svg';
-                    fallbackLogo.style.filter = 'brightness(0) saturate(100%)';
-                    fallbackLogo.style.mask = `url('${logoPath}') no-repeat center`;
-                    fallbackLogo.style.maskSize = 'contain';
-                    fallbackLogo.style.webkitMask = `url('${logoPath}') no-repeat center`;
-                    fallbackLogo.style.webkitMaskSize = 'contain';
-                    fallbackLogo.style.backgroundColor = 'currentColor';
-                    fallbackLogo.style.color = 'inherit';
+                    const logoPath = (isInBlogPost || isInSolutions || isInTechnology) ? '../assets/logos/ElementoMCR.svg' : 'assets/logos/ElementoMCR.svg';
+                    fallbackLogo.style.backgroundColor = 'var(--text-color)';
+                    fallbackLogo.style.mask = `url('${logoPath}') no-repeat center / contain`;
+                    fallbackLogo.style.webkitMask = `url('${logoPath}') no-repeat center / contain`;
                 }
             });
     }

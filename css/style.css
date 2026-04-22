@@ -372,25 +372,20 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: var(--font-heading);
 }
 
-.logo-icon {
-    width: 30px;
-    height: 30px;
+.logo-lockup {
+    display: block;
+    height: 40px;
+    width: auto;
+    aspect-ratio: 555 / 146;
+    max-width: min(248px, 52vw);
+    flex-shrink: 0;
     background: var(--primary-color);
-    mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
-    -webkit-mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
+    mask: url('../assets/logos/ElementoMCR.svg') no-repeat center / contain;
+    -webkit-mask: url('../assets/logos/ElementoMCR.svg') no-repeat center / contain;
 }
 
 .nav-menu {
@@ -2601,29 +2596,20 @@ body {
 /* Footer styles */
 .footer-logo-container {
     position: relative;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    min-width: 40px;
-    min-height: 40px;
+    display: block;
+    height: 44px;
+    width: auto;
+    aspect-ratio: 555 / 146;
+    max-width: 100%;
     background-color: var(--text-color);
-    mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
-    -webkit-mask: url('../assets/logos/Elemento.svg') no-repeat center / contain;
+    mask: url('../assets/logos/ElementoMCR.svg') no-repeat center / contain;
+    -webkit-mask: url('../assets/logos/ElementoMCR.svg') no-repeat center / contain;
 }
 
 .footer-logo-section {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
     margin-bottom: var(--space-lg);
-}
-
-.footer-logo-section h3 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text-color);
-    font-family: var(--font-heading);
 }
 
 /* Stat icon styles - reusable for any stats section */

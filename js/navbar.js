@@ -91,9 +91,8 @@ class Navbar {
             ${bannerHtml}
             <nav class="navbar ${bannerHtml ? 'has-banner' : ''}">
                 <div class="nav-container">
-                    <a href="${basePath}index.html" class="logo">
-                        <div class="logo-icon"></div>
-                        <span class="elemento-brand">Elemento</span>
+                    <a href="${basePath}index.html" class="logo" aria-label="Elemento home">
+                        <span class="logo-lockup" aria-hidden="true"></span>
                     </a>
                     
                     <ul class="nav-menu">
