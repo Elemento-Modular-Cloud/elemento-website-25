@@ -115,12 +115,12 @@ body {
 }
 
 .hero-container {
+    position: relative;
     max-width: 600px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
-    z-index: 2000;
+    z-index: 2;
     text-align: center;
-
 }
 
 .hero-left {
@@ -1013,6 +1013,16 @@ body {
     overflow: hidden;
 }
 
+/* Full-bleed background; not a flex item (avoids pushing .hero-container off-center) */
+#atmosphere-hero-placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .hero-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -1059,8 +1069,11 @@ body {
 
 .hero-buttons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: var(--space-lg);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .hero-cta {

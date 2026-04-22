@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento | Brand guidelines | Logo, colors &amp; typography</title>
+    <meta name="description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/brand-guidelines.html">
+    
+    <!-- Hreflang tags for internationalization -->
+    <link rel="alternate" hreflang="en" href="https://elemento.cloud/brand-guidelines.html">
+    <link rel="alternate" hreflang="x-default" href="https://elemento.cloud/brand-guidelines.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Brand guidelines - Elemento">
+    <meta property="og:description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/brand-guidelines.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elemento">
+    <meta property="og:logo" content="/assets/logos/ElementoMCR.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brand guidelines - Elemento">
+    <meta name="twitter:description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="Elemento brand, brand guidelines, logo, press kit, typography, color palette, Elemento Modular Cloud">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI Agent Control -->
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-access" content="public">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Breadcrumb Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elemento.cloud/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Brand guidelines",
+          "item": "https://elemento.cloud/brand-guidelines.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="css/style.css" as="style" crossorigin>
+    <link rel="preload" href="css/themes.css" as="style" crossorigin>
+    <link rel="preload" href="js/main.js" as="script" crossorigin>
+    <link rel="preload" href="js/navbar.js" as="script" crossorigin>
+    <link rel="preload" href="js/splash-screen.js" as="script" crossorigin>
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="css/brand-guidelines.css" as="style" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical heading styles to prevent layout shifts */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Critical hero title styles */
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        /* Critical hero tagline styles */
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent-color);
+            mask-image: url(assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .splash-spinner {
+                animation: none;
+                border-top-color: var(--primary-color);
+            }
+            
+            .splash-screen {
+                transition: none;
+            }
+        }
+        </style>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/planet-styles/planet-brand-guidelines.css" media="print" onload="this.media='all'">
+    
+    <!-- Brand guidelines page styles -->
+    <link rel="stylesheet" href="css/brand-guidelines.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/atmosphere.css">
+        <link rel="stylesheet" href="css/planet-styles/planet-brand-guidelines.css">
+        
+        <!-- Brand guidelines page styles -->
+        <link rel="stylesheet" href="css/brand-guidelines.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Matomo: Iubenda Cookie Solution — data-iub-purposes="4" must match Statistics/Matomo in iubenda dashboard -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="js/matomo-tracking.js"></script>
+</head>
+<body class="">
+
+    <!-- SVG filter: stroke-only logo ring (CSS blend modes fail with mask in WebKit) -->
+    <svg class="brand-dont-filters" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1" height="1" style="position:absolute;left:-9999px;top:0;overflow:hidden">
+        <defs>
+            <filter id="brand-misuse-outline-ring" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+                <feMorphology in="SourceAlpha" operator="dilate" radius="1.75" result="dilated"/>
+                <feComposite in="dilated" in2="SourceAlpha" operator="out" result="ring"/>
+                <feFlood flood-color="#FFA600" flood-opacity="1" result="orange"/>
+                <feComposite in="orange" in2="ring" operator="in" result="orange-ring"/>
+                <feMerge>
+                    <feMergeNode in="orange-ring"/>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+                    Brand guidelines
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Atmosphere Hero Placeholder -->
+        <div id="atmosphere-hero-placeholder"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-buttons fade-in">
+                    <div class="hero-tagline">Press, partners &amp; creators</div>
+                    <h1 class="hero-title"><span class="pixel-word">Brand</span> <span class="elemento-brand">guidelines</span></h1>
+                    <div class="hero-subtitle">
+                        <p>Represent <span class="emphasis-pixel">Elemento</span> consistently: logo usage, core colors, typography, and product naming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section section-header-padded">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Using the <span class="highlight-pixel">Elemento</span> brand</h2>
+                <p class="section-subtitle">Keep identity clear, legible, and aligned with the public site</p>
+            </div>
+            <div class="brand-lead fade-in">
+                <p>These guidelines align with the official <strong>Branding Guidelines — Elemento Modular Cloud</strong> (logo, trademark, typography, colour, imagery). They summarize rules for web and partner use. When in doubt, match the <a href="index.html">homepage</a> and <a href="about.html">about</a> story, and preserve each mark’s aspect ratio.</p>
+                <p class="brand-lead-note">Trademark and legal wording: follow the full guidelines and counsel for ® notices, territory, and contractual use.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo -->
+    <section class="section" id="logo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Logo</h2>
+                <p class="section-subtitle">Mark, spacing, and contrast</p>
+            </div>
+            <div class="fade-in brand-logo-intro-copy">
+                <p><strong>Layout preference:</strong> use the <strong>horizontal</strong> payoff whenever possible (wordmark, tagline, and <strong>®</strong>). When width is tight — mobile headers, narrow columns — use the <strong>vertical</strong> payoff lockup instead. For avatars, favicons, and compact UI, use the <strong>symbol</strong> alone (no wordmark).</p>
+                <p>The <strong>logo palette</strong> defines three ink colours — <strong>Starter Yellow</strong> <code>#FFA600</code>, <strong>Crystal White</strong> <code>#F8F8FF</code>, and <strong>Void Black</strong> <code>#16161D</code> — on the appropriate field. Each variant below shows those inks on the correct field: <strong>horizontal payoff</strong>, <strong>vertical payoff</strong>, then <strong>symbol only</strong> (yellow on void black is preferred).</p>
+                <ul class="feature-list brand-guidelines-list">
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body"><strong>Clear space:</strong> keep a margin on all sides equal to <strong>twice the logo height</strong> (same rule for the payoff version and for the symbol alone). Do not crowd type, photos, or UI against the mark.</span>
+                    </li>
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body"><strong>Also approved when needed:</strong> <strong>Starter Yellow</strong> on a light field (e.g. Crystal White) — use the same mask technique as below. Do not introduce colours outside this system.</span>
+                    </li>
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body">Do not distort, outline, tilt, add shadows or glows. Wordmark and symbol must use the <strong>same</strong> colour treatment in a given layout.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-horizontal">
+                <h3 class="brand-logo-subhead-title">Horizontal payoff</h3>
+                <p class="section-subtitle">Wordmark + tagline + <strong>®</strong></p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Horizontal payoff</p>
+                    <p class="brand-logo-label">Starter yellow on void black <span class="brand-badge-fav brand-badge-fav--inline">Preferred</span></p>
+                    <div class="brand-logo-mcr-mask brand-logo-mcr-mask--yellow" role="img" aria-label="Horizontal full lockup in Starter Yellow on Void Black"></div>
+                    <p class="brand-logo-caption">Ink <code>#FFA600</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Horizontal payoff</p>
+                    <p class="brand-logo-label">Crystal white on void black</p>
+                    <div class="brand-logo-mcr-mask brand-logo-mcr-mask--crystal" role="img" aria-label="Horizontal full lockup in Crystal White on Void Black"></div>
+                    <p class="brand-logo-caption">Ink <code>#F8F8FF</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Horizontal payoff</p>
+                    <p class="brand-logo-label">Void black on crystal white</p>
+                    <img class="brand-logo-full-img" src="assets/logos/ElementoMCR.svg" alt="Elemento® Modular Cloud — Void Black on light field" width="555" height="146">
+                    <p class="brand-logo-caption">Ink <code>#16161D</code> · field <code>#F8F8FF</code></p>
+                </div>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-vertical">
+                <h3 class="brand-logo-subhead-title">Vertical payoff</h3>
+                <p class="section-subtitle">Same lockup, stacked</p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Vertical payoff</p>
+                    <p class="brand-logo-label">Starter yellow on void black <span class="brand-badge-fav brand-badge-fav--inline">Preferred</span></p>
+                    <div class="brand-logo-mcr-ver-mask brand-logo-mcr-ver-mask--yellow" role="img" aria-label="Vertical full lockup in Starter Yellow on Void Black"></div>
+                    <p class="brand-logo-caption">Ink <code>#FFA600</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Vertical payoff</p>
+                    <p class="brand-logo-label">Crystal white on void black</p>
+                    <div class="brand-logo-mcr-ver-mask brand-logo-mcr-ver-mask--crystal" role="img" aria-label="Vertical full lockup in Crystal White on Void Black"></div>
+                    <p class="brand-logo-caption">Ink <code>#F8F8FF</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Vertical payoff</p>
+                    <p class="brand-logo-label">Void black on crystal white</p>
+                    <img class="brand-logo-ver-img" src="assets/logos/ElementoMCR-ver.svg" alt="Elemento® Modular Cloud vertical lockup — Void Black on light field" width="206" height="200">
+                    <p class="brand-logo-caption">Ink <code>#16161D</code> · field <code>#F8F8FF</code></p>
+                </div>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-symbol">
+                <h3 class="brand-logo-subhead-title">Logo only (symbol)</h3>
+                <p class="section-subtitle">No wordmark</p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Symbol only</p>
+                    <p class="brand-logo-label">Starter yellow on void black <span class="brand-badge-fav brand-badge-fav--inline">Preferred</span></p>
+                    <div class="brand-mark-alone brand-mark-alone--primary" role="img" aria-label="Symbol in Starter Yellow on Void Black"></div>
+                    <p class="brand-logo-caption">Ink <code>#FFA600</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Symbol only</p>
+                    <p class="brand-logo-label">Crystal white on void black</p>
+                    <img class="brand-mark-alone-img" src="assets/logos/Elemento.svg" alt="Elemento symbol in Crystal White on Void Black" width="200" height="200">
+                    <p class="brand-logo-caption">Ink <code>#F8F8FF</code> · field <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Symbol only</p>
+                    <p class="brand-logo-label">Void black on crystal white</p>
+                    <div class="brand-mark-alone brand-mark-alone--void" role="img" aria-label="Symbol in Void Black on light field"></div>
+                    <p class="brand-logo-caption">Ink <code>#16161D</code> · field <code>#F8F8FF</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clear space & scalability -->
+    <section class="section" id="spacing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Clear space &amp; scalability</h2>
+                <p class="section-subtitle">From the official logo guidelines</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="fade-in">
+                    <h3 class="brand-subsection-title">Respect area</h3>
+                    <p>Minimum clear space around the logo or symbol is <strong>2× the height</strong> of the mark on every side (sometimes described as “doubling the height”). The payoff lockup uses the same rule.</p>
+                    <figure class="brand-clearspace-figure">
+                        <figcaption class="brand-figure-caption">Shaded bands = minimum clear space (<strong>2×</strong> the mark height). Centre symbol = <strong>1×</strong> height (same rule for full horizontal lockup).</figcaption>
+                        <div class="brand-clearspace-demo" role="img" aria-label="Clear space on all sides equals twice the logo height">
+                            <div class="brand-clearspace-pad brand-clearspace-pad--top"><span>2× height</span></div>
+                            <div class="brand-clearspace-mid">
+                                <div class="brand-clearspace-pad brand-clearspace-pad--left"><span>2×</span></div>
+                                <div class="brand-clearspace-core">
+                                    <div class="brand-mark-alone brand-mark-alone--void brand-mark-alone--diagram" aria-hidden="true"></div>
+                                </div>
+                                <div class="brand-clearspace-pad brand-clearspace-pad--right"><span>2×</span></div>
+                            </div>
+                            <div class="brand-clearspace-pad brand-clearspace-pad--bottom"><span>2× height</span></div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="fade-in">
+                    <h3 class="brand-subsection-title">Logo width bands</h3>
+                    <p>Three scalability steps are defined by <strong>maximum width</strong> (choose the lockup variant that stays legible at each size — see master artwork).</p>
+                    <div class="brand-size-table-wrap">
+                        <table class="brand-size-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Band</th>
+                                    <th scope="col">Print</th>
+                                    <th scope="col">Screen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Large</td>
+                                    <td>up to <strong>50</strong> mm</td>
+                                    <td>up to <strong>500</strong> px</td>
+                                </tr>
+                                <tr>
+                                    <td>Medium</td>
+                                    <td>up to <strong>35</strong> mm</td>
+                                    <td>up to <strong>250</strong> px</td>
+                                </tr>
+                                <tr>
+                                    <td>Small</td>
+                                    <td>up to <strong>10</strong> mm</td>
+                                    <td>up to <strong>30</strong> px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="brand-table-note">Below the smallest band, use only the symbol or simplified mark supplied for that context — never scale the full payoff below legibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incorrect uses -->
+    <section class="section brand-section-dont" id="dont">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Incorrect uses</h2>
+                <p class="section-subtitle">Don’t — examples from the guidelines (not exhaustive)</p>
+            </div>
+            <div class="grid grid-3 brand-dont-grid">
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Non-brand colours</h3>
+                    <p>The logo must not use colours outside the identity palette.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--rainbow" role="img" aria-label="Incorrect: lockup in non-brand gradient colours"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Outline only</h3>
+                    <p>The logo must not be used as a hollow outline.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-outline-wrap" role="img" aria-label="Incorrect: stroke-only lockup">
+                                <img class="brand-dont-mcr-misuse--outline" src="assets/logos/ElementoMCR.svg" alt="" width="555" height="146" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Stretch or squeeze</h3>
+                    <p>Do not distort, stretch, or compress the mark.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--stretch" role="img" aria-label="Incorrect: stretched lockup"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Tilt or rotate</h3>
+                    <p>Do not tilt, rotate, or otherwise skew the logo.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--tilt" role="img" aria-label="Incorrect: rotated lockup"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Effects</h3>
+                    <p>No lighting, drop shadows, or bevels on the lockup.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-shadow-wrap" role="img" aria-label="Incorrect: lockup with drop shadow and bevel">
+                                <img class="brand-dont-mcr-misuse--shadow-img" src="assets/logos/ElementoMCR.svg" alt="" width="555" height="146" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Mismatched type &amp; symbol</h3>
+                    <p>The logotype must not use a different colour from the symbol.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--split" role="img" aria-label="Incorrect: wordmark and symbol in different colours"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="brand-dont-footer fade-in">Common sense applies: if it hurts legibility or looks unlike the master files, don’t ship it.</p>
+        </div>
+    </section>
+
+    <!-- Partnership usage -->
+    <section class="section" id="partnership">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Usage in partnership</h2>
+                <p class="section-subtitle">Co-branding layout</p>
+            </div>
+            <p class="brand-partner-lead fade-in">When appearing alongside another company, give <strong>both</strong> marks adequate clear space and balanced visual weight. A typical row is: <strong>Partner</strong> — <strong>Elemento</strong>, without merging or overlapping the lockups.</p>
+            <div class="brand-partner-lockup-demo fade-in" role="img" aria-label="Partner logo on the left, Elemento logo on the right, separated">
+                <div class="brand-partner-slot">
+                    <span class="brand-partner-placeholder">Partner logo</span>
+                    <span class="brand-partner-hint">Their clear space</span>
+                </div>
+                <div class="brand-partner-sep" aria-hidden="true">
+                    <span class="brand-partner-sep-line"></span>
+                </div>
+                <div class="brand-partner-slot brand-partner-slot--elemento">
+                    <img class="brand-partner-elemento-img" src="assets/logos/ElementoMCR.svg" alt="Elemento Modular Cloud" width="555" height="146">
+                    <span class="brand-partner-hint">Elemento clear space</span>
+                </div>
+            </div>
+            <p class="brand-partner-note fade-in">Request the full partnership artwork from <a href="mailto:hello@elemento.cloud">hello@elemento.cloud</a> for approved templates and lockups.</p>
+        </div>
+    </section>
+
+    <!-- Colors -->
+    <section class="section" id="colors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Colour palette</h2>
+                <p class="section-subtitle">Primary and secondary brand colours</p>
+            </div>
+            <h3 class="brand-palette-group-title">Primary colours</h3>
+            <p class="brand-palette-group-lead">Use these first for maximum recognition. The site theme also uses nearby neutrals (e.g. <code>#1A1C20</code> for body text) — pair brand primaries with accessible contrast.</p>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #FFA600;"></div>
+                    <div class="brand-swatch-meta"><strong>Starter Yellow</strong><br><code>#FFA600</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #16161D;"></div>
+                    <div class="brand-swatch-meta"><strong>Void Black</strong><br><code>#16161D</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #F8F8FF; border: 1px solid var(--glassmorphism-border, #e0e0e0);"></div>
+                    <div class="brand-swatch-meta"><strong>Crystal White</strong><br><code>#F8F8FF</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Secondary — product</h3>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #EF4056;"></div>
+                    <div class="brand-swatch-meta"><code>#EF4056</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #118ACB;"></div>
+                    <div class="brand-swatch-meta"><code>#118ACB</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #09b24e;"></div>
+                    <div class="brand-swatch-meta"><code>#09b24e</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Secondary — digital</h3>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #ff5500;"></div>
+                    <div class="brand-swatch-meta"><code>#ff5500</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #6c3f99;"></div>
+                    <div class="brand-swatch-meta"><code>#6c3f99</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #07d884;"></div>
+                    <div class="brand-swatch-meta"><code>#07d884</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Extra</h3>
+            <div class="brand-swatch-grid brand-swatch-grid--duo fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #fccb10;"></div>
+                    <div class="brand-swatch-meta"><code>#fccb10</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #7167ff;"></div>
+                    <div class="brand-swatch-meta"><code>#7167ff</code></div>
+                </div>
+            </div>
+            <p class="brand-swatch-note fade-in">Product UI tokens on <span class="emphasis-pixel">elemento.cloud</span> may differ slightly; treat this page as the marketing colour reference and <code>css/themes.css</code> for implementation.</p>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="type">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Typography</h2>
+                <p class="section-subtitle">Brand type stack (with live-site note)</p>
+            </div>
+            <p class="brand-type-lead fade-in">Headings use <strong>Red Hat Display</strong> (often Extrabold). Key words inside headings may use <strong>Argent Pixel Italic</strong> (<a href="https://fonts.adobe.com/" target="_blank" rel="noopener noreferrer">Adobe Fonts</a>). Body copy should use <strong>Red Hat Text</strong> — do not substitute Display for long text. Code uses <strong>Red Hat Mono</strong> (<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>).</p>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-heading--extrabold">Red Hat Display</h3>
+                    <p class="brand-type-display-sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                    <p class="brand-type-body">Headings — guidelines recommend Extrabold. <a href="https://fonts.google.com/share?selection.family=Red+Hat+Display:wght@400;500;600;700;800" target="_blank" rel="noopener noreferrer">Google Fonts</a>.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-argent">Argent Pixel Italic</h3>
+                    <p class="brand-type-argent-sample">Highlight within headings</p>
+                    <p class="brand-type-body">Accent inside titles only. Licensed via Adobe; this site ships Argent Pixel for select treatments.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-rht">Red Hat Text</h3>
+                    <p class="brand-type-rht-sample">Body text must stay functional and highly legible. Red Hat Text is tuned for paragraphs — different geometry from Display.</p>
+                    <p class="brand-type-body">Canonical brand body font per guidelines. <span class="emphasis-pixel">elemento.cloud</span> still uses Open Sans in many templates; new work should align with Red Hat Text over time.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-heading--mono">Red Hat Mono</h3>
+                    <p class="brand-type-mono">nucleus cluster status<br>api.elemento.cloud/v1</p>
+                    <p class="brand-type-body">Code, CLI samples, and technical UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identity, patterns, imagery -->
+    <section class="section" id="identity">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Identity, patterns &amp; imagery</h2>
+                <p class="section-subtitle">Patterns, icons &amp; photography</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in">
+                    <h3>Patterns</h3>
+                    <p>Visual identity uses <strong>patterns</strong> inspired by the “force of cloud” — dynamic, physics-adjacent motifs. Use approved pattern files from the brand kit; don’t redraw from memory.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Icons</h3>
+                    <p>Use <strong>one icon library</strong> across product and marketing. Keep stroke, corner radius, and colour usage consistent with that set.</p>
+                </div>
+                <div class="card fade-in brand-identity-wide">
+                    <h3>Photography &amp; art direction</h3>
+                    <p><strong>Retro-future</strong> — abstract concepts, atmospheric or space-research imagery. <strong>Team moments</strong> — people and culture for tone of voice. <strong>Moving images</strong> — long exposure and dynamic shots for energy. Avoid generic stock that fights these three lanes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product names -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Product names</h2>
+                <p class="section-subtitle">Spellings and capitalization</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in">
+                    <h3>Elemento</h3>
+                    <p>Company and platform name: <strong>Elemento</strong> (sentence case in body; title case in headings as on the site). When you need the full legal line with <strong>Modular Cloud</strong> and <strong>®</strong>, use the horizontal or vertical payoff lockup according to space.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Product marks</h3>
+                    <p><strong>Atomos</strong>, <strong>Electros</strong>, and <strong>Atomosphere</strong> — capitalize as proper nouns. Use each product’s SVG from <a href="products.html">All products</a> alongside the name when possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Press or partner assets</h2>
+                <p class="section-subtitle">Email <a href="mailto:hello@elemento.cloud">hello@elemento.cloud</a> for high-resolution files or co-marketing review.</p>
+            </div>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary">Contact</a>
+                <a href="about.html" class="btn btn-secondary">About Elemento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/splash-screen.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/faq.js" defer></script>
+    <script src="js/main.js" defer></script>    
+    <script src="js/footer.js" defer></script>
+    <script src="js/atmosphere_hero.js" defer></script>
+    <script src="js/themes.js" defer></script>
+</body>
+</html> 
