@@ -566,31 +566,38 @@
                 <div class="fade-in">
                     <h3 class="brand-subsection-title">Respect area</h3>
                     <p>Minimum clear space around the logo or symbol is <strong>2× the height</strong> of the mark on every side (sometimes described as “doubling the height”). The payoff lockup uses the same rule.</p>
-                    <figure class="brand-clearspace-figure">
-                        <figcaption class="brand-figure-caption">Shaded bands = minimum clear space (<strong>2×</strong> the mark height). Centre symbol = <strong>1×</strong> height (same rule for full horizontal lockup).</figcaption>
-                        <div class="brand-clearspace-demo" role="img" aria-label="Clear space on all sides equals twice the logo height">
-                            <div class="brand-clearspace-pad brand-clearspace-pad--top"><span>2× height</span></div>
-                            <div class="brand-clearspace-mid">
-                                <div class="brand-clearspace-pad brand-clearspace-pad--left"><span>2×</span></div>
-                                <div class="brand-clearspace-core">
-                                    <div class="brand-mark-alone brand-mark-alone--void brand-mark-alone--diagram" aria-hidden="true"></div>
-                                </div>
-                                <div class="brand-clearspace-pad brand-clearspace-pad--right"><span>2×</span></div>
+                    <figure class="brand-clearspace-figure brand-respect-figure">
+                        <figcaption class="brand-figure-caption"><strong>Symbol respect area (grid).</strong> One column or row = <strong>1×</strong> the symbol height (<span class="brand-respect-xeq-inline">x = <span class="brand-respect-symbol-tiny" aria-hidden="true"></span></span>). The mark sits in the <strong>centre</strong>; <strong>corner cells</strong> show a faint symbol as scale reference; keep the <strong>edge</strong> cells clear. Minimum clear space in production remains <strong>2×</strong> the mark height on all sides (and for the full payoff), as in the rule above.</figcaption>
+                        <div class="brand-respect-wrap">
+                            <div class="brand-respect-labelrow" aria-hidden="true">
+                                <span class="brand-respect-label-1x">1×</span>
+                                <span class="brand-respect-label-xeq">x = <span class="brand-respect-symbol-tiny"></span></span>
                             </div>
-                            <div class="brand-clearspace-pad brand-clearspace-pad--bottom"><span>2× height</span></div>
+                            <div class="brand-respect-cells" role="img" aria-label="3 by 3 grid: Elemento symbol in the centre, faded symbols in the four corners as scale reference, empty edge cells for respect area. One cell equals the symbol height.">
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--centre"><div class="brand-respect-symbol brand-respect-symbol--main" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                            </div>
                         </div>
                     </figure>
                 </div>
                 <div class="fade-in">
                     <h3 class="brand-subsection-title">Logo width bands</h3>
-                    <p>Three scalability steps are defined by <strong>maximum width</strong> (choose the lockup variant that stays legible at each size — see master artwork).</p>
+                    <p>Each band sets a <strong>maximum width</strong> for print and screen and the <strong>lockup</strong> to use at that scale (full payoff, horizontal wordmark, or symbol only).</p>
                     <div class="brand-size-table-wrap">
-                        <table class="brand-size-table">
+                        <table class="brand-size-table brand-size-table--lockups">
                             <thead>
                                 <tr>
                                     <th scope="col">Band</th>
                                     <th scope="col">Print</th>
                                     <th scope="col">Screen</th>
+                                    <th scope="col">Lockup</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -598,21 +605,39 @@
                                     <td>Large</td>
                                     <td>up to <strong>50</strong> mm</td>
                                     <td>up to <strong>500</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Full horizontal payoff</strong> — wordmark, tagline, and ®.
+                                            <div class="brand-size-table-lockup brand-size-table-lockup--mcr" role="img" aria-label="Elemento® Modular Cloud — full horizontal lockup"></div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Medium</td>
                                     <td>up to <strong>35</strong> mm</td>
                                     <td>up to <strong>250</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Horizontal wordmark</strong> — when the full payoff is too wide.
+                                            <div class="brand-size-table-lockup brand-size-table-lockup--hor" role="img" aria-label="Elemento horizontal wordmark"></div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Small</td>
                                     <td>up to <strong>10</strong> mm</td>
                                     <td>up to <strong>30</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Symbol only</strong> — favicons, app icons, narrow UI.
+                                            <div class="brand-size-table-symbol-wrap"><div class="brand-mark-alone brand-size-table-symbol-mark" role="img" aria-label="Elemento symbol only"></div></div>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="brand-table-note">Below the smallest band, use only the symbol or simplified mark supplied for that context — never scale the full payoff below legibility.</p>
+                    <p class="brand-table-note">Do not scale the full payoff into the small band — switch to the symbol. Match ink and field colours to the logo section above.</p>
                 </div>
             </div>
         </div>

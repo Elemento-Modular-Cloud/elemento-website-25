@@ -58,6 +58,7 @@
 .brand-logo-combo-grid {
     gap: var(--space-xl);
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
 }
 
 .brand-logo-combo-grid > * {
@@ -95,6 +96,10 @@
 
 /* Logo usage examples: fixed surfaces so light/dark site theme does not alter contrast demos */
 .brand-logo-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
     padding: var(--space-2xl);
     border-radius: var(--radius-lg);
     text-align: center;
@@ -113,11 +118,19 @@
 }
 
 .brand-logo-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    width: 100%;
+    min-height: 4.75rem;
     margin: 0 0 var(--space-md);
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    line-height: 1.35;
 }
 
 .brand-logo-panel--light .brand-logo-label {
@@ -238,11 +251,6 @@
     background-color: #FFA600;
 }
 
-.brand-mark-alone--diagram {
-    width: 48px;
-    height: 48px;
-}
-
 .brand-badge-fav {
     display: inline-block;
     margin-left: var(--space-xs);
@@ -259,7 +267,7 @@
 }
 
 .brand-badge-fav--inline {
-    margin-left: 0.4rem;
+    margin-left: 0;
     font-size: 0.58rem;
     padding: 0.1rem 0.38rem;
 }
@@ -280,60 +288,118 @@
     margin-bottom: var(--space-md);
 }
 
-.brand-clearspace-demo {
-    display: inline-flex;
-    flex-direction: column;
+/* PDF-style symbol respect grid: 3×3, x = symbol height */
+/* Cell shape matches symbol ink (not the square SVG viewBox): bbox ≈507×550 in artwork coords → width:height = 507:550 */
+.brand-respect-figure {
+    --brand-respect-ink-ratio: 507 / 550;
+}
+
+.brand-respect-wrap {
+    max-width: min(320px, 100%);
+}
+
+.brand-respect-labelrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    gap: 0;
+    margin-bottom: 0.35rem;
+    min-height: 1.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 0.02em;
+}
+
+.brand-respect-label-1x {
+    grid-column: 1;
+    text-align: center;
+}
+
+.brand-respect-label-xeq {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+}
+
+.brand-respect-xeq-inline {
+    white-space: nowrap;
+}
+
+.brand-respect-symbol-tiny,
+.brand-respect-symbol {
+    mask-image: url('../assets/logos/Elemento.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('../assets/logos/Elemento.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+/* Tiny mark in labels / caption: theme text colour (diagram grid symbols stay void black below). */
+.brand-respect-symbol-tiny {
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: -0.12em;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: var(--text-color);
+}
+
+.brand-respect-symbol {
+    background-color: #16161D;
+    min-width: 0;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 1;
+}
+
+/* Square SVG viewBox: contain leaves ink floating; cover scales mask to fill the cell (centered). */
+.brand-respect-cell .brand-respect-symbol {
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+.brand-respect-cells {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* Whole grid uses same width:height as one cell → every cell matches symbol aspect ratio */
+    aspect-ratio: var(--brand-respect-ink-ratio);
+    width: 100%;
+    gap: 1px;
+    background: #16161D;
+    border: 1px solid #16161D;
+    box-sizing: border-box;
+}
+
+.brand-respect-cell {
+    background: #fff;
+    min-height: 0;
+    min-width: 0;
+    display: grid;
     align-items: stretch;
-    border: 2px dashed #FFA600;
-    border-radius: var(--radius-md);
-    background: rgba(255, 166, 0, 0.06);
+    justify-items: stretch;
+    padding: 1px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
-.brand-clearspace-mid {
-    display: flex;
-    align-items: center;
+.brand-respect-symbol--faint,
+.brand-respect-symbol--main {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
 }
 
-.brand-clearspace-pad {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #C77800;
-    background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 6px,
-        rgba(255, 166, 0, 0.14) 6px,
-        rgba(255, 166, 0, 0.14) 12px
-    );
-}
-
-.brand-clearspace-pad--top,
-.brand-clearspace-pad--bottom {
-    min-height: 96px;
-}
-
-.brand-clearspace-pad--left,
-.brand-clearspace-pad--right {
-    width: 96px;
-    min-height: 48px;
-    flex-shrink: 0;
-}
-
-.brand-clearspace-core {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    box-shadow: inset 0 0 0 1px rgba(22, 22, 29, 0.1);
+.brand-respect-symbol--faint {
+    opacity: 0.22;
 }
 
 .brand-size-table-wrap {
@@ -360,17 +426,70 @@
     font-weight: 600;
 }
 
+.brand-size-table--lockups .brand-size-table-mark-cell {
+    vertical-align: top;
+    width: 42%;
+    min-width: 10.5rem;
+}
+
+.brand-size-table-mark-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+}
+
+.brand-size-table-mark-inner strong {
+    font-size: 0.88rem;
+    line-height: 1.35;
+}
+
+.brand-size-table-lockup {
+    display: block;
+    flex-shrink: 0;
+    margin-top: 0;
+    min-width: 0;
+    background-color: var(--text-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
+.brand-size-table-lockup--mcr {
+    mask-image: url('../assets/logos/ElementoMCR.svg');
+    -webkit-mask-image: url('../assets/logos/ElementoMCR.svg');
+    height: 4.5rem;
+    width: min(100%, calc(4.5rem * 555 / 146));
+}
+
+.brand-size-table-lockup--hor {
+    mask-image: url('../assets/logos/Elemento-hor.svg');
+    -webkit-mask-image: url('../assets/logos/Elemento-hor.svg');
+    height: 4.5rem;
+    width: min(100%, calc(4.5rem * 1315 / 219));
+}
+
+.brand-size-table-symbol-wrap {
+    margin-top: 0;
+}
+
+.brand-size-table-symbol-mark {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0;
+    background-color: var(--text-color);
+}
+
 .brand-table-note {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin: 0;
 }
 
-/* Match brand PDF: light gray page, white cards, red round “×”, flat gray example boxes */
-.brand-section-dont {
-    background: #f0f1f4;
-}
-
+/* Misuse cards: white panels; section inherits page background */
 .brand-dont-grid {
     gap: var(--space-lg);
 }
