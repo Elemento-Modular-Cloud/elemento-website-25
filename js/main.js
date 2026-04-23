@@ -3,11 +3,26 @@
  * Based on elemento-gui-new styling and functionality
  */
 
+const COOKIE_PREFERENCE_KEY = 'elemento_cookie_preference';
+const COOKIE_CONSENT_VERSION = '2026-04-iubenda-db-enforced';
+
 // Helper function to get saved cookie preference
 function getCookiePreference() {
     try {
-        const saved = localStorage.getItem('elemento_cookie_preference');
-        return saved ? JSON.parse(saved) : null;
+        const saved = localStorage.getItem(COOKIE_PREFERENCE_KEY);
+        if (!saved) {
+            return null;
+        }
+
+        const parsed = JSON.parse(saved);
+        if (!parsed || parsed.consentVersion !== COOKIE_CONSENT_VERSION) {
+            // Rotate legacy consent so all existing users are prompted again.
+            localStorage.removeItem(COOKIE_PREFERENCE_KEY);
+            sessionStorage.removeItem(COOKIE_PREFERENCE_KEY);
+            return null;
+        }
+
+        return parsed;
     } catch (error) {
         console.error('Failed to get cookie preference:', error);
         return null;
@@ -110,15 +125,16 @@ function setupIubendaClickInterception() {
         const preference = {
             choice: choice, // 'accepted', 'rejected', or 'customized'
             timestamp: timestamp,
-            date: new Date(timestamp).toISOString()
+            date: new Date(timestamp).toISOString(),
+            consentVersion: COOKIE_CONSENT_VERSION
         };
         
         try {
-            localStorage.setItem('elemento_cookie_preference', JSON.stringify(preference));
+            localStorage.setItem(COOKIE_PREFERENCE_KEY, JSON.stringify(preference));
             console.log('Cookie preference saved:', preference);
             
             // Also save to sessionStorage for immediate access
-            sessionStorage.setItem('elemento_cookie_preference', JSON.stringify(preference));
+            sessionStorage.setItem(COOKIE_PREFERENCE_KEY, JSON.stringify(preference));
             
             // Dispatch custom event for other parts of the app to listen to
             const event = new CustomEvent('cookiePreferenceChanged', { 
