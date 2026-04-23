@@ -14,6 +14,92 @@ function getCookiePreference() {
     }
 }
 
+function getIubendaConsentSyncConfig() {
+    const globalConfig = window.elementoIubendaConsentConfig || {};
+    const endpoint = globalConfig.endpoint || 'https://consent.iubenda.com/public/consent';
+    const apiKey = globalConfig.publicApiKey || 'sxLUEyAyNL0U7vRevCJj7IqOklkcEx0C';
+    const legalNotices = Array.isArray(globalConfig.legalNotices) && globalConfig.legalNotices.length > 0
+        ? globalConfig.legalNotices
+        : [{ identifier: 'privacy_policy' }, { identifier: 'cookie_policy' }];
+
+    return {
+        enabled: Boolean(apiKey),
+        endpoint,
+        apiKey,
+        legalNotices,
+        subjectEmail: globalConfig.subjectEmail || null,
+        subjectIdPrefix: globalConfig.subjectIdPrefix || 'elemento',
+        proofForm: globalConfig.proofForm || 'iubenda-banner-click',
+        sourcePage: globalConfig.sourcePage || window.location.pathname
+    };
+}
+
+function getOrCreateIubendaSubjectId(prefix = 'elemento') {
+    const storageKey = 'elemento_iubenda_subject_id';
+    const existing = localStorage.getItem(storageKey);
+    if (existing) {
+        return existing;
+    }
+
+    const randomPart = typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    const subjectId = `${prefix}-${randomPart}`;
+    localStorage.setItem(storageKey, subjectId);
+    return subjectId;
+}
+
+async function sendConsentToIubenda(choice, timestamp = Date.now()) {
+    const config = getIubendaConsentSyncConfig();
+    if (!config.enabled) {
+        return;
+    }
+
+    const consentGranted = choice === 'accepted' || choice === 'customized';
+    const subject = { id: getOrCreateIubendaSubjectId(config.subjectIdPrefix) };
+    if (config.subjectEmail) {
+        subject.email = config.subjectEmail;
+    }
+
+    const payload = {
+        timestamp: new Date(timestamp).toISOString(),
+        subject,
+        legal_notices: config.legalNotices,
+        preferences: {
+            cookie_consent: consentGranted,
+            cookie_choice: choice
+        },
+        proofs: [
+            {
+                content: `Cookie banner action: ${choice}`,
+                form: config.proofForm
+            }
+        ]
+    };
+
+    if (config.sourcePage) {
+        payload.proofs[0].content += ` on ${config.sourcePage}`;
+    }
+
+    try {
+        const response = await fetch(config.endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                ApiKey: config.apiKey
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error('Failed to sync consent to iubenda:', response.status, errorText);
+        }
+    } catch (error) {
+        console.error('Error while syncing consent to iubenda:', error);
+    }
+}
+
 // Add click interception functionality
 function setupIubendaClickInterception() {
     console.log('Setting up iubenda click interception');
@@ -39,6 +125,7 @@ function setupIubendaClickInterception() {
                 detail: preference 
             });
             document.dispatchEvent(event);
+            sendConsentToIubenda(choice, timestamp);
             
         } catch (error) {
             console.error('Failed to save cookie preference:', error);
