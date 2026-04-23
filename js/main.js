@@ -592,16 +592,17 @@ class ElementoWebsite {
     }
 
     setupiubendaScripts() {
-        // Check if iubenda scripts are already loaded
-        if (document.querySelector('script[src*="iubenda"]')) {
-            return;
-        }
+        // Detect whether the iubenda widget script is already present.
+        // Important: we must still run our local fix script even if iubenda is preloaded.
+        const hasIubendaScript = Boolean(document.querySelector('script[src*="iubenda"]'));
 
-        // Create and add the first iubenda script
-        const iubendaWidgetScript = document.createElement('script');
-        iubendaWidgetScript.type = 'text/javascript';
-        iubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
-        document.head.insertBefore(iubendaWidgetScript, document.head.firstChild);
+        // Create and add the iubenda widget only when not already loaded.
+        if (!hasIubendaScript) {
+            const iubendaWidgetScript = document.createElement('script');
+            iubendaWidgetScript.type = 'text/javascript';
+            iubendaWidgetScript.src = '//embeds.iubenda.com/widgets/b519d485-6db6-11ee-8bfc-5ad8d8c564c0.js';
+            document.head.insertBefore(iubendaWidgetScript, document.head.firstChild);
+        }
 
         const preference = getCookiePreference();
         console.log('preference', preference);
@@ -640,25 +641,27 @@ class ElementoWebsite {
         }
 
         // Load the iubenda fix script immediately (no delay)
-        const iubendaFixScript = document.createElement('script');
-        iubendaFixScript.type = 'text/javascript';
-        
-        // Determine the correct path based on current location
-        const currentScript = document.currentScript || document.querySelector('script[src*="main.js"]');
-        const scriptSrc = currentScript ? currentScript.src : '';
-        const isInBlogPost = scriptSrc.includes('../js/main.js');
-        const isInSolutions = window.location.pathname.includes('solutions/');
-        const isInTechnology = window.location.pathname.includes('technology/');
-        
-        let iubendaPath;
-        if (isInBlogPost || isInSolutions || isInTechnology) {
-            iubendaPath = '../js/iubenda_fix.js';
-        } else {
-            iubendaPath = 'js/iubenda_fix.js';
+        // Avoid injecting duplicate fix scripts.
+        if (!document.querySelector('script[src*="iubenda_fix.js"]')) {
+            const iubendaFixScript = document.createElement('script');
+            iubendaFixScript.type = 'text/javascript';
+
+            // Determine the correct path based on URL path (more reliable than document.currentScript).
+            const pathname = window.location.pathname;
+            const isInBlogPost = pathname.includes('/blog-posts/');
+            const isInSolutions = pathname.includes('/solutions/');
+            const isInTechnology = pathname.includes('/technology/');
+
+            let iubendaPath;
+            if (isInBlogPost || isInSolutions || isInTechnology) {
+                iubendaPath = '../js/iubenda_fix.js';
+            } else {
+                iubendaPath = 'js/iubenda_fix.js';
+            }
+
+            iubendaFixScript.src = iubendaPath;
+            document.head.appendChild(iubendaFixScript);
         }
-        
-        iubendaFixScript.src = iubendaPath;
-        document.head.appendChild(iubendaFixScript);
     }
 
     showToast(message, type = 'info', duration = 5000) {
