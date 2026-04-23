@@ -1,5 +1,36 @@
 // Footer loader
 document.addEventListener('DOMContentLoaded', function() {
+    function injectLinkedInInsightTag() {
+        if (document.getElementById('linkedin-insight-tag-script')) {
+            return;
+        }
+
+        window._linkedin_partner_id = "10034337";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        if (!window._linkedin_data_partner_ids.includes(window._linkedin_partner_id)) {
+            window._linkedin_data_partner_ids.push(window._linkedin_partner_id);
+        }
+
+        if (!window.lintrk) {
+            window.lintrk = function (a, b) { window.lintrk.q.push([a, b]); };
+            window.lintrk.q = [];
+        }
+
+        const insightScript = document.createElement('script');
+        insightScript.id = 'linkedin-insight-tag-script';
+        insightScript.type = 'text/javascript';
+        insightScript.async = true;
+        insightScript.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
+        document.head.appendChild(insightScript);
+
+        const noScript = document.createElement('noscript');
+        noScript.id = 'linkedin-insight-tag-noscript';
+        noScript.innerHTML = '<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=10034337&fmt=gif" />';
+        document.body.appendChild(noScript);
+    }
+
+    injectLinkedInInsightTag();
+
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
         // Determine the correct path to the footer component
