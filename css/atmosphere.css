@@ -55,8 +55,8 @@
     /* mask: none; */
     background: radial-gradient(circle, var(--hero-logo-color) 20%, transparent);
     /* border: 1px solid red; */
-    opacity: .4;
-    mix-blend-mode: screen;
+    opacity: var(--hero-logo-contrast-opacity);
+    mix-blend-mode: var(--hero-logo-contrast-blend-mode);
 }
 
 @media (orientation: portrait) {

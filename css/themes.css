@@ -72,6 +72,10 @@
     --accent-color-light: var(--yellow-light);
     --accent-color: var(--yellow);
     --accent-color-dark: var(--yellow-dark);
+    --hero-product-icon-blend-mode: normal;
+    --hero-product-icon-opacity: 1;
+    --hero-logo-contrast-blend-mode: normal;
+    --hero-logo-contrast-opacity: .9;
     --electros-color: #ffa600;
     --atomos-color: #007bff;
     --cloud-net-color: #DC3545;
@@ -284,6 +288,10 @@
     --os-macos: #FFF;
 
     --primary-color: var(--accent-color);
+    --hero-product-icon-blend-mode: hard-light;
+    --hero-product-icon-opacity: 1;
+    --hero-logo-contrast-blend-mode: screen;
+    --hero-logo-contrast-opacity: 0.4;
     --logo-color: var(--accent-color);
     --button-color: var(--primary-color);
     --button-color-disabled: var(--black-light);
@@ -427,6 +435,10 @@
     --os-macos: #FFF;
 
     --primary-color: var(--accent-color);
+    --hero-product-icon-blend-mode: hard-light;
+    --hero-product-icon-opacity: 1;
+    --hero-logo-contrast-blend-mode: normal;
+    --hero-logo-contrast-opacity: 1;
     --logo-color: var(--accent-color);
     --button-color: var(--primary-color);
     --button-color-disabled: var(--black);
