@@ -35,17 +35,25 @@
 
 /* Enhanced Typography */
 .blog-post h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
+    font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+    font-weight: 650;
     color: var(--text-color);
     margin-bottom: var(--space-lg);
     font-family: var(--font-heading);
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+    line-height: 1.24;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, var(--text-color) 0%, color-mix(in srgb, var(--primary-color) 72%, var(--text-color) 28%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Use a gentler scale for very long article titles. */
+.blog-post--long-title h1 {
+    font-size: clamp(1.8rem, 4vw, 2.9rem);
+    line-height: 1.15;
+    max-width: 20ch;
+    text-wrap: balance;
 }
 
 .blog-post .blog-meta {
@@ -121,9 +129,9 @@
 }
 
 .blog-content h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: var(--text-color);
+    font-size: 1.62rem;
+    font-weight: 550;
+    color: color-mix(in srgb, var(--text-color) 92%, var(--primary-color) 8%);
     margin: var(--space-2xl) 0 var(--space-lg) 0;
     font-family: var(--font-heading);
     position: relative;
@@ -135,19 +143,19 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
+    width: 48px;
+    height: 2px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--primary-color) 45%, var(--text-color) 55%), transparent);
     border-radius: var(--radius-xs);
 }
 
 .blog-content h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 540;
+    color: color-mix(in srgb, var(--text-color) 96%, var(--primary-color) 4%);
     margin: var(--space-xl) 0 var(--space-md) 0;
     font-family: var(--font-heading);
-    color: var(--primary-color);
+    letter-spacing: -0.003em;
 }
 
 /* Enhanced Lists */
@@ -307,6 +315,14 @@
     font-weight: 600;
 }
 
+/* Keep heading color hierarchy neutral even when content includes <strong>. */
+.blog-content h1 strong,
+.blog-content h2 strong,
+.blog-content h3 strong {
+    color: inherit;
+    font-weight: inherit;
+}
+
 .blog-content em {
     color: var(--text-secondary);
     font-style: italic;
@@ -335,6 +351,9 @@
 /* Enhanced Typography for Numbers */
 .blog-content ol {
     counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .blog-content ol li {
@@ -347,7 +366,7 @@
     content: counter(item);
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.55em;
     background: var(--primary-color);
     color: white;
     width: 1.5em;

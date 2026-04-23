@@ -241,6 +241,12 @@
   <!-- Featured blog posts -->
   <!-- BLOG_SITEMAP_POSTS_START -->
   <url>
+    <loc>https://elemento.cloud/blog-posts/2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-centralized-and-what-comes-next.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://elemento.cloud/blog-posts/2025-05-30-within-2026-cloud-security-will-be-manager-by-socs-trend-micros-predictions.html</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>monthly</changefreq>
