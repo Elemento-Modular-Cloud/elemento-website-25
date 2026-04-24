@@ -29,6 +29,15 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Refresh blog SEO and RSS artifacts
+      run: |
+        python3 generate_blog_posts.py --refresh-blog-seo
+
     - name: Install dependencies
       run: |
         npm install -g clean-css-cli terser

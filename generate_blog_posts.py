@@ -356,8 +356,56 @@ def build_sitemap_blog_posts_block(index_data):
     return "\n".join(chunks)
 
 
+def _date_to_rfc2822(date_str):
+    """Convert YYYY-MM-DD into an RFC 2822 date string in UTC."""
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        return dt.strftime("%a, %d %b %Y 00:00:00 +0000")
+    except Exception:
+        return "Thu, 01 Jan 1970 00:00:00 +0000"
+
+
+def build_rss_feed(index_data):
+    """Build an RSS 2.0 XML feed from blog index entries."""
+    latest_date = index_data[0]["date"] if index_data else "1970-01-01"
+    chunks = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0">',
+        "  <channel>",
+        "    <title>Elemento Blog</title>",
+        f"    <link>{BASE_URL}/blog.html</link>",
+        "    <description>Cloud computing insights, industry news, and technology stories from Elemento.</description>",
+        "    <language>en</language>",
+        f"    <lastBuildDate>{_date_to_rfc2822(latest_date)}</lastBuildDate>",
+        f"    <atom:link href=\"{BASE_URL}/rss.xml\" rel=\"self\" type=\"application/rss+xml\" xmlns:atom=\"http://www.w3.org/2005/Atom\" />",
+    ]
+
+    for post in index_data:
+        title = html.escape(post.get("title", "Untitled"))
+        summary = html.escape(post.get("summary", ""))
+        link = f"{BASE_URL}/blog-posts/{post['filename']}"
+        pub_date = _date_to_rfc2822(post.get("date", "1970-01-01"))
+        guid = link
+        chunks.extend([
+            "    <item>",
+            f"      <title>{title}</title>",
+            f"      <link>{link}</link>",
+            f"      <guid isPermaLink=\"true\">{guid}</guid>",
+            f"      <pubDate>{pub_date}</pubDate>",
+            f"      <description>{summary}</description>",
+            "    </item>",
+        ])
+
+    chunks.extend([
+        "  </channel>",
+        "</rss>",
+        "",
+    ])
+    return "\n".join(chunks)
+
+
 def refresh_blog_seo_files(index_data, repo_root="."):
-    """Update crawlable blog hub markup, ItemList JSON-LD, and sitemap blog URLs from index_data."""
+    """Update blog SEO artifacts and RSS feed from index_data."""
     root = Path(repo_root)
 
     blog_path = root / "blog.html"
@@ -385,6 +433,9 @@ def refresh_blog_seo_files(index_data, repo_root="."):
         build_sitemap_blog_posts_block(index_data),
     )
     sitemap_path.write_text(sitemap_text, encoding="utf-8")
+
+    rss_path = root / "rss.xml"
+    rss_path.write_text(build_rss_feed(index_data), encoding="utf-8")
 
 
 def load_index_and_refresh_seo(repo_root="."):
