@@ -29,7 +29,29 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(noScript);
     }
 
+    function injectMetricoolTracker() {
+        if (document.getElementById('metricool-tracker-script')) {
+            return;
+        }
+
+        function loadScript(callback) {
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.id = 'metricool-tracker-script';
+            script.type = 'text/javascript';
+            script.src = 'https://tracker.metricool.com/resources/be.js';
+            script.onreadystatechange = callback;
+            script.onload = callback;
+            head.appendChild(script);
+        }
+
+        loadScript(function() {
+            beTracker.t({ hash: '788f4c6e2088d06d988cc33b8f1d217a' });
+        });
+    }
+
     injectLinkedInInsightTag();
+    injectMetricoolTracker();
 
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
