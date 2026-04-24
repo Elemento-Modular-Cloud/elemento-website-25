@@ -155,6 +155,9 @@
     --text-color: var(--grey-darker);
     --text-secondary: var(--black-light);
     --text-muted: var(--grey-light);
+    --success-color: var(--green);
+    --warning-color: var(--orange);
+    --error-color: var(--red);
     --sidebar-bg-color: var(--white-light);
     --button-color-disabled: var(--white-light);
     --card-bg-color: var(--white-light);
@@ -307,6 +310,9 @@
     --text-color: var(--grey-light);
     --text-secondary: var(--white-light);
     --text-muted: var(--grey-dark);
+    --success-color: var(--green);
+    --warning-color: var(--orange);
+    --error-color: var(--red);
     --sidebar-bg-color: var(--black-light);
     --sidebar-active-text-color: var(--accent-color);
     --sidebar-active-text-bg: var(--background-color);
@@ -454,6 +460,9 @@
     --text-color: var(--white-light);
     --text-secondary: var(--white-light);
     --text-muted: var(--grey-light);
+    --success-color: var(--green);
+    --warning-color: var(--orange);
+    --error-color: var(--red);
     --sidebar-bg-color: var(--black);
     --sidebar-active-text-color: var(--accent-color);
     --sidebar-active-text-bg: var(--background-color);
