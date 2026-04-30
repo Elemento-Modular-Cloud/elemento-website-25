@@ -14,6 +14,10 @@ Disallow: /cms/
 Disallow: /venv/
 Disallow: /editor.html
 Disallow: /signup-success.html
+# Meeting / booking thank-you and template pages (also use meta noindex, nofollow)
+Disallow: /thank-you/
+Disallow: /grazie/
+Disallow: /bookings/
 # Disallow: /orbital.html
 
 # Allow all other content

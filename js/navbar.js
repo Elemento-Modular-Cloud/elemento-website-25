@@ -27,42 +27,37 @@ class Navbar {
     getBasePath() {
         const path = window.location.pathname;
         const pathParts = path.split('/').filter(part => part !== '');
-        
-        // Handle different deployment scenarios:
-        // 1. GitHub Pages: /elemento-website-25/index.html -> should return './'
-        // 2. Blog posts on GitHub Pages: /elemento-website-25/blog-posts/post.html -> should return '../'
-        // 3. Local development: /index.html -> should return './'
-        // 4. Local blog posts: /blog-posts/post.html -> should return '../'
-        // 5. Forms directory: /forms/form.html -> should return '../'
-        
-        // Check if we're in the blog-posts directory (works for both GitHub Pages and local)
-        if (pathParts.includes('blog-posts')) {
-            return '../';
+        if (pathParts.length === 0) {
+            return './';
         }
-        
-        // Check if we're in the forms directory (works for both GitHub Pages and local)
-        if (pathParts.includes('forms')) {
-            return '../';
+        const last = pathParts[pathParts.length - 1];
+        const hasHtmlFile = last.endsWith('.html');
+        const directoryDepth = hasHtmlFile ? pathParts.length - 1 : pathParts.length;
+        if (directoryDepth <= 0) {
+            return './';
         }
-        
-        // Check if we're in the solutions directory (works for both GitHub Pages and local)
-        if (pathParts.includes('solutions')) {
-            return '../';
-        }
-        
-        // For GitHub Pages, if we're in the repository root (e.g., /elemento-website-25/), 
-        // we should use './' for main pages
-        // For local development, if we're at the root, use './'
-        return './';
+        return '../'.repeat(directoryDepth);
     }
 
     getActiveClass(page) {
+        if (page === 'index.html') {
+            return this.isHomePage() ? 'active' : '';
+        }
         return this.currentPage === page ? 'active' : '';
     }
 
-    // Check if current page is home page
+    // True only for site root, not for nested routes that use index.html (e.g. /thank-you/.../)
     isHomePage() {
-        return this.currentPage === 'index.html' || this.currentPage === '';
+        const raw = window.location.pathname.replace(/\/+$/, '');
+        const path = raw === '' ? '/' : raw;
+        const parts = path.split('/').filter(Boolean);
+        if (parts.length === 0) {
+            return true;
+        }
+        if (parts.length === 1 && parts[0] === 'index.html') {
+            return true;
+        }
+        return false;
     }
 
     // Home top announcement banner (e.g. Keynote) — remove `return ''` and uncomment block to restore

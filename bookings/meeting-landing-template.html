@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+  Meeting booking — landing / redirect template
+
+  Per page, update:
+  - <title>, meta description, canonical, Open Graph / Twitter URLs and copy
+  - Optional: instant redirect via <meta http-equiv="refresh" content="0;url=..."> (see head)
+  - .meeting-landing-eyebrow, h1, .meeting-landing-lead
+  - .meeting-landing-details (remove block or replace list items)
+  - #meeting-primary-cta href and label; optional #meeting-secondary-cta
+  Duplicate this file (e.g. bookings/your-meeting.html) and adjust paths if the copy lives elsewhere.
+-->
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a meeting — Elemento</title>
+    <meta name="description" content="Book time with the Elemento team. Replace this description when you duplicate the template.">
+
+    <!-- Canonical — set to the final public URL of each duplicated page -->
+    <link rel="canonical" href="https://elemento.cloud/bookings/meeting-landing-template.html">
+
+    <!-- Optional: server-side or meta redirect to your scheduler (seconds; 0 = immediate). Remove on static landings. -->
+    <!-- <meta http-equiv="refresh" content="0;url=https://example.com/your-booking-link"> -->
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load fonts for screen immediately so navbar matches the rest of the site (avoid print-media deferral) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="../css/themes.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+
+    <link rel="preload" href="../js/navbar.js" as="script" crossorigin>
+    <!-- Matomo: Iubenda Cookie Solution — data-iub-purposes="4" must match Statistics/Matomo in iubenda dashboard -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="../js/matomo-tracking.js"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main class="meeting-landing-container" id="main-content">
+        <div class="meeting-landing-card">
+            <div class="meeting-landing-icon" aria-hidden="true">
+                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="14" r="2" fill="currentColor"/>
+                </svg>
+            </div>
+
+            <!-- TEMPLATE: short label above the title -->
+            <p class="meeting-landing-eyebrow">Meeting booking</p>
+
+            <!-- TEMPLATE: page headline -->
+            <h1 class="meeting-landing-title">Your meeting <span class="pixel-accent">title</span></h1>
+
+            <!-- TEMPLATE: one or two sentences -->
+            <p class="meeting-landing-lead">
+                Replace this paragraph with context for the meeting (who it is for, duration, or what happens after they book).
+            </p>
+
+            <!-- TEMPLATE: optional prep / agenda — delete the whole block if unused -->
+            <div class="meeting-landing-details">
+                <h2 class="meeting-landing-details-heading">Before the call</h2>
+                <ul class="meeting-landing-list">
+                    <li><strong>Placeholder:</strong> First bullet or preparation note.</li>
+                    <li><strong>Placeholder:</strong> Second bullet (e.g. video link sent after booking).</li>
+                    <li><strong>Placeholder:</strong> Third bullet or remove this item.</li>
+                </ul>
+            </div>
+
+            <div class="meeting-landing-actions">
+                <!-- TEMPLATE: primary — set href to Calendly, HubSpot, or other scheduler -->
+                <a id="meeting-primary-cta" href="#" class="btn btn-primary">Book a time</a>
+                <!-- TEMPLATE: optional secondary — change href or remove -->
+                <a id="meeting-secondary-cta" href="../index.html" class="btn btn-secondary">
+                    <svg class="btn-inline-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M10.707 2.293a1 1 0 0 1 1.414 0l9 9a1 1 0 0 1-1.414 1.414L19 11.414V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-5h-2v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9.586l-.293.293a1 1 0 0 1-1.414-1.414l9-9z"/>
+                    </svg>
+                    Back to homepage
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('elemento-theme');
+                if (!t && window.parent !== window) {
+                    try {
+                        t = window.parent.localStorage.getItem('elemento-theme');
+                    } catch (e) {}
+                }
+                if (t) {
+                    document.body.className = t;
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <script src="../js/themes.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+
+    <style>
+        .meeting-landing-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: var(--space-md);
+            padding-top: 100px;
+            padding-bottom: var(--space-2xl);
+        }
+
+        .meeting-landing-card {
+            background: var(--glassmorphism-background);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glassmorphism-border);
+            border-radius: 12px;
+            box-shadow: var(--glassmorphism-shadow);
+            padding: var(--space-2xl);
+        }
+
+        .meeting-landing-icon {
+            text-align: center;
+            margin-bottom: var(--space-md);
+            color: var(--primary-color);
+        }
+
+        .meeting-landing-eyebrow {
+            font-family: 'Red Hat Display', var(--font-heading, sans-serif);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-secondary);
+            text-align: center;
+            margin: 0 0 var(--space-sm);
+        }
+
+        .meeting-landing-title {
+            font-family: 'Red Hat Display', var(--font-heading, sans-serif);
+            font-size: clamp(1.75rem, 4vw, 2.25rem);
+            font-weight: 700;
+            color: var(--text-color);
+            text-align: center;
+            line-height: 1.2;
+            margin: 0 0 var(--space-lg);
+        }
+
+        .meeting-landing-lead {
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: var(--text-secondary);
+            text-align: center;
+            margin: 0 0 var(--space-xl);
+        }
+
+        .meeting-landing-details {
+            background: rgba(255, 166, 0, 0.05);
+            border: 1px solid rgba(255, 166, 0, 0.2);
+            border-radius: 8px;
+            padding: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .meeting-landing-details-heading {
+            font-family: 'Red Hat Display', var(--font-heading, sans-serif);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0 0 var(--space-md);
+        }
+
+        .meeting-landing-list {
+            margin: 0;
+            padding-left: var(--space-lg);
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        .meeting-landing-list li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .meeting-landing-list strong {
+            color: var(--text-color);
+        }
+
+        .meeting-landing-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+
+        .meeting-landing-actions .btn {
+            min-width: 200px;
+        }
+
+        .meeting-landing-actions .btn .btn-inline-icon {
+            width: 1.125em;
+            height: 1.125em;
+            margin-right: 0.45em;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .meeting-landing-card {
+                padding: var(--space-xl);
+            }
+
+            .meeting-landing-actions {
+                flex-direction: column;
+            }
+
+            .meeting-landing-actions .btn {
+                min-width: unset;
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
