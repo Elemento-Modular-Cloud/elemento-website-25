@@ -390,10 +390,17 @@ body {
 
 .nav-menu {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: var(--space-xl);
     margin: 0;
     padding: 0;
+}
+
+.nav-cta-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
 }
 
 .nav-link {
@@ -413,6 +420,7 @@ body {
     background: var(--primary-color);
     color: var(--button-text-color);
     border-radius: var(--button-border-radius);
+    border: 2px solid transparent;
     padding: 0.5rem 1rem;
     box-shadow: 0 4px 14px rgba(255, 166, 0, 0.35);
 }
@@ -421,6 +429,20 @@ body {
 .nav-cta-link.active {
     background: var(--accent-color-dark);
     color: var(--button-text-color);
+}
+
+.nav-cta-link.nav-cta-link--book {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.nav-cta-link.nav-cta-link--book:hover,
+.nav-cta-link.nav-cta-link--book.active {
+    background: var(--accent-color-dark);
+    color: var(--button-text-color);
+    border-color: var(--accent-color-dark);
 }
 
 .nav-link.active::after {
@@ -1581,6 +1603,7 @@ body {
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--glassmorphism-border);
         flex-direction: column;
+        align-items: stretch;
         padding: var(--space-xl);
         transform: translateY(-100%);
         opacity: 0;
@@ -1654,12 +1677,32 @@ body {
         background: rgba(255, 255, 255, 0.15);
     }
 
-    .nav-menu .nav-link.nav-cta-link,
-    .nav-menu .nav-link.nav-cta-link:hover,
-    .nav-menu .nav-link.nav-cta-link.active {
+    .nav-menu .nav-link.nav-cta-link:not(.nav-cta-link--book),
+    .nav-menu .nav-link.nav-cta-link:not(.nav-cta-link--book):hover,
+    .nav-menu .nav-link.nav-cta-link:not(.nav-cta-link--book).active {
         color: var(--button-text-color);
         background: var(--primary-color);
         border: none;
+    }
+
+    .nav-menu .nav-link.nav-cta-link--book {
+        color: var(--primary-color);
+        background: transparent;
+        border: 2px solid var(--primary-color);
+    }
+
+    .nav-menu .nav-link.nav-cta-link--book:hover,
+    .nav-menu .nav-link.nav-cta-link--book.active {
+        color: var(--button-text-color);
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .nav-menu .nav-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-sm);
+        width: 100%;
     }
     
     /* Theme-specific mobile nav-link styles */
