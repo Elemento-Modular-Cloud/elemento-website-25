@@ -3,7 +3,7 @@
     "name": "Gabriele Gaetano Fronzé",
     "role": "CEO – Chief Executive Officer",
     "division": "leadership",
-    "highlight": "Ph.D. in Physics",
+    "highlight": "Nuclear Physicist, Ph.D. in Physics",
     "bio": "With a foundation in Nuclear and Subnuclear Physics, I've channeled my scientific rigor into creating robust, scalable cloud solutions.",
     "photo": "CMS/team/gfronze.webp",
     "links": [
@@ -21,18 +21,6 @@
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/filippo-valle/" },
       { "type": "Github", "url": "https://github.com/fvalle1" }
-    ]
-  },
-  {
-    "name": "Giulia Sannai",
-    "role": "CMO – Chief Marketing Officer",
-    "division": "creative",
-    "highlight": "Musicologist & Communication Expert",
-    "bio": "CMO at Elemento Cloud, bridging strategy, technology, and creativity. Musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.",
-    "photo": "CMS/team/gsannai.webp",
-    "links": [
-      { "type": "Instagram", "url": "https://www.instagram.com/giulia_sunny_/" },
-      { "type": "Linkedin", "url": "https://www.linkedin.com/in/giulia-sannai-9b4302256/" }
     ]
   },
   {
@@ -58,6 +46,17 @@
     ]
   },
   {
+    "name": "Fabrizio Parzanese",
+    "role": "CMO – Chief Marketing Officer",
+    "division": "creative",
+    "highlight": "Digital Communication Expert",
+    "bio": "CMO at Elemento Cloud, bridging strategy, technology, and creativity. I am always looking for the next big thing in digital communication. I focus on humanizing and translating our tech, into impactful communication. My mission is to make our cloud solutions feel as intuitive and accessible as they are powerful.",
+    "photo": "CMS/team/fparzanese.webp",
+    "links": [
+      { "type": "Linkedin", "url": "https://www.linkedin.com/in/fabrizioparzanese/" }
+    ]
+  },
+  {
     "name": "Martino Mogna",
     "role": "R&D Leader - #1 Employee",
     "division": "engineering",
@@ -78,6 +77,18 @@
     "photo": "CMS/team/vmorello.webp",
     "links": [
       { "type": "Linkedin", "url": "https://www.linkedin.com/in/vincent-morello/" }
+    ]
+  },
+  {
+    "name": "Giulia Sannai",
+    "role": "Event Manager",
+    "division": "creative",
+    "highlight": "Musicologist & Communication Expert",
+    "bio": "Event Manager at Elemento Cloud, I am responsible for the organization and execution of our events. I am a musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.",
+    "photo": "CMS/team/gsannai.webp",
+    "links": [
+      { "type": "Instagram", "url": "https://www.instagram.com/giulia_sunny_/" },
+      { "type": "Linkedin", "url": "https://www.linkedin.com/in/giulia-sannai-9b4302256/" }
     ]
   },
   {
