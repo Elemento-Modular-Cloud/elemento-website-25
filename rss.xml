@@ -5,8 +5,15 @@
     <link>https://elemento.cloud/blog.html</link>
     <description>Cloud computing insights, industry news, and technology stories from Elemento.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elemento.cloud/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk</title>
+      <link>https://elemento.cloud/blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html</link>
+      <guid isPermaLink="true">https://elemento.cloud/blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html</guid>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <description>After Broadcom&#x27;s acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.</description>
+    </item>
     <item>
       <title>The Future of Cloud: What &quot;Cloud&quot; Really Means, Why It&#x27;s Centralized, and What Comes Next</title>
       <link>https://elemento.cloud/blog-posts/2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-centralized-and-what-comes-next.html</link>
