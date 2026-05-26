@@ -1896,5 +1896,31 @@
       "it",
       "fr"
     ]
+  },
+  {
+    "stem": "videos",
+    "legacyPath": "videos.html",
+    "group": "root",
+    "slug": "videos",
+    "title": "Elemento | Videos | Keynotes, Webinars &amp; Media",
+    "description": "Watch Elemento keynotes, webinars, and product recordings. Embedded videos and related resources from the Elemento team.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/atmosphere.css",
+      "css/planet-styles/planet-blog.css",
+      "css/videos.css",
+      "css/breadcrumb.css"
+    ],
+    "extraScripts": [
+      "js/atmosphere_hero.js",
+      "js/videos.js"
+    ],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
   }
 ]
