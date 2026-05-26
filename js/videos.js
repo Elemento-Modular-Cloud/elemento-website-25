@@ -3,7 +3,6 @@
  */
 (function () {
     let videos = [];
-    let expandedId = null;
 
     document.addEventListener('DOMContentLoaded', loadVideos);
 
@@ -51,151 +50,56 @@
             return;
         }
 
-        grid.innerHTML = videos.map((video) => renderCard(video)).join('');
-        bindCardInteractions(grid);
+        grid.innerHTML = videos.map((video) => renderItem(video)).join('');
     }
 
-    function renderCard(video) {
+    function renderItem(video) {
         const id = escapeHtml(video.id || '');
-        const title = escapeHtml(video.title || 'Untitled');
-        const summary = escapeHtml(video.summary || '');
-        const date = video.date ? formatDate(video.date) : '';
-        const thumbnail = escapeHtml(getThumbnail(video));
+        const iframeTitle = escapeHtml(video.title || 'Video player');
         const tags = (video.tags || [])
             .map((t) => `<span class="video-tag">${escapeHtml(t)}</span>`)
             .join('');
         const featured = video.featured
             ? '<span class="video-featured-badge">Featured</span>'
             : '';
+        const metaBlock =
+            featured || tags
+                ? `<div class="video-content">${featured}${tags ? `<div class="video-tags">${tags}</div>` : ''}</div>`
+                : '';
         const isLink = video.provider === 'link';
-        const playLabel = isLink ? 'Open resource' : 'Play video';
         const cardClass = `video-card${video.featured ? ' video-card--featured' : ''}${isLink ? ' video-card--link' : ''}`;
-        const interactiveAttrs = isLink
-            ? ''
-            : ` tabindex="0" role="button" aria-expanded="false" aria-label="${title}. ${playLabel}."`;
+        const embedUrl = !isLink ? getEmbedUrl(video) : null;
+        const allow =
+            typeof video.allow === 'string' && video.allow.trim()
+                ? video.allow.trim()
+                : 'accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;';
+        const referrerPolicy =
+            typeof video.referrerPolicy === 'string' && video.referrerPolicy.trim()
+                ? video.referrerPolicy.trim()
+                : 'strict-origin-when-cross-origin';
 
         return `
             <article
                 class="${cardClass}"
                 data-video-id="${id}"
-                data-provider="${escapeHtml(video.provider || '')}"${interactiveAttrs}
+                data-provider="${escapeHtml(video.provider || '')}"
             >
-                <div class="video-card-header">
-                    <div class="video-thumbnail">
-                        <img src="${thumbnail}" alt="" loading="lazy" width="480" height="270">
-                        <span class="video-play-overlay" aria-hidden="true">
-                            <i class="fas ${isLink ? 'fa-external-link-alt' : 'fa-play'}"></i>
-                        </span>
-                    </div>
-                    <div class="video-content">
-                        ${featured}
-                        <h2 class="video-title">${title}</h2>
-                        ${date ? `<p class="video-meta">${date}</p>` : ''}
-                        ${summary ? `<p class="video-summary">${summary}</p>` : ''}
-                        ${tags ? `<div class="video-tags">${tags}</div>` : ''}
-                        ${
-                            isLink
-                                ? `<a href="${escapeHtml(video.url || '#')}" class="btn btn-secondary video-link-btn" target="_blank" rel="noopener noreferrer">Open resource</a>`
-                                : `<button type="button" class="btn btn-secondary video-play-btn">${playLabel}</button>`
-                        }
-                    </div>
-                </div>
-                <div class="video-embed-panel" hidden>
-                    <div class="video-embed"></div>
-                </div>
+                ${metaBlock}
+                ${
+                    isLink
+                        ? `<div class="video-link-row"><a href="${escapeHtml(
+                              video.url || '#'
+                          )}" class="btn btn-secondary video-link-btn" target="_blank" rel="noopener noreferrer">Open resource</a></div>`
+                        : embedUrl
+                          ? `<div class="video-embed"><iframe loading="lazy" title="${iframeTitle}" src="${escapeHtml(
+                                embedUrl
+                            )}" allow="${escapeHtml(allow)}" referrerpolicy="${escapeHtml(
+                                referrerPolicy
+                            )}" allowfullscreen></iframe></div>`
+                          : `<div class="video-embed video-embed--missing"><p>Missing embed URL.</p></div>`
+                }
             </article>
         `;
-    }
-
-    function bindCardInteractions(grid) {
-        grid.querySelectorAll('.video-card').forEach((card) => {
-            const provider = card.dataset.provider;
-            if (provider === 'link') return;
-
-            const playBtn = card.querySelector('.video-play-btn');
-            const handler = (e) => {
-                if (e.target.closest('.video-link-btn')) return;
-                e.preventDefault();
-                toggleCard(card);
-            };
-
-            card.addEventListener('click', handler);
-            card.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleCard(card);
-                }
-            });
-            if (playBtn) {
-                playBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    toggleCard(card);
-                });
-            }
-        });
-    }
-
-    function toggleCard(card) {
-        const id = card.dataset.videoId;
-        const video = videos.find((v) => v.id === id);
-        if (!video || video.provider === 'link') return;
-
-        const isExpanded = card.classList.contains('is-expanded');
-
-        document.querySelectorAll('.video-card.is-expanded').forEach((other) => {
-            if (other !== card) collapseCard(other);
-        });
-
-        if (isExpanded) {
-            collapseCard(card);
-            expandedId = null;
-        } else {
-            expandCard(card, video);
-            expandedId = id;
-        }
-    }
-
-    function expandCard(card, video) {
-        card.classList.add('is-expanded');
-        card.setAttribute('aria-expanded', 'true');
-
-        const panel = card.querySelector('.video-embed-panel');
-        const embedRoot = card.querySelector('.video-embed');
-        if (!panel || !embedRoot) return;
-
-        panel.hidden = false;
-
-        if (!embedRoot.querySelector('iframe')) {
-            const iframe = createEmbedIframe(video);
-            if (iframe) embedRoot.appendChild(iframe);
-        }
-
-        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-
-    function collapseCard(card) {
-        card.classList.remove('is-expanded');
-        card.setAttribute('aria-expanded', 'false');
-
-        const panel = card.querySelector('.video-embed-panel');
-        if (panel) panel.hidden = true;
-    }
-
-    function createEmbedIframe(video) {
-        const src = getEmbedUrl(video);
-        if (!src) return null;
-
-        const iframe = document.createElement('iframe');
-        iframe.src = src;
-        iframe.title = video.title || 'Video player';
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute(
-            'allow',
-            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-        );
-        iframe.loading = 'lazy';
-        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        return iframe;
     }
 
     function getEmbedUrl(video) {
@@ -206,28 +110,13 @@
         if (provider === 'vimeo' && video.videoId) {
             return `https://player.vimeo.com/video/${encodeURIComponent(video.videoId)}`;
         }
+        if (provider === 'gumlet' && video.embedUrl) {
+            return video.embedUrl;
+        }
         if (provider === 'iframe' && video.embedUrl) {
             return video.embedUrl;
         }
         return null;
-    }
-
-    function getThumbnail(video) {
-        if (video.thumbnail) return video.thumbnail;
-        if (video.provider === 'youtube' && video.videoId) {
-            return `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
-        }
-        return 'assets/img/banner.webp';
-    }
-
-    function formatDate(dateString) {
-        const date = new Date(dateString);
-        if (Number.isNaN(date.getTime())) return dateString;
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-        });
     }
 
     function escapeHtml(str) {

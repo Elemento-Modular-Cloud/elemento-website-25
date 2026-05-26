@@ -1,13 +1,42 @@
 [
   {
-    "id": "keynote-2025",
-    "title": "Keynote 2025",
-    "date": "2025-01-15",
-    "summary": "Elemento keynote recording — product vision, platform updates, and the roadmap ahead.",
-    "provider": "youtube",
-    "videoId": "urhPkWeF3Yg",
-    "thumbnail": "https://img.youtube.com/vi/urhPkWeF3Yg/hqdefault.jpg",
-    "tags": ["keynote", "product"],
-    "featured": true
+    "id": "gumlet-6a157291f790155bb593adfa",
+    "title": "Gumlet video",
+    "date": "2026-05-26",
+    "summary": "Recording hosted on Gumlet.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a157291f790155bb593adfa?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f1f790155bb593b82e",
+    "title": "Gumlet video",
+    "date": "2026-05-26",
+    "summary": "Recording hosted on Gumlet.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b82e?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f1f790155bb593b826",
+    "title": "Gumlet video",
+    "date": "2026-05-26",
+    "summary": "Recording hosted on Gumlet.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b826?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a157291f790155bb593adfc",
+    "title": "Gumlet video",
+    "date": "2026-05-26",
+    "summary": "Recording hosted on Gumlet.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a157291f790155bb593adfc?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
   }
 ]
