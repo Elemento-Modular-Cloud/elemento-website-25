@@ -79,6 +79,7 @@
     const base = getAssetBase();
     const path = String(relativePath).replace(/^\//, '').replace(/^\.\//, '');
     if (!base) return path;
+    if (base === '/') return `/${path}`;
     if (path.startsWith(base)) return path;
     return base + path;
   }

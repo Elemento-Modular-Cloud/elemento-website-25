@@ -2,13 +2,14 @@
  * Rewrite root-relative asset paths in legacy HTML body for nested locales (e.g. /it/).
  */
 export function prefixBodyAssets(html: string, assetBase: string): string {
-  if (!assetBase) return html;
+  const base = assetBase || '/';
+  const prefix = base.endsWith('/') ? base : `${base}/`;
 
   let out = html;
 
-  const rewrite = (attr: string, prefix: string) => {
-    const re = new RegExp(`(${attr}=["'])(?:\\.\\/?)?(${prefix})`, 'g');
-    out = out.replace(re, `$1${assetBase}$2`);
+  const rewrite = (attr: string, root: string) => {
+    const re = new RegExp(`(${attr}=["'])(?:\\.\\/?)?(${root})`, 'g');
+    out = out.replace(re, `$1${prefix}$2`);
   };
 
   rewrite('src', 'assets');
@@ -17,9 +18,13 @@ export function prefixBodyAssets(html: string, assetBase: string): string {
   rewrite('href', 'components');
   rewrite('src', 'CMS');
   rewrite('href', 'CMS');
+  rewrite('src', 'css');
+  rewrite('href', 'css');
+  rewrite('src', 'js');
+  rewrite('href', 'js');
 
-  out = out.replace(/url\(\s*['"]?(?:\.\/)?assets\//g, `url(${assetBase}assets/`);
-  out = out.replace(/url\(\s*['"]?(?:\.\/)?CMS\//g, `url(${assetBase}CMS/`);
+  out = out.replace(/url\(\s*['"]?(?:\.\/)?assets\//g, `url(${prefix}assets/`);
+  out = out.replace(/url\(\s*['"]?(?:\.\/)?CMS\//g, `url(${prefix}CMS/`);
 
   return out;
 }

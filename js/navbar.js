@@ -66,8 +66,12 @@ class Navbar {
         else if (p.startsWith('/fr/')) p = p.slice(3) || '/';
         else if (p === '/fr') return 'index';
         if (p === '/' || p === '/index.html') return 'index';
-        const m = p.match(/^\/(.+?)\.html$/);
-        return m ? m[1] : 'index';
+        const htmlMatch = p.match(/^\/(.+?)\.html$/);
+        if (htmlMatch) return htmlMatch[1];
+        const bareMatch = p.match(/^\/([^/]+)$/);
+        if (bareMatch) return bareMatch[1];
+        const nested = p.match(/^\/(.+)$/);
+        return nested ? nested[1] : 'index';
     }
 
     getPathPrefix() {
@@ -193,8 +197,25 @@ class Navbar {
 
     // Add method to check if current page is a product page
     isProductPage() {
-        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', /* 'orbital.html', */ 'products.html'];
-        return productPages.includes(this.currentPage);
+        const productStems = ['atomos', 'electros', 'atomosphere', 'products'];
+        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'products.html'];
+        return productStems.includes(this.getPageStem()) || productPages.includes(this.currentPage);
+    }
+
+    isResourcesPage() {
+        const resourceStems = ['blog', 'videos'];
+        const resourcePages = ['blog.html', 'videos.html'];
+        return resourceStems.includes(this.getPageStem()) || resourcePages.includes(this.currentPage);
+    }
+
+    getActiveClassByStem(stem) {
+        return this.getPageStem() === stem ? 'active' : '';
+    }
+
+    getSectionNavActiveClass(section) {
+        if (section === 'products' && this.isProductPage()) return 'active';
+        if (section === 'resources' && this.isResourcesPage()) return 'active';
+        return '';
     }
 
     getBasePath() {
@@ -276,20 +297,19 @@ class Navbar {
                     </a>
                     
                     <ul class="nav-menu">
-                        <li class="dropdown">
-                            <a href="${this.getLocalizedHref('products.html')}" class="nav-link ${this.getActiveClass('products.html')}">${this.t('nav.products', 'Products')} <span class="dropdown-arrow">▼</span></a>
-                            <!-- Mobile dropdown menu integrated into nav-menu -->
+                        <li class="dropdown" data-nav-dropdown="products">
+                            <a href="${this.getLocalizedHref('products.html')}" class="nav-link ${this.getSectionNavActiveClass('products')}">${this.t('nav.products', 'Products')} <span class="dropdown-arrow">▼</span></a>
                             <div class="dropdown-menu mobile-dropdown">
                                 <ul>
-                                    <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClass('atomos.html')}">
+                                    <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
                                         <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
                                         <span class="">AtomOS</span>
                                     </a></li>
-                                    <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                    <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClassByStem('electros')}">
                                         <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                         <span class="">Electros</span>
                                     </a></li>
-                                    <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
+                                    <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClassByStem('atomosphere')}">
                                         <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomosphere</span>
                                     </a></li>
@@ -299,29 +319,44 @@ class Navbar {
                         <li><a href="${this.getLocalizedHref('technology.html')}" class="nav-link ${this.getActiveClass('technology.html')}">${this.t('nav.technology', 'Technology')}</a></li>
                         <li><a href="${this.getLocalizedHref('about.html')}" class="nav-link ${this.getActiveClass('about.html')}">${this.t('nav.about', 'About')}</a></li>
                         <li><a href="${this.getLocalizedHref('contact.html')}" class="nav-link ${this.getActiveClass('contact.html')}">${this.t('nav.contact', 'Contact')}</a></li>
-                        <li><a href="${this.getLocalizedHref('blog.html')}" class="nav-link ${this.getActiveClass('blog.html')}">${this.t('nav.blog', 'Blog')}</a></li>
+                        <li class="dropdown" data-nav-dropdown="resources">
+                            <a href="${this.getLocalizedHref('blog.html')}" class="nav-link ${this.getSectionNavActiveClass('resources')}">${this.t('nav.resources', 'Resources')} <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-menu mobile-dropdown">
+                                <ul>
+                                    <li><a href="${this.getLocalizedHref('blog.html')}" class="dropdown-link ${this.getActiveClassByStem('blog')}">${this.t('nav.blog', 'Blog')}</a></li>
+                                    <li><a href="${this.getLocalizedHref('videos.html')}" class="dropdown-link ${this.getActiveClassByStem('videos')}">${this.t('nav.videos', 'Videos')}</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="nav-cta-group">
                             <a href="${this.getLocalizedHref('signup.html')}" class="nav-link nav-cta-link">${this.t('nav.signup', 'Signup')}</a>
                             <a href="https://book.elemento.cloud/" class="nav-link nav-cta-link nav-cta-link--book" target="_blank" rel="noopener noreferrer">${this.t('nav.bookCall', 'Book a Call')}</a>
                         </li>
                     </ul>
 
-                    <!-- Desktop dropdown menu (separate from mobile) -->
-                    <div class="dropdown-menu desktop-dropdown">
+                    <div class="dropdown-menu desktop-dropdown" data-nav-dropdown-panel="products">
                         <div class="container">
                             <ul>
-                                <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClass('atomos.html')}">
-                                    <img src="${basePath}assets/logos/Atomos.svg" alt="Atomos icon" class="product-icon" width="20" height="20">
+                                <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
+                                    <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
                                     <span class="">AtomOS</span>
                                 </a></li>
-                                <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClass('electros.html')}">
+                                <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClassByStem('electros')}">
                                     <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                     <span class="">Electros</span>
                                 </a></li>
-                                <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClass('atomosphere.html')}">
+                                <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClassByStem('atomosphere')}">
                                     <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomosphere</span>
                                 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu desktop-dropdown" data-nav-dropdown-panel="resources">
+                        <div class="container">
+                            <ul>
+                                <li><a href="${this.getLocalizedHref('blog.html')}" class="dropdown-link ${this.getActiveClassByStem('blog')}">${this.t('nav.blog', 'Blog')}</a></li>
+                                <li><a href="${this.getLocalizedHref('videos.html')}" class="dropdown-link ${this.getActiveClassByStem('videos')}">${this.t('nav.videos', 'Videos')}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -365,8 +400,7 @@ class Navbar {
         this.initThemeToggle();
         this.initLangSwitcher();
 
-        // Show dropdown menu if on a product page
-        this.showProductDropdown();
+        this.showSectionDropdowns();
     }
 
     initLangSwitcher() {
@@ -426,80 +460,72 @@ class Navbar {
         });
     }
 
-    // Add method to show dropdown menu on product pages
-    showProductDropdown() {
+    showSectionDropdowns() {
         if (this.isProductPage()) {
-            const desktopDropdownMenu = document.querySelector('.desktop-dropdown');
-            
-            if (desktopDropdownMenu) {
-                desktopDropdownMenu.classList.add('show');
-            }
-            // Mobile dropdown is always visible when mobile menu is active
+            document.querySelector('[data-nav-dropdown-panel="products"]')?.classList.add('show');
+        }
+        if (this.isResourcesPage()) {
+            document.querySelector('[data-nav-dropdown-panel="resources"]')?.classList.add('show');
         }
     }
 
-    initDropdowns() {
-        const dropdowns = document.querySelectorAll('.dropdown');
-        const desktopDropdownMenu = document.querySelector('.desktop-dropdown'); // Desktop dropdown
-        const mobileDropdownMenu = document.querySelector('.mobile-dropdown'); // Mobile dropdown
-        
-        // Add timeout variables for delay functionality
-        let hideTimeout;
-        let showTimeout;
-        
-        dropdowns.forEach(dropdown => {
-            const dropdownLink = dropdown.querySelector('.nav-link');
-            
-            if (dropdownLink) {
-                // Desktop hover functionality with delay
-                dropdown.addEventListener('mouseenter', () => {
-                    if (window.innerWidth > 768 && desktopDropdownMenu) {
-                        // Clear any existing hide timeout
-                        clearTimeout(hideTimeout);
-                        
-                        // Show dropdown immediately on enter
-                        desktopDropdownMenu.classList.add('show');
-                    }
-                });
-                
-                dropdown.addEventListener('mouseleave', () => {
-                    if (window.innerWidth > 768 && !this.isProductPage() && desktopDropdownMenu) {
-                        // Set a delay before hiding the dropdown
-                        hideTimeout = setTimeout(() => {
-                            desktopDropdownMenu.classList.remove('show');
-                        }, 300); // 300ms delay
-                    }
-                });
-                
-                // Also add mouseenter/mouseleave to the dropdown menu itself
-                if (desktopDropdownMenu) {
-                    desktopDropdownMenu.addEventListener('mouseenter', () => {
-                        if (window.innerWidth > 768) {
-                            // Clear any existing hide timeout when hovering over the menu
-                            clearTimeout(hideTimeout);
-                        }
-                    });
-                    
-                    desktopDropdownMenu.addEventListener('mouseleave', () => {
-                        if (window.innerWidth > 768 && !this.isProductPage()) {
-                            // Set a delay before hiding the dropdown
-                            hideTimeout = setTimeout(() => {
-                                desktopDropdownMenu.classList.remove('show');
-                            }, 300); // 300ms delay
-                        }
-                    });
-                }
-                
-                // Mobile/tablet click functionality - Products link is always clickable
-                dropdownLink.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        // Allow normal navigation to products page
-                        // The dropdown is always visible in mobile menu
-                    }
-                });
-                
+    shouldKeepDropdownOpen(panelId) {
+        if (panelId === 'products') return this.isProductPage();
+        if (panelId === 'resources') return this.isResourcesPage();
+        return false;
+    }
 
-            }
+    hideAllDesktopDropdowns(exceptPanelId = null) {
+        document.querySelectorAll('.desktop-dropdown').forEach((menu) => {
+            const panelId = menu.getAttribute('data-nav-dropdown-panel');
+            if (exceptPanelId && panelId === exceptPanelId) return;
+            if (this.shouldKeepDropdownOpen(panelId)) return;
+            menu.classList.remove('show');
+        });
+    }
+
+    initDropdowns() {
+        const dropdowns = document.querySelectorAll('.dropdown[data-nav-dropdown]');
+        let hideTimeout;
+
+        dropdowns.forEach((dropdown) => {
+            const panelId = dropdown.dataset.navDropdown;
+            const desktopDropdownMenu = document.querySelector(
+                `[data-nav-dropdown-panel="${panelId}"]`
+            );
+            const dropdownLink = dropdown.querySelector('.nav-link');
+
+            if (!dropdownLink || !desktopDropdownMenu) return;
+
+            dropdown.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 768) {
+                    clearTimeout(hideTimeout);
+                    this.hideAllDesktopDropdowns(panelId);
+                    desktopDropdownMenu.classList.add('show');
+                }
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                if (window.innerWidth > 768 && !this.shouldKeepDropdownOpen(panelId)) {
+                    hideTimeout = setTimeout(() => {
+                        desktopDropdownMenu.classList.remove('show');
+                    }, 300);
+                }
+            });
+
+            desktopDropdownMenu.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 768) {
+                    clearTimeout(hideTimeout);
+                }
+            });
+
+            desktopDropdownMenu.addEventListener('mouseleave', () => {
+                if (window.innerWidth > 768 && !this.shouldKeepDropdownOpen(panelId)) {
+                    hideTimeout = setTimeout(() => {
+                        desktopDropdownMenu.classList.remove('show');
+                    }, 300);
+                }
+            });
         });
     }
 

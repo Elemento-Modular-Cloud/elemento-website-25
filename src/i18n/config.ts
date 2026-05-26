@@ -61,8 +61,12 @@ function stripLocalePrefix(pathname: string): string {
 export function stemFromPathname(pathname: string): string {
   const p = stripLocalePrefix(pathname);
   if (p === '/' || p === '/index.html') return 'index';
-  const m = p.match(/^\/(.+?)\.html$/);
-  return m ? m[1] : 'index';
+  const htmlMatch = p.match(/^\/(.+?)\.html$/);
+  if (htmlMatch) return htmlMatch[1];
+  const bareMatch = p.match(/^\/([^/]+)$/);
+  if (bareMatch) return bareMatch[1];
+  const nested = p.match(/^\/(.+)$/);
+  return nested ? nested[1] : 'index';
 }
 
 export function absoluteUrl(locale: Locale, stem: string = 'index'): string {

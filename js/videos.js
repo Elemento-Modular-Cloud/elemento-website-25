@@ -14,7 +14,12 @@
         grid.innerHTML =
             '<div class="videos-loading"><i class="fas fa-spinner" aria-hidden="true"></i><p>Loading videos...</p></div>';
 
-        fetch('CMS/videos.json')
+        const videosUrl =
+            typeof window !== 'undefined' && window.ElementoI18n?.assetUrl
+                ? window.ElementoI18n.assetUrl('CMS/videos.json')
+                : '/CMS/videos.json';
+
+        fetch(videosUrl)
             .then((res) => {
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 return res.json();

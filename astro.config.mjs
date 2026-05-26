@@ -7,6 +7,7 @@ const SITE = 'https://elemento.cloud';
 export default defineConfig({
   site: SITE,
   output: 'static',
+  trailingSlash: 'never',
   build: {
     format: 'file',
     assets: '_astro',
@@ -22,11 +23,7 @@ export default defineConfig({
     '/en/technology/cloud-network.html': '/technology.html',
     '/en/technology/404.html': '/404.html',
     '/grazie/atomos-demo-it': '/it/grazie/atomos-demo.html',
-    '/grazie/atomos-demo-it/': '/it/grazie/atomos-demo.html',
-    '/grazie/atomos-demo-it/index.html': '/it/grazie/atomos-demo.html',
     '/grazie/full-solution-demo-it': '/it/grazie/full-solution-demo.html',
-    '/grazie/full-solution-demo-it/': '/it/grazie/full-solution-demo.html',
-    '/grazie/full-solution-demo-it/index.html': '/it/grazie/full-solution-demo.html',
   },
   vite: {
     build: {
