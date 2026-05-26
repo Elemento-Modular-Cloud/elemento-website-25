@@ -238,6 +238,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://elemento.cloud/videos.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://elemento.cloud/rss.xml</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>

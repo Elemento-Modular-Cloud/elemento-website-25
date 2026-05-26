@@ -115,6 +115,7 @@ class Navbar {
                         <li><a href="${basePath}about.html" class="nav-link ${this.getActiveClass('about.html')}">About</a></li>
                         <li><a href="${basePath}contact.html" class="nav-link ${this.getActiveClass('contact.html')}">Contact</a></li>
                         <li><a href="${basePath}blog.html" class="nav-link ${this.getActiveClass('blog.html')}">Blog</a></li>
+                        <!-- Videos nav hidden temporarily; page remains at videos.html -->
                         <li class="nav-cta-group">
                             <a href="${basePath}signup.html" class="nav-link nav-cta-link">Signup</a>
                             <a href="https://book.elemento.cloud/" class="nav-link nav-cta-link nav-cta-link--book" target="_blank" rel="noopener noreferrer">Book a Call</a>
