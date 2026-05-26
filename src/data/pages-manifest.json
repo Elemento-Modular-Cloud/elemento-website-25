@@ -1027,6 +1027,26 @@
     ]
   },
   {
+    "stem": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk",
+    "legacyPath": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+    "group": "blog-posts",
+    "slug": "2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk",
+    "title": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk | Elemento Blog",
+    "description": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "blog-posts/404",
     "legacyPath": "blog-posts/404.html",
     "group": "blog-posts",
