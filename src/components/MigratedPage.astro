@@ -25,7 +25,7 @@ const pageDescription =
   locale !== 'en' && pageUi?.description ? pageUi.description : entry.description;
 let bodyHtml = extractLegacyBody(entry.legacyPath);
 bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
-bodyHtml = prefixBodyPageLinks(bodyHtml, entry.stem);
+bodyHtml = prefixBodyPageLinks(bodyHtml, entry.stem, locale);
 bodyHtml = prefixBodyAssets(bodyHtml, assetBase);
 const scripts =
   entry.extraScripts.length > 0 ? entry.extraScripts : extractLegacyScripts(entry.legacyPath);

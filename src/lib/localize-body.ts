@@ -16,24 +16,24 @@ const REPLACEMENT_FILES: Partial<Record<Locale, ReplacementFile>> = {
   fr: frReplacements as ReplacementFile,
 };
 
-/** Keep diagram filenames (e.g. Products.svg) out of string replacement passes. */
-const DIAGRAM_ASSET_SRC_RE =
-  /(src=["'])(?:\.\/)?assets\/diagrams\/[^"']+\.svg(["'])/gi;
+/** Keep asset filenames (diagrams, hero images, etc.) out of string replacement passes. */
+const PROTECTED_ASSET_SRC_RE =
+  /(src=["'])(?:\.\/)?assets\/(?:diagrams|img|logos)\/[^"']+(["'])/gi;
 
-function maskDiagramAssetSrc(html: string): { html: string; tokens: string[] } {
+function maskProtectedAssetSrc(html: string): { html: string; tokens: string[] } {
   const tokens: string[] = [];
-  const masked = html.replace(DIAGRAM_ASSET_SRC_RE, (match) => {
-    const token = `__EL_DIAGRAM_SRC_${tokens.length}__`;
+  const masked = html.replace(PROTECTED_ASSET_SRC_RE, (match) => {
+    const token = `__EL_ASSET_SRC_${tokens.length}__`;
     tokens.push(match);
     return token;
   });
   return { html: masked, tokens };
 }
 
-function unmaskDiagramAssetSrc(html: string, tokens: string[]): string {
+function unmaskProtectedAssetSrc(html: string, tokens: string[]): string {
   let out = html;
   tokens.forEach((value, index) => {
-    out = out.replace(`__EL_DIAGRAM_SRC_${index}__`, value);
+    out = out.replace(`__EL_ASSET_SRC_${index}__`, value);
   });
   return out;
 }
@@ -294,7 +294,7 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
   const pages = ui.pages as Record<string, { heroTitle?: string; heroSubtitle?: string }>;
   const pageKey = stem.includes('/') ? stem.split('/').pop()! : stem;
   const page = pages[pageKey];
-  const { html: maskedHtml, tokens: diagramSrcTokens } = maskDiagramAssetSrc(html);
+  const { html: maskedHtml, tokens: protectedAssetTokens } = maskProtectedAssetSrc(html);
   let out = maskedHtml;
 
   const skipLink =
@@ -307,6 +307,32 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
   const legacy: Replacement[] = [
     ['Read more', ui.blog.readMore],
     ['Learn more', locale === 'fr' ? 'En savoir plus' : 'Scopri di più'],
+    ...(locale === 'it'
+      ? ([
+          ['mission and values', 'missione e valori'],
+          ['complete product suite', 'suite completa di prodotti'],
+          ['advanced technology stack', 'stack tecnologico avanzato'],
+          ['company mission', 'missione aziendale'],
+          ['product solutions', 'soluzioni di prodotto'],
+          ['company mission', 'missione aziendale'],
+          ['technical architecture', 'architettura tecnica'],
+          ['team and mission', 'team e sulla nostra missione'],
+          ['success stories', 'storie di successo'],
+          ['C4 protocol technology', 'tecnologia del protocollo C4'],
+          ['deployment support', 'supporto per l\'implementazione'],
+          ['vendor neutrality philosophy', 'filosofia di neutralità del fornitore'],
+          ['company values', 'valori aziendali'],
+          ['sustainable cloud initiatives', 'iniziative di cloud sostenibile'],
+          ['pricing models', 'modelli di prezzo'],
+          ['technical documentation', 'documentazione tecnica'],
+          ['technical capabilities', 'capacità tecniche'],
+          ['latest insights and updates', 'ultimi approfondimenti e aggiornamenti'],
+          ['product implementations', 'implementazioni dei prodotti'],
+          ['company vision', 'visione aziendale'],
+          ['product ecosystem', 'ecosistema di prodotti'],
+          ['technical insights', 'approfondimenti tecnici'],
+        ] as Replacement[])
+      : []),
     ['Get Started', locale === 'fr' ? 'Commencer' : 'Inizia'],
     ['Start Now', locale === 'fr' ? 'Commencer' : 'Inizia ora'],
     ['Start Free Trial', locale === 'fr' ? 'Essai gratuit' : 'Inizia la prova gratuita'],
@@ -315,18 +341,36 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     ['Book a Call', ui.nav.bookCall],
     ['Book a call', ui.nav.bookCall],
     ['Skip to main content', skipLink],
+    ...(locale === 'it'
+      ? ([
+          ['Deploy in minutes', 'Distribuisci in pochi minuti'],
+          ['Scale as you grow', 'Scala man mano che cresci'],
+          ['Enterprise security', 'Sicurezza enterprise'],
+          ['Zero-downtime migration', 'Migrazione senza downtime'],
+          ['Compliance certified', 'Conformità certificata'],
+          ['Multi-cloud support', 'Supporto multi-cloud'],
+          ['Automated workflows', 'Flussi di lavoro automatizzati'],
+          ['Tool integration', 'Integrazione strumenti'],
+          ['Browse books', 'Sfoglia i libri'],
+          ['Read in wiki', 'Leggi nel wiki'],
+          ['Open tech pack', 'Apri il tech pack'],
+          ['Search wiki', 'Cerca nel wiki'],
+          ['Open book', 'Apri'],
+          ['View comparisons', 'Guarda le comparazioni'],
+        ] as Replacement[])
+      : []),
   ];
 
   const perPageIt: Record<string, Replacement[]> = {
     index: [
-      ['Ready. Set. Cloud.', 'Pronti. Via. Cloud.'],
+      ['Ready. Set. Cloud.', 'Ready. Set. Cloud.'],
       [
         /Build and Run Your Own(?:\s|<[^>]+>\s*)+Cloud Infrastructure(?:\s|<[^>]+>\s*)+<span class="pixel-accent">with No Lock-In<\/span>/gi,
-        'Costruisci ed esegui la tua<br> infrastruttura cloud<br> <span class="pixel-accent">senza vincoli</span>',
+        'Costruisci ed orchestra la tua<br> infrastruttura cloud<br> <span class="pixel-accent">senza vincoli</span>',
       ],
       [
         /Elemento lets you build and run your own cloud infrastructure with complete freedom\.[\s\S]*?<span class="pixel-accent">Your cloud\. Your rules, Your freedom\.<\/span>/gi,
-        'Elemento ti permette di costruire e gestire la tua infrastruttura cloud in totale libertà. Tu scegli dove gira e noi automatizziamo tutto per te.<br><span class="pixel-accent">Il tuo cloud. Le tue regole. La tua libertà.</span>',
+        'Elemento ti consente di creare ed gestire la tua infrastruttura cloud in completa libertà. Scegli dove eseguirlo e noi automatizziamo tutto per te.<br><span class="pixel-accent">Il tuo cloud. Le tue regole. La tua libertà.</span>',
       ],
     ],
     about: [
@@ -381,6 +425,22 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
       ['Configure Electros CLI from ~/.elemento/config', 'Configura la CLI Electros da ~/.elemento/config'],
       ['Start managing VMs across all your clouds!', 'Inizia a gestire le VM su tutti i tuoi cloud!'],
       ['Ready to manage your multicloud infrastructure!', 'Pronto a gestire la tua infrastruttura multicloud!'],
+      [
+        'Surfaces to run<br><small>Linux, macOS, Windows apps, plus elemento-cli</small>',
+        "Modalità per eseguire<br><small>l'app Linux, macOS, Windows e elemento-cli</small>",
+      ],
+      [
+        'Cloud & hybrid targets<br><small>AWS, Azure, Google Cloud, and on-prem infrastructure</small>',
+        "Target cloud e ibridi<br><small>AWS, Azure, Google Cloud e all'infrastruttura on-premise</small>",
+      ],
+      [
+        'Ship-ready builds<br><small>AppImage, DMG, EXE, and DEB—x64 and ARM64 where supported</small>',
+        'Build pronte<br><small>AppImage, DMG, EXE e DEB—x64 e ARM64 dove supportato</small>',
+      ],
+      [
+        /Electros:<br>\s*<span class="pixel-accent">Any-Cloud<\/span>\s*Control Center/gi,
+        'Electros:<br><span class="pixel-accent">La dashboard</span> Centro di controllo di ogni Cloud',
+      ],
     ],
     'signup-success': [
       ['Check your email', 'Controlla la tua email'],
@@ -493,5 +553,5 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     }
   }
 
-  return unmaskDiagramAssetSrc(out, diagramSrcTokens);
+  return unmaskProtectedAssetSrc(out, protectedAssetTokens);
 }

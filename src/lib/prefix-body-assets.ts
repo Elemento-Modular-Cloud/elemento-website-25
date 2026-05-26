@@ -1,3 +1,6 @@
+import type { Locale } from '../i18n/config';
+import { localePath } from '../i18n/config';
+
 /**
  * Rewrite root-relative asset paths in legacy HTML body for nested locales (e.g. /it/).
  */
@@ -38,24 +41,29 @@ export function prefixAssetPath(path: string, assetBase: string): string {
   return assetBase + clean;
 }
 
-/** Rewrite internal *.html links to depth-relative paths (works on custom domain + GitHub Pages). */
-export function prefixBodyPageLinks(html: string, stem: string): string {
-  const folderDepth = stem === 'index' ? 0 : stem.split('/').length - 1;
-  const prefix = folderDepth === 0 ? '' : '../'.repeat(folderDepth);
-
+/** Rewrite internal *.html links to site-root paths (e.g. /blog.html), safe under /videos/ in dev. */
+export function prefixBodyPageLinks(
+  html: string,
+  _stem: string,
+  locale: Locale = 'en'
+): string {
   return html.replace(/(\shref=["'])([^"'#]+)(["'])/gi, (match, open, href, close) => {
     if (/^(https?:|\/\/|mailto:|tel:|#|javascript:)/i.test(href)) return match;
 
-    let filename: string | null = null;
+    let pageStem: string | null = null;
     if (href.startsWith('/')) {
-      const m = href.match(/^\/([^/?#]+\.html)$/);
-      if (m) filename = m[1];
+      const rootFile = href.match(/^\/([^/?#]+\.html)$/);
+      if (rootFile) pageStem = rootFile[1].replace(/\.html$/, '') || 'index';
+      const localeFile = href.match(/^\/(?:it|fr)\/([^/?#]+)\.html$/);
+      if (localeFile) pageStem = localeFile[1].replace(/\.html$/, '') || 'index';
     } else {
-      const clean = href.replace(/^\.\//, '');
-      if (/^[^/?#]+\.html$/.test(clean)) filename = clean;
+      const clean = href.replace(/^\.\//, '').replace(/^(\.\.\/)+/, '');
+      if (/^[^/?#]+\.html$/.test(clean)) {
+        pageStem = clean.replace(/\.html$/, '') || 'index';
+      }
     }
-    if (!filename) return match;
+    if (!pageStem) return match;
 
-    return `${open}${prefix}${filename}${close}`;
+    return `${open}${localePath(locale, pageStem)}${close}`;
   });
 }
