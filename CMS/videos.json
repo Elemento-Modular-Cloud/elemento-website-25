@@ -1,9 +1,9 @@
 [
   {
     "id": "gumlet-6a157291f790155bb593adfa",
-    "title": "Gumlet video",
+    "title": "La Visione di Elemento",
     "date": "2026-05-26",
-    "summary": "Recording hosted on Gumlet.",
+    "summary": "La visione e il percorso di Elemento.",
     "provider": "gumlet",
     "embedUrl": "https://play.gumlet.io/embed/6a157291f790155bb593adfa?background=false&autoplay=false&loop=false&disable_player_controls=false",
     "referrerPolicy": "origin",
@@ -11,9 +11,9 @@
   },
   {
     "id": "gumlet-6a1572f1f790155bb593b82e",
-    "title": "Gumlet video",
+    "title": "Il Protocollo C4",
     "date": "2026-05-26",
-    "summary": "Recording hosted on Gumlet.",
+    "summary": "Introduzione al protocollo C4.",
     "provider": "gumlet",
     "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b82e?background=false&autoplay=false&loop=false&disable_player_controls=false",
     "referrerPolicy": "origin",
@@ -21,9 +21,9 @@
   },
   {
     "id": "gumlet-6a1572f1f790155bb593b826",
-    "title": "Gumlet video",
+    "title": "AtomOS, Cosa è?",
     "date": "2026-05-26",
-    "summary": "Recording hosted on Gumlet.",
+    "summary": "Cos'è AtomOS e a cosa serve.",
     "provider": "gumlet",
     "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b826?background=false&autoplay=false&loop=false&disable_player_controls=false",
     "referrerPolicy": "origin",
@@ -31,11 +31,81 @@
   },
   {
     "id": "gumlet-6a157291f790155bb593adfc",
-    "title": "Gumlet video",
+    "title": "AtomOS Tutorial",
     "date": "2026-05-26",
-    "summary": "Recording hosted on Gumlet.",
+    "summary": "Tutorial pratico su AtomOS.",
     "provider": "gumlet",
     "embedUrl": "https://play.gumlet.io/embed/6a157291f790155bb593adfc?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f14e6fd4b445d31944",
+    "title": "AtomOS Benefits",
+    "date": "2026-05-26",
+    "summary": "I vantaggi di AtomOS.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f14e6fd4b445d31944?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572914e6fd4b445d30eff",
+    "title": "Electros, Cosa è?",
+    "date": "2026-05-26",
+    "summary": "Cos'è Electros e a cosa serve.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572914e6fd4b445d30eff?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f18810b357ebd6a6c1",
+    "title": "Electros Tutorial",
+    "date": "2026-05-26",
+    "summary": "Tutorial pratico su Electros.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f18810b357ebd6a6c1?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572914e6fd4b445d30efd",
+    "title": "I Benefit di Electros",
+    "date": "2026-05-26",
+    "summary": "I vantaggi di Electros.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572914e6fd4b445d30efd?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f1f790155bb593b821",
+    "title": "Confronto fra VMware e AtomOS",
+    "date": "2026-05-26",
+    "summary": "Confronto tra VMware e AtomOS.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b821?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f14e6fd4b445d3193f",
+    "title": "Confronto fra Proxmox e AtomOS",
+    "date": "2026-05-26",
+    "summary": "Confronto tra Proxmox e AtomOS.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f14e6fd4b445d3193f?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
+  },
+  {
+    "id": "gumlet-6a1572f1f790155bb593b824",
+    "title": "Confronto fra Hyper-V e AtomOS",
+    "date": "2026-05-26",
+    "summary": "Confronto tra Hyper-V e AtomOS.",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a1572f1f790155bb593b824?background=false&autoplay=false&loop=false&disable_player_controls=false",
     "referrerPolicy": "origin",
     "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;"
   }
