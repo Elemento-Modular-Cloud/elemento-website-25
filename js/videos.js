@@ -6,12 +6,36 @@
 
     document.addEventListener('DOMContentLoaded', loadVideos);
 
+    function getLabels() {
+        const v = window.__I18N__?.ui?.videos ?? {};
+        return {
+            loading: v.loading ?? 'Loading videos…',
+            errorTitle: v.errorTitle ?? 'Error Loading Videos',
+            errorBody: v.errorBody ?? 'Unable to load videos. Please try again later.',
+            emptyTitle: v.emptyTitle ?? 'No Videos Yet',
+            emptyBody: v.emptyBody ?? 'Check back soon for recordings and resources.',
+            videosLabel: v.videosLabel ?? 'videos',
+            videoLabel: v.videoLabel ?? 'video',
+            featured: v.featured ?? 'Featured',
+            openResource: v.openResource ?? 'Open resource',
+            missingEmbed: v.missingEmbed ?? 'Missing embed URL.',
+        };
+    }
+
+    function resolveVideo(video) {
+        const locale = window.ElementoI18n?.getPageLocale?.() ?? 'en';
+        if (window.ElementoI18n?.resolveCmsEntry) {
+            return window.ElementoI18n.resolveCmsEntry(video, locale);
+        }
+        return video;
+    }
+
     function loadVideos() {
         const grid = document.getElementById('videos-grid');
         if (!grid) return;
 
-        grid.innerHTML =
-            '<div class="videos-loading"><i class="fas fa-spinner" aria-hidden="true"></i><p>Loading videos...</p></div>';
+        const lbl = getLabels();
+        grid.innerHTML = `<div class="videos-loading"><i class="fas fa-spinner" aria-hidden="true"></i><p>${escapeHtml(lbl.loading)}</p></div>`;
 
         const videosUrl =
             typeof window !== 'undefined' && window.ElementoI18n?.assetUrl
@@ -24,43 +48,52 @@
                 return res.json();
             })
             .then((data) => {
-                videos = Array.isArray(data) ? data : [];
+                videos = Array.isArray(data) ? data.map(resolveVideo) : [];
                 updateVideosCount(videos.length);
                 renderVideos();
             })
             .catch((err) => {
                 console.error('Error loading videos:', err);
-                grid.innerHTML =
-                    '<div class="videos-empty"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><h3>Error Loading Videos</h3><p>Unable to load videos. Please try again later.</p></div>';
+                grid.innerHTML = `<div class="videos-empty"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><h3>${escapeHtml(lbl.errorTitle)}</h3><p>${escapeHtml(lbl.errorBody)}</p></div>`;
             });
     }
 
     function updateVideosCount(count) {
         const el = document.getElementById('videos-count');
-        if (el) el.textContent = count;
+        const lbl = getLabels();
+        if (el) {
+            el.textContent = count;
+            const controls = el.closest('.videos-controls');
+            if (controls && !controls.dataset.i18nReady) {
+                const word = count === 1 ? lbl.videoLabel : lbl.videosLabel;
+                controls.innerHTML = `<span><span id="videos-count">${count}</span> ${escapeHtml(word)}</span>`;
+                controls.dataset.i18nReady = '1';
+            }
+        }
     }
 
     function renderVideos() {
         const grid = document.getElementById('videos-grid');
         if (!grid) return;
 
+        const lbl = getLabels();
+
         if (!videos.length) {
-            grid.innerHTML =
-                '<div class="videos-empty"><i class="fas fa-video" aria-hidden="true"></i><h3>No Videos Yet</h3><p>Check back soon for recordings and resources.</p></div>';
+            grid.innerHTML = `<div class="videos-empty"><i class="fas fa-video" aria-hidden="true"></i><h3>${escapeHtml(lbl.emptyTitle)}</h3><p>${escapeHtml(lbl.emptyBody)}</p></div>`;
             return;
         }
 
-        grid.innerHTML = videos.map((video) => renderItem(video)).join('');
+        grid.innerHTML = videos.map((video) => renderItem(video, lbl)).join('');
     }
 
-    function renderItem(video) {
+    function renderItem(video, lbl) {
         const id = escapeHtml(video.id || '');
         const iframeTitle = escapeHtml(video.title || 'Video player');
         const tags = (video.tags || [])
             .map((t) => `<span class="video-tag">${escapeHtml(t)}</span>`)
             .join('');
         const featured = video.featured
-            ? '<span class="video-featured-badge">Featured</span>'
+            ? `<span class="video-featured-badge">${escapeHtml(lbl.featured)}</span>`
             : '';
         const metaBlock =
             featured || tags
@@ -89,14 +122,14 @@
                     isLink
                         ? `<div class="video-link-row"><a href="${escapeHtml(
                               video.url || '#'
-                          )}" class="btn btn-secondary video-link-btn" target="_blank" rel="noopener noreferrer">Open resource</a></div>`
+                          )}" class="btn btn-secondary video-link-btn" target="_blank" rel="noopener noreferrer">${escapeHtml(lbl.openResource)}</a></div>`
                         : embedUrl
                           ? `<div class="video-embed"><iframe loading="lazy" title="${iframeTitle}" src="${escapeHtml(
                                 embedUrl
                             )}" allow="${escapeHtml(allow)}" referrerpolicy="${escapeHtml(
                                 referrerPolicy
                             )}" allowfullscreen></iframe></div>`
-                          : `<div class="video-embed video-embed--missing"><p>Missing embed URL.</p></div>`
+                          : `<div class="video-embed video-embed--missing"><p>${escapeHtml(lbl.missingEmbed)}</p></div>`
                 }
             </article>
         `;

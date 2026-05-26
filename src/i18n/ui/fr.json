@@ -53,6 +53,18 @@
     "articlesLabel": "articles",
     "byAuthor": "Par"
   },
+  "videos": {
+    "loading": "Chargement des vidéos…",
+    "errorTitle": "Erreur lors du chargement des vidéos",
+    "errorBody": "Impossible de charger les vidéos. Veuillez réessayer plus tard.",
+    "emptyTitle": "Aucune vidéo pour l'instant",
+    "emptyBody": "Revenez bientôt pour des enregistrements et des ressources.",
+    "videosLabel": "vidéos",
+    "videoLabel": "vidéo",
+    "featured": "À la une",
+    "openResource": "Ouvrir la ressource",
+    "missingEmbed": "URL d'intégration manquante."
+  },
   "pages": {
     "404": {
       "description": "La page que vous recherchez n'existe pas. Explorez les solutions de plateforme cloud d'Elemento ou revenez à notre page d'accueil.",
@@ -87,6 +99,10 @@
       "description": "Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.",
       "heroTitle": "S'inscrire",
       "heroSubtitle": "Commencez à construire sur Elemento dès aujourd’hui."
+    },
+    "videos": {
+      "title": "Elemento | Vidéos | Keynotes, webinaires et médias",
+      "description": "Regardez les keynotes, webinaires et enregistrements produits d'Elemento. Vidéos intégrées et ressources de l'équipe Elemento."
     },
     "atomos": {
       "description": "AtomOS est un hyperviseur Linux léger et hautes performances pour les cloud nus et sur site. Compatible RHEL, prêt pour le GPU et compatible avec le clustering.",

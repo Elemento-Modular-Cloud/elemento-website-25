@@ -53,6 +53,18 @@
     "articlesLabel": "articles",
     "byAuthor": "By"
   },
+  "videos": {
+    "loading": "Loading videos…",
+    "errorTitle": "Error Loading Videos",
+    "errorBody": "Unable to load videos. Please try again later.",
+    "emptyTitle": "No Videos Yet",
+    "emptyBody": "Check back soon for recordings and resources.",
+    "videosLabel": "videos",
+    "videoLabel": "video",
+    "featured": "Featured",
+    "openResource": "Open resource",
+    "missingEmbed": "Missing embed URL."
+  },
   "pages": {
     "index": {
       "title": "Elemento | Unified private and public Cloud platform",

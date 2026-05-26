@@ -9383,6 +9383,60 @@
         "en": "Back to homepage",
         "it": "Torna alla home page"
       }
+    ],
+    "videos": [
+      {
+        "en": "Videos",
+        "it": "Video"
+      },
+      {
+        "en": "Watch. Learn. Explore.",
+        "it": "Guarda. Impara. Esplora."
+      },
+      {
+        "en": "Keynotes, webinars, and product recordings from the Elemento team. Read deeper dives on our blog or get in touch.",
+        "it": "Keynote, webinar e registrazioni prodotto dal team Elemento. Approfondimenti sul nostro <a href=\"blog.html\">blog</a> o <a href=\"contact.html\">contattaci</a>."
+      },
+      {
+        "en": " videos",
+        "it": " video"
+      },
+      {
+        "en": "Loading videos...",
+        "it": "Caricamento video…"
+      },
+      {
+        "en": "Error Loading Videos",
+        "it": "Errore nel caricamento dei video"
+      },
+      {
+        "en": "Unable to load videos. Please try again later.",
+        "it": "Impossibile caricare i video. Riprova più tardi."
+      },
+      {
+        "en": "No Videos Yet",
+        "it": "Nessun video disponibile"
+      },
+      {
+        "en": "Check back soon for recordings and resources.",
+        "it": "Torna presto per registrazioni e risorse."
+      },
+      {
+        "en": "Featured",
+        "it": "In evidenza"
+      },
+      {
+        "en": "Open resource",
+        "it": "Apri risorsa"
+      },
+      {
+        "en": "Missing embed URL.",
+        "it": "URL di incorporamento mancante."
+      },
+      {
+        "en": "get in touch",
+        "it": "contattaci"
+      }
     ]
   }
 }

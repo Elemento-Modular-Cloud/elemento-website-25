@@ -409,6 +409,14 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
       ['Latest Articles', 'Articoli recenti'],
       ['Cloud Computing Insights', 'Approfondimenti sul cloud'],
     ],
+    videos: [
+      ['Watch. Learn. Explore.', 'Guarda. Impara. Esplora.'],
+      [/<span class="pixel-word">Videos<\/span>/, '<span class="pixel-word">Video</span>'],
+      [
+        /<p><span class="emphasis-pixel">Keynotes<\/span>,[\s\S]*?<a href="\/contact\.html">get in touch<\/a>\.<\/p>/,
+        '<p><span class="emphasis-pixel">Keynote</span>, <span class="emphasis-pixel">webinar</span> e registrazioni <span class="emphasis-pixel">prodotto</span> dal team Elemento. Approfondimenti sul nostro <a href="/blog.html">blog</a> o <a href="/contact.html">contattaci</a>.</p>',
+      ],
+    ],
     atomos: [
       ['Install the AtomOS CLI tool:', 'Installa lo strumento CLI AtomOS:'],
       ['Install the AtomOS services', 'Installa i servizi AtomOS'],
@@ -499,6 +507,14 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     blog: [
       ['Latest Articles', 'Articles récents'],
       ['Cloud Computing Insights', 'Actualités cloud'],
+    ],
+    videos: [
+      ['Watch. Learn. Explore.', 'Regardez. Apprenez. Explorez.'],
+      [/<span class="pixel-word">Videos<\/span>/, '<span class="pixel-word">Vidéos</span>'],
+      [
+        /<p><span class="emphasis-pixel">Keynotes<\/span>,[\s\S]*?<a href="\/contact\.html">get in touch<\/a>\.<\/p>/,
+        '<p><span class="emphasis-pixel">Keynotes</span>, <span class="emphasis-pixel">webinaires</span> et enregistrements <span class="emphasis-pixel">produit</span> de l\'équipe Elemento. Approfondissements sur notre <a href="/blog.html">blogue</a> ou <a href="/contact.html">contactez-nous</a>.</p>',
+      ],
     ],
     atomos: [
       ['Install the AtomOS CLI tool:', 'Installez l\'outil CLI AtomOS :'],
