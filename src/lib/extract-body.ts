@@ -64,3 +64,10 @@ export function hasSolutionConfig(relativeHtmlPath: string): boolean {
   const html = readHtml(relativeHtmlPath);
   return html.includes('data-solution-config');
 }
+
+/** Markup for iframe embeds: legacy form body only (no site navbar/footer). */
+export function extractFormEmbedBody(relativeHtmlPath: string): string {
+  const html = readHtml(relativeHtmlPath);
+  const bodyMatch = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  return bodyMatch?.[1]?.trim() ?? '';
+}

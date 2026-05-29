@@ -1,0 +1,28 @@
+---
+import FormEmbedLayout from '../layouts/FormEmbedLayout.astro';
+import { extractFormEmbedBody } from '../lib/extract-body';
+import { localizeBody } from '../lib/localize-body';
+import { prefixBodyAssets, prefixBodyPageLinks } from '../lib/prefix-body-assets';
+import type { Locale } from '../i18n/config';
+import type { PageEntry } from '../lib/page-types';
+
+interface Props {
+  entry: PageEntry;
+  locale: Locale;
+}
+
+const { entry, locale } = Astro.props;
+const localizeStem = entry.stem.replace(/\//g, '_');
+let bodyHtml = extractFormEmbedBody(entry.legacyPath);
+bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
+bodyHtml = prefixBodyPageLinks(bodyHtml, entry.stem, locale);
+bodyHtml = prefixBodyAssets(bodyHtml, '/');
+
+const pageScripts = (entry.extraScripts ?? []).filter(
+  (src) => src.includes('turnstile') || src.includes('challenges.cloudflare.com')
+);
+---
+
+<FormEmbedLayout locale={locale} title={entry.title} pageScripts={pageScripts} assetBase="/">
+  <Fragment set:html={bodyHtml} />
+</FormEmbedLayout>

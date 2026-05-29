@@ -41,29 +41,40 @@ export function prefixAssetPath(path: string, assetBase: string): string {
   return assetBase + clean;
 }
 
+function resolvePageStem(href: string): string | null {
+  if (href.startsWith('/')) {
+    const rootFile = href.match(/^\/([^/?#]+\.html)$/);
+    if (rootFile) return rootFile[1].replace(/\.html$/, '') || 'index';
+    const localeFile = href.match(/^\/(?:it|fr)\/(.+?)\.html$/);
+    if (localeFile) return localeFile[1].replace(/\.html$/, '') || 'index';
+    const nestedRoot = href.match(/^\/([\w.-]+\/[\w./-]+)\.html$/);
+    if (nestedRoot) return nestedRoot[1];
+    return null;
+  }
+
+  const clean = href.replace(/^\.\//, '').replace(/^(\.\.\/)+/, '');
+  if (/^[^/?#]+\.html$/.test(clean)) {
+    return clean.replace(/\.html$/, '') || 'index';
+  }
+  const nested = clean.match(/^([\w.-]+\/[\w./-]+)\.html$/);
+  if (nested) return nested[1];
+  return null;
+}
+
 /** Rewrite internal *.html links to site-root paths (e.g. /blog.html), safe under /videos/ in dev. */
 export function prefixBodyPageLinks(
   html: string,
   _stem: string,
   locale: Locale = 'en'
 ): string {
-  return html.replace(/(\shref=["'])([^"'#]+)(["'])/gi, (match, open, href, close) => {
+  const rewrite = (match: string, open: string, href: string, close: string) => {
     if (/^(https?:|\/\/|mailto:|tel:|#|javascript:)/i.test(href)) return match;
-
-    let pageStem: string | null = null;
-    if (href.startsWith('/')) {
-      const rootFile = href.match(/^\/([^/?#]+\.html)$/);
-      if (rootFile) pageStem = rootFile[1].replace(/\.html$/, '') || 'index';
-      const localeFile = href.match(/^\/(?:it|fr)\/([^/?#]+)\.html$/);
-      if (localeFile) pageStem = localeFile[1].replace(/\.html$/, '') || 'index';
-    } else {
-      const clean = href.replace(/^\.\//, '').replace(/^(\.\.\/)+/, '');
-      if (/^[^/?#]+\.html$/.test(clean)) {
-        pageStem = clean.replace(/\.html$/, '') || 'index';
-      }
-    }
+    const pageStem = resolvePageStem(href);
     if (!pageStem) return match;
-
     return `${open}${localePath(locale, pageStem)}${close}`;
-  });
+  };
+
+  return html
+    .replace(/(\shref=["'])([^"'#]+)(["'])/gi, rewrite)
+    .replace(/(\ssrc=["'])([^"'#]+)(["'])/gi, rewrite);
 }

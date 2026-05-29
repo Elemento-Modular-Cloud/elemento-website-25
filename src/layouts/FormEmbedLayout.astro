@@ -1,0 +1,36 @@
+---
+import SiteFonts from '../components/SiteFonts.astro';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+  pageScripts?: string[];
+  assetBase?: string;
+}
+
+const { locale, title = 'Form', pageScripts = [], assetBase = '/' } = Astro.props;
+const langAttr = locale === 'en' ? 'en' : locale;
+---
+
+<!DOCTYPE html>
+<html lang={langAttr} data-theme="light" class="is-embedded">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>{title}</title>
+  <SiteFonts assetBase={assetBase} />
+  <link rel="stylesheet" href="/css/themes.css" />
+  <link rel="stylesheet" href="/css/forms.css" />
+  {
+    pageScripts
+      .filter((src) => src.startsWith('http'))
+      .map((src) => <script src={src} />)
+  }
+</head>
+<body>
+  <slot />
+  <script src="/js/themes.js" defer></script>
+</body>
+</html>

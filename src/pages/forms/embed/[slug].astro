@@ -1,0 +1,18 @@
+---
+import FormEmbedPage from '../../../components/FormEmbedPage.astro';
+import { FORM_EMBED_SLUGS } from '../../../lib/form-embed-slugs';
+import { pagesByGroup } from '../../../lib/manifest';
+
+export function getStaticPaths() {
+  return pagesByGroup('forms', 'en')
+    .filter((entry) => FORM_EMBED_SLUGS.includes(entry.slug as (typeof FORM_EMBED_SLUGS)[number]))
+    .map((entry) => ({
+      params: { slug: entry.slug },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+---
+
+<FormEmbedPage entry={entry} locale="en" />

@@ -644,6 +644,9 @@ class Navbar {
 
 // Auto-initialize navbar when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.self !== window.top) {
+        return;
+    }
     new Navbar();
 });
 

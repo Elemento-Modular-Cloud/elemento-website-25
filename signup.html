@@ -269,46 +269,6 @@
             }
         }
 
-        /* Iframe container styles */
-        .iframe-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--space-2xl) 0;
-        }
-
-        .form-iframe {
-            width: 100%;
-            min-height: 100%; /* Account for navbar and footer */
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            background: var(--background-color);
-        }
-
-        /* Loading state for iframe */
-        .iframe-loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 400px;
-            color: var(--text-secondary);
-        }
-
-        .iframe-loading .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--border-color);
-            border-top: 3px solid var(--primary-color);
-            border-radius: 50%;
-            animation: splash-spin 1s linear infinite;
-            margin-right: var(--space-md);
-        }
         </style>
 
     <!-- Non-critical stylesheets with optimized loading -->
@@ -319,6 +279,7 @@
     
     <!-- Contact Page Styles (reused for signup) -->
     <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/signup.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
 
     <!-- Fallback for browsers that don't support onload -->
@@ -330,6 +291,7 @@
         
         <!-- Contact Page Styles -->
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/signup.css">
     </noscript>
 
     <!-- Optimized font loading -->
@@ -341,17 +303,7 @@
     </noscript>    <!-- Matomo: Iubenda Cookie Solution — data-iub-purposes="4" must match Statistics/Matomo in iubenda dashboard -->
     <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="js/matomo-tracking.js"></script>
 </head>
-<body class="" style="overflow: hidden;">
-
-    
-    <!-- Splash Screen -->
-    <div id="splash-screen" class="splash-screen">
-        <div class="splash-content">
-            <div class="splash-logo">
-                <div class="splash-logo-img"></div>
-            </div>
-        </div>
-    </div> 
+<body class="page-signup">
 
     <!-- Navigation -->
     <div id="navbar-placeholder"></div>
@@ -370,85 +322,27 @@
         </div>
     </nav>
 
-    <!-- Iframe Container -->
-    <section class="iframe-container">
-        <iframe 
-            src="forms/signup.html" 
-            class="form-iframe" 
-            id="signupIframe">
-        </iframe>
+    <!-- Signup form (embedded) -->
+    <section class="signup-iframe-section" aria-label="Sign up form">
+        <div class="container">
+            <iframe
+                src="forms/embed/signup.html"
+                class="form-iframe"
+                id="signupIframe"
+                title="Elemento sign up form">
+            </iframe>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
     <script src="js/splash-screen.js" defer></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
     <script src="js/themes.js" defer></script>
-    <script src="js/main.js" defer></script>    
-    
-    <!-- Iframe Management Script -->
-    <script>
-        // Iframe management
-        const iframe = document.getElementById('signupIframe');
-        const iframeLoading = document.getElementById('iframeLoading');
-        
-        // Show iframe when loaded
-        iframe.addEventListener('load', function() {
-            if (iframeLoading) {
-                iframeLoading.style.display = 'none';
-            }
-            iframe.style.display = 'block';
-            
-            // Send current theme to iframe
-            const currentTheme = document.body.className || 'data-theme="light"';
-            iframe.contentWindow.postMessage({
-                type: 'theme-change',
-                theme: currentTheme
-            }, '*');
-        });
-        
-        // Handle form submission messages from iframe
-        window.addEventListener('message', function(event) {
-            if (event.data.type === 'form-submitted') {
-                console.log('Form submitted successfully:', event.data);
-                
-                // Redirect to success page
-                window.location.href = 'signup-success.html';
-            }
-        });
-        
-        // Listen for theme changes and forward to iframe
-        const observer2 = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-                    const currentTheme = document.body.getAttribute('data-theme');
-                    if (iframe.contentWindow) {
-                        iframe.contentWindow.postMessage({
-                            type: 'theme-change',
-                            theme: currentTheme
-                        }, '*');
-                    }
-                }
-            });
-        });
-        
-        // Start observing theme changes
-        observer2.observe(document.body, {
-            attributes: true,
-            attributeFilter: ['data-theme']
-        });
-        
-        // Handle iframe load errors
-        iframe.addEventListener('error', function() {
-            iframeLoading.innerHTML = `
-                <div style="text-align: center; color: var(--text-secondary);">
-                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: var(--space-md);"></i>
-                    <p>Failed to load signup form. Please refresh the page or try again later.</p>
-                    <button onclick="location.reload()" class="btn btn-primary" style="margin-top: var(--space-md);">
-                        Refresh Page
-                    </button>
-                </div>
-            `;
-        });
-    </script>
+    <script src="js/main.js" defer></script>
+    <script src="js/signup-iframe.js" defer></script>
 </body>
 </html> 

@@ -1278,8 +1278,8 @@
       "css/forms.css"
     ],
     "extraScripts": [
-      "https://challenges.cloudflare.com/turnstile/v0/api.js",
-      "https://web3forms.com/client/script.js"
+      "https://web3forms.com/client/script.js",
+      "https://challenges.cloudflare.com/turnstile/v0/api.js"
     ],
     "type": "legacy",
     "locales": [
@@ -1510,9 +1510,12 @@
       "css/atmosphere.css",
       "css/planet-styles/planet-signup.css",
       "css/contact.css",
+      "css/signup.css",
       "css/breadcrumb.css"
     ],
-    "extraScripts": [],
+    "extraScripts": [
+      "js/signup-iframe.js"
+    ],
     "type": "legacy",
     "locales": [
       "en",

@@ -1,5 +1,8 @@
 // Footer loader with i18n support
 document.addEventListener('DOMContentLoaded', function() {
+    if (window.self !== window.top) {
+        return;
+    }
     function injectLinkedInInsightTag() {
         if (document.getElementById('linkedin-insight-tag-script')) {
             return;

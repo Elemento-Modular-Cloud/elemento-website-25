@@ -543,6 +543,20 @@
         }
         
         log('Form script setup completed', 'info');
+
+        function notifyParentResize() {
+            if (window.parent === window) return;
+            const height = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.parent.postMessage({ type: 'iframe-resize', height }, '*');
+        }
+
+        window.addEventListener('load', notifyParentResize);
+        if (typeof ResizeObserver !== 'undefined') {
+            new ResizeObserver(notifyParentResize).observe(document.body);
+        }
     </script>
 
     <script src="https://web3forms.com/client/script.js" async defer></script>

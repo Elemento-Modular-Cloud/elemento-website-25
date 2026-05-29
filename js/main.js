@@ -713,6 +713,9 @@ class ElementoWebsite {
     }
 
     setupiubendaScripts() {
+        if (window.self !== window.top) {
+            return;
+        }
         // Detect whether the iubenda widget script is already present.
         // Important: we must still run our local fix script even if iubenda is preloaded.
         const hasIubendaScript = Boolean(document.querySelector('script[src*="iubenda"]'));

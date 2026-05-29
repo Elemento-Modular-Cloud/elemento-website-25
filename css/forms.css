@@ -84,8 +84,8 @@ input[name="website"] {
     box-sizing: border-box;
 }
 
-body {
-    /* font-family: 'Open Sans', sans-serif; */
+/* Standalone form HTML only (no site navbar in document) */
+body:not(:has(#navbar-placeholder)) {
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.6;
@@ -96,6 +96,13 @@ body {
     justify-content: center;
     margin: 0;
     overflow-x: hidden;
+    font-family: var(--font-primary, 'Red Hat Display', sans-serif);
+}
+
+/* Form pages inside site layout (Astro BaseLayout) */
+body:has(#navbar-placeholder) .form-container {
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-4xl);
 }
 
 /* Form container */
@@ -112,13 +119,39 @@ body {
     overflow: hidden;
 }
 
+/* Embedded in signup iframe — one card only (must follow .form-container) */
+html.is-embedded body {
+    min-height: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    background: transparent;
+    font-family: var(--font-primary, 'Red Hat Display', sans-serif);
+}
+
+html.is-embedded .checkbox-label {
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+}
+
+html.is-embedded .form-container {
+    max-width: 100%;
+    margin: 0;
+    padding: var(--space-2xl);
+    background: var(--background-color);
+    border: 1px solid var(--border-color, var(--glassmorphism-border));
+    border-radius: var(--radius-xl, 12px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
 .form-header {
     text-align: center;
     margin-bottom: var(--space-2xl);
 }
 
 .form-title {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-color);
@@ -145,9 +178,11 @@ body {
 .form-group label {
     display: block;
     margin-bottom: var(--space-sm);
-    font-weight: 500;
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+    font-weight: 600;
     color: var(--text-color);
     font-size: 0.9rem;
+    letter-spacing: 0.01em;
 }
 
 .form-group input,
@@ -214,6 +249,7 @@ body {
     align-items: center;
     gap: var(--space-sm);
     cursor: pointer;
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-top: var(--space-md);
@@ -382,8 +418,13 @@ iframe {
     border: 1px solid var(--glassmorphism-border);
     border-radius: var(--radius-2xl);
     box-shadow: var(--glassmorphism-shadow);
-    margin-top: 100px; /* Account for navbar */
     margin-bottom: var(--space-2xl);
+}
+
+body:has(#navbar-placeholder) .provider-form-container,
+body:has(#navbar-placeholder) .provider-success-container {
+    margin-top: calc(80px + var(--space-xl));
+    margin-bottom: var(--space-4xl);
 }
 
 .provider-form-container .form-header {
@@ -424,7 +465,7 @@ iframe {
 }
 
 .section-title {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
@@ -615,8 +656,8 @@ iframe {
 @media (max-width: 1400px) {
     .provider-form-container {
         max-width: 95%;
-        margin: var(--space-lg);
-        margin-top: 100px;
+        margin-left: var(--space-lg);
+        margin-right: var(--space-lg);
     }
     
     .services-grid {
@@ -627,8 +668,8 @@ iframe {
 @media (max-width: 1200px) {
     .provider-form-container {
         max-width: 100%;
-        margin: var(--space-lg);
-        margin-top: 100px;
+        margin-left: var(--space-lg);
+        margin-right: var(--space-lg);
         padding: var(--space-2xl);
     }
     
@@ -643,9 +684,9 @@ iframe {
 
 @media (max-width: 768px) {
     .provider-form-container {
-        margin: var(--space-md);
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
         padding: var(--space-xl);
-        margin-top: 100px;
     }
     
     .services-grid {
@@ -671,9 +712,9 @@ iframe {
 
 @media (max-width: 480px) {
     .provider-form-container {
-        margin: var(--space-sm);
+        margin-left: var(--space-sm);
+        margin-right: var(--space-sm);
         padding: var(--space-lg);
-        margin-top: 100px;
     }
     
     .form-section {
@@ -694,6 +735,110 @@ iframe {
         font-size: 1.2rem;
     }
 } 
+
+/* Provider candidature success page */
+.provider-success-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-2xl);
+    background: var(--glassmorphism-background);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--radius-xl, 12px);
+    box-shadow: var(--glassmorphism-shadow);
+    margin-bottom: var(--space-2xl);
+}
+
+.provider-success-container .success-icon {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.provider-success-container .success-content {
+    margin-top: var(--space-2xl);
+}
+
+.provider-success-container .success-message {
+    margin-bottom: var(--space-2xl);
+}
+
+.provider-success-container .success-message h3 {
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--space-lg);
+}
+
+.provider-success-container .next-steps {
+    padding-left: var(--space-lg);
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.provider-success-container .next-steps li {
+    margin-bottom: var(--space-md);
+}
+
+.provider-success-container .next-steps strong {
+    color: var(--text-color);
+}
+
+.provider-success-container .contact-info {
+    background: rgba(255, 166, 0, 0.05);
+    border: 1px solid rgba(255, 166, 0, 0.2);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.provider-success-container .contact-info h4 {
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--space-sm);
+}
+
+.provider-success-container .contact-info p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.provider-success-container .action-buttons {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.provider-success-container .action-buttons .btn {
+    flex: 1;
+    min-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .provider-success-container {
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
+        padding: var(--space-xl);
+    }
+
+    .provider-success-container .action-buttons {
+        flex-direction: column;
+    }
+
+    .provider-success-container .action-buttons .btn {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .provider-success-container {
+        margin-left: var(--space-sm);
+        margin-right: var(--space-sm);
+        padding: var(--space-lg);
+    }
+}
 
 /* h-captcha centering */
 .h-captcha {

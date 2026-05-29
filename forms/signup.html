@@ -397,6 +397,25 @@
         // Apply theme on page load
         applyThemeFromStorage();
 
+        function notifyParentResize() {
+            if (window.parent === window) return;
+            const height = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.parent.postMessage({ type: 'iframe-resize', height }, '*');
+        }
+
+        if (window.self !== window.top) {
+            document.documentElement.classList.add('is-embedded');
+        }
+
+        window.addEventListener('load', notifyParentResize);
+        window.addEventListener('resize', notifyParentResize);
+        if (typeof ResizeObserver !== 'undefined') {
+            new ResizeObserver(notifyParentResize).observe(document.body);
+        }
+
         // Listen for localStorage changes from other tabs/windows
         window.addEventListener('storage', function(event) {
             if (event.key === 'elemento-theme' && event.newValue) {
