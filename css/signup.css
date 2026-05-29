@@ -19,7 +19,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 }
 
 .signup-iframe-section .container {
-    max-width: 640px;
+    max-width: 520px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
 }

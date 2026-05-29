@@ -134,8 +134,9 @@ html.is-embedded .checkbox-label {
 }
 
 html.is-embedded .form-container {
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
     padding: var(--space-2xl);
     background: var(--background-color);
     border: 1px solid var(--border-color, var(--glassmorphism-border));
