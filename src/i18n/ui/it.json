@@ -20,6 +20,10 @@
     "bookCall": "Prenota una chiamata",
     "homeAria": "Home Elemento"
   },
+  "banner": {
+    "atomosDiscountText": "Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto",
+    "atomosDiscountAria": "Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto"
+  },
   "footer": {
     "tagline": "Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.",
     "products": "Prodotti",

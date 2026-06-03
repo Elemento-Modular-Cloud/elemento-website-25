@@ -1420,6 +1420,42 @@
     ]
   },
   {
+    "stem": "js/banners/archive/atomos-discount",
+    "legacyPath": "js/banners/archive/atomos-discount.html",
+    "group": "root",
+    "slug": "js/banners/archive/atomos-discount",
+    "title": "Elemento",
+    "description": "",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "js/banners/archive/keynote-2025",
+    "legacyPath": "js/banners/archive/keynote-2025.html",
+    "group": "root",
+    "slug": "js/banners/archive/keynote-2025",
+    "title": "Elemento",
+    "description": "",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "orbital",
     "legacyPath": "orbital.html",
     "group": "root",

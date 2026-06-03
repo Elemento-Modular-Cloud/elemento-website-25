@@ -262,22 +262,40 @@ class Navbar {
         return false;
     }
 
-    // Home top announcement banner (e.g. Keynote) — remove `return ''` and uncomment block to restore
+    getBannerStrings() {
+        const defaults = {
+            en: {
+                text: 'Grab today AtomOS - 150€ off the first purchase',
+                aria: 'Grab today AtomOS: 150 euros off the first purchase',
+            },
+            it: {
+                text: 'Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto',
+                aria: 'Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto',
+            },
+            fr: {
+                text: "Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat",
+                aria: "Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat",
+            },
+        };
+        const locale = this.getLocale();
+        const fb = defaults[locale] || defaults.en;
+        return {
+            text: this.t('banner.atomosDiscountText', fb.text),
+            aria: this.t('banner.atomosDiscountAria', fb.aria),
+        };
+    }
+
+    // Site-wide top announcement banner. Archived copies: js/banners/archive/
     renderBanner() {
-        if (!this.isHomePage()) {
-            return '';
-        }
-        /*
+        const atomosHref = 'https://atomos.elemento.cloud/?d=iIZZdBzT2fmscRvx2ULVwWyJDTNWV1g9MpFqG-tYeZc';
+        const { text: bannerText, aria: bannerAria } = this.getBannerStrings();
         return `
-            <a href="https://youtube.com/live/urhPkWeF3Yg" class="announcement-banner" aria-label="Keynote 2025 YouTube recording" target="_blank" rel="noopener noreferrer">
+            <a href="${atomosHref}" class="announcement-banner announcement-banner--atomos-discount" aria-label="${bannerAria}">
                 <div class="banner-content">
-                    <span class="banner-text">Recover our Keynote 2025!</span>
-                    <span class="banner-cta">click here to watch the recording</span>
+                    <span class="banner-text">${bannerText}</span>
                 </div>
             </a>
         `;
-        */
-        return '';
     }
 
     render() {

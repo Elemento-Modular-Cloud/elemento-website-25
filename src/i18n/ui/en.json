@@ -20,6 +20,10 @@
     "bookCall": "Book a Call",
     "homeAria": "Elemento home"
   },
+  "banner": {
+    "atomosDiscountText": "Grab today AtomOS - 150€ off the first purchase",
+    "atomosDiscountAria": "Grab today AtomOS: 150 euros off the first purchase"
+  },
   "footer": {
     "tagline": "Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.",
     "products": "Products",

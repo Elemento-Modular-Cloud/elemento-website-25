@@ -20,6 +20,10 @@
     "bookCall": "Réserver un appel",
     "homeAria": "Accueil Elemento"
   },
+  "banner": {
+    "atomosDiscountText": "Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat",
+    "atomosDiscountAria": "Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat"
+  },
   "footer": {
     "tagline": "Plateforme cloud neutre vis-à-vis des fournisseurs, performante, économique, durable et auto-hébergeable.",
     "products": "Produits",

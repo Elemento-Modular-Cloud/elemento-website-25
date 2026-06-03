@@ -1,0 +1,42 @@
+/* Keynote 2025 banner styles (archived). Add class announcement-banner--keynote to restore look. */
+
+.announcement-banner--keynote::before {
+    background-image: url('../../../assets/img/keynote_2025_bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    animation: bg-scale-rotate 20s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+.announcement-banner--keynote {
+    color: #000000;
+}
+
+.announcement-banner--keynote:hover {
+    color: #000000;
+}
+
+.announcement-banner--keynote .banner-text {
+    text-shadow: 0 0 20px #ffffff, 0 4px 8px rgba(255, 166, 0, 0.5);
+}
+
+@keyframes bg-scale-rotate {
+    0% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    25% {
+        transform: scaleX(1.1) rotate(0.5deg);
+    }
+    50% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    75% {
+        transform: scaleX(1.1) rotate(-0.5deg);
+    }
+    100% {
+        transform: scaleX(1) rotate(0deg);
+    }
+}
