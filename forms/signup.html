@@ -18,6 +18,7 @@
     <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="../js/matomo-tracking.js"></script>
     <!-- Cloudflare Turnstile - explicit render mode (no async/defer to allow turnstile.ready) -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+    <script src="/js/iubenda-form-consent.js"></script>
 </head>
 <body>
     <div class="form-container">
@@ -308,6 +309,26 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
+                    const form = document.getElementById('signupForm');
+                    const consentFields = {
+                        email: document.getElementById('email').value,
+                        firstName: document.getElementById('firstName').value,
+                        lastName: document.getElementById('lastName').value,
+                        company: document.getElementById('company').value,
+                        role: document.getElementById('role').value,
+                        useCase: document.getElementById('useCase').value,
+                        newsletter: document.getElementById('newsletter').checked,
+                        termsAccepted: document.getElementById('terms').checked,
+                        formElement: form,
+                        sourcePage: window.location.pathname
+                    };
+
+                    if (window.ElementoIubendaFormConsent) {
+                        window.ElementoIubendaFormConsent.recordSignupConsent(consentFields).catch((err) => {
+                            console.error('Iubenda signup consent sync failed:', err);
+                        });
+                    }
+
                     // Redirect to success page
                     window.location.href = '../signup-success.html';
                     
