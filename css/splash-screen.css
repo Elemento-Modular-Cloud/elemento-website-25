@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 10000;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.25s ease-out, visibility 0.25s ease-out;

@@ -206,7 +206,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 15; /* Above navbar (9998), below splash screen (9999) */
+    z-index: 9999; /* Above navbar (9998), below splash screen (10000) */
     background: transparent;
     display: flex;
     align-items: center;
