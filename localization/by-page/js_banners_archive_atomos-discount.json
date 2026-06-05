@@ -1,0 +1,14 @@
+{
+  "page": "js_banners_archive_atomos-discount",
+  "count": 1,
+  "strings": [
+    {
+      "id": "meta.js_banners_archive_atomos-discount.title",
+      "en": "Elemento",
+      "it": "",
+      "fr": "",
+      "source": "js/banners/archive/atomos-discount.html",
+      "context": "meta title"
+    }
+  ]
+}

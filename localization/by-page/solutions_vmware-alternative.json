@@ -6,6 +6,7 @@
       "id": "body.solutions_vmware-alternative.h2.1",
       "en": "Replace VMware with Modern Infrastructure",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h2>"
     },
@@ -13,6 +14,7 @@
       "id": "body.solutions_vmware-alternative.h2.2",
       "en": "VMware vSphere vs AtomOS — Hypervisor Comparison",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h2>"
     },
@@ -20,6 +22,7 @@
       "id": "body.solutions_vmware-alternative.h2.3",
       "en": "VMware Migration Made Simple",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h2>"
     },
@@ -27,6 +30,7 @@
       "id": "body.solutions_vmware-alternative.h2.4",
       "en": "Related Resources",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h2>"
     },
@@ -34,6 +38,7 @@
       "id": "body.solutions_vmware-alternative.h3.1",
       "en": "Cloud-Native Architecture",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -41,6 +46,7 @@
       "id": "body.solutions_vmware-alternative.h3.2",
       "en": "Cost Reduction",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -48,6 +54,7 @@
       "id": "body.solutions_vmware-alternative.h3.3",
       "en": "Hybrid Cloud Ready",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -55,6 +62,7 @@
       "id": "body.solutions_vmware-alternative.h3.4",
       "en": "Modern Management",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -62,6 +70,7 @@
       "id": "body.solutions_vmware-alternative.h3.5",
       "en": "AtomOS",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -69,6 +78,7 @@
       "id": "body.solutions_vmware-alternative.h3.6",
       "en": "Electros",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -76,6 +86,7 @@
       "id": "body.solutions_vmware-alternative.h3.7",
       "en": "Cloud Zero-Touch Operations",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -83,6 +94,7 @@
       "id": "body.solutions_vmware-alternative.h3.8",
       "en": "The 5Rs: Powerful Cloud Migration Strategies",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -90,6 +102,7 @@
       "id": "body.solutions_vmware-alternative.h3.9",
       "en": "The Benefits of Virtualization for Cloud Computing",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h3>"
     },
@@ -97,6 +110,7 @@
       "id": "body.solutions_vmware-alternative.h4.1",
       "en": "Modern Hypervisor",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h4>"
     },
@@ -104,6 +118,7 @@
       "id": "body.solutions_vmware-alternative.h4.2",
       "en": "Unified Management",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<h4>"
     },
@@ -111,6 +126,7 @@
       "id": "body.solutions_vmware-alternative.p.1",
       "en": "Upgrade from legacy VMware infrastructure to Elemento's cloud-native platform. Get better performance, lower costs, and seamless cloud integration with our unified virtualization solution.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -118,6 +134,7 @@
       "id": "body.solutions_vmware-alternative.p.10",
       "en": "Learn more about modernizing your infrastructure and migrating from VMware.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -125,6 +142,7 @@
       "id": "body.solutions_vmware-alternative.p.11",
       "en": "Explore how modern infrastructure automation can replace manual VMware management processes.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -132,6 +150,7 @@
       "id": "body.solutions_vmware-alternative.p.12",
       "en": "Learn the essential strategies for migrating from VMware to modern cloud infrastructure.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -139,6 +158,7 @@
       "id": "body.solutions_vmware-alternative.p.13",
       "en": "Understand how modern virtualization optimizes infrastructure for better performance and cost efficiency.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -146,6 +166,7 @@
       "id": "body.solutions_vmware-alternative.p.2",
       "en": "Modern container-native virtualization with Kubernetes integration and cloud provider APIs",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -153,6 +174,7 @@
       "id": "body.solutions_vmware-alternative.p.3",
       "en": "Significantly lower licensing costs compared to VMware with better resource utilization",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -160,6 +182,7 @@
       "id": "body.solutions_vmware-alternative.p.4",
       "en": "Seamless migration between on-premise and cloud environments with consistent management",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -167,6 +190,7 @@
       "id": "body.solutions_vmware-alternative.p.5",
       "en": "API-first approach with infrastructure as code and automated operations",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -174,6 +198,7 @@
       "id": "body.solutions_vmware-alternative.p.6",
       "en": "How AtomOS compares to the industry-leading virtualization platform",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -181,6 +206,7 @@
       "id": "body.solutions_vmware-alternative.p.7",
       "en": "Complete platform designed to replace VMware with modern, cloud-native infrastructure.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -188,6 +214,7 @@
       "id": "body.solutions_vmware-alternative.p.8",
       "en": "Production-grade hypervisor with better performance than VMware vSphere. Native cloud integration, container support, and automated management capabilities.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -195,6 +222,7 @@
       "id": "body.solutions_vmware-alternative.p.9",
       "en": "Replace VMware vCenter with modern management console. Unified dashboard for on-premise and cloud infrastructure with API-first operations.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<p>"
     },
@@ -202,6 +230,7 @@
       "id": "body.solutions_vmware-alternative.td.1",
       "en": "Hypervisor Class",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -209,6 +238,7 @@
       "id": "body.solutions_vmware-alternative.td.10",
       "en": "Management",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -216,6 +246,7 @@
       "id": "body.solutions_vmware-alternative.td.11",
       "en": "vCenter Server VM",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -223,6 +254,7 @@
       "id": "body.solutions_vmware-alternative.td.12",
       "en": "Electros (Web UI + CLI) & REST API",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -230,6 +262,7 @@
       "id": "body.solutions_vmware-alternative.td.13",
       "en": "Licensing",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -237,6 +270,7 @@
       "id": "body.solutions_vmware-alternative.td.14",
       "en": "Commercial, CPU-based",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -244,6 +278,7 @@
       "id": "body.solutions_vmware-alternative.td.15",
       "en": "Server-based (not CPU cores or VM count)",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -251,6 +286,7 @@
       "id": "body.solutions_vmware-alternative.td.16",
       "en": "Cluster Setup",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -258,13 +294,15 @@
       "id": "body.solutions_vmware-alternative.td.17",
       "en": "Manual w/ License",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
     {
       "id": "body.solutions_vmware-alternative.td.18",
-      "en": "Auto-discovery w/ License (C4 protocol)",
+      "en": "Auto-discovery w/ License (with our C4 patented protocol)",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -272,6 +310,7 @@
       "id": "body.solutions_vmware-alternative.td.2",
       "en": "Type 1",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -279,6 +318,7 @@
       "id": "body.solutions_vmware-alternative.td.3",
       "en": "Type 1",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -286,6 +326,7 @@
       "id": "body.solutions_vmware-alternative.td.4",
       "en": "Operating System",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -293,6 +334,7 @@
       "id": "body.solutions_vmware-alternative.td.5",
       "en": "Proprietary Kernel",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -300,6 +342,7 @@
       "id": "body.solutions_vmware-alternative.td.6",
       "en": "Almalinux, Rocky Linux (RHEL binary compatible)",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -307,6 +350,7 @@
       "id": "body.solutions_vmware-alternative.td.7",
       "en": "Virtualization Engine",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -314,6 +358,7 @@
       "id": "body.solutions_vmware-alternative.td.8",
       "en": "Proprietary Closed-Source",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -321,6 +366,7 @@
       "id": "body.solutions_vmware-alternative.td.9",
       "en": "Upstream \"Vanilla\" KVM/QEMU",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<td>"
     },
@@ -328,6 +374,7 @@
       "id": "body.solutions_vmware-alternative.th.1",
       "en": "Feature",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<th>"
     },
@@ -335,6 +382,7 @@
       "id": "body.solutions_vmware-alternative.th.2",
       "en": "VMware vSphere",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<th>"
     },
@@ -342,6 +390,7 @@
       "id": "body.solutions_vmware-alternative.th.3",
       "en": "Elemento AtomOS",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "<th>"
     },
@@ -349,6 +398,7 @@
       "id": "body.solutions_vmware-alternative.ui.1",
       "en": "Learn More",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "class"
     },
@@ -356,6 +406,7 @@
       "id": "body.solutions_vmware-alternative.ui.2",
       "en": "Learn More",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "class"
     },
@@ -363,6 +414,7 @@
       "id": "body.solutions_vmware-alternative.ui.3",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "class"
     },
@@ -370,6 +422,7 @@
       "id": "body.solutions_vmware-alternative.ui.4",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "class"
     },
@@ -377,6 +430,7 @@
       "id": "body.solutions_vmware-alternative.ui.5",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "class"
     },
@@ -384,6 +438,7 @@
       "id": "meta.solutions_vmware-alternative.description",
       "en": "Replace VMware with Elemento's modern virtualization platform. Get better performance, lower costs, and cloud-native architecture with our unified infrastructure solution.",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "meta description"
     },
@@ -391,6 +446,7 @@
       "id": "meta.solutions_vmware-alternative.title",
       "en": "VMware Alternative - Modern Virtualization Platform | Elemento",
       "it": "",
+      "fr": "",
       "source": "solutions/vmware-alternative.html",
       "context": "meta title"
     }

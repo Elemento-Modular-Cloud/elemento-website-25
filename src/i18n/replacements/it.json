@@ -61,7 +61,7 @@
       },
       {
         "en": "We sharpen go-to-market around high-impact trajectories called out in innovation-cluster and ecosystem profiles: IoT, AI, blockchain & Web3, advanced computing, and polished UX—spanning smart infrastructure, industry, fintech, healthcare, education, and digital public services.",
-        "it": "Affiniamo la go-to-market su traiettorie ad alto impatto evidenziate nei profili di cluster di innovazione ed ecosistema: IoT, AI, blockchain e Web3, advanced computing e UX curata—svincolato dall'infrastruttura intelligente all'industria, fintech, sanità, istruzione e servizi pubblici digitali."
+        "it": "Affiniamo la go-to-market su traiettorie ad alto impatto evidenziate nei profili di cluster di innovazione ed ecosistema: IoT, AI, blockchain e Web3, advanced computing e UX curata—dall'infrastruttura intelligente all'industria, fintech, sanità, istruzione e servizi pubblici digitali."
       },
       {
         "en": "We're building the future of cloud computing - one that prioritizes performance , cost-effectiveness , and sustainability without compromising on enterprise-grade security and reliability. Read about our latest innovations on our blog and get in touch to learn more.",
@@ -720,10 +720,6 @@
       {
         "en": "Proprietary Kernel",
         "it": "Kernel proprietario"
-      },
-      {
-        "en": "Thin Provisioning",
-        "it": "Thin Provisioning"
       },
       {
         "en": "Live VM Migration",
@@ -4583,11 +4579,11 @@
       },
       {
         "en": "Symbol respect area (grid). One column or row = 1× the symbol height ( x = ). The mark sits in the centre ; corner cells show a faint symbol as scale reference; keep the edge cells clear. Minimum clear space in production remains 2× the mark height on all sides (and for the full payoff), as in the rule above.",
-        "it": "Area di rispetto del simbolo (griglia). Una colonna o riga = 1× altezza del simbolo ( x = ). Il marchio si trova al centro; le celle d'angolo mostrano un simbolo debole come riferimento di scala; mantenere le celle marginali libere. Lo spazio libero minimo nella produzione rimane 2 volte l'altezza del segno su tutti i lati (e per l'intero profitto), come nella regola sopra."
+        "it": "Area di rispetto del simbolo (griglia). Una colonna o riga = 1× altezza del simbolo ( x = ). Il marchio si trova al centro; le celle d'angolo mostrano un simbolo debole come riferimento di scala; mantenere le celle marginali libere. Lo spazio libero minimo nella produzione rimane 2 volte l'altezza del segno su tutti i lati (e per l'intero payoff), come nella regola sopra."
       },
       {
         "en": "The logo palette defines three ink colours — Starter Yellow #FFA600 , Crystal White #F8F8FF , and Void Black #16161D — on the appropriate field. Each variant below shows those inks on the correct field: horizontal payoff , vertical payoff , then symbol only (yellow on void black is preferred).",
-        "it": "La tavolozza del logo definisce tre colori di inchiostro: Starter Yellow #FFA600, Crystal White #F8F8FF e Void Black #16161D - nel campo appropriato. Ciascuna variante di seguito mostra gli inchiostri sul campo corretto: vincita orizzontale, vincita verticale, quindi solo simbolo (è preferito il giallo su nero vuoto)."
+        "it": "La tavolozza del logo definisce tre colori di inchiostro: Starter Yellow #FFA600, Crystal White #F8F8FF e Void Black #16161D - nel campo appropriato. Ciascuna variante di seguito mostra gli inchiostri sul campo corretto: payoff orizzontale, payoff verticale, quindi solo simbolo (è preferito Starter Yellow su Void Black)."
       },
       {
         "en": "These guidelines align with the official Branding Guidelines — Elemento Modular Cloud (logo, trademark, typography, colour, imagery). They summarize rules for web and partner use. When in doubt, match the homepage and about story, and preserve each mark’s aspect ratio.",
@@ -4643,11 +4639,11 @@
       },
       {
         "en": "Each band sets a maximum width for print and screen and the lockup to use at that scale (full payoff, horizontal wordmark, or symbol only).",
-        "it": "Ciascuna fascia imposta una larghezza massima per la stampa e lo schermo e il blocco da utilizzare su quella scala (vincita completa, marchio denominativo orizzontale o solo simbolo)."
+        "it": "Ciascuna fascia imposta una larghezza massima per la stampa e lo schermo e il blocco da utilizzare su quella scala (payoff completo, marchio denominativo orizzontale o solo simbolo)."
       },
       {
         "en": "Do not scale the full payoff into the small band — switch to the symbol. Match ink and field colours to the logo section above.",
-        "it": "Non ridimensionare l'intera vincita nella fascia piccola: passa al simbolo. Abbina i colori dell'inchiostro e del campo alla sezione del logo sopra."
+        "it": "Non ridimensionare l'intero payoff nella fascia piccola: passa al simbolo. Abbina i colori dell'inchiostro e del campo alla sezione del logo sopra."
       },
       {
         "en": "Do not distort, outline, tilt, add shadows or glows. Wordmark and symbol must use the same colour treatment in a given layout.",
@@ -4699,7 +4695,7 @@
       },
       {
         "en": "Horizontal wordmark — when the full payoff is too wide.",
-        "it": "Marchio denominativo orizzontale: quando il profitto completo è troppo ampio."
+        "it": "Marchio denominativo orizzontale: quando il payoff completo è troppo largo."
       },
       {
         "en": "Don’t — examples from the guidelines (not exhaustive)",
@@ -4735,15 +4731,15 @@
       },
       {
         "en": "Starter yellow on void black Preferred",
-        "it": "Antipasto giallo su nero vuoto. Preferito"
+        "it": "Starter Yellow su Void Black · Preferito"
       },
       {
         "en": "Starter yellow on void black Preferred",
-        "it": "Antipasto giallo su nero vuoto. Preferito"
+        "it": "Starter Yellow su Void Black · Preferito"
       },
       {
         "en": "Starter yellow on void black Preferred",
-        "it": "Antipasto giallo su nero vuoto. Preferito"
+        "it": "Starter Yellow su Void Black · Preferito"
       },
       {
         "en": "Brand type stack (with live-site note)",
@@ -4783,7 +4779,7 @@
       },
       {
         "en": "Crystal white on void black",
-        "it": "Bianco cristallo su nero vuoto"
+        "it": "Crystal White su Void Black"
       },
       {
         "en": "Ink #F8F8FF · field #16161D",
@@ -4791,7 +4787,7 @@
       },
       {
         "en": "Void black on crystal white",
-        "it": "Nero vuoto su bianco cristallo"
+        "it": "Void Black su Crystal White"
       },
       {
         "en": "Ink #16161D · field #F8F8FF",
@@ -4803,7 +4799,7 @@
       },
       {
         "en": "Crystal white on void black",
-        "it": "Bianco cristallo su nero vuoto"
+        "it": "Crystal White su Void Black"
       },
       {
         "en": "Ink #F8F8FF · field #16161D",
@@ -4811,7 +4807,7 @@
       },
       {
         "en": "Void black on crystal white",
-        "it": "Nero vuoto su bianco cristallo"
+        "it": "Void Black su Crystal White"
       },
       {
         "en": "Ink #16161D · field #F8F8FF",
@@ -4823,7 +4819,7 @@
       },
       {
         "en": "Crystal white on void black",
-        "it": "Bianco cristallo su nero vuoto"
+        "it": "Crystal White su Void Black"
       },
       {
         "en": "Ink #F8F8FF · field #16161D",
@@ -4831,7 +4827,7 @@
       },
       {
         "en": "Void black on crystal white",
-        "it": "Nero vuoto su bianco cristallo"
+        "it": "Void Black su Crystal White"
       },
       {
         "en": "Ink #16161D · field #F8F8FF",
@@ -4886,10 +4882,6 @@
         "it": "Secondario: digitale"
       },
       {
-        "en": "Argent Pixel Italic",
-        "it": "Corsivo Pixel Argentato"
-      },
-      {
         "en": "Logo only (symbol)",
         "it": "Solo logo (simbolo)"
       },
@@ -4907,7 +4899,7 @@
       },
       {
         "en": "Horizontal payoff",
-        "it": "Guadagno orizzontale"
+        "it": "Payoff orizzontale"
       },
       {
         "en": "Non-brand colours",
@@ -4915,15 +4907,15 @@
       },
       {
         "en": "Horizontal payoff",
-        "it": "Guadagno orizzontale"
+        "it": "Payoff orizzontale"
       },
       {
         "en": "Horizontal payoff",
-        "it": "Guadagno orizzontale"
+        "it": "Payoff orizzontale"
       },
       {
         "en": "Horizontal payoff",
-        "it": "Guadagno orizzontale"
+        "it": "Payoff orizzontale"
       },
       {
         "en": "Brand guidelines",
@@ -4942,24 +4934,20 @@
         "it": "Colori primari"
       },
       {
-        "en": "Red Hat Display",
-        "it": "Esposizione del cappello rosso"
+        "en": "Vertical payoff",
+        "it": "Payoff verticale"
       },
       {
         "en": "Vertical payoff",
-        "it": "Guadagno verticale"
+        "it": "Payoff verticale"
       },
       {
         "en": "Vertical payoff",
-        "it": "Guadagno verticale"
+        "it": "Payoff verticale"
       },
       {
         "en": "Vertical payoff",
-        "it": "Guadagno verticale"
-      },
-      {
-        "en": "Vertical payoff",
-        "it": "Guadagno verticale"
+        "it": "Payoff verticale"
       },
       {
         "en": "Incorrect uses",
@@ -4984,14 +4972,6 @@
       {
         "en": "Product marks",
         "it": "Marchi di prodotto"
-      },
-      {
-        "en": "Red Hat Text",
-        "it": "Testo del cappello rosso"
-      },
-      {
-        "en": "Red Hat Mono",
-        "it": "Cappello Rosso Mono"
       },
       {
         "en": "Respect area",
@@ -5535,7 +5515,7 @@
       },
       {
         "en": "Cloud & hybrid targets AWS, Azure, Google Cloud, and on-prem infrastructure",
-        "it": "Target cloud e ibridi AWS, Azure, Google Cloud e all'infrastruttura on-premise"
+        "it": "Il cloud e l'ibrido sono destinati ad AWS, Azure, Google Cloud e all'infrastruttura on-premise"
       },
       {
         "en": "Ship-ready builds AppImage, DMG, EXE, and DEB—x64 and ARM64 where supported",
@@ -6385,7 +6365,7 @@
       },
       {
         "en": "Enterprise-grade infrastructure designed for modern cloud-native applications. Full reference available in our technical documentation .",
-        "it": "Infrastruttura di livello Enterprise progettata per le moderne applicazioni cloud nativa. Riferimento completo disponibile nella nostra <a href=\"technology.html\">documentazione tecnica</a>."
+        "it": "Infrastruttura di livello Enterprise progettata per le moderne applicazioni cloud-native. Riferimento completo disponibile nella nostra <a href=\"technology.html\">documentazione tecnica</a>."
       },
       {
         "en": "Operate where you need with enterprise-grade security and full control - complete freedom to choose your deployment strategy",
@@ -6813,7 +6793,7 @@
       },
       {
         "en": "Ready. Set. Cloud.",
-        "it": "Ready. Set. Cloud."
+        "it": "Pronti. Via. Cloud."
       },
       {
         "en": "Loading diagram...",
@@ -7563,7 +7543,7 @@
       },
       {
         "en": "✓ Green computing incentives",
-        "it": "✓ Incentivi per il green computing"
+        "it": "✓ Incentivi per il cloud sostenibile"
       },
       {
         "en": "Deployment Model Comparison",
@@ -9112,14 +9092,6 @@
         "it": "Ottimizzazione basata sull'intelligenza artificiale"
       },
       {
-        "en": "Elemento Cloud Network",
-        "it": "Elemento Cloud Network"
-      },
-      {
-        "en": "Infrastructure as Code",
-        "it": "Infrastructure as Code"
-      },
-      {
         "en": "Carbon-Aware Computing",
         "it": "Informatica sensibile al CO2"
       },
@@ -9384,58 +9356,394 @@
         "it": "Torna alla home page"
       }
     ],
-    "videos": [
+    "blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk": [
       {
-        "en": "Videos",
-        "it": "Video"
+        "en": "After Broadcom completed its acquisition of VMware, customers began facing a very different commercial landscape: stronger emphasis on subscriptions, broader product bundles, licensing changes, portfolio simplification, and new renewal dynamics. VMware Cloud Foundation and vSphere Foundation are now central to Broadcom&apos;s VMware strategy, with subscription licensing playing a much larger role than in the previous model.",
+        "it": "Dopo che Broadcom ha completato l'acquisizione di VMware, i clienti hanno iniziato ad affrontare un panorama commerciale molto diverso: maggiore enfasi sugli abbonamenti, pacchetti di prodotti più ampi, modifiche alle licenze, semplificazione del portafoglio e nuove dinamiche di rinnovo. VMware Cloud Foundation e vSphere Foundation sono ora al centro della strategia VMware di Broadcom, con le licenze in abbonamento che svolgono un ruolo molto più importante rispetto al modello precedente."
       },
       {
-        "en": "Watch. Learn. Explore.",
-        "it": "Guarda. Impara. Esplora."
+        "en": "With AtomOS, organizations can turn existing infrastructure into a more flexible virtualization and cloud environment. With Elemento Cloud, they can manage resources across providers and environments through a unified, vendor-neutral model. The platform is designed to work with existing cloud accounts, existing infrastructure, and existing tools, rather than forcing customers into a single ecosystem.",
+        "it": "Con AtomOS, le organizzazioni possono trasformare l'infrastruttura esistente in un ambiente cloud e di virtualizzazione più flessibile. Con Elemento Cloud, possono gestire le risorse tra provider e ambienti attraverso un modello unificato e indipendente dal fornitore. La piattaforma è progettata per funzionare con gli account cloud esistenti, l'infrastruttura esistente e gli strumenti esistenti, anziché forzare i clienti in un unico ecosistema."
       },
       {
-        "en": "Keynotes, webinars, and product recordings from the Elemento team. Read deeper dives on our blog or get in touch.",
-        "it": "Keynote, webinar e registrazioni prodotto dal team Elemento. Approfondimenti sul nostro <a href=\"blog.html\">blog</a> o <a href=\"contact.html\">contattaci</a>."
+        "en": "That question matters because VMware sits at the core of infrastructure. Changing a collaboration tool, CRM, or analytics platform can be painful. Changing the virtualization layer can become a multi-year transformation involving applications, storage, networking, monitoring, automation, backup, disaster recovery, security, and internal skills.",
+        "it": "Questa domanda è importante perché VMware è al centro dell'infrastruttura. Cambiare uno strumento di collaborazione, un CRM o una piattaforma di analisi può essere doloroso. La modifica del livello di virtualizzazione può diventare una trasformazione pluriennale che coinvolge applicazioni, storage, rete, monitoraggio, automazione, backup, ripristino di emergenza, sicurezza e competenze interne."
       },
       {
-        "en": " videos",
-        "it": " video"
+        "en": "The most visible concern around VMware after Broadcom is cost. Many customers and partners have reported pressure from higher renewals, portfolio changes, and the shift from perpetual licensing toward subscription models. Public reports have also described customer concerns around price increases and reduced flexibility after the acquisition.",
+        "it": "La preoccupazione più visibile su VMware dopo Broadcom è il costo. Molti clienti e partner hanno segnalato pressioni derivanti da rinnovi più elevati, cambiamenti di portafoglio e dal passaggio dalle licenze perpetue ai modelli di abbonamento. Rapporti pubblici hanno anche descritto le preoccupazioni dei clienti riguardo agli aumenti di prezzo e alla ridotta flessibilità dopo l’acquisizione."
       },
       {
-        "en": "Loading videos...",
-        "it": "Caricamento video…"
+        "en": "It is a Linux-based virtualization platform built on open technologies, designed to support private cloud, colocation, and hybrid environments. Elemento positions AtomOS as a modern VMware alternative for organizations looking to reduce licensing pressure, reuse existing infrastructure, and move toward a more cloud-native operating model.",
+        "it": "È una piattaforma di virtualizzazione basata su Linux costruita su tecnologie aperte, progettata per supportare cloud privato, colocation e ambienti ibridi. Elemento posiziona AtomOS come una moderna alternativa a VMware per le organizzazioni che desiderano ridurre la pressione sulle licenze, riutilizzare l'infrastruttura esistente e passare a un modello operativo più nativo del cloud."
       },
       {
-        "en": "Error Loading Videos",
-        "it": "Errore nel caricamento dei video"
+        "en": "Moving virtual machines to a hyperscaler without changing the operating model may reduce data center complexity, but it does not automatically reduce total cost of ownership. It may also introduce new dependencies around egress fees, proprietary services, cloud-specific automation, and provider-specific architectures.",
+        "it": "Lo spostamento delle macchine virtuali su un hyperscaler senza modificare il modello operativo può ridurre la complessità del data center, ma non riduce automaticamente il costo totale di proprietà. Potrebbe anche introdurre nuove dipendenze relative a tariffe in uscita, servizi proprietari, automazione specifica del cloud e architetture specifiche del provider."
       },
       {
-        "en": "Unable to load videos. Please try again later.",
-        "it": "Impossibile caricare i video. Riprova più tardi."
+        "en": "The issue is not whether VMware is still technically strong. In many environments, it remains a mature, deeply embedded, and highly capable platform. The real issue is control. When a technology becomes so central that replacing it feels almost impossible, the customer&apos;s freedom of movement gradually disappears.",
+        "it": "Il problema non è se VMware sia ancora tecnicamente forte. In molti ambienti, rimane una piattaforma matura, profondamente integrata e altamente capace. Il vero problema è il controllo. Quando una tecnologia diventa così centrale che sostituirla sembra quasi impossibile, la libertà di movimento del cliente scompare gradualmente."
       },
       {
-        "en": "No Videos Yet",
-        "it": "Nessun video disponibile"
+        "en": "It has powered data centers, business continuity plans, backup strategies, capacity planning processes, infrastructure teams, and thousands of critical applications. For many organizations, VMware has not simply been a software vendor. It has become the foundation on which infrastructure operations were designed.",
+        "it": "Ha alimentato data center, piani di continuità aziendale, strategie di backup, processi di pianificazione della capacità, team infrastrutturali e migliaia di applicazioni critiche. Per molte organizzazioni, VMware non è stato semplicemente un fornitore di software. È diventata la base su cui sono state progettate le operazioni infrastrutturali."
       },
       {
-        "en": "Check back soon for recordings and resources.",
-        "it": "Torna presto per registrazioni e risorse."
+        "en": "It is part of a broader Elemento ecosystem built around infrastructure freedom, vendor neutrality, and workload portability. Elemento Modular Cloud provides a unified interface to manage workloads across cloud providers and customer-owned infrastructure, reducing dependence on a single provider or ecosystem.",
+        "it": "Fa parte di un ecosistema Elemento più ampio costruito attorno alla libertà dell'infrastruttura, alla neutralità del fornitore e alla portabilità del carico di lavoro. Elemento Modular Cloud fornisce un'interfaccia unificata per gestire i carichi di lavoro tra provider cloud e infrastrutture di proprietà del cliente, riducendo la dipendenza da un singolo provider o ecosistema."
       },
       {
-        "en": "Featured",
-        "it": "In evidenza"
+        "en": "Virtualization migrations require assessment, planning, workload discovery, compatibility checks, backup and disaster recovery validation, networking review, skill development, and phased execution. The more critical VMware is to the business, the more important it is to start early.",
+        "it": "Le migrazioni di virtualizzazione richiedono valutazione, pianificazione, rilevamento del carico di lavoro, controlli di compatibilità, convalida del backup e del ripristino di emergenza, revisione della rete, sviluppo delle competenze ed esecuzione graduale. Quanto più VMware è fondamentale per l'azienda, tanto più importante è iniziare presto."
       },
       {
-        "en": "Open resource",
-        "it": "Apri risorsa"
+        "en": "For some organizations, this shift may be manageable. For others, especially those that previously consumed VMware in a more modular way, the new model can create a difficult question: are we paying for what we need, or are we paying to preserve operational continuity?",
+        "it": "Per alcune organizzazioni, questo cambiamento potrebbe essere gestibile. Per altri, soprattutto quelli che in precedenza utilizzavano VMware in modo più modulare, il nuovo modello può creare una domanda difficile: stiamo pagando per ciò di cui abbiamo bisogno o stiamo pagando per preservare la continuità operativa?"
       },
       {
-        "en": "Missing embed URL.",
-        "it": "URL di incorporamento mancante."
+        "en": "Processes adapt to proprietary tools. Teams specialize around one platform. Applications are designed around specific assumptions. Backup, monitoring, disaster recovery, automation, and capacity planning all become tightly connected to the same ecosystem.",
+        "it": "I processi si adattano agli strumenti proprietari. I team sono specializzati attorno a una piattaforma. Le applicazioni sono progettate in base a presupposti specifici. Backup, monitoraggio, ripristino di emergenza, automazione e pianificazione della capacità diventano tutti strettamente collegati allo stesso ecosistema."
       },
       {
-        "en": "get in touch",
-        "it": "contattaci"
+        "en": "Replacing VMware with another closed stack may solve the renewal problem temporarily, but it does not necessarily improve long-term resilience. The real opportunity is to redesign the infrastructure layer around openness, portability, and control.",
+        "it": "La sostituzione di VMware con un altro stack chiuso può risolvere temporaneamente il problema del rinnovo, ma non migliora necessariamente la resilienza a lungo termine. La vera opportunità è riprogettare il livello infrastrutturale attorno all’apertura, alla portabilità e al controllo."
+      },
+      {
+        "en": "At first, consolidation looks rational: one vendor, one roadmap, one support model, one set of skills, one contract, one ecosystem. It reduces complexity. It makes procurement simpler. It gives infrastructure teams a familiar operational model.",
+        "it": "Inizialmente, il consolidamento sembra razionale: un fornitore, una tabella di marcia, un modello di supporto, un insieme di competenze, un contratto, un ecosistema. Riduce la complessità. Rende gli appalti più semplici. Offre ai team dell'infrastruttura un modello operativo familiare."
+      },
+      {
+        "en": "Organizations need to understand which workloads depend on VMware, which ones are easy to move, which ones require redesign, which infrastructure can be reused, which costs are avoidable, and which risks must be managed before any transition.",
+        "it": "Le organizzazioni devono capire quali carichi di lavoro dipendono da VMware, quali sono facili da spostare, quali richiedono una riprogettazione, quale infrastruttura può essere riutilizzata, quali costi sono evitabili e quali rischi devono essere gestiti prima di qualsiasi transizione."
+      },
+      {
+        "en": "This is where a structured evaluation of AtomOS can help. It gives infrastructure teams a concrete way to compare scenarios, assess technical feasibility, estimate savings, and define a migration path that does not require panic decisions.",
+        "it": "È qui che può aiutare una valutazione strutturata di AtomOS. Offre ai team infrastrutturali un modo concreto per confrontare scenari, valutare la fattibilità tecnica, stimare i risparmi e definire un percorso di migrazione che non richieda decisioni dettate dal panico."
+      },
+      {
+        "en": "A resilient infrastructure must also be able to withstand a change in vendor strategy, a licensing shift, a portfolio repackaging, a sudden price increase, or an acquisition that changes the balance of power between customer and supplier.",
+        "it": "Un’infrastruttura resiliente deve anche essere in grado di resistere a un cambiamento nella strategia del fornitore, a uno spostamento delle licenze, a un riconfezionamento del portafoglio, a un improvviso aumento dei prezzi o a un’acquisizione che modifica l’equilibrio di potere tra cliente e fornitore."
+      },
+      {
+        "en": "That means building an infrastructure model where workloads can run across private infrastructure, colocated environments, service providers, and public clouds without forcing the organization to redesign everything each time.",
+        "it": "Ciò significa costruire un modello di infrastruttura in cui i carichi di lavoro possano essere eseguiti su infrastrutture private, ambienti condivisi, fornitori di servizi e cloud pubblici senza costringere l'organizzazione a riprogettare tutto ogni volta."
+      },
+      {
+        "en": "After Broadcom&apos;s acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+        "it": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto."
+      },
+      {
+        "en": "Elemento AtomOS offers a practical opportunity to start that journey: reduce VMware dependence, reuse existing infrastructure, modernize your virtualization layer, and build a more open path toward hybrid cloud.",
+        "it": "Elemento AtomOS offre un'opportunità pratica per iniziare questo viaggio: ridurre la dipendenza da VMware, riutilizzare l'infrastruttura esistente, modernizzare il livello di virtualizzazione e costruire un percorso più aperto verso il cloud ibrido."
+      },
+      {
+        "en": "On May 27, 2026 , Elemento will host a dedicated webinar on how organizations can rethink their VMware strategy and evaluate AtomOS as a modern, open, and cost-effective alternative.",
+        "it": "Il 27 maggio 2026, Elemento ospiterà un webinar dedicato su come le organizzazioni possono ripensare la propria strategia VMware e valutare AtomOS come un'alternativa moderna, aperta ed economica."
+      },
+      {
+        "en": "Technology freedom does not come from hoping that vendors will always act in your favor. It comes from designing infrastructure so that no single vendor can control your future.",
+        "it": "La libertà tecnologica non deriva dalla speranza che i fornitori agiscano sempre a tuo favore. Deriva dalla progettazione dell'infrastruttura in modo che nessun singolo fornitore possa controllare il tuo futuro."
+      },
+      {
+        "en": "Register for the webinar here: https://riverside.com/webinar/registration/eyJldmVudElkIjoiNjlmMWQ5NGEwZDhhMDE1Mzk3YzgzYTA3Iiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=",
+        "it": "Registrati al webinar qui: https://riverside.com/webinar/registration/eyJldmVudElkIjoiNjlmMWQ5NGEwZDhhMDE1Mzk3YzgzYTA3Iiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0="
+      },
+      {
+        "en": "Public cloud can be an excellent option for many workloads. It offers elasticity, managed services, global availability, and access to advanced capabilities.",
+        "it": "Il cloud pubblico può essere un'opzione eccellente per molti carichi di lavoro. Offre elasticità, servizi gestiti, disponibilità globale e accesso a funzionalità avanzate."
+      },
+      {
+        "en": "Then a renewal arrives. Or a licensing model changes. Or the product portfolio is repackaged. Or the vendor&apos;s strategy shifts after an acquisition.",
+        "it": "Poi arriva il rinnovo. Oppure cambia un modello di licenza. Oppure il portafoglio prodotti viene riconfezionato. Oppure la strategia del venditore cambia dopo un'acquisizione."
+      },
+      {
+        "en": "Book a call with the Elemento team and let&apos;s assess your infrastructure, renewal timeline, migration options, and potential savings.",
+        "it": "Prenota una chiamata con il team di Elemento e valutiamo la tua infrastruttura, la tempistica di rinnovo, le opzioni di migrazione e i potenziali risparmi."
+      },
+      {
+        "en": "But as a VMware exit strategy, a simple lift-and-shift to public cloud can create a new problem: replacing one dependency with another.",
+        "it": "Ma come strategia di uscita da VMware, un semplice passaggio al cloud pubblico può creare un nuovo problema: sostituire una dipendenza con un’altra."
+      },
+      {
+        "en": "Elemento AtomOS is designed for organizations that want to move beyond VMware without losing control of their infrastructure.",
+        "it": "Elemento AtomOS è progettato per le organizzazioni che desiderano andare oltre VMware senza perdere il controllo della propria infrastruttura."
+      },
+      {
+        "en": "Elemento&apos;s approach is based on a different idea: infrastructure should remain yours, even when it behaves like cloud.",
+        "it": "L'approccio di Elemento si basa su un'idea diversa: l'infrastruttura dovrebbe rimanere tua, anche quando si comporta come il cloud."
+      },
+      {
+        "en": "For years, infrastructure resilience was measured mainly through uptime, recovery time, redundancy, and disaster recovery.",
+        "it": "Per anni, la resilienza delle infrastrutture è stata misurata principalmente in termini di uptime, tempi di ripristino, ridondanza e disaster recovery."
+      },
+      {
+        "en": "In these scenarios, moving away from VMware is not only about saving money. It is about restoring independence and power.",
+        "it": "In questi scenari, abbandonare VMware non significa solo risparmiare denaro. Si tratta di ripristinare l’indipendenza e il potere."
+      },
+      {
+        "en": "The licensing cost is only one part of the story. The real cost of VMware dependence is the reduced ability to choose.",
+        "it": "Il costo della licenza è solo una parte della storia. Il vero costo della dipendenza da VMware è la ridotta capacità di scelta."
+      },
+      {
+        "en": "And that is why a VMware exit strategy is no longer just a cost optimization exercise. It is a resilience strategy.",
+        "it": "Ed è per questo che una strategia di uscita da VMware non è più solo un esercizio di ottimizzazione dei costi. È una strategia di resilienza."
+      },
+      {
+        "en": "The VMware-Broadcom case is a reminder that no platform, however strong, should become impossible to leave.",
+        "it": "Il caso VMware-Broadcom ci ricorda che nessuna piattaforma, per quanto forte, dovrebbe diventare impossibile da abbandonare."
+      },
+      {
+        "en": "That is when the relationship changes. What once looked like standardization starts to look like exposure.",
+        "it": "È allora che la relazione cambia. Ciò che una volta sembrava una standardizzazione inizia a sembrare un’esposizione."
+      },
+      {
+        "en": "The goal should not be to escape VMware only to become dependent on a different closed ecosystem.",
+        "it": "L'obiettivo non dovrebbe essere quello di sfuggire a VMware solo per diventare dipendenti da un diverso ecosistema chiuso."
+      },
+      {
+        "en": "The VMware-Broadcom case has brought vendor lock-in back to the top of the infrastructure agenda.",
+        "it": "Il caso VMware-Broadcom ha riportato il vincolo del fornitore in cima all'agenda delle infrastrutture."
+      },
+      {
+        "en": "Want to understand whether AtomOS is the right VMware alternative for your organization?",
+        "it": "Vuoi capire se AtomOS è la giusta alternativa a VMware per la tua organizzazione?"
+      },
+      {
+        "en": "A VMware exit strategy should not begin when the renewal quote is already on the table.",
+        "it": "Una strategia di uscita da VMware non dovrebbe iniziare quando il preventivo di rinnovo è già sul tavolo."
+      },
+      {
+        "en": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
+        "it": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico"
+      },
+      {
+        "en": "For years, VMware has been the operational language of enterprise virtualization.",
+        "it": "Per anni VMware è stato il linguaggio operativo della virtualizzazione aziendale."
+      },
+      {
+        "en": "Can you modernize infrastructure without jumping blindly into another lock-in?",
+        "it": "È possibile modernizzare le infrastrutture senza gettarsi alla cieca in un altro lock-in?"
+      },
+      {
+        "en": "That makes AtomOS especially relevant for companies asking questions such as:",
+        "it": "Ciò rende AtomOS particolarmente rilevante per le aziende che pongono domande come:"
+      },
+      {
+        "en": "The key point is simple: AtomOS is not just another hypervisor replacement.",
+        "it": "Il punto chiave è semplice: AtomOS non è solo un altro sostituto dell'hypervisor."
+      },
+      {
+        "en": "how to evaluate VMware lock-in from a technical and financial perspective;",
+        "it": "come valutare il lock-in di VMware da un punto di vista tecnico e finanziario;"
+      },
+      {
+        "en": "VMware and Broadcom: when infrastructure dependence becomes business risk",
+        "it": "VMware e Broadcom: quando la dipendenza dalle infrastrutture diventa rischio d'impresa"
+      },
+      {
+        "en": "Why &apos;just migrate to the public cloud&apos; is not always the answer",
+        "it": "Perché \"migrare semplicemente al cloud pubblico\"? non è sempre la risposta"
+      },
+      {
+        "en": "how to preserve control over infrastructure, costs, and future choices.",
+        "it": "come preservare il controllo sulle infrastrutture, sui costi e sulle scelte future."
+      },
+      {
+        "en": "And when the vendor changes the rules, that dependence becomes visible.",
+        "it": "E quando il venditore cambia le regole, quella dipendenza diventa visibile."
+      },
+      {
+        "en": "That is exactly why the Broadcom acquisition changed the conversation.",
+        "it": "Questo è esattamente il motivo per cui l’acquisizione di Broadcom ha cambiato il discorso."
+      },
+      {
+        "en": "The VMware question is really about infrastructure sovereignty.",
+        "it": "La questione di VMware riguarda in realtà la sovranità dell’infrastruttura."
+      },
+      {
+        "en": "how AtomOS can help organizations reduce dependence on VMware;",
+        "it": "come AtomOS può aiutare le organizzazioni a ridurre la dipendenza da VMware;"
+      },
+      {
+        "en": "Can we preserve control over data, infrastructure, and costs?",
+        "it": "Possiamo preservare il controllo su dati, infrastrutture e costi?"
+      },
+      {
+        "en": "Can you move virtual machines without rewriting everything?",
+        "it": "È possibile spostare le macchine virtuali senza riscrivere tutto?"
+      },
+      {
+        "en": "Can we modernize without moving everything to public cloud?",
+        "it": "Possiamo modernizzarci senza spostare tutto sul cloud pubblico?"
+      },
+      {
+        "en": "For many IT leaders, the answer is uncomfortable: not yet.",
+        "it": "Per molti leader IT la risposta è scomoda: non ancora."
+      },
+      {
+        "en": "Those metrics still matter. But they are no longer enough.",
+        "it": "Questi parametri contano ancora. Ma non bastano più."
+      },
+      {
+        "en": "This is where Elemento Cloud and AtomOS become relevant.",
+        "it": "È qui che Elemento Cloud e AtomOS diventano rilevanti."
+      },
+      {
+        "en": "A tactical VMware replacement focuses on reducing cost.",
+        "it": "Una sostituzione tattica di VMware si concentra sulla riduzione dei costi."
+      },
+      {
+        "en": "A strategic VMware exit focuses on increasing freedom.",
+        "it": "Un’uscita strategica da VMware si concentra sull’aumento della libertà."
+      },
+      {
+        "en": "Please note that the webinar will be held in Italian.",
+        "it": "Si ricorda che il webinar si terrà in italiano."
+      },
+      {
+        "en": "what changed in the VMware landscape after Broadcom;",
+        "it": "cosa è cambiato nel panorama VMware dopo Broadcom;"
+      },
+      {
+        "en": "This is especially important for organizations with:",
+        "it": "Ciò è particolarmente importante per le organizzazioni con:"
+      },
+      {
+        "en": "why licensing pressure is only part of the problem;",
+        "it": "perché la pressione sulle licenze è solo una parte del problema;"
+      },
+      {
+        "en": "Can we keep using our existing servers and storage?",
+        "it": "Possiamo continuare a utilizzare i server e lo spazio di archiviazione esistenti?"
+      },
+      {
+        "en": "But focusing only on price misses the larger point.",
+        "it": "Ma concentrandosi solo sul prezzo non si coglie il punto più importante."
+      },
+      {
+        "en": "Elemento AtomOS: a practical path away from VMware",
+        "it": "Elemento AtomOS: un percorso pratico lontano da VMware"
+      },
+      {
+        "en": "Can you avoid being forced into oversized bundles?",
+        "it": "Puoi evitare di essere costretto a fare bundle sovradimensionati?"
+      },
+      {
+        "en": "From VMware replacement to infrastructure freedom",
+        "it": "Dalla sostituzione di VMware alla libertà dell'infrastruttura"
+      },
+      {
+        "en": "Can your organization choose where workloads run?",
+        "it": "La tua organizzazione può scegliere dove eseguire i carichi di lavoro?"
+      },
+      {
+        "en": "Vendor lock-in almost never starts as a problem.",
+        "it": "Il vincolo del fornitore non inizia quasi mai come un problema."
+      },
+      {
+        "en": "Book your call here: https://book.elemento.cloud",
+        "it": "Prenota la tua chiamata qui: https://book.elemento.cloud"
+      },
+      {
+        "en": "Lock-in rarely feels dangerous at the beginning",
+        "it": "All’inizio il lock-in raramente sembra pericoloso"
+      },
+      {
+        "en": "The new infrastructure question: can you leave?",
+        "it": "La questione delle nuove infrastrutture: si può partire?"
+      },
+      {
+        "en": "But over time, convenience becomes dependency.",
+        "it": "Ma col tempo, la comodità diventa dipendenza."
+      },
+      {
+        "en": "For many organizations, the answer can be yes.",
+        "it": "Per molte organizzazioni la risposta può essere sì."
+      },
+      {
+        "en": "The first step is not necessarily migration.",
+        "it": "Il primo passo non è necessariamente la migrazione."
+      },
+      {
+        "en": "sovereignty or data residency requirements;",
+        "it": "requisiti di sovranità o residenza dei dati;"
+      },
+      {
+        "en": "Can you reuse existing servers and storage?",
+        "it": "È possibile riutilizzare i server e lo spazio di archiviazione esistenti?"
+      },
+      {
+        "en": "The goal should be to regain optionality.",
+        "it": "L’obiettivo dovrebbe essere quello di riconquistare l’opzionalità."
+      },
+      {
+        "en": "public sector or regulated environments;",
+        "it": "settore pubblico o ambienti regolamentati;"
+      },
+      {
+        "en": "Can we reduce VMware licensing exposure?",
+        "it": "Possiamo ridurre l'esposizione alle licenze VMware?"
+      },
+      {
+        "en": "how to plan a realistic migration path;",
+        "it": "come pianificare un percorso migratorio realistico;"
+      },
+      {
+        "en": "Can we build a real hybrid cloud model?",
+        "it": "Possiamo costruire un vero modello di cloud ibrido?"
+      },
+      {
+        "en": "The VMware problem is not just price",
+        "it": "Il problema di VMware non è solo il prezzo"
+      },
+      {
+        "en": "a need to reduce vendor dependence.",
+        "it": "la necessità di ridurre la dipendenza dal fornitore."
+      },
+      {
+        "en": "By Elemento Team &mdash; 2026-05-26",
+        "it": "A cura del team Elemento: 2026-05-26"
+      },
+      {
+        "en": "Join our webinar on May 27, 2026",
+        "it": "Partecipa al nostro webinar il 27 maggio 2026"
+      },
+      {
+        "en": "In the session, we will discuss:",
+        "it": "Nella sessione discuteremo:"
+      },
+      {
+        "en": "The first step is visibility.",
+        "it": "Il primo passo è la visibilità."
+      },
+      {
+        "en": "GPU and AI workloads needs;",
+        "it": "Esigenze di carichi di lavoro GPU e AI;"
+      },
+      {
+        "en": "upcoming renewal pressure;",
+        "it": "pressione di rinnovo imminente;"
+      },
+      {
+        "en": "colocation infrastructure;",
+        "it": "infrastruttura di colocation;"
+      },
+      {
+        "en": "hybrid cloud strategies;",
+        "it": "strategie di cloud ibrido;"
+      },
+      {
+        "en": "That difference matters.",
+        "it": "Questa differenza è importante."
+      },
+      {
+        "en": "large VMware estates;",
+        "it": "grandi tenute VMware;"
+      },
+      {
+        "en": "Why timing matters",
+        "it": "Perché il tempismo è importante"
       }
     ]
   }

@@ -6,6 +6,7 @@
       "id": "body.bookings_meeting-landing-template.h1.1",
       "en": "Your meeting title",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<h1>"
     },
@@ -13,6 +14,7 @@
       "id": "body.bookings_meeting-landing-template.h2.1",
       "en": "Before the call",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<h2>"
     },
@@ -20,6 +22,7 @@
       "id": "body.bookings_meeting-landing-template.li.1",
       "en": "Placeholder: First bullet or preparation note.",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<li>"
     },
@@ -27,6 +30,7 @@
       "id": "body.bookings_meeting-landing-template.li.2",
       "en": "Placeholder: Second bullet (e.g. video link sent after booking).",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<li>"
     },
@@ -34,6 +38,7 @@
       "id": "body.bookings_meeting-landing-template.li.3",
       "en": "Placeholder: Third bullet or remove this item.",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<li>"
     },
@@ -41,6 +46,7 @@
       "id": "body.bookings_meeting-landing-template.p.1",
       "en": "Meeting booking",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<p>"
     },
@@ -48,6 +54,7 @@
       "id": "body.bookings_meeting-landing-template.p.2",
       "en": "Replace this paragraph with context for the meeting (who it is for, duration, or what happens after they book).",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "<p>"
     },
@@ -55,6 +62,7 @@
       "id": "body.bookings_meeting-landing-template.ui.1",
       "en": "Book a time",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "class"
     },
@@ -62,6 +70,7 @@
       "id": "body.bookings_meeting-landing-template.ui.2",
       "en": "Back to homepage",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "class"
     },
@@ -69,6 +78,7 @@
       "id": "meta.bookings_meeting-landing-template.description",
       "en": "Book time with the Elemento team. Replace this description when you duplicate the template.",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "meta description"
     },
@@ -76,6 +86,7 @@
       "id": "meta.bookings_meeting-landing-template.title",
       "en": "Schedule a meeting — Elemento",
       "it": "",
+      "fr": "",
       "source": "bookings/meeting-landing-template.html",
       "context": "meta title"
     }

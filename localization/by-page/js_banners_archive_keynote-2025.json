@@ -1,0 +1,14 @@
+{
+  "page": "js_banners_archive_keynote-2025",
+  "count": 1,
+  "strings": [
+    {
+      "id": "meta.js_banners_archive_keynote-2025.title",
+      "en": "Elemento",
+      "it": "",
+      "fr": "",
+      "source": "js/banners/archive/keynote-2025.html",
+      "context": "meta title"
+    }
+  ]
+}

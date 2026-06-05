@@ -8214,7 +8214,7 @@
     {
       "id": "body.brand-guidelines.figcaption.1",
       "en": "Symbol respect area (grid). One column or row = 1× the symbol height ( x = ). The mark sits in the centre ; corner cells show a faint symbol as scale reference; keep the edge cells clear. Minimum clear space in production remains 2× the mark height on all sides (and for the full payoff), as in the rule above.",
-      "it": "Area di rispetto del simbolo (griglia). Una colonna o riga = 1× altezza del simbolo ( x = ). Il marchio si trova al centro; le celle d'angolo mostrano un simbolo debole come riferimento di scala; mantenere le celle marginali libere. Lo spazio libero minimo nella produzione rimane 2 volte l'altezza del segno su tutti i lati (e per l'intero profitto), come nella regola sopra.",
+      "it": "Area di rispetto del simbolo (griglia). Una colonna o riga = 1× altezza del simbolo ( x = ). Il marchio si trova al centro; le celle d'angolo mostrano un simbolo debole come riferimento di scala; mantenere le celle marginali libere. Lo spazio libero minimo nella produzione rimane 2 volte l'altezza del segno su tutti i lati (e per l'intero payoff), come nella regola sopra.",
       "source": "brand-guidelines.html",
       "context": "<figcaption>"
     },
@@ -8298,7 +8298,7 @@
     {
       "id": "body.brand-guidelines.h3.1",
       "en": "Horizontal payoff",
-      "it": "Guadagno orizzontale",
+      "it": "Payoff orizzontale",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
@@ -8347,35 +8347,35 @@
     {
       "id": "body.brand-guidelines.h3.16",
       "en": "Red Hat Display",
-      "it": "Esposizione del cappello rosso",
+      "it": "Red Hat Display",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
     {
       "id": "body.brand-guidelines.h3.17",
       "en": "Argent Pixel Italic",
-      "it": "Corsivo Pixel Argentato",
+      "it": "Argent Pixel Italic",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
     {
       "id": "body.brand-guidelines.h3.18",
       "en": "Red Hat Text",
-      "it": "Testo del cappello rosso",
+      "it": "Red Hat Text",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
     {
       "id": "body.brand-guidelines.h3.19",
       "en": "Red Hat Mono",
-      "it": "Cappello Rosso Mono",
+      "it": "Red Hat Mono",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
     {
       "id": "body.brand-guidelines.h3.2",
       "en": "Vertical payoff",
-      "it": "Guadagno verticale",
+      "it": "Payoff verticale",
       "source": "brand-guidelines.html",
       "context": "<h3>"
     },
@@ -8508,7 +8508,7 @@
     {
       "id": "body.brand-guidelines.p.10",
       "en": "Starter yellow on void black Preferred",
-      "it": "Antipasto giallo su nero vuoto. Preferito",
+      "it": "Starter Yellow su Void Black · Preferito",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8522,14 +8522,14 @@
     {
       "id": "body.brand-guidelines.p.12",
       "en": "Horizontal payoff",
-      "it": "Guadagno orizzontale",
+      "it": "Payoff orizzontale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
     {
       "id": "body.brand-guidelines.p.13",
       "en": "Crystal white on void black",
-      "it": "Bianco cristallo su nero vuoto",
+      "it": "Crystal White su Void Black",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8543,14 +8543,14 @@
     {
       "id": "body.brand-guidelines.p.15",
       "en": "Horizontal payoff",
-      "it": "Guadagno orizzontale",
+      "it": "Payoff orizzontale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
     {
       "id": "body.brand-guidelines.p.16",
       "en": "Void black on crystal white",
-      "it": "Nero vuoto su bianco cristallo",
+      "it": "Void Black su Crystal White",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8571,7 +8571,7 @@
     {
       "id": "body.brand-guidelines.p.19",
       "en": "Vertical payoff",
-      "it": "Guadagno verticale",
+      "it": "Payoff verticale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8585,7 +8585,7 @@
     {
       "id": "body.brand-guidelines.p.20",
       "en": "Starter yellow on void black Preferred",
-      "it": "Antipasto giallo su nero vuoto. Preferito",
+      "it": "Starter Yellow su Void Black · Preferito",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8599,14 +8599,14 @@
     {
       "id": "body.brand-guidelines.p.22",
       "en": "Vertical payoff",
-      "it": "Guadagno verticale",
+      "it": "Payoff verticale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
     {
       "id": "body.brand-guidelines.p.23",
       "en": "Crystal white on void black",
-      "it": "Bianco cristallo su nero vuoto",
+      "it": "Crystal White su Void Black",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8620,14 +8620,14 @@
     {
       "id": "body.brand-guidelines.p.25",
       "en": "Vertical payoff",
-      "it": "Guadagno verticale",
+      "it": "Payoff verticale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
     {
       "id": "body.brand-guidelines.p.26",
       "en": "Void black on crystal white",
-      "it": "Nero vuoto su bianco cristallo",
+      "it": "Void Black su Crystal White",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8662,7 +8662,7 @@
     {
       "id": "body.brand-guidelines.p.30",
       "en": "Starter yellow on void black Preferred",
-      "it": "Antipasto giallo su nero vuoto. Preferito",
+      "it": "Starter Yellow su Void Black · Preferito",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8683,7 +8683,7 @@
     {
       "id": "body.brand-guidelines.p.33",
       "en": "Crystal white on void black",
-      "it": "Bianco cristallo su nero vuoto",
+      "it": "Crystal White su Void Black",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8704,7 +8704,7 @@
     {
       "id": "body.brand-guidelines.p.36",
       "en": "Void black on crystal white",
-      "it": "Nero vuoto su bianco cristallo",
+      "it": "Void Black su Crystal White",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8739,14 +8739,14 @@
     {
       "id": "body.brand-guidelines.p.40",
       "en": "Each band sets a maximum width for print and screen and the lockup to use at that scale (full payoff, horizontal wordmark, or symbol only).",
-      "it": "Ciascuna fascia imposta una larghezza massima per la stampa e lo schermo e il blocco da utilizzare su quella scala (vincita completa, marchio denominativo orizzontale o solo simbolo).",
+      "it": "Ciascuna fascia imposta una larghezza massima per la stampa e lo schermo e il blocco da utilizzare su quella scala (payoff completo, marchio denominativo orizzontale o solo simbolo).",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
     {
       "id": "body.brand-guidelines.p.41",
       "en": "Do not scale the full payoff into the small band — switch to the symbol. Match ink and field colours to the logo section above.",
-      "it": "Non ridimensionare l'intera vincita nella fascia piccola: passa al simbolo. Abbina i colori dell'inchiostro e del campo alla sezione del logo sopra.",
+      "it": "Non ridimensionare l'intero payoff nella fascia piccola: passa al simbolo. Abbina i colori dell'inchiostro e del campo alla sezione del logo sopra.",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -8963,7 +8963,7 @@
     {
       "id": "body.brand-guidelines.p.7",
       "en": "The logo palette defines three ink colours — Starter Yellow #FFA600 , Crystal White #F8F8FF , and Void Black #16161D — on the appropriate field. Each variant below shows those inks on the correct field: horizontal payoff , vertical payoff , then symbol only (yellow on void black is preferred).",
-      "it": "La tavolozza del logo definisce tre colori di inchiostro: Starter Yellow #FFA600, Crystal White #F8F8FF e Void Black #16161D - nel campo appropriato. Ciascuna variante di seguito mostra gli inchiostri sul campo corretto: vincita orizzontale, vincita verticale, quindi solo simbolo (è preferito il giallo su nero vuoto).",
+      "it": "La tavolozza del logo definisce tre colori di inchiostro: Starter Yellow #FFA600, Crystal White #F8F8FF e Void Black #16161D - nel campo appropriato. Ciascuna variante di seguito mostra gli inchiostri sul campo corretto: payoff orizzontale, payoff verticale, quindi solo simbolo (è preferito Starter Yellow su Void Black).",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -9005,7 +9005,7 @@
     {
       "id": "body.brand-guidelines.p.9",
       "en": "Horizontal payoff",
-      "it": "Guadagno orizzontale",
+      "it": "Payoff orizzontale",
       "source": "brand-guidelines.html",
       "context": "<p>"
     },
@@ -9082,7 +9082,7 @@
     {
       "id": "body.brand-guidelines.td.8",
       "en": "Horizontal wordmark — when the full payoff is too wide.",
-      "it": "Marchio denominativo orizzontale: quando il profitto completo è troppo ampio.",
+      "it": "Marchio denominativo orizzontale: quando il payoff completo è troppo largo.",
       "source": "brand-guidelines.html",
       "context": "<td>"
     },
@@ -12120,7 +12120,7 @@
     {
       "id": "body.index.p.1",
       "en": "Ready. Set. Cloud.",
-      "it": "Ready. Set. Cloud.",
+      "it": "Pronti. Via. Cloud.",
       "source": "index.html",
       "context": "<p>"
     },
@@ -13758,7 +13758,7 @@
     {
       "id": "body.products.li.9",
       "en": "✓ Green computing incentives",
-      "it": "✓ Incentivi per il green computing",
+      "it": "✓ Incentivi per il cloud sostenibile",
       "source": "products.html",
       "context": "<li>"
     },
@@ -23656,7 +23656,7 @@
     {
       "id": "ui.footer.tagline",
       "en": "Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.",
-      "it": "Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabili.",
+      "it": "Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -23761,7 +23761,7 @@
     {
       "id": "ui.pages.about.heroSubtitle",
       "en": "Transforming cloud infrastructure with vendor-neutral, cost-effective, and sustainable computing.",
-      "it": "Trasformiamo l'infrastruttura cloud con soluzioni indipendenti dai fornitori, sostenibili e convenienti.",
+      "it": "Trasformiamo l'infrastruttura cloud con soluzioni indipendenti dal fornitore, sostenibili e convenienti.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -23817,7 +23817,7 @@
     {
       "id": "ui.pages.index.heroSubtitle",
       "en": "Vendor-neutral, cost-saving, green, high-performance, self-hostable cloud with infrastructure-as-code readiness.",
-      "it": "Cloud indipendente dal fornitore, conveniente, sostenibile, ad alte prestazioni e auto-ospitabili, pronto per l'infrastructure as code.",
+      "it": "Cloud indipendente dal fornitore, conveniente, sostenibile, ad alte prestazioni e auto-ospitabile, pronto per l'infrastructure as code.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -23904,6 +23904,798 @@
       "it": "Grazie per aver prenotato la demo della soluzione completa!",
       "source": "src/i18n/ui",
       "context": ""
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h1.1",
+      "en": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
+      "it": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.1",
+      "en": "VMware and Broadcom: when infrastructure dependence becomes business risk",
+      "it": "VMware e Broadcom: quando la dipendenza dalle infrastrutture diventa rischio d'impresa",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.2",
+      "en": "Lock-in rarely feels dangerous at the beginning",
+      "it": "All’inizio il lock-in raramente sembra pericoloso",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.3",
+      "en": "The VMware problem is not just price",
+      "it": "Il problema di VMware non è solo il prezzo",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.4",
+      "en": "Why &apos;just migrate to the public cloud&apos; is not always the answer",
+      "it": "Perché \"migrare semplicemente al cloud pubblico\"? non è sempre la risposta",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.5",
+      "en": "Elemento AtomOS: a practical path away from VMware",
+      "it": "Elemento AtomOS: un percorso pratico lontano da VMware",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.6",
+      "en": "From VMware replacement to infrastructure freedom",
+      "it": "Dalla sostituzione di VMware alla libertà dell'infrastruttura",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.7",
+      "en": "Why timing matters",
+      "it": "Perché il tempismo è importante",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.8",
+      "en": "Join our webinar on May 27, 2026",
+      "it": "Partecipa al nostro webinar il 27 maggio 2026",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.9",
+      "en": "The new infrastructure question: can you leave?",
+      "it": "La questione delle nuove infrastrutture: si può partire?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.1",
+      "en": "Can your organization choose where workloads run?",
+      "it": "La tua organizzazione può scegliere dove eseguire i carichi di lavoro?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.10",
+      "en": "Can we preserve control over data, infrastructure, and costs?",
+      "it": "Possiamo preservare il controllo su dati, infrastrutture e costi?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.11",
+      "en": "large VMware estates;",
+      "it": "grandi tenute VMware;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.12",
+      "en": "upcoming renewal pressure;",
+      "it": "pressione di rinnovo imminente;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.13",
+      "en": "sovereignty or data residency requirements;",
+      "it": "requisiti di sovranità o residenza dei dati;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.14",
+      "en": "GPU and AI workloads needs;",
+      "it": "Esigenze di carichi di lavoro GPU e AI;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.15",
+      "en": "hybrid cloud strategies;",
+      "it": "strategie di cloud ibrido;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.16",
+      "en": "colocation infrastructure;",
+      "it": "infrastruttura di colocation;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.17",
+      "en": "public sector or regulated environments;",
+      "it": "settore pubblico o ambienti regolamentati;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.18",
+      "en": "a need to reduce vendor dependence.",
+      "it": "la necessità di ridurre la dipendenza dal fornitore.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.19",
+      "en": "what changed in the VMware landscape after Broadcom;",
+      "it": "cosa è cambiato nel panorama VMware dopo Broadcom;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.2",
+      "en": "Can you move virtual machines without rewriting everything?",
+      "it": "È possibile spostare le macchine virtuali senza riscrivere tutto?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.20",
+      "en": "why licensing pressure is only part of the problem;",
+      "it": "perché la pressione sulle licenze è solo una parte del problema;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.21",
+      "en": "how to evaluate VMware lock-in from a technical and financial perspective;",
+      "it": "come valutare il lock-in di VMware da un punto di vista tecnico e finanziario;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.22",
+      "en": "how AtomOS can help organizations reduce dependence on VMware;",
+      "it": "come AtomOS può aiutare le organizzazioni a ridurre la dipendenza da VMware;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.23",
+      "en": "how to plan a realistic migration path;",
+      "it": "come pianificare un percorso migratorio realistico;",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.24",
+      "en": "how to preserve control over infrastructure, costs, and future choices.",
+      "it": "come preservare il controllo sulle infrastrutture, sui costi e sulle scelte future.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.3",
+      "en": "Can you reuse existing servers and storage?",
+      "it": "È possibile riutilizzare i server e lo spazio di archiviazione esistenti?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.4",
+      "en": "Can you avoid being forced into oversized bundles?",
+      "it": "Puoi evitare di essere costretto a fare bundle sovradimensionati?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.5",
+      "en": "Can you modernize infrastructure without jumping blindly into another lock-in?",
+      "it": "È possibile modernizzare le infrastrutture senza gettarsi alla cieca in un altro lock-in?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.6",
+      "en": "Can we reduce VMware licensing exposure?",
+      "it": "Possiamo ridurre l'esposizione alle licenze VMware?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.7",
+      "en": "Can we keep using our existing servers and storage?",
+      "it": "Possiamo continuare a utilizzare i server e lo spazio di archiviazione esistenti?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.8",
+      "en": "Can we modernize without moving everything to public cloud?",
+      "it": "Possiamo modernizzarci senza spostare tutto sul cloud pubblico?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.9",
+      "en": "Can we build a real hybrid cloud model?",
+      "it": "Possiamo costruire un vero modello di cloud ibrido?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.1",
+      "en": "By Elemento Team &mdash; 2026-05-26",
+      "it": "A cura del team Elemento: 2026-05-26",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.10",
+      "en": "For some organizations, this shift may be manageable. For others, especially those that previously consumed VMware in a more modular way, the new model can create a difficult question: are we paying for what we need, or are we paying to preserve operational continuity?",
+      "it": "Per alcune organizzazioni, questo cambiamento potrebbe essere gestibile. Per altri, soprattutto quelli che in precedenza utilizzavano VMware in modo più modulare, il nuovo modello può creare una domanda difficile: stiamo pagando per ciò di cui abbiamo bisogno o stiamo pagando per preservare la continuità operativa?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.11",
+      "en": "That question matters because VMware sits at the core of infrastructure. Changing a collaboration tool, CRM, or analytics platform can be painful. Changing the virtualization layer can become a multi-year transformation involving applications, storage, networking, monitoring, automation, backup, disaster recovery, security, and internal skills.",
+      "it": "Questa domanda è importante perché VMware è al centro dell'infrastruttura. Cambiare uno strumento di collaborazione, un CRM o una piattaforma di analisi può essere doloroso. La modifica del livello di virtualizzazione può diventare una trasformazione pluriennale che coinvolge applicazioni, storage, rete, monitoraggio, automazione, backup, ripristino di emergenza, sicurezza e competenze interne.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.12",
+      "en": "The licensing cost is only one part of the story. The real cost of VMware dependence is the reduced ability to choose.",
+      "it": "Il costo della licenza è solo una parte della storia. Il vero costo della dipendenza da VMware è la ridotta capacità di scelta.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.13",
+      "en": "Vendor lock-in almost never starts as a problem.",
+      "it": "Il vincolo del fornitore non inizia quasi mai come un problema.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.14",
+      "en": "At first, consolidation looks rational: one vendor, one roadmap, one support model, one set of skills, one contract, one ecosystem. It reduces complexity. It makes procurement simpler. It gives infrastructure teams a familiar operational model.",
+      "it": "Inizialmente, il consolidamento sembra razionale: un fornitore, una tabella di marcia, un modello di supporto, un insieme di competenze, un contratto, un ecosistema. Riduce la complessità. Rende gli appalti più semplici. Offre ai team dell'infrastruttura un modello operativo familiare.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.15",
+      "en": "But over time, convenience becomes dependency.",
+      "it": "Ma col tempo, la comodità diventa dipendenza.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.16",
+      "en": "Processes adapt to proprietary tools. Teams specialize around one platform. Applications are designed around specific assumptions. Backup, monitoring, disaster recovery, automation, and capacity planning all become tightly connected to the same ecosystem.",
+      "it": "I processi si adattano agli strumenti proprietari. I team sono specializzati attorno a una piattaforma. Le applicazioni sono progettate in base a presupposti specifici. Backup, monitoraggio, ripristino di emergenza, automazione e pianificazione della capacità diventano tutti strettamente collegati allo stesso ecosistema.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.17",
+      "en": "Then a renewal arrives. Or a licensing model changes. Or the product portfolio is repackaged. Or the vendor&apos;s strategy shifts after an acquisition.",
+      "it": "Poi arriva il rinnovo. Oppure cambia un modello di licenza. Oppure il portafoglio prodotti viene riconfezionato. Oppure la strategia del venditore cambia dopo un'acquisizione.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.18",
+      "en": "That is when the relationship changes. What once looked like standardization starts to look like exposure.",
+      "it": "È allora che la relazione cambia. Ciò che una volta sembrava una standardizzazione inizia a sembrare un’esposizione.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.19",
+      "en": "The most visible concern around VMware after Broadcom is cost. Many customers and partners have reported pressure from higher renewals, portfolio changes, and the shift from perpetual licensing toward subscription models. Public reports have also described customer concerns around price increases and reduced flexibility after the acquisition.",
+      "it": "La preoccupazione più visibile su VMware dopo Broadcom è il costo. Molti clienti e partner hanno segnalato pressioni derivanti da rinnovi più elevati, cambiamenti di portafoglio e dal passaggio dalle licenze perpetue ai modelli di abbonamento. Rapporti pubblici hanno anche descritto le preoccupazioni dei clienti riguardo agli aumenti di prezzo e alla ridotta flessibilità dopo l’acquisizione.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.2",
+      "en": "After Broadcom&apos;s acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+      "it": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.20",
+      "en": "But focusing only on price misses the larger point.",
+      "it": "Ma concentrandosi solo sul prezzo non si coglie il punto più importante.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.21",
+      "en": "The VMware question is really about infrastructure sovereignty.",
+      "it": "La questione di VMware riguarda in realtà la sovranità dell’infrastruttura.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.22",
+      "en": "For many IT leaders, the answer is uncomfortable: not yet.",
+      "it": "Per molti leader IT la risposta è scomoda: non ancora.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.23",
+      "en": "And that is why a VMware exit strategy is no longer just a cost optimization exercise. It is a resilience strategy.",
+      "it": "Ed è per questo che una strategia di uscita da VMware non è più solo un esercizio di ottimizzazione dei costi. È una strategia di resilienza.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.24",
+      "en": "Public cloud can be an excellent option for many workloads. It offers elasticity, managed services, global availability, and access to advanced capabilities.",
+      "it": "Il cloud pubblico può essere un'opzione eccellente per molti carichi di lavoro. Offre elasticità, servizi gestiti, disponibilità globale e accesso a funzionalità avanzate.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.25",
+      "en": "But as a VMware exit strategy, a simple lift-and-shift to public cloud can create a new problem: replacing one dependency with another.",
+      "it": "Ma come strategia di uscita da VMware, un semplice passaggio al cloud pubblico può creare un nuovo problema: sostituire una dipendenza con un’altra.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.26",
+      "en": "Moving virtual machines to a hyperscaler without changing the operating model may reduce data center complexity, but it does not automatically reduce total cost of ownership. It may also introduce new dependencies around egress fees, proprietary services, cloud-specific automation, and provider-specific architectures.",
+      "it": "Lo spostamento delle macchine virtuali su un hyperscaler senza modificare il modello operativo può ridurre la complessità del data center, ma non riduce automaticamente il costo totale di proprietà. Potrebbe anche introdurre nuove dipendenze relative a tariffe in uscita, servizi proprietari, automazione specifica del cloud e architetture specifiche del provider.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.27",
+      "en": "The goal should not be to escape VMware only to become dependent on a different closed ecosystem.",
+      "it": "L'obiettivo non dovrebbe essere quello di sfuggire a VMware solo per diventare dipendenti da un diverso ecosistema chiuso.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.28",
+      "en": "The goal should be to regain optionality.",
+      "it": "L’obiettivo dovrebbe essere quello di riconquistare l’opzionalità.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.29",
+      "en": "That means building an infrastructure model where workloads can run across private infrastructure, colocated environments, service providers, and public clouds without forcing the organization to redesign everything each time.",
+      "it": "Ciò significa costruire un modello di infrastruttura in cui i carichi di lavoro possano essere eseguiti su infrastrutture private, ambienti condivisi, fornitori di servizi e cloud pubblici senza costringere l'organizzazione a riprogettare tutto ogni volta.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.3",
+      "en": "For years, VMware has been the operational language of enterprise virtualization.",
+      "it": "Per anni VMware è stato il linguaggio operativo della virtualizzazione aziendale.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.30",
+      "en": "This is where Elemento Cloud and AtomOS become relevant.",
+      "it": "È qui che Elemento Cloud e AtomOS diventano rilevanti.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.31",
+      "en": "Elemento AtomOS is designed for organizations that want to move beyond VMware without losing control of their infrastructure.",
+      "it": "Elemento AtomOS è progettato per le organizzazioni che desiderano andare oltre VMware senza perdere il controllo della propria infrastruttura.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.32",
+      "en": "It is a Linux-based virtualization platform built on open technologies, designed to support private cloud, colocation, and hybrid environments. Elemento positions AtomOS as a modern VMware alternative for organizations looking to reduce licensing pressure, reuse existing infrastructure, and move toward a more cloud-native operating model.",
+      "it": "È una piattaforma di virtualizzazione basata su Linux costruita su tecnologie aperte, progettata per supportare cloud privato, colocation e ambienti ibridi. Elemento posiziona AtomOS come una moderna alternativa a VMware per le organizzazioni che desiderano ridurre la pressione sulle licenze, riutilizzare l'infrastruttura esistente e passare a un modello operativo più nativo del cloud.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.33",
+      "en": "The key point is simple: AtomOS is not just another hypervisor replacement.",
+      "it": "Il punto chiave è semplice: AtomOS non è solo un altro sostituto dell'hypervisor.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.34",
+      "en": "It is part of a broader Elemento ecosystem built around infrastructure freedom, vendor neutrality, and workload portability. Elemento Modular Cloud provides a unified interface to manage workloads across cloud providers and customer-owned infrastructure, reducing dependence on a single provider or ecosystem.",
+      "it": "Fa parte di un ecosistema Elemento più ampio costruito attorno alla libertà dell'infrastruttura, alla neutralità del fornitore e alla portabilità del carico di lavoro. Elemento Modular Cloud fornisce un'interfaccia unificata per gestire i carichi di lavoro tra provider cloud e infrastrutture di proprietà del cliente, riducendo la dipendenza da un singolo provider o ecosistema.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.35",
+      "en": "That makes AtomOS especially relevant for companies asking questions such as:",
+      "it": "Ciò rende AtomOS particolarmente rilevante per le aziende che pongono domande come:",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.36",
+      "en": "For many organizations, the answer can be yes.",
+      "it": "Per molte organizzazioni la risposta può essere sì.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.37",
+      "en": "A tactical VMware replacement focuses on reducing cost.",
+      "it": "Una sostituzione tattica di VMware si concentra sulla riduzione dei costi.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.38",
+      "en": "A strategic VMware exit focuses on increasing freedom.",
+      "it": "Un’uscita strategica da VMware si concentra sull’aumento della libertà.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.39",
+      "en": "That difference matters.",
+      "it": "Questa differenza è importante.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.4",
+      "en": "It has powered data centers, business continuity plans, backup strategies, capacity planning processes, infrastructure teams, and thousands of critical applications. For many organizations, VMware has not simply been a software vendor. It has become the foundation on which infrastructure operations were designed.",
+      "it": "Ha alimentato data center, piani di continuità aziendale, strategie di backup, processi di pianificazione della capacità, team infrastrutturali e migliaia di applicazioni critiche. Per molte organizzazioni, VMware non è stato semplicemente un fornitore di software. È diventata la base su cui sono state progettate le operazioni infrastrutturali.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.40",
+      "en": "Replacing VMware with another closed stack may solve the renewal problem temporarily, but it does not necessarily improve long-term resilience. The real opportunity is to redesign the infrastructure layer around openness, portability, and control.",
+      "it": "La sostituzione di VMware con un altro stack chiuso può risolvere temporaneamente il problema del rinnovo, ma non migliora necessariamente la resilienza a lungo termine. La vera opportunità è riprogettare il livello infrastrutturale attorno all’apertura, alla portabilità e al controllo.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.41",
+      "en": "Elemento&apos;s approach is based on a different idea: infrastructure should remain yours, even when it behaves like cloud.",
+      "it": "L'approccio di Elemento si basa su un'idea diversa: l'infrastruttura dovrebbe rimanere tua, anche quando si comporta come il cloud.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.42",
+      "en": "With AtomOS, organizations can turn existing infrastructure into a more flexible virtualization and cloud environment. With Elemento Cloud, they can manage resources across providers and environments through a unified, vendor-neutral model. The platform is designed to work with existing cloud accounts, existing infrastructure, and existing tools, rather than forcing customers into a single ecosystem.",
+      "it": "Con AtomOS, le organizzazioni possono trasformare l'infrastruttura esistente in un ambiente cloud e di virtualizzazione più flessibile. Con Elemento Cloud, possono gestire le risorse tra provider e ambienti attraverso un modello unificato e indipendente dal fornitore. La piattaforma è progettata per funzionare con gli account cloud esistenti, l'infrastruttura esistente e gli strumenti esistenti, anziché forzare i clienti in un unico ecosistema.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.43",
+      "en": "This is especially important for organizations with:",
+      "it": "Ciò è particolarmente importante per le organizzazioni con:",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.44",
+      "en": "In these scenarios, moving away from VMware is not only about saving money. It is about restoring independence and power.",
+      "it": "In questi scenari, abbandonare VMware non significa solo risparmiare denaro. Si tratta di ripristinare l’indipendenza e il potere.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.45",
+      "en": "A VMware exit strategy should not begin when the renewal quote is already on the table.",
+      "it": "Una strategia di uscita da VMware non dovrebbe iniziare quando il preventivo di rinnovo è già sul tavolo.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.46",
+      "en": "Virtualization migrations require assessment, planning, workload discovery, compatibility checks, backup and disaster recovery validation, networking review, skill development, and phased execution. The more critical VMware is to the business, the more important it is to start early.",
+      "it": "Le migrazioni di virtualizzazione richiedono valutazione, pianificazione, rilevamento del carico di lavoro, controlli di compatibilità, convalida del backup e del ripristino di emergenza, revisione della rete, sviluppo delle competenze ed esecuzione graduale. Quanto più VMware è fondamentale per l'azienda, tanto più importante è iniziare presto.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.47",
+      "en": "The first step is not necessarily migration.",
+      "it": "Il primo passo non è necessariamente la migrazione.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.48",
+      "en": "The first step is visibility.",
+      "it": "Il primo passo è la visibilità.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.49",
+      "en": "Organizations need to understand which workloads depend on VMware, which ones are easy to move, which ones require redesign, which infrastructure can be reused, which costs are avoidable, and which risks must be managed before any transition.",
+      "it": "Le organizzazioni devono capire quali carichi di lavoro dipendono da VMware, quali sono facili da spostare, quali richiedono una riprogettazione, quale infrastruttura può essere riutilizzata, quali costi sono evitabili e quali rischi devono essere gestiti prima di qualsiasi transizione.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.5",
+      "en": "That is exactly why the Broadcom acquisition changed the conversation.",
+      "it": "Questo è esattamente il motivo per cui l’acquisizione di Broadcom ha cambiato il discorso.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.50",
+      "en": "This is where a structured evaluation of AtomOS can help. It gives infrastructure teams a concrete way to compare scenarios, assess technical feasibility, estimate savings, and define a migration path that does not require panic decisions.",
+      "it": "È qui che può aiutare una valutazione strutturata di AtomOS. Offre ai team infrastrutturali un modo concreto per confrontare scenari, valutare la fattibilità tecnica, stimare i risparmi e definire un percorso di migrazione che non richieda decisioni dettate dal panico.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.51",
+      "en": "On May 27, 2026 , Elemento will host a dedicated webinar on how organizations can rethink their VMware strategy and evaluate AtomOS as a modern, open, and cost-effective alternative.",
+      "it": "Il 27 maggio 2026, Elemento ospiterà un webinar dedicato su come le organizzazioni possono ripensare la propria strategia VMware e valutare AtomOS come un'alternativa moderna, aperta ed economica.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.52",
+      "en": "In the session, we will discuss:",
+      "it": "Nella sessione discuteremo:",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.53",
+      "en": "Register for the webinar here: https://riverside.com/webinar/registration/eyJldmVudElkIjoiNjlmMWQ5NGEwZDhhMDE1Mzk3YzgzYTA3Iiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=",
+      "it": "Registrati al webinar qui: https://riverside.com/webinar/registration/eyJldmVudElkIjoiNjlmMWQ5NGEwZDhhMDE1Mzk3YzgzYTA3Iiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.54",
+      "en": "Please note that the webinar will be held in Italian.",
+      "it": "Si ricorda che il webinar si terrà in italiano.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.55",
+      "en": "For years, infrastructure resilience was measured mainly through uptime, recovery time, redundancy, and disaster recovery.",
+      "it": "Per anni, la resilienza delle infrastrutture è stata misurata principalmente in termini di uptime, tempi di ripristino, ridondanza e disaster recovery.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.56",
+      "en": "Those metrics still matter. But they are no longer enough.",
+      "it": "Questi parametri contano ancora. Ma non bastano più.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.57",
+      "en": "A resilient infrastructure must also be able to withstand a change in vendor strategy, a licensing shift, a portfolio repackaging, a sudden price increase, or an acquisition that changes the balance of power between customer and supplier.",
+      "it": "Un’infrastruttura resiliente deve anche essere in grado di resistere a un cambiamento nella strategia del fornitore, a uno spostamento delle licenze, a un riconfezionamento del portafoglio, a un improvviso aumento dei prezzi o a un’acquisizione che modifica l’equilibrio di potere tra cliente e fornitore.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.58",
+      "en": "The VMware-Broadcom case is a reminder that no platform, however strong, should become impossible to leave.",
+      "it": "Il caso VMware-Broadcom ci ricorda che nessuna piattaforma, per quanto forte, dovrebbe diventare impossibile da abbandonare.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.59",
+      "en": "Technology freedom does not come from hoping that vendors will always act in your favor. It comes from designing infrastructure so that no single vendor can control your future.",
+      "it": "La libertà tecnologica non deriva dalla speranza che i fornitori agiscano sempre a tuo favore. Deriva dalla progettazione dell'infrastruttura in modo che nessun singolo fornitore possa controllare il tuo futuro.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.6",
+      "en": "The issue is not whether VMware is still technically strong. In many environments, it remains a mature, deeply embedded, and highly capable platform. The real issue is control. When a technology becomes so central that replacing it feels almost impossible, the customer&apos;s freedom of movement gradually disappears.",
+      "it": "Il problema non è se VMware sia ancora tecnicamente forte. In molti ambienti, rimane una piattaforma matura, profondamente integrata e altamente capace. Il vero problema è il controllo. Quando una tecnologia diventa così centrale che sostituirla sembra quasi impossibile, la libertà di movimento del cliente scompare gradualmente.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.60",
+      "en": "Elemento AtomOS offers a practical opportunity to start that journey: reduce VMware dependence, reuse existing infrastructure, modernize your virtualization layer, and build a more open path toward hybrid cloud.",
+      "it": "Elemento AtomOS offre un'opportunità pratica per iniziare questo viaggio: ridurre la dipendenza da VMware, riutilizzare l'infrastruttura esistente, modernizzare il livello di virtualizzazione e costruire un percorso più aperto verso il cloud ibrido.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.61",
+      "en": "Want to understand whether AtomOS is the right VMware alternative for your organization?",
+      "it": "Vuoi capire se AtomOS è la giusta alternativa a VMware per la tua organizzazione?",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.62",
+      "en": "Book a call with the Elemento team and let&apos;s assess your infrastructure, renewal timeline, migration options, and potential savings.",
+      "it": "Prenota una chiamata con il team di Elemento e valutiamo la tua infrastruttura, la tempistica di rinnovo, le opzioni di migrazione e i potenziali risparmi.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.63",
+      "en": "Book your call here: https://book.elemento.cloud",
+      "it": "Prenota la tua chiamata qui: https://book.elemento.cloud",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.7",
+      "en": "And when the vendor changes the rules, that dependence becomes visible.",
+      "it": "E quando il venditore cambia le regole, quella dipendenza diventa visibile.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.8",
+      "en": "The VMware-Broadcom case has brought vendor lock-in back to the top of the infrastructure agenda.",
+      "it": "Il caso VMware-Broadcom ha riportato il vincolo del fornitore in cima all'agenda delle infrastrutture.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.9",
+      "en": "After Broadcom completed its acquisition of VMware, customers began facing a very different commercial landscape: stronger emphasis on subscriptions, broader product bundles, licensing changes, portfolio simplification, and new renewal dynamics. VMware Cloud Foundation and vSphere Foundation are now central to Broadcom&apos;s VMware strategy, with subscription licensing playing a much larger role than in the previous model.",
+      "it": "Dopo che Broadcom ha completato l'acquisizione di VMware, i clienti hanno iniziato ad affrontare un panorama commerciale molto diverso: maggiore enfasi sugli abbonamenti, pacchetti di prodotti più ampi, modifiche alle licenze, semplificazione del portafoglio e nuove dinamiche di rinnovo. VMware Cloud Foundation e vSphere Foundation sono ora al centro della strategia VMware di Broadcom, con le licenze in abbonamento che svolgono un ruolo molto più importante rispetto al modello precedente.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.description",
+      "en": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+      "it": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.title",
+      "en": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk | Elemento Blog",
+      "it": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico | Blog Elemento",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "meta title"
     }
   ]
 }

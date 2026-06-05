@@ -186,7 +186,7 @@ class ProviderIntegrationsHandler {
             
             return `
                 <tr class="${rowClass}">
-                    <td class="comparison-table-cell"><strong>${provider.provider}</strong></td>
+                    <td class="comparison-table-cell" translate="no"><strong>${provider.provider}</strong></td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.vmManagement)}">${this.getStatusIcon(provider.vmManagement)} ${this.getStatusText(provider.vmManagement)}</td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.storageAas)}">${this.getStatusIcon(provider.storageAas)} ${this.getStatusText(provider.storageAas)}</td>
                     <td class="comparison-table-cell-${this.getStatusClass(provider.networking)}">${this.getStatusIcon(provider.networking)} ${this.getStatusText(provider.networking)}</td>

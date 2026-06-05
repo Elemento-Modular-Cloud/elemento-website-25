@@ -1,0 +1,798 @@
+{
+  "page": "blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk",
+  "count": 99,
+  "strings": [
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h1.1",
+      "en": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.1",
+      "en": "VMware and Broadcom: when infrastructure dependence becomes business risk",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.2",
+      "en": "Lock-in rarely feels dangerous at the beginning",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.3",
+      "en": "The VMware problem is not just price",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.4",
+      "en": "Why &apos;just migrate to the public cloud&apos; is not always the answer",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.5",
+      "en": "Elemento AtomOS: a practical path away from VMware",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.6",
+      "en": "From VMware replacement to infrastructure freedom",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.7",
+      "en": "Why timing matters",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.8",
+      "en": "Join our webinar on May 27, 2026",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.h2.9",
+      "en": "The new infrastructure question: can you leave?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.1",
+      "en": "Can your organization choose where workloads run?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.10",
+      "en": "Can we preserve control over data, infrastructure, and costs?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.11",
+      "en": "large VMware estates;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.12",
+      "en": "upcoming renewal pressure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.13",
+      "en": "sovereignty or data residency requirements;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.14",
+      "en": "GPU and AI workloads needs;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.15",
+      "en": "hybrid cloud strategies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.16",
+      "en": "colocation infrastructure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.17",
+      "en": "public sector or regulated environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.18",
+      "en": "a need to reduce vendor dependence.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.19",
+      "en": "what changed in the VMware landscape after Broadcom;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.2",
+      "en": "Can you move virtual machines without rewriting everything?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.20",
+      "en": "why licensing pressure is only part of the problem;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.21",
+      "en": "how to evaluate VMware lock-in from a technical and financial perspective;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.22",
+      "en": "how AtomOS can help organizations reduce dependence on VMware;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.23",
+      "en": "how to plan a realistic migration path;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.24",
+      "en": "how to preserve control over infrastructure, costs, and future choices.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.3",
+      "en": "Can you reuse existing servers and storage?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.4",
+      "en": "Can you avoid being forced into oversized bundles?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.5",
+      "en": "Can you modernize infrastructure without jumping blindly into another lock-in?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.6",
+      "en": "Can we reduce VMware licensing exposure?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.7",
+      "en": "Can we keep using our existing servers and storage?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.8",
+      "en": "Can we modernize without moving everything to public cloud?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.li.9",
+      "en": "Can we build a real hybrid cloud model?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.1",
+      "en": "By Elemento Team &mdash; 2026-05-26",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.10",
+      "en": "For some organizations, this shift may be manageable. For others, especially those that previously consumed VMware in a more modular way, the new model can create a difficult question: are we paying for what we need, or are we paying to preserve operational continuity?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.11",
+      "en": "That question matters because VMware sits at the core of infrastructure. Changing a collaboration tool, CRM, or analytics platform can be painful. Changing the virtualization layer can become a multi-year transformation involving applications, storage, networking, monitoring, automation, backup, disaster recovery, security, and internal skills.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.12",
+      "en": "The licensing cost is only one part of the story. The real cost of VMware dependence is the reduced ability to choose.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.13",
+      "en": "Vendor lock-in almost never starts as a problem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.14",
+      "en": "At first, consolidation looks rational: one vendor, one roadmap, one support model, one set of skills, one contract, one ecosystem. It reduces complexity. It makes procurement simpler. It gives infrastructure teams a familiar operational model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.15",
+      "en": "But over time, convenience becomes dependency.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.16",
+      "en": "Processes adapt to proprietary tools. Teams specialize around one platform. Applications are designed around specific assumptions. Backup, monitoring, disaster recovery, automation, and capacity planning all become tightly connected to the same ecosystem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.17",
+      "en": "Then a renewal arrives. Or a licensing model changes. Or the product portfolio is repackaged. Or the vendor&apos;s strategy shifts after an acquisition.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.18",
+      "en": "That is when the relationship changes. What once looked like standardization starts to look like exposure.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.19",
+      "en": "The most visible concern around VMware after Broadcom is cost. Many customers and partners have reported pressure from higher renewals, portfolio changes, and the shift from perpetual licensing toward subscription models. Public reports have also described customer concerns around price increases and reduced flexibility after the acquisition.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.2",
+      "en": "After Broadcom&apos;s acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.20",
+      "en": "But focusing only on price misses the larger point.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.21",
+      "en": "The VMware question is really about infrastructure sovereignty.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.22",
+      "en": "For many IT leaders, the answer is uncomfortable: not yet.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.23",
+      "en": "And that is why a VMware exit strategy is no longer just a cost optimization exercise. It is a resilience strategy.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.24",
+      "en": "Public cloud can be an excellent option for many workloads. It offers elasticity, managed services, global availability, and access to advanced capabilities.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.25",
+      "en": "But as a VMware exit strategy, a simple lift-and-shift to public cloud can create a new problem: replacing one dependency with another.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.26",
+      "en": "Moving virtual machines to a hyperscaler without changing the operating model may reduce data center complexity, but it does not automatically reduce total cost of ownership. It may also introduce new dependencies around egress fees, proprietary services, cloud-specific automation, and provider-specific architectures.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.27",
+      "en": "The goal should not be to escape VMware only to become dependent on a different closed ecosystem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.28",
+      "en": "The goal should be to regain optionality.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.29",
+      "en": "That means building an infrastructure model where workloads can run across private infrastructure, colocated environments, service providers, and public clouds without forcing the organization to redesign everything each time.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.3",
+      "en": "For years, VMware has been the operational language of enterprise virtualization.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.30",
+      "en": "This is where Elemento Cloud and AtomOS become relevant.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.31",
+      "en": "Elemento AtomOS is designed for organizations that want to move beyond VMware without losing control of their infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.32",
+      "en": "It is a Linux-based virtualization platform built on open technologies, designed to support private cloud, colocation, and hybrid environments. Elemento positions AtomOS as a modern VMware alternative for organizations looking to reduce licensing pressure, reuse existing infrastructure, and move toward a more cloud-native operating model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.33",
+      "en": "The key point is simple: AtomOS is not just another hypervisor replacement.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.34",
+      "en": "It is part of a broader Elemento ecosystem built around infrastructure freedom, vendor neutrality, and workload portability. Elemento Modular Cloud provides a unified interface to manage workloads across cloud providers and customer-owned infrastructure, reducing dependence on a single provider or ecosystem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.35",
+      "en": "That makes AtomOS especially relevant for companies asking questions such as:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.36",
+      "en": "For many organizations, the answer can be yes.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.37",
+      "en": "A tactical VMware replacement focuses on reducing cost.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.38",
+      "en": "A strategic VMware exit focuses on increasing freedom.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.39",
+      "en": "That difference matters.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.4",
+      "en": "It has powered data centers, business continuity plans, backup strategies, capacity planning processes, infrastructure teams, and thousands of critical applications. For many organizations, VMware has not simply been a software vendor. It has become the foundation on which infrastructure operations were designed.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.40",
+      "en": "Replacing VMware with another closed stack may solve the renewal problem temporarily, but it does not necessarily improve long-term resilience. The real opportunity is to redesign the infrastructure layer around openness, portability, and control.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.41",
+      "en": "Elemento&apos;s approach is based on a different idea: infrastructure should remain yours, even when it behaves like cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.42",
+      "en": "With AtomOS, organizations can turn existing infrastructure into a more flexible virtualization and cloud environment. With Elemento Cloud, they can manage resources across providers and environments through a unified, vendor-neutral model. The platform is designed to work with existing cloud accounts, existing infrastructure, and existing tools, rather than forcing customers into a single ecosystem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.43",
+      "en": "This is especially important for organizations with:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.44",
+      "en": "In these scenarios, moving away from VMware is not only about saving money. It is about restoring independence and power.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.45",
+      "en": "A VMware exit strategy should not begin when the renewal quote is already on the table.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.46",
+      "en": "Virtualization migrations require assessment, planning, workload discovery, compatibility checks, backup and disaster recovery validation, networking review, skill development, and phased execution. The more critical VMware is to the business, the more important it is to start early.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.47",
+      "en": "The first step is not necessarily migration.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.48",
+      "en": "The first step is visibility.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.49",
+      "en": "Organizations need to understand which workloads depend on VMware, which ones are easy to move, which ones require redesign, which infrastructure can be reused, which costs are avoidable, and which risks must be managed before any transition.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.5",
+      "en": "That is exactly why the Broadcom acquisition changed the conversation.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.50",
+      "en": "This is where a structured evaluation of AtomOS can help. It gives infrastructure teams a concrete way to compare scenarios, assess technical feasibility, estimate savings, and define a migration path that does not require panic decisions.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.51",
+      "en": "On May 27, 2026 , Elemento will host a dedicated webinar on how organizations can rethink their VMware strategy and evaluate AtomOS as a modern, open, and cost-effective alternative.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.52",
+      "en": "In the session, we will discuss:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.53",
+      "en": "Register for the webinar here: https://riverside.com/webinar/registration/eyJldmVudElkIjoiNjlmMWQ5NGEwZDhhMDE1Mzk3YzgzYTA3Iiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.54",
+      "en": "Please note that the webinar will be held in Italian.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.55",
+      "en": "For years, infrastructure resilience was measured mainly through uptime, recovery time, redundancy, and disaster recovery.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.56",
+      "en": "Those metrics still matter. But they are no longer enough.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.57",
+      "en": "A resilient infrastructure must also be able to withstand a change in vendor strategy, a licensing shift, a portfolio repackaging, a sudden price increase, or an acquisition that changes the balance of power between customer and supplier.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.58",
+      "en": "The VMware-Broadcom case is a reminder that no platform, however strong, should become impossible to leave.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.59",
+      "en": "Technology freedom does not come from hoping that vendors will always act in your favor. It comes from designing infrastructure so that no single vendor can control your future.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.6",
+      "en": "The issue is not whether VMware is still technically strong. In many environments, it remains a mature, deeply embedded, and highly capable platform. The real issue is control. When a technology becomes so central that replacing it feels almost impossible, the customer&apos;s freedom of movement gradually disappears.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.60",
+      "en": "Elemento AtomOS offers a practical opportunity to start that journey: reduce VMware dependence, reuse existing infrastructure, modernize your virtualization layer, and build a more open path toward hybrid cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.61",
+      "en": "Want to understand whether AtomOS is the right VMware alternative for your organization?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.62",
+      "en": "Book a call with the Elemento team and let&apos;s assess your infrastructure, renewal timeline, migration options, and potential savings.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.63",
+      "en": "Book your call here: https://book.elemento.cloud",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.7",
+      "en": "And when the vendor changes the rules, that dependence becomes visible.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.8",
+      "en": "The VMware-Broadcom case has brought vendor lock-in back to the top of the infrastructure agenda.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.9",
+      "en": "After Broadcom completed its acquisition of VMware, customers began facing a very different commercial landscape: stronger emphasis on subscriptions, broader product bundles, licensing changes, portfolio simplification, and new renewal dynamics. VMware Cloud Foundation and vSphere Foundation are now central to Broadcom&apos;s VMware strategy, with subscription licensing playing a much larger role than in the previous model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.description",
+      "en": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.title",
+      "en": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk | Elemento Blog",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
+      "context": "meta title"
+    }
+  ]
+}

@@ -244,7 +244,7 @@ for (let i = 0; i < PROVIDER_KEYS.length; i++) {
         applyLevelsToServices(base.services, levels);
     }
 
-    if (!base.display_name) base.display_name = displayName;
+    base.display_name = displayName;
     newProviders[key] = base;
 }
 

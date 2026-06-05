@@ -55,7 +55,10 @@
     "emptyTitle": "Aucun article pour l'instant",
     "emptyBody": "Revenez bientôt pour de nouveaux articles et informations.",
     "articlesLabel": "articles",
-    "byAuthor": "Par"
+    "byAuthor": "Par",
+    "articleColumn": "Article",
+    "authorColumn": "Auteur",
+    "dateColumn": "Date"
   },
   "videos": {
     "loading": "Chargement des vidéos…",

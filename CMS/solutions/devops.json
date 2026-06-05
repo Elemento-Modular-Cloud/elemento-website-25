@@ -391,7 +391,7 @@
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hypervisor di livello produttivo per ambienti coerenti",
+          "description": "Hypervisor per ambienti di produzione per ambienti coerenti",
           "link": "../atomos.html"
         },
         {
@@ -422,11 +422,11 @@
         },
         {
           "question": "In che modo Elemento gestisce i diversi fornitori di servizi cloud?",
-          "answer": "Elemento elimina le differenze tra i fornitori di servizi cloud, consentendoti di distribuire la stessa configurazione dell'infrastruttura su AWS, Azure, Google Cloud o sui tuoi data center. Ciò elimina i vincoli al fornitore e fornisce una reale flessibilità multi-cloud."
+          "answer": "Elemento elimina le differenze tra i fornitori di servizi cloud, consentendoti di distribuire la stessa configurazione dell'infrastruttura su AWS, Azure, Google Cloud o sui tuoi data center. Ciò elimina i vincoli con i fornitori e fornisce una reale flessibilità multi-cloud."
         },
         {
           "question": "E che dire della sicurezza e della conformità?",
-          "answer": "Elemento fornisce sicurezza di livello aziendale con crittografia integrata, controlli di accesso e registrazione di controllo. Supportiamo SOC 2, GDPR e altri requisiti di conformità, rendendolo adatto ai settori regolamentati."
+          "answer": "Elemento fornisce sicurezza di livello enterprise con crittografia integrata, controlli di accesso e registrazione di controllo. Supportiamo SOC 2, GDPR e altri requisiti di conformità, rendendolo adatto ai settori regolamentati."
         }
       ]
     },

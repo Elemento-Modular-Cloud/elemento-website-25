@@ -1,0 +1,70 @@
+{
+  "page": "videos",
+  "count": 8,
+  "strings": [
+    {
+      "id": "body.videos.h1.1",
+      "en": "Elemento Videos",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.videos.li.1",
+      "en": "Home",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.videos.li.2",
+      "en": "Videos",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.videos.p.1",
+      "en": "Keynotes , webinars , and product recordings from the Elemento team. Read deeper dives on our blog or get in touch .",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.videos.ui.1",
+      "en": "Watch. Learn. Explore.",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "class"
+    },
+    {
+      "id": "body.videos.ui.2",
+      "en": "Keynotes",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "class"
+    },
+    {
+      "id": "meta.videos.description",
+      "en": "Watch Elemento keynotes, webinars, and product recordings. Embedded videos and related resources from the Elemento team.",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.videos.title",
+      "en": "Elemento | Videos | Keynotes, Webinars &amp; Media",
+      "it": "",
+      "fr": "",
+      "source": "videos.html",
+      "context": "meta title"
+    }
+  ]
+}

@@ -1,116 +1,140 @@
 {
   "page": "signup-success",
-  "count": 18,
+  "count": 19,
   "strings": [
     {
       "id": "body.signup-success.h1.1",
       "en": "Welcome to Elemento !",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "<h1>"
     },
     {
-      "id": "body.signup-success.h3.1",
-      "en": "Desktop Installers",
+      "id": "body.signup-success.h2.1",
+      "en": "Desktop installers",
       "it": "",
+      "fr": "",
+      "source": "signup-success.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.signup-success.h3.1",
+      "en": "Linux",
+      "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "<h3>"
     },
     {
-      "id": "body.signup-success.h4.1",
-      "en": "Linux",
-      "it": "",
-      "source": "signup-success.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.signup-success.h4.2",
+      "id": "body.signup-success.h3.2",
       "en": "macOS",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.signup-success.h4.3",
+      "id": "body.signup-success.h3.3",
       "en": "Windows",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.signup-success.h4.4",
-      "en": "Ubuntu/Debian",
+      "id": "body.signup-success.h3.4",
+      "en": "Ubuntu / Debian",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
       "id": "body.signup-success.p.1",
-      "en": "Native applications for your operating system with full GUI capabilities.",
+      "en": "Registration complete",
       "it": "",
+      "fr": "",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.p.2",
+      "en": "Your account has been created. Download Electros to start building and managing your cloud infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.p.3",
+      "en": "Check your email — we've sent a welcome message with your login credentials and next steps.",
+      "it": "",
+      "fr": "",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.p.4",
+      "en": "Native Electros apps for your operating system",
+      "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "<p>"
     },
     {
       "id": "body.signup-success.ui.1",
-      "en": "Registration Complete!",
+      "en": "x64 AppImage",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.2",
-      "en": "Your account has been successfully created. You're now ready to start building your cloud infrastructure with the Electros orchestration dashboard.",
+      "en": "ARM64 AppImage",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.3",
-      "en": "x64 AppImage",
+      "en": "Intel (x64)",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.4",
-      "en": "ARM64 AppImage",
+      "en": "Apple Silicon",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.5",
-      "en": "Intel (x64)",
+      "en": "x64 installer",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.6",
-      "en": "Apple Silicon (ARM64)",
+      "en": "x64 package",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
     {
       "id": "body.signup-success.ui.7",
-      "en": "x64",
+      "en": "ARM64 package",
       "it": "",
-      "source": "signup-success.html",
-      "context": "class"
-    },
-    {
-      "id": "body.signup-success.ui.8",
-      "en": "x64 Package",
-      "it": "",
-      "source": "signup-success.html",
-      "context": "class"
-    },
-    {
-      "id": "body.signup-success.ui.9",
-      "en": "ARM64 Package",
-      "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "class"
     },
@@ -118,6 +142,7 @@
       "id": "meta.signup-success.description",
       "en": "Welcome to Elemento! Your account has been successfully created. Get started with your cloud infrastructure journey.",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "meta description"
     },
@@ -125,6 +150,7 @@
       "id": "meta.signup-success.title",
       "en": "Welcome to Elemento - Registration Successful",
       "it": "",
+      "fr": "",
       "source": "signup-success.html",
       "context": "meta title"
     }

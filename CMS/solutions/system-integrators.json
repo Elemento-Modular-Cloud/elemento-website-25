@@ -221,7 +221,7 @@
         {
           "icon": "fas fa-tag",
           "title": "Limitazioni dell'etichetta bianca",
-          "description": "Necessità di livelli cloud scalabili e white label senza dipendenza dall'hyperscaler e vincoli al fornitore"
+          "description": "Necessità di livelli cloud scalabili e white label senza dipendenza dall'hyperscaler e vincoli con i fornitori"
         },
         {
           "icon": "fas fa-chart-line",
@@ -273,7 +273,7 @@
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hypervisor di livello produttivo per ambienti multi-tenant coerenti"
+          "description": "Hypervisor per ambienti di produzione per ambienti multi-tenant coerenti"
         },
         {
           "logo": "../assets/logos/Electros.svg",

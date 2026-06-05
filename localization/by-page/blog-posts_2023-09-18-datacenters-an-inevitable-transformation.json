@@ -6,6 +6,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.h1.1",
       "en": "Datacenters: an inevitable transformation",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<h1>"
     },
@@ -13,6 +14,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.h3.1",
       "en": "References",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<h3>"
     },
@@ -20,6 +22,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.1",
       "en": "By giulia-borgoni &mdash; 2025-06-24",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -27,6 +30,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.10",
       "en": "I datacenter diventeranno obsoleti?",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -34,6 +38,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.2",
       "en": "Despite the decrease in the number of companies building and maintaining traditional datacenters...",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -41,6 +46,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.3",
       "en": "Are traditional data centers destined to disappear? This is a question that many ponder as the evolution of the IT landscape seems to be heading in new directions. However, according to conducted research, the answer is not so straightforward. While it is true that fewer companies choose to build, own, and manage their own data centers, it does not mean that they will disappear entirely.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -48,6 +54,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.4",
       "en": "According to a report by Gartner, by 2025, 85% of companies will close their traditional data centers. However, this trend does not indicate the extinction of data centers but rather a change in how they are utilized. It is predicted that data centers will integrate into the rapid evolutions of the IT industry, thanks to the advent of cloud technology and \"as-a-service\" models. Fewer organizations are adopting an \"all or nothing\" approach to the cloud but instead seek a dynamic combination of old and new solutions that meet the needs of end-users.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -55,6 +62,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.5",
       "en": "The partial adoption of the cloud allows for the modernization of existing infrastructures, making them more robust and flexible simultaneously. However, concerns about losing control over infrastructure and data have hindered widespread cloud adoption. Fortunately, more and more organizations are considering downsizing their data centers or adopting as-a-service and cloud models. Some companies are even reinvesting in data centers.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -62,6 +70,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.6",
       "en": "What emerges from this research is that traditional data centers are facing new challenges that drive them to change. Data center management, including the search for qualified personnel, is becoming increasingly complex. However, the as-a-service approach provides IT teams with the opportunity to focus on high-value activities, freeing them from repetitive and mechanical tasks. Automation is becoming more prevalent and necessary to support the new IT priorities.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -69,6 +78,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.7",
       "en": "Ed Featherston, Director of Hybrid Cloud Architecture and Technology Strategy at Thermo Fisher Scientific, opposes the notion that the cloud is the only or primary option for future data centers. According to Featherston, data centers will evolve by embracing increased use of hyperscale cloud products and enhanced infrastructure monitoring. He predicts a significant shift towards colocation facilities and managed services. Similar to the cloud world, there will be a trend to leverage economies of scale for real estate, energy, cooling systems, and personnel.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -76,6 +86,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.8",
       "en": "To address these challenges, careful planning of business strategies is essential, including the involvement of human resources with the right skills. Many roles in the IT field will require expertise in coding, managing infrastructure as code, and using automation and orchestration tools. It is also important to consider the potential value of existing data centers and utilize resources effectively to achieve new business objectives.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -83,6 +94,7 @@
       "id": "body.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.p.9",
       "en": "In conclusion, traditional data centers will not disappear entirely but will transform to adapt to the new needs of the IT industry. The integration of cloud technology and as-a-service models offers exciting opportunities to modernize business infrastructures while ensuring greater flexibility and agility. With careful planning and a broad vision, companies can fully leverage the benefits of data centers and successfully tackle the challenges of the future.",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "<p>"
     },
@@ -90,6 +102,7 @@
       "id": "meta.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.description",
       "en": "Despite the decrease in the number of companies building and maintaining traditional datacenters...",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "meta description"
     },
@@ -97,6 +110,7 @@
       "id": "meta.blog-posts_2023-09-18-datacenters-an-inevitable-transformation.title",
       "en": "Datacenters: an inevitable transformation | Elemento Blog",
       "it": "",
+      "fr": "",
       "source": "blog-posts/2023-09-18-datacenters-an-inevitable-transformation.html",
       "context": "meta title"
     }

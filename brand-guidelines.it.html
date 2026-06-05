@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento | Brand guidelines | Logo, colors &amp; typography</title>
+    <meta name="description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elemento.cloud/brand-guidelines.html">
+    <link rel="alternate" hreflang="en" href="https://elemento.cloud/brand-guidelines.html">
+    <link rel="alternate" hreflang="it" href="https://elemento.cloud/it/brand-guidelines.html">
+    <link rel="alternate" hreflang="x-default" href="https://elemento.cloud/brand-guidelines.html">
+    
+    <!-- Hreflang tags for internationalization -->
+    <link rel="alternate" hreflang="en" href="https://elemento.cloud/brand-guidelines.html">
+    <link rel="alternate" hreflang="x-default" href="https://elemento.cloud/brand-guidelines.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Brand guidelines - Elemento">
+    <meta property="og:description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
+    <meta property="og:url" content="https://elemento.cloud/brand-guidelines.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elemento">
+    <meta property="og:logo" content="/assets/logos/ElementoMCR.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brand guidelines - Elemento">
+    <meta name="twitter:description" content="Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.">
+    <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="Elemento brand, brand guidelines, logo, press kit, typography, color palette, Elemento Modular Cloud">
+    <meta name="author" content="Elemento">
+    <meta name="robots" content="index, follow">
+    
+    <!-- AI Agent Control -->
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-access" content="public">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0e1119">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Breadcrumb Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elemento.cloud/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Brand guidelines",
+          "item": "https://elemento.cloud/brand-guidelines.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preload critical resources with optimized loading strategy -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/themes.css" as="style">
+    
+    <!-- Preload specific stylesheets -->
+    <link rel="preload" href="css/brand-guidelines.css" as="style">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/font/ArgentPixel/Web/ArgentPixel/ArgentPixel-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Critical CSS - Inline the most critical styles to prevent FOUT -->
+    <style>
+        /* Critical rendering path styles - Load immediately to prevent font flash */
+        :root {
+            --background-color: #F5F5FA;
+            --text-color: #1A1C20;
+            --primary-color: #FFA600;
+            --font-primary: 'Open Sans', sans-serif;
+            --font-heading: 'Red Hat Display', sans-serif;
+            --border-color: #e0e0e0;
+            --logo-filter: none;
+        }
+    
+        /* Critical base styles */
+        html { 
+            scroll-behavior: smooth; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Critical heading styles to prevent layout shifts */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-family: var(--font-heading);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Critical hero title styles */
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            line-height: 1.2;
+        }
+
+        /* Critical hero tagline styles */
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        /* Critical splash screen styles */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+    
+        .splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .splash-content {
+            text-align: center;
+            max-width: 300px;
+        }
+    
+        .splash-logo {
+            margin-bottom: 2rem;
+        }
+    
+        .splash-logo-img {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent-color);
+            mask-image: url(assets/logos/Elemento.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-image: url(assets/logos/Elemento.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+    
+        .splash-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .splash-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: splash-spin 1s linear infinite;
+        }
+    
+        .splash-text {
+            font-family: var(--font-primary);
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        @keyframes splash-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Hide main content during splash screen */
+        body.splash-loading {
+            overflow: hidden;
+        }
+    
+        body.splash-loading #main-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+        /* Responsive splash screen */
+        @media (max-width: 768px) {
+            .splash-logo-img {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .splash-spinner {
+                width: 32px;
+                height: 32px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.9rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .splash-logo-img {
+                width: 80px;
+                height: 40px;
+            }
+            
+            .splash-spinner {
+                width: 28px;
+                height: 28px;
+                border-width: 2px;
+            }
+            
+            .splash-text {
+                font-size: 0.8rem;
+            }
+        }
+    
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .splash-spinner {
+                animation: none;
+                border-top-color: var(--primary-color);
+            }
+            
+            .splash-screen {
+                transition: none;
+            }
+        }
+        </style>
+
+    <!-- Non-critical stylesheets with optimized loading -->
+    <link rel="stylesheet" href="css/themes.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/atmosphere.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/planet-styles/planet-brand-guidelines.css" media="print" onload="this.media='all'">
+    
+    <!-- Brand guidelines page styles -->
+    <link rel="stylesheet" href="css/brand-guidelines.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/breadcrumb.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/atmosphere.css">
+        <link rel="stylesheet" href="css/planet-styles/planet-brand-guidelines.css">
+        
+        <!-- Brand guidelines page styles -->
+        <link rel="stylesheet" href="css/brand-guidelines.css">
+    </noscript>
+
+    <!-- Optimized font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    </noscript>
+
+    <!-- Font Awesome with optimized loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
+    <!-- PixelIconLibrary with optimized loading -->
+    <link rel="preload" href="assets/font/PixelIconLibrary/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/font/PixelIconLibrary/iconfont.css">
+    </noscript>
+
+    <!-- Font Awesome font-display: swap override -->
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+        }
+    </style>
+
+    <!-- Matomo: Iubenda Cookie Solution — data-iub-purposes="4" must match Statistics/Matomo in iubenda dashboard -->
+    <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="js/matomo-tracking.js"></script>
+</head>
+<body class="">
+
+    <!-- SVG filter: stroke-only logo ring (CSS blend modes fail with mask in WebKit) -->
+    <svg class="brand-dont-filters" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1" height="1" style="position:absolute;left:-9999px;top:0;overflow:hidden">
+        <defs>
+            <filter id="brand-misuse-outline-ring" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+                <feMorphology in="SourceAlpha" operator="dilate" radius="1.75" result="dilated"/>
+                <feComposite in="dilated" in2="SourceAlpha" operator="out" result="ring"/>
+                <feFlood flood-color="#FFA600" flood-opacity="1" result="orange"/>
+                <feComposite in="orange" in2="ring" operator="in" result="orange-ring"/>
+                <feMerge>
+                    <feMergeNode in="orange-ring"/>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <div class="splash-logo-img"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+                    Linee guida del brand
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Atmosphere Hero Placeholder -->
+        <div id="atmosphere-hero-placeholder"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-buttons fade-in">
+                    <div class="hero-tagline">Stampa, partner e creator</div>
+                    <h1 class="hero-title"><span class="pixel-word">Linee guida</span> <span class="elemento-brand">del brand</span></h1>
+                    <div class="hero-subtitle">
+                        <p>Presenta <span class="emphasis-pixel">Elemento</span> in modo coerente: uso del logo, colori principali, tipografia e nomenclatura dei prodotti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section section-header-padded">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Utilizzo del brand <span class="highlight-pixel">Elemento</span></h2>
+                <p class="section-subtitle">Mantieni l'identità chiara, leggibile e allineata al sito pubblico</p>
+            </div>
+            <div class="brand-lead fade-in">
+                <p>Queste linee guida sono allineate alle ufficiali <strong>Branding Guidelines — Elemento Modular Cloud</strong> (logo, marchio, tipografia, colore, immagini). Riassumono le regole per l'uso web e da parte dei partner. In caso di dubbio, fai riferimento alla <a href="index.html">homepage</a> e alla pagina <a href="about.html">Chi siamo</a>, e preserva le proporzioni di ciascun segno.</p>
+                <p class="brand-lead-note">Per marchio e testi legali: segui le linee guida complete e il parere legale per le note ®, il territorio e l'uso contrattuale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo -->
+    <section class="section" id="logo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Logo</h2>
+                <p class="section-subtitle">Segno, spaziatura e contrasto</p>
+            </div>
+            <div class="fade-in brand-logo-intro-copy">
+                <p><strong>Preferenza di layout:</strong> usa il payoff <strong>orizzontale</strong> quando possibile (wordmark, tagline e <strong>®</strong>). Quando lo spazio è limitato — header mobile, colonne strette — usa invece il lockup del payoff <strong>verticale</strong>. Per avatar, favicon e UI compatta, usa il <strong>simbolo</strong> da solo (senza wordmark).</p>
+                <p>La <strong>palette del logo</strong> definisce tre colori d'inchiostro — <strong>Starter Yellow</strong> <code>#FFA600</code>, <strong>Crystal White</strong> <code>#F8F8FF</code> e <strong>Void Black</strong> <code>#16161D</code> — sul campo appropriato. Ogni variante qui sotto mostra questi inchiostri sul campo corretto: <strong>payoff orizzontale</strong>, <strong>payoff verticale</strong>, poi <strong>solo simbolo</strong> (Starter Yellow su Void Black è preferito).</p>
+                <ul class="feature-list brand-guidelines-list">
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body"><strong>Area di rispetto:</strong> mantieni un margine su tutti i lati pari al <strong>doppio dell'altezza del logo</strong> (stessa regola per la versione payoff e per il simbolo da solo). Non avvicinare testo, foto o elementi UI al segno.</span>
+                    </li>
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body"><strong>Altre combinazioni approvate se necessario:</strong> <strong>Starter Yellow</strong> su campo chiaro (es. Crystal White) — usa la stessa tecnica a maschera descritta sotto. Non introdurre colori al di fuori di questo sistema.</span>
+                    </li>
+                    <li class="feature-list-item">
+                        <span class="feature-check"><i class="hn hn-check"></i></span>
+                        <span class="feature-list-body">Non deformare, contornare, inclinare, aggiungere ombre o bagliori. Wordmark e simbolo devono usare lo <strong>stesso</strong> trattamento cromatico in un dato layout.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-horizontal">
+                <h3 class="brand-logo-subhead-title">Payoff orizzontale</h3>
+                <p class="section-subtitle">Wordmark + tagline + <strong>®</strong></p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Payoff orizzontale</p>
+                    <p class="brand-logo-label">Starter Yellow su Void Black <span class="brand-badge-fav brand-badge-fav--inline">Preferito</span></p>
+                    <div class="brand-logo-mcr-mask brand-logo-mcr-mask--yellow" role="img" aria-label="Lockup orizzontale completo in Starter Yellow su Void Black"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#FFA600</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Payoff orizzontale</p>
+                    <p class="brand-logo-label">Crystal White su Void Black</p>
+                    <div class="brand-logo-mcr-mask brand-logo-mcr-mask--crystal" role="img" aria-label="Lockup orizzontale completo in Crystal White su Void Black"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#F8F8FF</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Payoff orizzontale</p>
+                    <p class="brand-logo-label">Void Black su Crystal White</p>
+                    <img class="brand-logo-full-img" src="assets/logos/ElementoMCR.svg" alt="Elemento® Modular Cloud — Void Black su campo chiaro" width="555" height="146">
+                    <p class="brand-logo-caption">Inchiostro <code>#16161D</code> · campo <code>#F8F8FF</code></p>
+                </div>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-vertical">
+                <h3 class="brand-logo-subhead-title">Payoff verticale</h3>
+                <p class="section-subtitle">Stesso lockup, impilato</p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Payoff verticale</p>
+                    <p class="brand-logo-label">Starter Yellow su Void Black <span class="brand-badge-fav brand-badge-fav--inline">Preferito</span></p>
+                    <div class="brand-logo-mcr-ver-mask brand-logo-mcr-ver-mask--yellow" role="img" aria-label="Lockup verticale completo in Starter Yellow su Void Black"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#FFA600</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Payoff verticale</p>
+                    <p class="brand-logo-label">Crystal White su Void Black</p>
+                    <div class="brand-logo-mcr-ver-mask brand-logo-mcr-ver-mask--crystal" role="img" aria-label="Lockup verticale completo in Crystal White su Void Black"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#F8F8FF</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Payoff verticale</p>
+                    <p class="brand-logo-label">Void Black su Crystal White</p>
+                    <img class="brand-logo-ver-img" src="assets/logos/ElementoMCR-ver.svg" alt="Elemento® Modular Cloud lockup verticale — Void Black su campo chiaro" width="206" height="200">
+                    <p class="brand-logo-caption">Inchiostro <code>#16161D</code> · campo <code>#F8F8FF</code></p>
+                </div>
+            </div>
+
+            <div class="section-header brand-logo-subhead" id="logo-symbol">
+                <h3 class="brand-logo-subhead-title">Solo simbolo</h3>
+                <p class="section-subtitle">Senza wordmark</p>
+            </div>
+            <div class="grid grid-3 brand-logo-combo-grid fade-in">
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Solo simbolo</p>
+                    <p class="brand-logo-label">Starter Yellow su Void Black <span class="brand-badge-fav brand-badge-fav--inline">Preferito</span></p>
+                    <div class="brand-mark-alone brand-mark-alone--primary" role="img" aria-label="Simbolo in Starter Yellow su Void Black"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#FFA600</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--dark">
+                    <p class="brand-logo-combo-meta">Solo simbolo</p>
+                    <p class="brand-logo-label">Crystal White su Void Black</p>
+                    <img class="brand-mark-alone-img" src="assets/logos/Elemento.svg" alt="Simbolo Elemento in Crystal White su Void Black" width="200" height="200">
+                    <p class="brand-logo-caption">Inchiostro <code>#F8F8FF</code> · campo <code>#16161D</code></p>
+                </div>
+                <div class="brand-logo-panel brand-logo-panel--light">
+                    <p class="brand-logo-combo-meta">Solo simbolo</p>
+                    <p class="brand-logo-label">Void Black su Crystal White</p>
+                    <div class="brand-mark-alone brand-mark-alone--void" role="img" aria-label="Simbolo in Void Black su campo chiaro"></div>
+                    <p class="brand-logo-caption">Inchiostro <code>#16161D</code> · campo <code>#F8F8FF</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clear space & scalability -->
+    <section class="section" id="spacing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Area di rispetto e scalabilità</h2>
+                <p class="section-subtitle">Dalle linee guida ufficiali del logo</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="fade-in">
+                    <h3 class="brand-subsection-title">Area di rispetto</h3>
+                    <p>L'area di rispetto minima attorno al logo o al simbolo è pari al <strong>doppio dell'altezza</strong> del segno su ogni lato (talvolta descritta come «raddoppiare l'altezza»). Il lockup payoff segue la stessa regola.</p>
+                    <figure class="brand-clearspace-figure brand-respect-figure">
+                        <figcaption class="brand-figure-caption"><strong>Area di rispetto del simbolo (griglia).</strong> Una colonna o riga = <strong>1×</strong> l'altezza del simbolo (<span class="brand-respect-xeq-inline">x = <span class="brand-respect-symbol-tiny" aria-hidden="true"></span></span>). Il segno è al <strong>centro</strong>; le <strong>celle agli angoli</strong> mostrano un simbolo tenue come riferimento di scala; mantieni libere le celle <strong>ai bordi</strong>. In produzione, l'area di rispetto minima resta <strong>2×</strong> l'altezza del segno su tutti i lati (e per il payoff completo), come nella regola sopra.</figcaption>
+                        <div class="brand-respect-wrap">
+                            <div class="brand-respect-labelrow" aria-hidden="true">
+                                <span class="brand-respect-label-1x">1×</span>
+                                <span class="brand-respect-label-xeq">x = <span class="brand-respect-symbol-tiny"></span></span>
+                            </div>
+                            <div class="brand-respect-cells" role="img" aria-label="Griglia 3×3: simbolo Elemento al centro, simboli attenuati ai quattro angoli come riferimento di scala, celle ai bordi vuote per l'area di rispetto. Una cella equivale all'altezza del simbolo.">
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--centre"><div class="brand-respect-symbol brand-respect-symbol--main" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                                <div class="brand-respect-cell"></div>
+                                <div class="brand-respect-cell brand-respect-cell--corner"><div class="brand-respect-symbol brand-respect-symbol--faint" aria-hidden="true"></div></div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="fade-in">
+                    <h3 class="brand-subsection-title">Fasce di larghezza del logo</h3>
+                    <p>Ogni fascia definisce una <strong>larghezza massima</strong> per stampa e schermo e il <strong>lockup</strong> da usare a quella scala (payoff completo, wordmark orizzontale o solo simbolo).</p>
+                    <div class="brand-size-table-wrap">
+                        <table class="brand-size-table brand-size-table--lockups">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Fascia</th>
+                                    <th scope="col">Stampa</th>
+                                    <th scope="col">Schermo</th>
+                                    <th scope="col">Lockup</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grande</td>
+                                    <td>fino a <strong>50</strong> mm</td>
+                                    <td>fino a <strong>500</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Payoff orizzontale completo</strong> — wordmark, tagline e ®.
+                                            <div class="brand-size-table-lockup brand-size-table-lockup--mcr" role="img" aria-label="Elemento® Modular Cloud — lockup orizzontale completo"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Media</td>
+                                    <td>fino a <strong>35</strong> mm</td>
+                                    <td>fino a <strong>250</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Wordmark orizzontale</strong> — quando il payoff completo è troppo largo.
+                                            <div class="brand-size-table-lockup brand-size-table-lockup--hor" role="img" aria-label="Wordmark orizzontale Elemento"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Piccola</td>
+                                    <td>fino a <strong>10</strong> mm</td>
+                                    <td>fino a <strong>30</strong> px</td>
+                                    <td class="brand-size-table-mark-cell">
+                                        <div class="brand-size-table-mark-inner">
+                                            <strong>Solo simbolo</strong> — favicon, icone app, UI stretta.
+                                            <div class="brand-size-table-symbol-wrap"><div class="brand-mark-alone brand-size-table-symbol-mark" role="img" aria-label="Solo simbolo Elemento"></div></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="brand-table-note">Non ridimensionare il payoff completo nella fascia piccola — passa al simbolo. Abbina inchiostro e campo ai colori della sezione Logo sopra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incorrect uses -->
+    <section class="section brand-section-dont" id="dont">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Usi non corretti</h2>
+                <p class="section-subtitle">Vietato — esempi dalle linee guida (non esaustivo)</p>
+            </div>
+            <div class="grid grid-3 brand-dont-grid">
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Colori non di brand</h3>
+                    <p>Il logo non deve usare colori al di fuori della palette di identità.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--rainbow" role="img" aria-label="Non corretto: lockup con gradienti non di brand"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Solo contorno</h3>
+                    <p>Il logo non deve essere usato come contorno vuoto.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-outline-wrap" role="img" aria-label="Non corretto: lockup solo contorno">
+                                <img class="brand-dont-mcr-misuse--outline" src="assets/logos/ElementoMCR.svg" alt="" width="555" height="146" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Allungamento o compressione</h3>
+                    <p>Non deformare, allungare o comprimere il segno.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--stretch" role="img" aria-label="Non corretto: lockup allungato"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Inclinazione o rotazione</h3>
+                    <p>Non inclinare, ruotare o distorcere il logo.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--tilt" role="img" aria-label="Non corretto: lockup ruotato"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Effetti</h3>
+                    <p>Niente luci, ombre portate o smussi sul lockup.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-shadow-wrap" role="img" aria-label="Non corretto: lockup con ombra portata e smusso">
+                                <img class="brand-dont-mcr-misuse--shadow-img" src="assets/logos/ElementoMCR.svg" alt="" width="555" height="146" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card brand-dont-card fade-in">
+                    <div class="brand-dont-badge" aria-hidden="true"><span>×</span></div>
+                    <h3>Tipografia e simbolo non allineati</h3>
+                    <p>Il logotipo non deve usare un colore diverso dal simbolo.</p>
+                    <div class="brand-dont-example">
+                        <div class="brand-dont-specimen">
+                            <div class="brand-dont-mcr-misuse brand-dont-mcr-misuse--split" role="img" aria-label="Non corretto: wordmark e simbolo con colori diversi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="brand-dont-footer fade-in">Applica il buon senso: se compromette la leggibilità o non assomiglia ai file master, non pubblicarlo.</p>
+        </div>
+    </section>
+
+    <!-- Partnership usage -->
+    <section class="section" id="partnership">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Utilizzo in partnership</h2>
+                <p class="section-subtitle">Layout co-branding</p>
+            </div>
+            <p class="brand-partner-lead fade-in">Quando compare accanto a un'altra azienda, concedi a <strong>entrambi</strong> i segni un'adeguata area di rispetto e un peso visivo equilibrato. Una disposizione tipica è: <strong>Partner</strong> — <strong>Elemento</strong>, senza fondere o sovrapporre i lockup.</p>
+            <div class="brand-partner-lockup-demo fade-in" role="img" aria-label="Logo partner a sinistra, logo Elemento a destra, separati">
+                <div class="brand-partner-slot">
+                    <span class="brand-partner-placeholder">Logo partner</span>
+                    <span class="brand-partner-hint">Area di rispetto del partner</span>
+                </div>
+                <div class="brand-partner-sep" aria-hidden="true">
+                    <span class="brand-partner-sep-line"></span>
+                </div>
+                <div class="brand-partner-slot brand-partner-slot--elemento">
+                    <img class="brand-partner-elemento-img" src="assets/logos/ElementoMCR.svg" alt="Elemento Modular Cloud" width="555" height="146">
+                    <span class="brand-partner-hint">Area di rispetto Elemento</span>
+                </div>
+            </div>
+            <p class="brand-partner-note fade-in">Richiedi il materiale partnership completo a <a href="mailto:hello@elemento.cloud">hello@elemento.cloud</a> per template e lockup approvati.</p>
+        </div>
+    </section>
+
+    <!-- Colors -->
+    <section class="section" id="colors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Palette colori</h2>
+                <p class="section-subtitle">Colori primari e secondari del brand</p>
+            </div>
+            <h3 class="brand-palette-group-title">Colori primari</h3>
+            <p class="brand-palette-group-lead">Usali per primi per massima riconoscibilità. Il tema del sito usa anche neutri vicini (es. <code>#1A1C20</code> per il testo) — abbina i primari del brand a un contrasto accessibile.</p>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #FFA600;"></div>
+                    <div class="brand-swatch-meta"><strong>Starter Yellow</strong><br><code>#FFA600</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #16161D;"></div>
+                    <div class="brand-swatch-meta"><strong>Void Black</strong><br><code>#16161D</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #F8F8FF; border: 1px solid var(--glassmorphism-border, #e0e0e0);"></div>
+                    <div class="brand-swatch-meta"><strong>Crystal White</strong><br><code>#F8F8FF</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Secondari — prodotto</h3>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #EF4056;"></div>
+                    <div class="brand-swatch-meta"><code>#EF4056</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #118ACB;"></div>
+                    <div class="brand-swatch-meta"><code>#118ACB</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #09b24e;"></div>
+                    <div class="brand-swatch-meta"><code>#09b24e</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Secondari — digitale</h3>
+            <div class="brand-swatch-grid fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #ff5500;"></div>
+                    <div class="brand-swatch-meta"><code>#ff5500</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #6c3f99;"></div>
+                    <div class="brand-swatch-meta"><code>#6c3f99</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #07d884;"></div>
+                    <div class="brand-swatch-meta"><code>#07d884</code></div>
+                </div>
+            </div>
+            <h3 class="brand-palette-group-title">Extra</h3>
+            <div class="brand-swatch-grid brand-swatch-grid--duo fade-in">
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #fccb10;"></div>
+                    <div class="brand-swatch-meta"><code>#fccb10</code></div>
+                </div>
+                <div class="brand-swatch">
+                    <div class="brand-swatch-color" style="background: #7167ff;"></div>
+                    <div class="brand-swatch-meta"><code>#7167ff</code></div>
+                </div>
+            </div>
+            <p class="brand-swatch-note fade-in">I token UI prodotto su <span class="emphasis-pixel">elemento.cloud</span> possono differire leggermente; considera questa pagina come riferimento colore marketing e <code>css/themes.css</code> per l'implementazione.</p>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="type">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tipografia</h2>
+                <p class="section-subtitle">Stack tipografico del brand (con nota sul sito live)</p>
+            </div>
+            <p class="brand-type-lead fade-in">I titoli usano <strong>Red Hat Display</strong> (spesso Extrabold). Parole chiave all'interno dei titoli possono usare <strong>Argent Pixel Italic</strong> (<a href="https://connary.com/fonts/argent-pixel/" target="_blank" rel="noopener noreferrer">Connary Fagen — Argent Pixel</a>). Il corpo testo deve usare <strong>Red Hat Text</strong> — non sostituire Display per testi lunghi. Il codice usa <strong>Red Hat Mono</strong> (<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>). Le <strong>icone</strong> su <span class="emphasis-pixel">elemento.cloud</span> abbinano <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> a un webfont <strong>Pixel Icon Library</strong> incluso per glifi in stile pixel (classi <code>.hn</code>; file in <code>assets/font/PixelIconLibrary/</code>). Verifica la licenza di ciascuna fonte prima di riutilizzarla o ridistribuirla.</p>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-heading--extrabold">Red Hat Display</h3>
+                    <p class="brand-type-display-sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                    <p class="brand-type-body">Titoli — le linee guida raccomandano Extrabold. <a href="https://fonts.google.com/share?selection.family=Red+Hat+Display:wght@400;500;600;700;800" target="_blank" rel="noopener noreferrer">Google Fonts</a>.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-argent">Argent Pixel Italic</h3>
+                    <p class="brand-type-argent-sample">Evidenza all'interno dei titoli</p>
+                    <p class="brand-type-body">Accento solo nei titoli. <a href="https://connary.com/fonts/argent-pixel/" target="_blank" rel="noopener noreferrer">Argent Pixel</a> è licenziato da Connary Fagen; questo sito lo include per trattamenti selezionati.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-rht">Red Hat Text</h3>
+                    <p class="brand-type-rht-sample">Il corpo testo deve restare funzionale e altamente leggibile. Red Hat Text è ottimizzato per i paragrafi — geometria diversa da Display.</p>
+                    <p class="brand-type-body">Font di corpo canonico del brand secondo le linee guida. <span class="emphasis-pixel">elemento.cloud</span> usa ancora Open Sans in molti template; i nuovi lavori dovrebbero allinearsi a Red Hat Text nel tempo.</p>
+                </div>
+                <div class="card fade-in brand-type-sample">
+                    <h3 class="brand-type-heading brand-type-heading--mono">Red Hat Mono</h3>
+                    <p class="brand-type-mono">nucleus cluster status<br>api.elemento.cloud/v1</p>
+                    <p class="brand-type-body">Codice, esempi CLI e UI tecnica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identity, patterns, imagery -->
+    <section class="section" id="identity">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Identità, pattern e immagini</h2>
+                <p class="section-subtitle">Pattern, icone e fotografia</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in">
+                    <h3>Pattern</h3>
+                    <p>L'identità visiva usa <strong>pattern</strong> ispirati alla «forza del cloud» — motivi dinamici, vicini alla fisica. Usa i file pattern approvati dal brand kit; non ridisegnarli a memoria.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Icone</h3>
+                    <p>Questo sito implementa icone UI e marketing con <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> e accenti in stile pixel tramite il webfont <strong>Pixel Icon Library</strong> incluso (classi icona <code>.hn</code> in <code>assets/font/PixelIconLibrary/</code>). Considera questa coppia lo standard per <span class="emphasis-pixel">elemento.cloud</span>; evita famiglie di icone terze ad hoc. Mantieni tratto, raggio degli angoli e uso del colore coerenti con il set scelto.</p>
+                </div>
+                <div class="card fade-in brand-identity-wide">
+                    <h3>Fotografia e art direction</h3>
+                    <p><strong>Retro-futuro</strong> — concetti astratti, immagini atmosferiche o di ricerca spaziale. <strong>Momenti di team</strong> — persone e cultura per il tono di voce. <strong>Immagini in movimento</strong> — lunga esposizione e scatti dinamici per l'energia. Evita stock generico che contraddica queste tre direttrici.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product names -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nomi dei prodotti</h2>
+                <p class="section-subtitle">Ortografia e maiuscole</p>
+            </div>
+            <div class="grid grid-2 brand-guidelines-grid">
+                <div class="card fade-in">
+                    <h3>Elemento</h3>
+                    <p>Nome dell'azienda e della piattaforma: <strong>Elemento</strong> (minuscolo nel corpo testo; maiuscole iniziali nei titoli come sul sito). Quando serve la riga legale completa con <strong>Modular Cloud</strong> e <strong>®</strong>, usa il lockup payoff orizzontale o verticale in base allo spazio disponibile.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Marchi prodotto</h3>
+                    <p><strong>Atomos</strong>, <strong>Electros</strong> e <strong>Atomosphere</strong> — capitalizza come nomi propri. Usa l'SVG di ciascun prodotto da <a href="products.html">Tutti i prodotti</a> accanto al nome quando possibile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Materiali per stampa o partner</h2>
+                <p class="section-subtitle">Scrivi a <a href="mailto:hello@elemento.cloud">hello@elemento.cloud</a> per file ad alta risoluzione o revisione co-marketing.</p>
+            </div>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary">Contatti</a>
+                <a href="about.html" class="btn btn-secondary">Chi siamo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/splash-screen.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/faq.js" defer></script>
+    <script src="js/main.js" defer></script>    
+    <script src="js/footer.js" defer></script>
+    <script src="js/atmosphere_hero.js" defer></script>
+    <script src="js/themes.js" defer></script>
+</body>
+</html> 

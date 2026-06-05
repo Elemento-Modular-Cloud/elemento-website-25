@@ -37,6 +37,21 @@ SKIP_IDS = {
     "ui.langSwitcher.fr",
 }
 
+# Brand guidelines: font names and palette labels stay in English
+KEEP_EXACT = {
+    "Red Hat Display",
+    "Red Hat Text",
+    "Red Hat Mono",
+    "Argent Pixel Italic",
+    "Starter Yellow",
+    "Crystal White",
+    "Void Black",
+    "Open Sans",
+    "Font Awesome",
+    "Pixel Icon Library",
+    "Extrabold",
+}
+
 
 def needs_translation(row: dict) -> bool:
     if row.get("id") in SKIP_IDS:
@@ -44,6 +59,8 @@ def needs_translation(row: dict) -> bool:
     tr = (row.get(LOCALE) or "").strip()
     en = (row.get("en") or "").strip()
     if not en:
+        return False
+    if en in KEEP_EXACT:
         return False
     if len(en) <= 3 and en.isupper():
         return False
@@ -78,6 +95,11 @@ def main() -> None:
     errors = 0
 
     print(f"Translating {total} strings to {LOCALE}…", flush=True)
+
+    for row in strings:
+        en = (row.get("en") or "").strip()
+        if en in KEEP_EXACT:
+            row[LOCALE] = en
 
     for row in strings:
         if not needs_translation(row):

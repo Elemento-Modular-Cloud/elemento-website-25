@@ -10,7 +10,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -18,7 +18,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -26,7 +26,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -34,7 +34,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -50,7 +50,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -58,7 +58,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -76,7 +76,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {
@@ -275,7 +275,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -283,7 +283,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -291,7 +291,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -307,7 +307,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -315,7 +315,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -333,7 +333,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {
@@ -452,7 +452,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -460,7 +460,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -468,7 +468,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -484,7 +484,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -492,7 +492,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -501,7 +501,7 @@
       ]
     },
     "impossiblecloud": {
-      "display_name": "Nuvola impossible",
+      "display_name": "Impossible Cloud",
       "icon_classes": "impossiblecloud_icon",
       "source": "fontawesome",
       "color": "#666666",
@@ -510,7 +510,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -518,7 +518,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -526,7 +526,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -534,7 +534,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -550,7 +550,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -558,7 +558,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -576,7 +576,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {
@@ -644,7 +644,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -652,7 +652,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -660,7 +660,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -676,7 +676,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -684,7 +684,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -693,7 +693,7 @@
       ]
     },
     "oracle": {
-      "display_name": "Oracolo Nuvola",
+      "display_name": "Oracle",
       "icon_classes": "oracle_icon",
       "source": "fontawesome",
       "color": "#ff0000",
@@ -702,7 +702,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -710,7 +710,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -718,7 +718,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -726,7 +726,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -742,7 +742,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -750,7 +750,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -768,7 +768,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -776,7 +776,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -784,7 +784,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -792,7 +792,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -808,7 +808,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -816,7 +816,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -825,7 +825,7 @@
       ]
     },
     "gigas": {
-      "display_name": "Giga",
+      "display_name": "Gigas",
       "icon_classes": "gigas_icon",
       "source": "fontawesome",
       "color": "#e31e24",
@@ -834,7 +834,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -842,7 +842,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -850,7 +850,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -858,7 +858,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -874,7 +874,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -882,7 +882,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -891,7 +891,7 @@
       ]
     },
     "arubacloud": {
-      "display_name": "Nuvola d'Aruba",
+      "display_name": "Aruba Cloud",
       "icon_classes": "arubacloud_icon",
       "source": "fontawesome",
       "color": "#666666",
@@ -900,7 +900,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -908,7 +908,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -916,7 +916,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -924,7 +924,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -940,7 +940,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -948,7 +948,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -966,7 +966,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {
@@ -1085,7 +1085,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1093,7 +1093,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1101,7 +1101,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1117,7 +1117,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1125,7 +1125,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1143,7 +1143,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1151,7 +1151,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1159,7 +1159,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1167,7 +1167,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1231,7 +1231,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1239,7 +1239,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1248,7 +1248,7 @@
       ]
     },
     "cubbit": {
-      "display_name": "Cubito",
+      "display_name": "Cubbit",
       "icon_classes": "cubbit_icon",
       "source": "fontawesome",
       "color": "#666666",
@@ -1257,7 +1257,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1265,7 +1265,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1273,7 +1273,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1281,7 +1281,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1297,7 +1297,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1305,7 +1305,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1314,7 +1314,7 @@
       ]
     },
     "linode": {
-      "display_name": "Linodo",
+      "display_name": "Linode",
       "icon_classes": "linode_icon",
       "source": "fontawesome",
       "color": "#666666",
@@ -1323,7 +1323,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1331,7 +1331,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1339,7 +1339,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1347,7 +1347,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1363,7 +1363,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1371,7 +1371,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1389,7 +1389,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1397,7 +1397,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1405,7 +1405,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1413,7 +1413,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1429,7 +1429,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1437,7 +1437,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1446,7 +1446,7 @@
       ]
     },
     "scaleway": {
-      "display_name": "Échelle",
+      "display_name": "Scaleway",
       "icon_classes": "scaleway_icon",
       "source": "fontawesome",
       "color": "#4f0599",
@@ -1455,7 +1455,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1463,7 +1463,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1471,7 +1471,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1479,7 +1479,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1495,7 +1495,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1503,7 +1503,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1521,7 +1521,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {
@@ -1685,7 +1685,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1693,7 +1693,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1701,7 +1701,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1717,7 +1717,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1725,7 +1725,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1743,7 +1743,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1751,7 +1751,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1759,7 +1759,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1767,7 +1767,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1783,7 +1783,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1791,7 +1791,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},
@@ -1800,7 +1800,7 @@
       ]
     },
     "ibm": {
-      "display_name": "IBM-Cloud",
+      "display_name": "IBM Cloud",
       "icon_classes": "ibm_icon",
       "source": "fontawesome",
       "color": "#666666",
@@ -1809,7 +1809,7 @@
       "services": [
         {
           "name": "vmManagement",
-          "display_name": "Gestion des machines virtuelles",
+          "display_name": "VM Management",
           "type": "matcher",
           "sub_type": "vm",
           "regions": {},
@@ -1817,7 +1817,7 @@
         },
         {
           "name": "STaaS",
-          "display_name": "Archiviazione come servizio",
+          "display_name": "Storage as a Service",
           "type": "storage",
           "sub_type": "storage",
           "regions": {},
@@ -1825,7 +1825,7 @@
         },
         {
           "name": "blockStorage",
-          "display_name": "Archiviazione in blocchi",
+          "display_name": "Block Storage",
           "type": "storage",
           "sub_type": "blockstorage",
           "regions": {},
@@ -1833,7 +1833,7 @@
         },
         {
           "name": "networking",
-          "display_name": "Reté",
+          "display_name": "Networking",
           "type": "network",
           "sub_type": "network",
           "regions": {},
@@ -1849,7 +1849,7 @@
         },
         {
           "name": "costApi",
-          "display_name": "API des coûts",
+          "display_name": "Cost API",
           "type": "matcher",
           "sub_type": "billing",
           "regions": {},
@@ -1857,7 +1857,7 @@
         },
         {
           "name": "bareMetal",
-          "display_name": "Métal nu",
+          "display_name": "Bare metal",
           "type": "service",
           "sub_type": "bare_metal",
           "regions": {},

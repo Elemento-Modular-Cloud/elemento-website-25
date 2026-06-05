@@ -62,11 +62,24 @@ function localizeFaqQuestionSpans(html: string, faqMap: Map<string, string>): st
   );
 }
 
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'");
+}
+
 function plainText(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return decodeHtmlEntities(
+    html
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
 }
 
 function normalizeKey(text: string): string {
@@ -284,6 +297,15 @@ function getReplacementPairs(stem: string, locale: Locale): Replacement[] {
 
   stemCache.set(cacheKey, pairs);
   return pairs;
+}
+
+function replaceTranslatableString(html: string, from: string, to: string): string {
+  let out = html.split(from).join(to);
+  if (from.includes('&')) {
+    const encoded = from.replace(/&/g, '&amp;');
+    if (encoded !== from) out = out.split(encoded).join(to);
+  }
+  return out;
 }
 
 /** Apply non-English locale overlays to legacy HTML body copy */
@@ -558,7 +580,8 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
 
   for (const [from, to] of all) {
     if (!to) continue;
-    out = typeof from === 'string' ? out.split(from).join(to) : out.replace(from, to);
+    out =
+      typeof from === 'string' ? replaceTranslatableString(out, from, to) : out.replace(from, to);
   }
 
   if (pageKey === 'blog' && (locale === 'it' || locale === 'fr')) {

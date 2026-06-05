@@ -146,8 +146,16 @@ function flattenUi(en, it, prefix = 'ui') {
   walk(en, it, prefix);
 }
 
-function shouldCollectKey(key) {
+const PROVIDER_BRAND_NAME = /\.ELEMENTO_SUPPORTED_PROVIDERS\.[^.]+\.display_name$/;
+
+function isProviderBrandNamePath(path) {
+  return PROVIDER_BRAND_NAME.test(path);
+}
+
+function shouldCollectKey(key, idPrefix = '') {
   if (SKIP_KEYS.has(key)) return false;
+  const path = idPrefix.endsWith(`.${key}`) ? idPrefix : `${idPrefix}.${key}`;
+  if (isProviderBrandNamePath(path)) return false;
   if (TEXT_LIKE_KEYS.has(key)) return true;
   return /title|subtitle|description|label|text|tagline|heading|quote|role|bio|name|message|cta/i.test(
     key
@@ -156,7 +164,7 @@ function shouldCollectKey(key) {
 
 function collectFromJson(obj, idPrefix, source, enBranch, itBranch) {
   if (typeof obj === 'string') {
-    if (shouldCollectKey(idPrefix.split('.').pop() || '')) {
+    if (shouldCollectKey(idPrefix.split('.').pop() || '', idPrefix)) {
       add(idPrefix, obj, '', source);
     }
     return;
@@ -187,7 +195,8 @@ function collectFromJson(obj, idPrefix, source, enBranch, itBranch) {
       continue;
     }
 
-    if (shouldCollectKey(key) || typeof val === 'object') {
+    const fieldPath = `${idPrefix}.${key}`;
+    if (shouldCollectKey(key, fieldPath) || typeof val === 'object') {
       const itVal = itBranch?.[key];
       const enVal = enBranch?.[key] ?? val;
       if (typeof enVal === 'string' && typeof itVal === 'string') {

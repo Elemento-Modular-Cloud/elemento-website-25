@@ -6,6 +6,7 @@
       "id": "body.contact.button.1",
       "en": "Send Message",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -13,6 +14,7 @@
       "id": "body.contact.button.2",
       "en": "How quickly can I get started with Elemento? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -20,6 +22,7 @@
       "id": "body.contact.button.3",
       "en": "What kind of support do you offer? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -27,6 +30,7 @@
       "id": "body.contact.button.4",
       "en": "Can I deploy Elemento on-premises? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -34,6 +38,7 @@
       "id": "body.contact.button.5",
       "en": "Do you offer custom solutions? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -41,6 +46,7 @@
       "id": "body.contact.button.6",
       "en": "What compliance standards do you support? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -48,6 +54,7 @@
       "id": "body.contact.button.7",
       "en": "How do you handle data privacy? ▼",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<button>"
     },
@@ -55,6 +62,7 @@
       "id": "body.contact.faq.q.1",
       "en": "How quickly can I get started with Elemento?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -62,6 +70,7 @@
       "id": "body.contact.faq.q.2",
       "en": "What kind of support do you offer?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -69,6 +78,7 @@
       "id": "body.contact.faq.q.3",
       "en": "Can I deploy Elemento on-premises?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -76,6 +86,7 @@
       "id": "body.contact.faq.q.4",
       "en": "Do you offer custom solutions?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -83,6 +94,7 @@
       "id": "body.contact.faq.q.5",
       "en": "What compliance standards do you support?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -90,6 +102,7 @@
       "id": "body.contact.faq.q.6",
       "en": "How do you handle data privacy?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "faq-question"
     },
@@ -97,6 +110,7 @@
       "id": "body.contact.h1.1",
       "en": "Contact Our Team",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h1>"
     },
@@ -104,6 +118,7 @@
       "id": "body.contact.h2.1",
       "en": "Get in Touch",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h2>"
     },
@@ -111,6 +126,7 @@
       "id": "body.contact.h2.2",
       "en": "Local Presence , Global Reach",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h2>"
     },
@@ -118,6 +134,7 @@
       "id": "body.contact.h2.3",
       "en": "Multiple Ways to Get Help",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h2>"
     },
@@ -125,6 +142,7 @@
       "id": "body.contact.h2.4",
       "en": "Frequently Asked Questions",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h2>"
     },
@@ -132,6 +150,7 @@
       "id": "body.contact.h2.5",
       "en": "Ready to Transform Your Infrastructure?",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h2>"
     },
@@ -139,6 +158,7 @@
       "id": "body.contact.h3.1",
       "en": "Cuneo",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h3>"
     },
@@ -146,6 +166,7 @@
       "id": "body.contact.h3.2",
       "en": "How to Reach Us",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h3>"
     },
@@ -153,6 +174,7 @@
       "id": "body.contact.h3.3",
       "en": "Documentation",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h3>"
     },
@@ -160,6 +182,7 @@
       "id": "body.contact.h3.4",
       "en": "Community",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h3>"
     },
@@ -167,6 +190,7 @@
       "id": "body.contact.h3.5",
       "en": "Training",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h3>"
     },
@@ -174,6 +198,7 @@
       "id": "body.contact.h4.1",
       "en": "Email Us",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -181,6 +206,7 @@
       "id": "body.contact.h4.2",
       "en": "Visit Us",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -188,6 +214,7 @@
       "id": "body.contact.h4.3",
       "en": "Follow Us",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -195,6 +222,7 @@
       "id": "body.contact.h4.4",
       "en": "📧 Message Sent!",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -202,6 +230,7 @@
       "id": "body.contact.h4.5",
       "en": "By Car",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -209,6 +238,7 @@
       "id": "body.contact.h4.6",
       "en": "By Train",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -216,6 +246,7 @@
       "id": "body.contact.h4.7",
       "en": "By Air",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<h4>"
     },
@@ -223,6 +254,7 @@
       "id": "body.contact.label.1",
       "en": "First Name *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -230,6 +262,7 @@
       "id": "body.contact.label.2",
       "en": "Last Name *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -237,6 +270,7 @@
       "id": "body.contact.label.3",
       "en": "Email Address *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -244,6 +278,7 @@
       "id": "body.contact.label.4",
       "en": "Company",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -251,6 +286,7 @@
       "id": "body.contact.label.5",
       "en": "Subject *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -258,6 +294,7 @@
       "id": "body.contact.label.6",
       "en": "Message *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -265,6 +302,7 @@
       "id": "body.contact.label.7",
       "en": "Subscribe to our newsletter for updates and insights",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -272,6 +310,7 @@
       "id": "body.contact.label.8",
       "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<label>"
     },
@@ -279,6 +318,7 @@
       "id": "body.contact.li.1",
       "en": "Home",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<li>"
     },
@@ -286,6 +326,7 @@
       "id": "body.contact.li.2",
       "en": "Contact",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<li>"
     },
@@ -293,6 +334,7 @@
       "id": "body.contact.p.1",
       "en": "Ready to transform your infrastructure ? Get in touch with the Elemento team for expert guidance , technical support , or partnership opportunities . Learn about our team and values and explore our product offerings .",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -300,6 +342,7 @@
       "id": "body.contact.p.10",
       "en": "Free parking available By Train 5 min walk from Cuneo Station By Air 1 h from Torino Airport Multiple Ways to Get Help Choose the support option that works best for you",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -307,6 +350,7 @@
       "id": "body.contact.p.11",
       "en": "Comprehensive guides, tutorials, and API documentation to help you get started and troubleshoot issues.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -314,6 +358,7 @@
       "id": "body.contact.p.12",
       "en": "Join our community forum to connect with other users, share experiences, and get help from peers.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -321,6 +366,7 @@
       "id": "body.contact.p.13",
       "en": "Free webinars, training sessions, and certification programs to help your team master Elemento.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -328,6 +374,7 @@
       "id": "body.contact.p.14",
       "en": "Quick answers to common questions",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -335,6 +382,7 @@
       "id": "body.contact.p.15",
       "en": "You can start using Elemento immediately with our free trial. Most customers are up and running within 30 minutes . Our quick-start guide walks you through the entire setup process.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -342,6 +390,7 @@
       "id": "body.contact.p.16",
       "en": "We offer comprehensive support including 24/7 documentation , community forums, email support, and priority support for enterprise customers. Our support team has an average response time of under 2 hours.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -349,6 +398,7 @@
       "id": "body.contact.p.17",
       "en": "Yes! Elemento is designed to be self-hostable , giving you complete control over your infrastructure and data. You can deploy on your own servers, private cloud, or hybrid environments.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -356,6 +406,7 @@
       "id": "body.contact.p.18",
       "en": "Absolutely. Our enterprise team works closely with customers to develop custom solutions that meet specific requirements. We offer custom integrations, white-label solutions, and dedicated support.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -363,6 +414,7 @@
       "id": "body.contact.p.19",
       "en": "We support SOC 2 , ISO 27001 , GDPR , HIPAA , and other major compliance frameworks with built-in security features and audit trails.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -370,6 +422,7 @@
       "id": "body.contact.p.2",
       "en": "Whether you're looking to get started with Elemento , need technical support , or want to explore partnership opportunities , we're here to help. Learn about our technical capabilities and read our latest insights and updates .",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -377,6 +430,7 @@
       "id": "body.contact.p.20",
       "en": "Data privacy is built into our platform. You control where your data is stored and processed, with encryption at rest and in transit . We never access your data without explicit permission.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -384,6 +438,7 @@
       "id": "body.contact.p.21",
       "en": "Join hundreds of organizations that have revolutionized their cloud operations with Elemento. Learn about our company mission and explore our product solutions .",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -391,6 +446,7 @@
       "id": "body.contact.p.3",
       "en": "We'll get in touch soon!",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -398,6 +454,7 @@
       "id": "body.contact.p.4",
       "en": "Cuneo HQ",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -405,6 +462,7 @@
       "id": "body.contact.p.5",
       "en": "Thank you for reaching out. We'll get back to you within 24 hours.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -412,6 +470,7 @@
       "id": "body.contact.p.6",
       "en": "Please complete all required fields and the security challenge.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -419,6 +478,7 @@
       "id": "body.contact.p.7",
       "en": "Serving customers worldwide with local support and infrastructure",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -426,6 +486,7 @@
       "id": "body.contact.p.8",
       "en": "2 Via Virginio Allione Cuneo, Italy",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -433,6 +494,7 @@
       "id": "body.contact.p.9",
       "en": "Multiple convenient ways to visit our headquarters",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "<p>"
     },
@@ -440,6 +502,7 @@
       "id": "body.contact.ui.1",
       "en": "Let's Connect",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -447,6 +510,7 @@
       "id": "body.contact.ui.10",
       "en": "Explore Docs",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -454,6 +518,7 @@
       "id": "body.contact.ui.11",
       "en": "Join Community",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -461,6 +526,7 @@
       "id": "body.contact.ui.12",
       "en": "Get in touch",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -468,6 +534,7 @@
       "id": "body.contact.ui.13",
       "en": "Start Free Trial",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -475,6 +542,7 @@
       "id": "body.contact.ui.14",
       "en": "Watch Demo",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -482,6 +550,7 @@
       "id": "body.contact.ui.2",
       "en": "Ready to transform your infrastructure",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -489,6 +558,7 @@
       "id": "body.contact.ui.3",
       "en": "Book a call",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -496,6 +566,7 @@
       "id": "body.contact.ui.4",
       "en": "Get in touch",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -503,6 +574,7 @@
       "id": "body.contact.ui.5",
       "en": "LinkedIn",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -510,6 +582,7 @@
       "id": "body.contact.ui.6",
       "en": "GitHub",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -517,6 +590,7 @@
       "id": "body.contact.ui.7",
       "en": "Facebook",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -524,6 +598,7 @@
       "id": "body.contact.ui.8",
       "en": "Instagram",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -531,6 +606,7 @@
       "id": "body.contact.ui.9",
       "en": "Get Directions",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "class"
     },
@@ -538,6 +614,7 @@
       "id": "meta.contact.description",
       "en": "Get in touch with Elemento for cloud infrastructure solutions, support, sales inquiries, or partnership opportunities.",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "meta description"
     },
@@ -545,6 +622,7 @@
       "id": "meta.contact.title",
       "en": "Elemento | Contact | Get Support for Your Cloud Platform",
       "it": "",
+      "fr": "",
       "source": "contact.html",
       "context": "meta title"
     }

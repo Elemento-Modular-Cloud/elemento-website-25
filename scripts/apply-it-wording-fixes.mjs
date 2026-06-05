@@ -42,6 +42,24 @@ const IT_GLOBAL = [
   ['green e self-hostable', 'sostenibile e auto-ospitabile'],
   ['green, ad alte prestazioni e self-hostable', 'sostenibile, ad alte prestazioni e auto-ospitabile'],
   ['green e self-hostable.', 'sostenibile e auto-ospitabile.'],
+  // Brand guidelines — keep colour and font proper names in English
+  ['Antipasto giallo su nero vuoto. Preferito', 'Starter Yellow su Void Black · Preferito'],
+  ['Antipasto giallo su nero vuoto', 'Starter Yellow su Void Black'],
+  ['Bianco cristallo su nero vuoto', 'Crystal White su Void Black'],
+  ['Nero vuoto su bianco cristallo', 'Void Black su Crystal White'],
+  ['Esposizione del cappello rosso', 'Red Hat Display'],
+  ['Corsivo Pixel Argentato', 'Argent Pixel Italic'],
+  ['Testo del cappello rosso', 'Red Hat Text'],
+  ['Cappello Rosso Mono', 'Red Hat Mono'],
+  ['Guadagno orizzontale', 'Payoff orizzontale'],
+  ['Guadagno verticale', 'Payoff verticale'],
+  ['vincita orizzontale', 'payoff orizzontale'],
+  ['vincita verticale', 'payoff verticale'],
+  ['vincita completa', 'payoff completo'],
+  ["intera vincita", 'intero payoff'],
+  ["intero profitto", 'intero payoff'],
+  ['è preferito il giallo su nero vuoto', 'è preferito Starter Yellow su Void Black'],
+  ['quando il profitto completo è troppo ampio', 'quando il payoff completo è troppo largo'],
 ];
 
 /** When `en` matches exactly, set `it` to this value. */
@@ -65,6 +83,16 @@ const EN_TO_IT = {
   'Privacy Policy': 'Informativa sulla privacy',
   'Vendor-neutral, high-performance cloud platform that\'s cost-effective, green, and self-hostable.':
     'Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.',
+  // Brand guidelines — proper nouns (fonts & palette)
+  'Red Hat Display': 'Red Hat Display',
+  'Argent Pixel Italic': 'Argent Pixel Italic',
+  'Red Hat Text': 'Red Hat Text',
+  'Red Hat Mono': 'Red Hat Mono',
+  'Horizontal payoff': 'Payoff orizzontale',
+  'Vertical payoff': 'Payoff verticale',
+  'Starter yellow on void black Preferred': 'Starter Yellow su Void Black · Preferito',
+  'Crystal white on void black': 'Crystal White su Void Black',
+  'Void black on crystal white': 'Void Black su Crystal White',
 };
 
 const UI_OVERRIDES = {

@@ -1137,6 +1137,32 @@
     ]
   },
   {
+    "stem": "brand-guidelines.it",
+    "legacyPath": "brand-guidelines.it.html",
+    "group": "root",
+    "slug": "brand-guidelines.it",
+    "title": "Elemento | Brand guidelines | Logo, colors &amp; typography",
+    "description": "Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/atmosphere.css",
+      "css/planet-styles/planet-brand-guidelines.css",
+      "css/brand-guidelines.css",
+      "css/breadcrumb.css"
+    ],
+    "extraScripts": [
+      "js/faq.js",
+      "js/atmosphere_hero.js"
+    ],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "compare-costs",
     "legacyPath": "compare-costs.html",
     "group": "root",

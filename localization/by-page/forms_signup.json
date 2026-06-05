@@ -6,6 +6,7 @@
       "id": "body.forms_signup.button.1",
       "en": "Get Started",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<button>"
     },
@@ -13,6 +14,7 @@
       "id": "body.forms_signup.h1.1",
       "en": "Join Elemento",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<h1>"
     },
@@ -20,6 +22,7 @@
       "id": "body.forms_signup.label.1",
       "en": "First Name *",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -27,6 +30,7 @@
       "id": "body.forms_signup.label.2",
       "en": "Last Name *",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -34,6 +38,7 @@
       "id": "body.forms_signup.label.3",
       "en": "Email Address *",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -41,6 +46,7 @@
       "id": "body.forms_signup.label.4",
       "en": "Company",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -48,6 +54,7 @@
       "id": "body.forms_signup.label.5",
       "en": "Role",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -55,6 +62,7 @@
       "id": "body.forms_signup.label.6",
       "en": "Primary Use Case",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -62,6 +70,7 @@
       "id": "body.forms_signup.label.7",
       "en": "Subscribe to our newsletter for updates and insights",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -69,6 +78,7 @@
       "id": "body.forms_signup.label.8",
       "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<label>"
     },
@@ -76,6 +86,7 @@
       "id": "body.forms_signup.p.1",
       "en": "Get started with the future of cloud computing",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<p>"
     },
@@ -83,6 +94,7 @@
       "id": "body.forms_signup.p.2",
       "en": "Please complete all required fields.",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<p>"
     },
@@ -90,6 +102,7 @@
       "id": "body.forms_signup.p.3",
       "en": "${message}",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "<p>"
     },
@@ -97,6 +110,7 @@
       "id": "meta.forms_signup.title",
       "en": "Sign Up - Elemento",
       "it": "",
+      "fr": "",
       "source": "forms/signup.html",
       "context": "meta title"
     }

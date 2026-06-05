@@ -55,7 +55,10 @@
     "emptyTitle": "No Articles Yet",
     "emptyBody": "Check back soon for new articles and insights.",
     "articlesLabel": "articles",
-    "byAuthor": "By"
+    "byAuthor": "By",
+    "articleColumn": "Article",
+    "authorColumn": "Author",
+    "dateColumn": "Date"
   },
   "videos": {
     "loading": "Loading videos…",

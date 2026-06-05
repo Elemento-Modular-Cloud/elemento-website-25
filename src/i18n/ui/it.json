@@ -55,7 +55,10 @@
     "emptyTitle": "Nessun articolo",
     "emptyBody": "Torna presto per nuovi articoli e approfondimenti.",
     "articlesLabel": "articoli",
-    "byAuthor": "Di"
+    "byAuthor": "Di",
+    "articleColumn": "Articolo",
+    "authorColumn": "Autore",
+    "dateColumn": "Data"
   },
   "videos": {
     "loading": "Caricamento video…",
@@ -76,13 +79,13 @@
     },
     "index": {
       "title": "Elemento | Piattaforma cloud privata e pubblica unificata",
-      "description": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabile con predisposizione per l'infrastruttura come codice.",
+      "description": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabili con predisposizione per l'infrastruttura come codice.",
       "heroTitle": "Piattaforma cloud privata e pubblica unificata",
       "heroSubtitle": "Cloud indipendente dal fornitore, conveniente, sostenibile, ad alte prestazioni e auto-ospitabile, pronto per l'infrastructure as code."
     },
     "about": {
       "title": "Elemento | Informazioni su | Missione e team della piattaforma cloud",
-      "description": "Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dal fornitore, convenienti ed ecologiche.",
+      "description": "Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dai fornitori, convenienti ed ecologiche.",
       "heroTitle": "Chi siamo",
       "heroSubtitle": "Trasformiamo l'infrastruttura cloud con soluzioni indipendenti dal fornitore, sostenibili e convenienti."
     },
@@ -218,7 +221,7 @@
     },
     "2024-05-15-optimizing-storage-space-in-cloud-computing-reduce-costs-and-carbon-emissions": {
       "description": "L'ottimizzazione dello spazio di archiviazione nel cloud computing è diventata cruciale per le aziende che mirano a...",
-      "title": "Ottimizzare lo spazio di archiviazione nel cloud computing: ridurre i costi e le emissioni di carbonio | Blog Elemento"
+      "title": "Ottimizzare lo spazio di archiviazione nel cloud computing: ridurre i costi e le emissioni di CO2 | Blog Elemento"
     },
     "2024-06-04-public-private-hybrid-and-multicloud-understanding-the-different-options": {
       "description": "Il cloud computing offre diverse opzioni per soddisfare le esigenze organizzative: pubblico, privato, ibrido...",
@@ -229,7 +232,7 @@
       "title": "Sostenibilità e telecomunicazioni: impatto ambientale e ruolo del cloud | Blog Elemento"
     },
     "2024-07-14-tco-in-cloud-computing-a-comprehensive-cost-analysis-for-business-decision": {
-      "description": "Il costo totale di proprietà (TCO) nel cloud computing implica considerare tutti i costi durante...",
+      "description": "Il costo totale di gestione (TCO) nel cloud computing implica considerare tutti i costi durante...",
       "title": "TCO nel cloud computing: un'analisi completa dei costi per le decisioni aziendali | Blog Elemento"
     },
     "2024-08-03-thales-annual-report-escalating-ransomware-attacks-and-cloud-data-risks-sound-digital-sovereignty-alarm": {
@@ -368,7 +371,7 @@
       "title": "Settore pubblico e infrastrutture per smart city | Elemento"
     },
     "regulated": {
-      "description": "Esegui carichi di lavoro sensibili su cloud privati ​​e pubblici con una governance completa dei dati. Elemento fornisce sicurezza di livello aziendale con conformità integrata per i settori regolamentati.",
+      "description": "Esegui carichi di lavoro sensibili su cloud privati ​​e pubblici con una governance completa dei dati. Elemento fornisce sicurezza di livello enterprise con conformità integrata per i settori regolamentati.",
       "title": "Sanità, finanza e ambienti regolamentati | Elemento"
     },
     "system-integrators": {
@@ -501,7 +504,7 @@
     },
     "blog-posts_2024-05-15-optimizing-storage-space-in-cloud-computing-reduce-costs-and-carbon-emissions": {
       "description": "L'ottimizzazione dello spazio di archiviazione nel cloud computing è diventata cruciale per le aziende che mirano a...",
-      "title": "Ottimizzare lo spazio di archiviazione nel cloud computing: ridurre i costi e le emissioni di carbonio | Blog Elemento"
+      "title": "Ottimizzare lo spazio di archiviazione nel cloud computing: ridurre i costi e le emissioni di CO2 | Blog Elemento"
     },
     "blog-posts_2024-06-04-public-private-hybrid-and-multicloud-understanding-the-different-options": {
       "description": "Il cloud computing offre diverse opzioni per soddisfare le esigenze organizzative: pubblico, privato, ibrido...",
@@ -512,7 +515,7 @@
       "title": "Sostenibilità e telecomunicazioni: impatto ambientale e ruolo del cloud | Blog Elemento"
     },
     "blog-posts_2024-07-14-tco-in-cloud-computing-a-comprehensive-cost-analysis-for-business-decision": {
-      "description": "Il costo totale di proprietà (TCO) nel cloud computing implica considerare tutti i costi durante...",
+      "description": "Il costo totale di gestione (TCO) nel cloud computing implica considerare tutti i costi durante...",
       "title": "TCO nel cloud computing: un'analisi completa dei costi per le decisioni aziendali | Blog Elemento"
     },
     "blog-posts_2024-08-03-thales-annual-report-escalating-ransomware-attacks-and-cloud-data-risks-sound-digital-sovereignty-alarm": {
@@ -626,7 +629,7 @@
       "title": "Settore pubblico e infrastrutture per smart city | Elemento"
     },
     "solutions_regulated": {
-      "description": "Esegui carichi di lavoro sensibili su cloud privati ​​e pubblici con una governance completa dei dati. Elemento fornisce sicurezza di livello aziendale con conformità integrata per i settori regolamentati.",
+      "description": "Esegui carichi di lavoro sensibili su cloud privati ​​e pubblici con una governance completa dei dati. Elemento fornisce sicurezza di livello enterprise con conformità integrata per i settori regolamentati.",
       "title": "Sanità, finanza e ambienti regolamentati | Elemento"
     },
     "solutions_system-integrators": {
@@ -652,6 +655,14 @@
     "thank-you_pr-marketing": {
       "description": "La tua sessione di PR e marketing è confermata. Accetta l'invito del calendario dalla tua casella di posta per tenere sotto controllo il tuo brainstorming.",
       "title": "Prenotazione completata - PR &amp; Marketing | Elemento"
+    },
+    "2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk": {
+      "description": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
+      "title": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico | Blog Elemento"
+    },
+    "blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk": {
+      "description": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
+      "title": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico | Blog Elemento"
     }
   },
   "cms": {

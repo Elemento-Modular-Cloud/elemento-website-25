@@ -14,8 +14,44 @@
     return path;
   }
 
+  function pageLocale() {
+    return window.ElementoI18n?.getPageLocale?.() ?? 'en';
+  }
+
+  function postStem(filename) {
+    return filename.replace(/\.html$/, '');
+  }
+
+  function postPageMeta(post) {
+    const locale = pageLocale();
+    if (locale === 'en') {
+      return { title: post.title, summary: post.summary };
+    }
+    const stem = postStem(post.filename);
+    const pages = window.__I18N__?.ui?.pages ?? {};
+    const page = pages[`blog-posts_${stem}`] ?? pages[stem];
+    if (!page) {
+      return { title: post.title, summary: post.summary };
+    }
+    let title = post.title;
+    if (page.title) {
+      title = page.title
+        .replace(/\s*\|\s*Blog(?: dell'Elemento| Elemento)?\s*$/i, '')
+        .trim();
+    }
+    return {
+      title,
+      summary: page.description || post.summary,
+    };
+  }
+
   function postHref(filename) {
-    return `blog-posts/${filename}`;
+    const locale = pageLocale();
+    if (locale === 'en') return `blog-posts/${filename}`;
+    if (window.ElementoI18n?.pageHref) {
+      return window.ElementoI18n.pageHref(`blog-posts/${filename}`, locale);
+    }
+    return `/${locale}/blog-posts/${filename}`;
   }
 
   function postImage(thumbnailPath) {
@@ -26,19 +62,9 @@
     return window.__I18N__?.ui?.blog ?? {};
   }
 
-  function localizedTitle(post) {
-    const locale = window.ElementoI18n?.getPageLocale?.() ?? 'en';
-    if (locale !== 'it') return post.title;
-    const key = `blog-posts_${post.filename.replace(/\.html$/, '')}`;
-    const page = window.__I18N__?.ui?.pages?.[key];
-    if (page?.title) {
-      return page.title.replace(/\s*\|\s*Blog dell'Elemento\s*$/i, '').trim();
-    }
-    return post.title;
-  }
-
   function formatDate(dateString) {
-    const locale = window.ElementoI18n?.getPageLocale?.() === 'it' ? 'it-IT' : 'en-US';
+    const localeMap = { it: 'it-IT', fr: 'fr-FR', en: 'en-US' };
+    const locale = localeMap[pageLocale()] ?? 'en-US';
     return new Date(dateString).toLocaleDateString(locale, {
       year: 'numeric',
       month: 'long',
@@ -57,6 +83,9 @@
       read: b.readMore ?? 'Read more',
       articles: b.articlesLabel ?? 'articles',
       by: b.byAuthor ?? 'By',
+      articleColumn: b.articleColumn ?? 'Article',
+      authorColumn: b.authorColumn ?? 'Author',
+      dateColumn: b.dateColumn ?? 'Date',
     };
   }
 
@@ -112,22 +141,22 @@
       <table class="blog-table">
         <thead>
           <tr>
-            <th>Article</th>
-            <th>Author</th>
-            <th>Date</th>
+            <th>${lbl.articleColumn}</th>
+            <th>${lbl.authorColumn}</th>
+            <th>${lbl.dateColumn}</th>
             <th></th>
           </tr>
         </thead>
         <tbody>
           ${blogPosts
             .map((post) => {
-              const title = localizedTitle(post);
+              const { title, summary } = postPageMeta(post);
               const href = postHref(post.filename);
               return `
             <tr>
               <td>
                 <div class="blog-title"><a href="${href}">${title}</a></div>
-                <div class="blog-summary">${post.summary}</div>
+                <div class="blog-summary">${summary}</div>
               </td>
               <td>${post.author}</td>
               <td>${formatDate(post.date)}</td>
@@ -140,7 +169,7 @@
 
     gridContainer.innerHTML = blogPosts
       .map((post) => {
-        const title = localizedTitle(post);
+        const { title } = postPageMeta(post);
         const href = postHref(post.filename);
         const thumb = postImage(post.thumbnail_image);
         return `

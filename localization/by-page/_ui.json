@@ -1,11 +1,28 @@
 {
   "page": "_ui",
-  "count": 71,
+  "count": 87,
   "strings": [
+    {
+      "id": "ui.banner.atomosDiscountAria",
+      "en": "Grab today AtomOS: 150 euros off the first purchase",
+      "it": "Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto",
+      "fr": "Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.banner.atomosDiscountText",
+      "en": "Grab today AtomOS - 150€ off the first purchase",
+      "it": "Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto",
+      "fr": "Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
     {
       "id": "ui.blog.articlesLabel",
       "en": "articles",
       "it": "articoli",
+      "fr": "articles",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -13,6 +30,7 @@
       "id": "ui.blog.byAuthor",
       "en": "By",
       "it": "Di",
+      "fr": "Par",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -20,6 +38,7 @@
       "id": "ui.blog.description",
       "en": "Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community.",
       "it": "Approfondimenti, notizie e storie dal team Elemento e dalla community del cloud computing.",
+      "fr": "Informations d'experts, actualités du secteur et histoires innovantes de l'équipe Elemento et de la communauté du cloud computing.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -27,6 +46,7 @@
       "id": "ui.blog.emptyBody",
       "en": "Check back soon for new articles and insights.",
       "it": "Torna presto per nuovi articoli e approfondimenti.",
+      "fr": "Revenez bientôt pour de nouveaux articles et informations.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -34,6 +54,7 @@
       "id": "ui.blog.emptyTitle",
       "en": "No Articles Yet",
       "it": "Nessun articolo",
+      "fr": "Aucun article pour l'instant",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -41,6 +62,7 @@
       "id": "ui.blog.englishPostsNote",
       "en": "Articles are published in English. Italian interface; post content remains in English until translated.",
       "it": "Gli articoli sono pubblicati in inglese. Interfaccia in italiano; i contenuti degli articoli restano in inglese fino a traduzione dedicata.",
+      "fr": "Les articles sont publiés en anglais. Interface italienne ; le contenu de la publication reste en anglais jusqu'à ce qu'il soit traduit.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -48,6 +70,7 @@
       "id": "ui.blog.errorBody",
       "en": "Unable to load blog posts. Please try again later.",
       "it": "Impossibile caricare gli articoli del blog. Riprova più tardi.",
+      "fr": "Impossible de charger les articles du blog. Veuillez réessayer plus tard.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -55,6 +78,7 @@
       "id": "ui.blog.errorTitle",
       "en": "Error Loading Articles",
       "it": "Errore nel caricamento degli articoli",
+      "fr": "Erreur lors du chargement des articles",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -62,6 +86,7 @@
       "id": "ui.blog.heading",
       "en": "Blog",
       "it": "Blog",
+      "fr": "Blogue",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -69,6 +94,7 @@
       "id": "ui.blog.loading",
       "en": "Loading articles…",
       "it": "Caricamento articoli…",
+      "fr": "Chargement des articles…",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -76,6 +102,7 @@
       "id": "ui.blog.noPosts",
       "en": "No blog posts found.",
       "it": "Nessun articolo trovato.",
+      "fr": "Aucun article de blog trouvé.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -83,6 +110,7 @@
       "id": "ui.blog.readMore",
       "en": "Read more",
       "it": "Leggi tutto",
+      "fr": "En savoir plus",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -90,6 +118,7 @@
       "id": "ui.blog.rssTitle",
       "en": "Elemento Blog RSS Feed",
       "it": "Feed RSS Blog Elemento",
+      "fr": "Flux RSS du blog Elemento",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -97,6 +126,7 @@
       "id": "ui.blog.subtitle",
       "en": "Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community.",
       "it": "Approfondimenti, notizie e storie dal team Elemento e dalla community del cloud computing.",
+      "fr": "Informations d'experts, actualités du secteur et histoires innovantes de l'équipe Elemento et de la communauté du cloud computing.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -104,6 +134,7 @@
       "id": "ui.blog.title",
       "en": "Elemento | Blog | Cloud Computing Insights & Technology News",
       "it": "Elemento | Blog | Cloud computing e innovazione",
+      "fr": "Elemento | Blogue | Informations sur le cloud computing et actualités technologiques",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -111,6 +142,7 @@
       "id": "ui.cms.loadingOrbital",
       "en": "Loading configurations…",
       "it": "Caricamento configurazioni…",
+      "fr": "Chargement des configurations…",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -118,6 +150,7 @@
       "id": "ui.cms.loadingTeam",
       "en": "Loading team…",
       "it": "Caricamento team…",
+      "fr": "Chargement de l'équipe…",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -125,6 +158,7 @@
       "id": "ui.cms.providerColumn",
       "en": "Provider",
       "it": "Fornitore",
+      "fr": "Fournisseur",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -132,6 +166,7 @@
       "id": "ui.cms.providerPartial",
       "en": "Partial support",
       "it": "Supporto parziale",
+      "fr": "Prise en charge partielle",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -139,6 +174,7 @@
       "id": "ui.cms.providerPlanned",
       "en": "Planned",
       "it": "In roadmap",
+      "fr": "Prévu",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -146,6 +182,7 @@
       "id": "ui.cms.providerSupported",
       "en": "Supported",
       "it": "Supportato",
+      "fr": "Soutenu",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -153,6 +190,7 @@
       "id": "ui.cms.supportColumn",
       "en": "Support level",
       "it": "Livello di supporto",
+      "fr": "Niveau d'assistance",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -160,6 +198,7 @@
       "id": "ui.footer.aboutUs",
       "en": "About Us",
       "it": "Chi siamo",
+      "fr": "À propos de nous",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -167,6 +206,7 @@
       "id": "ui.footer.allProducts",
       "en": "All Products",
       "it": "Tutti i prodotti",
+      "fr": "Tous les produits",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -174,6 +214,7 @@
       "id": "ui.footer.brandGuidelines",
       "en": "Brand guidelines",
       "it": "Linee guida del marchio",
+      "fr": "Lignes directrices de la marque",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -181,6 +222,7 @@
       "id": "ui.footer.careers",
       "en": "Careers",
       "it": "Lavora con noi",
+      "fr": "Carrières",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -188,6 +230,7 @@
       "id": "ui.footer.company",
       "en": "Company",
       "it": "Azienda",
+      "fr": "Entreprise",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -195,6 +238,7 @@
       "id": "ui.footer.connect",
       "en": "Connect",
       "it": "Seguici",
+      "fr": "Connecter",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -202,6 +246,7 @@
       "id": "ui.footer.cookies",
       "en": "Cookie Policy",
       "it": "Politica sui cookie",
+      "fr": "Politique en matière de cookies",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -209,6 +254,7 @@
       "id": "ui.footer.copyright",
       "en": "© 2026 Elemento. All rights reserved.",
       "it": "© 2026 Elemento. Tutti i diritti riservati.",
+      "fr": "© 2026 Elementoo. Tous droits réservés.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -216,6 +262,7 @@
       "id": "ui.footer.documentation",
       "en": "Documentation",
       "it": "Documentazione",
+      "fr": "Documentation",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -223,13 +270,15 @@
       "id": "ui.footer.legal",
       "en": "Elemento Srl - VAT IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Fully paid-up share capital 14.341,58€",
       "it": "Elemento Srl - P.IVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capitale sociale interamente versato 14.341,58€",
+      "fr": "Elemento Srl - TVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capital social entièrement libéré 14.341,58€",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.footer.privacy",
       "en": "Privacy Policy",
-      "it": "politica sulla riservatezza",
+      "it": "Informativa sulla privacy",
+      "fr": "Politique de confidentialité",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -237,6 +286,7 @@
       "id": "ui.footer.products",
       "en": "Products",
       "it": "Prodotti",
+      "fr": "Produits",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -244,13 +294,15 @@
       "id": "ui.footer.resources",
       "en": "Resources",
       "it": "Risorse",
+      "fr": "Ressources",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.footer.tagline",
       "en": "Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.",
-      "it": "Piattaforma cloud ad alte prestazioni, vendor-neutral, economica, green e self-hostable.",
+      "it": "Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.",
+      "fr": "Plateforme cloud neutre vis-à-vis des fournisseurs, performante, économique, durable et auto-hébergeable.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -258,6 +310,7 @@
       "id": "ui.langSwitcher.en",
       "en": "EN",
       "it": "EN",
+      "fr": "EN",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -265,6 +318,23 @@
       "id": "ui.langSwitcher.enAria",
       "en": "English",
       "it": "Inglese",
+      "fr": "Anglais",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.langSwitcher.fr",
+      "en": "FR",
+      "it": "FR",
+      "fr": "FR",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.langSwitcher.frAria",
+      "en": "French",
+      "it": "Francese",
+      "fr": "Français",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -272,6 +342,7 @@
       "id": "ui.langSwitcher.it",
       "en": "IT",
       "it": "IT",
+      "fr": "IT",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -279,6 +350,7 @@
       "id": "ui.langSwitcher.itAria",
       "en": "Italian",
       "it": "Italiano",
+      "fr": "italien",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -286,6 +358,7 @@
       "id": "ui.langSwitcher.label",
       "en": "Language",
       "it": "Lingua",
+      "fr": "Langue",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -293,6 +366,7 @@
       "id": "ui.nav.about",
       "en": "About",
       "it": "Chi siamo",
+      "fr": "À propos",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -300,13 +374,15 @@
       "id": "ui.nav.blog",
       "en": "Blog",
       "it": "Blog",
+      "fr": "Blogue",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.nav.bookCall",
       "en": "Book a Call",
-      "it": "Prenota una call",
+      "it": "Prenota una chiamata",
+      "fr": "Réserver un appel",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -314,6 +390,7 @@
       "id": "ui.nav.contact",
       "en": "Contact",
       "it": "Contatti",
+      "fr": "Contact",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -321,6 +398,7 @@
       "id": "ui.nav.homeAria",
       "en": "Elemento home",
       "it": "Home Elemento",
+      "fr": "Accueil Elemento",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -328,6 +406,15 @@
       "id": "ui.nav.products",
       "en": "Products",
       "it": "Prodotti",
+      "fr": "Produits",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.nav.resources",
+      "en": "Resources",
+      "it": "Risorse",
+      "fr": "Ressources",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -335,6 +422,7 @@
       "id": "ui.nav.signup",
       "en": "Signup",
       "it": "Registrati",
+      "fr": "S'inscrire",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -342,6 +430,15 @@
       "id": "ui.nav.technology",
       "en": "Technology",
       "it": "Tecnologia",
+      "fr": "Technologie",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.nav.videos",
+      "en": "Videos",
+      "it": "Video",
+      "fr": "Vidéos",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -349,13 +446,15 @@
       "id": "ui.pages.about.description",
       "en": "Learn about Elemento's mission to transform cloud infrastructure with vendor-neutral, cost-effective, and green computing solutions.",
       "it": "Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dal fornitore, convenienti ed ecologiche.",
+      "fr": "Découvrez la mission d'Elemento qui consiste à transformer l'infrastructure cloud avec des solutions informatiques indépendantes du fournisseur, rentables et écologiques.",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.about.heroSubtitle",
       "en": "Transforming cloud infrastructure with vendor-neutral, cost-effective, and sustainable computing.",
-      "it": "Trasformiamo l'infrastruttura cloud con soluzioni vendor-neutral, sostenibili e convenienti.",
+      "it": "Trasformiamo l'infrastruttura cloud con soluzioni indipendenti dal fornitore, sostenibili e convenienti.",
+      "fr": "Transformer l'infrastructure cloud avec des solutions neutres, durables et économiques.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -363,6 +462,7 @@
       "id": "ui.pages.about.heroTitle",
       "en": "About Elemento",
       "it": "Chi siamo",
+      "fr": "À propos de Elemento",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -370,6 +470,7 @@
       "id": "ui.pages.about.title",
       "en": "Elemento | About | Cloud Platform Mission & Team",
       "it": "Elemento | Informazioni su | Missione e team della piattaforma cloud",
+      "fr": "Elemento | À propos | Mission et équipe de la plateforme cloud",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -377,6 +478,7 @@
       "id": "ui.pages.contact.description",
       "en": "Get in touch with Elemento for cloud infrastructure solutions, support, sales inquiries, or partnership opportunities.",
       "it": "Mettiti in contatto con Elemento per soluzioni di infrastruttura cloud, supporto, richieste di vendita o opportunità di partnership.",
+      "fr": "Contactez Elemento pour des solutions d'infrastructure cloud, une assistance, des demandes commerciales ou des opportunités de partenariat.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -384,6 +486,7 @@
       "id": "ui.pages.contact.heroSubtitle",
       "en": "We're here to help with sales, support, and partnerships.",
       "it": "Siamo qui per vendite, supporto e partnership.",
+      "fr": "Nous sommes là pour vous aider avec les ventes, le support et les partenariats.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -391,6 +494,7 @@
       "id": "ui.pages.contact.heroTitle",
       "en": "Contact us",
       "it": "Contattaci",
+      "fr": "Contactez-nous",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -398,20 +502,23 @@
       "id": "ui.pages.contact.title",
       "en": "Elemento | Contact | Get Support for Your Cloud Platform",
       "it": "Elemento | Contatto | Ottieni supporto per la tua piattaforma cloud",
+      "fr": "Elemento | Contacter | Obtenez de l'assistance pour votre plateforme cloud",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.index.description",
       "en": "Elemento is a vendor-neutral, cost-saving, green, high-performance, self-hostable cloud platform with infrastructure-as-code readiness.",
-      "it": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e self-hostable con predisposizione per l'infrastruttura come codice.",
+      "it": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabile con predisposizione per l'infrastruttura come codice.",
+      "fr": "Elemento est une plate-forme cloud indépendante du fournisseur, économique, écologique, hautes performances et auto-hébergable avec une préparation à l'infrastructure en tant que code.",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.index.heroSubtitle",
       "en": "Vendor-neutral, cost-saving, green, high-performance, self-hostable cloud with infrastructure-as-code readiness.",
-      "it": "Cloud vendor-neutral, economico, green, ad alte prestazioni e self-hostable, pronto per l'infrastructure-as-code.",
+      "it": "Cloud indipendente dal fornitore, conveniente, sostenibile, ad alte prestazioni e auto-ospitabile, pronto per l'infrastructure as code.",
+      "fr": "Cloud neutre, économique, durable, performant et auto-hébergeable, prêt pour l'infrastructure as code.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -419,6 +526,7 @@
       "id": "ui.pages.index.heroTitle",
       "en": "Unified private and public Cloud platform",
       "it": "Piattaforma cloud privata e pubblica unificata",
+      "fr": "Plateforme Cloud privée et publique unifiée",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -426,6 +534,7 @@
       "id": "ui.pages.index.title",
       "en": "Elemento | Unified private and public Cloud platform",
       "it": "Elemento | Piattaforma cloud privata e pubblica unificata",
+      "fr": "Elemento | Plateforme Cloud privée et publique unifiée",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -433,6 +542,7 @@
       "id": "ui.pages.products.description",
       "en": "Explore Elemento's modular cloud products: AtomOS hypervisor, Electros orchestration, and Atomosphere API layer.",
       "it": "Esplora i prodotti completi della piattaforma cloud di Elemento, tra cui l'hypervisor AtomOS, il dashboard di orchestrazione Electros e il proxy API Atomosphere per la gestione unificata dell'infrastruttura.",
+      "fr": "Explorez les produits complets de plate-forme cloud d'Elemento, notamment l'hyperviseur AtomOS, le tableau de bord d'orchestration Electros et le proxy API Atomosphere pour une gestion unifiée de l'infrastructure.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -440,6 +550,7 @@
       "id": "ui.pages.products.heroSubtitle",
       "en": "Modular building blocks for a unified multi-cloud platform.",
       "it": "Componenti modulari per una piattaforma multi-cloud unificata.",
+      "fr": "Elementos de base modulaires pour une plateforme multi-cloud unifiée.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -447,6 +558,7 @@
       "id": "ui.pages.products.heroTitle",
       "en": "Our products",
       "it": "I nostri prodotti",
+      "fr": "Nos produits",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -454,6 +566,7 @@
       "id": "ui.pages.products.title",
       "en": "Elemento | Products | AtomOS, Electros & Atomosphere",
       "it": "Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud",
+      "fr": "Elemento | Produits | Plateforme de gestion et d'infrastructure cloud",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -461,6 +574,7 @@
       "id": "ui.pages.signup.description",
       "en": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
       "it": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
+      "fr": "Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -468,6 +582,7 @@
       "id": "ui.pages.signup.heroSubtitle",
       "en": "Start building on Elemento today.",
       "it": "Inizia oggi a costruire su Elemento.",
+      "fr": "Commencez à construire sur Elemento dès aujourd’hui.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -475,6 +590,7 @@
       "id": "ui.pages.signup.heroTitle",
       "en": "Sign up",
       "it": "Registrati",
+      "fr": "S'inscrire",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -482,6 +598,7 @@
       "id": "ui.pages.signup.title",
       "en": "Elemento | Sign up | Start your cloud platform journey",
       "it": "Iscriviti - Elemento Cloud Platform",
+      "fr": "S'inscrire - Plateforme Elemento Cloud",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -489,6 +606,7 @@
       "id": "ui.thankYou.atomosDemo",
       "en": "Thank you for booking your AtomOS demo!",
       "it": "Grazie per aver prenotato la demo AtomOS!",
+      "fr": "Merci d'avoir réservé votre démo AtomOS !",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -496,6 +614,87 @@
       "id": "ui.thankYou.fullSolutionDemo",
       "en": "Thank you for scheduling your full solution demo!",
       "it": "Grazie per aver prenotato la demo della soluzione completa!",
+      "fr": "Merci d'avoir programmé votre démonstration complète de solution !",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.emptyBody",
+      "en": "Check back soon for recordings and resources.",
+      "it": "Torna presto per registrazioni e risorse.",
+      "fr": "Revenez bientôt pour des enregistrements et des ressources.",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.emptyTitle",
+      "en": "No Videos Yet",
+      "it": "Nessun video disponibile",
+      "fr": "Aucune vidéo pour l'instant",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.errorBody",
+      "en": "Unable to load videos. Please try again later.",
+      "it": "Impossibile caricare i video. Riprova più tardi.",
+      "fr": "Impossible de charger les vidéos. Veuillez réessayer plus tard.",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.errorTitle",
+      "en": "Error Loading Videos",
+      "it": "Errore nel caricamento dei video",
+      "fr": "Erreur lors du chargement des vidéos",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.featured",
+      "en": "Featured",
+      "it": "In evidenza",
+      "fr": "À la une",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.loading",
+      "en": "Loading videos…",
+      "it": "Caricamento video…",
+      "fr": "Chargement des vidéos…",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.missingEmbed",
+      "en": "Missing embed URL.",
+      "it": "URL di incorporamento mancante.",
+      "fr": "URL d'intégration manquante.",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.openResource",
+      "en": "Open resource",
+      "it": "Apri risorsa",
+      "fr": "Ouvrir la ressource",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.videoLabel",
+      "en": "video",
+      "it": "video",
+      "fr": "vidéo",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.videos.videosLabel",
+      "en": "videos",
+      "it": "video",
+      "fr": "vidéos",
       "source": "src/i18n/ui",
       "context": ""
     }

@@ -23,6 +23,10 @@ const INPUT = existsSync(join(ROOT, `localization/strings-${LOCALE}.json`))
 
 const SKIP = new Set(['url', 'link', 'logo', 'icon', 'photo', 'id', 'type', 'division', 'number']);
 
+function isProviderBrandNamePath(path) {
+  return /\.ELEMENTO_SUPPORTED_PROVIDERS\.[^.]+\.display_name$/.test(path);
+}
+
 function loadJson(path) {
   return JSON.parse(readFileSync(path, 'utf-8'));
 }
@@ -66,6 +70,7 @@ function applyLocaleTree(en, target, prefix, map, localeKey) {
       if (SKIP.has(key)) continue;
       const path = `${prefix}.${key}`;
       if (typeof val === 'string') {
+        if (isProviderBrandNamePath(path)) continue;
         const tr = map.get(path);
         if (tr) target[key] = tr;
       } else if (val && typeof val === 'object') {

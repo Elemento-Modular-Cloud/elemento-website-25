@@ -6,6 +6,7 @@
       "id": "body.solutions_ai.h2.1",
       "en": "Scale Your AI/ML Workloads with GPU Clusters",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h2>"
     },
@@ -13,6 +14,7 @@
       "id": "body.solutions_ai.h2.2",
       "en": "AI/ML-Ready Infrastructure",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h2>"
     },
@@ -20,6 +22,7 @@
       "id": "body.solutions_ai.h2.3",
       "en": "Related Resources",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h2>"
     },
@@ -27,6 +30,7 @@
       "id": "body.solutions_ai.h3.1",
       "en": "Multi-Cloud GPU Access",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -34,6 +38,7 @@
       "id": "body.solutions_ai.h3.10",
       "en": "The Benefits of Virtualization for Cloud Computing",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -41,6 +46,7 @@
       "id": "body.solutions_ai.h3.2",
       "en": "Framework Integration",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -48,6 +54,7 @@
       "id": "body.solutions_ai.h3.3",
       "en": "Cost Optimization",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -55,6 +62,7 @@
       "id": "body.solutions_ai.h3.4",
       "en": "Data Pipeline",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -62,6 +70,7 @@
       "id": "body.solutions_ai.h3.5",
       "en": "AtomOS",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -69,6 +78,7 @@
       "id": "body.solutions_ai.h3.6",
       "en": "Electros",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -76,6 +86,7 @@
       "id": "body.solutions_ai.h3.7",
       "en": "Atomosphere",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -83,6 +94,7 @@
       "id": "body.solutions_ai.h3.8",
       "en": "The Era of Big Data",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -90,6 +102,7 @@
       "id": "body.solutions_ai.h3.9",
       "en": "Edge Computing: Insights from Gartner Research",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
@@ -97,6 +110,7 @@
       "id": "body.solutions_ai.h4.1",
       "en": "GPU-Ready Hypervisor",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h4>"
     },
@@ -104,6 +118,7 @@
       "id": "body.solutions_ai.h4.2",
       "en": "AI/ML Management Console",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h4>"
     },
@@ -111,6 +126,7 @@
       "id": "body.solutions_ai.h4.3",
       "en": "AI/ML Integration API",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<h4>"
     },
@@ -118,6 +134,7 @@
       "id": "body.solutions_ai.p.1",
       "en": "Accelerate your AI research and development with distributed GPU clusters across multiple cloud providers. Elemento provides seamless access to GPU resources, cost optimization, and framework integration for AI startups and research labs.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -125,6 +142,7 @@
       "id": "body.solutions_ai.p.10",
       "en": "Explore our latest insights on AI/ML infrastructure, edge computing, and cloud optimization.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -132,6 +150,7 @@
       "id": "body.solutions_ai.p.11",
       "en": "Discover how big data is transforming AI/ML workloads and the infrastructure needed to process massive datasets efficiently.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -139,6 +158,7 @@
       "id": "body.solutions_ai.p.12",
       "en": "Learn how edge computing is revolutionizing AI workloads by bringing processing closer to data sources for faster insights.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -146,6 +166,7 @@
       "id": "body.solutions_ai.p.13",
       "en": "Understand how virtualization optimizes AI/ML infrastructure for better resource utilization and performance.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -153,6 +174,7 @@
       "id": "body.solutions_ai.p.2",
       "en": "Access GPUs from AWS, Azure, GCP, and on-premise infrastructure through a single interface",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -160,6 +182,7 @@
       "id": "body.solutions_ai.p.3",
       "en": "Native support for TensorFlow, PyTorch, Kubernetes, and other popular AI/ML frameworks",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -167,6 +190,7 @@
       "id": "body.solutions_ai.p.4",
       "en": "Intelligent resource allocation and auto-scaling to minimize costs while maximizing performance",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -174,6 +198,7 @@
       "id": "body.solutions_ai.p.5",
       "en": "Seamless data ingestion and preprocessing with GPU acceleration for large datasets",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -181,6 +206,7 @@
       "id": "body.solutions_ai.p.6",
       "en": "Complete platform designed for AI/ML workloads with GPU cluster management, framework integration, and cost optimization.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -188,6 +214,7 @@
       "id": "body.solutions_ai.p.7",
       "en": "Production-grade hypervisor with GPU passthrough support, CUDA integration, and optimized performance for AI/ML workloads. Deploy on-premise or in hybrid cloud environments.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -195,6 +222,7 @@
       "id": "body.solutions_ai.p.8",
       "en": "Unified dashboard for managing GPU clusters, monitoring training progress, and optimizing resource allocation. Real-time metrics, automated scaling, and cost tracking for AI/ML workloads.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -202,6 +230,7 @@
       "id": "body.solutions_ai.p.9",
       "en": "Comprehensive API for integrating with AI/ML frameworks, data sources, and cloud providers. Support for TensorFlow, PyTorch, Kubernetes, and automated model deployment.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "<p>"
     },
@@ -209,6 +238,7 @@
       "id": "body.solutions_ai.ui.1",
       "en": "Learn More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -216,6 +246,7 @@
       "id": "body.solutions_ai.ui.2",
       "en": "Learn More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -223,6 +254,7 @@
       "id": "body.solutions_ai.ui.3",
       "en": "Learn More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -230,6 +262,7 @@
       "id": "body.solutions_ai.ui.4",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -237,6 +270,7 @@
       "id": "body.solutions_ai.ui.5",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -244,6 +278,7 @@
       "id": "body.solutions_ai.ui.6",
       "en": "Read More",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "class"
     },
@@ -251,6 +286,7 @@
       "id": "meta.solutions_ai.description",
       "en": "Train, deploy, and scale AI workloads seamlessly across clouds and on-prem nodes. Elemento provides GPU cluster management and multi-cloud AI environments.",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "meta description"
     },
@@ -258,6 +294,7 @@
       "id": "meta.solutions_ai.title",
       "en": "AI/Data Science Startups & Research Labs | Elemento",
       "it": "",
+      "fr": "",
       "source": "solutions/ai.html",
       "context": "meta title"
     }

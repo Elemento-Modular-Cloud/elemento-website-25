@@ -23,12 +23,19 @@ const pageTitle =
   locale !== 'en' && pageUi?.title ? pageUi.title : entry.title;
 const pageDescription =
   locale !== 'en' && pageUi?.description ? pageUi.description : entry.description;
-let bodyHtml = extractLegacyBody(entry.legacyPath);
-bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
+const localeLegacyPath =
+  locale === 'it' && entry.stem === 'brand-guidelines'
+    ? 'brand-guidelines.it.html'
+    : entry.legacyPath;
+const skipBodyLocalize = locale === 'it' && entry.stem === 'brand-guidelines';
+let bodyHtml = extractLegacyBody(localeLegacyPath);
+if (!skipBodyLocalize) {
+  bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
+}
 bodyHtml = prefixBodyPageLinks(bodyHtml, entry.stem, locale);
 bodyHtml = prefixBodyAssets(bodyHtml, assetBase);
 const scripts =
-  entry.extraScripts.length > 0 ? entry.extraScripts : extractLegacyScripts(entry.legacyPath);
+  entry.extraScripts.length > 0 ? entry.extraScripts : extractLegacyScripts(localeLegacyPath);
 const isSolution = entry.type === 'solution' && entry.group === 'solutions';
 const solutionSlug = isSolution && entry.slug !== 'index' ? entry.slug : null;
 ---
