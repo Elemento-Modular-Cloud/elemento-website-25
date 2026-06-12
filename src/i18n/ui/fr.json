@@ -70,7 +70,11 @@
     "videoLabel": "vidéo",
     "featured": "À la une",
     "openResource": "Ouvrir la ressource",
-    "missingEmbed": "URL d'intégration manquante."
+    "missingEmbed": "URL d'intégration manquante.",
+    "localeRedirectTitle": "Vidéos disponibles en anglais et en italien",
+    "localeRedirectBody": "Nos enregistrements ne sont pas encore disponibles en français. Consultez la bibliothèque vidéo en anglais ou en italien.",
+    "watchEnglish": "Voir les vidéos en anglais",
+    "watchItalian": "Voir les vidéos en italien"
   },
   "pages": {
     "404": {
@@ -109,7 +113,7 @@
     },
     "videos": {
       "title": "Elemento | Vidéos | Keynotes, webinaires et médias",
-      "description": "Regardez les keynotes, webinaires et enregistrements produits d'Elemento. Vidéos intégrées et ressources de l'équipe Elemento."
+      "description": "Les vidéos Elemento sont disponibles en anglais et en italien. Choisissez la bibliothèque qui vous convient."
     },
     "atomos": {
       "description": "AtomOS est un hyperviseur Linux léger et hautes performances pour les cloud nus et sur site. Compatible RHEL, prêt pour le GPU et compatible avec le clustering.",

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "gumlet-6a2a8157e9db499e93f82da5",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157e9db499e93f82da5?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "Elemento's Vision",
+    "summary": "Elemento's vision and journey."
+  },
+  {
+    "id": "gumlet-6a2a8157e9db499e93f82d86",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157e9db499e93f82d86?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "C4 Protocol",
+    "summary": "Introduction to the C4 protocol."
+  },
+  {
+    "id": "gumlet-6a2a815723c96c6af537c21d",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a815723c96c6af537c21d?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "Discover Atom OS",
+    "summary": "What AtomOS is and what it's for."
+  },
+  {
+    "id": "gumlet-6a2a8157fb9f7c8819086b48",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157fb9f7c8819086b48?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "AtomOS demo",
+    "summary": "Hands-on AtomOS demo."
+  },
+  {
+    "id": "gumlet-6a2a8157e9db499e93f82d7e",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157e9db499e93f82d7e?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "AtomOS USPs",
+    "summary": "The unique selling points of AtomOS."
+  },
+  {
+    "id": "gumlet-6a2a815723c96c6af537c219",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a815723c96c6af537c219?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "Discover Electros",
+    "summary": "What Electros is and what it's for."
+  },
+  {
+    "id": "gumlet-6a2a8157fb9f7c8819086b46",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157fb9f7c8819086b46?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "Electros Demo",
+    "summary": "Hands-on Electros demo."
+  },
+  {
+    "id": "gumlet-6a2a815723c96c6af537c20c",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a815723c96c6af537c20c?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "Electros USPs",
+    "summary": "The unique selling points of Electros."
+  },
+  {
+    "id": "gumlet-6a2a815723c96c6af537c217",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a815723c96c6af537c217?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "AtomOS vs. VMware",
+    "summary": "Comparing VMware and AtomOS."
+  },
+  {
+    "id": "gumlet-6a2a8157e9db499e93f82d77",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157e9db499e93f82d77?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "AtomOS vs. Proxmox",
+    "summary": "Comparing Proxmox and AtomOS."
+  },
+  {
+    "id": "gumlet-6a2a8157fb9f7c8819086b3d",
+    "date": "2026-05-26",
+    "provider": "gumlet",
+    "embedUrl": "https://play.gumlet.io/embed/6a2a8157fb9f7c8819086b3d?background=false&autoplay=false&loop=false&disable_player_controls=false",
+    "referrerPolicy": "origin",
+    "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+    "title": "AtomOS vs. Hyper-V",
+    "summary": "Comparing Hyper-V and AtomOS."
+  }
+]

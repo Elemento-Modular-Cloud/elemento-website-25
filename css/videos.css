@@ -175,6 +175,19 @@
     color: var(--text-color);
 }
 
+.videos-locale-redirect p {
+    max-width: 36rem;
+    margin: 0 auto var(--space-xl);
+    line-height: 1.6;
+}
+
+.videos-locale-redirect__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
 @keyframes videos-spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }

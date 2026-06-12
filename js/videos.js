@@ -1,5 +1,8 @@
 /**
- * Videos hub — loads CMS/videos.json and renders an expandable grid.
+ * Videos hub — locale-specific catalogs:
+ * - English: CMS/videos-en.json (separate embed URLs)
+ * - Italian: CMS/videos.json (it key)
+ * - French: redirect to English or Italian (no local catalog)
  */
 (function () {
     let videos = [];
@@ -19,15 +22,63 @@
             featured: v.featured ?? 'Featured',
             openResource: v.openResource ?? 'Open resource',
             missingEmbed: v.missingEmbed ?? 'Missing embed URL.',
+            localeRedirectTitle: v.localeRedirectTitle ?? 'Videos available in English and Italian',
+            localeRedirectBody:
+                v.localeRedirectBody ??
+                'Our recordings are not available in French yet. Browse the video library in English or Italian.',
+            watchEnglish: v.watchEnglish ?? 'Watch videos in English',
+            watchItalian: v.watchItalian ?? 'Watch videos in Italian',
         };
     }
 
-    function resolveVideo(video) {
-        const locale = window.ElementoI18n?.getPageLocale?.() ?? 'en';
-        if (window.ElementoI18n?.resolveCmsEntry) {
-            return window.ElementoI18n.resolveCmsEntry(video, locale);
+    function getPageLocale() {
+        return window.ElementoI18n?.getPageLocale?.() ?? 'en';
+    }
+
+    function getVideosCmsPath(locale) {
+        return locale === 'en' ? 'CMS/videos-en.json' : 'CMS/videos.json';
+    }
+
+    function getVideosList(data, locale) {
+        if (Array.isArray(data)) {
+            return data;
         }
-        return video;
+        if (data && typeof data === 'object') {
+            const list = data[locale] || data.it || [];
+            return Array.isArray(list) ? list : [];
+        }
+        return [];
+    }
+
+    function hasPlayableMedia(video) {
+        if (video.provider === 'link') return Boolean(video.url);
+        if (video.provider === 'youtube' || video.provider === 'vimeo') return Boolean(video.videoId);
+        if (video.provider === 'gumlet' || video.provider === 'iframe') return Boolean(video.embedUrl);
+        return Boolean(video.embedUrl || video.videoId || video.url);
+    }
+
+    function renderLocaleRedirect() {
+        const grid = document.getElementById('videos-grid');
+        if (!grid) return;
+
+        const controls = document.querySelector('.videos-controls');
+        if (controls) controls.hidden = true;
+
+        const lbl = getLabels();
+        const enHref = window.ElementoI18n?.pageHref?.('videos.html', 'en') ?? '/videos.html';
+        const itHref = window.ElementoI18n?.pageHref?.('videos.html', 'it') ?? '/it/videos.html';
+
+        grid.innerHTML = `
+            <div class="videos-empty videos-locale-redirect">
+                <i class="fas fa-language" aria-hidden="true"></i>
+                <h3>${escapeHtml(lbl.localeRedirectTitle)}</h3>
+                <p>${escapeHtml(lbl.localeRedirectBody)}</p>
+                <div class="videos-locale-redirect__actions">
+                    <a href="${escapeHtml(enHref)}" class="btn btn-primary">${escapeHtml(lbl.watchEnglish)}</a>
+                    <a href="${escapeHtml(itHref)}" class="btn btn-secondary">${escapeHtml(lbl.watchItalian)}</a>
+                </div>
+            </div>
+        `;
     }
 
     function loadVideos() {
@@ -35,12 +86,20 @@
         if (!grid) return;
 
         const lbl = getLabels();
+        const locale = getPageLocale();
+
+        if (locale === 'fr') {
+            renderLocaleRedirect();
+            return;
+        }
+
         grid.innerHTML = `<div class="videos-loading"><i class="fas fa-spinner" aria-hidden="true"></i><p>${escapeHtml(lbl.loading)}</p></div>`;
 
+        const cmsPath = getVideosCmsPath(locale);
         const videosUrl =
             typeof window !== 'undefined' && window.ElementoI18n?.assetUrl
-                ? window.ElementoI18n.assetUrl('CMS/videos.json')
-                : '/CMS/videos.json';
+                ? window.ElementoI18n.assetUrl(cmsPath)
+                : `/${cmsPath}`;
 
         fetch(videosUrl)
             .then((res) => {
@@ -48,7 +107,7 @@
                 return res.json();
             })
             .then((data) => {
-                videos = Array.isArray(data) ? data.map(resolveVideo) : [];
+                videos = getVideosList(data, locale).filter(hasPlayableMedia);
                 updateVideosCount(videos.length);
                 renderVideos();
             })
