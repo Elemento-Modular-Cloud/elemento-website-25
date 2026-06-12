@@ -48,10 +48,12 @@
   function postHref(filename) {
     const locale = pageLocale();
     if (locale === 'en') return `blog-posts/${filename}`;
-    if (window.ElementoI18n?.pageHref) {
-      return window.ElementoI18n.pageHref(`blog-posts/${filename}`, locale);
+    // Root-absolute Astro locale route (not pageHref — avoids /blog-posts/it/… doubling on legacy pages)
+    const path = `/${locale}/blog-posts/${filename}`;
+    if (window.ElementoI18n?.withSiteBase) {
+      return window.ElementoI18n.withSiteBase(path);
     }
-    return `/${locale}/blog-posts/${filename}`;
+    return path;
   }
 
   function postImage(thumbnailPath) {

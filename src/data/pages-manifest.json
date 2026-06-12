@@ -1047,6 +1047,46 @@
     ]
   },
   {
+    "stem": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos",
+    "legacyPath": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+    "group": "blog-posts",
+    "slug": "2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos",
+    "title": "Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog",
+    "description": "Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.it",
+    "legacyPath": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.it.html",
+    "group": "blog-posts",
+    "slug": "2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.it",
+    "title": "Sovranità cloud in Europa: come costruire controllo, portabilità e libertà dal lock-in | Blog Elemento",
+    "description": "La sovranità cloud non riguarda solo la residenza dei dati o la scelta di un provider europeo. Scopri come CIO, CTO e CISO possono costruire una sovranità cloud pratica attraverso la mappatura dei workload, l'interoperabilità, AtomOS, Electros e la libertà dal vendor lock-in.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "blog-posts/404",
     "legacyPath": "blog-posts/404.html",
     "group": "blog-posts",

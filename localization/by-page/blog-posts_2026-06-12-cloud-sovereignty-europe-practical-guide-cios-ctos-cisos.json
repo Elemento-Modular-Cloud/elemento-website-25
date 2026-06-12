@@ -1,0 +1,1854 @@
+{
+  "page": "blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos",
+  "count": 231,
+  "strings": [
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h1.1",
+      "en": "Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.1",
+      "en": "The problem with 'sovereign cloud' as a label",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.10",
+      "en": "How Elemento Cloud helps operationalize sovereignty",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.11",
+      "en": "AtomOS: a modern virtualization foundation for private and hybrid cloud",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.12",
+      "en": "Electros: one control center for hybrid and multi-cloud operations",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.13",
+      "en": "From multi-cloud complexity to meta-cloud strategy",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.14",
+      "en": "What cloud sovereignty should mean in 2026 and beyond",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.15",
+      "en": "The Elemento view: sovereignty is freedom of choice",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.16",
+      "en": "Join the webinar: ‘Europa e Cloud: la sovranità non si proclama, si costruisce’",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.17",
+      "en": "Final thought",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.2",
+      "en": "The European context: regulation is accelerating, but execution is still the hard part",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.3",
+      "en": "The hidden sovereignty risk: vendor lock-in",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.4",
+      "en": "A practical cloud sovereignty framework",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.5",
+      "en": "1. Classify workloads by criticality",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.6",
+      "en": "2. Identify lock-in points",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.7",
+      "en": "3. Build reversibility into architecture",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.8",
+      "en": "4. Create an interoperability layer",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.9",
+      "en": "Want to assess your cloud sovereignty strategy?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.1",
+      "en": "Which workloads are critical?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.10",
+      "en": "move workloads in response to regulatory changes;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.11",
+      "en": "negotiate better commercial terms;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.12",
+      "en": "isolate critical systems;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.13",
+      "en": "change provider after a security or geopolitical event;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.14",
+      "en": "adopt a more suitable European or regional provider;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.15",
+      "en": "build a credible disaster recovery strategy across environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.16",
+      "en": "modernize legacy infrastructure without creating new dependencies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.17",
+      "en": "prove that it has real control over its operational stack.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.18",
+      "en": "mission-critical operational systems;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.19",
+      "en": "regulated data processing systems;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.2",
+      "en": "Which data require strict jurisdictional control?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.20",
+      "en": "personal data and customer data platforms;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.21",
+      "en": "AI training and inference workloads;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.22",
+      "en": "intellectual property and trade-secret environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.23",
+      "en": "collaboration and productivity systems;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.24",
+      "en": "development and testing environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.25",
+      "en": "low-risk commodity workloads;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.26",
+      "en": "legacy systems requiring modernization;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.27",
+      "en": "infrastructure requiring disaster recovery or high availability.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.28",
+      "en": "hypervisor and virtualization stack;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.29",
+      "en": "proprietary cloud APIs;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.3",
+      "en": "Which systems are exposed to foreign legal, operational or supply-chain dependencies?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.30",
+      "en": "managed databases;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.31",
+      "en": "identity and access management;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.32",
+      "en": "storage formats;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.33",
+      "en": "backup and snapshot mechanisms;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.34",
+      "en": "networking configurations;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.35",
+      "en": "monitoring and observability tools;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.36",
+      "en": "automation scripts;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.37",
+      "en": "CI/CD pipelines;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.38",
+      "en": "license models;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.39",
+      "en": "support contracts;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.4",
+      "en": "Which cloud services are portable and which are not?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.40",
+      "en": "data egress costs;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.41",
+      "en": "team skills and operational habits.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.42",
+      "en": "Can we export the data?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.43",
+      "en": "Can we recreate the workload elsewhere?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.44",
+      "en": "Can we automate provisioning on another provider?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.45",
+      "en": "Can our teams operate the alternative environment?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.46",
+      "en": "Can we test migration before a crisis?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.47",
+      "en": "Do we know the cost and time of exit?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.48",
+      "en": "Are we dependent on a single control plane?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.49",
+      "en": "Are we dependent on licensing models that may change?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.5",
+      "en": "How expensive would it be to migrate?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.50",
+      "en": "open standards where possible;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.51",
+      "en": "infrastructure as code;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.52",
+      "en": "portable VM images;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.53",
+      "en": "containerization where appropriate;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.54",
+      "en": "consistent identity and access policies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.55",
+      "en": "documented deployment patterns;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.56",
+      "en": "provider-agnostic observability;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.57",
+      "en": "independent backup and recovery strategies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.58",
+      "en": "multi-provider cost visibility;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.59",
+      "en": "automation layers that reduce dependence on proprietary consoles;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.6",
+      "en": "How long would it take to exit a provider?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.60",
+      "en": "orchestration tools that abstract provider differences.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.61",
+      "en": "manage workloads across public cloud and on-premises infrastructure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.62",
+      "en": "compare deployment options;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.63",
+      "en": "provision resources consistently;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.64",
+      "en": "automate lifecycle operations;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.65",
+      "en": "access VMs and environments without jumping between tools;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.66",
+      "en": "monitor costs and resources;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.67",
+      "en": "reduce dependence on provider-specific interfaces;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.68",
+      "en": "prepare migrations before they become urgent.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.69",
+      "en": "reduce dependency on legacy virtualization stacks;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.7",
+      "en": "Which teams have the skills to operate the new environment?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.70",
+      "en": "build private cloud environments on their own infrastructure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.71",
+      "en": "support VM-based workloads with a more flexible operating model;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.72",
+      "en": "maintain stronger control over infrastructure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.73",
+      "en": "create a foundation for hybrid and multi-cloud strategies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.74",
+      "en": "avoid building a new lock-in layer while escaping an old one;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.75",
+      "en": "support cloud modernization without forcing a 'rip and replace' approach.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.76",
+      "en": "orchestrate workloads across different environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.77",
+      "en": "manage VMs across public clouds and on-premises infrastructure;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.78",
+      "en": "reduce dependence on multiple provider consoles;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.79",
+      "en": "use a unified interface for visibility, provisioning and access;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.8",
+      "en": "Which contracts create hidden lock-in?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.80",
+      "en": "automate operations through CLI workflows;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.81",
+      "en": "support hybrid and multi-cloud strategies;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.82",
+      "en": "monitor cloud workload costs;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.83",
+      "en": "simplify remote access to machines;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.84",
+      "en": "connect infrastructure decisions to business, cost and compliance requirements.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.85",
+      "en": "control over critical workloads;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.86",
+      "en": "transparency across infrastructure layers;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.87",
+      "en": "portability of systems and data;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.88",
+      "en": "operational independence from a single control plane;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.89",
+      "en": "freedom to choose providers based on business value;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.9",
+      "en": "Which architectures make future decisions easier instead of harder?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.90",
+      "en": "ability to migrate when needed;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.91",
+      "en": "interoperability across heterogeneous environments;",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.92",
+      "en": "resilience against regulatory, geopolitical and commercial shocks.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.93",
+      "en": "AtomOS gives organizations a modern virtualization foundation for private and hybrid cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.94",
+      "en": "Electros gives teams a unified control center to orchestrate and manage workloads across environments.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.95",
+      "en": "Together, they help reduce lock-in, support migration strategies and create the technical conditions for real cloud freedom.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.1",
+      "en": "By Elemento Team &mdash; 2026-06-12",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.10",
+      "en": "This article is a practical guide to cloud sovereignty for technology leaders. It looks beyond slogans and focuses on what organizations can actually do today: map workloads, reduce lock-in, build migration options, create an interoperability layer, and use platforms such as AtomOS and Electros to regain control over infrastructure decisions.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.100",
+      "en": "AtomOS and Electros are part of that vision:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.101",
+      "en": "In a world where regulation changes, cloud costs shift, AI workloads grow and geopolitical tensions affect technology decisions, the most important infrastructure feature is optionality.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.102",
+      "en": "A sovereign organization is not one that never uses foreign technology. A sovereign organization is one that is never forced to use only one technology.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.103",
+      "en": "That is the difference between dependency and strategy.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.104",
+      "en": "We will explore these topics in our upcoming webinar:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.105",
+      "en": "Europe, cloud and power: sovereignty is not proclaimed, it is built",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.106",
+      "en": "June 30, 2026 — 17:00 CEST",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.107",
+      "en": "The webinar is designed for CTOs, CIOs, CISOs, IT Directors and technology decision makers who want to understand how digital sovereignty, cloud strategy, lock-in, interoperability and infrastructure control are converging.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.108",
+      "en": "Register here:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.11",
+      "en": "The term 'sovereign cloud' is useful, but it can also be misleading.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.110",
+      "en": "Notes: the webinar will be held in Italian; if you read this article after the webinar you will be able to access a recording in the resources area of the Elemento website.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.111",
+      "en": "Cloud sovereignty is not a destination. It is not a passport, a label or a data center location.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.112",
+      "en": "It is the ability to make decisions without being trapped by the past.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.113",
+      "en": "For European enterprises, the question is not whether sovereignty matters. It does. The real question is whether sovereignty will remain a political slogan or become an operational advantage.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.114",
+      "en": "The answer depends on architecture.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.115",
+      "en": "Build infrastructure that is transparent. Build infrastructure that is controllable. Build infrastructure that is interoperable.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.116",
+      "en": "Above all, build infrastructure you are free to leave.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.117",
+      "en": "Embrace the Metacloud concept.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.118",
+      "en": "That is where sovereignty begins.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.12",
+      "en": "Too often, it is used as a binary label: a cloud is either sovereign or not sovereign. A provider is either European or not European. A workload is either compliant or not compliant. Real infrastructure does not work like that.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.13",
+      "en": "A modern enterprise environment is a mix of legacy systems, virtual machines, Kubernetes clusters, databases, SaaS services, identity layers, backup systems, monitoring tools, AI workloads, security tools and APIs. Some of these components run on-premises. Some run in public cloud. Some depend on specific hyperscaler services. Others are connected to third-party platforms, external data sources, proprietary software or open-source components maintained globally.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.14",
+      "en": "In that context, sovereignty is not a static certification. It is a capability.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.15",
+      "en": "A sovereign infrastructure strategy should answer practical questions:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.16",
+      "en": "This is why a purely defensive approach to cloud sovereignty is not enough. Moving everything from one provider to another does not automatically create sovereignty. It can simply replace one dependency with another.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.17",
+      "en": "The goal should not be to make infrastructure look sovereign on paper. The goal should be to make it transparent, controllable and interoperable in practice.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.18",
+      "en": "The European Union has clearly placed technological sovereignty at the center of its digital agenda. The Tech Sovereignty Package, the Cloud and AI Development Act, the Data Act, NIS2, DORA, the AI Act, the Cyber Resilience Act and other initiatives all point in the same direction: digital infrastructure is now part of Europe’s strategic autonomy.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.19",
+      "en": "This is a major shift. Cloud, AI, chips, data centers, cybersecurity and open source are no longer separate conversations. They are becoming part of the same industrial and geopolitical question: can Europe build enough technological capacity to avoid structural dependency?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.2",
+      "en": "Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.20",
+      "en": "But for enterprises, the policy direction is only one part of the problem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.21",
+      "en": "The more urgent issue is execution. A CIO cannot simply wait for the regulatory framework to become perfectly stable. A CISO cannot postpone security architecture until every sovereignty level, audit mechanism or certification rule is finalized. A CTO cannot rebuild infrastructure every time the political landscape changes.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.22",
+      "en": "Technology leaders need a strategy that works even while the rules evolve.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.23",
+      "en": "That strategy should not be based on panic migration. It should not be based on a generic 'buy European' principle either. It should be based on a more durable objective:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.24",
+      "en": "Build infrastructure that can adapt.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.25",
+      "en": "Adaptability is the operational core of sovereignty. If your organization can move workloads, compare providers, separate critical data, control access, automate provisioning and avoid irreversible technical decisions, then it is more sovereign than an organization that has simply moved all workloads to a new provider without solving lock-in.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.26",
+      "en": "Vendor lock-in is often treated as a cost issue. It is much more than that.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.27",
+      "en": "Lock-in affects security, compliance, business continuity, procurement power and strategic freedom.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.28",
+      "en": "A locked-in organization may struggle to:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.29",
+      "en": "The strongest cloud providers have created enormous value for enterprises. They offer scale, reliability, managed services, innovation speed and global reach. The problem is not that these providers exist. The problem begins when the enterprise loses the practical ability to choose.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.3",
+      "en": "European digital sovereignty is no longer a theoretical policy debate. It is becoming a practical infrastructure problem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.30",
+      "en": "Cloud sovereignty is not about refusing global technology. It is about avoiding forced dependence.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.31",
+      "en": "The question every CIO and CTO should ask is not 'which provider should I trust?' The better question is:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.32",
+      "en": "How do I design an architecture where trust is never my only exit strategy?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.33",
+      "en": "A useful sovereignty strategy starts with segmentation. Not every workload requires the same level of control. Not every system should be migrated. Not every dependency is unacceptable. Not every European alternative is automatically better.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.34",
+      "en": "A practical framework can be built around five steps.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.35",
+      "en": "The first mistake is to treat the entire IT estate as one homogeneous block.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.36",
+      "en": "Instead, organizations should classify workloads into groups such as:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.37",
+      "en": "This classification should combine business criticality, data sensitivity, regulatory exposure, migration complexity and operational risk.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.38",
+      "en": "The result is a sovereignty map.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.39",
+      "en": "Some workloads may require strong jurisdictional control and dedicated infrastructure. Others may run perfectly well on public cloud. Some may benefit from a hybrid architecture. Others may need to remain on-premises for latency, compliance, cost or operational reasons.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.4",
+      "en": "For years, the discussion around sovereign cloud has often been reduced to a simple question: where are my data stored? If the data are hosted in Europe, the assumption goes, the organization is sovereign. If they are hosted outside Europe, the organization is exposed.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.40",
+      "en": "The key is not to apply one rule to everything. The key is to make differentiated decisions.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.41",
+      "en": "Once workloads are classified, the next step is to identify where lock-in is created.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.42",
+      "en": "Lock-in can appear at many layers:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.43",
+      "en": "Some lock-in is acceptable if the benefit is clear. The problem is unmanaged lock-in: dependency that was never deliberately chosen, never priced, never documented and never tested.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.44",
+      "en": "A practical sovereignty assessment should ask:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.45",
+      "en": "In many organizations, the real blocker is not technology. It is uncertainty. The organization does not know how hard it would be to move because it has never built the muscle to move.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.46",
+      "en": "Reversibility is one of the most important concepts in cloud sovereignty.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.47",
+      "en": "An irreversible architecture is one where every new project makes future migration harder. A reversible architecture is one where every decision preserves optionality.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.48",
+      "en": "Reversibility can be built through:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.49",
+      "en": "This does not mean avoiding every proprietary service. That would be unrealistic and often counterproductive. It means understanding where proprietary services create strategic value and where they create avoidable dependency.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.5",
+      "en": "That view is incomplete, at least.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.50",
+      "en": "A sovereign cloud strategy should not force technology leaders into ideological choices. It should give them a controlled way to use the best available technology without becoming trapped by it.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.51",
+      "en": "The more cloud environments grow, the more fragmented they become.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.52",
+      "en": "Organizations often end up with multiple consoles, multiple APIs, multiple billing models, multiple access methods, multiple monitoring tools and multiple operational procedures. This fragmentation increases cost, complexity and risk.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.53",
+      "en": "Interoperability is the antidote.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.54",
+      "en": "But interoperability should not be treated as a future promise that all providers will eventually agree on a universal standard. Enterprises cannot wait for that. They need practical interoperability now.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.55",
+      "en": "This is where an orchestration and abstraction layer becomes essential.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.56",
+      "en": "A strong interoperability layer should allow teams to:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.57",
+      "en": "This is one of the core ideas behind Elemento Modular Cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.58",
+      "en": "If you are evaluating cloud migration, VMware alternatives, hybrid cloud, multi-cloud orchestration or ways to reduce vendor lock-in, Elemento can help you identify the right starting point.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.59",
+      "en": "Book a call with our team:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.6",
+      "en": "Data residency matters, especially for sensitive workloads, regulated industries and critical infrastructure. But sovereignty cannot be reduced to geography. A workload can be hosted in Europe and still be difficult to control. A cloud provider can be European and still create operational lock-in. A compliance label can reduce legal uncertainty and still fail to answer the most important question for an IT leader:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.61",
+      "en": "Together, we can help you understand where your infrastructure is exposed, which workloads should be prioritized, and how AtomOS and Electros can support a more flexible, interoperable and sovereign cloud strategy.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.62",
+      "en": "Elemento Cloud is built around a simple principle: cloud freedom should be designed into the infrastructure, not promised as a future service.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.63",
+      "en": "For Elemento, sovereignty is not just about where infrastructure is located. It is about how infrastructure is controlled, orchestrated and moved. A cloud environment is more sovereign when the customer has more freedom to decide where workloads run, how they are managed and when they need to move.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.64",
+      "en": "Elemento’s stack is designed to help organizations build this freedom through two key products: AtomOS and Electros .",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.65",
+      "en": "Many organizations still run a large part of their infrastructure on virtual machines. Even when Kubernetes, containers and serverless architectures are growing, VMs remain central for enterprise workloads, legacy applications, regulated environments, databases, Windows workloads and many production systems.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.66",
+      "en": "This is why virtualization remains a sovereignty issue.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.67",
+      "en": "If your virtualization stack is expensive, closed, difficult to migrate from or dependent on licensing models outside your control, then your cloud strategy is constrained before it even reaches the public cloud layer.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.68",
+      "en": "AtomOS is Elemento’s hypervisor platform designed to provide a modern, enterprise-ready foundation for private, public and hybrid cloud infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.69",
+      "en": "It can help organizations that want to:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.7",
+      "en": "Can I choose, move, control and exit when business, regulation or geopolitics change?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.70",
+      "en": "For CIOs and IT Directors, AtomOS is especially relevant in scenarios where cloud sovereignty starts from the data center: regulated workloads, predictable infrastructure costs, on-premises requirements, colocation environments, and private cloud strategies.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.71",
+      "en": "For CTOs, it provides a path to modernize infrastructure without assuming that every workload must immediately become cloud-native.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.72",
+      "en": "For CISOs, it supports the broader goal of increasing control over critical systems, especially when combined with clear access policies, network segmentation, backup strategies and independent operational governance.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.73",
+      "en": "AtomOS does not ask organizations to abandon reality. It starts from the fact that VMs still matter and gives teams a more flexible foundation to manage them.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.74",
+      "en": "If AtomOS strengthens the infrastructure layer, Electros addresses another sovereignty problem: fragmented control.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.75",
+      "en": "Most organizations do not suffer from a lack of cloud tools. They suffer from too many disconnected tools. Every provider has its own console. Every environment has its own access model. Every infrastructure team develops its own scripts, habits and manual workarounds.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.76",
+      "en": "This creates operational lock-in even when the underlying infrastructure is technically portable.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.77",
+      "en": "Electros is Elemento Cloud’s orchestration dashboard and CLI for managing virtual machines, storage and networking across public clouds and on-premises infrastructure from a unified interface.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.78",
+      "en": "Its role in a sovereignty strategy is practical: it gives teams a more consistent way to manage heterogeneous infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.79",
+      "en": "Electros helps organizations:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.8",
+      "en": "That is where cloud sovereignty becomes practical.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.80",
+      "en": "This is important because sovereignty is not only about where infrastructure runs. It is also about who controls the operating model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.81",
+      "en": "A company that uses multiple providers but cannot govern them consistently is not truly free. It has replaced single-provider lock-in with operational complexity.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.82",
+      "en": "Electros is designed to make multi-cloud and hybrid infrastructure usable, not just theoretically possible.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.83",
+      "en": "Many enterprises say they want multi-cloud. Fewer are prepared for what multi-cloud actually means.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.84",
+      "en": "Without orchestration, multi-cloud can become a burden: duplicated skills, disconnected cost models, inconsistent security policies, fragmented monitoring and slow operations.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.85",
+      "en": "The next step is not simply 'more clouds.' The next step is a meta-cloud approach: a layer that allows organizations to manage different infrastructures through a unified operational model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.86",
+      "en": "A meta-cloud strategy does not eliminate provider differences. It manages them.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.87",
+      "en": "It allows organizations to choose the right environment for each workload while maintaining a coherent governance model. This is the difference between accidental multi-cloud and intentional multi-cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.88",
+      "en": "Accidental multi-cloud happens when business units adopt different providers without coordination. Intentional multi-cloud happens when architecture, governance and tooling are designed to preserve freedom.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.89",
+      "en": "Elemento Modular Cloud is built for the second model.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.9",
+      "en": "For CIOs, CTOs, CISOs and IT Directors, the real challenge is not to join a political debate. The challenge is to design infrastructure that remains governable under pressure: regulatory pressure, cost pressure, security pressure, procurement pressure, and the pressure created by vendor dependency.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.90",
+      "en": "With AtomOS, organizations can strengthen private and hybrid infrastructure foundations. With Electros, they can operate across environments with a unified control center. Together, they help turn sovereignty from a policy concept into an operational capability.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.91",
+      "en": "The European cloud conversation is entering a new phase.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.92",
+      "en": "The first phase was compliance: data protection, privacy, location, contracts and regulation.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.93",
+      "en": "The second phase was reaction: concern about hyperscaler dominance, geopolitical risk, strategic dependency and the lack of European scale.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.94",
+      "en": "The third phase must be execution.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.95",
+      "en": "Execution means building cloud strategies that can survive uncertainty. It means not waiting for perfect regulation. It means not assuming that one provider, one country or one certification will solve every problem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.96",
+      "en": "For enterprises, sovereignty should mean:",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.97",
+      "en": "This is the practical meaning of cloud freedom.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.98",
+      "en": "Elemento Modular Cloud believes that sovereignty should not be built as a wall. It should be built as a capability.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.99",
+      "en": "The goal is not to tell organizations where every workload must run. The goal is to give them the tools to decide, change and adapt.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.description",
+      "en": "Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.title",
+      "en": "Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+      "context": "meta title"
+    }
+  ]
+}

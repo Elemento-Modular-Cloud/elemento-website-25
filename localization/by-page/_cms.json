@@ -3749,7 +3749,7 @@
     {
       "id": "CMS.solutions.regulated.hero.subtitle",
       "en": "Elemento provides enterprise-grade security with built-in compliance for healthcare, finance, and other regulated industries.",
-      "it": "Elemento fornisce sicurezza di livello aziendale con conformità integrata per i settori sanitario, finanziario e altri settori regolamentati.",
+      "it": "Elemento fornisce sicurezza di livello enterprise con conformità integrata per i settori sanitario, finanziario e altri settori regolamentati.",
       "fr": "",
       "source": "CMS/solutions/regulated.json",
       "context": ""
@@ -5077,7 +5077,7 @@
     {
       "id": "CMS.success-stories.0.quote",
       "en": "Elemento allowed us to move away from a rigid appliance-based system to a flexible Linux and hybrid cloud architecture. We now have disaster recovery without vendor lock-in.",
-      "it": "Elemento ci ha permesso di passare da un sistema rigido basato su appliance a un'architettura Linux flessibile e cloud ibrida. Ora disponiamo del ripristino di emergenza senza vincoli al fornitore.",
+      "it": "Elemento ci ha permesso di passare da un sistema rigido basato su appliance a un'architettura Linux flessibile e cloud ibrida. Ora disponiamo del ripristino di emergenza senza vincoli con i fornitori.",
       "fr": "",
       "source": "CMS/success-stories.json",
       "context": ""
@@ -5349,7 +5349,7 @@
     {
       "id": "CMS.team.12.bio",
       "en": "Engineer and computer science teacher. Passionate about mountains, travel and innovation. Always curious, always learning",
-      "it": "Ingegnere e docente di informatica. Appassionato di montagna, viaggi e innovazione. Sempre curioso, sempre in apprendimento",
+      "it": "Ingegnere e docente di informatica. Appassionata di montagna, viaggi e innovazione. Sempre curiosa, sempre in apprendimento",
       "fr": "",
       "source": "CMS/team.json",
       "context": ""
@@ -5469,7 +5469,7 @@
     {
       "id": "CMS.team.17.bio",
       "en": "Imaginative and curious about how things work and how they’re thought, I’m passionate about nature, video games and photography.",
-      "it": "Fantasioso e curioso di come funzionano le cose e di come vengono pensate, sono appassionato di natura, videogiochi e fotografia.",
+      "it": "Fantasiosa e curiosa di come funzionano le cose e di come vengono pensate, sono appassionata di natura, videogiochi e fotografia.",
       "fr": "",
       "source": "CMS/team.json",
       "context": ""
@@ -5525,7 +5525,7 @@
     {
       "id": "CMS.team.4.bio",
       "en": "CMO at Elemento Cloud, bridging strategy, technology, and creativity. I am always looking for the next big thing in digital communication. I focus on humanizing and translating our tech, into impactful communication. My mission is to make our cloud solutions feel as intuitive and accessible as they are powerful.",
-      "it": "CMO presso Elemento Cloud, unendo strategia, tecnologia e creatività. Sono sempre alla ricerca della prossima grande novità nella comunicazione digitale. Mi concentro sull'umanizzazione e sulla traduzione della nostra tecnologia in una comunicazione di grande impatto. La mia missione è rendere le nostre soluzioni cloud tanto intuitive e accessibili quanto potenti.",
+      "it": "CMO presso Elemento Cloud, unisco strategia, tecnologia e creatività. Sono sempre alla ricerca della prossima grande novità nella comunicazione digitale. Mi concentro sulla traduzione della nostra tecnologia in una comunicazione di grande impatto. La mia missione è rendere le nostre soluzioni cloud tanto intuitive e accessibili quanto potenti.",
       "fr": "",
       "source": "CMS/team.json",
       "context": ""
@@ -5549,7 +5549,7 @@
     {
       "id": "CMS.team.5.bio",
       "en": "Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.",
-      "it": "Ha iniziato con la chimica, si è avventurato nella fisica, ora è uno sviluppatore. Si scopre che stavo semplicemente passando da un puzzle all'altro. Sempre curioso, sempre costruendo, sempre imparando.",
+      "it": "Ho iniziato con la chimica, mi sono avventurato nella fisica, ora sono uno sviluppatore. Si scopre che stavo semplicemente passando da un puzzle all'altro. Sempre curioso, sempre costruendo, sempre imparando.",
       "fr": "",
       "source": "CMS/team.json",
       "context": ""
@@ -5597,7 +5597,7 @@
     {
       "id": "CMS.team.7.bio",
       "en": "Event Manager at Elemento Cloud, I am responsible for the organization and execution of our events. I am a musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.",
-      "it": "Event Manager presso Elemento Cloud, sono responsabile dell'organizzazione e dell'esecuzione dei nostri eventi. Sono un musicologo, musicista ed educatore con una passione per le idee audaci, i social media e tutto ciò che è fucsia.",
+      "it": "Event Manager presso Elemento Cloud, sono responsabile dell'organizzazione e dell'esecuzione dei nostri eventi. Sono musicologa, musicista ed educatrice con una passione per le idee audaci, i social media e tutto ciò che è fucsia.",
       "fr": "",
       "source": "CMS/team.json",
       "context": ""
@@ -5651,91 +5651,91 @@
       "context": ""
     },
     {
-      "id": "CMS.videos.0.title",
-      "en": "The Elemento Vision",
-      "it": "La Visione di Elemento",
+      "id": "CMS.videos-en.0.title",
+      "en": "Elemento's Vision",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.1.title",
-      "en": "The C4 Protocol",
-      "it": "Il Protocollo C4",
+      "id": "CMS.videos-en.1.title",
+      "en": "C4 Protocol",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.10.title",
-      "en": "Hyper-V vs AtomOS Comparison",
-      "it": "Confronto fra Hyper-V e AtomOS",
+      "id": "CMS.videos-en.10.title",
+      "en": "AtomOS vs. Hyper-V",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.2.title",
-      "en": "What is AtomOS?",
-      "it": "AtomOS, Cosa è?",
+      "id": "CMS.videos-en.2.title",
+      "en": "Discover Atom OS",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.3.title",
-      "en": "AtomOS Tutorial",
-      "it": "AtomOS Tutorial",
+      "id": "CMS.videos-en.3.title",
+      "en": "AtomOS demo",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.4.title",
-      "en": "AtomOS Benefits",
-      "it": "AtomOS Benefits",
+      "id": "CMS.videos-en.4.title",
+      "en": "AtomOS USPs",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.5.title",
-      "en": "What is Electros?",
-      "it": "Electros, Cosa è?",
+      "id": "CMS.videos-en.5.title",
+      "en": "Discover Electros",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.6.title",
-      "en": "Electros Tutorial",
-      "it": "Electros Tutorial",
+      "id": "CMS.videos-en.6.title",
+      "en": "Electros Demo",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.7.title",
-      "en": "Electros Benefits",
-      "it": "I Benefit di Electros",
+      "id": "CMS.videos-en.7.title",
+      "en": "Electros USPs",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.8.title",
-      "en": "VMware vs AtomOS Comparison",
-      "it": "Confronto fra VMware e AtomOS",
+      "id": "CMS.videos-en.8.title",
+      "en": "AtomOS vs. VMware",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     },
     {
-      "id": "CMS.videos.9.title",
-      "en": "Proxmox vs AtomOS Comparison",
-      "it": "Confronto fra Proxmox e AtomOS",
+      "id": "CMS.videos-en.9.title",
+      "en": "AtomOS vs. Proxmox",
+      "it": "",
       "fr": "",
-      "source": "CMS/videos.json",
+      "source": "CMS/videos-en.json",
       "context": ""
     }
   ]

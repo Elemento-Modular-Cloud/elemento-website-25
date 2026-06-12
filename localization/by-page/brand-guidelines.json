@@ -1,6 +1,6 @@
 {
   "page": "brand-guidelines",
-  "count": 136,
+  "count": 272,
   "strings": [
     {
       "id": "body.brand-guidelines.figcaption.1",
@@ -289,6 +289,1078 @@
       "fr": "",
       "source": "brand-guidelines.html",
       "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.figcaption.1",
+      "en": "Area di rispetto del simbolo (griglia). Una colonna o riga = 1× l'altezza del simbolo ( x = ). Il segno è al centro ; le celle agli angoli mostrano un simbolo tenue come riferimento di scala; mantieni libere le celle ai bordi . In produzione, l'area di rispetto minima resta 2× l'altezza del segno su tutti i lati (e per il payoff completo), come nella regola sopra.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<figcaption>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h1.1",
+      "en": "Linee guida del brand",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.1",
+      "en": "Utilizzo del brand Elemento",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.10",
+      "en": "Materiali per stampa o partner",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.2",
+      "en": "Logo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.3",
+      "en": "Area di rispetto e scalabilità",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.4",
+      "en": "Usi non corretti",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.5",
+      "en": "Utilizzo in partnership",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.6",
+      "en": "Palette colori",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.7",
+      "en": "Tipografia",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.8",
+      "en": "Identità, pattern e immagini",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h2.9",
+      "en": "Nomi dei prodotti",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.1",
+      "en": "Payoff orizzontale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.10",
+      "en": "Effetti",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.11",
+      "en": "Tipografia e simbolo non allineati",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.12",
+      "en": "Colori primari",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.13",
+      "en": "Secondari — prodotto",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.14",
+      "en": "Secondari — digitale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.15",
+      "en": "Extra",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.16",
+      "en": "Red Hat Display",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.17",
+      "en": "Argent Pixel Italic",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.18",
+      "en": "Red Hat Text",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.19",
+      "en": "Red Hat Mono",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.2",
+      "en": "Payoff verticale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.20",
+      "en": "Pattern",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.21",
+      "en": "Icone",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.22",
+      "en": "Fotografia e art direction",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.23",
+      "en": "Elemento",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.24",
+      "en": "Marchi prodotto",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.3",
+      "en": "Solo simbolo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.4",
+      "en": "Area di rispetto",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.5",
+      "en": "Fasce di larghezza del logo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.6",
+      "en": "Colori non di brand",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.7",
+      "en": "Solo contorno",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.8",
+      "en": "Allungamento o compressione",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.h3.9",
+      "en": "Inclinazione o rotazione",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.brand-guidelines.it.li.1",
+      "en": "Home",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.brand-guidelines.it.li.2",
+      "en": "Linee guida del brand",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.brand-guidelines.it.li.3",
+      "en": "Area di rispetto: mantieni un margine su tutti i lati pari al doppio dell'altezza del logo (stessa regola per la versione payoff e per il simbolo da solo). Non avvicinare testo, foto o elementi UI al segno.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.brand-guidelines.it.li.4",
+      "en": "Altre combinazioni approvate se necessario: Starter Yellow su campo chiaro (es. Crystal White) — usa la stessa tecnica a maschera descritta sotto. Non introdurre colori al di fuori di questo sistema.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.brand-guidelines.it.li.5",
+      "en": "Non deformare, contornare, inclinare, aggiungere ombre o bagliori. Wordmark e simbolo devono usare lo stesso trattamento cromatico in un dato layout.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.1",
+      "en": "Presenta Elemento in modo coerente: uso del logo, colori principali, tipografia e nomenclatura dei prodotti.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.10",
+      "en": "Starter Yellow su Void Black Preferito",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.11",
+      "en": "Inchiostro #FFA600 · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.12",
+      "en": "Payoff orizzontale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.13",
+      "en": "Crystal White su Void Black",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.14",
+      "en": "Inchiostro #F8F8FF · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.15",
+      "en": "Payoff orizzontale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.16",
+      "en": "Void Black su Crystal White",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.17",
+      "en": "Inchiostro #16161D · campo #F8F8FF",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.18",
+      "en": "Stesso lockup, impilato",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.19",
+      "en": "Payoff verticale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.2",
+      "en": "Mantieni l'identità chiara, leggibile e allineata al sito pubblico",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.20",
+      "en": "Starter Yellow su Void Black Preferito",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.21",
+      "en": "Inchiostro #FFA600 · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.22",
+      "en": "Payoff verticale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.23",
+      "en": "Crystal White su Void Black",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.24",
+      "en": "Inchiostro #F8F8FF · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.25",
+      "en": "Payoff verticale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.26",
+      "en": "Void Black su Crystal White",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.27",
+      "en": "Inchiostro #16161D · campo #F8F8FF",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.28",
+      "en": "Senza wordmark",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.29",
+      "en": "Solo simbolo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.3",
+      "en": "Queste linee guida sono allineate alle ufficiali Branding Guidelines — Elemento Modular Cloud (logo, marchio, tipografia, colore, immagini). Riassumono le regole per l'uso web e da parte dei partner. In caso di dubbio, fai riferimento alla homepage e alla pagina Chi siamo , e preserva le proporzioni di ciascun segno.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.30",
+      "en": "Starter Yellow su Void Black Preferito",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.31",
+      "en": "Inchiostro #FFA600 · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.32",
+      "en": "Solo simbolo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.33",
+      "en": "Crystal White su Void Black",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.34",
+      "en": "Inchiostro #F8F8FF · campo #16161D",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.35",
+      "en": "Solo simbolo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.36",
+      "en": "Void Black su Crystal White",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.37",
+      "en": "Inchiostro #16161D · campo #F8F8FF",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.38",
+      "en": "Dalle linee guida ufficiali del logo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.39",
+      "en": "L'area di rispetto minima attorno al logo o al simbolo è pari al doppio dell'altezza del segno su ogni lato (talvolta descritta come «raddoppiare l'altezza»). Il lockup payoff segue la stessa regola.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.4",
+      "en": "Per marchio e testi legali: segui le linee guida complete e il parere legale per le note ®, il territorio e l'uso contrattuale.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.40",
+      "en": "Ogni fascia definisce una larghezza massima per stampa e schermo e il lockup da usare a quella scala (payoff completo, wordmark orizzontale o solo simbolo).",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.41",
+      "en": "Non ridimensionare il payoff completo nella fascia piccola — passa al simbolo. Abbina inchiostro e campo ai colori della sezione Logo sopra.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.42",
+      "en": "Vietato — esempi dalle linee guida (non esaustivo)",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.43",
+      "en": "Il logo non deve usare colori al di fuori della palette di identità.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.44",
+      "en": "Il logo non deve essere usato come contorno vuoto.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.45",
+      "en": "Non deformare, allungare o comprimere il segno.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.46",
+      "en": "Non inclinare, ruotare o distorcere il logo.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.47",
+      "en": "Niente luci, ombre portate o smussi sul lockup.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.48",
+      "en": "Il logotipo non deve usare un colore diverso dal simbolo.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.49",
+      "en": "Applica il buon senso: se compromette la leggibilità o non assomiglia ai file master, non pubblicarlo.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.5",
+      "en": "Segno, spaziatura e contrasto",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.50",
+      "en": "Layout co-branding",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.51",
+      "en": "Quando compare accanto a un'altra azienda, concedi a entrambi i segni un'adeguata area di rispetto e un peso visivo equilibrato. Una disposizione tipica è: Partner — Elemento , senza fondere o sovrapporre i lockup.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.52",
+      "en": "Richiedi il materiale partnership completo a hello@elemento.cloud per template e lockup approvati.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.53",
+      "en": "Colori primari e secondari del brand",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.54",
+      "en": "Usali per primi per massima riconoscibilità. Il tema del sito usa anche neutri vicini (es. #1A1C20 per il testo) — abbina i primari del brand a un contrasto accessibile.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.55",
+      "en": "I token UI prodotto su elemento.cloud possono differire leggermente; considera questa pagina come riferimento colore marketing e css/themes.css per l'implementazione.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.56",
+      "en": "Stack tipografico del brand (con nota sul sito live)",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.57",
+      "en": "I titoli usano Red Hat Display (spesso Extrabold). Parole chiave all'interno dei titoli possono usare Argent Pixel Italic ( Connary Fagen — Argent Pixel ). Il corpo testo deve usare Red Hat Text — non sostituire Display per testi lunghi. Il codice usa Red Hat Mono ( Google Fonts ). Le icone su elemento.cloud abbinano Font Awesome a un webfont Pixel Icon Library incluso per glifi in stile pixel (classi .hn ; file in assets/font/PixelIconLibrary/ ). Verifica la licenza di ciascuna fonte prima di riutilizzarla o ridistribuirla.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.58",
+      "en": "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.59",
+      "en": "Titoli — le linee guida raccomandano Extrabold. Google Fonts .",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.6",
+      "en": "Preferenza di layout: usa il payoff orizzontale quando possibile (wordmark, tagline e ® ). Quando lo spazio è limitato — header mobile, colonne strette — usa invece il lockup del payoff verticale . Per avatar, favicon e UI compatta, usa il simbolo da solo (senza wordmark).",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.60",
+      "en": "Evidenza all'interno dei titoli",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.61",
+      "en": "Accento solo nei titoli. Argent Pixel è licenziato da Connary Fagen; questo sito lo include per trattamenti selezionati.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.62",
+      "en": "Il corpo testo deve restare funzionale e altamente leggibile. Red Hat Text è ottimizzato per i paragrafi — geometria diversa da Display.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.63",
+      "en": "Font di corpo canonico del brand secondo le linee guida. elemento.cloud usa ancora Open Sans in molti template; i nuovi lavori dovrebbero allinearsi a Red Hat Text nel tempo.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.64",
+      "en": "nucleus cluster status api.elemento.cloud/v1",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.65",
+      "en": "Codice, esempi CLI e UI tecnica.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.66",
+      "en": "Pattern, icone e fotografia",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.67",
+      "en": "L'identità visiva usa pattern ispirati alla «forza del cloud» — motivi dinamici, vicini alla fisica. Usa i file pattern approvati dal brand kit; non ridisegnarli a memoria.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.68",
+      "en": "Questo sito implementa icone UI e marketing con Font Awesome e accenti in stile pixel tramite il webfont Pixel Icon Library incluso (classi icona .hn in assets/font/PixelIconLibrary/ ). Considera questa coppia lo standard per elemento.cloud ; evita famiglie di icone terze ad hoc. Mantieni tratto, raggio degli angoli e uso del colore coerenti con il set scelto.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.69",
+      "en": "Retro-futuro — concetti astratti, immagini atmosferiche o di ricerca spaziale. Momenti di team — persone e cultura per il tono di voce. Immagini in movimento — lunga esposizione e scatti dinamici per l'energia. Evita stock generico che contraddica queste tre direttrici.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.7",
+      "en": "La palette del logo definisce tre colori d'inchiostro — Starter Yellow #FFA600 , Crystal White #F8F8FF e Void Black #16161D — sul campo appropriato. Ogni variante qui sotto mostra questi inchiostri sul campo corretto: payoff orizzontale , payoff verticale , poi solo simbolo (Starter Yellow su Void Black è preferito).",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.70",
+      "en": "Ortografia e maiuscole",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.71",
+      "en": "Nome dell'azienda e della piattaforma: Elemento (minuscolo nel corpo testo; maiuscole iniziali nei titoli come sul sito). Quando serve la riga legale completa con Modular Cloud e ® , usa il lockup payoff orizzontale o verticale in base allo spazio disponibile.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.72",
+      "en": "Atomos , Electros e Atomosphere — capitalizza come nomi propri. Usa l'SVG di ciascun prodotto da Tutti i prodotti accanto al nome quando possibile.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.73",
+      "en": "Scrivi a hello@elemento.cloud per file ad alta risoluzione o revisione co-marketing.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.8",
+      "en": "Wordmark + tagline + ®",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.p.9",
+      "en": "Payoff orizzontale",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.1",
+      "en": "Grande",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.10",
+      "en": "fino a 10 mm",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.11",
+      "en": "fino a 30 px",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.12",
+      "en": "Solo simbolo — favicon, icone app, UI stretta.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.2",
+      "en": "fino a 50 mm",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.3",
+      "en": "fino a 500 px",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.4",
+      "en": "Payoff orizzontale completo — wordmark, tagline e ®.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.5",
+      "en": "Media",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.6",
+      "en": "fino a 35 mm",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.7",
+      "en": "fino a 250 px",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.8",
+      "en": "Wordmark orizzontale — quando il payoff completo è troppo largo.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.td.9",
+      "en": "Piccola",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.brand-guidelines.it.th.1",
+      "en": "Fascia",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.brand-guidelines.it.th.2",
+      "en": "Stampa",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.brand-guidelines.it.th.3",
+      "en": "Schermo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.brand-guidelines.it.th.4",
+      "en": "Lockup",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.brand-guidelines.it.ui.1",
+      "en": "Stampa, partner e creator",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "class"
+    },
+    {
+      "id": "body.brand-guidelines.it.ui.2",
+      "en": "Presenta Elemento",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "class"
+    },
+    {
+      "id": "body.brand-guidelines.it.ui.3",
+      "en": "Contatti",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "class"
+    },
+    {
+      "id": "body.brand-guidelines.it.ui.4",
+      "en": "Chi siamo",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "class"
     },
     {
       "id": "body.brand-guidelines.li.1",
@@ -1081,6 +2153,22 @@
       "fr": "",
       "source": "brand-guidelines.html",
       "context": "meta description"
+    },
+    {
+      "id": "meta.brand-guidelines.it.description",
+      "en": "Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.brand-guidelines.it.title",
+      "en": "Elemento | Brand guidelines | Logo, colors &amp; typography",
+      "it": "",
+      "fr": "",
+      "source": "brand-guidelines.it.html",
+      "context": "meta title"
     },
     {
       "id": "meta.brand-guidelines.title",

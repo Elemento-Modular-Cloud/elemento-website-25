@@ -16,9 +16,9 @@ const REPLACEMENT_FILES: Partial<Record<Locale, ReplacementFile>> = {
   fr: frReplacements as ReplacementFile,
 };
 
-/** Keep asset filenames (diagrams, hero images, etc.) out of string replacement passes. */
+/** Keep asset and blog image paths out of string replacement passes. */
 const PROTECTED_ASSET_SRC_RE =
-  /(src=["'])(?:\.\/)?assets\/(?:diagrams|img|logos)\/[^"']+(["'])/gi;
+  /(src=["'])(?:\.\/)?(?:assets\/(?:diagrams|img|logos)\/[^"']+|img\/[^"']+)(["'])/gi;
 
 function maskProtectedAssetSrc(html: string): { html: string; tokens: string[] } {
   const tokens: string[] = [];

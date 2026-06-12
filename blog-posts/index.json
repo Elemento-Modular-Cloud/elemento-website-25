@@ -1,5 +1,14 @@
 [
   {
+    "title": "Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs",
+    "author": "Elemento Team",
+    "date": "2026-06-12",
+    "summary": "Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",
+    "filename": "2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html",
+    "main_image": "img/2026-06-12-cloud-sovereignty-europe-practical-guide.webp",
+    "thumbnail_image": "img/2026-06-12-cloud-sovereignty-europe-practical-guide.webp"
+  },
+  {
     "title": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
     "author": "Elemento Team",
     "date": "2026-05-26",

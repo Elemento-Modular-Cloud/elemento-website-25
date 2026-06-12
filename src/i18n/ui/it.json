@@ -656,6 +656,14 @@
       "description": "La tua sessione di PR e marketing è confermata. Accetta l'invito del calendario dalla tua casella di posta per tenere sotto controllo il tuo brainstorming.",
       "title": "Prenotazione completata - PR &amp; Marketing | Elemento"
     },
+    "2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos": {
+      "description": "La sovranità cloud non riguarda solo la residenza dei dati o la scelta di un provider europeo. Scopri come CIO, CTO e CISO possono costruire una sovranità cloud pratica attraverso la mappatura dei workload, l'interoperabilità, AtomOS, Electros e la libertà dal vendor lock-in.",
+      "title": "Sovranità cloud in Europa: come costruire controllo, portabilità e libertà dal lock-in | Blog Elemento"
+    },
+    "blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos": {
+      "description": "La sovranità cloud non riguarda solo la residenza dei dati o la scelta di un provider europeo. Scopri come CIO, CTO e CISO possono costruire una sovranità cloud pratica attraverso la mappatura dei workload, l'interoperabilità, AtomOS, Electros e la libertà dal vendor lock-in.",
+      "title": "Sovranità cloud in Europa: come costruire controllo, portabilità e libertà dal lock-in | Blog Elemento"
+    },
     "2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk": {
       "description": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
       "title": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico | Blog Elemento"

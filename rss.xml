@@ -5,8 +5,15 @@
     <link>https://elemento.cloud/blog.html</link>
     <description>Cloud computing insights, industry news, and technology stories from Elemento.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elemento.cloud/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs</title>
+      <link>https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html</link>
+      <guid isPermaLink="true">https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html</guid>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.</description>
+    </item>
     <item>
       <title>The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk</title>
       <link>https://elemento.cloud/blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html</link>

@@ -1,12 +1,17 @@
 ---
+import { existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { extractLegacyBody, extractLegacyScripts } from '../lib/extract-body';
 import { localizeBody } from '../lib/localize-body';
-import { prefixBodyAssets, prefixBodyPageLinks } from '../lib/prefix-body-assets';
+import { prefixBodyAssets, prefixBlogPostImages, prefixBodyPageLinks } from '../lib/prefix-body-assets';
 import { assetBaseFor } from '../lib/asset-base';
 import { getUi } from '../i18n';
 import type { Locale } from '../i18n/config';
 import type { PageEntry } from '../lib/page-types';
+
+const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '../..');
 
 interface Props {
   entry: PageEntry;
@@ -23,16 +28,23 @@ const pageTitle =
   locale !== 'en' && pageUi?.title ? pageUi.title : entry.title;
 const pageDescription =
   locale !== 'en' && pageUi?.description ? pageUi.description : entry.description;
-const localeLegacyPath =
-  locale === 'it' && entry.stem === 'brand-guidelines'
+const itLegacyPath = entry.legacyPath.replace(/\.html$/, '.it.html');
+const hasItLegacyHtml = locale === 'it' && existsSync(join(repoRoot, itLegacyPath));
+const localeLegacyPath = hasItLegacyHtml
+  ? itLegacyPath
+  : locale === 'it' && entry.stem === 'brand-guidelines'
     ? 'brand-guidelines.it.html'
     : entry.legacyPath;
-const skipBodyLocalize = locale === 'it' && entry.stem === 'brand-guidelines';
+const skipBodyLocalize =
+  hasItLegacyHtml || (locale === 'it' && entry.stem === 'brand-guidelines');
 let bodyHtml = extractLegacyBody(localeLegacyPath);
 if (!skipBodyLocalize) {
   bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
 }
 bodyHtml = prefixBodyPageLinks(bodyHtml, entry.stem, locale);
+if (entry.group === 'blog-posts') {
+  bodyHtml = prefixBlogPostImages(bodyHtml);
+}
 bodyHtml = prefixBodyAssets(bodyHtml, assetBase);
 const scripts =
   entry.extraScripts.length > 0 ? entry.extraScripts : extractLegacyScripts(localeLegacyPath);

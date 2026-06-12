@@ -74,7 +74,10 @@ export function prefixBodyPageLinks(
     return `${open}${localePath(locale, pageStem)}${close}`;
   };
 
-  return html
-    .replace(/(\shref=["'])([^"'#]+)(["'])/gi, rewrite)
-    .replace(/(\ssrc=["'])([^"'#]+)(["'])/gi, rewrite);
+  return html.replace(/(\shref=["'])([^"'#]+)(["'])/gi, rewrite);
+}
+
+/** Blog images are shared assets under /blog-posts/img/ (not locale-prefixed). */
+export function prefixBlogPostImages(html: string): string {
+  return html.replace(/(\ssrc=["'])img\//g, `$1/blog-posts/img/`);
 }

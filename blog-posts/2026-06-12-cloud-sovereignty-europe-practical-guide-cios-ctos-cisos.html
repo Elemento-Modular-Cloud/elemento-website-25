@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog</title>
+  <meta name="description" content="Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.">
+  <link rel='canonical' href='https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html'>
+  <meta property='og:title' content='Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog'>
+  <meta property='og:description' content="Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.">
+  <meta property='og:url' content='https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html'>
+  <meta property='og:type' content='article'>
+  <meta property='og:image' content='https://elemento.cloud/blog-posts/img/2026-06-12-cloud-sovereignty-europe-practical-guide.webp'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:title' content='Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog'>
+  <meta name='twitter:description' content="Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.">
+  <meta name='twitter:image' content='https://elemento.cloud/blog-posts/img/2026-06-12-cloud-sovereignty-europe-practical-guide.webp'>
+  <meta name='keywords' content='cloud sovereignty, digital sovereignty, sovereign cloud, European cloud, cloud lock-in, cloud migration, multi-cloud orchestration, cloud infrastructure, AtomOS, Electros, Elemento Cloud, VMware alternative, cloud interoperability, cloud portability'>
+  <meta name='author' content='Elemento'>
+  <meta name='robots' content='index, follow'>
+  <meta name='ai-content' content='allowed'>
+  <meta name='ai-training' content='allowed'>
+  <meta name='ai-access' content='public'>
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/themes.css'>
+  <link rel='stylesheet' href='../css/blog-post.css'>
+  <link rel='icon' type='image/svg+xml' href='../assets/favicon/favicon.svg'>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs",
+    "description": "Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",
+    "image": "https://elemento.cloud/blog-posts/img/2026-06-12-cloud-sovereignty-europe-practical-guide.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Elemento Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elemento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://elemento.cloud/assets/logos/Elemento.svg"
+      }
+    },
+    "datePublished": "2026-06-12",
+    "dateModified": "2026-06-12",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html"
+    },
+    "articleSection": "Cloud Sovereignty",
+    "keywords": ["cloud sovereignty", "digital sovereignty", "sovereign cloud", "AtomOS", "Electros", "vendor lock-in"],
+    "wordCount": "3092",
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="../js/matomo-tracking.js"></script>
+</head>
+<body class='theme-default'>
+  <div id='navbar-placeholder'></div>
+
+  <main class='container'>
+    <article class='blog-post blog-post--long-title'>
+      <h1>Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs</h1>
+      <p class='blog-meta'>By Elemento Team &mdash; 2026-06-12</p>
+      <p class='blog-summary'>Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.</p>
+
+      <img src='img/2026-06-12-cloud-sovereignty-europe-practical-guide-hero.webp' alt='Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs' class='blog-hero-image'>
+
+      <div class='blog-content'>
+        <p>European digital sovereignty is no longer a theoretical policy debate. It is becoming a practical infrastructure problem.</p>
+        <p>For years, the discussion around sovereign cloud has often been reduced to a simple question: <em>where are my data stored?</em> If the data are hosted in Europe, the assumption goes, the organization is sovereign. If they are hosted outside Europe, the organization is exposed.</p>
+        <p>That view is incomplete, at least.</p>
+        <p>Data residency matters, especially for sensitive workloads, regulated industries and critical infrastructure. But sovereignty cannot be reduced to geography. A workload can be hosted in Europe and still be difficult to control. A cloud provider can be European and still create operational lock-in. A compliance label can reduce legal uncertainty and still fail to answer the most important question for an IT leader:</p>
+        <p><strong>Can I choose, move, control and exit when business, regulation or geopolitics change?</strong></p>
+        <p>That is where cloud sovereignty becomes practical.</p>
+        <p>For CIOs, CTOs, CISOs and IT Directors, the real challenge is not to join a political debate. The challenge is to design infrastructure that remains governable under pressure: regulatory pressure, cost pressure, security pressure, procurement pressure, and the pressure created by vendor dependency.</p>
+        <p>This article is a practical guide to cloud sovereignty for technology leaders. It looks beyond slogans and focuses on what organizations can actually do today: map workloads, reduce lock-in, build migration options, create an interoperability layer, and use platforms such as AtomOS and Electros to regain control over infrastructure decisions.</p>
+        <h2><strong>The problem with 'sovereign cloud' as a label</strong></h2>
+        <p>The term 'sovereign cloud' is useful, but it can also be misleading.</p>
+        <p>Too often, it is used as a binary label: a cloud is either sovereign or not sovereign. A provider is either European or not European. A workload is either compliant or not compliant. Real infrastructure does not work like that.</p>
+        <p>A modern enterprise environment is a mix of legacy systems, virtual machines, Kubernetes clusters, databases, SaaS services, identity layers, backup systems, monitoring tools, AI workloads, security tools and APIs. Some of these components run on-premises. Some run in public cloud. Some depend on specific hyperscaler services. Others are connected to third-party platforms, external data sources, proprietary software or open-source components maintained globally.</p>
+        <p>In that context, sovereignty is not a static certification. It is a capability.</p>
+        <p>A sovereign infrastructure strategy should answer practical questions:</p>
+        <ul>
+          <li>Which workloads are critical?</li>
+          <li>Which data require strict jurisdictional control?</li>
+          <li>Which systems are exposed to foreign legal, operational or supply-chain dependencies?</li>
+          <li>Which cloud services are portable and which are not?</li>
+          <li>How expensive would it be to migrate?</li>
+          <li>How long would it take to exit a provider?</li>
+          <li>Which teams have the skills to operate the new environment?</li>
+          <li>Which contracts create hidden lock-in?</li>
+          <li>Which architectures make future decisions easier instead of harder?</li>
+        </ul>
+        <p>This is why a purely defensive approach to cloud sovereignty is not enough. Moving everything from one provider to another does not automatically create sovereignty. It can simply replace one dependency with another.</p>
+        <p>The goal should not be to make infrastructure look sovereign on paper. The goal should be to make it <strong>transparent, controllable and interoperable</strong> in practice.</p>
+        <h2><strong>The European context: regulation is accelerating, but execution is still the hard part</strong></h2>
+        <p>The European Union has clearly placed technological sovereignty at the center of its digital agenda. The Tech Sovereignty Package, the Cloud and AI Development Act, the Data Act, NIS2, DORA, the AI Act, the Cyber Resilience Act and other initiatives all point in the same direction: digital infrastructure is now part of Europe’s strategic autonomy.</p>
+        <p>This is a major shift. Cloud, AI, chips, data centers, cybersecurity and open source are no longer separate conversations. They are becoming part of the same industrial and geopolitical question: can Europe build enough technological capacity to avoid structural dependency?</p>
+        <p>But for enterprises, the policy direction is only one part of the problem.</p>
+        <p>The more urgent issue is execution. A CIO cannot simply wait for the regulatory framework to become perfectly stable. A CISO cannot postpone security architecture until every sovereignty level, audit mechanism or certification rule is finalized. A CTO cannot rebuild infrastructure every time the political landscape changes.</p>
+        <p>Technology leaders need a strategy that works even while the rules evolve.</p>
+        <p>That strategy should not be based on panic migration. It should not be based on a generic 'buy European' principle either. It should be based on a more durable objective:</p>
+        <p><strong>Build infrastructure that can adapt.</strong></p>
+        <p>Adaptability is the operational core of sovereignty. If your organization can move workloads, compare providers, separate critical data, control access, automate provisioning and avoid irreversible technical decisions, then it is more sovereign than an organization that has simply moved all workloads to a new provider without solving lock-in.</p>
+        <h2><strong>The hidden sovereignty risk: vendor lock-in</strong></h2>
+        <p>Vendor lock-in is often treated as a cost issue. It is much more than that.</p>
+        <p>Lock-in affects security, compliance, business continuity, procurement power and strategic freedom.</p>
+        <p>A locked-in organization may struggle to:</p>
+        <ul>
+          <li>move workloads in response to regulatory changes;</li>
+          <li>negotiate better commercial terms;</li>
+          <li>isolate critical systems;</li>
+          <li>change provider after a security or geopolitical event;</li>
+          <li>adopt a more suitable European or regional provider;</li>
+          <li>build a credible disaster recovery strategy across environments;</li>
+          <li>modernize legacy infrastructure without creating new dependencies;</li>
+          <li>prove that it has real control over its operational stack.</li>
+        </ul>
+        <p>The strongest cloud providers have created enormous value for enterprises. They offer scale, reliability, managed services, innovation speed and global reach. The problem is not that these providers exist. The problem begins when the enterprise loses the practical ability to choose.</p>
+        <p>Cloud sovereignty is not about refusing global technology. It is about avoiding forced dependence.</p>
+        <p>The question every CIO and CTO should ask is not 'which provider should I trust?' The better question is:</p>
+        <p><strong>How do I design an architecture where trust is never my only exit strategy?</strong></p>
+        <h2><strong>A practical cloud sovereignty framework</strong></h2>
+        <p>A useful sovereignty strategy starts with segmentation. Not every workload requires the same level of control. Not every system should be migrated. Not every dependency is unacceptable. Not every European alternative is automatically better.</p>
+        <p>A practical framework can be built around five steps.</p>
+        <h2><strong>1. Classify workloads by criticality</strong></h2>
+        <p>The first mistake is to treat the entire IT estate as one homogeneous block.</p>
+        <p>Instead, organizations should classify workloads into groups such as:</p>
+        <ul>
+          <li>mission-critical operational systems;</li>
+          <li>regulated data processing systems;</li>
+          <li>personal data and customer data platforms;</li>
+          <li>AI training and inference workloads;</li>
+          <li>intellectual property and trade-secret environments;</li>
+          <li>collaboration and productivity systems;</li>
+          <li>development and testing environments;</li>
+          <li>low-risk commodity workloads;</li>
+          <li>legacy systems requiring modernization;</li>
+          <li>infrastructure requiring disaster recovery or high availability.</li>
+        </ul>
+        <p>This classification should combine business criticality, data sensitivity, regulatory exposure, migration complexity and operational risk.</p>
+        <p>The result is a sovereignty map.</p>
+        <p>Some workloads may require strong jurisdictional control and dedicated infrastructure. Others may run perfectly well on public cloud. Some may benefit from a hybrid architecture. Others may need to remain on-premises for latency, compliance, cost or operational reasons.</p>
+        <p>The key is not to apply one rule to everything. The key is to make differentiated decisions.</p>
+        <h2><strong>2. Identify lock-in points</strong></h2>
+        <p>Once workloads are classified, the next step is to identify where lock-in is created.</p>
+        <p>Lock-in can appear at many layers:</p>
+        <ul>
+          <li>hypervisor and virtualization stack;</li>
+          <li>proprietary cloud APIs;</li>
+          <li>managed databases;</li>
+          <li>identity and access management;</li>
+          <li>storage formats;</li>
+          <li>backup and snapshot mechanisms;</li>
+          <li>networking configurations;</li>
+          <li>monitoring and observability tools;</li>
+          <li>automation scripts;</li>
+          <li>CI/CD pipelines;</li>
+          <li>license models;</li>
+          <li>support contracts;</li>
+          <li>data egress costs;</li>
+          <li>team skills and operational habits.</li>
+        </ul>
+        <p>Some lock-in is acceptable if the benefit is clear. The problem is unmanaged lock-in: dependency that was never deliberately chosen, never priced, never documented and never tested.</p>
+        <p>A practical sovereignty assessment should ask:</p>
+        <ul>
+          <li>Can we export the data?</li>
+          <li>Can we recreate the workload elsewhere?</li>
+          <li>Can we automate provisioning on another provider?</li>
+          <li>Can our teams operate the alternative environment?</li>
+          <li>Can we test migration before a crisis?</li>
+          <li>Do we know the cost and time of exit?</li>
+          <li>Are we dependent on a single control plane?</li>
+          <li>Are we dependent on licensing models that may change?</li>
+        </ul>
+        <p>In many organizations, the real blocker is not technology. It is uncertainty. The organization does not know how hard it would be to move because it has never built the muscle to move.</p>
+        <h2><strong>3. Build reversibility into architecture</strong></h2>
+        <p>Reversibility is one of the most important concepts in cloud sovereignty.</p>
+        <p>An irreversible architecture is one where every new project makes future migration harder. A reversible architecture is one where every decision preserves optionality.</p>
+        <p>Reversibility can be built through:</p>
+        <ul>
+          <li>open standards where possible;</li>
+          <li>infrastructure as code;</li>
+          <li>portable VM images;</li>
+          <li>containerization where appropriate;</li>
+          <li>consistent identity and access policies;</li>
+          <li>documented deployment patterns;</li>
+          <li>provider-agnostic observability;</li>
+          <li>independent backup and recovery strategies;</li>
+          <li>multi-provider cost visibility;</li>
+          <li>automation layers that reduce dependence on proprietary consoles;</li>
+          <li>orchestration tools that abstract provider differences.</li>
+        </ul>
+        <p>This does not mean avoiding every proprietary service. That would be unrealistic and often counterproductive. It means understanding where proprietary services create strategic value and where they create avoidable dependency.</p>
+        <p>A sovereign cloud strategy should not force technology leaders into ideological choices. It should give them a controlled way to use the best available technology without becoming trapped by it.</p>
+        <h2><strong>4. Create an interoperability layer</strong></h2>
+        <p>The more cloud environments grow, the more fragmented they become.</p>
+        <p>Organizations often end up with multiple consoles, multiple APIs, multiple billing models, multiple access methods, multiple monitoring tools and multiple operational procedures. This fragmentation increases cost, complexity and risk.</p>
+        <p><strong>Interoperability is the antidote.</strong></p>
+        <p>But interoperability should not be treated as a future promise that all providers will eventually agree on a universal standard. Enterprises cannot wait for that. They need practical interoperability now.</p>
+        <p>This is where an orchestration and abstraction layer becomes essential.</p>
+        <p>A strong interoperability layer should allow teams to:</p>
+        <ul>
+          <li>manage workloads across public cloud and on-premises infrastructure;</li>
+          <li>compare deployment options;</li>
+          <li>provision resources consistently;</li>
+          <li>automate lifecycle operations;</li>
+          <li>access VMs and environments without jumping between tools;</li>
+          <li>monitor costs and resources;</li>
+          <li>reduce dependence on provider-specific interfaces;</li>
+          <li>prepare migrations before they become urgent.</li>
+        </ul>
+        <p>This is one of the core ideas behind Elemento Modular Cloud.</p>
+        <h2><strong>Want to assess your cloud sovereignty strategy?</strong></h2>
+        <p>If you are evaluating cloud migration, VMware alternatives, hybrid cloud, multi-cloud orchestration or ways to reduce vendor lock-in, Elemento can help you identify the right starting point.</p>
+        <p>Book a call with our team:</p>
+        <p><a href="https://book.elemento.cloud/">https://book.elemento.cloud</a></p>
+        <p>Together, we can help you understand where your infrastructure is exposed, which workloads should be prioritized, and how AtomOS and Electros can support a more flexible, interoperable and sovereign cloud strategy.</p>
+        <h2><strong>How Elemento Cloud helps operationalize sovereignty</strong></h2>
+        <p>Elemento Cloud is built around a simple principle: cloud freedom should be designed into the infrastructure, not promised as a future service.</p>
+        <p>For Elemento, sovereignty is not just about where infrastructure is located. It is about how infrastructure is controlled, orchestrated and moved. A cloud environment is more sovereign when the customer has more freedom to decide where workloads run, how they are managed and when they need to move.</p>
+        <p>Elemento’s stack is designed to help organizations build this freedom through two key products: <strong>AtomOS</strong> and <strong>Electros</strong>.</p>
+        <h2><strong>AtomOS: a modern virtualization foundation for private and hybrid cloud</strong></h2>
+        <p>Many organizations still run a large part of their infrastructure on virtual machines. Even when Kubernetes, containers and serverless architectures are growing, VMs remain central for enterprise workloads, legacy applications, regulated environments, databases, Windows workloads and many production systems.</p>
+        <p>This is why virtualization remains a sovereignty issue.</p>
+        <p>If your virtualization stack is expensive, closed, difficult to migrate from or dependent on licensing models outside your control, then your cloud strategy is constrained before it even reaches the public cloud layer.</p>
+        <p><a href="https://elemento.cloud/atomos.html"><strong>AtomOS</strong></a> is Elemento’s hypervisor platform designed to provide a modern, enterprise-ready foundation for private, public and hybrid cloud infrastructure.</p>
+        <p>It can help organizations that want to:</p>
+        <ul>
+          <li>reduce dependency on legacy virtualization stacks;</li>
+          <li>build private cloud environments on their own infrastructure;</li>
+          <li>support VM-based workloads with a more flexible operating model;</li>
+          <li>maintain stronger control over infrastructure;</li>
+          <li>create a foundation for hybrid and multi-cloud strategies;</li>
+          <li>avoid building a new lock-in layer while escaping an old one;</li>
+          <li>support cloud modernization without forcing a 'rip and replace' approach.</li>
+        </ul>
+        <p>For CIOs and IT Directors, AtomOS is especially relevant in scenarios where cloud sovereignty starts from the data center: regulated workloads, predictable infrastructure costs, on-premises requirements, colocation environments, and private cloud strategies.</p>
+        <p>For CTOs, it provides a path to modernize infrastructure without assuming that every workload must immediately become cloud-native.</p>
+        <p>For CISOs, it supports the broader goal of increasing control over critical systems, especially when combined with clear access policies, network segmentation, backup strategies and independent operational governance.</p>
+        <p>AtomOS does not ask organizations to abandon reality. It starts from the fact that VMs still matter and gives teams a more flexible foundation to manage them.</p>
+        <h2><strong>Electros: one control center for hybrid and multi-cloud operations</strong></h2>
+        <p>If AtomOS strengthens the infrastructure layer, <strong>Electros</strong> addresses another sovereignty problem: fragmented control.</p>
+        <p>Most organizations do not suffer from a lack of cloud tools. They suffer from too many disconnected tools. Every provider has its own console. Every environment has its own access model. Every infrastructure team develops its own scripts, habits and manual workarounds.</p>
+        <p>This creates operational lock-in even when the underlying infrastructure is technically portable.</p>
+        <p><a href="https://elemento.cloud/electros.html"><strong>Electros</strong></a> is Elemento Cloud’s orchestration dashboard and CLI for managing virtual machines, storage and networking across public clouds and on-premises infrastructure from a unified interface.</p>
+        <p>Its role in a sovereignty strategy is practical: it gives teams a more consistent way to manage heterogeneous infrastructure.</p>
+        <p>Electros helps organizations:</p>
+        <ul>
+          <li>orchestrate workloads across different environments;</li>
+          <li>manage VMs across public clouds and on-premises infrastructure;</li>
+          <li>reduce dependence on multiple provider consoles;</li>
+          <li>use a unified interface for visibility, provisioning and access;</li>
+          <li>automate operations through CLI workflows;</li>
+          <li>support hybrid and multi-cloud strategies;</li>
+          <li>monitor cloud workload costs;</li>
+          <li>simplify remote access to machines;</li>
+          <li>connect infrastructure decisions to business, cost and compliance requirements.</li>
+        </ul>
+        <p>This is important because sovereignty is not only about where infrastructure runs. It is also about who controls the operating model.</p>
+        <p>A company that uses multiple providers but cannot govern them consistently is not truly free. It has replaced single-provider lock-in with operational complexity.</p>
+        <p>Electros is designed to make multi-cloud and hybrid infrastructure usable, not just theoretically possible.</p>
+        <h2><strong>From multi-cloud complexity to meta-cloud strategy</strong></h2>
+        <p>Many enterprises say they want multi-cloud. Fewer are prepared for what multi-cloud actually means.</p>
+        <p>Without orchestration, multi-cloud can become a burden: duplicated skills, disconnected cost models, inconsistent security policies, fragmented monitoring and slow operations.</p>
+        <p>The next step is not simply 'more clouds.' The next step is a <strong>meta-cloud</strong> approach: a layer that allows organizations to manage different infrastructures through a unified operational model.</p>
+        <p>A meta-cloud strategy does not eliminate provider differences. It manages them.</p>
+        <p>It allows organizations to choose the right environment for each workload while maintaining a coherent governance model. This is the difference between accidental multi-cloud and intentional multi-cloud.</p>
+        <p>Accidental multi-cloud happens when business units adopt different providers without coordination. Intentional multi-cloud happens when architecture, governance and tooling are designed to preserve freedom.</p>
+        <p>Elemento Modular Cloud is built for the second model.</p>
+        <p>With AtomOS, organizations can strengthen private and hybrid infrastructure foundations. With Electros, they can operate across environments with a unified control center. Together, they help turn sovereignty from a policy concept into an operational capability.</p>
+        <h2><strong>What cloud sovereignty should mean in 2026 and beyond</strong></h2>
+        <p>The European cloud conversation is entering a new phase.</p>
+        <p>The first phase was compliance: data protection, privacy, location, contracts and regulation.</p>
+        <p>The second phase was reaction: concern about hyperscaler dominance, geopolitical risk, strategic dependency and the lack of European scale.</p>
+        <p>The third phase must be execution.</p>
+        <p>Execution means building cloud strategies that can survive uncertainty. It means not waiting for perfect regulation. It means not assuming that one provider, one country or one certification will solve every problem.</p>
+        <p>For enterprises, sovereignty should mean:</p>
+        <ul>
+          <li>control over critical workloads;</li>
+          <li>transparency across infrastructure layers;</li>
+          <li>portability of systems and data;</li>
+          <li>operational independence from a single control plane;</li>
+          <li>freedom to choose providers based on business value;</li>
+          <li>ability to migrate when needed;</li>
+          <li>interoperability across heterogeneous environments;</li>
+          <li>resilience against regulatory, geopolitical and commercial shocks.</li>
+        </ul>
+        <p>This is the practical meaning of cloud freedom.</p>
+        <h2><strong>The Elemento view: sovereignty is freedom of choice</strong></h2>
+        <p>Elemento Modular Cloud believes that sovereignty should not be built as a wall. It should be built as a capability.</p>
+        <p>The goal is not to tell organizations where every workload must run. The goal is to give them the tools to decide, change and adapt.</p>
+        <p>AtomOS and Electros are part of that vision:</p>
+        <ul>
+          <li>AtomOS gives organizations a modern virtualization foundation for private and hybrid cloud.</li>
+          <li>Electros gives teams a unified control center to orchestrate and manage workloads across environments.</li>
+          <li>Together, they help reduce lock-in, support migration strategies and create the technical conditions for real cloud freedom.</li>
+        </ul>
+        <p>In a world where regulation changes, cloud costs shift, AI workloads grow and geopolitical tensions affect technology decisions, the most important infrastructure feature is optionality.</p>
+        <p>A sovereign organization is not one that never uses foreign technology. A sovereign organization is one that is never forced to use only one technology.</p>
+        <p>That is the difference between dependency and strategy.</p>
+        <h2><strong>Join the webinar: ‘Europa e Cloud: la sovranità non si proclama, si costruisce’</strong></h2>
+        <p>We will explore these topics in our upcoming webinar:</p>
+        <p><strong>Europe, cloud and power: sovereignty is not proclaimed, it is built</strong></p>
+        <p><strong>June 30, 2026 — 17:00 CEST</strong></p>
+        <p>The webinar is designed for CTOs, CIOs, CISOs, IT Directors and technology decision makers who want to understand how digital sovereignty, cloud strategy, lock-in, interoperability and infrastructure control are converging.</p>
+        <p>Register here:</p>
+        <p><a href="https://riverside.com/webinar/registration/eyJldmVudElkIjoiNmEyODFmZjE3ZWUzM2RjNmE3MzRjZjhlIiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=">https://riverside.com/webinar/registration/eyJldmVudElkIjoiNmEyODFmZjE3ZWUzM2RjNmE3MzRjZjhlIiwic2x1ZyI6Im1hcmtldGluZ3Mtc3R1ZGlvLTVMaWE1In0=</a></p>
+        <p>Notes: the webinar will be held in Italian; if you read this article after the webinar you will be able to access a recording in the resources area of the Elemento website.</p>
+        <h2><strong>Final thought</strong></h2>
+        <p>Cloud sovereignty is not a destination. It is not a passport, a label or a data center location.</p>
+        <p>It is the ability to make decisions without being trapped by the past.</p>
+        <p>For European enterprises, the question is not whether sovereignty matters. It does. The real question is whether sovereignty will remain a political slogan or become an operational advantage.</p>
+        <p>The answer depends on architecture.</p>
+        <p>Build infrastructure that is transparent. Build infrastructure that is controllable. Build infrastructure that is interoperable.</p>
+        <p>Above all, build infrastructure you are free to leave.</p>
+        <p>Embrace the Metacloud concept.</p>
+        <p>That is where sovereignty begins.</p>
+      </div>
+    </article>
+  </main>
+
+  <div id='footer-placeholder'></div>
+
+  <script src='../js/navbar.js' defer></script>
+  <script src='../js/main.js' defer></script>
+  <script src='../js/themes.js' defer></script>
+  <script src='../js/footer.js' defer></script>
+</body>
+</html>

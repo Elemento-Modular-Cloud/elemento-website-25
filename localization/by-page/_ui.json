@@ -1,6 +1,6 @@
 {
   "page": "_ui",
-  "count": 87,
+  "count": 90,
   "strings": [
     {
       "id": "ui.banner.atomosDiscountAria",
@@ -19,6 +19,14 @@
       "context": ""
     },
     {
+      "id": "ui.blog.articleColumn",
+      "en": "Article",
+      "it": "Articolo",
+      "fr": "Article",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.blog.articlesLabel",
       "en": "articles",
       "it": "articoli",
@@ -27,10 +35,26 @@
       "context": ""
     },
     {
+      "id": "ui.blog.authorColumn",
+      "en": "Author",
+      "it": "Autore",
+      "fr": "Auteur",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.blog.byAuthor",
       "en": "By",
       "it": "Di",
       "fr": "Par",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.blog.dateColumn",
+      "en": "Date",
+      "it": "Data",
+      "fr": "Date",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -445,7 +469,7 @@
     {
       "id": "ui.pages.about.description",
       "en": "Learn about Elemento's mission to transform cloud infrastructure with vendor-neutral, cost-effective, and green computing solutions.",
-      "it": "Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dal fornitore, convenienti ed ecologiche.",
+      "it": "Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dai fornitori, convenienti ed ecologiche.",
       "fr": "Découvrez la mission d'Elemento qui consiste à transformer l'infrastructure cloud avec des solutions informatiques indépendantes du fournisseur, rentables et écologiques.",
       "source": "src/i18n/ui",
       "context": ""
@@ -509,7 +533,7 @@
     {
       "id": "ui.pages.index.description",
       "en": "Elemento is a vendor-neutral, cost-saving, green, high-performance, self-hostable cloud platform with infrastructure-as-code readiness.",
-      "it": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabile con predisposizione per l'infrastruttura come codice.",
+      "it": "Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabili con predisposizione per l'infrastruttura come codice.",
       "fr": "Elemento est une plate-forme cloud indépendante du fournisseur, économique, écologique, hautes performances et auto-hébergable avec une préparation à l'infrastructure en tant que code.",
       "source": "src/i18n/ui",
       "context": ""

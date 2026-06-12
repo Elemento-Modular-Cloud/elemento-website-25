@@ -1204,59 +1204,289 @@ body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock
 body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.7,"And when the vendor changes the rules, that dependence becomes visible.",,,blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html,<p>
 body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.8,The VMware-Broadcom case has brought vendor lock-in back to the top of the infrastructure agenda.,,,blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html,<p>
 body.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.p.9,"After Broadcom completed its acquisition of VMware, customers began facing a very different commercial landscape: stronger emphasis on subscriptions, broader product bundles, licensing changes, portfolio simplification, and new renewal dynamics. VMware Cloud Foundation and vSphere Foundation are now central to Broadcom&apos;s VMware strategy, with subscription licensing playing a much larger role than in the previous model.",,,blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h1.1,"Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h1>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.1,The problem with 'sovereign cloud' as a label,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.10,How Elemento Cloud helps operationalize sovereignty,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.11,AtomOS: a modern virtualization foundation for private and hybrid cloud,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.12,Electros: one control center for hybrid and multi-cloud operations,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.13,From multi-cloud complexity to meta-cloud strategy,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.14,What cloud sovereignty should mean in 2026 and beyond,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.15,The Elemento view: sovereignty is freedom of choice,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.16,"Join the webinar: ‘Europa e Cloud: la sovranità non si proclama, si costruisce’",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.17,Final thought,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.2,"The European context: regulation is accelerating, but execution is still the hard part",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.3,The hidden sovereignty risk: vendor lock-in,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.4,A practical cloud sovereignty framework,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.5,1. Classify workloads by criticality,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.6,2. Identify lock-in points,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.7,3. Build reversibility into architecture,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.8,4. Create an interoperability layer,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.h2.9,Want to assess your cloud sovereignty strategy?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<h2>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.1,Which workloads are critical?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.10,move workloads in response to regulatory changes;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.11,negotiate better commercial terms;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.12,isolate critical systems;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.13,change provider after a security or geopolitical event;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.14,adopt a more suitable European or regional provider;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.15,build a credible disaster recovery strategy across environments;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.16,modernize legacy infrastructure without creating new dependencies;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.17,prove that it has real control over its operational stack.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.18,mission-critical operational systems;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.19,regulated data processing systems;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.2,Which data require strict jurisdictional control?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.20,personal data and customer data platforms;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.21,AI training and inference workloads;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.22,intellectual property and trade-secret environments;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.23,collaboration and productivity systems;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.24,development and testing environments;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.25,low-risk commodity workloads;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.26,legacy systems requiring modernization;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.27,infrastructure requiring disaster recovery or high availability.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.28,hypervisor and virtualization stack;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.29,proprietary cloud APIs;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.3,"Which systems are exposed to foreign legal, operational or supply-chain dependencies?",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.30,managed databases;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.31,identity and access management;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.32,storage formats;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.33,backup and snapshot mechanisms;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.34,networking configurations;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.35,monitoring and observability tools;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.36,automation scripts;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.37,CI/CD pipelines;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.38,license models;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.39,support contracts;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.4,Which cloud services are portable and which are not?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.40,data egress costs;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.41,team skills and operational habits.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.42,Can we export the data?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.43,Can we recreate the workload elsewhere?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.44,Can we automate provisioning on another provider?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.45,Can our teams operate the alternative environment?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.46,Can we test migration before a crisis?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.47,Do we know the cost and time of exit?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.48,Are we dependent on a single control plane?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.49,Are we dependent on licensing models that may change?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.5,How expensive would it be to migrate?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.50,open standards where possible;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.51,infrastructure as code;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.52,portable VM images;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.53,containerization where appropriate;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.54,consistent identity and access policies;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.55,documented deployment patterns;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.56,provider-agnostic observability;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.57,independent backup and recovery strategies;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.58,multi-provider cost visibility;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.59,automation layers that reduce dependence on proprietary consoles;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.6,How long would it take to exit a provider?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.60,orchestration tools that abstract provider differences.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.61,manage workloads across public cloud and on-premises infrastructure;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.62,compare deployment options;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.63,provision resources consistently;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.64,automate lifecycle operations;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.65,access VMs and environments without jumping between tools;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.66,monitor costs and resources;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.67,reduce dependence on provider-specific interfaces;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.68,prepare migrations before they become urgent.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.69,reduce dependency on legacy virtualization stacks;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.7,Which teams have the skills to operate the new environment?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.70,build private cloud environments on their own infrastructure;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.71,support VM-based workloads with a more flexible operating model;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.72,maintain stronger control over infrastructure;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.73,create a foundation for hybrid and multi-cloud strategies;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.74,avoid building a new lock-in layer while escaping an old one;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.75,support cloud modernization without forcing a 'rip and replace' approach.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.76,orchestrate workloads across different environments;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.77,manage VMs across public clouds and on-premises infrastructure;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.78,reduce dependence on multiple provider consoles;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.79,"use a unified interface for visibility, provisioning and access;",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.8,Which contracts create hidden lock-in?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.80,automate operations through CLI workflows;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.81,support hybrid and multi-cloud strategies;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.82,monitor cloud workload costs;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.83,simplify remote access to machines;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.84,"connect infrastructure decisions to business, cost and compliance requirements.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.85,control over critical workloads;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.86,transparency across infrastructure layers;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.87,portability of systems and data;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.88,operational independence from a single control plane;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.89,freedom to choose providers based on business value;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.9,Which architectures make future decisions easier instead of harder?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.90,ability to migrate when needed;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.91,interoperability across heterogeneous environments;,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.92,"resilience against regulatory, geopolitical and commercial shocks.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.93,AtomOS gives organizations a modern virtualization foundation for private and hybrid cloud.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.94,Electros gives teams a unified control center to orchestrate and manage workloads across environments.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.li.95,"Together, they help reduce lock-in, support migration strategies and create the technical conditions for real cloud freedom.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<li>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.1,By Elemento Team &mdash; 2026-06-12,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.10,"This article is a practical guide to cloud sovereignty for technology leaders. It looks beyond slogans and focuses on what organizations can actually do today: map workloads, reduce lock-in, build migration options, create an interoperability layer, and use platforms such as AtomOS and Electros to regain control over infrastructure decisions.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.100,AtomOS and Electros are part of that vision:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.101,"In a world where regulation changes, cloud costs shift, AI workloads grow and geopolitical tensions affect technology decisions, the most important infrastructure feature is optionality.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.102,A sovereign organization is not one that never uses foreign technology. A sovereign organization is one that is never forced to use only one technology.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.103,That is the difference between dependency and strategy.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.104,We will explore these topics in our upcoming webinar:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.105,"Europe, cloud and power: sovereignty is not proclaimed, it is built",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.106,"June 30, 2026 — 17:00 CEST",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.107,"The webinar is designed for CTOs, CIOs, CISOs, IT Directors and technology decision makers who want to understand how digital sovereignty, cloud strategy, lock-in, interoperability and infrastructure control are converging.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.108,Register here:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.11,"The term 'sovereign cloud' is useful, but it can also be misleading.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.110,Notes: the webinar will be held in Italian; if you read this article after the webinar you will be able to access a recording in the resources area of the Elemento website.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.111,"Cloud sovereignty is not a destination. It is not a passport, a label or a data center location.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.112,It is the ability to make decisions without being trapped by the past.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.113,"For European enterprises, the question is not whether sovereignty matters. It does. The real question is whether sovereignty will remain a political slogan or become an operational advantage.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.114,The answer depends on architecture.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.115,Build infrastructure that is transparent. Build infrastructure that is controllable. Build infrastructure that is interoperable.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.116,"Above all, build infrastructure you are free to leave.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.117,Embrace the Metacloud concept.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.118,That is where sovereignty begins.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.12,"Too often, it is used as a binary label: a cloud is either sovereign or not sovereign. A provider is either European or not European. A workload is either compliant or not compliant. Real infrastructure does not work like that.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.13,"A modern enterprise environment is a mix of legacy systems, virtual machines, Kubernetes clusters, databases, SaaS services, identity layers, backup systems, monitoring tools, AI workloads, security tools and APIs. Some of these components run on-premises. Some run in public cloud. Some depend on specific hyperscaler services. Others are connected to third-party platforms, external data sources, proprietary software or open-source components maintained globally.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.14,"In that context, sovereignty is not a static certification. It is a capability.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.15,A sovereign infrastructure strategy should answer practical questions:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.16,This is why a purely defensive approach to cloud sovereignty is not enough. Moving everything from one provider to another does not automatically create sovereignty. It can simply replace one dependency with another.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.17,"The goal should not be to make infrastructure look sovereign on paper. The goal should be to make it transparent, controllable and interoperable in practice.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.18,"The European Union has clearly placed technological sovereignty at the center of its digital agenda. The Tech Sovereignty Package, the Cloud and AI Development Act, the Data Act, NIS2, DORA, the AI Act, the Cyber Resilience Act and other initiatives all point in the same direction: digital infrastructure is now part of Europe’s strategic autonomy.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.19,"This is a major shift. Cloud, AI, chips, data centers, cybersecurity and open source are no longer separate conversations. They are becoming part of the same industrial and geopolitical question: can Europe build enough technological capacity to avoid structural dependency?",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.2,"Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.20,"But for enterprises, the policy direction is only one part of the problem.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.21,"The more urgent issue is execution. A CIO cannot simply wait for the regulatory framework to become perfectly stable. A CISO cannot postpone security architecture until every sovereignty level, audit mechanism or certification rule is finalized. A CTO cannot rebuild infrastructure every time the political landscape changes.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.22,Technology leaders need a strategy that works even while the rules evolve.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.23,That strategy should not be based on panic migration. It should not be based on a generic 'buy European' principle either. It should be based on a more durable objective:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.24,Build infrastructure that can adapt.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.25,"Adaptability is the operational core of sovereignty. If your organization can move workloads, compare providers, separate critical data, control access, automate provisioning and avoid irreversible technical decisions, then it is more sovereign than an organization that has simply moved all workloads to a new provider without solving lock-in.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.26,Vendor lock-in is often treated as a cost issue. It is much more than that.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.27,"Lock-in affects security, compliance, business continuity, procurement power and strategic freedom.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.28,A locked-in organization may struggle to:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.29,"The strongest cloud providers have created enormous value for enterprises. They offer scale, reliability, managed services, innovation speed and global reach. The problem is not that these providers exist. The problem begins when the enterprise loses the practical ability to choose.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.3,European digital sovereignty is no longer a theoretical policy debate. It is becoming a practical infrastructure problem.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.30,Cloud sovereignty is not about refusing global technology. It is about avoiding forced dependence.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.31,The question every CIO and CTO should ask is not 'which provider should I trust?' The better question is:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.32,How do I design an architecture where trust is never my only exit strategy?,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.33,A useful sovereignty strategy starts with segmentation. Not every workload requires the same level of control. Not every system should be migrated. Not every dependency is unacceptable. Not every European alternative is automatically better.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.34,A practical framework can be built around five steps.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.35,The first mistake is to treat the entire IT estate as one homogeneous block.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.36,"Instead, organizations should classify workloads into groups such as:",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.37,"This classification should combine business criticality, data sensitivity, regulatory exposure, migration complexity and operational risk.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.38,The result is a sovereignty map.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.39,"Some workloads may require strong jurisdictional control and dedicated infrastructure. Others may run perfectly well on public cloud. Some may benefit from a hybrid architecture. Others may need to remain on-premises for latency, compliance, cost or operational reasons.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.4,"For years, the discussion around sovereign cloud has often been reduced to a simple question: where are my data stored? If the data are hosted in Europe, the assumption goes, the organization is sovereign. If they are hosted outside Europe, the organization is exposed.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.40,The key is not to apply one rule to everything. The key is to make differentiated decisions.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.41,"Once workloads are classified, the next step is to identify where lock-in is created.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.42,Lock-in can appear at many layers:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.43,"Some lock-in is acceptable if the benefit is clear. The problem is unmanaged lock-in: dependency that was never deliberately chosen, never priced, never documented and never tested.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.44,A practical sovereignty assessment should ask:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.45,"In many organizations, the real blocker is not technology. It is uncertainty. The organization does not know how hard it would be to move because it has never built the muscle to move.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.46,Reversibility is one of the most important concepts in cloud sovereignty.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.47,An irreversible architecture is one where every new project makes future migration harder. A reversible architecture is one where every decision preserves optionality.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.48,Reversibility can be built through:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.49,This does not mean avoiding every proprietary service. That would be unrealistic and often counterproductive. It means understanding where proprietary services create strategic value and where they create avoidable dependency.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.5,"That view is incomplete, at least.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.50,A sovereign cloud strategy should not force technology leaders into ideological choices. It should give them a controlled way to use the best available technology without becoming trapped by it.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.51,"The more cloud environments grow, the more fragmented they become.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.52,"Organizations often end up with multiple consoles, multiple APIs, multiple billing models, multiple access methods, multiple monitoring tools and multiple operational procedures. This fragmentation increases cost, complexity and risk.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.53,Interoperability is the antidote.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.54,But interoperability should not be treated as a future promise that all providers will eventually agree on a universal standard. Enterprises cannot wait for that. They need practical interoperability now.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.55,This is where an orchestration and abstraction layer becomes essential.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.56,A strong interoperability layer should allow teams to:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.57,This is one of the core ideas behind Elemento Modular Cloud.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.58,"If you are evaluating cloud migration, VMware alternatives, hybrid cloud, multi-cloud orchestration or ways to reduce vendor lock-in, Elemento can help you identify the right starting point.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.59,Book a call with our team:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.6,"Data residency matters, especially for sensitive workloads, regulated industries and critical infrastructure. But sovereignty cannot be reduced to geography. A workload can be hosted in Europe and still be difficult to control. A cloud provider can be European and still create operational lock-in. A compliance label can reduce legal uncertainty and still fail to answer the most important question for an IT leader:",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.61,"Together, we can help you understand where your infrastructure is exposed, which workloads should be prioritized, and how AtomOS and Electros can support a more flexible, interoperable and sovereign cloud strategy.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.62,"Elemento Cloud is built around a simple principle: cloud freedom should be designed into the infrastructure, not promised as a future service.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.63,"For Elemento, sovereignty is not just about where infrastructure is located. It is about how infrastructure is controlled, orchestrated and moved. A cloud environment is more sovereign when the customer has more freedom to decide where workloads run, how they are managed and when they need to move.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.64,Elemento’s stack is designed to help organizations build this freedom through two key products: AtomOS and Electros .,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.65,"Many organizations still run a large part of their infrastructure on virtual machines. Even when Kubernetes, containers and serverless architectures are growing, VMs remain central for enterprise workloads, legacy applications, regulated environments, databases, Windows workloads and many production systems.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.66,This is why virtualization remains a sovereignty issue.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.67,"If your virtualization stack is expensive, closed, difficult to migrate from or dependent on licensing models outside your control, then your cloud strategy is constrained before it even reaches the public cloud layer.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.68,"AtomOS is Elemento’s hypervisor platform designed to provide a modern, enterprise-ready foundation for private, public and hybrid cloud infrastructure.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.69,It can help organizations that want to:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.7,"Can I choose, move, control and exit when business, regulation or geopolitics change?",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.70,"For CIOs and IT Directors, AtomOS is especially relevant in scenarios where cloud sovereignty starts from the data center: regulated workloads, predictable infrastructure costs, on-premises requirements, colocation environments, and private cloud strategies.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.71,"For CTOs, it provides a path to modernize infrastructure without assuming that every workload must immediately become cloud-native.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.72,"For CISOs, it supports the broader goal of increasing control over critical systems, especially when combined with clear access policies, network segmentation, backup strategies and independent operational governance.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.73,AtomOS does not ask organizations to abandon reality. It starts from the fact that VMs still matter and gives teams a more flexible foundation to manage them.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.74,"If AtomOS strengthens the infrastructure layer, Electros addresses another sovereignty problem: fragmented control.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.75,"Most organizations do not suffer from a lack of cloud tools. They suffer from too many disconnected tools. Every provider has its own console. Every environment has its own access model. Every infrastructure team develops its own scripts, habits and manual workarounds.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.76,This creates operational lock-in even when the underlying infrastructure is technically portable.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.77,"Electros is Elemento Cloud’s orchestration dashboard and CLI for managing virtual machines, storage and networking across public clouds and on-premises infrastructure from a unified interface.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.78,Its role in a sovereignty strategy is practical: it gives teams a more consistent way to manage heterogeneous infrastructure.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.79,Electros helps organizations:,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.8,That is where cloud sovereignty becomes practical.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.80,This is important because sovereignty is not only about where infrastructure runs. It is also about who controls the operating model.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.81,A company that uses multiple providers but cannot govern them consistently is not truly free. It has replaced single-provider lock-in with operational complexity.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.82,"Electros is designed to make multi-cloud and hybrid infrastructure usable, not just theoretically possible.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.83,Many enterprises say they want multi-cloud. Fewer are prepared for what multi-cloud actually means.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.84,"Without orchestration, multi-cloud can become a burden: duplicated skills, disconnected cost models, inconsistent security policies, fragmented monitoring and slow operations.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.85,The next step is not simply 'more clouds.' The next step is a meta-cloud approach: a layer that allows organizations to manage different infrastructures through a unified operational model.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.86,A meta-cloud strategy does not eliminate provider differences. It manages them.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.87,It allows organizations to choose the right environment for each workload while maintaining a coherent governance model. This is the difference between accidental multi-cloud and intentional multi-cloud.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.88,"Accidental multi-cloud happens when business units adopt different providers without coordination. Intentional multi-cloud happens when architecture, governance and tooling are designed to preserve freedom.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.89,Elemento Modular Cloud is built for the second model.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.9,"For CIOs, CTOs, CISOs and IT Directors, the real challenge is not to join a political debate. The challenge is to design infrastructure that remains governable under pressure: regulatory pressure, cost pressure, security pressure, procurement pressure, and the pressure created by vendor dependency.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.90,"With AtomOS, organizations can strengthen private and hybrid infrastructure foundations. With Electros, they can operate across environments with a unified control center. Together, they help turn sovereignty from a policy concept into an operational capability.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.91,The European cloud conversation is entering a new phase.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.92,"The first phase was compliance: data protection, privacy, location, contracts and regulation.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.93,"The second phase was reaction: concern about hyperscaler dominance, geopolitical risk, strategic dependency and the lack of European scale.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.94,The third phase must be execution.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.95,"Execution means building cloud strategies that can survive uncertainty. It means not waiting for perfect regulation. It means not assuming that one provider, one country or one certification will solve every problem.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.96,"For enterprises, sovereignty should mean:",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.97,This is the practical meaning of cloud freedom.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.98,Elemento Modular Cloud believes that sovereignty should not be built as a wall. It should be built as a capability.,,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
+body.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.p.99,"The goal is not to tell organizations where every workload must run. The goal is to give them the tools to decide, change and adapt.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,<p>
 body.blog.button.1,List View,,,blog.html,<button>
 body.blog.button.2,Grid View,,,blog.html,<button>
 body.blog.h1.1,Elemento Blog,,,blog.html,<h1>
 body.blog.h2.1,All articles,,,blog.html,<h2>
 body.blog.li.1,Home,,,blog.html,<li>
-body.blog.li.10,The Multi Cloud Conundrum Is It Really That Difficult,,,blog.html,<li>
-body.blog.li.11,The Power Of Virtualization In Cloud Computing,,,blog.html,<li>
-body.blog.li.12,The Origin Of The Term Cloud A Technological Metaphor,,,blog.html,<li>
-body.blog.li.13,The Importance Of Cybersecurity In The Digital Age,,,blog.html,<li>
-body.blog.li.14,The Future Of Cloud Computing In 2023 Revolutionary Trends And Looming Challenges,,,blog.html,<li>
-body.blog.li.15,The Evolution Of Cloud Computing From The Early Ideas Of John Mccarthy To Modern Platforms,,,blog.html,<li>
-body.blog.li.16,The European Open Science Cloud Towards A Global Data Space For Research,,,blog.html,<li>
-body.blog.li.17,The Era Of Big Data,,,blog.html,<li>
-body.blog.li.18,The Benefits Of Virtualization For Cloud Computing Resource Optimization And Operational Agility,,,blog.html,<li>
-body.blog.li.19,The 5Rs Powerful Cloud Migration Strategies,,,blog.html,<li>
+body.blog.li.10,The New Cloud For Cultural Heritage Higital Transformation Serving Safeguarding,,,blog.html,<li>
+body.blog.li.11,The Multi Cloud Conundrum Is It Really That Difficult,,,blog.html,<li>
+body.blog.li.12,The Power Of Virtualization In Cloud Computing,,,blog.html,<li>
+body.blog.li.13,The Origin Of The Term Cloud A Technological Metaphor,,,blog.html,<li>
+body.blog.li.14,The Importance Of Cybersecurity In The Digital Age,,,blog.html,<li>
+body.blog.li.15,The Future Of Cloud Computing In 2023 Revolutionary Trends And Looming Challenges,,,blog.html,<li>
+body.blog.li.16,The Evolution Of Cloud Computing From The Early Ideas Of John Mccarthy To Modern Platforms,,,blog.html,<li>
+body.blog.li.17,The European Open Science Cloud Towards A Global Data Space For Research,,,blog.html,<li>
+body.blog.li.18,The Era Of Big Data,,,blog.html,<li>
+body.blog.li.19,The Benefits Of Virtualization For Cloud Computing Resource Optimization And Operational Agility,,,blog.html,<li>
 body.blog.li.2,Blog,,,blog.html,<li>
-body.blog.li.20,Thales Annual Report Escalating Ransomware Attacks And Cloud Data Risks Sound Digital Sovereignty Alarm,,,blog.html,<li>
-body.blog.li.21,TCO In Cloud Computing A Comprehensive Cost Analysis For Business Decision,,,blog.html,<li>
-body.blog.li.22,Sustainability And Telecommunications Environmental Impact And The Role Of Cloud,,,blog.html,<li>
-body.blog.li.23,Public Private Hybrid And Multicloud Understanding The Different Options,,,blog.html,<li>
-body.blog.li.24,Optimizing Storage Space In Cloud Computing Reduce Costs And Carbon Emissions,,,blog.html,<li>
-body.blog.li.25,Kyndryl Guiding Innovation And Business Transformation Through Cloud,,,blog.html,<li>
-body.blog.li.26,Keep Your Business Secure The Importance Of Cloud Backup,,,blog.html,<li>
-body.blog.li.27,Italys National Cloud,,,blog.html,<li>
-body.blog.li.28,Harnessing Computing Power And Unused Resource Exchange In Cloud Computing,,,blog.html,<li>
-body.blog.li.29,Green Data Reducing The Environmental Impact Of Cloud Computing,,,blog.html,<li>
-body.blog.li.3,The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk,,,blog.html,<li>
-body.blog.li.30,Exploring The Three Types Of Cloud Services IaaS PaaS And SaaS,,,blog.html,<li>
-body.blog.li.31,Exploring The 4 Types Of Cloud Storage Versatility Convenience And Borderless Security,,,blog.html,<li>
-body.blog.li.32,Empowering Businesses With Cloud Servers In The Digital Age,,,blog.html,<li>
-body.blog.li.33,Elemento The Sustainable Cloud Solution For Your Business,,,blog.html,<li>
-body.blog.li.34,Elemento Guiding Sustainable Innovation And Quality Education,,,blog.html,<li>
-body.blog.li.35,Edge Computing Insights From Gartner Research,,,blog.html,<li>
-body.blog.li.36,Datacenters An Inevitable Transformation,,,blog.html,<li>
-body.blog.li.37,Data Spaces The Value Of Connected Data,,,blog.html,<li>
-body.blog.li.38,Common Mistakes And How To Avoid Them In Creating A Cloud Strategy Gartners Recommendations,,,blog.html,<li>
-body.blog.li.39,Cloud Zero Touch Operations Perspectives And Challenges Of Full Automation In Cloudops,,,blog.html,<li>
-body.blog.li.4,"The Future of Cloud: What &quot;Cloud&quot; Really Means, Why It&#x27;s Centralized, and What Comes Next",,,blog.html,<li>
-body.blog.li.40,Cloud Migration Challenge Or Opportunity,,,blog.html,<li>
-body.blog.li.41,Cloud Computing A Revolutionary Transformation For Your Business A46F1,,,blog.html,<li>
-body.blog.li.42,Cloud Computing A Revolutionary Transformation For Your Business,,,blog.html,<li>
-body.blog.li.43,Cloud Computing Challenges In 2023 What To Expect,,,blog.html,<li>
-body.blog.li.44,Cloud Computing And Smart Working Revolutioning The Work Environment,,,blog.html,<li>
-body.blog.li.45,Cloud Scalability,,,blog.html,<li>
-body.blog.li.46,Cloud Gaming The Revolution Of Video Games,,,blog.html,<li>
-body.blog.li.47,Achieving Optimal Data Protection Overcoming Limitations Of Traditional Cloud Storage Services,,,blog.html,<li>
-body.blog.li.48,Accelerate Simplify And Save Elemento Is The Cloud Revolution For Your Business,,,blog.html,<li>
-body.blog.li.49,7 Cloud Curiorities,,,blog.html,<li>
-body.blog.li.5,Within 2026 Cloud Security Will Be Manager By Socs Trend Micros Predictions,,,blog.html,<li>
-body.blog.li.6,What Is Cloud Computing,,,blog.html,<li>
-body.blog.li.7,Unveiling The Power Of The Cloud Differences Between Cloud Storage And Cloud Computing,,,blog.html,<li>
-body.blog.li.8,The Triumph Of Cloud Computing Reaching 1 000 Billion In Revenues By 2027,,,blog.html,<li>
-body.blog.li.9,The New Cloud For Cultural Heritage Higital Transformation Serving Safeguarding,,,blog.html,<li>
+body.blog.li.20,The 5Rs Powerful Cloud Migration Strategies,,,blog.html,<li>
+body.blog.li.21,Thales Annual Report Escalating Ransomware Attacks And Cloud Data Risks Sound Digital Sovereignty Alarm,,,blog.html,<li>
+body.blog.li.22,TCO In Cloud Computing A Comprehensive Cost Analysis For Business Decision,,,blog.html,<li>
+body.blog.li.23,Sustainability And Telecommunications Environmental Impact And The Role Of Cloud,,,blog.html,<li>
+body.blog.li.24,Public Private Hybrid And Multicloud Understanding The Different Options,,,blog.html,<li>
+body.blog.li.25,Optimizing Storage Space In Cloud Computing Reduce Costs And Carbon Emissions,,,blog.html,<li>
+body.blog.li.26,Kyndryl Guiding Innovation And Business Transformation Through Cloud,,,blog.html,<li>
+body.blog.li.27,Keep Your Business Secure The Importance Of Cloud Backup,,,blog.html,<li>
+body.blog.li.28,Italys National Cloud,,,blog.html,<li>
+body.blog.li.29,Harnessing Computing Power And Unused Resource Exchange In Cloud Computing,,,blog.html,<li>
+body.blog.li.3,"Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs",,,blog.html,<li>
+body.blog.li.30,Green Data Reducing The Environmental Impact Of Cloud Computing,,,blog.html,<li>
+body.blog.li.31,Exploring The Three Types Of Cloud Services IaaS PaaS And SaaS,,,blog.html,<li>
+body.blog.li.32,Exploring The 4 Types Of Cloud Storage Versatility Convenience And Borderless Security,,,blog.html,<li>
+body.blog.li.33,Empowering Businesses With Cloud Servers In The Digital Age,,,blog.html,<li>
+body.blog.li.34,Elemento The Sustainable Cloud Solution For Your Business,,,blog.html,<li>
+body.blog.li.35,Elemento Guiding Sustainable Innovation And Quality Education,,,blog.html,<li>
+body.blog.li.36,Edge Computing Insights From Gartner Research,,,blog.html,<li>
+body.blog.li.37,Datacenters An Inevitable Transformation,,,blog.html,<li>
+body.blog.li.38,Data Spaces The Value Of Connected Data,,,blog.html,<li>
+body.blog.li.39,Common Mistakes And How To Avoid Them In Creating A Cloud Strategy Gartners Recommendations,,,blog.html,<li>
+body.blog.li.4,The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk,,,blog.html,<li>
+body.blog.li.40,Cloud Zero Touch Operations Perspectives And Challenges Of Full Automation In Cloudops,,,blog.html,<li>
+body.blog.li.41,Cloud Migration Challenge Or Opportunity,,,blog.html,<li>
+body.blog.li.42,Cloud Computing A Revolutionary Transformation For Your Business A46F1,,,blog.html,<li>
+body.blog.li.43,Cloud Computing A Revolutionary Transformation For Your Business,,,blog.html,<li>
+body.blog.li.44,Cloud Computing Challenges In 2023 What To Expect,,,blog.html,<li>
+body.blog.li.45,Cloud Computing And Smart Working Revolutioning The Work Environment,,,blog.html,<li>
+body.blog.li.46,Cloud Scalability,,,blog.html,<li>
+body.blog.li.47,Cloud Gaming The Revolution Of Video Games,,,blog.html,<li>
+body.blog.li.48,Achieving Optimal Data Protection Overcoming Limitations Of Traditional Cloud Storage Services,,,blog.html,<li>
+body.blog.li.49,Accelerate Simplify And Save Elemento Is The Cloud Revolution For Your Business,,,blog.html,<li>
+body.blog.li.5,"The Future of Cloud: What &quot;Cloud&quot; Really Means, Why It&#x27;s Centralized, and What Comes Next",,,blog.html,<li>
+body.blog.li.50,7 Cloud Curiorities,,,blog.html,<li>
+body.blog.li.6,Within 2026 Cloud Security Will Be Manager By Socs Trend Micros Predictions,,,blog.html,<li>
+body.blog.li.7,What Is Cloud Computing,,,blog.html,<li>
+body.blog.li.8,Unveiling The Power Of The Cloud Differences Between Cloud Storage And Cloud Computing,,,blog.html,<li>
+body.blog.li.9,The Triumph Of Cloud Computing Reaching 1 000 Billion In Revenues By 2027,,,blog.html,<li>
 body.blog.p.1,"Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community. Learn about our team and mission and explore our product solutions .",,,blog.html,<p>
 body.blog.ui.1,Read. Learn. Discover.,,,blog.html,class
 body.blog.ui.2,Expert,,,blog.html,class
@@ -1305,6 +1535,140 @@ body.brand-guidelines.h3.6,Non-brand colours,,,brand-guidelines.html,<h3>
 body.brand-guidelines.h3.7,Outline only,,,brand-guidelines.html,<h3>
 body.brand-guidelines.h3.8,Stretch or squeeze,,,brand-guidelines.html,<h3>
 body.brand-guidelines.h3.9,Tilt or rotate,,,brand-guidelines.html,<h3>
+body.brand-guidelines.it.figcaption.1,"Area di rispetto del simbolo (griglia). Una colonna o riga = 1× l'altezza del simbolo ( x = ). Il segno è al centro ; le celle agli angoli mostrano un simbolo tenue come riferimento di scala; mantieni libere le celle ai bordi . In produzione, l'area di rispetto minima resta 2× l'altezza del segno su tutti i lati (e per il payoff completo), come nella regola sopra.",,,brand-guidelines.it.html,<figcaption>
+body.brand-guidelines.it.h1.1,Linee guida del brand,,,brand-guidelines.it.html,<h1>
+body.brand-guidelines.it.h2.1,Utilizzo del brand Elemento,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.10,Materiali per stampa o partner,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.2,Logo,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.3,Area di rispetto e scalabilità,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.4,Usi non corretti,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.5,Utilizzo in partnership,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.6,Palette colori,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.7,Tipografia,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.8,"Identità, pattern e immagini",,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h2.9,Nomi dei prodotti,,,brand-guidelines.it.html,<h2>
+body.brand-guidelines.it.h3.1,Payoff orizzontale,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.10,Effetti,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.11,Tipografia e simbolo non allineati,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.12,Colori primari,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.13,Secondari — prodotto,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.14,Secondari — digitale,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.15,Extra,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.16,Red Hat Display,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.17,Argent Pixel Italic,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.18,Red Hat Text,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.19,Red Hat Mono,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.2,Payoff verticale,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.20,Pattern,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.21,Icone,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.22,Fotografia e art direction,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.23,Elemento,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.24,Marchi prodotto,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.3,Solo simbolo,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.4,Area di rispetto,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.5,Fasce di larghezza del logo,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.6,Colori non di brand,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.7,Solo contorno,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.8,Allungamento o compressione,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.h3.9,Inclinazione o rotazione,,,brand-guidelines.it.html,<h3>
+body.brand-guidelines.it.li.1,Home,,,brand-guidelines.it.html,<li>
+body.brand-guidelines.it.li.2,Linee guida del brand,,,brand-guidelines.it.html,<li>
+body.brand-guidelines.it.li.3,"Area di rispetto: mantieni un margine su tutti i lati pari al doppio dell'altezza del logo (stessa regola per la versione payoff e per il simbolo da solo). Non avvicinare testo, foto o elementi UI al segno.",,,brand-guidelines.it.html,<li>
+body.brand-guidelines.it.li.4,Altre combinazioni approvate se necessario: Starter Yellow su campo chiaro (es. Crystal White) — usa la stessa tecnica a maschera descritta sotto. Non introdurre colori al di fuori di questo sistema.,,,brand-guidelines.it.html,<li>
+body.brand-guidelines.it.li.5,"Non deformare, contornare, inclinare, aggiungere ombre o bagliori. Wordmark e simbolo devono usare lo stesso trattamento cromatico in un dato layout.",,,brand-guidelines.it.html,<li>
+body.brand-guidelines.it.p.1,"Presenta Elemento in modo coerente: uso del logo, colori principali, tipografia e nomenclatura dei prodotti.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.10,Starter Yellow su Void Black Preferito,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.11,Inchiostro #FFA600 · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.12,Payoff orizzontale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.13,Crystal White su Void Black,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.14,Inchiostro #F8F8FF · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.15,Payoff orizzontale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.16,Void Black su Crystal White,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.17,Inchiostro #16161D · campo #F8F8FF,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.18,"Stesso lockup, impilato",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.19,Payoff verticale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.2,"Mantieni l'identità chiara, leggibile e allineata al sito pubblico",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.20,Starter Yellow su Void Black Preferito,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.21,Inchiostro #FFA600 · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.22,Payoff verticale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.23,Crystal White su Void Black,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.24,Inchiostro #F8F8FF · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.25,Payoff verticale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.26,Void Black su Crystal White,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.27,Inchiostro #16161D · campo #F8F8FF,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.28,Senza wordmark,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.29,Solo simbolo,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.3,"Queste linee guida sono allineate alle ufficiali Branding Guidelines — Elemento Modular Cloud (logo, marchio, tipografia, colore, immagini). Riassumono le regole per l'uso web e da parte dei partner. In caso di dubbio, fai riferimento alla homepage e alla pagina Chi siamo , e preserva le proporzioni di ciascun segno.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.30,Starter Yellow su Void Black Preferito,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.31,Inchiostro #FFA600 · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.32,Solo simbolo,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.33,Crystal White su Void Black,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.34,Inchiostro #F8F8FF · campo #16161D,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.35,Solo simbolo,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.36,Void Black su Crystal White,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.37,Inchiostro #16161D · campo #F8F8FF,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.38,Dalle linee guida ufficiali del logo,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.39,L'area di rispetto minima attorno al logo o al simbolo è pari al doppio dell'altezza del segno su ogni lato (talvolta descritta come «raddoppiare l'altezza»). Il lockup payoff segue la stessa regola.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.4,"Per marchio e testi legali: segui le linee guida complete e il parere legale per le note ®, il territorio e l'uso contrattuale.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.40,"Ogni fascia definisce una larghezza massima per stampa e schermo e il lockup da usare a quella scala (payoff completo, wordmark orizzontale o solo simbolo).",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.41,Non ridimensionare il payoff completo nella fascia piccola — passa al simbolo. Abbina inchiostro e campo ai colori della sezione Logo sopra.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.42,Vietato — esempi dalle linee guida (non esaustivo),,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.43,Il logo non deve usare colori al di fuori della palette di identità.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.44,Il logo non deve essere usato come contorno vuoto.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.45,"Non deformare, allungare o comprimere il segno.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.46,"Non inclinare, ruotare o distorcere il logo.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.47,"Niente luci, ombre portate o smussi sul lockup.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.48,Il logotipo non deve usare un colore diverso dal simbolo.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.49,"Applica il buon senso: se compromette la leggibilità o non assomiglia ai file master, non pubblicarlo.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.5,"Segno, spaziatura e contrasto",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.50,Layout co-branding,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.51,"Quando compare accanto a un'altra azienda, concedi a entrambi i segni un'adeguata area di rispetto e un peso visivo equilibrato. Una disposizione tipica è: Partner — Elemento , senza fondere o sovrapporre i lockup.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.52,Richiedi il materiale partnership completo a hello@elemento.cloud per template e lockup approvati.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.53,Colori primari e secondari del brand,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.54,Usali per primi per massima riconoscibilità. Il tema del sito usa anche neutri vicini (es. #1A1C20 per il testo) — abbina i primari del brand a un contrasto accessibile.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.55,I token UI prodotto su elemento.cloud possono differire leggermente; considera questa pagina come riferimento colore marketing e css/themes.css per l'implementazione.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.56,Stack tipografico del brand (con nota sul sito live),,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.57,I titoli usano Red Hat Display (spesso Extrabold). Parole chiave all'interno dei titoli possono usare Argent Pixel Italic ( Connary Fagen — Argent Pixel ). Il corpo testo deve usare Red Hat Text — non sostituire Display per testi lunghi. Il codice usa Red Hat Mono ( Google Fonts ). Le icone su elemento.cloud abbinano Font Awesome a un webfont Pixel Icon Library incluso per glifi in stile pixel (classi .hn ; file in assets/font/PixelIconLibrary/ ). Verifica la licenza di ciascuna fonte prima di riutilizzarla o ridistribuirla.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.58,ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.59,Titoli — le linee guida raccomandano Extrabold. Google Fonts .,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.6,"Preferenza di layout: usa il payoff orizzontale quando possibile (wordmark, tagline e ® ). Quando lo spazio è limitato — header mobile, colonne strette — usa invece il lockup del payoff verticale . Per avatar, favicon e UI compatta, usa il simbolo da solo (senza wordmark).",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.60,Evidenza all'interno dei titoli,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.61,Accento solo nei titoli. Argent Pixel è licenziato da Connary Fagen; questo sito lo include per trattamenti selezionati.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.62,Il corpo testo deve restare funzionale e altamente leggibile. Red Hat Text è ottimizzato per i paragrafi — geometria diversa da Display.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.63,Font di corpo canonico del brand secondo le linee guida. elemento.cloud usa ancora Open Sans in molti template; i nuovi lavori dovrebbero allinearsi a Red Hat Text nel tempo.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.64,nucleus cluster status api.elemento.cloud/v1,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.65,"Codice, esempi CLI e UI tecnica.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.66,"Pattern, icone e fotografia",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.67,"L'identità visiva usa pattern ispirati alla «forza del cloud» — motivi dinamici, vicini alla fisica. Usa i file pattern approvati dal brand kit; non ridisegnarli a memoria.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.68,"Questo sito implementa icone UI e marketing con Font Awesome e accenti in stile pixel tramite il webfont Pixel Icon Library incluso (classi icona .hn in assets/font/PixelIconLibrary/ ). Considera questa coppia lo standard per elemento.cloud ; evita famiglie di icone terze ad hoc. Mantieni tratto, raggio degli angoli e uso del colore coerenti con il set scelto.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.69,"Retro-futuro — concetti astratti, immagini atmosferiche o di ricerca spaziale. Momenti di team — persone e cultura per il tono di voce. Immagini in movimento — lunga esposizione e scatti dinamici per l'energia. Evita stock generico che contraddica queste tre direttrici.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.7,"La palette del logo definisce tre colori d'inchiostro — Starter Yellow #FFA600 , Crystal White #F8F8FF e Void Black #16161D — sul campo appropriato. Ogni variante qui sotto mostra questi inchiostri sul campo corretto: payoff orizzontale , payoff verticale , poi solo simbolo (Starter Yellow su Void Black è preferito).",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.70,Ortografia e maiuscole,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.71,"Nome dell'azienda e della piattaforma: Elemento (minuscolo nel corpo testo; maiuscole iniziali nei titoli come sul sito). Quando serve la riga legale completa con Modular Cloud e ® , usa il lockup payoff orizzontale o verticale in base allo spazio disponibile.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.72,"Atomos , Electros e Atomosphere — capitalizza come nomi propri. Usa l'SVG di ciascun prodotto da Tutti i prodotti accanto al nome quando possibile.",,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.73,Scrivi a hello@elemento.cloud per file ad alta risoluzione o revisione co-marketing.,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.8,Wordmark + tagline + ®,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.p.9,Payoff orizzontale,,,brand-guidelines.it.html,<p>
+body.brand-guidelines.it.td.1,Grande,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.10,fino a 10 mm,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.11,fino a 30 px,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.12,"Solo simbolo — favicon, icone app, UI stretta.",,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.2,fino a 50 mm,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.3,fino a 500 px,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.4,"Payoff orizzontale completo — wordmark, tagline e ®.",,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.5,Media,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.6,fino a 35 mm,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.7,fino a 250 px,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.8,Wordmark orizzontale — quando il payoff completo è troppo largo.,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.td.9,Piccola,,,brand-guidelines.it.html,<td>
+body.brand-guidelines.it.th.1,Fascia,,,brand-guidelines.it.html,<th>
+body.brand-guidelines.it.th.2,Stampa,,,brand-guidelines.it.html,<th>
+body.brand-guidelines.it.th.3,Schermo,,,brand-guidelines.it.html,<th>
+body.brand-guidelines.it.th.4,Lockup,,,brand-guidelines.it.html,<th>
+body.brand-guidelines.it.ui.1,"Stampa, partner e creator",,,brand-guidelines.it.html,class
+body.brand-guidelines.it.ui.2,Presenta Elemento,,,brand-guidelines.it.html,class
+body.brand-guidelines.it.ui.3,Contatti,,,brand-guidelines.it.html,class
+body.brand-guidelines.it.ui.4,Chi siamo,,,brand-guidelines.it.html,class
 body.brand-guidelines.li.1,Home,,,brand-guidelines.html,<li>
 body.brand-guidelines.li.2,Brand guidelines,,,brand-guidelines.html,<li>
 body.brand-guidelines.li.3,"Clear space: keep a margin on all sides equal to twice the logo height (same rule for the payoff version and for the symbol alone). Do not crowd type, photos, or UI against the mark.",,,brand-guidelines.html,<li>
@@ -3024,7 +3388,7 @@ CMS.solutions.regulated.features.subtitle,Everything you need to meet regulatory
 CMS.solutions.regulated.features.title,Compliance Features,Compliance Funzionalità,,CMS/solutions/regulated.json,
 CMS.solutions.regulated.hero.primaryCTA.text,Start Now,Inizia ora,,CMS/solutions/regulated.json,
 CMS.solutions.regulated.hero.secondaryCTA.text,Explore Security Platform,Esplora Security Platform,,CMS/solutions/regulated.json,
-CMS.solutions.regulated.hero.subtitle,"Elemento provides enterprise-grade security with built-in compliance for healthcare, finance, and other regulated industries.","Elemento fornisce sicurezza di livello aziendale con conformità integrata per i settori sanitario, finanziario e altri settori regolamentati.",,CMS/solutions/regulated.json,
+CMS.solutions.regulated.hero.subtitle,"Elemento provides enterprise-grade security with built-in compliance for healthcare, finance, and other regulated industries.","Elemento fornisce sicurezza di livello enterprise con conformità integrata per i settori sanitario, finanziario e altri settori regolamentati.",,CMS/solutions/regulated.json,
 CMS.solutions.regulated.hero.tagline,Regulated Environments,Ambienti regolamentati,,CMS/solutions/regulated.json,
 CMS.solutions.regulated.hero.title,Run Sensitive Workloads with Full Data Governance,Esegui carichi di lavoro sensibili con la governance completa dei dati,,CMS/solutions/regulated.json,
 CMS.solutions.regulated.painPoints.items.0.description,Complex requirements for data residency and sovereignty across different jurisdictions,,,CMS/solutions/regulated.json,
@@ -3190,7 +3554,7 @@ CMS.solutions.vmware-alternative.useCase.subtitle,From legacy VMware infrastruct
 CMS.solutions.vmware-alternative.useCase.title,VMware Migration Process,Processo di migrazione di VMware,,CMS/solutions/vmware-alternative.json,
 CMS.success-stories.0.author,Marco Brussino,Marco Brussino,,CMS/success-stories.json,
 CMS.success-stories.0.company,OLCI Engineering,Ingegneria OLCI,,CMS/success-stories.json,
-CMS.success-stories.0.quote,Elemento allowed us to move away from a rigid appliance-based system to a flexible Linux and hybrid cloud architecture. We now have disaster recovery without vendor lock-in.,Elemento ci ha permesso di passare da un sistema rigido basato su appliance a un'architettura Linux flessibile e cloud ibrida. Ora disponiamo del ripristino di emergenza senza vincoli al fornitore.,,CMS/success-stories.json,
+CMS.success-stories.0.quote,Elemento allowed us to move away from a rigid appliance-based system to a flexible Linux and hybrid cloud architecture. We now have disaster recovery without vendor lock-in.,Elemento ci ha permesso di passare da un sistema rigido basato su appliance a un'architettura Linux flessibile e cloud ibrida. Ora disponiamo del ripristino di emergenza senza vincoli con i fornitori.,,CMS/success-stories.json,
 CMS.success-stories.0.role,IT Manager,Responsabile IT,,CMS/success-stories.json,
 CMS.success-stories.1.author,Alessandra Rostagno,Alessandra Rostagno,,CMS/success-stories.json,
 CMS.success-stories.1.company,Marcopolo Spa,Marcopolo Terme,,CMS/success-stories.json,
@@ -3224,7 +3588,7 @@ CMS.team.10.role,Software Developer,Sviluppatore software,,CMS/team.json,
 CMS.team.11.bio,"MSc Cloud Engineer @PoliTO, passionate about computer science, innovation, and economics. Always seeking new challenges and growth opportunities.","Master in Cloud Engineer @PoliTO, appassionato di informatica, innovazione ed economia. Sempre alla ricerca di nuove sfide e opportunità di crescita.",,CMS/team.json,
 CMS.team.11.highlight,MSc Cloud Engineering,Master in Ingegneria del Cloud,,CMS/team.json,
 CMS.team.11.role,Cloud Software Developer,Sviluppatore cloud,,CMS/team.json,
-CMS.team.12.bio,"Engineer and computer science teacher. Passionate about mountains, travel and innovation. Always curious, always learning","Ingegnere e docente di informatica. Appassionato di montagna, viaggi e innovazione. Sempre curioso, sempre in apprendimento",,CMS/team.json,
+CMS.team.12.bio,"Engineer and computer science teacher. Passionate about mountains, travel and innovation. Always curious, always learning","Ingegnere e docente di informatica. Appassionata di montagna, viaggi e innovazione. Sempre curiosa, sempre in apprendimento",,CMS/team.json,
 CMS.team.12.highlight,PoliTo Master's Student,Studente del Master PoliTo,,CMS/team.json,
 CMS.team.12.role,Business Analyst,Business analyst,,CMS/team.json,
 CMS.team.13.bio,I am a computer science student who loves music and low-level programming. I've been fortunate to work with Elemento since 2023.,Sono uno studente di informatica che ama la musica e la programmazione di basso livello. Ho avuto la fortuna di lavorare con Elemento dal 2023.,,CMS/team.json,
@@ -3239,40 +3603,40 @@ CMS.team.15.role,Software Developer,Sviluppatore software,,CMS/team.json,
 CMS.team.16.bio,"MSc Cybersecurity student @PoliTO, passionate about anything that works autonomously. If I don't understand how it works, I simply take it apart. Yes, I'm curious too!","Studente magistrale in Cybersecurity @PoliTO, appassionato di tutto ciò che funziona in autonomia. Se non capisco come funziona, lo smonto semplicemente. Sì, sono curioso anch'io!",,CMS/team.json,
 CMS.team.16.highlight,MSc Cybersecurity student,Studente magistrale in Cybersecurity,,CMS/team.json,
 CMS.team.16.role,Cloud Software Developer,Sviluppatore cloud,,CMS/team.json,
-CMS.team.17.bio,"Imaginative and curious about how things work and how they’re thought, I’m passionate about nature, video games and photography.","Fantasioso e curioso di come funzionano le cose e di come vengono pensate, sono appassionato di natura, videogiochi e fotografia.",,CMS/team.json,
+CMS.team.17.bio,"Imaginative and curious about how things work and how they’re thought, I’m passionate about nature, video games and photography.","Fantasiosa e curiosa di come funzionano le cose e di come vengono pensate, sono appassionata di natura, videogiochi e fotografia.",,CMS/team.json,
 CMS.team.17.role,Support Specialist,Specialist supporto,,CMS/team.json,
 CMS.team.2.bio,"I'm one of the lucky few who turned their passion into a career. I started out as a software developer, and along the way, I fell in love with the more tangible side of IT: hardware infrastructure.","Sono uno dei pochi fortunati che ha trasformato la propria passione in una carriera. Ho iniziato come sviluppatore di software e, lungo il percorso, mi sono innamorato del lato più tangibile dell'IT: l'infrastruttura hardware.",,CMS/team.json,
 CMS.team.2.role,CSO – Chief Sales Officer,CSO – Direttore vendite,,CMS/team.json,
 CMS.team.3.bio,"With experience in M&A, corporate strategy and venture building, and a background in economics, entrepreneurship and innovation. I bridge finance and tech at Elemento.","Con esperienza in fusioni e acquisizioni, strategia aziendale e venture building, e un background in economia, imprenditorialità e innovazione. Collego finanza e tecnologia presso Elemento.",,CMS/team.json,
 CMS.team.3.highlight,MSc Economics and Management of Innovation and Technology @ Bocconi University,Master in Economia e Management dell'Innovazione e della Tecnologia @ Università Bocconi,,CMS/team.json,
 CMS.team.3.role,CFO – Chief Financial Officer,CFO – Direttore finanziario,,CMS/team.json,
-CMS.team.4.bio,"CMO at Elemento Cloud, bridging strategy, technology, and creativity. I am always looking for the next big thing in digital communication. I focus on humanizing and translating our tech, into impactful communication. My mission is to make our cloud solutions feel as intuitive and accessible as they are powerful.","CMO presso Elemento Cloud, unendo strategia, tecnologia e creatività. Sono sempre alla ricerca della prossima grande novità nella comunicazione digitale. Mi concentro sull'umanizzazione e sulla traduzione della nostra tecnologia in una comunicazione di grande impatto. La mia missione è rendere le nostre soluzioni cloud tanto intuitive e accessibili quanto potenti.",,CMS/team.json,
+CMS.team.4.bio,"CMO at Elemento Cloud, bridging strategy, technology, and creativity. I am always looking for the next big thing in digital communication. I focus on humanizing and translating our tech, into impactful communication. My mission is to make our cloud solutions feel as intuitive and accessible as they are powerful.","CMO presso Elemento Cloud, unisco strategia, tecnologia e creatività. Sono sempre alla ricerca della prossima grande novità nella comunicazione digitale. Mi concentro sulla traduzione della nostra tecnologia in una comunicazione di grande impatto. La mia missione è rendere le nostre soluzioni cloud tanto intuitive e accessibili quanto potenti.",,CMS/team.json,
 CMS.team.4.highlight,Digital Communication Expert,Esperto di comunicazione digitale,,CMS/team.json,
 CMS.team.4.role,CMO – Chief Marketing Officer,CMO – Direttore marketing,,CMS/team.json,
-CMS.team.5.bio,"Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.","Ha iniziato con la chimica, si è avventurato nella fisica, ora è uno sviluppatore. Si scopre che stavo semplicemente passando da un puzzle all'altro. Sempre curioso, sempre costruendo, sempre imparando.",,CMS/team.json,
+CMS.team.5.bio,"Started with chemistry, ventured into physics, now a developer. Turns out, I was just moving from one puzzle to the next. Always curious, always building, always learning.","Ho iniziato con la chimica, mi sono avventurato nella fisica, ora sono uno sviluppatore. Si scopre che stavo semplicemente passando da un puzzle all'altro. Sempre curioso, sempre costruendo, sempre imparando.",,CMS/team.json,
 CMS.team.5.highlight,Dev & Maker,Sviluppatore e creatore,,CMS/team.json,
 CMS.team.5.role,R&D Leader - #1 Employee,Responsabile R&S - primo dipendente,,CMS/team.json,
 CMS.team.6.bio,Shaping visuals and identities always seeking the key to reinterpreting the ordinary,Modellare immagini e identità cercando sempre la chiave per reinterpretare l'ordinario,,CMS/team.json,
 CMS.team.6.highlight,Graphic Design Degree,Laurea in Progettazione Grafica,,CMS/team.json,
 CMS.team.6.role,Art Director,Direttore artistico,,CMS/team.json,
-CMS.team.7.bio,"Event Manager at Elemento Cloud, I am responsible for the organization and execution of our events. I am a musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.","Event Manager presso Elemento Cloud, sono responsabile dell'organizzazione e dell'esecuzione dei nostri eventi. Sono un musicologo, musicista ed educatore con una passione per le idee audaci, i social media e tutto ciò che è fucsia.",,CMS/team.json,
+CMS.team.7.bio,"Event Manager at Elemento Cloud, I am responsible for the organization and execution of our events. I am a musicologist, musician, and educator with a passion for bold ideas, social media, and all things fuchsia.","Event Manager presso Elemento Cloud, sono responsabile dell'organizzazione e dell'esecuzione dei nostri eventi. Sono musicologa, musicista ed educatrice con una passione per le idee audaci, i social media e tutto ciò che è fucsia.",,CMS/team.json,
 CMS.team.7.highlight,Musicologist & Communication Expert,Musicologo ed esperto di comunicazione,,CMS/team.json,
 CMS.team.7.role,Event Manager,Responsabile eventi,,CMS/team.json,
 CMS.team.8.bio,"Passionate programmer with a love for computer science and video games, driven by the desire to understand how things work","Programmatore appassionato con la passione per l'informatica e i videogiochi, spinto dal desiderio di capire come funzionano le cose",,CMS/team.json,
 CMS.team.8.role,Cloud Software Developer,Sviluppatore cloud,,CMS/team.json,
 CMS.team.9.bio,"Software Engineer specialized in artificial intelligence and data. Interested in data processing and acquisition, model optimization, and AI integration.","Ingegnere informatico specializzato in intelligenza artificiale e dati. Interessato all'elaborazione e all'acquisizione dei dati, all'ottimizzazione dei modelli e all'integrazione dell'intelligenza artificiale.",,CMS/team.json,
 CMS.team.9.role,Cloud Software Developer,Sviluppatore cloud,,CMS/team.json,
-CMS.videos.0.title,The Elemento Vision,La Visione di Elemento,,CMS/videos.json,
-CMS.videos.1.title,The C4 Protocol,Il Protocollo C4,,CMS/videos.json,
-CMS.videos.10.title,Hyper-V vs AtomOS Comparison,Confronto fra Hyper-V e AtomOS,,CMS/videos.json,
-CMS.videos.2.title,What is AtomOS?,"AtomOS, Cosa è?",,CMS/videos.json,
-CMS.videos.3.title,AtomOS Tutorial,AtomOS Tutorial,,CMS/videos.json,
-CMS.videos.4.title,AtomOS Benefits,AtomOS Benefits,,CMS/videos.json,
-CMS.videos.5.title,What is Electros?,"Electros, Cosa è?",,CMS/videos.json,
-CMS.videos.6.title,Electros Tutorial,Electros Tutorial,,CMS/videos.json,
-CMS.videos.7.title,Electros Benefits,I Benefit di Electros,,CMS/videos.json,
-CMS.videos.8.title,VMware vs AtomOS Comparison,Confronto fra VMware e AtomOS,,CMS/videos.json,
-CMS.videos.9.title,Proxmox vs AtomOS Comparison,Confronto fra Proxmox e AtomOS,,CMS/videos.json,
+CMS.videos-en.0.title,Elemento's Vision,,,CMS/videos-en.json,
+CMS.videos-en.1.title,C4 Protocol,,,CMS/videos-en.json,
+CMS.videos-en.10.title,AtomOS vs. Hyper-V,,,CMS/videos-en.json,
+CMS.videos-en.2.title,Discover Atom OS,,,CMS/videos-en.json,
+CMS.videos-en.3.title,AtomOS demo,,,CMS/videos-en.json,
+CMS.videos-en.4.title,AtomOS USPs,,,CMS/videos-en.json,
+CMS.videos-en.5.title,Discover Electros,,,CMS/videos-en.json,
+CMS.videos-en.6.title,Electros Demo,,,CMS/videos-en.json,
+CMS.videos-en.7.title,Electros USPs,,,CMS/videos-en.json,
+CMS.videos-en.8.title,AtomOS vs. VMware,,,CMS/videos-en.json,
+CMS.videos-en.9.title,AtomOS vs. Proxmox,,,CMS/videos-en.json,
 meta.404.description,The page you're looking for doesn't exist. Explore Elemento's cloud platform solutions or return to our homepage.,,,404.html,meta description
 meta.404.title,Page Not Found - 404 | Elemento Cloud Platform,,,404.html,meta title
 meta.about.description,"Learn about Elemento's mission to transform cloud infrastructure with vendor-neutral, cost-effective, and green computing solutions.",,,about.html,meta description
@@ -3375,12 +3739,16 @@ meta.blog-posts_2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-c
 meta.blog-posts_2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-centralized-and-what-comes-next.title,"The Future of Cloud: What &quot;Cloud&quot; Really Means, Why It&#x27;s Centralized, and What Comes Next | Elemento Blog",,,blog-posts/2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-centralized-and-what-comes-next.html,meta title
 meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.description,"After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",,,blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html,meta description
 meta.blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.title,The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk | Elemento Blog,,,blog-posts/2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html,meta title
+meta.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.description,"Cloud sovereignty is not just about data residency or choosing a European provider. Learn how CIOs, CTOs and CISOs can build practical cloud sovereignty through workload mapping, interoperability, AtomOS, Electros and freedom from vendor lock-in.",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,meta description
+meta.blog-posts_2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.title,"Cloud Sovereignty in Europe: How to Build Control, Portability and Freedom from Lock-in | Elemento Blog",,,blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html,meta title
 meta.blog-posts_404.title,Elemento,,,blog-posts/404.html,meta title
 meta.blog.description,"Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community. Stay updated with the latest in cloud technology.",,,blog.html,meta description
 meta.blog.title,Elemento | Blog | Cloud Computing Insights & Technology News,,,blog.html,meta title
 meta.bookings_meeting-landing-template.description,Book time with the Elemento team. Replace this description when you duplicate the template.,,,bookings/meeting-landing-template.html,meta description
 meta.bookings_meeting-landing-template.title,Schedule a meeting — Elemento,,,bookings/meeting-landing-template.html,meta title
 meta.brand-guidelines.description,"Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.",,,brand-guidelines.html,meta description
+meta.brand-guidelines.it.description,"Official Elemento brand guidelines: logo usage, color palette, typography, and product naming for press, partners, and creators.",,,brand-guidelines.it.html,meta description
+meta.brand-guidelines.it.title,"Elemento | Brand guidelines | Logo, colors &amp; typography",,,brand-guidelines.it.html,meta title
 meta.brand-guidelines.title,"Elemento | Brand guidelines | Logo, colors &amp; typography",,,brand-guidelines.html,meta title
 meta.compare-costs.description,Calculate how much you could save with AtomOS compared to VMware. Compare virtualization costs and discover enterprise-level reliability at a fraction of the price.,,,compare-costs.html,meta description
 meta.compare-costs.title,Compare Costs — AtomOS vs VMware | Elemento Cloud,,,compare-costs.html,meta title
@@ -3443,8 +3811,11 @@ meta.videos.description,"Watch Elemento keynotes, webinars, and product recordin
 meta.videos.title,"Elemento | Videos | Keynotes, Webinars &amp; Media",,,videos.html,meta title
 ui.banner.atomosDiscountAria,Grab today AtomOS: 150 euros off the first purchase,Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto,Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat,src/i18n/ui,
 ui.banner.atomosDiscountText,Grab today AtomOS - 150€ off the first purchase,Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto,Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat,src/i18n/ui,
+ui.blog.articleColumn,Article,Articolo,Article,src/i18n/ui,
 ui.blog.articlesLabel,articles,articoli,articles,src/i18n/ui,
+ui.blog.authorColumn,Author,Autore,Auteur,src/i18n/ui,
 ui.blog.byAuthor,By,Di,Par,src/i18n/ui,
+ui.blog.dateColumn,Date,Data,Date,src/i18n/ui,
 ui.blog.description,"Expert insights, industry news, and innovative stories from the Elemento team and cloud computing community.","Approfondimenti, notizie e storie dal team Elemento e dalla community del cloud computing.","Informations d'experts, actualités du secteur et histoires innovantes de l'équipe Elemento et de la communauté du cloud computing.",src/i18n/ui,
 ui.blog.emptyBody,Check back soon for new articles and insights.,Torna presto per nuovi articoli e approfondimenti.,Revenez bientôt pour de nouveaux articles et informations.,src/i18n/ui,
 ui.blog.emptyTitle,No Articles Yet,Nessun articolo,Aucun article pour l'instant,src/i18n/ui,
@@ -3496,7 +3867,7 @@ ui.nav.resources,Resources,Risorse,Ressources,src/i18n/ui,
 ui.nav.signup,Signup,Registrati,S'inscrire,src/i18n/ui,
 ui.nav.technology,Technology,Tecnologia,Technologie,src/i18n/ui,
 ui.nav.videos,Videos,Video,Vidéos,src/i18n/ui,
-ui.pages.about.description,"Learn about Elemento's mission to transform cloud infrastructure with vendor-neutral, cost-effective, and green computing solutions.","Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dal fornitore, convenienti ed ecologiche.","Découvrez la mission d'Elemento qui consiste à transformer l'infrastructure cloud avec des solutions informatiques indépendantes du fournisseur, rentables et écologiques.",src/i18n/ui,
+ui.pages.about.description,"Learn about Elemento's mission to transform cloud infrastructure with vendor-neutral, cost-effective, and green computing solutions.","Scopri la missione di Elemento di trasformare l'infrastruttura cloud con soluzioni informatiche indipendenti dai fornitori, convenienti ed ecologiche.","Découvrez la mission d'Elemento qui consiste à transformer l'infrastructure cloud avec des solutions informatiques indépendantes du fournisseur, rentables et écologiques.",src/i18n/ui,
 ui.pages.about.heroSubtitle,"Transforming cloud infrastructure with vendor-neutral, cost-effective, and sustainable computing.","Trasformiamo l'infrastruttura cloud con soluzioni indipendenti dal fornitore, sostenibili e convenienti.","Transformer l'infrastructure cloud avec des solutions neutres, durables et économiques.",src/i18n/ui,
 ui.pages.about.heroTitle,About Elemento,Chi siamo,À propos de Elemento,src/i18n/ui,
 ui.pages.about.title,Elemento | About | Cloud Platform Mission & Team,Elemento | Informazioni su | Missione e team della piattaforma cloud,Elemento | À propos | Mission et équipe de la plateforme cloud,src/i18n/ui,
@@ -3504,7 +3875,7 @@ ui.pages.contact.description,"Get in touch with Elemento for cloud infrastructur
 ui.pages.contact.heroSubtitle,"We're here to help with sales, support, and partnerships.","Siamo qui per vendite, supporto e partnership.","Nous sommes là pour vous aider avec les ventes, le support et les partenariats.",src/i18n/ui,
 ui.pages.contact.heroTitle,Contact us,Contattaci,Contactez-nous,src/i18n/ui,
 ui.pages.contact.title,Elemento | Contact | Get Support for Your Cloud Platform,Elemento | Contatto | Ottieni supporto per la tua piattaforma cloud,Elemento | Contacter | Obtenez de l'assistance pour votre plateforme cloud,src/i18n/ui,
-ui.pages.index.description,"Elemento is a vendor-neutral, cost-saving, green, high-performance, self-hostable cloud platform with infrastructure-as-code readiness.","Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabile con predisposizione per l'infrastruttura come codice.","Elemento est une plate-forme cloud indépendante du fournisseur, économique, écologique, hautes performances et auto-hébergable avec une préparation à l'infrastructure en tant que code.",src/i18n/ui,
+ui.pages.index.description,"Elemento is a vendor-neutral, cost-saving, green, high-performance, self-hostable cloud platform with infrastructure-as-code readiness.","Elemento è una piattaforma cloud indipendente dal fornitore, economica, ecologica, ad alte prestazioni e auto-ospitabili con predisposizione per l'infrastruttura come codice.","Elemento est une plate-forme cloud indépendante du fournisseur, économique, écologique, hautes performances et auto-hébergable avec une préparation à l'infrastructure en tant que code.",src/i18n/ui,
 ui.pages.index.heroSubtitle,"Vendor-neutral, cost-saving, green, high-performance, self-hostable cloud with infrastructure-as-code readiness.","Cloud indipendente dal fornitore, conveniente, sostenibile, ad alte prestazioni e auto-ospitabile, pronto per l'infrastructure as code.","Cloud neutre, économique, durable, performant et auto-hébergeable, prêt pour l'infrastructure as code.",src/i18n/ui,
 ui.pages.index.heroTitle,Unified private and public Cloud platform,Piattaforma cloud privata e pubblica unificata,Plateforme Cloud privée et publique unifiée,src/i18n/ui,
 ui.pages.index.title,Elemento | Unified private and public Cloud platform,Elemento | Piattaforma cloud privata e pubblica unificata,Elemento | Plateforme Cloud privée et publique unifiée,src/i18n/ui,

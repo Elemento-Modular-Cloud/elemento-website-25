@@ -5,6 +5,14 @@
   const TEXT_FIELDS = ['name', 'role', 'bio', 'highlight', 'description', 'title', 'subtitle', 'label', 'company', 'quote'];
   const LOCALES = ['en', 'it', 'fr'];
   const NON_EN_LOCALES = ['it', 'fr'];
+  /** First path segments that are site routes, not a GitHub Pages project prefix. */
+  const KNOWN_SITE_ROOTS = new Set([
+    'about', 'atomos', 'atomosphere', 'blog', 'blog-posts', 'bookings', 'brand-guidelines',
+    'careers', 'compare-costs', 'contact', 'editor', 'electros', 'forms', 'getintouch',
+    'grazie', 'install-atomos', 'orbital', 'products', 'provider-candidature', 'provider-success',
+    'signup', 'signup-success', 'solutions', 'technology', 'thank-you', 'videos', '404',
+    'assets', 'css', 'js', 'CMS', 'components',
+  ]);
 
   /** GitHub Pages project sites live under /repo-name/; custom domains do not. */
   function getSiteBase() {
@@ -13,7 +21,9 @@
     if (parts.length === 0) return '';
     if (parts.length >= 2 && NON_EN_LOCALES.includes(parts[1])) return `/${parts[0]}`;
     const first = parts[0];
-    if (NON_EN_LOCALES.includes(first) || first.endsWith('.html')) return '';
+    if (NON_EN_LOCALES.includes(first) || first.endsWith('.html') || KNOWN_SITE_ROOTS.has(first)) {
+      return '';
+    }
     return `/${first}`;
   }
 
