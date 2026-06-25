@@ -1447,6 +1447,7 @@
       "css/atmosphere.css",
       "css/planet-styles/planet-index.css",
       "css/home.css",
+      "css/components/home-hero.css",
       "css/rocket.css",
       "css/success-stories-carousel.css"
     ],
@@ -1454,7 +1455,9 @@
       "js/faq.js",
       "js/success-stories-carousel.js",
       "js/logo-carousel.js",
-      "js/atmosphere_hero.js"
+      "js/atmosphere_hero.js",
+      "js/hero-wow.js",
+      "js/metacloud-stack.js"
     ],
     "type": "legacy",
     "locales": [

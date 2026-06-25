@@ -1,0 +1,793 @@
+/* Hero Metacloud constellation */
+.hero-home {
+    flex-direction: column;
+}
+
+.hero-wow {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.hero-providers {
+    position: absolute;
+    inset: 0;
+}
+
+/* Link lines sit above CTAs but below cards and the headline hub. */
+.hero-links {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+    contain: layout style paint;
+}
+
+/* Card layer sits above link lines and CTAs, below the headline/hub. */
+.hero-cards {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    overflow: hidden;
+    contain: layout style paint;
+}
+
+/* Split hero content into two stacking layers at the hero root:
+   headline (10) > CTAs (5) > cards (3) > lines (2) > wow (1).
+   Cards orbit behind the headline copy — never over it; CTAs stay tappable above the orbit. */
+.hero-home .hero-container.hero-home__headline {
+    position: relative;
+    z-index: 10;
+    isolation: isolate;
+}
+
+.hero-home .hero-container.hero-home__cta {
+    position: relative;
+    z-index: 5;
+    margin-top: calc(-1 * var(--space-md));
+}
+
+.hero-home__headline .hero-content,
+.hero-home__cta .hero-content {
+    gap: var(--space-md);
+}
+
+/* Soft glow behind the Metacloud word acting as the hub */
+.hero-providers__glow {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 52vw;
+    max-width: 640px;
+    height: 36vh;
+    max-height: 420px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 166, 0, 0.18) 0%,
+        rgba(255, 166, 0, 0.06) 40%,
+        rgba(0, 0, 0, 0) 72%
+    );
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+/* Make the headline the visual hub: a boxed node that covers where every
+   connection line terminates. */
+.hero-home .hero-metacloud {
+    position: relative;
+    display: inline-block;
+    padding: 0.02em 0.2em;
+    border-radius: 14px;
+    color: #1b1303;
+    -webkit-text-fill-color: #1b1303;
+}
+
+.hero-home .hero-metacloud::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--accent-color, #ffa600) 88%, #fff),
+        var(--accent-color, #ffa600)
+    );
+    border: 1px solid color-mix(in srgb, var(--accent-color, #ffa600) 60%, #fff);
+    box-shadow:
+        0 16px 52px rgba(0, 0, 0, 0.5),
+        0 0 46px rgba(255, 166, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-home .hero-metacloud--hub-pulse::before {
+    border-color: color-mix(
+        in srgb,
+        #fff calc(var(--hub-pulse, 1) * 14%),
+        color-mix(in srgb, var(--accent-color, #ffa600) 60%, #fff)
+    );
+    box-shadow:
+        0 16px 52px rgba(0, 0, 0, 0.5),
+        0 0 calc(44px + 7px * var(--hub-pulse, 1)) rgba(255, 166, 0, calc(0.46 + 0.1 * var(--hub-pulse, 1)));
+}
+
+.hero-home .hero-content {
+    position: relative;
+}
+
+.hero-home .hero-content::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 116%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        ellipse at center,
+        var(--background-color) 0%,
+        rgba(0, 0, 0, 0) 58%
+    );
+    opacity: 0.55;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-home .hero-subtitle {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Connecting link lines (box -> Metacloud word) --- */
+.hero-link-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-link-base {
+    fill: none;
+    opacity: 0.12;
+}
+
+.hero-link {
+    fill: none;
+    stroke-linecap: round;
+    opacity: 0.45;
+    will-change: stroke-dashoffset;
+}
+
+/* Ephemeral workload migration segments (hero orbit). */
+.hero-migration-trail,
+.hero-migration-spark,
+.metacloud-migration-trail,
+.metacloud-migration-spark {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.hero-migration-trail,
+.metacloud-migration-trail {
+    stroke: var(--primary-color, #ffa600);
+    stroke-width: 1.6;
+    will-change: stroke-dasharray, opacity;
+}
+
+.hero-migration-spark,
+.metacloud-migration-spark {
+    stroke: #ffe566;
+    stroke-width: 2.2;
+    will-change: stroke-dashoffset, opacity;
+}
+
+/* --- Provider cards (positioned by JS via transform) --- */
+.provider-float {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.5rem;
+    border-radius: 13px;
+    /* Opaque glass — no backdrop-filter on moving nodes (very costly). */
+    background: var(--glassmorphism-background);
+    border: 1px solid var(--glassmorphism-border);
+    box-shadow: var(--glassmorphism-shadow);
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    will-change: transform, opacity;
+    contain: layout style paint;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.provider-float:hover {
+    border-color: color-mix(in srgb, var(--accent, var(--primary-color)) 65%, transparent);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.32);
+}
+
+/* Metacloud hub pulse — yellow highlight on card + connector. */
+.provider-float--hub-pulse {
+    border-color: color-mix(
+        in srgb,
+        var(--primary-color, #ffa600) calc(40% + var(--hub-pulse, 1) * 60%),
+        var(--glassmorphism-border)
+    );
+    box-shadow:
+        0 0 calc(16px + 22px * var(--hub-pulse, 1)) rgba(255, 166, 0, calc(0.28 + 0.32 * var(--hub-pulse, 1))),
+        var(--glassmorphism-shadow);
+}
+
+.provider-float__logo {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    font-size: 1.05rem;
+    color: var(--accent, var(--primary-color));
+    background: color-mix(in srgb, var(--accent, var(--primary-color)) 16%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent, var(--primary-color)) 30%, transparent);
+}
+
+.provider-float__img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+    display: block;
+}
+
+.provider-float__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.12;
+}
+
+.provider-float__text strong {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.provider-float__text small {
+    font-size: 0.66rem;
+    color: var(--text-secondary);
+}
+
+/* Hero orbit: 1.5× base card size in CSS only — JS never scales above 1. */
+.hero-wow .provider-float {
+    gap: 0.9rem;
+    padding: 0.75rem 1.2rem 0.75rem 0.75rem;
+    border-radius: 20px;
+}
+
+.hero-wow .provider-float__logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    font-size: 1.58rem;
+}
+
+.hero-wow .provider-float__img {
+    width: 32px;
+    height: 32px;
+}
+
+.hero-wow .provider-float__text strong {
+    font-size: 1.32rem;
+}
+
+.hero-wow .provider-float__text small {
+    font-size: 0.99rem;
+}
+
+/* Static / reduced-motion: JS sets a fixed opacity; kill the dash flow. */
+.hero-wow--static .hero-link {
+    opacity: 0.45;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-link {
+        animation: none !important;
+    }
+}
+
+/* Safari/WebKit: isolate SVG repaints from card layer; skip costly filters. */
+.hero-wow--safari .hero-links {
+    isolation: isolate;
+    contain: layout style paint;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.hero-wow--safari .hero-cards {
+    isolation: isolate;
+    contain: layout style;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.hero-wow--safari .provider-float {
+    contain: layout style;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hero-wow--safari .hero-link {
+    animation: none;
+    will-change: auto;
+}
+
+.hero-wow--safari .hero-providers__glow {
+    filter: none;
+    opacity: 0.85;
+}
+
+/* Small portrait phones: hide the constellation — copy and CTAs only. */
+@media (max-width: 768px) and (orientation: portrait) {
+    .hero-wow,
+    .hero-links,
+    .hero-cards {
+        display: none !important;
+    }
+}
+
+/* --- Mobile Metacloud stack (umbrella below hero when orbit is hidden) --- */
+.metacloud-stack {
+    display: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .metacloud-stack {
+        display: block;
+        padding: var(--space-lg) 0 var(--space-xl);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 166, 0, 0.05) 0%,
+            transparent 72%
+        );
+        border-bottom: 1px solid var(--glassmorphism-border);
+    }
+}
+
+.metacloud-stack__inner {
+    max-width: 24rem;
+    margin-inline: auto;
+}
+
+.metacloud-stack__lead {
+    margin: 0 auto var(--space-md);
+    max-width: 19rem;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.metacloud-stack__graph {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 0;
+    min-height: 20rem;
+    padding: 0.25rem 0;
+}
+
+.metacloud-stack__tier {
+    position: relative;
+    z-index: 2;
+}
+
+.metacloud-stack__tier--public {
+    margin-bottom: 0.35rem;
+    padding-bottom: 0.25rem;
+}
+
+.metacloud-stack__tier--private {
+    margin-top: 0.35rem;
+    padding-top: 0.25rem;
+}
+
+.metacloud-stack__hub-wrap {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 0.5rem;
+    margin: 0.55rem 0;
+    isolation: isolate;
+}
+
+.metacloud-stack__hub-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -0.35rem -0.75rem;
+    background: radial-gradient(
+        ellipse at center,
+        var(--background-color) 0%,
+        color-mix(in srgb, var(--background-color) 88%, transparent) 55%,
+        transparent 78%
+    );
+    z-index: -2;
+    pointer-events: none;
+}
+
+.metacloud-stack__glow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(100%, 18rem);
+    height: 6.5rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 166, 0, 0.42) 0%,
+        rgba(255, 166, 0, 0.16) 42%,
+        rgba(255, 166, 0, 0.04) 62%,
+        rgba(0, 0, 0, 0) 78%
+    );
+    filter: blur(16px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.metacloud-stack__title {
+    position: relative;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.05;
+    text-align: center;
+}
+
+/* Hero-style hub pill — not scoped under .hero-home */
+.metacloud-stack__hub-node.hero-metacloud {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(1.55rem, 7.2vw, 2rem);
+    font-weight: 700;
+    padding: 0.14em 0.55em;
+    letter-spacing: -0.015em;
+    border-radius: 16px;
+    color: #1b1303;
+    -webkit-text-fill-color: #1b1303;
+}
+
+.metacloud-stack__hub-node.hero-metacloud::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--accent-color, #ffa600) 88%, #fff),
+        var(--accent-color, #ffa600)
+    );
+    border: 1px solid color-mix(in srgb, var(--accent-color, #ffa600) 60%, #fff);
+    box-shadow:
+        0 14px 44px rgba(0, 0, 0, 0.55),
+        0 0 52px rgba(255, 166, 0, 0.62);
+    z-index: -1;
+}
+
+.metacloud-stack__svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.metacloud-stack__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 0.55rem;
+}
+
+.metacloud-stack__tier--public .provider-float:nth-child(n + 3) {
+    margin-top: 0.3rem;
+}
+
+.metacloud-stack__tier--private .provider-float:nth-child(-n + 2) {
+    margin-bottom: 0.3rem;
+}
+
+.metacloud-stack__grid .provider-float:nth-child(odd) {
+    justify-self: end;
+}
+
+.metacloud-stack__grid .provider-float:nth-child(even) {
+    justify-self: start;
+}
+
+.metacloud-stack .provider-float {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto;
+    width: 100%;
+    max-width: 5.75rem;
+    min-width: 0;
+    padding: 0.38rem 0.4rem;
+    gap: 0.35rem;
+    border-radius: 10px;
+    will-change: auto;
+    contain: none;
+}
+
+.metacloud-stack .provider-float__logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    font-size: 0.78rem;
+}
+
+.metacloud-stack .provider-float__img {
+    width: 14px;
+    height: 14px;
+}
+
+.metacloud-stack .provider-float__text {
+    line-height: 1.1;
+}
+
+.metacloud-stack .provider-float__text strong {
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.metacloud-stack .hero-link-base {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.metacloud-stack .hero-link {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.metacloud-stack .hero-link-base--branch {
+    stroke-width: 2.25;
+    opacity: 0.3;
+}
+
+.metacloud-stack .hero-link--branch {
+    stroke-width: 2;
+    stroke-dasharray: 3 10;
+    opacity: 0.82;
+}
+
+.metacloud-stack .hero-link-base--spine,
+.metacloud-stack .hero-link-base--bus {
+    stroke-width: 3;
+    opacity: 0.38;
+}
+
+.metacloud-stack .hero-link--spine,
+.metacloud-stack .hero-link--bus {
+    stroke-width: 2.6;
+    stroke-dasharray: 4 11;
+    opacity: 0.92;
+}
+
+@keyframes metacloud-stack-link-flow {
+    to {
+        stroke-dashoffset: -28;
+    }
+}
+
+.metacloud-stack .hero-link--branch,
+.metacloud-stack .hero-link--spine {
+    animation: metacloud-stack-link-flow 1.25s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .metacloud-migration-trail,
+    .metacloud-migration-spark,
+    .hero-migration-trail,
+    .hero-migration-spark {
+        display: none !important;
+    }
+
+    .metacloud-stack .hero-link--branch,
+    .metacloud-stack .hero-link--spine {
+        animation: none;
+    }
+}
+
+/* Mobile / narrow: full-viewport hero with vertically centred copy + CTAs */
+@media (max-width: 992px) {
+    .hero.hero-home {
+        min-height: 100svh;
+        min-height: 100dvh;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        /* Top pad clears the fixed header; extra bottom pad optically centres below it */
+        padding-top: var(--header-offset);
+        padding-bottom: calc(var(--header-offset) * 0.65 + var(--space-md));
+        gap: var(--space-md);
+    }
+
+    .hero-home .hero-container.hero-home__headline,
+    .hero-home .hero-container.hero-home__cta {
+        transform: none !important;
+        margin-top: 0;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .hero-home .hero-container.hero-home__cta {
+        padding-top: 0;
+    }
+
+    .hero-home .hero-cta,
+    .hero-home .quick-contact-options.hero-cta {
+        margin: 0;
+    }
+
+    .hero-home .hero-title {
+        font-size: clamp(2.1rem, 9.5vw, 2.85rem);
+        line-height: 1.15;
+        margin-bottom: var(--space-sm);
+    }
+
+    .hero-home .hero-metacloud {
+        padding: 0.06em 0.32em;
+    }
+
+    .hero-home .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.55;
+        margin-bottom: var(--space-md);
+    }
+
+    .hero-home .home-tagline {
+        font-size: 0.94rem;
+    }
+
+    .hero-home .hero-secondary-link {
+        margin-top: var(--space-md);
+    }
+
+    .hero-home .hero-buttons {
+        gap: var(--space-md);
+    }
+
+    #atmosphere-hero-placeholder .orbit-object,
+    #atmosphere-hero-placeholder .particles-container {
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .hero.hero-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100dvh;
+        min-height: 100svh;
+        padding: calc(var(--header-offset) + 2.5vh) var(--space-md) 5vh;
+        gap: 1.125rem;
+    }
+
+    /* One vertical stack: headline copy flows straight into CTAs */
+    .hero-home .hero-container.hero-home__headline,
+    .hero-home .hero-container.hero-home__cta {
+        display: contents;
+    }
+
+    .hero-home .hero-content {
+        width: min(100%, 22.5rem);
+        margin-inline: auto;
+        padding-inline: 0;
+        transform: none;
+    }
+
+    .hero-home .hero-buttons {
+        gap: 0.875rem;
+        width: 100%;
+    }
+
+    .hero-home .hero-title {
+        font-size: clamp(1.875rem, 8.2vw, 2.45rem);
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+
+    .hero-home .hero-metacloud {
+        padding: 0.12em 0.45em;
+        margin-top: 0.12em;
+    }
+
+    .hero-home .hero-subtitle {
+        font-size: 0.9375rem;
+        line-height: 1.48;
+        margin-bottom: 0;
+    }
+
+    .hero-home .hero-subtitle p + p {
+        margin-top: 0.5rem;
+    }
+
+    .hero-home .home-tagline {
+        font-size: 0.9375rem;
+    }
+
+    .hero-home .quick-contact-options {
+        gap: 0.625rem;
+    }
+
+    .hero-home .quick-contact-options .btn {
+        padding: 0.8125rem 1rem;
+        font-size: 0.875rem;
+        line-height: 1.25;
+    }
+
+    .hero-home .hero-secondary-link {
+        margin-top: 0;
+        font-size: 0.875rem;
+    }
+
+    .hero-home .fade-in {
+        opacity: 1;
+        transform: none;
+    }
+
+    .hero-home .hero-content::before {
+        opacity: 0.22;
+        height: 110%;
+    }
+
+    #atmosphere-hero-placeholder .orbit-object,
+    #atmosphere-hero-placeholder .particles-container {
+        opacity: 0.25;
+    }
+
+    #atmosphere-hero-placeholder .planet,
+    #atmosphere-hero-placeholder .planet-halo,
+    #atmosphere-hero-placeholder .planet-linear-glow,
+    #atmosphere-hero-placeholder .planet-radial-glow {
+        opacity: 0.5;
+    }
+}
+
+.home-tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 42rem;
+    line-height: 1.5;
+}
+
+.hero-home .home-tagline {
+    text-shadow:
+        0 0 10px var(--background-color),
+        0 0 22px var(--background-color),
+        0 1px 3px rgba(0, 0, 0, 0.4);
+}
