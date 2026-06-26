@@ -1,6 +1,14 @@
 /* Hero Metacloud constellation */
 .hero-home {
     flex-direction: column;
+    --header-offset: calc(80px + var(--announcement-banner-height, 40px));
+    --hero-title-size: 4rem;
+    --hero-bump-y: var(--hero-title-size);
+    margin-top: calc(-1 * var(--hero-bump-y));
+}
+
+.hero-home .hero-title {
+    font-size: var(--hero-title-size);
 }
 
 .hero-wow {
@@ -43,12 +51,14 @@
     position: relative;
     z-index: 10;
     isolation: isolate;
+    transform: translate3d(0, var(--hero-shift-y, 0px), 0);
 }
 
 .hero-home .hero-container.hero-home__cta {
     position: relative;
     z-index: 5;
     margin-top: calc(-1 * var(--space-md));
+    transform: translate3d(0, var(--hero-shift-y, 0px), 0);
 }
 
 .hero-home__headline .hero-content,
@@ -337,31 +347,70 @@
     opacity: 0.85;
 }
 
-/* Small portrait phones: hide the constellation — copy and CTAs only. */
-@media (max-width: 768px) and (orientation: portrait) {
-    .hero-wow,
-    .hero-links,
-    .hero-cards {
-        display: none !important;
+/* Flat circular orbit — no depth blur on cards or links */
+.hero-wow--flat .provider-float {
+    gap: 0.55rem;
+    padding: 0.45rem 0.7rem 0.45rem 0.45rem;
+    border-radius: 14px;
+    filter: none !important;
+}
+
+.hero-wow--flat .provider-float__logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+}
+
+.hero-wow--flat .provider-float__img {
+    width: 22px;
+    height: 22px;
+}
+
+.hero-wow--flat .provider-float__text strong {
+    font-size: 0.8rem;
+}
+
+.hero-wow--flat .provider-float__text small {
+    font-size: 0.6rem;
+}
+
+.hero-wow--flat .hero-link,
+.hero-wow--flat .hero-link-base {
+    filter: none !important;
+}
+
+@media (max-width: 768px) {
+    .hero-wow--flat .provider-float {
+        gap: 0.4rem;
+        padding: 0.35rem 0.55rem 0.35rem 0.35rem;
+        border-radius: 12px;
+    }
+
+    .hero-wow--flat .provider-float__logo {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+    }
+
+    .hero-wow--flat .provider-float__img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .hero-wow--flat .provider-float__text strong {
+        font-size: 0.68rem;
+    }
+
+    .hero-wow--flat .provider-float__text small {
+        display: none;
     }
 }
 
-/* --- Mobile Metacloud stack (umbrella below hero when orbit is hidden) --- */
+/* Metacloud stack replaced by in-hero circular orbit */
 .metacloud-stack {
-    display: none;
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-    .metacloud-stack {
-        display: block;
-        padding: var(--space-lg) 0 var(--space-xl);
-        background: linear-gradient(
-            180deg,
-            rgba(255, 166, 0, 0.05) 0%,
-            transparent 72%
-        );
-        border-bottom: 1px solid var(--glassmorphism-border);
-    }
+    display: none !important;
 }
 
 .metacloud-stack__inner {
@@ -619,27 +668,75 @@
     }
 }
 
+/* Flat circular orbit: cards may extend past the viewport on all breakpoints */
+.hero.hero-home.hero-home--flat-orbit {
+    overflow: visible;
+}
+
+.hero-home.hero-home--flat-orbit .hero-wow,
+.hero-home.hero-home--flat-orbit .hero-links,
+.hero-home.hero-home--flat-orbit .hero-cards {
+    overflow: visible;
+    contain: none;
+}
+@media (max-width: 992px) {
+    .hero.hero-home.hero-home--mobile-orbit {
+        justify-content: center;
+        padding-top: var(--header-offset);
+        padding-bottom: calc(var(--header-offset) * 0.65 + var(--space-md));
+    }
+
+    .hero-home.hero-home--mobile-orbit .hero-container.hero-home__headline,
+    .hero-home.hero-home--mobile-orbit .hero-container.hero-home__cta {
+        display: block;
+        transform: translate3d(0, var(--hero-shift-y, 0px), 0) !important;
+    }
+}
+
 /* Mobile / narrow: full-viewport hero with vertically centred copy + CTAs */
 @media (max-width: 992px) {
+    .hero-home {
+        --hero-title-size: clamp(2.1rem, 9.5vw, 2.85rem);
+        --hero-bump-y: 0px;
+        margin-top: 0;
+    }
+
     .hero.hero-home {
+        height: 100svh;
+        height: 100dvh;
         min-height: 100svh;
         min-height: 100dvh;
-        height: auto;
+        max-height: 100svh;
+        max-height: 100dvh;
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        /* Top pad clears the fixed header; extra bottom pad optically centres below it */
         padding-top: var(--header-offset);
         padding-bottom: calc(var(--header-offset) * 0.65 + var(--space-md));
         gap: var(--space-md);
+        box-sizing: border-box;
+    }
+
+    .hero.hero-home #atmosphere-hero-placeholder {
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .hero.hero-home.hero-home--flat-orbit {
+        overflow: visible;
     }
 
     .hero-home .hero-container.hero-home__headline,
     .hero-home .hero-container.hero-home__cta {
-        transform: none !important;
+        --hero-shift-y: 0px;
         margin-top: 0;
         flex: 0 0 auto;
         width: 100%;
+    }
+
+    .hero-home:not(.hero-home--mobile-orbit) .hero-container.hero-home__headline,
+    .hero-home:not(.hero-home--mobile-orbit) .hero-container.hero-home__cta {
+        transform: none !important;
     }
 
     .hero-home .hero-container.hero-home__cta {
@@ -652,7 +749,6 @@
     }
 
     .hero-home .hero-title {
-        font-size: clamp(2.1rem, 9.5vw, 2.85rem);
         line-height: 1.15;
         margin-bottom: var(--space-sm);
     }
@@ -686,7 +782,11 @@
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-    .hero.hero-home {
+    .hero-home {
+        --hero-title-size: clamp(1.875rem, 8.2vw, 2.45rem);
+    }
+
+    .hero.hero-home:not(.hero-home--mobile-orbit) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -697,9 +797,20 @@
         gap: 1.125rem;
     }
 
+    .hero.hero-home.hero-home--mobile-orbit {
+        min-height: 100dvh;
+        min-height: 100svh;
+        max-height: 100dvh;
+        max-height: 100svh;
+        height: 100dvh;
+        height: 100svh;
+        padding-inline: var(--space-md);
+        gap: 0.75rem;
+    }
+
     /* One vertical stack: headline copy flows straight into CTAs */
-    .hero-home .hero-container.hero-home__headline,
-    .hero-home .hero-container.hero-home__cta {
+    .hero-home:not(.hero-home--mobile-orbit) .hero-container.hero-home__headline,
+    .hero-home:not(.hero-home--mobile-orbit) .hero-container.hero-home__cta {
         display: contents;
     }
 
@@ -716,7 +827,6 @@
     }
 
     .hero-home .hero-title {
-        font-size: clamp(1.875rem, 8.2vw, 2.45rem);
         line-height: 1.1;
         margin-bottom: 0;
     }
@@ -768,13 +878,6 @@
     #atmosphere-hero-placeholder .orbit-object,
     #atmosphere-hero-placeholder .particles-container {
         opacity: 0.25;
-    }
-
-    #atmosphere-hero-placeholder .planet,
-    #atmosphere-hero-placeholder .planet-halo,
-    #atmosphere-hero-placeholder .planet-linear-glow,
-    #atmosphere-hero-placeholder .planet-radial-glow {
-        opacity: 0.5;
     }
 }
 

@@ -5,7 +5,7 @@
 (function () {
     'use strict';
 
-    var MOBILE_PORTRAIT_MQ = '(max-width: 768px) and (orientation: portrait)';
+    var MOBILE_PORTRAIT_MQ = '(max-width: 992px) and (orientation: portrait)';
     var SVGNS = 'http://www.w3.org/2000/svg';
     var MIGRATION_MAX = 2;
     var MIGRATION_POOL = 3;

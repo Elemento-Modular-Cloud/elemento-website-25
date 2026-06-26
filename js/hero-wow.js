@@ -7,12 +7,14 @@
  * center; rings rotate at different speeds for a galaxy feel. Cards on each
  * ring share a fixed radius and angular velocity so slots never collide. The far
  * arc compresses vertically for forced perspective.
- * Disabled on small portrait viewports — phones get copy + CTAs only.
+ * Wide landscape: tilted ellipse with perspective. All other viewports: flat circles.
  */
 (function () {
     'use strict';
 
-    var SMALL_PORTRAIT_MQ = '(max-width: 768px) and (orientation: portrait)';
+    var COMPACT_HERO_MQ = '(max-width: 992px)';
+    // Perspective ellipse only when clearly wider than tall (vw / vh).
+    var PERSPECTIVE_MIN_ASPECT = 1.22;
 
     var SVGNS = 'http://www.w3.org/2000/svg';
 
@@ -52,7 +54,7 @@
     ];
 
     var RING_H = [0.24, 0.33, 0.42];
-    var RING_V = [0.17, 0.27, 0.36];
+    var RING_V = [0.20, 0.30, 0.38];
     var RING_SCALE = [1, 0.94, 0.86];
     var RING_OP = [1, 0.92, 0.82];
     // Orbital period per ring, in ms (inner faster, outer slower). All cards on a ring share this period.
@@ -63,7 +65,11 @@
     // Fixed ring phase offsets (rad) so adjacent rings interleave rather than stack.
     var RING_PHASE = [0, Math.PI / 6, Math.PI / 8];
     // Far arc (top of ellipse): squash vertical reach for forced perspective.
-    var FAR_V_COMPRESS = 0.38;
+    var FAR_V_COMPRESS = 0.42;
+    // Near arc (bottom): extend slightly past the ellipse so foreground cards feel closer.
+    var NEAR_V_EXPAND = 1.1;
+    // Card scale at the near arc (slightly above 1 — pops toward the viewer).
+    var PERSP_MAX = 1.1;
     // Curve amount for the arched link lines (fraction of chord length).
     var ARCH = 0.16;
     // Link dash: near side full weight; far side thinner stroke + tighter dashes.
@@ -99,6 +105,10 @@
     var MIGRATION_DURATION_MIN = 1600;
     var MIGRATION_DURATION_JITTER = 900;
     var MIGRATION_SPARK_LEN = 9;
+    // Gentle upward nudge on desktop so the hub clears fixed chrome (px).
+    var HERO_LIFT_PX = 24;
+    // Mobile hub vertical target — below flex-center (too high) but above 50% (too low).
+    var MOBILE_HUB_Y = 0.44;
 
     var IS_SAFARI = (function () {
         var ua = navigator.userAgent;
@@ -109,8 +119,16 @@
         return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     }
 
-    function isSmallPortraitViewport() {
-        return window.matchMedia(SMALL_PORTRAIT_MQ).matches;
+    function usePerspectiveOrbit(vw, vh) {
+        if (!vw || !vh) return false;
+        return vw > 992 && vw / vh >= PERSPECTIVE_MIN_ASPECT;
+    }
+
+    /** Flat circles on every viewport except wide landscape. */
+    function isFlatOrbit(vw, vh) {
+        vw = vw || window.innerWidth;
+        vh = vh || window.innerHeight;
+        return !usePerspectiveOrbit(vw, vh);
     }
 
     function resetHeroBlocks() {
@@ -118,6 +136,7 @@
             el.style.transform = '';
             el.style.position = '';
             el.style.zIndex = '';
+            el.style.removeProperty('--hero-shift-y');
         });
     }
 
@@ -483,11 +502,12 @@
         return { x: cx + ux * t, y: cy + uy * t };
     }
 
-    /** Near arc = 1 (base CSS size, never upscaled). Far arc zooms out toward perspMin. */
-    function cardPerspectiveScale(near, ringScale, pMin) {
-        var depth = pMin + (1 - pMin) * near;
+    /** Near arc scales up toward PERSP_MAX; far arc zooms out toward perspMin. */
+    function cardPerspectiveScale(near, ringScale, pMin, pMax) {
+        var max = pMax != null ? pMax : PERSP_MAX;
+        var depth = pMin + (max - pMin) * near;
         var ringBlend = 1 - (1 - ringScale) * (1 - near);
-        return Math.min(1, depth * ringBlend);
+        return depth * ringBlend;
     }
 
     function hubPulseEnvelope(now) {
@@ -629,10 +649,17 @@
         }
     }
 
-    /** Ellipse position with forced perspective: far arc (sin < 0) has reduced vertical reach. */
-    function orbitXY(cx, cy, rH, rV, ang) {
+    /** Ellipse (perspective) or circle (flat square layout). */
+    function orbitXY(cx, cy, rH, rV, ang, flat) {
+        if (flat) {
+            var r = Math.max(rH, rV);
+            return {
+                x: cx + r * Math.cos(ang),
+                y: cy + r * Math.sin(ang)
+            };
+        }
         var sinRaw = Math.sin(ang);
-        var sinV = sinRaw < 0 ? sinRaw * FAR_V_COMPRESS : sinRaw;
+        var sinV = sinRaw < 0 ? sinRaw * FAR_V_COMPRESS : sinRaw * NEAR_V_EXPAND;
         return {
             x: cx + rH * Math.cos(ang),
             y: cy + rV * sinV
@@ -680,15 +707,41 @@
         };
     }
 
+    /** Uncapped perspective ring reach — max axis of the ellipse (same formula as widescreen). */
+    function ringReach(ring, W, H, orbitH, orbitV) {
+        var rH = RING_H[ring] * W * orbitH;
+        var rV = RING_V[ring] * H * orbitV;
+        return Math.max(rH, rV);
+    }
+
+    /**
+     * Flat circular radius for one ring — one formula for mobile and square.
+     * Uses the long viewport edge as a square span so portrait width does not crush orbitH.
+     */
+    function flatRingRadius(ring, vw, vh) {
+        var span = Math.max(vw, vh);
+        var oh = Math.min(1, span / 1350);
+        var ov = Math.min(1, span / 980, span / 900);
+        return ringReach(ring, span, span, oh, ov);
+    }
+
+    function headerChromeBottom() {
+        var nav = document.querySelector('.navbar');
+        if (nav) {
+            var r = nav.getBoundingClientRect();
+            if (r.bottom > 0) return r.bottom;
+        }
+        return 120;
+    }
+
     function applyHeadlineShift() {
         if (!state) return;
         var shiftY = (state.headlineShiftY || 0) + (state.scrollParallaxY || 0);
-        var t = shiftY
-            ? 'translate3d(0,' + shiftY.toFixed(1) + 'px,0)'
-            : '';
         document.querySelectorAll('.hero-home__headline, .hero-home__cta').forEach(function (el) {
-            if (el.style.transform !== t) {
-                el.style.transform = t;
+            if (shiftY) {
+                el.style.setProperty('--hero-shift-y', shiftY.toFixed(1) + 'px');
+            } else {
+                el.style.removeProperty('--hero-shift-y');
             }
         });
     }
@@ -777,37 +830,8 @@
         return parallaxNeedsFrame() || scrollParallaxNeedsFrame();
     }
 
-    function bindParallax(hero) {
-        if (!hero || !state || state.reduced || !canUseParallax()) return;
-
-        state.parallaxEnabled = true;
-        state.pointerNX = 0;
-        state.pointerNY = 0;
-        state.parallaxX = 0;
-        state.parallaxY = 0;
-        state.headlineShiftY = 0;
-
-        function onMove(e) {
-            var r = hero.getBoundingClientRect();
-            if (!r.width || !r.height) return;
-            var nx = ((e.clientX - r.left) / r.width - 0.5) * 2;
-            var ny = ((e.clientY - r.top) / r.height - 0.5) * 2;
-            state.pointerNX = Math.max(-1, Math.min(1, nx));
-            state.pointerNY = Math.max(-1, Math.min(1, ny));
-            updateLoop();
-        }
-
-        function onLeave() {
-            state.pointerNX = 0;
-            state.pointerNY = 0;
-            updateLoop();
-        }
-
-        hero.addEventListener('mousemove', onMove);
-        hero.addEventListener('mouseleave', onLeave);
-        state._parallaxHero = hero;
-        state._onParallaxMove = onMove;
-        state._onParallaxLeave = onLeave;
+    function bindParallax() {
+        /* Mouse parallax disabled — orbit stays fixed while scrolling. */
     }
 
     function measureSubtitleZone(base) {
@@ -840,13 +864,41 @@
         return 1 - t * (1 - SUBTITLE_MIN_OP);
     }
 
+    function destroy() {
+        if (!state) return;
+
+        stopLoop();
+
+        if (state._parallaxHero && state._onParallaxMove) {
+            state._parallaxHero.removeEventListener('mousemove', state._onParallaxMove);
+            state._parallaxHero.removeEventListener('mouseleave', state._onParallaxLeave);
+        }
+        if (state._scrollParallaxBound && state._onScrollParallax) {
+            window.removeEventListener('scroll', state._onScrollParallax);
+        }
+
+        [state.linkLayer, state.cardLayer].forEach(function (el) {
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+        });
+
+        var container = document.getElementById('hero-wow-placeholder');
+        if (container) container.innerHTML = '';
+
+        var wrap = document.querySelector('.hero-wow');
+        if (wrap) {
+            wrap.classList.remove('hero-wow--providers', 'hero-wow--static', 'hero-wow--safari', 'hero-wow--flat');
+        }
+        var hero = document.querySelector('.hero.hero-home');
+        if (hero) hero.classList.remove('hero-home--flat-orbit', 'hero-home--mobile-orbit');
+
+        resetHeroBlocks();
+        state = null;
+    }
+
     function init() {
         var container = document.getElementById('hero-wow-placeholder');
         if (!container) return;
-        if (isSmallPortraitViewport()) {
-            resetHeroBlocks();
-            return;
-        }
+        if (state) return;
 
         var wrap = container.closest('.hero-wow');
 
@@ -959,7 +1011,6 @@
 
         layout();
         bindVisibility(hero || wrap);
-        bindParallax(hero);
         bindScrollParallax(hero);
 
         var resizeTimer = null;
@@ -1050,22 +1101,44 @@
 
     function layout() {
         if (!state) return;
-        var base = state.providers.getBoundingClientRect();
+        var baseEl = state.linkLayer || state._hero || state.providers;
+        var base = baseEl.getBoundingClientRect();
         var W = base.width;
         var H = base.height;
         if (!W || !H) return;
 
         var word = document.getElementById('hero-metacloud');
         var cx, cy;
+        var vw = window.innerWidth;
+        var vh = window.innerHeight;
+        var compact = vw <= 992;
+        var flatOrbit = isFlatOrbit(vw, vh);
+        state.flatOrbit = flatOrbit;
+
+        var wrap = document.querySelector('.hero-wow');
+        if (state._hero) {
+            state._hero.classList.toggle('hero-home--flat-orbit', flatOrbit);
+            state._hero.classList.toggle('hero-home--mobile-orbit', compact && flatOrbit);
+        }
+        if (wrap) {
+            wrap.classList.toggle('hero-wow--flat', flatOrbit);
+        }
+
         if (word) {
-            // Keep the word locked to the vertical center of the page by
-            // shifting the headline + CTA blocks together.
+            // Desktop: nudge headline + CTAs so the hub clears fixed chrome.
             var blocks = document.querySelectorAll('.hero-home__headline, .hero-home__cta');
-            blocks.forEach(function (el) { el.style.transform = ''; });
+            blocks.forEach(function (el) { el.style.removeProperty('--hero-shift-y'); });
             var nat = word.getBoundingClientRect();
-            var deltaY = window.innerHeight / 2 - (nat.top + nat.height / 2);
-            deltaY = Math.max(-160, Math.min(220, deltaY));
-            state.headlineShiftY = deltaY;
+            if (compact) {
+                var chrome = headerChromeBottom();
+                var targetY = chrome + (vh - chrome) * MOBILE_HUB_Y;
+                var shift = targetY - (nat.top + nat.height / 2);
+                state.headlineShiftY = Math.max(-32, Math.min(88, shift));
+            } else {
+                var deltaY = vh / 2 - HERO_LIFT_PX - (nat.top + nat.height / 2);
+                deltaY = Math.max(-160, Math.min(220, deltaY));
+                state.headlineShiftY = deltaY;
+            }
             applyHeadlineShift();
             applyOrbitScrollShift();
             var r = word.getBoundingClientRect();
@@ -1084,19 +1157,19 @@
         state.svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
 
         // Density + margins scale down on narrow screens so the orbit still fits.
-        var vw = window.innerWidth;
-        var vh = window.innerHeight;
-        var compact = vw <= 992;
         var tiny = vw <= 560;
         var dim = Math.min(vw, vh);
 
-        // Near arc = scale 1 (sharp); far arc zooms out toward perspMin.
+        // Near arc = scale 1 (sharp); far arc zooms out toward perspMin. Flat = uniform scale.
         var perspMin = Math.max(0.48, 0.56 - (dim - 720) / 1400 * 0.06);
         if (compact) {
             perspMin = Math.max(0.52, perspMin);
         }
+        if (flatOrbit) {
+            perspMin = 1;
+        }
         state.perspMin = perspMin;
-        state.perspMax = 1;
+        state.perspMax = flatOrbit ? 1 : PERSP_MAX;
 
         // Pull orbits in on smaller viewports / hero areas so bottom cards
         // don't overlap the hero copy below the Metacloud word.
@@ -1109,7 +1182,6 @@
         var marginTop = Math.max(72, H * 0.12);
         var marginBottom = Math.max(48, H * 0.08);
 
-        // Cap radii so full ellipses stay on screen without distorting the orbit.
         var maxH = Math.min(cx - marginX, W - marginX - cx);
         var maxV = Math.min(cy - marginTop, H - marginBottom - cy);
 
@@ -1121,8 +1193,12 @@
             card.style.display = hidden ? 'none' : '';
             line.base.style.display = hidden ? 'none' : '';
             line.flow.style.display = hidden ? 'none' : '';
-            it.rH = Math.min(RING_H[it.ring] * W * orbitH, maxH);
-            it.rV = Math.min(RING_V[it.ring] * H * orbitV, maxV);
+            if (flatOrbit) {
+                it.rH = it.rV = flatRingRadius(it.ring, vw, vh);
+            } else {
+                it.rH = Math.min(RING_H[it.ring] * W * orbitH, maxH);
+                it.rV = Math.min(RING_V[it.ring] * H * orbitV, maxV);
+            }
             it._baseHalfW = it._baseHalfH = undefined;
             it._path = it._transform = it._opacity = it._z = it._lineOp = it._lineDash = it._lineDashOff = it._near = it._farBlur = undefined;
         });
@@ -1152,6 +1228,8 @@
         var items = state.items;
         if (!items.length || !state.W) return;
         var pMin = state.perspMin != null ? state.perspMin : 0.52;
+        var pMax = state.perspMax != null ? state.perspMax : PERSP_MAX;
+        var flat = state.flatOrbit;
         var roundPos = state.roundPath;
 
         for (var i = 0; i < items.length; i++) {
@@ -1160,7 +1238,7 @@
 
             var ang = state.reduced ? it.baseAngle : it.baseAngle + now * it.omega;
             var center = orbitCenter(it.ring);
-            var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang);
+            var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, flat);
             var x = pos.x;
             var y = pos.y;
             if (roundPos) {
@@ -1168,10 +1246,10 @@
                 y = Math.round(y);
             }
             var near = (Math.sin(ang) + 1) / 2;
-            var scaleNum = cardPerspectiveScale(near, it.scale, pMin);
+            var scaleNum = flat ? it.scale : cardPerspectiveScale(near, it.scale, pMin, pMax);
             var reveal = state.reduced ? 1 : Math.max(0, Math.min(1, (now - it.revealStart) / 500));
             var subFade = subtitleFadeFactor(x, y, state.subtitleZone, state.subtitleFadePad);
-            var blur = blurFilter(farPerspectiveBlur(near));
+            var blur = flat ? 'none' : blurFilter(farPerspectiveBlur(near));
 
             var scale = scaleNum.toFixed(3);
             var px = roundPos ? String(x) : x.toFixed(1);
@@ -1215,9 +1293,10 @@
     }
 
     function applyLineStyles(now, it, line) {
+        var flat = state && state.flatOrbit;
         var near = it._near != null ? it._near : 0.5;
         var pulse = it._hubPulse || 0;
-        var blur = blurFilter(farPerspectiveBlur(near));
+        var blur = flat ? 'none' : blurFilter(farPerspectiveBlur(near));
 
         if (it._lineFarBlur !== blur) {
             line.flow.style.filter = blur;
@@ -1232,7 +1311,7 @@
             it._lineStroke = stroke;
         }
 
-        var dash = lineDashStyle(near);
+        var dash = flat ? lineDashStyle(1) : lineDashStyle(near);
         var flowW = (parseFloat(dash.flowWidth) * (1 + pulse * 0.55)).toFixed(2);
         var baseW = (parseFloat(dash.baseWidth) * (1 + pulse * 0.9)).toFixed(2);
         var dashKey = dash.dashArray + '|' + flowW + '|' + baseW + '|' + pulse.toFixed(2);
@@ -1294,7 +1373,7 @@
             if (x == null) {
                 var ang = state.reduced ? it.baseAngle : it.baseAngle + now * it.omega;
                 var center = orbitCenter(it.ring);
-                var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang);
+                var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, state.flatOrbit);
                 x = pos.x;
                 y = pos.y;
                 if (state.roundPath) {
@@ -1323,9 +1402,37 @@
         }
     }
 
+    function bindViewportChanges() {
+        if (bindViewportChanges._bound) return;
+        bindViewportChanges._bound = true;
+
+        var mq = window.matchMedia(COMPACT_HERO_MQ);
+        function onViewportChange() {
+            init();
+            if (state) layout();
+        }
+
+        if (mq.addEventListener) {
+            mq.addEventListener('change', onViewportChange);
+        } else if (mq.addListener) {
+            mq.addListener(onViewportChange);
+        }
+        window.addEventListener('orientationchange', onViewportChange);
+
+        var aspectTimer = null;
+        window.addEventListener('resize', function () {
+            window.clearTimeout(aspectTimer);
+            aspectTimer = window.setTimeout(onViewportChange, 120);
+        });
+    }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', function () {
+            init();
+            bindViewportChanges();
+        });
     } else {
         init();
+        bindViewportChanges();
     }
 })();

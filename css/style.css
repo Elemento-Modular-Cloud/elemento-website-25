@@ -135,7 +135,7 @@ body {
 }
 
 @media (orientation: portrait) {
-    .hero-container {
+    .hero-container:not(.hero-home__headline):not(.hero-home__cta) {
         margin: auto;
         transform: translateY(25%);
     }
@@ -3194,7 +3194,7 @@ body {
         align-items: center;
     }
 
-    .hero-vert-center {
+    .hero-vert-center:not(.hero-home__headline):not(.hero-home__cta) {
         position: absolute;
         top: 50%;
         left: 50%;
