@@ -7,14 +7,16 @@
  * center; rings rotate at different speeds for a galaxy feel. Cards on each
  * ring share a fixed radius and angular velocity so slots never collide. The far
  * arc compresses vertically for forced perspective.
- * Wide landscape: tilted ellipse with perspective. All other viewports: flat circles.
+ * Wide landscape: tilted ellipse with perspective. Square / tall viewports morph
+ * toward flat circles via a continuous perspective mix (aspect-ratio driven).
  */
 (function () {
     'use strict';
 
     var COMPACT_HERO_MQ = '(max-width: 992px)';
-    // Perspective ellipse only when clearly wider than tall (vw / vh).
-    var PERSPECTIVE_MIN_ASPECT = 1.22;
+    // perspectiveMix 0 → flat circle; 1 → full perspective ellipse.
+    var PERSPECTIVE_FLAT_ASPECT = 1.0;
+    var PERSPECTIVE_FULL_ASPECT = 1.22;
 
     var SVGNS = 'http://www.w3.org/2000/svg';
 
@@ -119,16 +121,35 @@
         return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     }
 
-    function usePerspectiveOrbit(vw, vh) {
-        if (!vw || !vh) return false;
-        return vw > 992 && vw / vh >= PERSPECTIVE_MIN_ASPECT;
+    function smoothstep(t) {
+        t = Math.max(0, Math.min(1, t));
+        return t * t * (3 - 2 * t);
     }
 
-    /** Flat circles on every viewport except wide landscape. */
-    function isFlatOrbit(vw, vh) {
+    function lerp(a, b, t) {
+        return a + (b - a) * t;
+    }
+
+    /** 0 = flat circular orbit, 1 = full widescreen perspective (aspect-ratio blend). */
+    function computePerspectiveMix(vw, vh) {
         vw = vw || window.innerWidth;
         vh = vh || window.innerHeight;
-        return !usePerspectiveOrbit(vw, vh);
+        if (!vw || !vh || vw <= 992) return 0;
+        var aspect = vw / vh;
+        if (aspect >= PERSPECTIVE_FULL_ASPECT) return 1;
+        if (aspect <= PERSPECTIVE_FLAT_ASPECT) return 0;
+        return smoothstep(
+            (aspect - PERSPECTIVE_FLAT_ASPECT) / (PERSPECTIVE_FULL_ASPECT - PERSPECTIVE_FLAT_ASPECT)
+        );
+    }
+
+    function usePerspectiveOrbit(vw, vh) {
+        return computePerspectiveMix(vw, vh) >= 0.98;
+    }
+
+    /** Flat CSS (overflow, card scale) when perspective mix is low. */
+    function isFlatOrbit(vw, vh) {
+        return computePerspectiveMix(vw, vh) < 0.4;
     }
 
     function resetHeroBlocks() {
@@ -649,20 +670,28 @@
         }
     }
 
-    /** Ellipse (perspective) or circle (flat square layout). */
-    function orbitXY(cx, cy, rH, rV, ang, flat) {
-        if (flat) {
-            var r = Math.max(rH, rV);
-            return {
-                x: cx + r * Math.cos(ang),
-                y: cy + r * Math.sin(ang)
-            };
+    /** Blend flat circle (mix→0) with perspective ellipse (mix→1). */
+    function orbitXY(cx, cy, rH, rV, ang, mix) {
+        mix = Math.max(0, Math.min(1, mix == null ? 0 : mix));
+        var flatR = Math.max(rH, rV);
+        var flatX = cx + flatR * Math.cos(ang);
+        var flatY = cy + flatR * Math.sin(ang);
+        if (mix <= 0) {
+            return { x: flatX, y: flatY };
         }
+
         var sinRaw = Math.sin(ang);
-        var sinV = sinRaw < 0 ? sinRaw * FAR_V_COMPRESS : sinRaw * NEAR_V_EXPAND;
+        var farC = lerp(1, FAR_V_COMPRESS, mix);
+        var nearE = lerp(1, NEAR_V_EXPAND, mix);
+        var sinV = sinRaw < 0 ? sinRaw * farC : sinRaw * nearE;
+        var perspX = cx + rH * Math.cos(ang);
+        var perspY = cy + rV * sinV;
+        if (mix >= 1) {
+            return { x: perspX, y: perspY };
+        }
         return {
-            x: cx + rH * Math.cos(ang),
-            y: cy + rV * sinV
+            x: lerp(flatX, perspX, mix),
+            y: lerp(flatY, perspY, mix)
         };
     }
 
@@ -1112,7 +1141,9 @@
         var vw = window.innerWidth;
         var vh = window.innerHeight;
         var compact = vw <= 992;
+        var perspectiveMix = computePerspectiveMix(vw, vh);
         var flatOrbit = isFlatOrbit(vw, vh);
+        state.perspectiveMix = perspectiveMix;
         state.flatOrbit = flatOrbit;
 
         var wrap = document.querySelector('.hero-wow');
@@ -1160,16 +1191,13 @@
         var tiny = vw <= 560;
         var dim = Math.min(vw, vh);
 
-        // Near arc = scale 1 (sharp); far arc zooms out toward perspMin. Flat = uniform scale.
-        var perspMin = Math.max(0.48, 0.56 - (dim - 720) / 1400 * 0.06);
+        // Near arc = scale 1 (sharp); far arc zooms out toward perspMin. Mix→0 = uniform scale.
+        var basePerspMin = Math.max(0.48, 0.56 - (dim - 720) / 1400 * 0.06);
         if (compact) {
-            perspMin = Math.max(0.52, perspMin);
+            basePerspMin = Math.max(0.52, basePerspMin);
         }
-        if (flatOrbit) {
-            perspMin = 1;
-        }
-        state.perspMin = perspMin;
-        state.perspMax = flatOrbit ? 1 : PERSP_MAX;
+        state.perspMin = lerp(1, basePerspMin, perspectiveMix);
+        state.perspMax = lerp(1, PERSP_MAX, perspectiveMix);
 
         // Pull orbits in on smaller viewports / hero areas so bottom cards
         // don't overlap the hero copy below the Metacloud word.
@@ -1193,11 +1221,17 @@
             card.style.display = hidden ? 'none' : '';
             line.base.style.display = hidden ? 'none' : '';
             line.flow.style.display = hidden ? 'none' : '';
-            if (flatOrbit) {
+            if (perspectiveMix <= 0) {
                 it.rH = it.rV = flatRingRadius(it.ring, vw, vh);
-            } else {
+            } else if (perspectiveMix >= 1) {
                 it.rH = Math.min(RING_H[it.ring] * W * orbitH, maxH);
                 it.rV = Math.min(RING_V[it.ring] * H * orbitV, maxV);
+            } else {
+                var flatR = flatRingRadius(it.ring, vw, vh);
+                var perspRH = Math.min(RING_H[it.ring] * W * orbitH, maxH);
+                var perspRV = Math.min(RING_V[it.ring] * H * orbitV, maxV);
+                it.rH = lerp(flatR, perspRH, perspectiveMix);
+                it.rV = lerp(flatR, perspRV, perspectiveMix);
             }
             it._baseHalfW = it._baseHalfH = undefined;
             it._path = it._transform = it._opacity = it._z = it._lineOp = it._lineDash = it._lineDashOff = it._near = it._farBlur = undefined;
@@ -1229,7 +1263,7 @@
         if (!items.length || !state.W) return;
         var pMin = state.perspMin != null ? state.perspMin : 0.52;
         var pMax = state.perspMax != null ? state.perspMax : PERSP_MAX;
-        var flat = state.flatOrbit;
+        var mix = state.perspectiveMix != null ? state.perspectiveMix : 0;
         var roundPos = state.roundPath;
 
         for (var i = 0; i < items.length; i++) {
@@ -1238,7 +1272,7 @@
 
             var ang = state.reduced ? it.baseAngle : it.baseAngle + now * it.omega;
             var center = orbitCenter(it.ring);
-            var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, flat);
+            var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, mix);
             var x = pos.x;
             var y = pos.y;
             if (roundPos) {
@@ -1246,10 +1280,12 @@
                 y = Math.round(y);
             }
             var near = (Math.sin(ang) + 1) / 2;
-            var scaleNum = flat ? it.scale : cardPerspectiveScale(near, it.scale, pMin, pMax);
+            var perspScale = cardPerspectiveScale(near, it.scale, pMin, pMax);
+            var scaleNum = lerp(it.scale, perspScale, mix);
             var reveal = state.reduced ? 1 : Math.max(0, Math.min(1, (now - it.revealStart) / 500));
             var subFade = subtitleFadeFactor(x, y, state.subtitleZone, state.subtitleFadePad);
-            var blur = flat ? 'none' : blurFilter(farPerspectiveBlur(near));
+            var blurPx = farPerspectiveBlur(near) * mix;
+            var blur = blurPx < 0.05 ? 'none' : blurFilter(blurPx);
 
             var scale = scaleNum.toFixed(3);
             var px = roundPos ? String(x) : x.toFixed(1);
@@ -1293,10 +1329,11 @@
     }
 
     function applyLineStyles(now, it, line) {
-        var flat = state && state.flatOrbit;
+        var mix = state && state.perspectiveMix != null ? state.perspectiveMix : 0;
         var near = it._near != null ? it._near : 0.5;
         var pulse = it._hubPulse || 0;
-        var blur = flat ? 'none' : blurFilter(farPerspectiveBlur(near));
+        var blurPx = farPerspectiveBlur(near) * mix;
+        var blur = blurPx < 0.05 ? 'none' : blurFilter(blurPx);
 
         if (it._lineFarBlur !== blur) {
             line.flow.style.filter = blur;
@@ -1311,7 +1348,8 @@
             it._lineStroke = stroke;
         }
 
-        var dash = flat ? lineDashStyle(1) : lineDashStyle(near);
+        var dashNear = lerp(1, near, mix);
+        var dash = lineDashStyle(dashNear);
         var flowW = (parseFloat(dash.flowWidth) * (1 + pulse * 0.55)).toFixed(2);
         var baseW = (parseFloat(dash.baseWidth) * (1 + pulse * 0.9)).toFixed(2);
         var dashKey = dash.dashArray + '|' + flowW + '|' + baseW + '|' + pulse.toFixed(2);
@@ -1373,7 +1411,7 @@
             if (x == null) {
                 var ang = state.reduced ? it.baseAngle : it.baseAngle + now * it.omega;
                 var center = orbitCenter(it.ring);
-                var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, state.flatOrbit);
+                var pos = orbitXY(center.x, center.y, it.rH, it.rV, ang, state.perspectiveMix);
                 x = pos.x;
                 y = pos.y;
                 if (state.roundPath) {
