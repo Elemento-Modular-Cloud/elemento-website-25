@@ -60,7 +60,7 @@
     var RING_SCALE = [1, 0.94, 0.86];
     var RING_OP = [1, 0.92, 0.82];
     // Orbital period per ring, in ms (inner faster, outer slower). All cards on a ring share this period.
-    var RING_PERIOD = [72000, 98000, 138000];
+    var RING_PERIOD = [105000, 210000, 420000];
     var RING_OMEGA = RING_PERIOD.map(function (period) {
         return (2 * Math.PI) / period;
     });
@@ -111,6 +111,11 @@
     var HERO_LIFT_PX = 24;
     // Mobile hub vertical target — below flex-center (too high) but above 50% (too low).
     var MOBILE_HUB_Y = 0.44;
+    // Flat / square layout: never shrink ring radii below the 1240px-width reference.
+    var FLAT_ORBIT_MIN_SPAN = 1240;
+    // Narrow viewports: cap reach as fractions of width (ring 0/1/2).
+    var FLAT_MOBILE_CAP_FRAC = [0.44, 0.52, 0.58];
+    var FLAT_ORBIT_MIN_SCALE = 1.5;
 
     var IS_SAFARI = (function () {
         var ua = navigator.userAgent;
@@ -743,15 +748,34 @@
         return Math.max(rH, rV);
     }
 
+    function flatOrbitFactors(span) {
+        return {
+            oh: Math.min(1, span / 1350),
+            ov: Math.min(1, span / 980, span / 900)
+        };
+    }
+
+    function flatRingReach(ring, span) {
+        var f = flatOrbitFactors(span);
+        return ringReach(ring, span, span, f.oh, f.ov);
+    }
+
+    function flatMinReach(ring, span) {
+        return flatRingReach(ring, span) * FLAT_ORBIT_MIN_SCALE;
+    }
+
     /**
-     * Flat circular radius for one ring — one formula for mobile and square.
-     * Uses the long viewport edge as a square span so portrait width does not crush orbitH.
+     * Flat circular radius — one formula for square and mobile.
+     * Floor from 1240px reference; narrow widths get a viewport cap only.
      */
     function flatRingRadius(ring, vw, vh) {
         var span = Math.max(vw, vh);
-        var oh = Math.min(1, span / 1350);
-        var ov = Math.min(1, span / 980, span / 900);
-        return ringReach(ring, span, span, oh, ov);
+        var r = Math.max(flatRingReach(ring, span), flatMinReach(ring, FLAT_ORBIT_MIN_SPAN));
+        if (vw <= 992) {
+            var cap = vw * (FLAT_MOBILE_CAP_FRAC[ring] || FLAT_MOBILE_CAP_FRAC[0]) * FLAT_ORBIT_MIN_SCALE;
+            r = Math.min(r, cap);
+        }
+        return r;
     }
 
     function headerChromeBottom() {
@@ -1214,7 +1238,7 @@
         var maxV = Math.min(cy - marginTop, H - marginBottom - cy);
 
         state.items.forEach(function (it, idx) {
-            var hidden = (it.ring === 2 && compact) || (it.ring >= 1 && tiny);
+            var hidden = it.ring >= 1 && tiny;
             it.hidden = hidden;
             var card = state.cards[idx];
             var line = state.lines[idx];
