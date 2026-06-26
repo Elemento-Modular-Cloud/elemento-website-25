@@ -1212,7 +1212,8 @@
         state.svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
 
         // Density + margins scale down on narrow screens so the orbit still fits.
-        var tiny = vw <= 560;
+        // Rings 0 + 1 on all mobile widths (including tiny); desktop shows all three.
+        var hideRing = compact ? 2 : 3;
         var dim = Math.min(vw, vh);
 
         // Near arc = scale 1 (sharp); far arc zooms out toward perspMin. Mix→0 = uniform scale.
@@ -1238,7 +1239,7 @@
         var maxV = Math.min(cy - marginTop, H - marginBottom - cy);
 
         state.items.forEach(function (it, idx) {
-            var hidden = it.ring >= 1 && tiny;
+            var hidden = it.ring >= hideRing;
             it.hidden = hidden;
             var card = state.cards[idx];
             var line = state.lines[idx];
