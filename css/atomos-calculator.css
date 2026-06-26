@@ -1,5 +1,30 @@
 /* AtomOS Price Calculator — theme-only, no color overrides */
 
+/* Standalone compare-costs page — clear fixed promo banner + navbar */
+:root {
+    --compare-costs-header: calc(80px + var(--announcement-banner-height, 40px));
+}
+
+body:has(.compare-costs-hero),
+body.compare-costs-page {
+    scroll-padding-top: calc(var(--compare-costs-header) + var(--space-lg));
+}
+
+.compare-costs-hero.section {
+    padding-top: calc(var(--compare-costs-header) + 10rem);
+}
+
+@media (max-width: 1000px) {
+    body:has(.compare-costs-hero) .container,
+    body.compare-costs-page .container {
+        margin-top: 0;
+    }
+
+    .compare-costs-hero.section {
+        padding-top: calc(var(--compare-costs-header) + 7rem);
+    }
+}
+
 /* Cost calculator block: tighter title spacing */
 .cost-calculator-block .section-header {
     margin-bottom: 1rem;
