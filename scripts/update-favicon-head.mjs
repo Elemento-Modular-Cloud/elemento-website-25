@@ -16,7 +16,6 @@ ${i}<link rel="icon" type="image/svg+xml" href="${p}assets/favicon/favicon.svg">
 ${i}<link rel="icon" type="image/png" sizes="96x96" href="${p}assets/favicon/favicon-96x96.png">
 ${i}<link rel="icon" type="image/png" sizes="32x32" href="${p}assets/favicon/favicon-32x32.png">
 ${i}<link rel="icon" type="image/png" sizes="16x16" href="${p}assets/favicon/favicon-16x16.png">
-${i}<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 ${i}<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 ${i}<!-- Apple Touch Icons -->
