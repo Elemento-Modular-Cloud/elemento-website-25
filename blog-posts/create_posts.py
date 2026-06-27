@@ -85,7 +85,16 @@ def generate_blog_post_html(post_data):
   <meta name="description" content="{summary[:160] if summary else ''}">
   <link rel='stylesheet' href='../css/style.css'>
   <link rel='stylesheet' href='../css/themes.css'>
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Elemento">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
