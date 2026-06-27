@@ -23,6 +23,8 @@ const COPY_DIRS = [
 ];
 
 const COPY_FILES = [
+  'favicon.ico',
+  'site.webmanifest',
   'rss.xml',
   'rss-it.xml',
   'robots.txt',
