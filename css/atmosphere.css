@@ -3,7 +3,9 @@
     --atmosphere-thickness: 12vh;
     --fadeout-width: 35vw;
     --halo-height: 4.5px;
-    --delta: calc((1 - cos(asin(50vw / var(--planet-size)))) * var(--planet-size) * 2);
+    /* Visible arc above horizon: (1 - cos(asin(50/600))) × 2 × planet-size.
+       Trig + length division inside asin() is dropped by Firefox; ratio is constant. */
+    --delta: calc(0.006957 * var(--planet-size));
     
     /* Master timing control */
     --base-time: 16s;
