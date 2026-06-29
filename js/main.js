@@ -24,6 +24,69 @@ function rewriteDiagramEmbeddedAssets(svgContent) {
     );
 }
 
+/** Remove duplicate attributes from SVG markup (Firefox rejects them; Lucid exports often include dupes). */
+function dedupeSvgAttributes(svgContent) {
+    let result = '';
+    let i = 0;
+
+    while (i < svgContent.length) {
+        if (svgContent[i] !== '<') {
+            result += svgContent[i++];
+            continue;
+        }
+
+        let j = i + 1;
+        let quote = null;
+        while (j < svgContent.length) {
+            const ch = svgContent[j];
+            if (quote) {
+                if (ch === quote) quote = null;
+            } else if (ch === '"' || ch === "'") {
+                quote = ch;
+            } else if (ch === '>') {
+                break;
+            }
+            j++;
+        }
+
+        result += dedupeSvgTagAttributes(svgContent.slice(i, j + 1));
+        i = j + 1;
+    }
+
+    return result;
+}
+
+function dedupeSvgTagAttributes(tag) {
+    if (tag.startsWith('</') || tag.startsWith('<?') || tag.startsWith('<!')) {
+        return tag;
+    }
+
+    const tagNameMatch = tag.match(/^<\s*([\w:-]+)/);
+    if (!tagNameMatch) return tag;
+
+    const attrRegex = /([\w:-]+)\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g;
+    const seen = new Set();
+    const attrs = [];
+    let match;
+    while ((match = attrRegex.exec(tag)) !== null) {
+        if (!seen.has(match[1])) {
+            seen.add(match[1]);
+            attrs.push(`${match[1]}=${match[2]}`);
+        }
+    }
+
+    if (!attrs.length) return tag;
+
+    const selfClose = tag.trimEnd().endsWith('/>') ? ' />' : '>';
+    return `<${tagNameMatch[1]} ${attrs.join(' ')}${selfClose}`;
+}
+
+function resolveDiagramContainer(containerSelector) {
+    return typeof containerSelector === 'string'
+        ? document.querySelector(containerSelector)
+        : containerSelector;
+}
+
 // Helper function to get saved cookie preference
 function getCookiePreference() {
     try {
@@ -873,19 +936,17 @@ class ElementoWebsite {
 
     // SVG Injection functionality
     async injectSVGDiagram(containerSelector, svgPath = null) {
-        try {
-            const container = typeof containerSelector === 'string' 
-                ? document.querySelector(containerSelector) 
-                : containerSelector;
-            if (!container) {
-                console.error(`Container not found: ${containerSelector}`);
-                return;
-            }
+        const container = resolveDiagramContainer(containerSelector);
+        if (!container) {
+            console.error(`Container not found: ${containerSelector}`);
+            return;
+        }
 
+        try {
             // Get the SVG path from the src attribute if not provided
             const rawPath = svgPath || container.getAttribute('src');
             if (!rawPath) {
-                console.error(`No SVG path provided and no src attribute found on ${containerSelector}`);
+                console.error(`No SVG path provided and no src attribute found on container`, container);
                 return;
             }
 
@@ -899,15 +960,19 @@ class ElementoWebsite {
                 throw new Error(`Failed to fetch SVG: ${response.status} ${response.statusText}`);
             }
 
-            const svgContent = await response.text();
+            const svgContent = dedupeSvgAttributes(await response.text());
             
             // Parse the SVG to extract dimensions and transforms
             const parser = new DOMParser();
             const svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
-            const svgElement = svgDoc.querySelector('svg');
+            const parseError = svgDoc.querySelector('parsererror');
+            const svgElement = svgDoc.documentElement?.localName === 'svg'
+                ? svgDoc.documentElement
+                : svgDoc.querySelector('svg');
             
             if (!svgElement) {
-                throw new Error('No SVG element found in the content');
+                const detail = parseError?.textContent?.trim().replace(/\s+/g, ' ').slice(0, 200);
+                throw new Error(detail ? `Invalid SVG markup: ${detail}` : 'No SVG element found in the content');
             }
 
             // Extract original dimensions
@@ -959,21 +1024,17 @@ class ElementoWebsite {
                 container.innerHTML = processedSvgContent;
             });
             
-            console.log(`SVG injected successfully into ${containerSelector} from ${pathToUse} with viewBox: ${viewBox}`);
+            console.log(`SVG injected successfully from ${pathToUse} with viewBox: ${viewBox}`);
         } catch (error) {
             console.error('Error injecting SVG:', error);
-            // Fallback: show error message in container
-            const container = document.querySelector(containerSelector);
-            if (container) {
-                requestAnimationFrame(() => {
-                    container.innerHTML = `
-                        <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
-                            <p>Unable to load diagram</p>
-                            <small>Please refresh the page to try again</small>
-                        </div>
-                    `;
-                });
-            }
+            requestAnimationFrame(() => {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                        <p>Unable to load diagram</p>
+                        <small>Please refresh the page to try again</small>
+                    </div>
+                `;
+            });
         }
     }
 
