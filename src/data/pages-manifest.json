@@ -92,7 +92,8 @@
     "extraScripts": [
       "js/faq.js",
       "js/atmosphere_hero_with_logo.js",
-      "js/provider-integrations.js"
+      "js/provider-integrations.js",
+      "js/atomosphere-videos.js"
     ],
     "type": "legacy",
     "locales": [

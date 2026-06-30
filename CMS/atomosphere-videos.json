@@ -1,0 +1,31 @@
+{
+  "it": [
+    {
+      "id": "gumlet-6a4384db8a92d68f43ee1bab",
+      "date": "2026-06-30",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a4384db8a92d68f43ee1bab?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "Scopri Atomosphere"
+    },
+    {
+      "id": "gumlet-6a4384db8a92d68f43ee1b93",
+      "date": "2026-06-30",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a4384db8a92d68f43ee1b93?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "Demo di Atomosphere"
+    },
+    {
+      "id": "gumlet-6a4384db3583eb1726558af8",
+      "date": "2026-06-30",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a4384db3583eb1726558af8?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "Benefit di Atomosphere"
+    }
+  ]
+}
