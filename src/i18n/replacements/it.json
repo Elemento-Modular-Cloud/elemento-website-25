@@ -230,8 +230,8 @@
     ],
     "atomos": [
       {
-        "en": "Unlike CPU-core or VM-count based licensing, AtomOS's server-based pricing encourages organizations to maximize the value of each physical server. This drives investment in larger, more efficient hardware that can host more workloads with better performance per watt.",
-        "it": "A differenza delle licenze basate sui core CPU o sul numero di macchine virtuali, i prezzi basati sui server di AtomOS incoraggiano le organizzazioni a massimizzare il valore di ciascun server fisico. Ciò spinge a investire in hardware più grande ed efficiente in grado di ospitare più carichi di lavoro con migliori prestazioni per watt."
+        "en": "Unlike CPU-core or VM-count based licensing, AtomOS's per-server support pricing encourages organizations to maximize the value of each physical server. This drives investment in larger, more efficient hardware that can host more workloads with better performance per watt.",
+        "it": "A differenza delle licenze basate sui core CPU o sul numero di macchine virtuali, il prezzo del supporto per server di AtomOS incoraggia le organizzazioni a massimizzare il valore di ciascun server fisico. Ciò spinge a investire in hardware più grande ed efficiente in grado di ospitare più carichi di lavoro con migliori prestazioni per watt."
       },
       {
         "en": "AtomOS runs on top of a RHEL-compliant underlying OS — without customisation or forks. This means you get the full benefit of Red Hat's ecosystem: battle-tested stability, enterprise-grade support, and complete compatibility with the RHEL ecosystem.",
@@ -258,8 +258,8 @@
         "it": "Calcola quanto potresti risparmiare con AtomOS rispetto a VMware. Scopri come la nostra soluzione di virtualizzazione ti aiuta a evitare l'aumento dei costi, senza compromettere l'affidabilità a livello enterprise."
       },
       {
-        "en": "By charging per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.",
-        "it": "Facendo pagare per server anziché per core CPU o VM, incoraggiamo le organizzazioni a scegliere hardware potente ed efficiente in grado di gestire più carichi di lavoro con un minore consumo energetico."
+        "en": "By pricing support per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.",
+        "it": "Applicando al supporto un prezzo per server anziché per core CPU o VM, incoraggiamo le organizzazioni a scegliere hardware potente ed efficiente in grado di gestire più carichi di lavoro con un minore consumo energetico."
       },
       {
         "en": "The kernel is mainline Linux — no vendor patches or proprietary extensions. This empowers incredible hardware support and super fast security updates (and updates in general).",
@@ -322,8 +322,8 @@
         "it": "Qualsiasi FS condiviso: GlusterFS, Ceph, NFS, iSCSI, ecc.: opzioni di archiviazione flessibili per la tua infrastruttura."
       },
       {
-        "en": "Our pricing model incentivizes efficient resource utilization and sustainable infrastructure choices",
-        "it": "Il nostro modello di prezzo incentiva l’utilizzo efficiente delle risorse e le scelte infrastrutturali sostenibili"
+        "en": "Our support model incentivizes efficient resource utilization and sustainable infrastructure choices",
+        "it": "Il nostro modello di supporto incentiva l’utilizzo efficiente delle risorse e le scelte infrastrutturali sostenibili"
       },
       {
         "en": "AtomOS supports a wide range of Linux and Windows guest OSes for flexible deployment scenarios",
@@ -386,8 +386,8 @@
         "it": "Ottieni AtomOS in esecuzione sulla tua infrastruttura in modo rapido e semplice"
       },
       {
-        "en": "From free community use to enterprise production deployments",
-        "it": "Dall'utilizzo gratuito da parte della comunità alle distribuzioni di produzione aziendale"
+        "en": "The full hypervisor is free on every server — you only pay for optional support",
+        "it": "L'hypervisor completo è gratuito su ogni server — paghi solo il supporto opzionale"
       },
       {
         "en": "Enterprise-grade features designed for production workloads",
@@ -510,8 +510,8 @@
         "it": "Installa moduli aggiuntivi (ZFS, GlusterFS)"
       },
       {
-        "en": "Server-Based Pricing Drives Green Economy",
-        "it": "I prezzi basati su server favoriscono l’economia green"
+        "en": "Per-Server Support Pricing Drives Green Economy",
+        "it": "Il prezzo del supporto per server favorisce l’economia green"
       },
       {
         "en": "Incredible hardware support from upstream",
@@ -530,8 +530,76 @@
         "it": "Basato su server (non core CPU o conteggio VM)"
       },
       {
-        "en": "AtomOS Community Edition — Free Forever",
-        "it": "AtomOS Community Edition: gratis per sempre"
+        "en": "AtomOS — Free Forever",
+        "it": "AtomOS: gratis per sempre"
+      },
+      {
+        "en": "Optional Support Plans",
+        "it": "Piani di supporto opzionali"
+      },
+      {
+        "en": "Per server, per year — all plans include 8x5 coverage",
+        "it": "Per server, all'anno — tutti i piani includono copertura 8x5"
+      },
+      {
+        "en": "8x5 coverage",
+        "it": "Copertura 8x5"
+      },
+      {
+        "en": "Around-the-clock coverage",
+        "it": "Copertura 24 ore su 24"
+      },
+      {
+        "en": "✓ Email ticketing support",
+        "it": "✓ Supporto con ticketing via email"
+      },
+      {
+        "en": "✓ 8x5 coverage (business hours)",
+        "it": "✓ Copertura 8x5 (orario lavorativo)"
+      },
+      {
+        "en": "✓ Guaranteed upgrade path",
+        "it": "✓ Percorso di aggiornamento garantito"
+      },
+      {
+        "en": "✓ Full CLI control (virsh, qemu-img)",
+        "it": "✓ Controllo CLI completo (virsh, qemu-img)"
+      },
+      {
+        "en": "✓ Everything in Base",
+        "it": "✓ Tutto ciò che è incluso in Base"
+      },
+      {
+        "en": "✓ Phone & call support",
+        "it": "✓ Supporto telefonico e via chiamata"
+      },
+      {
+        "en": "✓ Support in Italian and English",
+        "it": "✓ Supporto in italiano e inglese"
+      },
+      {
+        "en": "✓ Everything in Pro",
+        "it": "✓ Tutto ciò che è incluso in Pro"
+      },
+      {
+        "en": "✓ 24x7 coverage",
+        "it": "✓ Copertura 24x7"
+      },
+      {
+        "en": "✓ Tailored SLAs for your workloads",
+        "it": "✓ SLA su misura per i tuoi carichi di lavoro"
+      },
+      {
+        "en": "Get Base Support",
+        "it": "Attiva il supporto Base"
+      },
+      {
+        "en": "Get Pro Support",
+        "it": "Attiva il supporto Pro"
+      },
+      {
+        "en": "Contact Sales",
+        "it": "Contatta il commerciale"
       },
       {
         "en": "Super fast security updates and patches",
@@ -618,8 +686,8 @@
         "it": "Ulteriori informazioni sulla tecnologia"
       },
       {
-        "en": "Choose Your AtomOS Edition",
-        "it": "Scegli la tua edizione AtomOS"
+        "en": "AtomOS is Free, Forever",
+        "it": "AtomOS è gratis, per sempre"
       },
       {
         "en": "Frequently Asked Questions",
@@ -878,8 +946,8 @@
         "it": "Caratteristica"
       },
       {
-        "en": "Buy Now",
-        "it": "Acquista ora"
+        "en": "Get it Free",
+        "it": "Ottienilo gratis"
       },
       {
         "en": "Type 1",
@@ -5498,8 +5566,32 @@
         "it": "Connettività perfetta su tutte le tue macchine virtuali con la selezione intelligente del protocollo"
       },
       {
-        "en": "Yes, Electros is free with your Elemento account. No additional licensing fees required.",
-        "it": "Sì, Electros è gratuito con il tuo account Elemento. Non sono richiesti costi di licenza aggiuntivi."
+        "en": "Electros is free with your Elemento account until September 2026. From September 2026, it moves to a SaaS subscription pricing model. Existing users will be notified ahead of the change.",
+        "it": "Electros è gratuito con il tuo account Elemento fino a settembre 2026. Da settembre 2026 passa a un modello di prezzo in abbonamento SaaS. Gli utenti esistenti saranno avvisati prima del cambiamento."
+      },
+      {
+        "en": "Free until September 2026",
+        "it": "Gratuito fino a settembre 2026"
+      },
+      {
+        "en": "Electros is free with your Elemento account today — a SaaS subscription model arrives in September 2026",
+        "it": "Electros oggi è gratuito con il tuo account Elemento — un modello in abbonamento SaaS arriverà a settembre 2026"
+      },
+      {
+        "en": "Free today",
+        "it": "Gratuito oggi"
+      },
+      {
+        "en": "Use Electros at no cost with your Elemento account until September 2026. All current features are included with no additional licensing fees.",
+        "it": "Usa Electros senza costi con il tuo account Elemento fino a settembre 2026. Tutte le funzionalità attuali sono incluse senza costi di licenza aggiuntivi."
+      },
+      {
+        "en": "SaaS subscription from September 2026",
+        "it": "Abbonamento SaaS da settembre 2026"
+      },
+      {
+        "en": "From September 2026, Electros moves to a SaaS-style subscription. Pricing details will be published ahead of the change, and existing users will be notified in advance.",
+        "it": "Da settembre 2026, Electros passa a un abbonamento in stile SaaS. I dettagli sui prezzi saranno pubblicati prima del cambiamento e gli utenti esistenti saranno avvisati in anticipo."
       },
       {
         "en": "Yes, basic inventory and local VM management work without network, syncing when online.",
@@ -6304,8 +6396,8 @@
         "it": "Sì! Elemento supporta completamente Kubernetes e carichi di lavoro container. Puoi distribuire e gestire i cluster Kubernetes su qualsiasi provider cloud e la nostra piattaforma fornisce funzionalità di orchestrazione aggiuntive su Kubernetes. Supportiamo anche contenitori Docker, grafici Helm e altri strumenti nativi del contenitore."
       },
       {
-        "en": "Elemento offers a generous free tier that includes up to 2 VMs on AtomOS, basic Electros features, and access to Atomosphere API. This is perfect for testing, development, and small projects. You can upgrade to paid plans anytime for additional features, support, and higher usage limits.",
-        "it": "Elemento offre un generoso livello gratuito che include fino a 2 VM su AtomOS, funzionalità di base di Electros e accesso all'API Atomosphere. Questo è perfetto per test, sviluppo e piccoli progetti. Puoi passare ai piani a pagamento in qualsiasi momento per funzionalità aggiuntive, supporto e limiti di utilizzo più elevati."
+        "en": "AtomOS is free forever — the full hypervisor with unlimited VMs on every server. Electros is free with your Elemento account until September 2026 (moving to a SaaS subscription afterwards), and you also get access to the Atomosphere API. This is perfect for testing, development, and production alike. Optional AtomOS support plans (Base and Pro, 8x5) are available whenever you need them.",
+        "it": "AtomOS è gratuito per sempre — l'hypervisor completo con VM illimitate su ogni server. Electros è gratuito con il tuo account Elemento fino a settembre 2026 (dopodiché passa a un abbonamento SaaS) e ottieni anche l'accesso all'API Atomosphere. Questo è perfetto sia per test e sviluppo che per la produzione. Piani di supporto AtomOS opzionali (Base e Pro, 8x5) sono disponibili quando ti servono."
       },
       {
         "en": "We provide comprehensive documentation, video tutorials, and a knowledge base. Enterprise customers get dedicated support with SLAs, while community users can access our active community forum and GitHub repositories. We also offer training programs and workshops for teams.",

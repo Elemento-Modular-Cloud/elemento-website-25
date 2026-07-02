@@ -78,7 +78,7 @@
         "price": "0",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "description": "Free Community Edition - 2 VMs per server"
+        "description": "Free forever - full hypervisor on every server, with optional paid support plans"
       },
       "provider": {
         "@type": "Organization",
@@ -617,7 +617,7 @@
                     </div>
                     <div class="hero-cta">
                         <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Deploy in Minutes</a>
-                        <a href="https://atomos.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="hn hn-tag"></i> Buy Now</a>
+                        <a href="https://atomos.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-gift"></i> Get it Free</a>
                     </div>
                 </div>
             </div>
@@ -1180,40 +1180,15 @@
     <section class="section" id="prices">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Choose Your AtomOS Edition</h2>
-                <p class="section-subtitle">From free community use to enterprise production deployments</p>
+                <h2 class="section-title">AtomOS is Free, Forever</h2>
+                <p class="section-subtitle">The full hypervisor is free on every server — you only pay for optional support</p>
             </div>
-            
-            <div class="grid grid-2 plans-grid">
+
+            <div class="grid plans-grid">
                 <div class="card fade-in" id="community">
                     <div class="plan-card">
-                        <h3>AtomOS Community Edition — Free Forever</h3>
+                        <h3>AtomOS — Free Forever</h3>
                         <div class="plan-price">€0</div>
-                        <p class="plan-subtitle">Per server, regardless of CPU cores or VM count</p>
-                    </div>
-                    <ul class="plan-features">
-                        <li class="feature-list-item">
-                            <span class="feature-check">✓</span>
-                            Run up to 2 virtual machines per server
-                        </li>
-                        <li class="feature-list-item">
-                            <span class="feature-check">✓</span>
-                            CLI control only (virsh, qemu-img)
-                        </li>
-                        <li class="feature-list-item">
-                            <span class="feature-check">✓</span>
-                            Perfect for labs, makers, DevOps hobbyists
-                        </li>
-                    </ul>
-                    <div class="plan-cta">
-                        <a href="#installation" class="btn btn-primary"><i class="fas fa-download"></i> Download Now</a>
-                    </div>
-                </div>
-                
-                <div class="card fade-in" id="enterprise">
-                    <div class="plan-card">
-                        <h3>AtomOS Enterprise — For Private Cloud Production</h3>
-                        <div class="plan-price">€600/year</div>
                         <p class="plan-subtitle">Per server, regardless of CPU cores or VM count</p>
                     </div>
                     <ul class="plan-features">
@@ -1235,11 +1210,101 @@
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Guaranteed upgrade path and support
+                            Full CLI control (virsh, qemu-img)
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Guaranteed upgrade path
                         </li>
                     </ul>
                     <div class="plan-cta">
-                        <a href="https://atomos.elemento.cloud" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-crown"></i> Get Enterprise License</a>
+                        <a href="#installation" class="btn btn-primary"><i class="fas fa-download"></i> Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: var(--space-4xl);">
+                <h2 class="section-title">Optional Support Plans</h2>
+                <p class="section-subtitle">Per server, per year — all plans include 8x5 coverage</p>
+            </div>
+
+            <div class="grid grid-3 plans-grid">
+                <div class="card fade-in" id="support-base">
+                    <div class="plan-card">
+                        <h3>Base</h3>
+                        <div class="plan-price">€1,200<span style="font-size: 1rem; font-weight: normal;">/server/year</span></div>
+                        <p class="plan-subtitle">8x5 coverage</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Email ticketing support
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            8x5 coverage (business hours)
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Guaranteed upgrade path
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://book.elemento.cloud/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Get Base Support</a>
+                    </div>
+                </div>
+
+                <div class="card fade-in" id="support-pro">
+                    <div class="plan-card">
+                        <h3>Pro</h3>
+                        <div class="plan-price">€2,000<span style="font-size: 1rem; font-weight: normal;">/server/year</span></div>
+                        <p class="plan-subtitle">8x5 coverage</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Everything in Base
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Phone &amp; call support
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Support in Italian and English
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            8x5 coverage (business hours)
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://book.elemento.cloud/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-headset"></i> Get Pro Support</a>
+                    </div>
+                </div>
+
+                <div class="card fade-in" id="support-247">
+                    <div class="plan-card">
+                        <h3>24x7</h3>
+                        <div class="plan-price">Custom</div>
+                        <p class="plan-subtitle">Around-the-clock coverage</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Everything in Pro
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            24x7 coverage
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="feature-check">✓</span>
+                            Tailored SLAs for your workloads
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="https://book.elemento.cloud/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-clock"></i> Contact Sales</a>
                     </div>
                 </div>
             </div>
@@ -1250,14 +1315,14 @@
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Server-Based Pricing Drives Green Economy</h2>
-                <p class="section-subtitle">Our pricing model incentivizes efficient resource utilization and sustainable infrastructure choices</p>
+                <h2 class="section-title">Per-Server Support Pricing Drives Green Economy</h2>
+                <p class="section-subtitle">Our support model incentivizes efficient resource utilization and sustainable infrastructure choices</p>
             </div>
             
             <div class="grid grid-2 green-economy-grid">
                 <div class="fade-in">
                     <h3><span class="highlight-pixel">Efficient</span> Resource Utilization</h3>
-                    <p>Unlike CPU-core or VM-count based licensing, AtomOS's <span class="pixel-word">server-based pricing</span> encourages organizations to maximize the value of each physical server. This drives investment in <span class="pixel-word">larger, more efficient</span> hardware that can host more workloads with better performance per watt.</p>
+                    <p>Unlike CPU-core or VM-count based licensing, AtomOS's <span class="pixel-word">per-server support pricing</span> encourages organizations to maximize the value of each physical server. This drives investment in <span class="pixel-word">larger, more efficient</span> hardware that can host more workloads with better performance per watt.</p>
                     
                     <div class="green-benefits">
                         <h4>Green Economy Benefits:</h4>
@@ -1286,7 +1351,7 @@
                     <div class="card green-card">
                         <div class="feature-icon green-icon"><i class="fas fa-globe-europe" style="color: var(--green);"></i></div>
                         <h3>Sustainable Infrastructure</h3>
-                        <p>By charging per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.</p>
+                        <p>By pricing support per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.</p>
                         <div class="green-result">
                             <strong>Result:</strong> Fewer servers, less power, lower carbon footprint
                         </div>

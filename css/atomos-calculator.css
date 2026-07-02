@@ -447,6 +447,16 @@ body.compare-costs-page {
     opacity: 0.9;
 }
 
+.atomos-calculator-container .support-level-card .support-level-desc {
+    font-size: 0.78rem;
+    opacity: 0.75;
+}
+
+.atomos-calculator-container .support-level-247-note {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
 .atomos-calculator-container .comparison-table-wrap {
     overflow-x: auto;
     margin: 1.5rem 0;

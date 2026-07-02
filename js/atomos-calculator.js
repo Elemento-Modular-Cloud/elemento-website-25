@@ -10,7 +10,7 @@
         vmwareCloudFoundationPerCoreYear: 350,
         vmwareVSANPerTBYear: 120,
         vmwareSupportPercent: 18,
-        atomosPerHostYear: 600,
+        atomosPerHostYear: 0,
         atomosSupportBase: 1200,
         atomosSupportPro: 2000,
         currency: '€',
@@ -83,12 +83,15 @@
             chooseSupport: 'Choose AtomOS support level',
             supportBase: 'Base',
             supportPro: 'Pro',
+            supportBaseDesc: 'Email ticketing • 8x5',
+            supportProDesc: '+ Phone support (IT/EN) • 8x5',
+            support247Note: '24x7 coverage available at custom pricing — contact sales.',
             competitorTotal: '{label} total',
             atomosTotal: 'AtomOS total',
             savingsPct: 'Savings %',
             costPerVmYear: '{label} cost per VM/year',
             costPerHostYear: '{label} cost per host/year',
-            disclaimer: 'Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. AtomOS: paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes.',
+            disclaimer: 'Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. AtomOS is free forever; the only cost shown is optional Base or Pro support (8x5), priced per host/year. 24x7 support is available at custom pricing. Actual costs may vary. Contact sales for exact quotes.',
             pageTitle: 'Compare Costs — AtomOS vs {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
             pageSubtitle: 'Calculate how much you could save with AtomOS compared to {compShort}. Discover how our virtualization solution helps you escape rising costs, without compromising enterprise-level reliability.',
@@ -127,7 +130,7 @@
             pdfResultSummary: 'Result summary',
             pdfMetrics: 'Metrics',
             pdfMetricsLine: 'Savings: {pct}%  |  {compShort} cost per VM/year: {costVm}  |  Cost per host/year: {costHost}',
-            pdfFooter: 'Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. Elemento AtomOS: paid tier (€600/host/year) with Base or Pro support; Community Edition is free but excluded. Actual costs may vary. Contact sales for exact quotes. — Elemento | elemento.cloud',
+            pdfFooter: 'Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. Elemento AtomOS is free forever; the only cost shown is optional Base or Pro support (8x5), priced per host/year. 24x7 support is available at custom pricing. Actual costs may vary. Contact sales for exact quotes. — Elemento | elemento.cloud',
             pdfReportTitle: 'Elemento AtomOS vs {compLabel}',
             loadError: 'Failed to load cost calculator. Please refresh the page.',
         },
@@ -160,12 +163,15 @@
             chooseSupport: 'Scegli il livello di supporto AtomOS',
             supportBase: 'Base',
             supportPro: 'Pro',
+            supportBaseDesc: 'Ticketing via email • 8x5',
+            supportProDesc: '+ Supporto telefonico (IT/EN) • 8x5',
+            support247Note: 'Copertura 24x7 disponibile a prezzo personalizzato — contatta il commerciale.',
             competitorTotal: 'Totale {label}',
             atomosTotal: 'Totale AtomOS',
             savingsPct: 'Risparmio %',
             costPerVmYear: 'Costo {label} per VM/anno',
             costPerHostYear: 'Costo {label} per host/anno',
-            disclaimer: 'Stime basate su listini pubblicati e configurazioni tipiche. VMware usa licenze per core (minimo 16 core per CPU). Nutanix/Sangfor: stime HCI per nodo. Hyper-V: equivalente Windows Server Datacenter per core. AtomOS: tier a pagamento (€600/host/anno) con supporto Base o Pro; Community Edition gratuita ma esclusa. I costi effettivi possono variare. Contatta il commerciale per preventivi esatti.',
+            disclaimer: 'Stime basate su listini pubblicati e configurazioni tipiche. VMware usa licenze per core (minimo 16 core per CPU). Nutanix/Sangfor: stime HCI per nodo. Hyper-V: equivalente Windows Server Datacenter per core. AtomOS è gratuito per sempre; l\'unico costo mostrato è il supporto opzionale Base o Pro (8x5), con prezzo per host/anno. Il supporto 24x7 è disponibile a prezzo personalizzato. I costi effettivi possono variare. Contatta il commerciale per preventivi esatti.',
             pageTitle: 'Confronta i costi: AtomOS e {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
             pageSubtitle: 'Calcola quanto potresti risparmiare con AtomOS rispetto a {compShort}. Scopri come la nostra soluzione di virtualizzazione ti aiuta a evitare l\'aumento dei costi, senza compromettere l\'affidabilità a livello aziendale.',
@@ -204,7 +210,7 @@
             pdfResultSummary: 'Riepilogo risultati',
             pdfMetrics: 'Metriche',
             pdfMetricsLine: 'Risparmio: {pct}%  |  Costo {compShort} per VM/anno: {costVm}  |  Costo per host/anno: {costHost}',
-            pdfFooter: 'Stime basate su listini pubblicati e configurazioni tipiche. VMware usa licenze per core (minimo 16 core per CPU). Nutanix/Sangfor: stime HCI per nodo. Hyper-V: equivalente Windows Server Datacenter per core. Elemento AtomOS: tier a pagamento (€600/host/anno) con supporto Base o Pro; Community Edition gratuita ma esclusa. I costi effettivi possono variare. Contatta il commerciale per preventivi esatti. — Elemento | elemento.cloud',
+            pdfFooter: 'Stime basate su listini pubblicati e configurazioni tipiche. VMware usa licenze per core (minimo 16 core per CPU). Nutanix/Sangfor: stime HCI per nodo. Hyper-V: equivalente Windows Server Datacenter per core. Elemento AtomOS è gratuito per sempre; l\'unico costo mostrato è il supporto opzionale Base o Pro (8x5), con prezzo per host/anno. Il supporto 24x7 è disponibile a prezzo personalizzato. I costi effettivi possono variare. Contatta il commerciale per preventivi esatti. — Elemento | elemento.cloud',
             pdfReportTitle: 'Elemento AtomOS vs {compLabel}',
             loadError: 'Impossibile caricare la calcolatrice. Ricarica la pagina.',
         },
@@ -237,12 +243,15 @@
             chooseSupport: 'Choisissez le niveau de support AtomOS',
             supportBase: 'Base',
             supportPro: 'Pro',
+            supportBaseDesc: 'Tickets par e-mail • 8x5',
+            supportProDesc: '+ Support téléphonique (IT/EN) • 8x5',
+            support247Note: 'Couverture 24x7 disponible sur devis — contactez les ventes.',
             competitorTotal: 'Total {label}',
             atomosTotal: 'Total AtomOS',
             savingsPct: 'Économies %',
             costPerVmYear: 'Coût {label} par VM/an',
             costPerHostYear: 'Coût {label} par hôte/an',
-            disclaimer: 'Estimations basées sur les tarifs publics et des configurations typiques. VMware : licence par cœur (minimum 16 cœurs par CPU). Nutanix/Sangfor : estimations HCI par nœud. Hyper-V : équivalent Windows Server Datacenter par cœur. AtomOS : offre payante (600 €/hôte/an) avec support Base ou Pro ; Community Edition gratuite mais exclue. Les coûts réels peuvent varier. Contactez les ventes pour un devis exact.',
+            disclaimer: 'Estimations basées sur les tarifs publics et des configurations typiques. VMware : licence par cœur (minimum 16 cœurs par CPU). Nutanix/Sangfor : estimations HCI par nœud. Hyper-V : équivalent Windows Server Datacenter par cœur. AtomOS est gratuit pour toujours ; le seul coût affiché est le support optionnel Base ou Pro (8x5), facturé par hôte/an. Le support 24x7 est disponible sur devis. Les coûts réels peuvent varier. Contactez les ventes pour un devis exact.',
             pageTitle: 'Comparer les coûts : AtomOS vs {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
             pageSubtitle: 'Calculez combien vous pourriez économiser avec AtomOS par rapport à {compShort}. Découvrez comment notre solution de virtualisation vous aide à maîtriser les coûts, sans compromettre la fiabilité entreprise.',
@@ -281,7 +290,7 @@
             pdfResultSummary: 'Résumé des résultats',
             pdfMetrics: 'Indicateurs',
             pdfMetricsLine: 'Économies : {pct} %  |  Coût {compShort} par VM/an : {costVm}  |  Coût par hôte/an : {costHost}',
-            pdfFooter: 'Estimations basées sur les tarifs publics et des configurations typiques. VMware : licence par cœur (minimum 16 cœurs par CPU). Nutanix/Sangfor : estimations HCI par nœud. Hyper-V : équivalent Windows Server Datacenter par cœur. Elemento AtomOS : offre payante (600 €/hôte/an) avec support Base ou Pro ; Community Edition gratuite mais exclue. Les coûts réels peuvent varier. Contactez les ventes pour un devis exact. — Elemento | elemento.cloud',
+            pdfFooter: 'Estimations basées sur les tarifs publics et des configurations typiques. VMware : licence par cœur (minimum 16 cœurs par CPU). Nutanix/Sangfor : estimations HCI par nœud. Hyper-V : équivalent Windows Server Datacenter par cœur. Elemento AtomOS est gratuit pour toujours ; le seul coût affiché est le support optionnel Base ou Pro (8x5), facturé par hôte/an. Le support 24x7 est disponible sur devis. Les coûts réels peuvent varier. Contactez les ventes pour un devis exact. — Elemento | elemento.cloud',
             pdfReportTitle: 'Elemento AtomOS vs {compLabel}',
             loadError: 'Impossible de charger le calculateur. Veuillez actualiser la page.',
         },
@@ -377,10 +386,14 @@
         const supportCards = container.querySelectorAll('.support-level-card');
         supportCards.forEach((card) => {
             const name = card.querySelector('.support-level-name');
+            const desc = card.querySelector('.support-level-desc');
             const tier = card.getAttribute('data-value');
             if (name && tier === 'base') name.textContent = t('supportBase');
             if (name && tier === 'pro') name.textContent = t('supportPro');
+            if (desc && tier === 'base') desc.textContent = t('supportBaseDesc');
+            if (desc && tier === 'pro') desc.textContent = t('supportProDesc');
         });
+        setText('.support-level-247-note', 'support247Note');
 
         const atomosResultLabel = container.querySelector('.result-card.atomos .label');
         if (atomosResultLabel) atomosResultLabel.textContent = t('atomosTotal');
