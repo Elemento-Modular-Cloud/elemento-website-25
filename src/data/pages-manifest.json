@@ -1088,6 +1088,46 @@
     ]
   },
   {
+    "stem": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start",
+    "legacyPath": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+    "group": "blog-posts",
+    "slug": "2026-07-06-what-is-a-metacloud-how-to-start",
+    "title": "What Is a Metacloud? A Practical Guide to Running One with Electros | Elemento Blog",
+    "description": "A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it",
+    "legacyPath": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+    "group": "blog-posts",
+    "slug": "2026-07-06-what-is-a-metacloud-how-to-start.it",
+    "title": "Cos'è un Metacloud? Guida pratica per avviarne uno con Electros | Blog Elemento",
+    "description": "Un metacloud è il control plane che governa cloud, hypervisor e provider senza sostituirli. Scopri cos'è, perché batte il multi-cloud e come iniziare gratis quest'estate con Electros.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "blog-posts/404",
     "legacyPath": "blog-posts/404.html",
     "group": "blog-posts",

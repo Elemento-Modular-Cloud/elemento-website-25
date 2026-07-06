@@ -5,8 +5,15 @@
     <link>https://elemento.cloud/blog.html</link>
     <description>Cloud computing insights, industry news, and technology stories from Elemento.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elemento.cloud/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>What Is a Metacloud — And How to Start Running One This Summer</title>
+      <link>https://elemento.cloud/blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html</link>
+      <guid isPermaLink="true">https://elemento.cloud/blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html</guid>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <description>A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.</description>
+    </item>
     <item>
       <title>Cloud Sovereignty Is Not a Location: A Practical Guide for CIOs, CTOs and CISOs</title>
       <link>https://elemento.cloud/blog-posts/2026-06-12-cloud-sovereignty-europe-practical-guide-cios-ctos-cisos.html</link>
