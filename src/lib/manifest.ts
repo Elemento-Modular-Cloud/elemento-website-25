@@ -1,8 +1,11 @@
 import manifest from '../data/pages-manifest.json';
+import excludedPages from '../data/excluded-pages.json';
 import type { Locale } from '../i18n/config';
 import type { PageEntry } from './page-types';
 
-export const PAGES = manifest as PageEntry[];
+const EXCLUDED = new Set(excludedPages as string[]);
+
+export const PAGES = (manifest as PageEntry[]).filter((p) => !EXCLUDED.has(p.stem));
 
 export function pagesByGroup(group: string, locale: Locale): PageEntry[] {
   return PAGES.filter((p) => p.group === group && p.locales.includes(locale));

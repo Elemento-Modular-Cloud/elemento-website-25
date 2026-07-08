@@ -9,6 +9,9 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const OUT = join(ROOT, 'src', 'data', 'pages-manifest.json');
+const EXCLUDED = new Set(
+  JSON.parse(readFileSync(join(ROOT, 'src', 'data', 'excluded-pages.json'), 'utf-8'))
+);
 
 const SKIP_DIRS = new Set([
   'node_modules',
@@ -150,6 +153,7 @@ function main() {
         : group === 'thank-you'
           ? `thank-you/${slug}`
           : `${group}/${slug}`);
+    if (EXCLUDED.has(stem) || EXCLUDED.has(slug)) continue;
     const { scripts, isSolution } = extractExtraScripts(html);
     const extraCss = extractExtraCss(html, rel);
 

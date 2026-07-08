@@ -11,6 +11,9 @@ const ROOT = join(__dirname, '..');
 const DIST = join(ROOT, 'dist');
 const SITE = 'https://elemento.cloud';
 const MANIFEST = join(ROOT, 'src', 'data', 'pages-manifest.json');
+const EXCLUDED = new Set(
+  JSON.parse(readFileSync(join(ROOT, 'src', 'data', 'excluded-pages.json'), 'utf-8'))
+);
 
 function urlFor(locale, stem) {
   if (locale === 'en') {
@@ -20,7 +23,9 @@ function urlFor(locale, stem) {
 }
 
 function main() {
-  const pages = JSON.parse(readFileSync(MANIFEST, 'utf-8'));
+  const pages = JSON.parse(readFileSync(MANIFEST, 'utf-8')).filter(
+    (p) => !EXCLUDED.has(p.stem)
+  );
   const today = new Date().toISOString().slice(0, 10);
   const urls = [];
 

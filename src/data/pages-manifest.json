@@ -1566,33 +1566,6 @@
     ]
   },
   {
-    "stem": "orbital",
-    "legacyPath": "orbital.html",
-    "group": "root",
-    "slug": "orbital",
-    "title": "Orbital — Hardware Servers with AtomOS | Elemento Cloud",
-    "description": "Orbital servers are pre-configured hardware solutions with AtomOS included. Choose from various configurations for development, production, and enterprise workloads.",
-    "robots": "index, follow",
-    "ogType": "product",
-    "extraCss": [
-      "css/atmosphere.css",
-      "css/planet-styles/planet-orbital.css",
-      "css/orbital.css",
-      "css/breadcrumb.css"
-    ],
-    "extraScripts": [
-      "js/faq.js",
-      "js/orbital.js",
-      "js/atmosphere_hero_with_logo.js"
-    ],
-    "type": "legacy",
-    "locales": [
-      "en",
-      "it",
-      "fr"
-    ]
-  },
-  {
     "stem": "products",
     "legacyPath": "products.html",
     "group": "root",
