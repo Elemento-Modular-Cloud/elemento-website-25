@@ -265,16 +265,16 @@ class Navbar {
     getBannerStrings() {
         const defaults = {
             en: {
-                text: 'Grab today AtomOS - 150€ off the first purchase',
-                aria: 'Grab today AtomOS: 150 euros off the first purchase',
+                text: 'AtomOS is free forever — 150€ off your first support plan',
+                aria: 'AtomOS is free forever. Get 150 euros off your first support plan.',
             },
             it: {
-                text: 'Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto',
-                aria: 'Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto',
+                text: 'AtomOS è gratuito per sempre — 150€ di sconto sul primo piano di supporto',
+                aria: 'AtomOS è gratuito per sempre. 150 euro di sconto sul primo piano di supporto.',
             },
             fr: {
-                text: "Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat",
-                aria: "Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat",
+                text: "AtomOS est gratuit pour toujours — 150 € de réduction sur votre premier plan de support",
+                aria: "AtomOS est gratuit pour toujours. 150 euros de réduction sur votre premier plan de support.",
             },
         };
         const locale = this.getLocale();

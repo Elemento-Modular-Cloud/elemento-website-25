@@ -21,8 +21,8 @@
     "homeAria": "Elemento home"
   },
   "banner": {
-    "atomosDiscountText": "Grab today AtomOS - 150€ off the first purchase",
-    "atomosDiscountAria": "Grab today AtomOS: 150 euros off the first purchase"
+    "atomosDiscountText": "AtomOS is free forever — 150€ off your first support plan",
+    "atomosDiscountAria": "AtomOS is free forever. Get 150 euros off your first support plan."
   },
   "footer": {
     "tagline": "Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.",
