@@ -280,7 +280,7 @@ const IT_GLOBAL = [
   ['Provisioning sottile', 'Thin Provisioning'],
   ["Tu-Sai-Chi contro AtomOS: resa dei conti con l'hypervisor", 'Tu-Sai-Chi contro AtomOS: resa dei conti fra hypervisor'],
   ['macchina virtuale del server vCenter', 'Macchina virtuale del server vCenter'],
-  ['utilizzare crudo', "utilizza 'raw'"],
+  ['utilizzare formato raw', "utilizza 'raw'"],
   ['basato sulla fiducia', 'basato sul trust'],
   ['produttori e hobbisti', 'makers e hobbisti'],
   ["economia verde", 'economia green'],
