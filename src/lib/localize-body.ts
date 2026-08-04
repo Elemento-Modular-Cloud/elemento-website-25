@@ -385,14 +385,22 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
 
   const perPageIt: Record<string, Replacement[]> = {
     index: [
-      ['Ready. Set. Cloud.', 'Ready. Set. Cloud.'],
+      ['Elemento Homepage Hero', 'Hero homepage Elemento'],
+      ['The Metacloud.', 'Il Metacloud.'],
       [
-        /Build and Run Your Own(?:\s|<[^>]+>\s*)+Cloud Infrastructure(?:\s|<[^>]+>\s*)+<span class="pixel-accent">with No Lock-In<\/span>/gi,
-        'Costruisci ed orchestra la tua<br> infrastruttura cloud<br> <span class="pixel-accent">senza vincoli</span>',
+        '<a href="electros.html" class="home-tagline-link home-tagline-link--electros">Electros</a>, the control plane for every cloud, hypervisor and sovereign&nbsp;infrastructure.',
+        '<a href="electros.html" class="home-tagline-link home-tagline-link--electros">Electros</a>, il control plane per ogni cloud, hypervisor e infrastruttura&nbsp;sovrana.',
       ],
       [
-        /Elemento lets you build and run your own cloud infrastructure with complete freedom\.[\s\S]*?<span class="pixel-accent">Your cloud\. Your rules, Your freedom\.<\/span>/gi,
-        'Elemento ti consente di creare ed gestire la tua infrastruttura cloud in completa libertà. Scegli dove eseguirlo e noi automatizziamo tutto per te.<br><span class="pixel-accent">Il tuo cloud. Le tue regole. La tua libertà.</span>',
+        'Govern, move and optimise workloads across AWS, Azure, Google&nbsp;Cloud, OVHcloud, VMware, Proxmox and <a href="atomos.html" class="home-tagline-link home-tagline-link--atomos">AtomOS</a> — without replacing what already exists.',
+        'Governa, sposta e ottimizza i carichi di lavoro su AWS, Azure, Google&nbsp;Cloud, OVHcloud, VMware, Proxmox e <a href="atomos.html" class="home-tagline-link home-tagline-link--atomos">AtomOS</a> — senza sostituire ciò che già esiste.',
+      ],
+      ['Book a Metacloud Assessment', 'Prenota una valutazione Metacloud'],
+      ['Run VMware Exit Assessment', 'Avvia la valutazione di uscita da VMware'],
+      ['Explore Platform →', 'Esplora la piattaforma →'],
+      [
+        'One governance layer across public clouds, hypervisors and sovereign providers — without replacing what you already run.',
+        'Un unico layer di governance su cloud pubblici, hypervisor e provider sovrani — senza sostituire ciò che già esegui.',
       ],
     ],
     about: [
@@ -484,14 +492,22 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
 
   const perPageFr: Record<string, Replacement[]> = {
     index: [
-      ['Ready. Set. Cloud.', 'Prêts. Partez. Cloud.'],
+      ['Elemento Homepage Hero', 'Hero de la page d\'accueil Elemento'],
+      ['The Metacloud.', 'Le Metacloud.'],
       [
-        /Build and Run Your Own(?:\s|<[^>]+>\s*)+Cloud Infrastructure(?:\s|<[^>]+>\s*)+<span class="pixel-accent">with No Lock-In<\/span>/gi,
-        'Construisez et exécutez votre<br> infrastructure cloud<br> <span class="pixel-accent">sans verrouillage</span>',
+        '<a href="electros.html" class="home-tagline-link home-tagline-link--electros">Electros</a>, the control plane for every cloud, hypervisor and sovereign&nbsp;infrastructure.',
+        '<a href="electros.html" class="home-tagline-link home-tagline-link--electros">Electros</a>, le control plane pour chaque cloud, hyperviseur et infrastructure&nbsp;souveraine.',
       ],
       [
-        /Elemento lets you build and run your own cloud infrastructure with complete freedom\.[\s\S]*?<span class="pixel-accent">Your cloud\. Your rules, Your freedom\.<\/span>/gi,
-        'Elemento vous permet de construire et d\'exploiter votre infrastructure cloud en toute liberté. Vous choisissez où elle tourne, nous automatisons le reste.<br><span class="pixel-accent">Votre cloud. Vos règles. Votre liberté.</span>',
+        'Govern, move and optimise workloads across AWS, Azure, Google&nbsp;Cloud, OVHcloud, VMware, Proxmox and <a href="atomos.html" class="home-tagline-link home-tagline-link--atomos">AtomOS</a> — without replacing what already exists.',
+        'Gouvernez, déplacez et optimisez les charges de travail sur AWS, Azure, Google&nbsp;Cloud, OVHcloud, VMware, Proxmox et <a href="atomos.html" class="home-tagline-link home-tagline-link--atomos">AtomOS</a> — sans remplacer ce qui existe déjà.',
+      ],
+      ['Book a Metacloud Assessment', 'Réserver une évaluation Metacloud'],
+      ['Run VMware Exit Assessment', 'Lancer l\'évaluation de sortie VMware'],
+      ['Explore Platform →', 'Explorer la plateforme →'],
+      [
+        'One governance layer across public clouds, hypervisors and sovereign providers — without replacing what you already run.',
+        'Une couche de gouvernance unique sur les clouds publics, hyperviseurs et fournisseurs souverains — sans remplacer ce que vous exécutez déjà.',
       ],
     ],
     about: [

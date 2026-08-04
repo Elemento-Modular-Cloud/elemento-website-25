@@ -6368,6 +6368,38 @@
     ],
     "index": [
       {
+        "en": "The Metacloud.",
+        "it": "Il Metacloud."
+      },
+      {
+        "en": "Electros, the control plane for every cloud, hypervisor and sovereign infrastructure.",
+        "it": "<a href=\"electros.html\" class=\"home-tagline-link home-tagline-link--electros\">Electros</a>, il control plane per ogni cloud, hypervisor e infrastruttura sovrana."
+      },
+      {
+        "en": "Govern, move and optimise workloads across AWS, Azure, Google Cloud, OVHcloud, VMware, Proxmox and AtomOS — without replacing what already exists.",
+        "it": "Governa, sposta e ottimizza i carichi di lavoro su AWS, Azure, Google Cloud, OVHcloud, VMware, Proxmox e <a href=\"atomos.html\" class=\"home-tagline-link home-tagline-link--atomos\">AtomOS</a> — senza sostituire ciò che già esiste."
+      },
+      {
+        "en": "Book a Metacloud Assessment",
+        "it": "Prenota una valutazione Metacloud"
+      },
+      {
+        "en": "Run VMware Exit Assessment",
+        "it": "Avvia la valutazione di uscita da VMware"
+      },
+      {
+        "en": "Explore Platform →",
+        "it": "Esplora la piattaforma →"
+      },
+      {
+        "en": "One governance layer across public clouds, hypervisors and sovereign providers — without replacing what you already run.",
+        "it": "Un unico layer di governance su cloud pubblici, hypervisor e provider sovrani — senza sostituire ciò che già esegui."
+      },
+      {
+        "en": "Elemento Homepage Hero",
+        "it": "Hero homepage Elemento"
+      },
+      {
         "en": "Elemento is a vendor-neutral cloud platform that abstracts away the differences between cloud providers. Unlike traditional providers that lock you into their ecosystem, Elemento gives you a unified interface to deploy and manage workloads across AWS, Azure, Google Cloud, and your own infrastructure. This means you can move workloads freely without rewriting applications or changing your deployment processes.",
         "it": "Elemento è una piattaforma cloud indipendente dal fornitore che elimina le differenze tra i fornitori di servizi cloud. A differenza dei fornitori tradizionali che ti vincolano al loro ecosistema, Elemento ti offre un'interfaccia unificata per distribuire e gestire carichi di lavoro su AWS, Azure, Google Cloud e sulla tua infrastruttura. Ciò significa che puoi spostare liberamente i carichi di lavoro senza riscrivere le applicazioni o modificare i processi di distribuzione."
       },
