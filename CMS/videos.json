@@ -1,6 +1,36 @@
 {
   "it": [
     {
+      "id": "gumlet-6a7198c6ec8c132ca282df36",
+      "date": "2026-08-04",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a7198c6ec8c132ca282df36?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "AtomOS Gratuito",
+      "summary": "Come iniziare con AtomOS Gratuito."
+    },
+    {
+      "id": "gumlet-6a7198c619801baa9622641a",
+      "date": "2026-08-04",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a7198c619801baa9622641a?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "Il Metacloud",
+      "summary": "Introduzione al Metacloud."
+    },
+    {
+      "id": "gumlet-6a4cf2ec752204b8a63bc561",
+      "date": "2026-08-04",
+      "provider": "gumlet",
+      "embedUrl": "https://play.gumlet.io/embed/6a4cf2ec752204b8a63bc561?background=false&autoplay=false&loop=false&disable_player_controls=false",
+      "referrerPolicy": "origin",
+      "allow": "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;clipboard-write;",
+      "title": "Nuove Features di AtomOS",
+      "summary": "Le novità di AtomOS."
+    },
+    {
       "id": "gumlet-6a157291f790155bb593adfa",
       "date": "2026-05-26",
       "provider": "gumlet",
