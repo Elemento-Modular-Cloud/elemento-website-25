@@ -119,7 +119,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
-    z-index: 99999;
+    z-index: 1100; /* above atmosphere logos (~1001), below navbar (9998) */
     text-align: center;
 }
 
