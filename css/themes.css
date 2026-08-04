@@ -141,6 +141,8 @@
 
     /* Light theme (Default) */
     --primary-color: var(--accent-color);
+    /* Readable brand yellow on light surfaces (~5:1 vs --background-color) */
+    --primary-text-color: color-mix(in srgb, var(--primary-color) 50%, var(--black) 50%);
     --logo-color: var(--grey-dark);
     --button-color: var(--primary-color);
     --icon-color-disabled: rgba(0, 0, 0, 0.3);
@@ -291,6 +293,7 @@
     --os-macos: #FFF;
 
     --primary-color: var(--accent-color);
+    --primary-text-color: var(--primary-color);
     --hero-product-icon-blend-mode: hard-light;
     --hero-product-icon-opacity: 1;
     --hero-logo-contrast-blend-mode: screen;
@@ -441,6 +444,7 @@
     --os-macos: #FFF;
 
     --primary-color: var(--accent-color);
+    --primary-text-color: var(--primary-color);
     --hero-product-icon-blend-mode: hard-light;
     --hero-product-icon-opacity: 1;
     --hero-logo-contrast-blend-mode: normal;

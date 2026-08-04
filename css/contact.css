@@ -4,7 +4,7 @@
 /* Contact-specific Hero Section Enhancements */
 .hero-tagline {
     font-size: 0.9rem;
-    color: var(--primary-color);
+    color: var(--primary-text-color);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;

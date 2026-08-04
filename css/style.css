@@ -1107,7 +1107,7 @@ body {
 /* Hero tagline styling - consistent across all pages */
 .hero-tagline {
     font-size: 1.1rem;
-    color: var(--primary-color);
+    color: var(--primary-text-color);
     font-weight: 600;
     margin: auto;
     margin-bottom: var(--space-md);

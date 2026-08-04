@@ -151,6 +151,7 @@
         --background-color: #F5F5FA;
         --text-color: #1A1C20;
         --primary-color: #FFA600;
+        --primary-text-color: color-mix(in srgb, var(--primary-color) 50%, #1A1C20 50%);
         --font-primary: 'Open Sans', sans-serif;
         --font-heading: 'Red Hat Display', sans-serif;
         --border-color: #e0e0e0;
@@ -213,7 +214,7 @@
     /* Critical hero tagline styles */
     .hero-tagline {
         font-size: 1.1rem;
-        color: var(--primary-color);
+        color: var(--primary-text-color);
         font-weight: 600;
         margin-bottom: 1rem;
         text-transform: uppercase;
