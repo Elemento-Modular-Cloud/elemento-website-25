@@ -24,6 +24,17 @@
     "atomosDiscountText": "AtomOS è gratuito per sempre — 150€ di sconto sul primo piano di supporto",
     "atomosDiscountAria": "AtomOS è gratuito per sempre. 150 euro di sconto sul primo piano di supporto."
   },
+  "homeHero": {
+    "orbitTags": {
+      "sovereignHypervisor": "Hypervisor sovrano",
+      "hypervisor": "Hypervisor",
+      "virtualization": "Virtualizzazione",
+      "privateCloud": "Cloud privato",
+      "publicCloud": "Cloud pubblico",
+      "sovereignCloud": "Cloud sovrano",
+      "objectStorage": "Object storage"
+    }
+  },
   "footer": {
     "tagline": "Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.",
     "products": "Prodotti",

@@ -6368,10 +6368,6 @@
     ],
     "index": [
       {
-        "en": "The Metacloud.",
-        "it": "Il Metacloud."
-      },
-      {
         "en": "Electros, the control plane for every cloud, hypervisor and sovereign infrastructure.",
         "it": "<a href=\"electros.html\" class=\"home-tagline-link home-tagline-link--electros\">Electros</a>, il control plane per ogni cloud, hypervisor e infrastruttura sovrana."
       },
@@ -6386,10 +6382,6 @@
       {
         "en": "Run VMware Exit Assessment",
         "it": "Avvia la valutazione di uscita da VMware"
-      },
-      {
-        "en": "Explore Platform →",
-        "it": "Esplora la piattaforma →"
       },
       {
         "en": "One governance layer across public clouds, hypervisors and sovereign providers — without replacing what you already run.",

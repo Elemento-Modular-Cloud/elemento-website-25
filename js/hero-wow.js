@@ -28,6 +28,25 @@
         return normalized;
     }
 
+    var ORBIT_TAG_KEYS = {
+        'Sovereign hypervisor': 'sovereignHypervisor',
+        'Hypervisor': 'hypervisor',
+        'Virtualization': 'virtualization',
+        'Private cloud': 'privateCloud',
+        'Public cloud': 'publicCloud',
+        'Sovereign cloud': 'sovereignCloud',
+        'Object storage': 'objectStorage'
+    };
+
+    function tOrbitTag(enTag) {
+        var key = ORBIT_TAG_KEYS[enTag];
+        var tags = window.__I18N__ && window.__I18N__.ui && window.__I18N__.ui.homeHero
+            ? window.__I18N__.ui.homeHero.orbitTags
+            : null;
+        if (key && tags && tags[key]) return tags[key];
+        return enTag;
+    }
+
     // angle: optional fixed angle (degrees); slot: optional index on ring (default: array order).
     var PROVIDERS = [
         // Hypervisors / virtualization
@@ -205,7 +224,7 @@
         el.style.top = '0';
         el.innerHTML =
             '<span class="provider-float__logo">' + media + '</span>' +
-            '<span class="provider-float__text"><strong>' + p.name + '</strong><small>' + p.tag + '</small></span>';
+            '<span class="provider-float__text"><strong>' + p.name + '</strong><small>' + tOrbitTag(p.tag) + '</small></span>';
         return el;
     }
 

@@ -72,6 +72,17 @@
     "openResource": "Open resource",
     "missingEmbed": "Missing embed URL."
   },
+  "homeHero": {
+    "orbitTags": {
+      "sovereignHypervisor": "Sovereign hypervisor",
+      "hypervisor": "Hypervisor",
+      "virtualization": "Virtualization",
+      "privateCloud": "Private cloud",
+      "publicCloud": "Public cloud",
+      "sovereignCloud": "Sovereign cloud",
+      "objectStorage": "Object storage"
+    }
+  },
   "pages": {
     "index": {
       "title": "Elemento | Unified private and public Cloud platform",
