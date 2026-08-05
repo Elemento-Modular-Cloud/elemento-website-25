@@ -53,6 +53,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function injectHypermonitorTicker() {
+        if (document.getElementById('hypermonitor-ticker')) {
+            return;
+        }
+
+        const ticker = document.createElement('iframe');
+        ticker.id = 'hypermonitor-ticker';
+        ticker.src = 'https://hypermonitor.elemento.cloud/embed/ticker';
+        ticker.title = 'Hypermonitor live ticker';
+        ticker.setAttribute('loading', 'lazy');
+        ticker.style.cssText = 'position:fixed;bottom:0;left:0;width:100%;height:40px;border:0;z-index:9999';
+        document.body.appendChild(ticker);
+        document.documentElement.classList.add('has-hypermonitor-ticker');
+    }
+
     function getPathPrefix() {
         const parts = window.location.pathname.split('/').filter(Boolean);
         if (parts.length && parts[parts.length - 1].endsWith('.html')) {
@@ -148,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     injectLinkedInInsightTag();
     injectMetricoolTracker();
+    injectHypermonitorTicker();
 
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (!footerPlaceholder) return;
