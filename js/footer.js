@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const ticker = document.createElement('iframe');
         ticker.id = 'hypermonitor-ticker';
-        ticker.src = 'https://hypermonitor.elemento.cloud/embed/ticker';
+        ticker.src = 'https://hypermonitor.elemento.cloud/embed/ticker?key=12345678';
         ticker.title = 'Hypermonitor live ticker';
         ticker.setAttribute('loading', 'lazy');
         ticker.style.cssText = 'position:fixed;bottom:0;left:0;width:100%;height:40px;border:0;z-index:9999';
