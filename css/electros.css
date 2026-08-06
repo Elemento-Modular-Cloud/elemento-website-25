@@ -382,6 +382,44 @@
     }
 }
 
+/* Livid intro embed — first platform section */
+.electros-intro-layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+    gap: var(--space-2xl);
+}
+
+.content-image.electros-intro-media {
+    max-height: none;
+    align-items: stretch;
+    width: 100%;
+}
+
+.electros-intro-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--glassmorphism-shadow);
+}
+
+.electros-intro-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .electros-intro-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Gumlet demo embed — "See Electros in Action" */
 .electros-demo {
     max-width: 960px;
