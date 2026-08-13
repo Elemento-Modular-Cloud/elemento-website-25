@@ -37,14 +37,19 @@
     --grey-dark: #6A6C75;
     --grey-darker: #4a4e53;
 
-    --black-light: #2F3338;
-    --black: #1A1C20;
-    --black-dark: #000;
-
     /* RGB values without alpha for flexible use */
     --black-light-rgb: 47, 51, 56;
-    --black-rgb: 26, 28, 32;
-    --black-dark-rgb: 0, 0, 0;
+    --black-light: #2F3338;
+    
+    /* --black-rgb: 26, 28, 32; */
+    --black-rgb: 24, 23, 32;
+    /* --black: #1A1C20; */
+    --black: var(--black-rgb);
+
+    /* --black-dark-rgb: 0, 0, 0; */
+    --black-dark-rgb: 15, 14, 20;
+    /* --black-dark: #000; */
+    --black-dark: rgb(var(--black-dark-rgb));
 
     /* RGBA equivalents for black shades */
     --black-light-rgba: rgba(var(--black-light-rgb), 1);
