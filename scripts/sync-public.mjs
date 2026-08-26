@@ -17,6 +17,7 @@ const COPY_DIRS = [
   'assets',
   'CMS',
   'components',
+  'privacy',
   'solutions/components',
   'blog-posts/index.json',
   'blog-posts/img',
