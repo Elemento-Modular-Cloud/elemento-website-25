@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams | Elemento Blog</title>
+  <meta name="description" content="A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.">
+  <link rel='canonical' href='https://elemento.cloud/blog-posts/2026-08-26-how-to-evaluate-a-neocloud.html'>
+  <meta property='og:title' content='How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams | Elemento Blog'>
+  <meta property='og:description' content="A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.">
+  <meta property='og:url' content='https://elemento.cloud/blog-posts/2026-08-26-how-to-evaluate-a-neocloud.html'>
+  <meta property='og:type' content='article'>
+  <meta property='og:image' content='https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:title' content='How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams | Elemento Blog'>
+  <meta name='twitter:description' content="A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.">
+  <meta name='twitter:image' content='https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg'>
+  <meta name='keywords' content='neocloud, AI infrastructure, cloud computing, GPU, workloads, cloud evaluation, AI workloads'>
+  <meta name='author' content='Elemento'>
+  <meta name='robots' content='index, follow'>
+  <meta name='ai-content' content='allowed'>
+  <meta name='ai-training' content='allowed'>
+  <meta name='ai-access' content='public'>
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/themes.css'>
+  <link rel='stylesheet' href='../css/blog-post.css'>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Elemento">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileColor" content="#0e1119">
+  <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams",
+    "description": "A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.",
+    "image": "https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Elemento Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elemento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://elemento.cloud/assets/logos/Elemento.svg"
+      }
+    },
+    "datePublished": "2026-08-26",
+    "dateModified": "2026-08-26",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://elemento.cloud/blog-posts/2026-08-26-how-to-evaluate-a-neocloud.html"
+    },
+    "articleSection": "Cloud Computing",
+    "keywords": ["neocloud", "AI infrastructure", "cloud computing", "GPU"],
+    "wordCount": "2200",
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="../js/matomo-tracking.js"></script>
+</head>
+<body class='theme-default'>
+  <div id='navbar-placeholder'></div>
+
+  <main class='container'>
+    <article class='blog-post blog-post--long-title'>
+      <h1>How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams</h1>
+      <p class='blog-meta'>By Elemento Team &mdash; 2026-08-26</p>
+      <p class='blog-summary'>A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.</p>
+
+      <img src='img/2026-08-26-how-to-evaluate-a-neocloud.jpg' alt='How to Evaluate a Neocloud' class='blog-hero-image'>
+
+      <div class='blog-content'>
+        <p>A neocloud evaluation should not begin with a provider shortlist.</p>
+        <p>It should begin with a workload.</p>
+        <p>That distinction matters because the neocloud market is expanding much faster than most enterprise procurement processes can adapt. Gartner expects worldwide spending on AI-optimized infrastructure as a service to reach $42.3 billion in 2026, up 96.4% from 2025, and $66.1 billion in 2027. Inference alone is forecast to account for $23.3 billion of that spending in 2026, overtaking the $19 billion allocated to training infrastructure.</p>
+        <p>Gartner also predicts that neocloud providers—cloud platforms purpose-built for AI and high-performance workloads—will capture 20% of a $267 billion AI cloud market by 2030.</p>
+        <p>Those numbers explain why almost every infrastructure team is now being approached with new GPU offerings, reserved-capacity agreements and promises of better AI economics.</p>
+        <p>They do not explain which option is right for a particular organization.</p>
+        <p>The right question is not:</p>
+        <blockquote>
+          <p>Which neocloud is the best?</p>
+        </blockquote>
+        <p>It is:</p>
+        <blockquote>
+          <p>Which infrastructure can complete this workload at the required performance, risk and cost? And how easily can we change that decision later?</p>
+        </blockquote>
+        <p>This guide provides a practical framework for answering that question.</p>
+
+        <h2>Start with the workload, not the provider</h2>
+        <p>A neocloud is not a general-purpose upgrade to an existing cloud environment. Its value depends heavily on the workload placed on it.</p>
+        <p>Before comparing vendors, classify the use case.</p>
+
+        <h3>Training and fine-tuning</h3>
+        <p>Training workloads normally require high-density accelerator clusters for a finite period. Their key variables include:</p>
+        <ul>
+          <li>The number and generation of accelerators required.</li>
+          <li>The communication pattern between GPUs.</li>
+          <li>The size and location of the training dataset.</li>
+          <li>Checkpoint frequency and size.</li>
+          <li>The acceptable time to complete the training run.</li>
+          <li>Whether the workload can be interrupted and resumed.</li>
+          <li>The cost of a failed or partially completed run.</li>
+        </ul>
+        <p>For these workloads, the cheapest GPU-hour may not produce the cheapest training run. Queue time, interconnect performance, storage throughput and recovery behaviour can change the economics substantially.</p>
+
+        <h3>Persistent inference</h3>
+        <p>Production inference has a different profile.</p>
+        <p>The main questions are usually:</p>
+        <ul>
+          <li>Required requests or tokens per second.</li>
+          <li>P50, P95 and P99 latency.</li>
+          <li>Traffic variability.</li>
+          <li>Availability targets.</li>
+          <li>Model-loading time.</li>
+          <li>Minimum capacity required during quiet periods.</li>
+          <li>Scaling speed during demand spikes.</li>
+          <li>Regional and data-residency requirements.</li>
+        </ul>
+        <p>Inference can run continuously, making poor utilization or overprovisioning much more expensive over time than it would be during a short training project.</p>
+
+        <h3>Batch processing and HPC</h3>
+        <p>Rendering, simulation, scientific computing and large batch workloads can also be suitable for neocloud infrastructure.</p>
+        <p>These workloads are often easier to move because they have a clear beginning and end. However, they may depend heavily on specialized filesystems, schedulers, compilers or network configurations.</p>
+
+        <h3>Burst capacity</h3>
+        <p>A neocloud can supplement an internal cluster or a primary cloud when normal capacity is exhausted.</p>
+        <p>This model can reduce the need to size private infrastructure for occasional peaks, but it requires the workload to be genuinely portable before the peak occurs. Attempting to create portability during a capacity emergency is rarely successful.</p>
+
+        <h3>Sovereign or regulated workloads</h3>
+        <p>Some neocloud providers focus on regional or sovereign infrastructure. These services may be relevant when data, operational control or governance must remain within a specific jurisdiction.</p>
+        <p>In this case, technical performance is only one part of the evaluation. Contractual guarantees, operator access, support location, encryption-key control and applicable law can be equally important.</p>
+
+        <h2>Create a workload profile</h2>
+        <p>For each candidate workload, produce a one-page profile containing:</p>
+        <ul>
+          <li>Business owner and technical owner.</li>
+          <li>Workload type.</li>
+          <li>Current execution environment.</li>
+          <li>Accelerator requirements.</li>
+          <li>CPU and memory requirements.</li>
+          <li>Dataset and checkpoint sizes.</li>
+          <li>Network characteristics.</li>
+          <li>Storage characteristics.</li>
+          <li>Normal and peak capacity.</li>
+          <li>Expected duration or monthly volume.</li>
+          <li>Latency and availability objectives.</li>
+          <li>Data classification.</li>
+          <li>Geographic restrictions.</li>
+          <li>Maximum acceptable interruption.</li>
+          <li>Dependencies on proprietary services.</li>
+          <li>Target cost metric.</li>
+          <li>Portability objective.</li>
+        </ul>
+        <p>The target cost metric should reflect the outcome, not the infrastructure unit.</p>
+        <p>For training, this could be:</p>
+        <blockquote>
+          <p>Total cost per successful training run.</p>
+        </blockquote>
+        <p>For inference:</p>
+        <blockquote>
+          <p>Cost per million tokens at the required latency and availability.</p>
+        </blockquote>
+        <p>For rendering:</p>
+        <blockquote>
+          <p>Cost per completed frame.</p>
+        </blockquote>
+        <p>For simulation:</p>
+        <blockquote>
+          <p>Cost per completed scenario.</p>
+        </blockquote>
+        <p>This gives every provider the same problem to solve.</p>
+
+        <h2>Establish a baseline before requesting quotes</h2>
+        <p>A proposal is difficult to evaluate without knowing how the workload performs today.</p>
+        <p>Measure the current environment before moving anything.</p>
+        <p>At minimum, collect:</p>
+        <ul>
+          <li>Time required to obtain capacity.</li>
+          <li>Environment setup time.</li>
+          <li>Data-transfer time.</li>
+          <li>Job execution time.</li>
+          <li>Average and peak accelerator utilization.</li>
+          <li>CPU, memory and storage utilization.</li>
+          <li>Network throughput and latency.</li>
+          <li>Idle capacity.</li>
+          <li>Number of failed or repeated jobs.</li>
+          <li>Engineering hours required to prepare and operate the workload.</li>
+          <li>Full infrastructure cost.</li>
+        </ul>
+        <p>Avoid comparing the provider’s estimate with an undocumented impression of the current environment.</p>
+        <p>The baseline does not need to be perfect. It needs to be reproducible.</p>
+
+        <h2>Define acceptance criteria in advance</h2>
+        <p>Before contacting providers, separate requirements into three categories.</p>
+
+        <h3>Mandatory requirements</h3>
+        <p>A provider is excluded if it cannot satisfy these conditions.</p>
+        <p>Examples include:</p>
+        <ul>
+          <li>A specific accelerator type or minimum memory capacity.</li>
+          <li>Processing within an approved jurisdiction.</li>
+          <li>Support for a required scheduler.</li>
+          <li>Customer-managed encryption keys.</li>
+          <li>A minimum availability commitment.</li>
+          <li>Checkpoint export in a usable format.</li>
+          <li>A defined incident-response process.</li>
+          <li>A contractual right to retrieve all data after termination.</li>
+        </ul>
+
+        <h3>Scored requirements</h3>
+        <p>These requirements influence the ranking but are not automatic exclusions.</p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Provisioning speed.</li>
+          <li>Hourly cost.</li>
+          <li>Reservation flexibility.</li>
+          <li>Storage performance.</li>
+          <li>Quality of monitoring.</li>
+          <li>Support responsiveness.</li>
+          <li>Available regions.</li>
+          <li>Sustainability reporting.</li>
+          <li>Integration with existing tooling.</li>
+        </ul>
+
+        <h3>Disqualifying conditions</h3>
+        <p>Write down the conditions that make a proposal unacceptable, even when its price is attractive.</p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Unclear data-egress terms.</li>
+          <li>No documented exit process.</li>
+          <li>Provider-controlled encryption keys for sensitive workloads.</li>
+          <li>Unspecified accelerator substitutions.</li>
+          <li>An SLA that excludes queue or provisioning time.</li>
+          <li>Take-or-pay commitments that greatly exceed expected utilization.</li>
+          <li>No ability to reproduce the environment outside the provider.</li>
+        </ul>
+        <p>Defining these conditions before commercial negotiations reduces the risk of changing the evaluation criteria to justify an attractive quote.</p>
+
+        <h2>Use a weighted provider scorecard</h2>
+        <p>A scorecard forces technical, financial and risk teams to evaluate the same proposal.</p>
+        <p>A sample weighting could be:</p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Evaluation area</th>
+              <th>Suggested weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Workload performance</td><td>25%</td></tr>
+            <tr><td>Total cost and commercial model</td><td>20%</td></tr>
+            <tr><td>Capacity availability</td><td>15%</td></tr>
+            <tr><td>Security, compliance and sovereignty</td><td>15%</td></tr>
+            <tr><td>Portability and exit readiness</td><td>15%</td></tr>
+            <tr><td>Provider and operational risk</td><td>10%</td></tr>
+          </tbody>
+        </table>
+        <p>The weights should change according to the use case.</p>
+        <p>A regulated inference service may place more weight on sovereignty and availability. A temporary training project may prioritize time to capacity and total execution cost.</p>
+        <p>The scorecard should also include a confidence level. A benchmarked result deserves more confidence than a claim in a presentation.</p>
+
+        <h2>Evaluate the architecture behind the GPU</h2>
+        <p>A GPU model name does not describe a complete system.</p>
+        <p>Two providers offering the same accelerator can produce very different results because of network topology, CPU allocation, storage, virtualization and scheduling.</p>
+        <p>Ask each provider to explain the following.</p>
+
+        <h3>Accelerator configuration</h3>
+        <ul>
+          <li>Exact GPU or accelerator model.</li>
+          <li>Memory per accelerator.</li>
+          <li>Number of accelerators per node.</li>
+          <li>Interconnect inside the node.</li>
+          <li>Interconnect between nodes.</li>
+          <li>Whether accelerators are dedicated or shared.</li>
+          <li>Whether fractional allocation is used.</li>
+          <li>Whether hardware substitutions are permitted.</li>
+          <li>How failed hardware is replaced.</li>
+        </ul>
+
+        <h3>Compute environment</h3>
+        <ul>
+          <li>Bare metal, virtual machine or container.</li>
+          <li>CPU and memory allocated per accelerator.</li>
+          <li>NUMA topology.</li>
+          <li>Supported operating systems and images.</li>
+          <li>Driver and CUDA versions.</li>
+          <li>Upgrade and patching policy.</li>
+          <li>Support for custom images.</li>
+          <li>Support for Kubernetes, Slurm or other required schedulers.</li>
+        </ul>
+
+        <h3>Network</h3>
+        <ul>
+          <li>Network technology and nominal bandwidth.</li>
+          <li>Oversubscription ratio.</li>
+          <li>Expected east-west throughput.</li>
+          <li>RDMA support.</li>
+          <li>Multi-node scaling characteristics.</li>
+          <li>External connectivity.</li>
+          <li>Private connectivity options.</li>
+          <li>DDoS protection and network-security controls.</li>
+        </ul>
+
+        <h3>Storage</h3>
+        <ul>
+          <li>Local ephemeral storage.</li>
+          <li>Persistent block storage.</li>
+          <li>Object storage.</li>
+          <li>Parallel filesystem options.</li>
+          <li>Read and write throughput.</li>
+          <li>Metadata performance.</li>
+          <li>Snapshot and replication capabilities.</li>
+          <li>Checkpoint recovery time.</li>
+          <li>Cost of retaining and exporting data.</li>
+        </ul>
+
+        <h3>Operations</h3>
+        <ul>
+          <li>Provisioning mechanism.</li>
+          <li>Infrastructure-as-code support.</li>
+          <li>API and CLI coverage.</li>
+          <li>Monitoring and logging.</li>
+          <li>Alerting.</li>
+          <li>Access controls.</li>
+          <li>Audit trails.</li>
+          <li>Incident communication.</li>
+          <li>Support escalation.</li>
+          <li>Capacity-reservation process.</li>
+        </ul>
+        <p>A provider that cannot clearly describe the architecture should not be evaluated solely on its advertised accelerator price.</p>
+
+        <h2>Run a proof of value, not a synthetic benchmark</h2>
+        <p>Synthetic benchmarks can be useful for identifying obvious hardware problems. They rarely represent the complete economics of a production workload.</p>
+        <p>A proof of value should use a representative application, dataset and operational process.</p>
+        <p>Use the same:</p>
+        <ul>
+          <li>Model or application build.</li>
+          <li>Container image.</li>
+          <li>Dataset.</li>
+          <li>Precision.</li>
+          <li>Batch size.</li>
+          <li>Checkpoint configuration.</li>
+          <li>Storage pattern.</li>
+          <li>Availability target.</li>
+          <li>Measurement period.</li>
+        </ul>
+        <p>Run the test across the current environment and two or three candidate alternatives.</p>
+
+        <h3>Phase 1: Provisioning</h3>
+        <p>Measure:</p>
+        <ul>
+          <li>Time from request to usable capacity.</li>
+          <li>Number of manual steps.</li>
+          <li>Quota or approval requirements.</li>
+          <li>Configuration failures.</li>
+          <li>Reproducibility.</li>
+        </ul>
+
+        <h3>Phase 2: Data preparation</h3>
+        <p>Measure:</p>
+        <ul>
+          <li>Data-ingest time.</li>
+          <li>Transfer costs.</li>
+          <li>Storage configuration effort.</li>
+          <li>Dataset validation.</li>
+          <li>Time required to make the workload executable.</li>
+        </ul>
+
+        <h3>Phase 3: Execution</h3>
+        <p>Measure:</p>
+        <ul>
+          <li>Total job duration.</li>
+          <li>Accelerator utilization.</li>
+          <li>Throughput.</li>
+          <li>Latency, where relevant.</li>
+          <li>CPU and storage bottlenecks.</li>
+          <li>Scaling efficiency across multiple nodes.</li>
+          <li>Cost while the workload is actively running.</li>
+        </ul>
+
+        <h3>Phase 4: Interruption and recovery</h3>
+        <p>Deliberately test:</p>
+        <ul>
+          <li>Checkpoint creation.</li>
+          <li>Node failure.</li>
+          <li>Job restart.</li>
+          <li>Capacity interruption.</li>
+          <li>Recovery-point objective.</li>
+          <li>Recovery-time objective.</li>
+        </ul>
+        <p>A platform that performs well only when nothing fails is not production-ready.</p>
+
+        <h3>Phase 5: Export and teardown</h3>
+        <p>Measure:</p>
+        <ul>
+          <li>Time to export checkpoints and results.</li>
+          <li>Egress charges.</li>
+          <li>Ability to reconstruct the workload elsewhere.</li>
+          <li>Resource-deletion behaviour.</li>
+          <li>Residual storage and network costs.</li>
+          <li>Account-closure process.</li>
+        </ul>
+        <p>The export test is often more informative than the initial deployment.</p>
+
+        <h2>Calculate the real cost</h2>
+        <p>The total cost of a neocloud workload is not the advertised GPU rate.</p>
+        <p>A useful model is:</p>
+        <blockquote>
+          <p><strong>Effective workload cost = compute + attached infrastructure + data movement + unused commitments + operational labour + failures and retries + migration and exit costs</strong></p>
+        </blockquote>
+
+        <h3>Compute</h3>
+        <p>Include:</p>
+        <ul>
+          <li>Accelerator hours.</li>
+          <li>CPU and memory.</li>
+          <li>Minimum node sizes.</li>
+          <li>Idle time while waiting for data or other jobs.</li>
+          <li>Capacity retained for availability.</li>
+          <li>Premiums for specific regions or hardware.</li>
+        </ul>
+
+        <h3>Attached infrastructure</h3>
+        <p>Include:</p>
+        <ul>
+          <li>Persistent storage.</li>
+          <li>Object storage.</li>
+          <li>High-performance filesystems.</li>
+          <li>Snapshots.</li>
+          <li>Public IP addresses.</li>
+          <li>Load balancers.</li>
+          <li>Monitoring.</li>
+          <li>Logging.</li>
+          <li>Security services.</li>
+          <li>Support plans.</li>
+        </ul>
+
+        <h3>Data movement</h3>
+        <p>Include:</p>
+        <ul>
+          <li>Initial dataset upload.</li>
+          <li>Replication between regions.</li>
+          <li>Checkpoint transfers.</li>
+          <li>Result export.</li>
+          <li>Backup copies.</li>
+          <li>Egress to another provider or an on-premises environment.</li>
+        </ul>
+
+        <h3>Commitments</h3>
+        <p>Calculate:</p>
+        <ul>
+          <li>Minimum monthly spend.</li>
+          <li>Reservation period.</li>
+          <li>Take-or-pay exposure.</li>
+          <li>Unused reserved capacity.</li>
+          <li>Renewal conditions.</li>
+          <li>Early-termination costs.</li>
+        </ul>
+
+        <h3>Operations</h3>
+        <p>Measure the human effort required for:</p>
+        <ul>
+          <li>Environment setup.</li>
+          <li>Image maintenance.</li>
+          <li>Security reviews.</li>
+          <li>Troubleshooting.</li>
+          <li>Capacity planning.</li>
+          <li>Cost allocation.</li>
+          <li>Reporting.</li>
+          <li>Vendor coordination.</li>
+        </ul>
+        <p>Gartner predicts that, by 2030, organizations that fail to optimize their underlying AI compute environments could pay more than 50% more than those that do.</p>
+        <p>The lesson is not that one provider category is always cheaper. It is that infrastructure efficiency must be measured continuously.</p>
+
+        <h2>Compare outcomes rather than hourly rates</h2>
+        <p>For training, compare:</p>
+        <ul>
+          <li>Time to available cluster.</li>
+          <li>Time to completed model.</li>
+          <li>Cost per successful run.</li>
+          <li>Percentage of runs repeated.</li>
+          <li>Engineering time per run.</li>
+          <li>Cost of retaining checkpoints.</li>
+        </ul>
+        <p>For inference, compare:</p>
+        <ul>
+          <li>Cost per million tokens or requests.</li>
+          <li>Throughput at the required latency.</li>
+          <li>Cost of minimum always-on capacity.</li>
+          <li>Scaling response time.</li>
+          <li>Cost of redundancy.</li>
+          <li>Failure rate.</li>
+          <li>Availability achieved.</li>
+        </ul>
+        <p>For batch workloads, compare:</p>
+        <ul>
+          <li>Cost per completed batch.</li>
+          <li>Completion time.</li>
+          <li>Percentage of capacity left idle.</li>
+          <li>Queue time.</li>
+          <li>Retry cost.</li>
+        </ul>
+        <p>A provider that costs 15% more per accelerator-hour may still be more economical if the workload completes 25% faster or requires less operational effort.</p>
+        <p>The opposite is also true: a low hourly rate may hide poor utilization, slow storage or expensive data movement.</p>
+
+        <h2>Include private infrastructure in the comparison</h2>
+        <p>The neocloud-versus-hyperscaler comparison is incomplete when private infrastructure is excluded.</p>
+        <p>IDC reports that worldwide server spending grew by 30.7% year over year in the first quarter of 2026, while unit shipments grew by only 3.3%. IDC attributes much of the difference to continued GPU-server deployment and expects memory and NAND constraints to keep pricing elevated through at least the first half of 2027.</p>
+        <p>This makes private AI infrastructure expensive to acquire, but it does not automatically make it uneconomical.</p>
+        <p>Private capacity can be attractive when:</p>
+        <ul>
+          <li>Demand is predictable.</li>
+          <li>Utilization can remain high.</li>
+          <li>Data is expensive or difficult to move.</li>
+          <li>The hardware can support several workloads.</li>
+          <li>The organization has the skills to operate it.</li>
+          <li>The depreciation period matches the expected technology lifecycle.</li>
+          <li>Direct control has security or regulatory value.</li>
+        </ul>
+        <p>Include at least three scenarios in the business case:</p>
+        <ol>
+          <li>External neocloud capacity.</li>
+          <li>Hyperscaler capacity.</li>
+          <li>Private or bare-metal capacity.</li>
+        </ol>
+        <p>For many organizations, the best result will be a combination rather than a single winner.</p>
+
+        <h2>Test portability before signing the contract</h2>
+        <p>Portability should be demonstrated, not declared.</p>
+
+        <h3>Application portability</h3>
+        <p>Confirm that the workload can be rebuilt from:</p>
+        <ul>
+          <li>Version-controlled code.</li>
+          <li>Portable container images.</li>
+          <li>Documented dependencies.</li>
+          <li>External configuration.</li>
+          <li>Infrastructure-as-code definitions.</li>
+          <li>Standard model formats.</li>
+          <li>Exportable checkpoints.</li>
+        </ul>
+
+        <h3>Data portability</h3>
+        <p>Confirm:</p>
+        <ul>
+          <li>Export formats.</li>
+          <li>Egress bandwidth.</li>
+          <li>Egress charges.</li>
+          <li>Time required to retrieve all data.</li>
+          <li>Snapshot compatibility.</li>
+          <li>Backup ownership.</li>
+          <li>Data-deletion procedures.</li>
+          <li>Retention after contract termination.</li>
+        </ul>
+
+        <h3>Identity portability</h3>
+        <p>Avoid embedding the provider’s identity model so deeply that every application must be rewritten to move.</p>
+        <p>Document:</p>
+        <ul>
+          <li>User and service identities.</li>
+          <li>Role mappings.</li>
+          <li>Secrets.</li>
+          <li>Certificates.</li>
+          <li>API credentials.</li>
+          <li>Audit requirements.</li>
+        </ul>
+
+        <h3>Operational portability</h3>
+        <p>Export:</p>
+        <ul>
+          <li>Logs.</li>
+          <li>Metrics.</li>
+          <li>Dashboards.</li>
+          <li>Alerting rules.</li>
+          <li>Runbooks.</li>
+          <li>Incident histories.</li>
+          <li>Cost-allocation data.</li>
+        </ul>
+        <p>An application that can technically move but loses all its operational context is only partially portable.</p>
+
+        <h2>Perform an exit drill</h2>
+        <p>Before committing significant production workloads, recreate the environment somewhere else.</p>
+        <p>The exit drill should test whether the team can:</p>
+        <ul>
+          <li>Provision an equivalent environment.</li>
+          <li>Restore a checkpoint.</li>
+          <li>Reconnect storage.</li>
+          <li>Recreate network policies.</li>
+          <li>Restore secrets and identities.</li>
+          <li>Resume the workload.</li>
+          <li>Validate the results.</li>
+          <li>Decommission the original environment.</li>
+        </ul>
+        <p>Record the duration, manual steps and failures.</p>
+        <p>The purpose is not to move providers immediately. It is to quantify the dependency being created.</p>
+
+        <h2>Review the commercial exit terms</h2>
+        <p>Technical portability is ineffective when the contract prevents its use.</p>
+        <p>Review:</p>
+        <ul>
+          <li>Contract duration.</li>
+          <li>Automatic renewal.</li>
+          <li>Minimum spend.</li>
+          <li>Hardware reservation.</li>
+          <li>Price-adjustment clauses.</li>
+          <li>Egress pricing.</li>
+          <li>Support during termination.</li>
+          <li>Data-retention period.</li>
+          <li>Data-deletion certification.</li>
+          <li>Transition assistance.</li>
+          <li>Rights following provider acquisition or insolvency.</li>
+          <li>Changes to region or hardware availability.</li>
+          <li>Subcontractor use.</li>
+          <li>Applicable law and jurisdiction.</li>
+        </ul>
+        <p>Procurement, security, legal and infrastructure teams should review the exit plan together.</p>
+
+        <h2>Choose the right operating pattern</h2>
+        <p>A neocloud can be introduced in several ways.</p>
+
+        <h3>Pattern 1: Specialist training capacity</h3>
+        <p>The provider is used for finite training or fine-tuning projects.</p>
+        <p><strong>Best for:</strong> Projects requiring large clusters for limited periods.</p>
+        <p><strong>Main advantage:</strong> Access to specialized hardware without purchasing it.</p>
+        <p><strong>Main risk:</strong> Data-transfer and environment-setup overhead.</p>
+
+        <h3>Pattern 2: Private baseline with external burst</h3>
+        <p>Private infrastructure handles predictable demand. A neocloud absorbs peaks or provides access to hardware that is not available internally.</p>
+        <p><strong>Best for:</strong> Organizations with stable baseline utilization and occasional large projects.</p>
+        <p><strong>Main advantage:</strong> Combines infrastructure ownership with external elasticity.</p>
+        <p><strong>Main risk:</strong> Requires workload portability and capacity coordination.</p>
+
+        <h3>Pattern 3: Multi-provider inference</h3>
+        <p>Production inference runs across two or more providers for resilience, geography or commercial flexibility.</p>
+        <p><strong>Best for:</strong> High-volume services with clear abstraction between the application and infrastructure.</p>
+        <p><strong>Main advantage:</strong> Reduced dependency on a single capacity source.</p>
+        <p><strong>Main risk:</strong> Operational complexity and inconsistent performance.</p>
+
+        <h3>Pattern 4: Sovereign workload placement</h3>
+        <p>Sensitive workloads are assigned to a regional or sovereign provider while other applications remain in global cloud environments.</p>
+        <p><strong>Best for:</strong> Regulated data and jurisdiction-specific requirements.</p>
+        <p><strong>Main advantage:</strong> Greater control over data location and operations.</p>
+        <p><strong>Main risk:</strong> Smaller service catalogue or more limited capacity.</p>
+
+        <h3>Pattern 5: Temporary project environment</h3>
+        <p>A neocloud is used for a defined experiment, migration or product-development phase.</p>
+        <p><strong>Best for:</strong> Teams that need capacity quickly but do not yet know their long-term demand.</p>
+        <p><strong>Main advantage:</strong> Limits initial commitment.</p>
+        <p><strong>Main risk:</strong> A temporary environment can quietly become permanent without an exit decision.</p>
+
+        <h2>The best first workload</h2>
+        <p>The first neocloud workload should be:</p>
+        <ul>
+          <li>Technically representative.</li>
+          <li>Economically measurable.</li>
+          <li>Portable.</li>
+          <li>Important enough to produce useful evidence.</li>
+          <li>Small enough to limit risk.</li>
+          <li>Relatively independent from proprietary managed services.</li>
+          <li>Able to tolerate a controlled test window.</li>
+        </ul>
+        <p>A useful first project is often a training, rendering or batch workload with a known dataset and a clear completion metric.</p>
+        <p>The first project should not normally be the most critical production service in the organization.</p>
+
+        <h2>A 30-day neocloud evaluation plan</h2>
+        
+        <h3>Week 1: Scope and baseline</h3>
+        <ul>
+          <li>Select one representative workload.</li>
+          <li>Assign business, infrastructure, security and finance owners.</li>
+          <li>Document technical requirements.</li>
+          <li>Measure the current environment.</li>
+          <li>Define the target cost metric.</li>
+          <li>Write mandatory and disqualifying requirements.</li>
+        </ul>
+        <p><strong>Deliverable:</strong> Workload profile and current-state baseline.</p>
+
+        <h3>Week 2: Provider and architecture review</h3>
+        <ul>
+          <li>Send the same requirements to each provider.</li>
+          <li>Review accelerator, network and storage architecture.</li>
+          <li>Complete an initial security and sovereignty assessment.</li>
+          <li>Review pricing and contract structure.</li>
+          <li>Select two or three providers for testing.</li>
+        </ul>
+        <p><strong>Deliverable:</strong> Shortlist and weighted scorecard.</p>
+
+        <h3>Week 3: Proof of value</h3>
+        <ul>
+          <li>Deploy the same workload.</li>
+          <li>Measure provisioning and data-transfer time.</li>
+          <li>Run the application.</li>
+          <li>Test interruption and recovery.</li>
+          <li>Export the results.</li>
+          <li>Calculate total workload cost.</li>
+        </ul>
+        <p><strong>Deliverable:</strong> Comparable technical and economic results.</p>
+
+        <h3>Week 4: Decision and operating model</h3>
+        <ul>
+          <li>Rank the providers.</li>
+          <li>Select the intended operating pattern.</li>
+          <li>Complete legal and commercial review.</li>
+          <li>Define portability requirements.</li>
+          <li>Run or schedule the exit drill.</li>
+          <li>Establish cost and performance monitoring.</li>
+          <li>Decide whether to expand, repeat or stop.</li>
+        </ul>
+        <p><strong>Deliverable:</strong> Adoption decision with an explicit exit plan.</p>
+
+        <h2>Common mistakes to avoid</h2>
+        
+        <h3>Selecting on GPU price alone</h3>
+        <p>An hourly rate does not capture queue time, storage, networking, utilization, support or migration cost.</p>
+        
+        <h3>Benchmarking only the accelerator</h3>
+        <p>The workload runs on a system, not on an isolated chip. Network, storage, CPU and scheduler behaviour matter.</p>
+        
+        <h3>Moving too much data</h3>
+        <p>A workload with a low compute-to-data ratio may be a poor candidate for an external provider, even when compute prices are attractive.</p>
+        
+        <h3>Ignoring unused commitments</h3>
+        <p>Reserved capacity creates value only when it is used. Measure utilization against the committed amount, not merely against allocated resources.</p>
+        
+        <h3>Treating multicloud as portability</h3>
+        <p>Using several providers does not mean workloads can move between them. Multiple non-interoperable environments can increase lock-in rather than reduce it.</p>
+        
+        <h3>Postponing the exit plan</h3>
+        <p>The easiest moment to negotiate export rights and test portability is before the provider hosts critical data.</p>
+        
+        <h3>Assuming every neocloud is equivalent</h3>
+        <p>Providers differ in scale, regions, hardware, software, support, financing and operational maturity. The category name is not a guarantee.</p>
+
+        <h2>When a neocloud may not be the right choice</h2>
+        <p>A neocloud may provide limited value when:</p>
+        <ul>
+          <li>The workload is small and highly sporadic.</li>
+          <li>The application depends deeply on proprietary hyperscaler services.</li>
+          <li>Most of the relevant data already resides in another cloud.</li>
+          <li>Data movement would dominate the project cost.</li>
+          <li>Existing infrastructure has sufficient available capacity.</li>
+          <li>The team needs a highly managed service rather than infrastructure.</li>
+          <li>The provider cannot meet security or sovereignty requirements.</li>
+          <li>There is no credible technical or contractual exit path.</li>
+        </ul>
+        <p>The objective is not to introduce another provider. It is to improve the economics, performance or resilience of a specific workload.</p>
+
+        <h2>From provider selection to continuous workload placement</h2>
+        <p>A neocloud evaluation is not complete when the contract is signed.</p>
+        <p>Hardware availability, demand, application design and pricing will continue to change. The placement decision should therefore be reviewed regularly.</p>
+        <p>Track:</p>
+        <ul>
+          <li>Effective cost per workload outcome.</li>
+          <li>Accelerator utilization.</li>
+          <li>Idle committed capacity.</li>
+          <li>Queue and provisioning time.</li>
+          <li>Failure and retry cost.</li>
+          <li>Storage and egress growth.</li>
+          <li>Latency and throughput.</li>
+          <li>Support incidents.</li>
+          <li>Portability-test results.</li>
+          <li>Alternative-provider availability.</li>
+        </ul>
+        <p>The infrastructure that is best today may not remain the best option after the model, accelerator generation or commercial terms change.</p>
+        <p>The long-term capability to build is not loyalty to a particular provider.</p>
+        <p>It is the ability to evaluate, place and move workloads using measurable evidence.</p>
+
+        <h2>Optional tooling for a portable operating model</h2>
+        <p>The evaluation framework above does not depend on Elemento or on any other product. Provider selection, benchmarking, TCO analysis and exit planning should be completed independently.</p>
+        <p>Tooling becomes relevant after the organization has defined which environments it needs to operate and how much consistency it requires between them.</p>
+        
+        <h3>Electros: when the problem is operational fragmentation</h3>
+        <p>Electros can be evaluated when infrastructure teams need a common operational surface across supported public-cloud and on-premises environments.</p>
+        <p>It provides a desktop interface and CLI for provisioning, monitoring and accessing virtual machines across AWS, Microsoft Azure, Google Cloud and on-premises infrastructure.</p>
+        <p>This can be useful in an operating model where neocloud capacity is only one part of a wider infrastructure estate. However, support for any specific provider or workflow should always be validated during the technical evaluation.</p>
+        <blockquote>
+          <p>Reduce console fragmentation and evaluate a common control experience across your supported cloud and private environments.</p>
+        </blockquote>
+        <p><a href="https://electros.cloud">Explore Electros</a></p>
+
+        <h3>AtomOS: when a private baseline belongs in the model</h3>
+        <p>AtomOS can be evaluated when predictable workloads, sensitive data or stable capacity requirements justify a private or bare-metal infrastructure baseline.</p>
+        <p>It is a KVM-based, RHEL-compatible hypervisor designed for bare-metal, GPU-enabled and hybrid infrastructure, with GPU passthrough and autonomous clustering without a mandatory central controller.</p>
+        <p>In a baseline-and-burst model, private capacity can host predictable demand while external providers supply temporary or specialized compute.</p>
+        <blockquote>
+          <p>Assess whether a KVM-based private infrastructure layer could support the stable portion of your AI and enterprise workloads.</p>
+        </blockquote>
+        <p><a href="https://elemento.cloud/atomos.html">Discover AtomOS</a></p>
+
+        <h3>Get an independent view of the architecture</h3>
+        <p>An external review can be useful when several infrastructure options appear technically valid but differ in commercial exposure, portability or operational complexity.</p>
+        <p>The most productive assessment starts with evidence. Bring:</p>
+        <ul>
+          <li>One representative workload.</li>
+          <li>Its present performance baseline.</li>
+          <li>Current or estimated infrastructure costs.</li>
+          <li>Data-residency requirements.</li>
+          <li>Existing cloud and virtualization dependencies.</li>
+          <li>Expected growth.</li>
+          <li>Contractual constraints.</li>
+        </ul>
+        <p>Elemento offers technical assessments for organizations evaluating public cloud, private infrastructure, hypervisors and cross-provider operating models.</p>
+        <blockquote>
+          <p>Review your workload profile, target operating model and evaluation plan with the Elemento team before committing to a provider or capacity contract.</p>
+        </blockquote>
+        <p><a href="https://book.elemento.cloud">Book a Technical Call</a></p>
+
+        <h2>The final decision should remain reversible</h2>
+        <p>The purpose of a neocloud strategy is not to replace one default provider with another.</p>
+        <p>It is to create another credible infrastructure option.</p>
+        <p>A sound evaluation begins with a workload, measures the complete cost of running it, verifies the underlying architecture, tests failure and recovery, and proves that the application can leave.</p>
+        <p>This approach may lead to a neocloud, a hyperscaler, private infrastructure or a combination of the three.</p>
+        <p>The specific answer matters less than the decision process.</p>
+        <p>When workloads are portable, costs are observable and exits are tested, infrastructure becomes a choice that can be revisited, not a dependency that has to be defended.</p>
+      </div>
+    </article>
+  </main>
+
+  <div id='footer-placeholder'></div>
+
+  <script src='../js/navbar.js' defer></script>
+  <script src='../js/main.js' defer></script>
+  <script src='../js/themes.js' defer></script>
+  <script src='../js/footer.js' defer></script>
+</body>
+</html>
