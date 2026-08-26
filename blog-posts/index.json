@@ -1,6 +1,15 @@
 [
   {
-    "title": "What Is a Metacloud — And How to Start Running One This Summer",
+    "title": "How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams",
+    "author": "Elemento Team",
+    "date": "2026-08-26",
+    "summary": "A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.",
+    "filename": "2026-08-26-how-to-evaluate-a-neocloud.html",
+    "main_image": "img/2026-08-26-how-to-evaluate-a-neocloud.jpg",
+    "thumbnail_image": "img/2026-08-26-how-to-evaluate-a-neocloud.jpg"
+  },
+  {
+    "title": "What Is a Metacloud \u2014 And How to Start Running One This Summer",
     "author": "Elemento Team",
     "date": "2026-07-06",
     "summary": "A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.",
@@ -21,7 +30,7 @@
     "title": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
     "author": "Elemento Team",
     "date": "2026-05-26",
-    "summary": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
+    "summary": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control\u2014and how AtomOS helps.",
     "filename": "2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
     "main_image": "img/2026-05-26-vmware-lock-in-strategic-risk.webp",
     "thumbnail_image": "img/2026-05-26-vmware-lock-in-strategic-risk.webp"

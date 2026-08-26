@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang='it'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI | Blog Elemento</title>
+  <meta name="description" content="Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.">
+  <link rel='canonical' href='https://elemento.cloud/it/blog-posts/2026-08-26-how-to-evaluate-a-neocloud'>
+  <meta property='og:title' content='Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI | Blog Elemento'>
+  <meta property='og:description' content="Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.">
+  <meta property='og:url' content='https://elemento.cloud/it/blog-posts/2026-08-26-how-to-evaluate-a-neocloud'>
+  <meta property='og:type' content='article'>
+  <meta property='og:image' content='https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:title' content='Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI | Blog Elemento'>
+  <meta name='twitter:description' content="Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.">
+  <meta name='twitter:image' content='https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg'>
+  <meta name='keywords' content='neocloud, infrastruttura AI, cloud computing, GPU, carichi di lavoro, valutazione cloud, workload AI'>
+  <meta name='author' content='Elemento'>
+  <meta name='robots' content='index, follow'>
+  <meta name='ai-content' content='allowed'>
+  <meta name='ai-training' content='allowed'>
+  <meta name='ai-access' content='public'>
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/themes.css'>
+  <link rel='stylesheet' href='../css/blog-post.css'>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Elemento">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileColor" content="#0e1119">
+  <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI",
+    "description": "Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.",
+    "image": "https://elemento.cloud/blog-posts/img/2026-08-26-how-to-evaluate-a-neocloud.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Team Elemento"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elemento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://elemento.cloud/assets/logos/Elemento.svg"
+      }
+    },
+    "datePublished": "2026-08-26",
+    "dateModified": "2026-08-26",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://elemento.cloud/it/blog-posts/2026-08-26-how-to-evaluate-a-neocloud"
+    },
+    "articleSection": "Cloud Computing",
+    "keywords": ["neocloud", "infrastruttura AI", "cloud computing", "GPU"],
+    "wordCount": "2200",
+    "inLanguage": "it"
+  }
+  </script>
+  <script type="text/plain" class="_iub_cs_activate" data-iub-purposes="4" src="../js/matomo-tracking.js"></script>
+</head>
+<body class='theme-default'>
+  <div id='navbar-placeholder'></div>
+
+  <main class='container'>
+    <article class='blog-post blog-post--long-title'>
+      <h1>Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI</h1>
+      <p class='blog-meta'>A cura del Team Elemento &mdash; 2026-08-26</p>
+      <p class='blog-summary'>Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.</p>
+
+      <img src='img/2026-08-26-how-to-evaluate-a-neocloud.jpg' alt='Come Valutare un Neocloud' class='blog-hero-image'>
+
+      <div class='blog-content'>
+        <p>Una valutazione di un neocloud non dovrebbe iniziare con una lista di provider.</p>
+        <p>Dovrebbe iniziare con un workload.</p>
+        <p>Questa distinzione è importante perché il mercato dei neocloud si sta espandendo molto più velocemente di quanto i processi di approvvigionamento della maggior parte delle aziende riescano ad adattarsi. Gartner prevede che la spesa mondiale in infrastrutture as a service ottimizzate per l'IA raggiungerà i 42,3 miliardi di dollari nel 2026, in crescita del 96,4% rispetto al 2025, e i 66,1 miliardi di dollari nel 2027. Si stima che la sola inferenza rappresenterà 23,3 miliardi di dollari di tale spesa nel 2026, superando i 19 miliardi assegnati all'infrastruttura di addestramento.</p>
+        <p>Gartner prevede inoltre che i provider neocloud — piattaforme cloud realizzate appositamente per carichi di lavoro ad alte prestazioni e per l'intelligenza artificiale — conquisteranno il 20% di un mercato cloud AI da 267 miliardi di dollari entro il 2030.</p>
+        <p>Questi numeri spiegano perché quasi ogni team di infrastruttura viene ora approcciato con nuove offerte di GPU, accordi di capacità riservata e promesse di una migliore economia per l'IA.</p>
+        <p>Non spiegano, però, quale opzione sia giusta per una particolare organizzazione.</p>
+        <p>La vera domanda non è:</p>
+        <blockquote>
+          <p>Qual è il miglior neocloud?</p>
+        </blockquote>
+        <p>È piuttosto:</p>
+        <blockquote>
+          <p>Quale infrastruttura può completare questo workload con le prestazioni, il rischio e il costo richiesti? E quanto sarà facile cambiare questa decisione in seguito?</p>
+        </blockquote>
+        <p>Questa guida fornisce un framework pratico per rispondere a questa domanda.</p>
+
+        <h2>Partire dal workload, non dal provider</h2>
+        <p>Un neocloud non è un aggiornamento generico per un ambiente cloud esistente. Il suo valore dipende pesantemente dal carico di lavoro che vi viene allocato.</p>
+        <p>Prima di confrontare i fornitori, è fondamentale classificare il caso d'uso.</p>
+
+        <h3>Training e fine-tuning</h3>
+        <p>I carichi di lavoro per il training richiedono normalmente cluster di acceleratori ad alta densità per un periodo di tempo limitato. Le loro variabili chiave includono:</p>
+        <ul>
+          <li>Il numero e la generazione di acceleratori richiesti.</li>
+          <li>Il pattern di comunicazione tra le GPU.</li>
+          <li>Le dimensioni e la posizione del dataset di training.</li>
+          <li>La frequenza e le dimensioni dei checkpoint.</li>
+          <li>Il tempo accettabile per completare il ciclo di training.</li>
+          <li>Se il workload può essere interrotto e ripreso.</li>
+          <li>Il costo di un run fallito o completato parzialmente.</li>
+        </ul>
+        <p>Per questi carichi di lavoro, la GPU più economica all'ora potrebbe non produrre l'addestramento più economico in totale. Il tempo di coda, le prestazioni dell'interconnessione, il throughput dello storage e il comportamento del recupero possono modificare in modo sostanziale l'aspetto economico.</p>
+
+        <h3>Inferenza persistente</h3>
+        <p>L'inferenza in produzione ha un profilo diverso.</p>
+        <p>Le domande principali sono di solito:</p>
+        <ul>
+          <li>Richieste o token richiesti al secondo.</li>
+          <li>Latenza P50, P95 e P99.</li>
+          <li>Variabilità del traffico.</li>
+          <li>Obiettivi di disponibilità.</li>
+          <li>Tempo di caricamento del modello.</li>
+          <li>Capacità minima richiesta durante i periodi di inattività.</li>
+          <li>Velocità di scalabilità durante i picchi di domanda.</li>
+          <li>Requisiti regionali e di residenza dei dati.</li>
+        </ul>
+        <p>L'inferenza può funzionare in modo continuo, rendendo la scarsa utilizzazione o il sovradimensionamento molto più costosi nel tempo rispetto a quanto avverrebbe durante un breve progetto di addestramento.</p>
+
+        <h3>Elaborazione batch e HPC</h3>
+        <p>Anche il rendering, la simulazione, il calcolo scientifico e i grandi carichi di lavoro batch possono essere adatti a un'infrastruttura neocloud.</p>
+        <p>Questi workload sono spesso più facili da spostare perché hanno un inizio e una fine chiari. Tuttavia, potrebbero dipendere pesantemente da filesystem specializzati, scheduler, compilatori o configurazioni di rete.</p>
+
+        <h3>Capacità in burst</h3>
+        <p>Un neocloud può integrare un cluster interno o un cloud primario quando la capacità normale si esaurisce.</p>
+        <p>Questo modello può ridurre la necessità di dimensionare l'infrastruttura privata per picchi occasionali, ma richiede che il workload sia genuinamente portabile prima che il picco si verifichi. Cercare di creare portabilità durante un'emergenza di capacità ha raramente successo.</p>
+
+        <h3>Workload sovrani o regolamentati</h3>
+        <p>Alcuni fornitori neocloud si concentrano su infrastrutture regionali o sovrane. Questi servizi possono essere rilevanti quando i dati, il controllo operativo o la governance devono rimanere all'interno di una specifica giurisdizione.</p>
+        <p>In questo caso, le prestazioni tecniche sono solo una parte della valutazione. Garanzie contrattuali, accesso per gli operatori, ubicazione del supporto, controllo delle chiavi di cifratura e legge applicabile possono essere altrettanto importanti.</p>
+
+        <h2>Creare un profilo del workload</h2>
+        <p>Per ciascun workload candidato, produci un profilo di una pagina contenente:</p>
+        <ul>
+          <li>Proprietario di business e proprietario tecnico.</li>
+          <li>Tipo di workload.</li>
+          <li>Ambiente di esecuzione attuale.</li>
+          <li>Requisiti per gli acceleratori.</li>
+          <li>Requisiti di CPU e memoria.</li>
+          <li>Dimensioni dei dataset e dei checkpoint.</li>
+          <li>Caratteristiche di rete.</li>
+          <li>Caratteristiche dello storage.</li>
+          <li>Capacità normale e di picco.</li>
+          <li>Durata prevista o volume mensile.</li>
+          <li>Obiettivi di latenza e disponibilità.</li>
+          <li>Classificazione dei dati.</li>
+          <li>Restrizioni geografiche.</li>
+          <li>Interruzione massima accettabile.</li>
+          <li>Dipendenze da servizi proprietari.</li>
+          <li>Metrica di costo target.</li>
+          <li>Obiettivo di portabilità.</li>
+        </ul>
+        <p>La metrica di costo target dovrebbe riflettere il risultato, non l'unità infrastrutturale.</p>
+        <p>Per l'addestramento, potrebbe essere:</p>
+        <blockquote>
+          <p>Costo totale per ogni sessione di training completata con successo.</p>
+        </blockquote>
+        <p>Per l'inferenza:</p>
+        <blockquote>
+          <p>Costo per milione di token con la latenza e la disponibilità richieste.</p>
+        </blockquote>
+        <p>Per il rendering:</p>
+        <blockquote>
+          <p>Costo per frame completato.</p>
+        </blockquote>
+        <p>Per la simulazione:</p>
+        <blockquote>
+          <p>Costo per scenario completato.</p>
+        </blockquote>
+        <p>In questo modo si assegna a ogni provider lo stesso problema da risolvere.</p>
+
+        <h2>Stabilire una base di partenza prima di chiedere preventivi</h2>
+        <p>Una proposta è difficile da valutare senza sapere come si comporta il workload oggi.</p>
+        <p>Misura l'ambiente attuale prima di spostare qualsiasi cosa.</p>
+        <p>Raccogli almeno:</p>
+        <ul>
+          <li>Tempo necessario per ottenere capacità.</li>
+          <li>Tempo di configurazione dell'ambiente.</li>
+          <li>Tempo di trasferimento dei dati.</li>
+          <li>Tempo di esecuzione dei job.</li>
+          <li>Utilizzo medio e di picco degli acceleratori.</li>
+          <li>Utilizzo di CPU, memoria e storage.</li>
+          <li>Throughput e latenza di rete.</li>
+          <li>Capacità inattiva.</li>
+          <li>Numero di job falliti o ripetuti.</li>
+          <li>Ore di ingegneria richieste per preparare e operare il workload.</li>
+          <li>Costo completo dell'infrastruttura.</li>
+        </ul>
+        <p>Evita di confrontare il preventivo del provider con una vaga impressione non documentata dell'ambiente attuale.</p>
+        <p>La base di partenza (baseline) non deve essere perfetta. Deve essere riproducibile.</p>
+
+        <h2>Definire i criteri di accettazione in anticipo</h2>
+        <p>Prima di contattare i fornitori, separa i requisiti in tre categorie.</p>
+
+        <h3>Requisiti obbligatori</h3>
+        <p>Un provider viene escluso se non può soddisfare queste condizioni.</p>
+        <p>Esempi includono:</p>
+        <ul>
+          <li>Un tipo specifico di acceleratore o una capacità di memoria minima.</li>
+          <li>Elaborazione all'interno di una giurisdizione approvata.</li>
+          <li>Supporto per uno scheduler richiesto.</li>
+          <li>Chiavi di cifratura gestite dal cliente.</li>
+          <li>Un impegno di disponibilità minima.</li>
+          <li>Esportazione dei checkpoint in un formato utilizzabile.</li>
+          <li>Un processo di risposta agli incidenti definito.</li>
+          <li>Il diritto contrattuale di recuperare tutti i dati alla chiusura del contratto.</li>
+        </ul>
+
+        <h3>Requisiti a punteggio</h3>
+        <p>Questi requisiti influenzano la classifica, ma non sono esclusioni automatiche.</p>
+        <p>Esempi includono:</p>
+        <ul>
+          <li>Velocità di provisioning.</li>
+          <li>Costo orario.</li>
+          <li>Flessibilità delle prenotazioni.</li>
+          <li>Prestazioni dello storage.</li>
+          <li>Qualità del monitoraggio.</li>
+          <li>Reattività del supporto.</li>
+          <li>Regioni disponibili.</li>
+          <li>Report sulla sostenibilità.</li>
+          <li>Integrazione con gli strumenti esistenti.</li>
+        </ul>
+
+        <h3>Condizioni squalificanti</h3>
+        <p>Metti per iscritto le condizioni che rendono inaccettabile una proposta, anche quando il prezzo è interessante.</p>
+        <p>Esempi includono:</p>
+        <ul>
+          <li>Termini poco chiari per l'egress dei dati.</li>
+          <li>Nessun processo documentato per la via d'uscita (exit).</li>
+          <li>Chiavi di cifratura controllate dal provider per workload sensibili.</li>
+          <li>Sostituzioni di acceleratori non specificate.</li>
+          <li>Uno SLA che esclude il tempo di coda o di provisioning.</li>
+          <li>Impegni take-or-pay che superano di gran lunga l'utilizzo previsto.</li>
+          <li>Nessuna capacità di riprodurre l'ambiente al di fuori del provider.</li>
+        </ul>
+        <p>Definire queste condizioni prima delle negoziazioni commerciali riduce il rischio di cambiare i criteri di valutazione solo per giustificare un preventivo allettante.</p>
+
+        <h2>Utilizzare una scorecard pesata per i provider</h2>
+        <p>Una scorecard costringe i team tecnici, finanziari e di rischio a valutare la stessa proposta.</p>
+        <p>Una ponderazione di esempio potrebbe essere:</p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Area di valutazione</th>
+              <th>Peso suggerito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Prestazioni del workload</td><td>25%</td></tr>
+            <tr><td>Costo totale e modello commerciale</td><td>20%</td></tr>
+            <tr><td>Disponibilità della capacità</td><td>15%</td></tr>
+            <tr><td>Sicurezza, compliance e sovranità</td><td>15%</td></tr>
+            <tr><td>Portabilità e prontezza all'uscita (exit)</td><td>15%</td></tr>
+            <tr><td>Rischio operativo e del provider</td><td>10%</td></tr>
+          </tbody>
+        </table>
+        <p>I pesi dovrebbero variare a seconda del caso d'uso.</p>
+        <p>Un servizio di inferenza regolamentato potrebbe dare più peso alla sovranità e alla disponibilità. Un progetto temporaneo di addestramento potrebbe dare priorità al tempo per ottenere capacità e al costo totale di esecuzione.</p>
+        <p>La scorecard dovrebbe includere anche un livello di confidenza. Un risultato testato in benchmark merita più fiducia rispetto a un'affermazione contenuta in una presentazione.</p>
+
+        <h2>Valutare l'architettura dietro alla GPU</h2>
+        <p>Il nome del modello di una GPU non descrive un sistema completo.</p>
+        <p>Due provider che offrono lo stesso acceleratore possono produrre risultati molto diversi a causa della topologia di rete, dell'allocazione delle CPU, dello storage, della virtualizzazione e dello scheduling.</p>
+        <p>Chiedi a ciascun provider di spiegare quanto segue.</p>
+
+        <h3>Configurazione degli acceleratori</h3>
+        <ul>
+          <li>Modello esatto di GPU o acceleratore.</li>
+          <li>Memoria per acceleratore.</li>
+          <li>Numero di acceleratori per nodo.</li>
+          <li>Interconnessione all'interno del nodo.</li>
+          <li>Interconnessione tra nodi.</li>
+          <li>Se gli acceleratori sono dedicati o condivisi.</li>
+          <li>Se è utilizzata l'allocazione frazionata.</li>
+          <li>Se sono consentite sostituzioni hardware.</li>
+          <li>Come viene sostituito l'hardware guasto.</li>
+        </ul>
+
+        <h3>Ambiente di elaborazione</h3>
+        <ul>
+          <li>Bare metal, macchina virtuale o container.</li>
+          <li>CPU e memoria allocate per ogni acceleratore.</li>
+          <li>Topologia NUMA.</li>
+          <li>Sistemi operativi e immagini supportate.</li>
+          <li>Versioni dei driver e di CUDA.</li>
+          <li>Policy di aggiornamento e patching.</li>
+          <li>Supporto per immagini personalizzate.</li>
+          <li>Supporto per Kubernetes, Slurm o altri scheduler necessari.</li>
+        </ul>
+
+        <h3>Rete</h3>
+        <ul>
+          <li>Tecnologia di rete e larghezza di banda nominale.</li>
+          <li>Rapporto di oversubscription.</li>
+          <li>Throughput est-ovest previsto.</li>
+          <li>Supporto RDMA.</li>
+          <li>Caratteristiche di scalabilità multi-nodo.</li>
+          <li>Connettività esterna.</li>
+          <li>Opzioni di connettività privata.</li>
+          <li>Protezione DDoS e controlli di sicurezza della rete.</li>
+        </ul>
+
+        <h3>Storage</h3>
+        <ul>
+          <li>Storage effimero locale.</li>
+          <li>Block storage persistente.</li>
+          <li>Object storage.</li>
+          <li>Opzioni di filesystem paralleli.</li>
+          <li>Throughput di lettura e scrittura.</li>
+          <li>Prestazioni sui metadati.</li>
+          <li>Funzionalità di snapshot e replica.</li>
+          <li>Tempo di ripristino dai checkpoint.</li>
+          <li>Costo di conservazione ed esportazione dei dati.</li>
+        </ul>
+
+        <h3>Operazioni</h3>
+        <ul>
+          <li>Meccanismo di provisioning.</li>
+          <li>Supporto Infrastructure-as-code.</li>
+          <li>Copertura di API e CLI.</li>
+          <li>Monitoraggio e log.</li>
+          <li>Avvisi (Alerting).</li>
+          <li>Controlli di accesso.</li>
+          <li>Tracce di audit (Audit trails).</li>
+          <li>Comunicazione in caso di incidenti.</li>
+          <li>Escalation per il supporto.</li>
+          <li>Processo di prenotazione della capacità.</li>
+        </ul>
+        <p>Un provider che non riesce a descrivere chiaramente la propria architettura non dovrebbe essere valutato solo per il prezzo pubblicizzato per i suoi acceleratori.</p>
+
+        <h2>Condurre una prova di valore (Proof of Value), non un benchmark sintetico</h2>
+        <p>I benchmark sintetici possono essere utili per identificare ovvi problemi hardware. Raramente, però, rappresentano l'economia complessiva di un carico di lavoro in produzione.</p>
+        <p>Una prova di valore (PoV) dovrebbe utilizzare un'applicazione, un dataset e un processo operativo rappresentativi.</p>
+        <p>Utilizza in modo coerente:</p>
+        <ul>
+          <li>La stessa build del modello o dell'applicazione.</li>
+          <li>La stessa immagine del container.</li>
+          <li>Lo stesso dataset.</li>
+          <li>La stessa precisione.</li>
+          <li>La stessa dimensione del batch.</li>
+          <li>La stessa configurazione per i checkpoint.</li>
+          <li>Lo stesso pattern di accesso allo storage.</li>
+          <li>Lo stesso obiettivo di disponibilità.</li>
+          <li>Lo stesso periodo di misurazione.</li>
+        </ul>
+        <p>Esegui il test nell'ambiente attuale e in due o tre alternative candidate.</p>
+
+        <h3>Fase 1: Provisioning</h3>
+        <p>Misura:</p>
+        <ul>
+          <li>Il tempo tra la richiesta e l'effettiva disponibilità di capacità.</li>
+          <li>Il numero di passaggi manuali.</li>
+          <li>I requisiti di approvazione o i limiti (quota).</li>
+          <li>I fallimenti di configurazione.</li>
+          <li>La riproducibilità.</li>
+        </ul>
+
+        <h3>Fase 2: Preparazione dei dati</h3>
+        <p>Misura:</p>
+        <ul>
+          <li>Il tempo di ingestione dei dati.</li>
+          <li>I costi di trasferimento.</li>
+          <li>Lo sforzo di configurazione dello storage.</li>
+          <li>La convalida del dataset.</li>
+          <li>Il tempo necessario per rendere il workload eseguibile.</li>
+        </ul>
+
+        <h3>Fase 3: Esecuzione</h3>
+        <p>Misura:</p>
+        <ul>
+          <li>La durata totale del processo.</li>
+          <li>L'utilizzo degli acceleratori.</li>
+          <li>Il throughput.</li>
+          <li>La latenza, dove rilevante.</li>
+          <li>I colli di bottiglia causati da CPU e storage.</li>
+          <li>L'efficienza di scalabilità su più nodi.</li>
+          <li>I costi mentre il workload è attivamente in funzione.</li>
+        </ul>
+
+        <h3>Fase 4: Interruzione e ripristino</h3>
+        <p>Testa deliberatamente:</p>
+        <ul>
+          <li>La creazione di checkpoint.</li>
+          <li>Il fallimento di un nodo.</li>
+          <li>Il riavvio del job.</li>
+          <li>L'interruzione di capacità.</li>
+          <li>Il Recovery-point objective.</li>
+          <li>Il Recovery-time objective.</li>
+        </ul>
+        <p>Una piattaforma che funziona bene solo quando niente si rompe non è pronta per la produzione.</p>
+
+        <h3>Fase 5: Esportazione e teardown</h3>
+        <p>Misura:</p>
+        <ul>
+          <li>Il tempo necessario per esportare i checkpoint e i risultati.</li>
+          <li>Le tariffe per l'egress.</li>
+          <li>La capacità di ricostruire il workload altrove.</li>
+          <li>Il comportamento di cancellazione delle risorse.</li>
+          <li>I costi residui di rete e di storage.</li>
+          <li>Il processo di chiusura dell'account.</li>
+        </ul>
+        <p>Il test di esportazione è spesso più informativo rispetto al deployment iniziale.</p>
+
+        <h2>Calcolare il vero costo</h2>
+        <p>Il costo totale di un carico di lavoro su neocloud non corrisponde alla tariffa GPU pubblicizzata.</p>
+        <p>Un modello utile è:</p>
+        <blockquote>
+          <p><strong>Costo effettivo del workload = elaborazione + infrastruttura collegata + movimento dati + impegni inutilizzati + lavoro operativo + guasti e tentativi di esecuzione + costi di migrazione e di uscita</strong></p>
+        </blockquote>
+
+        <h3>Compute</h3>
+        <p>Includi:</p>
+        <ul>
+          <li>Ore di utilizzo degli acceleratori.</li>
+          <li>CPU e memoria.</li>
+          <li>Dimensione minima del nodo.</li>
+          <li>Tempo di inattività in attesa di dati o altri processi.</li>
+          <li>Capacità mantenuta per alta disponibilità.</li>
+          <li>Sovrapprezzi (premium) per regioni specifiche o tipi hardware.</li>
+        </ul>
+
+        <h3>Infrastruttura collegata</h3>
+        <p>Includi:</p>
+        <ul>
+          <li>Storage persistente.</li>
+          <li>Object storage.</li>
+          <li>Filesystem ad alte prestazioni.</li>
+          <li>Snapshot.</li>
+          <li>Indirizzi IP pubblici.</li>
+          <li>Load balancer.</li>
+          <li>Monitoraggio.</li>
+          <li>Logging.</li>
+          <li>Servizi di sicurezza.</li>
+          <li>Piani di supporto.</li>
+        </ul>
+
+        <h3>Movimento dei dati</h3>
+        <p>Includi:</p>
+        <ul>
+          <li>Il caricamento iniziale del dataset.</li>
+          <li>La replica tra regioni.</li>
+          <li>I trasferimenti per i checkpoint.</li>
+          <li>L'esportazione dei risultati.</li>
+          <li>Le copie di backup.</li>
+          <li>L'egress (uscita) verso un altro provider o in un ambiente on-premises.</li>
+        </ul>
+
+        <h3>Impegni (Commitments)</h3>
+        <p>Calcola:</p>
+        <ul>
+          <li>La spesa minima mensile.</li>
+          <li>Il periodo di prenotazione.</li>
+          <li>L'esposizione per contratti di tipo take-or-pay.</li>
+          <li>La capacità prenotata e inutilizzata.</li>
+          <li>Le condizioni di rinnovo.</li>
+          <li>I costi in caso di disdetta anticipata.</li>
+        </ul>
+
+        <h3>Operazioni</h3>
+        <p>Misura lo sforzo umano richiesto per:</p>
+        <ul>
+          <li>La configurazione dell'ambiente.</li>
+          <li>La manutenzione delle immagini.</li>
+          <li>Le revisioni di sicurezza.</li>
+          <li>Risoluzione dei problemi (Troubleshooting).</li>
+          <li>La pianificazione della capacità.</li>
+          <li>L'allocazione dei costi.</li>
+          <li>Reportistica.</li>
+          <li>Coordinamento con i fornitori.</li>
+        </ul>
+        <p>Gartner stima che, entro il 2030, le organizzazioni che non riusciranno a ottimizzare i propri ambienti di elaborazione per l'intelligenza artificiale potrebbero pagare più del 50% in più rispetto a coloro che lo faranno.</p>
+        <p>La lezione non è che una categoria di provider sia sempre più economica. Il punto è che l'efficienza dell'infrastruttura va misurata in maniera continua.</p>
+
+        <h2>Confrontare i risultati, non le tariffe orarie</h2>
+        <p>Per il training, confronta:</p>
+        <ul>
+          <li>Tempo per avere a disposizione un cluster.</li>
+          <li>Tempo per completare il modello.</li>
+          <li>Costo per esecuzione andata a buon fine.</li>
+          <li>Percentuale di esecuzioni ripetute.</li>
+          <li>Tempo impiegato dall'ingegneria per ogni run.</li>
+          <li>Costo di mantenimento dei checkpoint.</li>
+        </ul>
+        <p>Per l'inferenza, confronta:</p>
+        <ul>
+          <li>Costo per milione di token o per milione di richieste.</li>
+          <li>Throughput alla latenza necessaria.</li>
+          <li>Costo per la capacità minima sempre attiva.</li>
+          <li>Tempo di risposta della scalabilità.</li>
+          <li>Costi per la ridondanza.</li>
+          <li>Tasso di fallimento.</li>
+          <li>Disponibilità effettivamente ottenuta.</li>
+        </ul>
+        <p>Per i carichi di lavoro batch, confronta:</p>
+        <ul>
+          <li>Costo per batch completato.</li>
+          <li>Tempo di esecuzione totale.</li>
+          <li>Percentuale di capacità rimasta inattiva.</li>
+          <li>Tempi di attesa (queue).</li>
+          <li>Costi associati ai ritentativi.</li>
+        </ul>
+        <p>Un fornitore che costa il 15% in più per acceleratore-ora può comunque essere più economico se il workload viene completato il 25% più velocemente o se richiede un impegno operativo inferiore.</p>
+        <p>È vero anche il contrario: una bassa tariffa oraria può nascondere uno scarso utilizzo delle risorse, uno storage lento o costi elevati per spostare i dati.</p>
+
+        <h2>Includere l'infrastruttura privata nel confronto</h2>
+        <p>Il confronto tra neocloud e hyperscaler risulta incompleto quando si esclude l'infrastruttura privata.</p>
+        <p>IDC ha rilevato che la spesa mondiale in server è aumentata del 30,7% anno su anno nel primo trimestre del 2026, a fronte di una crescita del numero di unità spedite di solo il 3,3%. Tale differenza è in gran parte attribuibile al continuo dispiegamento di server GPU; inoltre, ci si aspetta che vincoli legati a memorie e memorie NAND manterranno i prezzi elevati almeno fino a metà del 2027.</p>
+        <p>Tutto ciò rende l'infrastruttura AI privata un investimento oneroso, ma non lo rende automaticamente anti-economico.</p>
+        <p>La capacità privata si rivela attraente quando:</p>
+        <ul>
+          <li>La domanda è prevedibile.</li>
+          <li>L'utilizzo può mantenersi a livelli alti.</li>
+          <li>Trasferire i dati costa molto o è complicato.</li>
+          <li>L'hardware può supportare diversi workload.</li>
+          <li>L'organizzazione possiede le competenze per operarlo.</li>
+          <li>Il periodo di ammortamento coincide col ciclo di vita della tecnologia.</li>
+          <li>Il controllo diretto ha un preciso valore regolatorio o di sicurezza.</li>
+        </ul>
+        <p>Includi almeno tre scenari nel tuo business case:</p>
+        <ol>
+          <li>Capacità esterna tramite neocloud.</li>
+          <li>Capacità presso hyperscaler.</li>
+          <li>Capacità privata (o bare-metal).</li>
+        </ol>
+        <p>Per molte organizzazioni, il risultato ottimale sarà una combinazione delle diverse opzioni, non una singola soluzione.</p>
+
+        <h2>Testare la portabilità prima di firmare il contratto</h2>
+        <p>La portabilità deve essere dimostrata nei fatti, non solo dichiarata su carta.</p>
+
+        <h3>Portabilità dell'applicazione</h3>
+        <p>Conferma che il carico di lavoro può essere ripristinato partendo da:</p>
+        <ul>
+          <li>Codice sottoposto a controllo di versione.</li>
+          <li>Immagini container portabili.</li>
+          <li>Dipendenze ben documentate.</li>
+          <li>Configurazioni esterne.</li>
+          <li>Definizioni tramite infrastructure-as-code.</li>
+          <li>Formati standardizzati per i modelli.</li>
+          <li>Checkpoint esportabili.</li>
+        </ul>
+
+        <h3>Portabilità dei dati</h3>
+        <p>Assicurati dei seguenti aspetti:</p>
+        <ul>
+          <li>Formati usati per l'esportazione.</li>
+          <li>Banda a disposizione per l'uscita dei dati (egress).</li>
+          <li>Oneri legati all'egress.</li>
+          <li>Tempistiche necessarie a recuperare ogni singolo dato.</li>
+          <li>Compatibilità degli snapshot.</li>
+          <li>Possesso esclusivo dei backup.</li>
+          <li>Procedure standard per l'eliminazione dei dati.</li>
+          <li>Modalità di conservazione successiva alla chiusura del contratto.</li>
+        </ul>
+
+        <h3>Portabilità delle identità</h3>
+        <p>Evita di radicare il modello di identità del provider al punto da dover riscrivere ogni applicazione per poter migrare.</p>
+        <p>Ricorda di documentare:</p>
+        <ul>
+          <li>Le identità associate a utenti e servizi.</li>
+          <li>I ruoli e relative mappature.</li>
+          <li>Gli accessi segreti (secrets).</li>
+          <li>I certificati utilizzati.</li>
+          <li>Le chiavi e le credenziali API.</li>
+          <li>I requisiti minimi per l'audit.</li>
+        </ul>
+
+        <h3>Portabilità operativa</h3>
+        <p>Verifica che sia possibile esportare:</p>
+        <ul>
+          <li>Tutti i log.</li>
+          <li>Le metriche raccolte.</li>
+          <li>I dashboard preimpostati.</li>
+          <li>Le policy di alerting.</li>
+          <li>Le procedure (runbooks).</li>
+          <li>La storia di tutti gli incidenti occorsi.</li>
+          <li>Le informazioni legate all'allocazione dei costi.</li>
+        </ul>
+        <p>Un'applicazione in grado di essere tecnicamente migrata ma che perde ogni contesto operativo si può definire solo parzialmente portabile.</p>
+
+        <h2>Simulare l'uscita (Exit drill)</h2>
+        <p>Prima di affidare i principali workload in produzione a un nuovo ambiente, simulane la ricostruzione altrove.</p>
+        <p>Questo test (l'exit drill) deve verificare che il tuo team sia in grado di:</p>
+        <ul>
+          <li>Erogare (provision) un ambiente equivalente.</li>
+          <li>Ripristinare da un checkpoint.</li>
+          <li>Ricollegare lo storage in modo appropriato.</li>
+          <li>Ricreare le medesime policy di rete.</li>
+          <li>Recuperare chiavi (secrets) e sistemi di autenticazione.</li>
+          <li>Far ripartire il workload come previsto.</li>
+          <li>Valutare in autonomia se il test ha avuto successo o meno.</li>
+          <li>Dismettere in sicurezza l'ambiente di origine.</li>
+        </ul>
+        <p>Traccia la durata di ogni fase, i passaggi eseguiti manualmente e gli errori intercorsi.</p>
+        <p>Lo scopo di questa simulazione non è abbandonare il proprio fornitore. Al contrario: lo scopo è misurare l'entità della propria dipendenza prima di consolidarla.</p>
+
+        <h2>Analizzare i termini commerciali legati all'uscita</h2>
+        <p>La portabilità tecnica risulta inefficace se il contratto non permette di sfruttarla.</p>
+        <p>Fai attenzione a:</p>
+        <ul>
+          <li>La durata e la valenza del contratto.</li>
+          <li>Il meccanismo di tacito rinnovo automatico.</li>
+          <li>Le quote o spesa minimi previsti.</li>
+          <li>Le prenotazioni su componenti hardware.</li>
+          <li>Gli adeguamenti automatici e le revisioni di prezzo.</li>
+          <li>Le regole (e gli eventuali oneri economici) legate al deflusso dei dati (egress).</li>
+          <li>L'eventuale assistenza erogabile dal fornitore durante una transizione verso terzi.</li>
+          <li>Le soglie temporali di ritenzione per la messa in sicurezza dei dati.</li>
+          <li>La dichiarazione formale (certificazione) per l'eliminazione definitiva.</li>
+          <li>Le clausole che regolano passaggi, cessioni o fusioni aziendali, o un'eventuale situazione d'insolvenza dell'operatore.</li>
+          <li>Il possibile ridimensionamento in determinati territori/regioni o i limiti di erogazione sui sistemi hardware.</li>
+          <li>Se il provider faccia ricorso a ulteriori subappaltatori (e chi ne risponde).</li>
+          <li>In che nazione ha luogo e qual è la legge prevalente da rispettare.</li>
+        </ul>
+        <p>Il momento migliore per delineare l'exit plan consiste in una review congiunta tra acquisti, legal, cybersecurity, team infrastrutturali.</p>
+
+        <h2>Optare per il giusto modello operativo</h2>
+        <p>Un neocloud può venire integrato seguendo svariate strategie.</p>
+
+        <h3>Modello 1: Risorse dedicate (specializzate) per il training</h3>
+        <p>Il provider entra in gioco quando è indispensabile svolgere operazioni ben delimitate su base temporale (quali l'addestramento, l'affinamento dei modelli/fine-tuning).</p>
+        <p><strong>Utile nel caso di:</strong> Attività che richiedono l'ausilio transitorio di reti massive e potenze distribuite di calcolo.</p>
+        <p><strong>Vantaggio maggiore:</strong> Accedere ai processori di punta senza sobbarcarsi oneri finanziari per acquisti strutturali o ammortamenti sul lungo periodo.</p>
+        <p><strong>Rischio:</strong> Comporta tempi non trascurabili legati al caricamento/trasferimento iniziale delle molecole di dati.</p>
+
+        <h3>Modello 2: Baseline privata affiancata ad estensioni a consumo temporaneo (burst)</h3>
+        <p>Mentre i processi regolari avvengono su server aziendali di proprietà, si sceglie di assorbire o gestire le fluttuazioni transitorie mediante capacità addizionale proveniente dal neocloud.</p>
+        <p><strong>Utile nel caso di:</strong> Una base costante e predicibile di consumi con occasionali ondate irregolari o macroprogetti.</p>
+        <p><strong>Vantaggio maggiore:</strong> Si ottiene il massimo controllo bilanciandolo con l'elasticità di mezzi su richiesta per operazioni di impatto e breve durata.</p>
+        <p><strong>Rischio:</strong> Requisiti ferrei sulla modularità/portabilità dei task: altrimenti lo spostamento avverrà solo su carta ma si rivelerà insostenibile nei fatti e nei tempi necessari al coordinamento operativo.</p>
+
+        <h3>Modello 3: Sistema in parallelo ad assetti multi-vendor per la produzione ed inferenza</h3>
+        <p>Il risultato dell'elaborato gira in real time sfruttando simultaneamente le sinergie di diversi servizi in modo differenziato (per prossimità geografica al fruitore, protezione in caso di blackout o leve economiche ed efficienze commerciali).</p>
+        <p><strong>Utile nel caso di:</strong> Operatività su enormi scale in cui l'ecosistema del codice possa funzionare disaccoppiato dall'hardware ospitante.</p>
+        <p><strong>Vantaggio maggiore:</strong> Impossibilità logica (e tecnica) per l'organizzazione di subire ricatti di lock-in o criticità causate dall'interruzione non programmabile di una o singole unità di servizio.</p>
+        <p><strong>Rischio:</strong> Esige competenze altissime sul livello dell'orchestrazione per l'assemblaggio di configurazioni per gestire discrepanze nei parametri globali delle piattaforme disgiunte o fluttuazioni repentine sui valori prestazionali erogati.</p>
+
+        <h3>Modello 4: Sovranità digitale del task nei limiti di zone sicure o protette regionalmente (geofencing)</h3>
+        <p>Le informazioni nevralgiche operano al 100% all'interno di un habitat rigorosamente vagliato rispetto alle prerogative statali e alle discipline legali del luogo (restando esclusi ed estranei dai meccanismi che regolano, di norma, piattaforme distribuite su continenti terzi).</p>
+        <p><strong>Utile nel caso di:</strong> Restrizioni pesanti o di natura militare, sanitarie (o finanziarie) imposte dalla regolazione europea o dal singolo territorio statale sull'allocazione dei domini e sulla salvaguardia, conservazione, profilazione, monitoraggio.</p>
+        <p><strong>Vantaggio maggiore:</strong> Completa autogestione in totale coerenza (senza attriti giuridici di sorta e con supervisioni del personale garantite per area).</p>
+        <p><strong>Rischio:</strong> Limitazioni fisiche sulle scale del servizio e rinuncia di fatto all'ampio catalogo "as-a-service" della concorrenza generalista che punta per volumi aggregati a livelli extra-regionali o globali.</p>
+
+        <h3>Modello 5: L'impalcatura sperimentale o del processo pre-fase industriale/sperimentale</h3>
+        <p>Per la risoluzione e definizione d'impresa, un fornitore del tipo Neocloud può ben collaudare progetti sperimentali per validazioni e transizioni da consolidare in tempi rapidi o con bassi requisiti per non ingolfare le operations ordinarie ed appesantire la finanza.</p>
+        <p><strong>Utile nel caso di:</strong> Esigenze repentine o per la costituzione veloce del task laddove ancora risulta arduo delineare l'impatto dei bisogni di domani sul lungo corso per impegni o necessità operative e manutentive future (e quindi difficilmente programmabili).</p>
+        <p><strong>Vantaggio maggiore:</strong> Mantenimento della volatilità con ridottissimi impegni iniziali sul capitale fisso o infrastrutturale.</p>
+        <p><strong>Rischio:</strong> L'architettura messa su e dimenticata - nata per collaudo temporaneo con deroghe e scorciatoie per farla camminare alla svelta - tende con gran disinvoltura a restare attiva e sfociare in produzione e permanenza di lungo termine inosservata a monte per pura inerzia di sistema e di business.</p>
+
+        <h2>Quale compito delegare come prima prova?</h2>
+        <p>Un candidato esemplare andrebbe così delineato:</p>
+        <ul>
+          <li>Rappresentare una valenza strutturalmente rilevante sotto l'aspetto tecnologico.</li>
+          <li>Risultare misurabile per quantificare le differenze sui profili prettamente economici ed allocativi di consumo.</li>
+          <li>Garantire di fatto l'indipendenza dalla cornice per risultare asportabile a comando in altri contesti disgiunti, omogenei o ibridi (Portabilità).</li>
+          <li>Custodire uno scopo sufficiente per la compilazione o produzione di indizi/resoconti affidabili sul piano prestazionale ed economico/risultativo d'insieme.</li>
+          <li>Possedere dei margini limitati, sicuri o di modeste pretese volumetriche sulle conseguenze generali in caso di interruzioni o errori logici su fasi critiche.</li>
+          <li>Rimanere per intero estraneo ed alieno a qualunque interconnessione opaca legata ed occultata dai sistemi o piattaforme di estrazione esclusiva gestita dei vendor storici.</li>
+          <li>Consentire che vi si agisca limitatamente ed in perimetri controllati od orari decisi a tavolino e tollerati senza generare danni o attriti nel ciclo in progressione.</li>
+        </ul>
+        <p>Un candidato esemplare potrebbe configurarsi nel task orientato sul processo di apprendimento (Training o rendering intensivo offline). O task equivalenti ai calcoli ciclici a flussi discontinui governati su porzioni d'ingresso note, concluse ed espresse da traguardi per metriche conclusive e definiti dai tassi analitici al loro culmine o spegnimento formale.</p>
+        <p>La primizia esplorativa di natura prototipale del sistema in questa direzione non dovrebbe per consuetudine ricadere ed appoggiarsi mai, nel suo caso pilota sperimentale, a ridosso dell'arteria principale del business, ossia sul centro dei profitti maggioritari a monte dell'offerta aziendale core, del sistema di smistamento più delicato o sulla funzionalità più nevralgica che mantenga costantemente operante le relazioni di continuità critica del bilancio complessivo.</p>
+
+        <h2>Una bussola temporale: 30 giorni d'ispezione ed orientamento</h2>
+
+        <h3>Settimana numero 1: Estensione (Scope) e Punto Zero (Baseline)</h3>
+        <ul>
+          <li>Designazione unitaria del workload designato al ruolo di parametro o benchmark per il tracciato pilota.</li>
+          <li>Definizione dei soggetti delegati, con delega esecutiva ai vertici (Proprietà d'uso o di business, supervisione dei sistemi in architettura IT, compliance regolatoria per la messa a terra di parametri legali ed affidamento sui perimetri di responsabilità del centro d'analisi e supervisione della finanza).</li>
+          <li>Sviluppo su carta o stesura del modello a riprova con esplicitati ed argomentati ed esposti gli obiettivi a livello normativo e perimetri del costrutto di riferimento d'ingaggio e specifiche informatiche.</li>
+          <li>Raccolta di tracciati reali in tempo su processi per valutare tempi e metodologie operative con i parametri oggi in uso presso l'infrastruttura d'oggi o di partenza come benchmark nativo o Punto Zero (baseline in loco).</li>
+          <li>Configurazione delle condizioni dei tassi, parametri per valutare e misurare con coefficienti idonei e coerenti le soglie al traguardo dei valori presi a riferimento e a misura dell'esito ultimo d'economicità su task in movimento.</li>
+          <li>Criteri e linee guida vincolanti assolute e clausole a margine inderogabili pre-esimenti.</li>
+        </ul>
+        <p><strong>Traguardo operativo tangibile o Deliverable:</strong> Dossier e fotografia di profilo o identikit informatico della natura dello scambio d'elaborazione in opera in correlazione delle evidenze su base documentaria dell'ecosistema primigenio e relativo punto d'avvio sul quale ponderare lo stacco su distanze a venire.</p>
+
+        <h3>Settimana numero 2: Verifica di provider ed impalcatura architetturale in ascesa</h3>
+        <ul>
+          <li>Proposizione estesa all'intero parterre di valutabili/referenziati attori sul campo o papabili con uniformi, costanti e coerenti e coincidenti domande, criteri operativi, e requisiti vincolanti prelevati dalla fase 1 o pre-condizione iniziale in sede di scoping.</li>
+          <li>Analisi al vaglio delle disposizioni delle infrastrutture per hardware in gioco (reti o network a terra) macchine speciali destinate al computing dell'intelligenza, e per il settore dei volumi fisici o stivati su supporti per memoria/spazio per conservazione dei modelli/dataset (ovvero Storage).</li>
+          <li>Rassegna preliminare di base e d'esordio al primo colpo d'occhio - senza approfondimenti gravosi o legali interminabili per gli attori/fornitori al banco sulla stesura di certificazioni e aderenza/dissonanza/idoneità in giurisdizione ai paradigmi regolamentati di salvaguardia regionale per confini europei o perimetro nazionale sovrano in corso e per policy societarie sui protocolli minimi dettati al comparto IT interno e cybersecurity aziendale.</li>
+          <li>Indagine esplorativa tra carte e contrattualistiche e meccaniche pattuite ai tavoli formali su opzioni tariffarie ed orari/impieghi (costi su impegno e prenotazione fisse o in surplus di calcolo fuori budget in bolletta su scalabilità a progetto/fluttuante per l'inaspettato extra-soglia o sul volume/costi prelevamento e per reindirizzamento d'estrazione e trasferimento, oneri in uscita).</li>
+          <li>Ristretta rassegna finale o di scrematura ai vertici tra papabili 2 massimo 3 per i tavoli ed alleanze esplorative o collaudo ai fini e ad uopo pratico per esecuzioni e test reali in ambiente.</li>
+        </ul>
+        <p><strong>Traguardo operativo tangibile o Deliverable:</strong> Estrapolazione ai voti ponderata (Scorecard con peso d'idoneità calcolato ed attribuito) associato alla rosa chiusa e selettiva ed elitaria ai fini della messa in prova materiale.</p>
+
+        <h3>Settimana numero 3: Cantiere operativo (Proof of Value)</h3>
+        <ul>
+          <li>Caricamento, allineamento o esecuzione parallela sull'obiettivo prescelto e stazionamento operativo identico ed equipollente replicato a dovere e a specchio sulle varianti/alternanze su infrastruttura e provider di ricambio scelti e validati e promossi al tavolo 2 per il match reale e tangibile ed effettivo del giro e giro in pista o sul set d'applicazione d'esercizio effettivo d'opera di calcolo o computazione dell'ingegno algoritmico AI prescelto o appurato con scopo probatorio.</li>
+          <li>Misurazione del consumo su tempi per istanziare, abilitare l'ambiente di base o predisposizione ed equipaggiamento fino al caricamento completo ed estenuante fase ingombrante o di svuotamento dei dataset tra macchine ed ambienti (traslochi informatici su linea e banda a destinazione o per l'appunto Data Transfer a monte).</li>
+          <li>Start e cronometraggio effettivo all'avvio procedurale dei processi computativi ed esecutivi e fase operosa in piena saturazione in run ed in ascesa prestazionale applicata ai fini elaborativi.</li>
+          <li>Messa in croce: arresto indotto (Blackout mirato o simulazione fallita/stop, e crolli da carico, decurtazioni hardware inattesi su spegnimento simulato macchine, cadute logiche applicative o recisioni d'rete), stime su resistenza ed asportazione ed ispezioni diagnostiche e tempi e tempistiche necessarie o previste o impiegate sul ricaricamento in corso dalla base di un checkpoint salvo ed isolato, con ristabilizzazione operativa.</li>
+          <li>Compilazione file chiusi (Export).</li>
+          <li>Tirare la riga sotto il totale o somma ed attribuzione e bilancio conclusivo ponderato del TCO.</li>
+        </ul>
+        <p><strong>Traguardo operativo tangibile o Deliverable:</strong> Rapporto ai numeri concreti comparati o specchio raffronto dei risultati tra opzioni, in tempi, logiche, operabilità, stabilità, pesi, ritardi, agilità operativa dei team incaricati per la manutenzione e portabilità applicativa finale su risultati economici, tangibili su pesi, denari o tempi di calcolo impiegato rispetto all'output restituito e consegnato per ciascuna pedina, fornitore, architettura e ambiente (o Cloud) in pista e collaudata. Risultanze a budget.</p>
+
+        <h3>Settimana numero 4: Il responso ed il tracciato operativo d'insieme</h3>
+        <ul>
+          <li>Disporre sul gradino ed ordinamento ai fini operativi e logici e su risultanze documentali le candidate alternative per valenze in scala (ranking/posizione su tabellone riepilogativo per le performance e virtù complessive per aderenza od allineamento ottimizzato sui macro-obiettivi a budget aziendale prefissati ed esplorati nella primissima giornata inaugurativa della sperimentazione esplorativa e d'analisi).</li>
+          <li>Assegnazione ad uno tra i vari framework d'esercizio operativi o architettura logica complessiva prestabilita ed appropriata (Pattern / Architetture operative di base in affiancamento ibrido o totale o misto su perimetri di sovranità o transitori delineati ed appropriati) sulla scorta o sulla scia di quanto vagliato e promosso al livello precedente (ovvero, assegnare un significato per l'avvenire e sulla tipologia implementativa d'uso della soluzione selezionata su assetti stabili post prova su scenari reali nel quotidiano d'esercizio operativo aziendale dell'impresa e del dipartimento preposto all'esecuzione dei servizi).</li>
+          <li>Avvio al tavolo ed ultimazione e finalizzazione della trattativa commerciale di chiusura e di perfezionamento sugli oneri d'uscita (la exit review o la review del commitment legale e finanziario tra reparti in aderenza ed accompagnamento formale in caso di sottoscrizioni in atto).</li>
+          <li>Inquadramento nero su bianco del protocollo d'uscita (ovverosia l'insieme d'accorgimenti tecnici necessari per mantenere a distanza sicurezze tra perimetro cloud, portabilità delle risorse in transito e protocolli indipendenti o aperti su base d'ingegneria del software da asportare via o riutilizzare in altri habitat od orizzonti, ad libitum e a seconda dei percorsi imposti a ritroso, per migrare su altri nidi operativi, senza colpi di coda né costose ricostruzioni a perdere al traguardo per riaggiustamenti e ricostruzioni totalitarie in codice originario per la migrazione medesima).</li>
+          <li>Schedulare in cantiere con prove cadenzate o ricorrenti e calendarizzate (oppure in forma secca e singola d'avvio e finalizzata contestualmente sul momento) la simulazione simulata in addestramento in ambiente reale ed attivo dell'esodo strategico o fuoriuscita dall'operatore prescelto per saggiare tempistiche ed esoneri e dinamiche pratiche operative con test su log e database al riparo in fuga verso nidi/approdi d'emergenza, oppure in casa (l'Exit Drill o Drill Test operativo praticato sul campo in operatività attiva in essere o sull'ecosistema gemello su linea parallela in testing) per consolidamento del percorso a venire ed implementazione in produzione sui medesimi paradigmi appena rodati a vuoto o in fase d'isolamento.</li>
+          <li>Dispiegamento sui fronti applicativi, su cruscotti e linee d'ispezione ed estrapolazione (monitoraggio/osservabilità, metriche prestazionali ed incrocio dati su contabilità finanziaria per la spesa o su costi d'esercizio) di quegli appositi framework e strumenti neutri di controllo/valutazione per il check continuo della convenienza odierni su prestazioni, consumi e valore residuo di competenza.</li>
+          <li>Conclusione dei lavori, assegnazione delle responsabilità finali (passaggio di consegne o handover per fine Proof) al reparto o al gruppo designato in via esclusiva o principale. Bivio finale (e non più dilazionabile): o smantellare (stop), duplicare e moltiplicare ed allargare estendendo ai medesimi confini esplorati sui restanti comparti IT dell'intera flotta per migrazioni ad ampia scala.</li>
+        </ul>
+        <p><strong>Traguardo operativo tangibile o Deliverable:</strong> Assunzione formale, in chiaro (Adoption), sull'inserimento nel parco logico e infrastrutturale di proprietà o perimetro in espansione o ibridazione per nuovi compiti o progetti al fine dell'approdo o per il trasferimento. Definizione ufficiale, documentata, tangibile (su base empirica e supportata dai log e su test reali compiuti sul campo a monte), irrevocabile (sino a ri-scoping formale) sulla manovra o piano tattico in caso d'imprevisto ed asportazione immediata dall'architettura neocloud prescelta (l'Exit Plan in essere o via d'uscita dal fornitore a pattuizioni invariate). Assunzione documentata d'indirizzo d'adozione finale ai vertici IT.</p>
+
+        <h2>Le sviste e abbagli ricorrenti o errori macroscopici in cui non inciampare</h2>
+        
+        <h3>Assegnazioni, valutazioni in prospetto basate unicamente sul prezzo di cartellino/listino su singole unità (GPU o chip ad ore)</h3>
+        <p>Un costo orario nudo a base non descrive code invisibili d'attesa (queue time) ed accodamento prolungato ai margini e all'avvio in pre-fase per i test e calcoli su run ascritti, né previene intoppi sui moduli di rete, memorie rallentate, volumi ingolfati a regime o storage latenti e colli all'infrastruttura di terra per traffici e latenze sulle reti di stivaggio in uscita ed attraversamento ai server per riletture/esportazione in transito per il caricamento a memoria, uso del soccorso ed aiuti (assistenza esterna o di consulenza applicativa o ticket aperti al servizio) o spese, sforzi d'adattamento operati (migrazione ingegneristica per interfacciarsi agli strumenti e ad ambienti esoterici chiusi di proprietà esclusiva ed incomprensibili dall'esterno senza le adeguate qualifiche sul know how) per adattamento ai sistemi. O la fattura, ben più salata o ingorda a traguardo sul ticket in egress (per l'asporto massivo dei risultati pesanti e finali a calcolo spento ed in fuoriuscita o transito all'esterno ed in uscita dal dominio ed ecosistema recintato o walled garden del fornitore appena eletto) per rientro alla base on premises.</p>
+
+        <h3>Riferirsi o limitarsi con miopia in benchmark per isolare all'analisi solo (e per intero ed unico elemento ed unica fonte e termine di pregio su base decisionale selettiva) le prodezze architetturali singole (al top od estreme o ai limiti nominali teorici e su specifiche ai datasheet fornite a libretto ed in pre-fase commerciale d'acquisto o in preventivo) dell'acceleratore prescelto come stella e fulcro isolato dell'operazione, come elemento risolutore primario e solitario al di fuori dal recinto.</h3>
+        <p>Il computo as-a-service o la fase o l'elaborazione o il processo per operare sul calcolo in essere ad uso o per mezzo o di finalizzazione in AI su compiti ed incarichi per intelligenze in inferenza ed applicazioni o compiti su training gira in modo organico per interconnessione o sincronia, si appoggia per coerenza all'unisono all'interno ed operando e stazionando su base materiale per server configurato su scala di cluster, e mai viaggia od interopera asportato in solitudine come pezzo di metallo asettico ed isolato, ed a monte svincolato dalle restanti architetture e ponti che ne accompagnano o rallentano o sostengono l'ingranaggio (Storage per accessi logici o letture immediate, network per rimbalzi sui rack intermedi, la CPU di contorno per i servizi al margine o preparazioni (data prep) ai processi massivi ad intelligenza d'algoritmo). Come e quale programmazione o distribuzione temporale dei passaggi (Scheduler), software as a service (servizi chiusi correlati o proprietari interconnessi a supporto, ed ambienti virtuali come l'hypervisor) per le dinamiche architetturali collegate. Tutto partecipa, agevola o fa collassare (in imbuto / collo di bottiglia) i risultati o pretese in corso d'esecuzione operativa (le tempistiche in transito in pipeline operative a regime o runtime allargato, e non soltanto in termini o misurazione per i TF/sec sul chip o di benchmark accademici) tra input iniziale in console sino all'ouput / restituzione attesa finale, su terminale aziendale o verso le API dell'organizzazione chiamante o a monte che governa i risultati.</p>
+
+        <h3>Traslocare il pianeta e movimentazioni (Data Gravity/Movimentazioni colossali di set) per intero al nuovo fornitore cloud (a presunto basso costo o per offerta allettante di calcolo) trascinandosi al rimorchio il deposito informativo a terra per giganti architetturali informativi irremovibili</h3>
+        <p>Un tracciato d'esercizio o carico applicativo che per sua costituzione, ed in virtù o correlazione ai compiti d'obbligo o necessità ad asportare o macinare o processare, sbilanci con divario marcato (a vantaggio sui volumi o carichi da muovere ad intermittenza sulle dorsali per accedere ed attraversare porte e provider disgiunti ed in andata/ritorno) il legame ed il peso sul fronte dei dati traslocati (su andate multiple) verso ed al cospetto o in riferimento alle frazioni a basso impatto per carichi prettamente computazionali (calcolo espresso in tempo, o ratio o divario computazione/movimento) può facilmente o di netto far rientrare tale approccio all'interno (e per natura ed origine applicativa prettamente speculativa) tra gli svantaggiosi casi pessimi. Rendendolo di fatto ed in prospettiva, antieconomico e per natura inappropriato. Per questo (e nonostante le proposte ad allettanti profili/offerte a catalogo sulle schede ed ai chip o al tempo elaborato e macinato o prestato in locazione as a service per svariate proposte dei provider per le macchine in farm), le ingenti fatturazioni ed il peso a bilancio o sbilancio a monte, sulle tempistiche di rete o su tempi morti di traslazione d'accesso a basi dati lontane o remote o per rientro ed esportazione di pesanti volumi ad extra soglia di egress a risultati acquisiti in fuoriuscita e travasati al rimorchio fuori confine fornitore, andrebbero a logorare (o per peggiorare le stime economiche d'origine ed affondare a bilancio i rientri in margine ai progetti o business case d'esordio) il risultato d'impresa atteso per TCO. E annullare il vantaggio presunto.</p>
+
+        <h3>Far finta o bypassare le analisi in stima sulle spese a fondo o le percentuali occulte ai margini a saldo d'obbligo di fattura/impegni od impegni vincolanti dormienti o in giacenza a budget non speso (Reserved Instance per volumi d'affitto, accordi su spesa prestabilita ed in acconto / Capacity Commitments o Take or pay)</h3>
+        <p>L'assegnazione per volumi allocati od il nolo con obbligo d'esborso in quota preventiva d'ingaggio su risorse a blocco o di volume di riserva e capienza d'accesso per spazi in pre-acquisto, per volumi in transito (Compute/Storage, prenotati ma inutilizzati e scartati nell'effettivo transito / utilizzo pratico su macchine a bilancio in ore mese ed assolute) può palesarsi ad effetto concreto o materializzarsi ad unico profitto e produrre o creare margini reali e valore d'impresa ad unico fine (quello auspicato) soltanto a margine delle misurazioni reali, misurazioni condotte ad unico beneficio sulla corrispondenza o percentuale effettiva, assoluta (in percentuale reale usata/in corsa o adoperata sulle soglie acquistate). Misurazione da tracciare a cadenza al limite sul fatturato e sull'impegnato formale a libro paga e non soltanto ed unicamente su quanto per diritto, su carta od al login utente ed in cruscotto (od all'interfaccia/admin console e da assegnazioni formali sul portale del vendor) o in opzione da erogare e reclamare a sistema operativo, ed in corso sulle autorizzazioni a procedere concesse ai team d'applicazione aziendali.</p>
+
+        <h3>Scambiare un approccio ibrido o disordinato o caotico a molti operatori disgiunti o sovrapposti (Multi-cloud ad silos paralleli, stratificati o accumulati ad inerzia / accidental multi-cloud per riforme aziendali o spin-off ed M&A a valle ed accorpamenti informatici postumi) o confondere e sovrapporre tale anarchia per la vera interoperabilità agnostica. E vendere ed inquadrare l'uso ad architetture (ed accordi) sovrapposte ai cloud (per necessità di forza maggiore ed occasionali o contingenti) per indice formale di portabilità.</h3>
+        <p>Attivare o stazionare con infrastrutture appese ed affittate verso una molteplicità estesa od un pool non limitato ai servizi ed all'erogazione verso ed al cospetto o su novero allargato per distinti fornitori as a service in pool al di là delle proprie sedi, non corrisponde d'automatismo né equivale a monte a garantire che tali ecosistemi godano per interconnessione agnostica o libertà d'interazione e passaggio a rete aperta per portabilità fluida e reversibile tra gli stessi senza gravosi fardelli di ricostruzione in fase d'atterraggio (lift and shift) a perdere in tempo/budget. Applicazioni agganciate a strati proprietari cloud-native (managed database ai provider o meccaniche d'identità cloud / IAM) multiple - ed in sé irripetibili od aliene all'orizzonte (ed architetture esclusive tra un vendor all'altro in ecosistemi blindati per design o walled gardens ad incomunicabilità d'uso per difetto logico ed incompatibili per base strutturale) - ed assemblate assieme in modo frammentato per forza maggiore ed in isolamento e recintati, possono amplificare per somma i disordini gestionali interni e per estensione, far peggiorare le barriere d'ingombro, e raddoppiare in percentuale, a dismisura (aumentare le sacche d'infezione/vincoli per il rientro in asse e libertà sul Vendor Lock in incrociato a matrici e vertici tra attori) ed accrescere in negativo l'isolamento tra dipartimenti, o disaccoppiare i risultati aziendali (anziché recidere o limitare il grado od indice o livello strutturale della prigionia d'uso o di libertà operativa a bilancio d'azienda per il management a guida dell'IT o su comparto di governo strategico d'infrastrutture).</p>
+
+        <h3>Rimandare al poi, ad analisi archiviate ed ai rinnovi / temporeggiare ed accantonare nell'oblio e rinviare a tempi sospesi (a contratti siglati, al secondo triennio od a crisi conclamata, con dati allocati ed indisponibili per trasloco a terra ed ostaggio al provider) i protocolli per l'exit plan e la redazione documentale/legale a stima sull'esodo, e pattuire col fornitore le regole e le policy (al traguardo) a vincoli operativi sanciti</h3>
+        <p>L'istante ideale, o più comodo, agile (e per esteso in totale forza o a potere contrattuale pieno o sbilanciato in assoluto vantaggio aziendale nelle fasi d'apertura al mandato, ad interazione al tavolo negoziale a contrattazione al procurement (in fase aperta ed al tavolo pre firma sugli oneri commerciali per i rinnovi ed accordi sulle quote as-a-service e tutele e liberatorie d'esportazione libere e diritti/oneri sui flussi ed egress/prelievi tra reti) per pattuire al riparo e sigillare per garanzia d'interessi (ed esplorazione/misurazione a monte a saggio su portabilità informatica, prove di collaudo d'evasione dati al tavolo per test informativi al team), si palesa di norma (e cessa irrevocabilmente) a decorrere per intero ad avvio attività o un istante antecedente e propedeutico prima (e soltanto ed inderogabilmente prima per comodità contrattuale ed al tavolo della spesa prima d'incasso o per firme) dell'affidamento, al deposito documentale o della consegna fiduciaria nelle mani o agli storage a carico del cloud vendor al terzo operatore su materiale, dati informativi (e di produzione attiva e in run o vitale per applicativi critici o sensibili aziendali d'amministrazione quotidiana e di vita). Ovverosia, accade e termina il momento, prima e solo e per intero, all'avvio a produzione o migrazione in corso in asse con il provider. Prima che quest'ultimo riceva il carico al deposito. E disponga in ostaggio i destini informatici al suo servizio esclusivo (e su propri data-center per vincoli architetturali irripetibili od inscindibili dal suo esclusivo uso commerciale a nolo in licenza as-a service).</p>
+
+        <h3>Partire (e presupporre al tavolo tecnico per vizio d'abitudine o pressappochismo per sommaria classificazione generalista), ed accorpare e scambiare ad omologazione globale, od omogenea e per difetto appurata, paritetica (od equivalente al pari in prestazioni fornite as-a service / architettura e per maturità e solidità strutturale d'infrastruttura d'offerta e modello a nolo del fornitore a contratto/piattaforma o fornitura) d'ogni categoria al banco, e parificare al fornitore neocloud sul catalogo</h3>
+        <p>Le offerte dei cloud vendor e le architetture, anche se sotto egida d'etichetta comune o macro genere omologante per "neocloud" (in alternativa o contraltare od offerta d'attacco rispetto all'universo prettamente inteso o in gergo identificato nell'alveo per cloud pubblico d'estensione multinazionale o di genere Hyperscaler o ai Big Tech nord-americani/cinesi per mercato predominante cloud e su servizi AI-as-a service), divergono per forza maggiore in asse (ed in direzioni asimmetriche ed opposte e per difetto in offerta commerciale/operativa ed ingegneristica per erogazioni in locazione) sulle scale ad ascesa operativa, sull'offerta ai continenti (coperture per ragioni geopolitiche a regioni, ed ad interconnessioni, zone, datacenter, data sovereign o compliance locale ai fini di garanzia o d'appalto nazionale), sulle tipologie/dotazioni esclusive ai chip ad uso in farm (generazioni su hardware e su rete per data transmission e data center topologies in silicio e cavi ottici ed accelerazione hardware esclusiva in loco). E divergono e divergono ancora in estensione per la vastità ad offerta o listino per moduli al di sopra ai ferri (software/API in SaaS, strumenti in licenza chiusa ai marketplace interni per interfacciarsi ai nodi/VM in orchestrazione ed osservabilità ed ai supporti di management od a fatturazioni). Il nome del macrosettore (la sua sigla in calce, l'etichetta a stampo "neocloud" ascritta) non si pone mai (o non agisce e non rientra e non sostituisce in automatico e garanzia per perimetro qualitativo formale, per maturità aziendale d'impiego e longevità finanziaria al traguardo aziendale) a certificazione di valore, né a bollino o rassicurazione intrinseca o pass d'eccellenza. Nelle differenze al tavolo si pesano (e palesano) in gara - nei collaudi esplorativi in PoV (prove al banco, e pre-adozioni a regime su casi in reale impiego d'orizzonte e d'analisi su task operativi per tracciare a misura la vera equivalenza e aderenza) i dislivelli a bilancio, costi ed affidamenti tra attori all'incasso ed i cloud in uso. Non sul catalogo o sigle, non per brochure commerciale. Lì si scopre o emerge (nella fase 4 a test esplorativi reali) e s'apprezza e misura in aderenza l'aderenza architetturale per le istanze a bordo del servizio e la maturità ingegneristica complessiva al cloud dell'operatore ai test d'usura reale.</p>
+
+        <h2>Quando un neocloud potrebbe non essere la scelta giusta</h2>
+        <p>Un neocloud può fornire un valore limitato quando:</p>
+        <ul>
+          <li>Il workload è piccolo e altamente occasionale.</li>
+          <li>L'applicazione dipende profondamente da servizi hyperscaler proprietari.</li>
+          <li>La maggior parte dei dati rilevanti risiede già in un altro cloud.</li>
+          <li>Lo spostamento dei dati dominerebbe il costo del progetto.</li>
+          <li>L'infrastruttura esistente ha sufficiente capacità disponibile.</li>
+          <li>Il team ha bisogno di un servizio altamente gestito piuttosto che di infrastruttura.</li>
+          <li>Il provider non può soddisfare i requisiti di sicurezza o sovranità.</li>
+          <li>Non esiste un percorso tecnico o contrattuale credibile per l'uscita.</li>
+        </ul>
+        <p>L'obiettivo non è introdurre un altro provider. L'obiettivo è migliorare l'economia, le prestazioni o la resilienza di un workload specifico.</p>
+
+        <h2>Dalla selezione del provider al collocamento continuo dei workload</h2>
+        <p>La valutazione di un neocloud non si conclude con la firma del contratto.</p>
+        <p>La disponibilità di hardware, la domanda, il design dell'applicazione e i prezzi continueranno a cambiare. La decisione di posizionamento dovrebbe quindi essere rivista regolarmente.</p>
+        <p>Traccia i seguenti parametri:</p>
+        <ul>
+          <li>Costo effettivo per risultato del workload.</li>
+          <li>Utilizzo degli acceleratori.</li>
+          <li>Capacità inattiva per la quale ci si è impegnati.</li>
+          <li>Tempo di coda e provisioning.</li>
+          <li>Costo di fallimento e ritentativi.</li>
+          <li>Crescita dei costi di storage ed egress.</li>
+          <li>Latenza e throughput.</li>
+          <li>Incidenti legati al supporto.</li>
+          <li>Risultati dei test di portabilità.</li>
+          <li>Disponibilità di provider alternativi.</li>
+        </ul>
+        <p>L'infrastruttura che è la migliore oggi potrebbe non rimanere la migliore opzione dopo che cambiano il modello, la generazione di acceleratori o le condizioni commerciali.</p>
+        <p>La capacità a lungo termine da costruire non è la fedeltà a un provider in particolare.</p>
+        <p>È la capacità di valutare, posizionare e spostare i workload sulla base di evidenze misurabili.</p>
+
+        <h2>Strumenti opzionali per un modello operativo portabile</h2>
+        <p>Il framework di valutazione sopra illustrato non dipende da Elemento o da qualsiasi altro prodotto. La selezione del fornitore, il benchmark, l'analisi del TCO e la pianificazione dell'uscita dovrebbero essere completate in modo indipendente.</p>
+        <p>Strumenti specifici diventano rilevanti quando l'organizzazione ha definito quali ambienti deve gestire e quanta coerenza richiede tra di essi.</p>
+
+        <h3>Electros: quando il problema è la frammentazione operativa</h3>
+        <p>Electros può essere valutato quando i team infrastrutturali hanno bisogno di una superficie operativa comune tra gli ambienti supportati su cloud pubblico e on-premises.</p>
+        <p>Fornisce un'interfaccia desktop e una CLI per il provisioning, il monitoraggio e l'accesso alle macchine virtuali su infrastrutture AWS, Microsoft Azure, Google Cloud e on-premises.</p>
+        <p>Questo può essere utile in un modello operativo in cui la capacità neocloud è solo una parte di un patrimonio infrastrutturale più ampio. Tuttavia, il supporto per qualsiasi provider o workflow specifico dovrebbe sempre essere convalidato durante la valutazione tecnica.</p>
+        <blockquote>
+          <p>Riduci la frammentazione della console e valuta un'esperienza di controllo comune attraverso i tuoi ambienti cloud e privati supportati.</p>
+        </blockquote>
+        <p><a href="https://electros.cloud">Esplora Electros</a></p>
+
+        <h3>AtomOS: quando una base privata rientra nel modello</h3>
+        <p>AtomOS può essere valutato quando workload prevedibili, dati sensibili o requisiti stabili di capacità giustificano una base infrastrutturale privata o bare-metal.</p>
+        <p>È un hypervisor basato su KVM, compatibile con RHEL, progettato per infrastrutture bare-metal, abilitate per GPU e ibride, con GPU passthrough e clustering autonomo senza l'uso obbligatorio di un controller centrale.</p>
+        <p>In un modello baseline-and-burst, la capacità privata può ospitare la domanda prevedibile, mentre i fornitori esterni forniscono capacità di calcolo temporanea o specializzata.</p>
+        <blockquote>
+          <p>Valuta se un livello di infrastruttura privata basato su KVM potrebbe supportare la parte stabile dei tuoi carichi di lavoro AI ed enterprise.</p>
+        </blockquote>
+        <p><a href="https://elemento.cloud/atomos.html">Scopri AtomOS</a></p>
+
+        <h3>Ottieni una visione indipendente dell'architettura</h3>
+        <p>Una valutazione esterna può essere utile quando diverse opzioni infrastrutturali appaiono tecnicamente valide ma differiscono per l'esposizione commerciale, la portabilità o la complessità operativa.</p>
+        <p>La valutazione più produttiva inizia dalle evidenze. Prepara:</p>
+        <ul>
+          <li>Un workload rappresentativo.</li>
+          <li>La sua base di prestazioni (baseline) attuale.</li>
+          <li>I costi attuali o stimati dell'infrastruttura.</li>
+          <li>Requisiti per la residenza dei dati.</li>
+          <li>Dipendenze esistenti per la parte cloud e di virtualizzazione.</li>
+          <li>La crescita attesa.</li>
+          <li>I vincoli contrattuali.</li>
+        </ul>
+        <p>Elemento offre valutazioni tecniche (Technical assessment) per le organizzazioni che esplorano opzioni di cloud pubblico, infrastruttura privata, hypervisor e modelli operativi cross-provider.</p>
+        <blockquote>
+          <p>Passa in rassegna il profilo del tuo workload, il modello operativo target e il piano di valutazione con il team di Elemento prima di vincolarti a un provider o a un contratto di fornitura.</p>
+        </blockquote>
+        <p><a href="https://book.elemento.cloud">Prenota una Call Tecnica</a></p>
+
+        <h2>La decisione finale deve rimanere reversibile</h2>
+        <p>Lo scopo di una strategia neocloud non è sostituire un provider di default con un altro.</p>
+        <p>È creare un'altra opzione credibile a livello di infrastruttura.</p>
+        <p>Una valida valutazione inizia da un carico di lavoro, misura il costo completo per eseguirlo, verifica l'architettura sottostante, testa guasti e ripristino e prova che l'applicazione possa essere spostata via.</p>
+        <p>Questo approccio potrebbe portare a un neocloud, a un hyperscaler, a un'infrastruttura privata o a una combinazione dei tre.</p>
+        <p>La risposta specifica conta meno del processo decisionale.</p>
+        <p>Quando i carichi di lavoro sono portabili, i costi misurabili e le uscite (exit) testate, l'infrastruttura diviene una scelta che può essere rivista, e non una dipendenza da doversi limitare a difendere.</p>
+      </div>
+    </article>
+  </main>
+
+  <div id='footer-placeholder'></div>
+
+  <script src='../js/navbar.js' defer></script>
+  <script src='../js/main.js' defer></script>
+  <script src='../js/themes.js' defer></script>
+  <script src='../js/footer.js' defer></script>
+</body>
+</html>
