@@ -37,9 +37,10 @@ const COL = {
     blockstorage: 3,
     vm: 4,
     kaas: 5,
-    bareMetal: 6,
-    sdn: 7,
-    price: 8
+    dbaas: 6,
+    bareMetal: 7,
+    sdn: 8,
+    price: 9
 };
 
 const PROVIDER_KEYS = [
@@ -51,7 +52,6 @@ const PROVIDER_KEYS = [
     ['Oracle', 'oracle'],
     ['IONOS', 'ionos'],
     ['Gigas', 'gigas'],
-    ['ArubaCloud', 'arubacloud'],
     ['OVH', 'ovh'],
     ['Clastix', 'clastix'],
     ['Cubbit', 'cubbit'],
@@ -75,7 +75,6 @@ const PROVIDER_KEYS = [
 
 const DISPLAY_NAMES = {
     impossiblecloud: 'Impossible Cloud',
-    arubacloud: 'Aruba Cloud',
     alibabacloud: 'Alibaba Cloud',
     catalystcloud: 'Catalyst Cloud',
     cloudferro: 'CloudFerro',
@@ -98,6 +97,7 @@ function rowToLevels(row) {
         blockStorage: cellToLevel(row[COL.blockstorage]),
         vmManagement: cellToLevel(row[COL.vm]),
         k8s: cellToLevel(row[COL.kaas]),
+        dbaas: cellToLevel(row[COL.dbaas]),
         bareMetal: cellToLevel(row[COL.bareMetal]),
         networking: cellToLevel(row[COL.sdn]),
         costApi: costApiFromRow(row[COL.billing], row[COL.price])
@@ -177,6 +177,18 @@ function applyLevelsToServices(services, levels) {
     );
     patchService(
         services,
+        'dbaas',
+        levels.dbaas,
+        () => ({
+            name: 'dbaas',
+            display_name: 'DBaaS',
+            type: 'service',
+            sub_type: 'database',
+            regions: {}
+        })
+    );
+    patchService(
+        services,
         'costApi',
         levels.costApi,
         () => ({
@@ -201,6 +213,27 @@ function applyLevelsToServices(services, levels) {
     );
 }
 
+const defaultStatus = 'development';
+
+function isBareMetalOnly(levels) {
+    const tableLevels = [
+        levels.vmManagement,
+        levels.staas,
+        levels.blockStorage,
+        levels.k8s,
+        levels.networking,
+        levels.dbaas
+    ];
+    const hasTableSupport = tableLevels.some((l) => l === 'full' || l === 'partial');
+    const bareSupported = levels.bareMetal === 'full' || levels.bareMetal === 'partial';
+    return bareSupported && !hasTableSupport;
+}
+
+function resolveStatus(levels, existingStatus) {
+    if (isBareMetalOnly(levels)) return 'production';
+    return existingStatus || defaultStatus;
+}
+
 function minimalProvider(displayName, key, levels, status) {
     const p = {
         display_name: displayName,
@@ -223,7 +256,6 @@ const existing = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 const oldProviders = existing.ELEMENTO_SUPPORTED_PROVIDERS;
 
 const newProviders = {};
-const defaultStatus = 'development';
 
 for (let i = 0; i < PROVIDER_KEYS.length; i++) {
     const [csvName, key] = PROVIDER_KEYS[i];
@@ -237,11 +269,12 @@ for (let i = 0; i < PROVIDER_KEYS.length; i++) {
     const displayName = DISPLAY_NAMES[key] || csvName.replace(/([a-z])([A-Z])/g, '$1 $2');
 
     if (!base) {
-        base = minimalProvider(displayName, key, levels, defaultStatus);
+        base = minimalProvider(displayName, key, levels, resolveStatus(levels));
     } else {
         base = JSON.parse(JSON.stringify(base));
         if (!base.services) base.services = [];
         applyLevelsToServices(base.services, levels);
+        base.status = resolveStatus(levels, base.status);
     }
 
     base.display_name = displayName;

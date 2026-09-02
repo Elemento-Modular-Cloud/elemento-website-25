@@ -1,3 +1,5 @@
+@import url('lang-switcher.css');
+
 /* Smooth scrolling for the entire site */
 html {
     scroll-behavior: smooth;
@@ -466,7 +468,7 @@ html.has-hypermonitor-ticker body {
 
 .nav-cta-link {
     background: var(--primary-color);
-    color: var(--button-text-color);
+    color: var(--button-text-color, #1a1c20);
     border-radius: var(--button-border-radius);
     border: 2px solid transparent;
     padding: 0.5rem 1rem;
@@ -476,7 +478,7 @@ html.has-hypermonitor-ticker body {
 .nav-cta-link:hover,
 .nav-cta-link.active {
     background: var(--accent-color-dark);
-    color: var(--button-text-color);
+    color: var(--button-text-color, #1a1c20);
 }
 
 .nav-cta-link.nav-cta-link--book {
@@ -1013,7 +1015,7 @@ html.has-hypermonitor-ticker body {
 
 .btn-primary {
     background: var(--primary-color);
-    color: var(--button-text-color);
+    color: var(--button-text-color, #1a1c20);
     box-shadow: 0 4px 16px rgba(255, 166, 0, 0.3);
 }
 

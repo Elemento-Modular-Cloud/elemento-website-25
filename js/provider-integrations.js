@@ -78,8 +78,8 @@ class ProviderIntegrationsHandler {
                 this.applyUiLabels(this.uiLabels[locale]);
             }
             
-            // Transform the new format to the expected format
-            this.providers = this.transformProviderData(data);
+            // Transform and sort providers for display
+            this.providers = this.sortProviders(this.transformProviderData(data));
             console.log('📋 Transformed providers:', this.providers.length, 'providers');
             console.log('📋 First provider:', this.providers[0]);
             
@@ -96,7 +96,7 @@ class ProviderIntegrationsHandler {
             if (this.tableContainer) {
                 this.tableContainer.innerHTML = `
                     <tr>
-                        <td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                        <td colspan="9" style="text-align: center; padding: 2rem; color: var(--text-muted);">
                             <p>Failed to load provider data.</p>
                             <p style="font-size: 0.8rem; margin-top: 1rem;">Error: ${error.message}</p>
                             <p style="font-size: 0.8rem;">Please check the browser console for details.</p>
@@ -108,19 +108,6 @@ class ProviderIntegrationsHandler {
     }
 
     /**
-     * Merge object (STaaS) and block storage levels for the single Storage-aaS column.
-     * Uses the stronger of the two: full > partial > planned > na.
-     */
-    mergeStorageLevels(staasLevel, blockLevel) {
-        const order = ['na', 'planned', 'partial', 'full'];
-        const ia = order.indexOf(staasLevel);
-        const ib = order.indexOf(blockLevel);
-        const a = ia === -1 ? 0 : ia;
-        const b = ib === -1 ? 0 : ib;
-        return order[Math.max(a, b)];
-    }
-
-    /**
      * Transform the new JSON format to the expected format
      */
     transformProviderData(data) {
@@ -128,15 +115,19 @@ class ProviderIntegrationsHandler {
         const supportedProviders = data.ELEMENTO_SUPPORTED_PROVIDERS;
         
         for (const [key, provider] of Object.entries(supportedProviders)) {
-            let staasLevel = 'na';
-            let blockLevel = 'na';
             const transformedProvider = {
+                key,
                 provider: provider.display_name,
+                icon: provider.svg_filename || null,
+                color: provider.color || '#666666',
+                badgeVariant: this.getBadgeVariant(key),
                 status: provider.status,
                 vmManagement: 'na',
-                storageAas: 'na', 
+                objectStorage: 'na',
+                blockStorage: 'na',
                 networking: 'na',
                 k8s: 'na',
+                dbaas: 'na',
                 bareMetal: 'na'
             };
             
@@ -147,10 +138,10 @@ class ProviderIntegrationsHandler {
                         transformedProvider.vmManagement = service.support_level;
                         break;
                     case 'STaaS':
-                        staasLevel = service.support_level;
+                        transformedProvider.objectStorage = service.support_level;
                         break;
                     case 'blockStorage':
-                        blockLevel = service.support_level;
+                        transformedProvider.blockStorage = service.support_level;
                         break;
                     case 'networking':
                         transformedProvider.networking = service.support_level;
@@ -158,18 +149,46 @@ class ProviderIntegrationsHandler {
                     case 'k8s':
                         transformedProvider.k8s = service.support_level;
                         break;
+                    case 'dbaas':
+                        transformedProvider.dbaas = service.support_level;
+                        break;
                     case 'bareMetal':
                         transformedProvider.bareMetal = service.support_level;
                         break;
                 }
             });
-
-            transformedProvider.storageAas = this.mergeStorageLevels(staasLevel, blockLevel);
             
             providers.push(transformedProvider);
         }
         
         return providers;
+    }
+
+    getBadgeVariant(providerKey) {
+        if (providerKey === 'aruba') return 'wide';
+        return null;
+    }
+
+    providerIconUrl(filename) {
+        if (!filename) return '';
+        const path = `assets/logos/providers/${filename}`;
+        if (window.ElementoI18n?.assetUrl) {
+            return window.ElementoI18n.assetUrl(path);
+        }
+        return path;
+    }
+
+    formatProviderCell(provider) {
+        if (!provider.icon) {
+            return `<strong>${provider.provider}</strong>`;
+        }
+        const src = this.providerIconUrl(provider.icon);
+        const color = /^#[0-9a-fA-F]{3,8}$/.test(provider.color) ? provider.color : '#666666';
+        const badgeClass = ['provider-name-cell__badge'];
+        if (provider.badgeVariant === 'wide') {
+            badgeClass.push('provider-name-cell__badge--wide');
+        }
+        return `<span class="provider-name-cell"><span class="${badgeClass.join(' ')}" style="--provider-color: ${color}"><img class="provider-name-cell__icon" src="${src}" alt="" aria-hidden="true"></span><strong>${provider.provider}</strong></span>`;
     }
 
     /**
@@ -178,21 +197,24 @@ class ProviderIntegrationsHandler {
     renderTable() {
         if (!this.tableContainer) return;
 
-        // Use providers in their original JSON order
-        console.log('📊 Providers in JSON order:', this.providers.map(p => `${p.provider} (${p.status})`));
+        const sortedProviders = this.sortProviders(this.providers);
 
-        const html = this.providers.map((provider, index) => {
+        console.log('📊 Providers sorted:', sortedProviders.map(p => `${p.provider} (${p.status})`));
+
+        const html = sortedProviders.map((provider, index) => {
             const rowClass = index % 2 === 0 ? 'comparison-table-row-alt' : 'comparison-table-row';
             
             return `
                 <tr class="${rowClass}">
-                    <td class="comparison-table-cell" translate="no"><strong>${provider.provider}</strong></td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.vmManagement)}">${this.getStatusIcon(provider.vmManagement)} ${this.getStatusText(provider.vmManagement)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.storageAas)}">${this.getStatusIcon(provider.storageAas)} ${this.getStatusText(provider.storageAas)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.networking)}">${this.getStatusIcon(provider.networking)} ${this.getStatusText(provider.networking)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.k8s)}">${this.getStatusIcon(provider.k8s)} ${this.getStatusText(provider.k8s)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.bareMetal)}">${this.getStatusIcon(provider.bareMetal)} ${this.getStatusText(provider.bareMetal)}</td>
-                    <td class="comparison-table-cell-${this.getStatusClass(provider.status)}">${this.getStatusBadge(provider.status)}</td>
+                    <td class="comparison-table-cell" translate="no">${this.formatProviderCell(provider)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.vmManagement)}">${this.formatSupportCell(provider.vmManagement)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.objectStorage)}">${this.formatSupportCell(provider.objectStorage)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.blockStorage)}">${this.formatSupportCell(provider.blockStorage)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.networking)}">${this.formatSupportCell(provider.networking)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.k8s)}">${this.formatSupportCell(provider.k8s)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.dbaas)}">${this.formatSupportCell(provider.dbaas)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.bareMetal)}">${this.formatSupportCell(provider.bareMetal)}</td>
+                    <td class="comparison-table-cell-${this.getStatusClass(provider.status)}"><span class="provider-status-badge">${this.getStatusBadge(provider.status)}</span></td>
                 </tr>
             `;
         }).join('');
@@ -257,7 +279,51 @@ class ProviderIntegrationsHandler {
             groups[status].push(provider.provider);
         });
 
+        for (const status of Object.keys(groups)) {
+            const providersInGroup = this.providers
+                .filter((p) => p.status === status)
+                .sort((a, b) => this.compareCommercialOrder(a, b));
+            groups[status] = providersInGroup.map((p) => p.provider);
+        }
+
         return groups;
+    }
+
+    /**
+     * Market-facing provider order (lower = higher visibility).
+     */
+    getCommercialRank(providerKey) {
+        const ranks = {
+            aws: 10,
+            azure: 11,
+            google: 12,
+            ibm: 20,
+            oracle: 21,
+            ovh: 30,
+            scaleway: 31,
+            hetzner: 32,
+            upcloud: 33,
+            linode: 35,
+            leaseweb: 41,
+            wasabi: 42,
+            impossiblecloud: 43,
+            clastix: 50,
+            cubbit: 51,
+            ionos: 52,
+            aruba: 53,
+            gigas: 54
+        };
+        return ranks[providerKey] ?? 999;
+    }
+
+    compareCommercialOrder(a, b) {
+        const rankDiff = this.getCommercialRank(a.key) - this.getCommercialRank(b.key);
+        if (rankDiff !== 0) return rankDiff;
+
+        const scoreDiff = this.integrationScore(b) - this.integrationScore(a);
+        if (scoreDiff !== 0) return scoreDiff;
+
+        return a.provider.localeCompare(b.provider);
     }
 
     /**
@@ -312,6 +378,18 @@ class ProviderIntegrationsHandler {
     }
 
     /**
+     * Render icon + label on one line (avoids wrapped "Ongoing" cells).
+     */
+    formatSupportCell(status) {
+        const icon = this.getStatusIcon(status);
+        const text = this.getStatusText(status).trim();
+        if (!text) {
+            return `<span class="provider-support-cell">${icon}</span>`;
+        }
+        return `<span class="provider-support-cell">${icon}<span>${text}</span></span>`;
+    }
+
+    /**
      * Get status badge
      */
     getStatusBadge(status) {
@@ -325,27 +403,39 @@ class ProviderIntegrationsHandler {
     }
 
     /**
-     * Sort providers by status priority
+     * Score integration breadth for sorting (full > partial > planned > na).
      */
-    sortProvidersByStatus(providers) {
-        // Define status priority order (highest to lowest)
+    integrationScore(provider) {
+        const levels = [
+            provider.vmManagement,
+            provider.objectStorage,
+            provider.blockStorage,
+            provider.networking,
+            provider.k8s,
+            provider.dbaas,
+            provider.bareMetal
+        ];
+        const weights = { full: 3, partial: 2, planned: 1, na: 0 };
+        return levels.reduce((sum, level) => sum + (weights[level] ?? 0), 0);
+    }
+
+    /**
+     * Sort providers: readiness tier, then commercial rank, then integration breadth, then name.
+     */
+    sortProviders(providers) {
         const statusPriority = {
-            'production': 1,
-            'soon': 2,
-            'beta': 3,
-            'development': 4
+            production: 1,
+            soon: 2,
+            beta: 3,
+            development: 4
         };
 
         return [...providers].sort((a, b) => {
-            const priorityA = statusPriority[a.status] || 999;
-            const priorityB = statusPriority[b.status] || 999;
-            
-            // If same priority, sort alphabetically by provider name
-            if (priorityA === priorityB) {
-                return a.provider.localeCompare(b.provider);
-            }
-            
-            return priorityA - priorityB;
+            const priorityA = statusPriority[a.status] ?? 999;
+            const priorityB = statusPriority[b.status] ?? 999;
+            if (priorityA !== priorityB) return priorityA - priorityB;
+
+            return this.compareCommercialOrder(a, b);
         });
     }
 
@@ -356,7 +446,7 @@ class ProviderIntegrationsHandler {
         if (this.tableContainer) {
             this.tableContainer.innerHTML = `
                 <tr>
-                    <td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                    <td colspan="9" style="text-align: center; padding: 2rem; color: var(--text-muted);">
                         <p>Failed to load provider data. Please check the data files.</p>
                     </td>
                 </tr>
@@ -384,7 +474,7 @@ class ProviderIntegrationsHandler {
             }
 
             const data = await response.json();
-            this.providers = this.transformProviderData(data);
+            this.providers = this.sortProviders(this.transformProviderData(data));
             this.renderTable();
             this.renderStatusCards();
             console.log('✅ Data loaded from external source:', url);

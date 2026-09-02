@@ -44,7 +44,7 @@
     /* --black-rgb: 26, 28, 32; */
     --black-rgb: 24, 23, 32;
     /* --black: #1A1C20; */
-    --black: var(--black-rgb);
+    --black: rgb(var(--black-rgb));
 
     /* --black-dark-rgb: 0, 0, 0; */
     --black-dark-rgb: 15, 14, 20;

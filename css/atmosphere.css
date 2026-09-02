@@ -837,3 +837,104 @@
         animation-duration: 12s;
     }
 }
+
+/* Provider integration matrix (Atomosphere) */
+.comparison-table-container:has(.provider-integrations-table) {
+    overflow-x: auto;
+}
+
+.comparison-table.provider-integrations-table {
+    min-width: 960px;
+}
+
+.comparison-table.provider-integrations-table th {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: var(--space-md) var(--space-sm);
+}
+
+.comparison-table.provider-integrations-table td {
+    padding: var(--space-md) var(--space-sm);
+    vertical-align: middle;
+}
+
+.comparison-table.provider-integrations-table td:not(:first-child) {
+    white-space: nowrap;
+}
+
+.comparison-table.provider-integrations-table .provider-support-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+
+.comparison-table.provider-integrations-table .provider-support-cell i {
+    flex-shrink: 0;
+}
+
+.comparison-table.provider-integrations-table .provider-status-badge {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.comparison-table.provider-integrations-table .provider-name-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    white-space: nowrap;
+}
+
+.comparison-table.provider-integrations-table .provider-name-cell__badge {
+    --provider-badge-bg: color-mix(in srgb, var(--provider-color) 14%, color-mix(in srgb, var(--white-light) 65%, var(--white)));
+    --provider-badge-border: color-mix(in srgb, var(--provider-color) 40%, var(--grey-darker));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.125rem;
+    height: 2.125rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background-color: var(--provider-badge-bg);
+    border: 1px solid var(--provider-badge-border);
+    box-shadow: none;
+}
+
+.theme-dark .comparison-table.provider-integrations-table .provider-name-cell__badge,
+.theme-high-contrast .comparison-table.provider-integrations-table .provider-name-cell__badge {
+    --provider-badge-bg: color-mix(in srgb, var(--provider-color) 14%, color-mix(in srgb, var(--white-light) 65%, var(--card-bg-color)));
+    --provider-badge-border: color-mix(in srgb, var(--provider-color) 42%, var(--grey-darker));
+}
+
+.comparison-table.provider-integrations-table .provider-name-cell__badge--wide {
+    width: 3rem;
+    height: 2.125rem;
+    padding: 0.2rem 0.35rem;
+}
+
+.comparison-table.provider-integrations-table .provider-name-cell__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.comparison-table.provider-integrations-table .provider-name-cell__badge--wide .provider-name-cell__icon {
+    width: 100%;
+    height: 1.05rem;
+    max-width: 2.5rem;
+}
+
+.comparison-table.provider-integrations-table td:first-child {
+    text-align: left;
+}
+
+.comparison-table.provider-integrations-table th:first-child {
+    text-align: left;
+}
+
+.comparison-table.provider-integrations-table .provider-status-badge span {
+    white-space: nowrap;
+}
