@@ -1,7 +1,6 @@
 /**
- * Matomo analytics — executed only after Iubenda Cookie Solution activates the script tag
- * (type="text/plain" + class="_iub_cs_activate" + data-iub-purposes).
- * Ensure data-iub-purposes matches the Statistics / Matomo purpose ID in your Iubenda dashboard.
+ * Matomo analytics. Consently auto-blocks this script until the visitor
+ * consents to the Analytics category in the cookie banner.
  */
 var _paq = window._paq = window._paq || [];
 _paq.push(['trackPageView']);

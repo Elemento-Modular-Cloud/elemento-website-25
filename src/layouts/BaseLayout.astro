@@ -51,6 +51,9 @@ const hreflangStem = stem;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Start Consently Banner -->
+  <script is:inline src="https://app.consently.net/consently.js" data-bannerid="6aa2b4db23326aa7425c4fc7"></script>
+  <!-- End Consently Banner -->
   <title>{title}</title>
   <meta name="description" content={description} />
   <Hreflang locale={locale} stem={hreflangStem} />
@@ -128,13 +131,9 @@ const hreflangStem = stem;
   <script src={`${assetBase}js/navbar.js`} defer></script>
   <script src={`${assetBase}js/lang-switcher.js`} defer></script>
   <script src={`${assetBase}js/footer.js`} defer></script>
+  <script src={`${assetBase}js/hypermonitor-ticker.js`} defer></script>
   <script src={`${assetBase}js/main.js`} defer></script>
   <script src={`${assetBase}js/themes.js`} defer></script>
-  <script
-    type="text/plain"
-    class="_iub_cs_activate"
-    data-iub-purposes="4"
-    src={`${assetBase}js/matomo-tracking.js`}
-  ></script>
+  <script src={`${assetBase}js/matomo-tracking.js`}></script>
 </body>
 </html>

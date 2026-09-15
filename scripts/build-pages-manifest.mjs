@@ -30,6 +30,7 @@ const BASE_SCRIPTS = new Set([
   'js/splash-screen.js',
   'js/navbar.js',
   'js/footer.js',
+  'js/hypermonitor-ticker.js',
   'js/main.js',
   'js/themes.js',
 ]);

@@ -108,9 +108,191 @@ body {
     line-height: 1.6;
 }
 
-/* Reserve space for the fixed Hypermonitor ticker (injected by footer.js) */
-html.has-hypermonitor-ticker body {
-    padding-bottom: 40px !important;
+/* Reserve space for the fixed Hypermonitor ticker */
+:root {
+    --hypermonitor-ticker-height: 40px;
+}
+
+html.has-hypermonitor-ticker body,
+body.has-hypermonitor-ticker {
+    padding-bottom: var(--hypermonitor-ticker-height) !important;
+}
+
+/* HyperMonitor live incident ticker */
+.atc-ticker {
+    --hm: #ef4056;
+    display: flex;
+    align-items: stretch;
+    height: var(--hypermonitor-ticker-height, 40px);
+    background: var(--card-bg-color, var(--background-color));
+    border-top: 1px solid var(--glassmorphism-border, color-mix(in srgb, var(--text-color) 12%, transparent));
+    box-shadow: 0 -4px 24px var(--shadow-color, rgba(0, 0, 0, 0.35));
+    font-family: ui-monospace, "Red Hat Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    color: var(--text-color);
+}
+
+.atc-ticker--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.atc-ticker-label {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0 0.85rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--hm);
+    background: var(--background-color);
+    border-right: 1px solid var(--glassmorphism-border, color-mix(in srgb, var(--text-color) 12%, transparent));
+}
+
+.atc-ticker-live-dot {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--green, #28a745);
+    box-shadow: 0 0 6px color-mix(in srgb, var(--green, #28a745) 85%, transparent);
+    animation: atc-live-pulse 2s ease-in-out infinite;
+}
+
+@keyframes atc-live-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
+.atc-ticker-viewport {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 1.5rem, #000 calc(100% - 1.5rem), transparent 100%);
+}
+
+.atc-ticker-track {
+    display: flex;
+    width: max-content;
+    animation: atc-scroll var(--atc-duration, 60s) linear infinite;
+}
+
+.atc-ticker:hover .atc-ticker-track {
+    animation-play-state: paused;
+}
+
+@keyframes atc-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.atc-ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0 1.35rem;
+    white-space: nowrap;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-decoration: none;
+    border-right: 1px solid var(--glassmorphism-border, color-mix(in srgb, var(--text-color) 12%, transparent));
+    height: var(--hypermonitor-ticker-height, 40px);
+}
+
+.atc-ticker-item:hover {
+    background: color-mix(in srgb, var(--text-color) 6%, transparent);
+    color: var(--text-secondary, var(--text-color));
+    text-decoration: none;
+}
+
+.atc-ticker-item--static {
+    cursor: default;
+}
+
+.atc-ticker-item--critical {
+    animation: atc-critical-flash 1.15s ease-in-out infinite;
+}
+
+@keyframes atc-critical-flash {
+    0%, 100% {
+        background: color-mix(in srgb, var(--red, #dc3545) 10%, transparent);
+    }
+    50% {
+        background: color-mix(in srgb, var(--red, #dc3545) 26%, transparent);
+    }
+}
+
+.atc-ticker-dot {
+    color: var(--text-muted, #64748b);
+    font-size: 0.45rem;
+}
+
+.atc-ticker-severity {
+    font-weight: 700;
+}
+
+.atc-ticker-severity.badge-critical { color: var(--red, #dc3545); }
+.atc-ticker-severity.badge-high { color: var(--orange, #fd7e14); }
+.atc-ticker-severity.badge-medium { color: var(--yellow, #ffc107); }
+.atc-ticker-severity.badge-low { color: var(--green, #28a745); }
+.atc-ticker-severity.badge-unknown { color: var(--text-muted, #6c757d); }
+
+.atc-ticker-provider {
+    color: var(--hm);
+    font-weight: 600;
+}
+
+.atc-ticker-status {
+    font-weight: 600;
+}
+
+.atc-ticker-status.status-investigating { color: var(--orange, #fd7e14); }
+.atc-ticker-status.status-identified { color: var(--yellow, #ffc107); }
+.atc-ticker-status.status-monitoring { color: var(--blue, #0d6efd); }
+.atc-ticker-status.status-resolved { color: var(--green, #28a745); }
+.atc-ticker-status.status-unknown { color: var(--text-muted, #6c757d); }
+
+.atc-ticker-title {
+    color: var(--text-secondary, var(--text-color));
+    max-width: 42ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.atc-ticker-time {
+    color: var(--text-muted, #6c757d);
+    font-size: 0.68rem;
+}
+
+.atc-ticker-resolved,
+.atc-ticker-corroborated {
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 0.05rem 0.3rem;
+    border-radius: 4px;
+}
+
+.atc-ticker-resolved {
+    color: var(--text-muted, #6c757d);
+    border: 1px solid var(--glassmorphism-border, color-mix(in srgb, var(--text-color) 12%, transparent));
+}
+
+.atc-ticker-corroborated {
+    color: var(--blue, #0d6efd);
+    border: 1px solid color-mix(in srgb, var(--blue, #0d6efd) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .atc-ticker-track,
+    .atc-ticker-live-dot,
+    .atc-ticker-item--critical {
+        animation: none;
+    }
 }
 
 /* Container and layout */
