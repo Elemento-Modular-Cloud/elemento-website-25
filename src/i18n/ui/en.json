@@ -38,7 +38,8 @@
     "legal": "Elemento Srl - VAT IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Fully paid-up share capital 14.341,58€",
     "copyright": "© 2026 Elemento. All rights reserved.",
     "privacy": "Privacy Policy",
-    "cookies": "Cookie Policy"
+    "cookies": "Cookie Policy",
+    "terms": "Terms and Conditions"
   },
   "blog": {
     "title": "Elemento | Blog | Cloud Computing Insights & Technology News",
@@ -113,6 +114,14 @@
       "description": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
       "heroTitle": "Sign up",
       "heroSubtitle": "Start building on Elemento today."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Elemento",
+      "description": "Privacy policy for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl."
+    },
+    "terms": {
+      "title": "Terms and Conditions | Elemento",
+      "description": "Terms and conditions for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl."
     }
   },
   "cms": {

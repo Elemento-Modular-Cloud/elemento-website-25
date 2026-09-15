@@ -3847,6 +3847,7 @@ ui.footer.copyright,© 2026 Elemento. All rights reserved.,© 2026 Elemento. Tut
 ui.footer.documentation,Documentation,Documentazione,Documentation,src/i18n/ui,
 ui.footer.legal,"Elemento Srl - VAT IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Fully paid-up share capital 14.341,58€","Elemento Srl - P.IVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capitale sociale interamente versato 14.341,58€","Elemento Srl - TVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capital social entièrement libéré 14.341,58€",src/i18n/ui,
 ui.footer.privacy,Privacy Policy,Informativa sulla privacy,Politique de confidentialité,src/i18n/ui,
+ui.footer.terms,Terms and Conditions,Termini e condizioni,Conditions générales,src/i18n/ui,
 ui.footer.products,Products,Prodotti,Produits,src/i18n/ui,
 ui.footer.resources,Resources,Risorse,Ressources,src/i18n/ui,
 ui.footer.tagline,"Vendor-neutral, high-performance cloud platform that's cost-effective, green, and self-hostable.","Piattaforma cloud indipendente dal fornitore, ad alte prestazioni, conveniente, sostenibile e auto-ospitabile.","Plateforme cloud neutre vis-à-vis des fournisseurs, performante, économique, durable et auto-hébergeable.",src/i18n/ui,

@@ -95,13 +95,13 @@ function extractExtraScripts(html) {
   let m;
   while ((m = re.exec(text)) !== null) {
     let src = m[1];
+    if (src.includes('matomo') || src.includes('iubenda') || src.includes('consently')) continue;
     if (src.startsWith('http')) {
       scripts.push(src);
       continue;
     }
     if (src.startsWith('../')) src = src.slice(3);
     if (BASE_SCRIPTS.has(src)) continue;
-    if (src.includes('matomo') || src.includes('iubenda')) continue;
     if (!scripts.includes(src)) scripts.push(src);
   }
   };

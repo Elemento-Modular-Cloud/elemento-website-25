@@ -49,7 +49,8 @@
     "legal": "Elemento Srl - P.IVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capitale sociale interamente versato 14.341,58€",
     "copyright": "© 2026 Elemento. Tutti i diritti riservati.",
     "privacy": "Informativa sulla privacy",
-    "cookies": "Politica sui cookie"
+    "cookies": "Politica sui cookie",
+    "terms": "Termini e condizioni"
   },
   "blog": {
     "title": "Elemento | Blog | Cloud computing e innovazione",
@@ -117,6 +118,14 @@
       "description": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
       "heroTitle": "Registrati",
       "heroSubtitle": "Inizia oggi a costruire su Elemento."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy | Elemento",
+      "description": "Informativa sulla privacy di elemento.cloud, electros.cloud e delle applicazioni e dei servizi correlati forniti da Elemento Srl."
+    },
+    "terms": {
+      "title": "Termini e condizioni | Elemento",
+      "description": "Termini e condizioni di elemento.cloud, electros.cloud e delle applicazioni e dei servizi correlati forniti da Elemento Srl."
     },
     "videos": {
       "title": "Elemento | Video | Keynote, webinar e media",

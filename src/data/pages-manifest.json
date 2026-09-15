@@ -1128,6 +1128,46 @@
     ]
   },
   {
+    "stem": "blog-posts/2026-08-26-how-to-evaluate-a-neocloud",
+    "legacyPath": "blog-posts/2026-08-26-how-to-evaluate-a-neocloud.html",
+    "group": "blog-posts",
+    "slug": "2026-08-26-how-to-evaluate-a-neocloud",
+    "title": "How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams | Elemento Blog",
+    "description": "A practical framework for answering which infrastructure can complete your AI workload at the required performance, risk and cost.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "blog-posts/2026-08-26-how-to-evaluate-a-neocloud.it",
+    "legacyPath": "blog-posts/2026-08-26-how-to-evaluate-a-neocloud.it.html",
+    "group": "blog-posts",
+    "slug": "2026-08-26-how-to-evaluate-a-neocloud.it",
+    "title": "Come Valutare un Neocloud: Una Guida Pratica per i Team di Infrastruttura AI | Blog Elemento",
+    "description": "Un framework pratico per rispondere alla domanda: quale infrastruttura può completare il tuo workload AI con le prestazioni, i costi e il livello di rischio richiesti.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "blog-posts/404",
     "legacyPath": "blog-posts/404.html",
     "group": "blog-posts",
@@ -1566,6 +1606,26 @@
     ]
   },
   {
+    "stem": "privacy",
+    "legacyPath": "privacy.html",
+    "group": "root",
+    "slug": "privacy",
+    "title": "Privacy Policy | Elemento",
+    "description": "Privacy policy for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/legal.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "products",
     "legacyPath": "products.html",
     "group": "root",
@@ -1925,6 +1985,26 @@
       "js/faq.js",
       "js/atmosphere_hero.js"
     ],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "terms",
+    "legacyPath": "terms.html",
+    "group": "root",
+    "slug": "terms",
+    "title": "Terms and Conditions | Elemento",
+    "description": "Terms and conditions for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/legal.css"
+    ],
+    "extraScripts": [],
     "type": "legacy",
     "locales": [
       "en",

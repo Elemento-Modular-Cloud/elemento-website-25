@@ -1,0 +1,163 @@
+/* Chrome sets `body.theme-* { font-family: var(--fb) !important }`. If --fb
+   is missing, that declaration is invalid and the browser falls back to Times.
+   Pin a real stack here so legal pages stay on Red Hat even when that happens. */
+html body {
+  font-family: var(--fb, var(--font-primary, "Red Hat Display", "Red Hat Text", Inter, system-ui, sans-serif));
+}
+
+.legal-page,
+.legal-doc,
+.legal-switch,
+.legal-note {
+  font-family: var(--fb, var(--font-secondary, var(--font-primary, "Red Hat Text", "Red Hat Display", Inter, system-ui, sans-serif)));
+}
+
+.legal-page {
+  padding: 8rem 0 4rem;
+}
+
+.legal-page > .container {
+  max-width: 48rem;
+  margin-top: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.legal-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.legal-switch a {
+  color: var(--accent-color, var(--accent, #ffa600));
+  text-decoration: none;
+}
+
+.legal-switch a:hover {
+  text-decoration: underline;
+}
+
+.legal-switch a.is-active {
+  color: var(--text-color, var(--text));
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.legal-note {
+  color: var(--text-muted, var(--muted));
+  font-size: 0.9rem;
+  margin: 0 0 2rem;
+}
+
+.legal-doc {
+  color: var(--text-color, var(--text));
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.legal-doc > *:first-child {
+  margin-top: 0;
+}
+
+.legal-doc h1,
+.legal-doc h2,
+.legal-doc h3,
+.legal-doc h4 {
+  color: var(--text-color, var(--text));
+  font-family: var(--fd, var(--font-heading, var(--font-primary, "Red Hat Display", Inter, system-ui, sans-serif)));
+  line-height: 1.3;
+  text-wrap: pretty;
+}
+
+.legal-doc h1 {
+  font-size: clamp(1.6rem, 3vw, 2.15rem);
+  margin: 0 0 1rem;
+}
+
+.legal-doc h2 {
+  font-size: 1.35rem;
+  margin: 2.4rem 0 0.8rem;
+  padding-top: 0.2rem;
+  scroll-margin-top: 7.5rem;
+}
+
+.legal-doc h3 {
+  font-size: 1.15rem;
+  margin: 1.8rem 0 0.6rem;
+  scroll-margin-top: 7.5rem;
+}
+
+.legal-doc h4 {
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.5rem;
+  scroll-margin-top: 7.5rem;
+}
+
+.legal-doc p,
+.legal-doc ul,
+.legal-doc ol {
+  margin: 0.7rem 0 1rem;
+}
+
+.legal-doc ul,
+.legal-doc ol {
+  padding-left: 1.4rem;
+}
+
+.legal-doc li {
+  margin: 0.28rem 0;
+}
+
+.legal-doc li > ul,
+.legal-doc li > ol {
+  margin: 0.35rem 0 0.5rem;
+}
+
+.legal-doc a {
+  color: var(--accent-color, var(--accent, #ffa600));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-doc hr {
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--text-color, var(--text)) 14%, transparent);
+  margin: 2rem 0;
+}
+
+.legal-doc strong {
+  font-weight: 700;
+}
+
+.legal-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.legal-doc th,
+.legal-doc td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--text-color, var(--text)) 14%, transparent);
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding-top: 6.5rem;
+  }
+
+  .legal-doc h2,
+  .legal-doc h3,
+  .legal-doc h4 {
+    scroll-margin-top: 6.25rem;
+  }
+}

@@ -55,7 +55,7 @@ export function extractLegacyScripts(relativeHtmlPath: string): string[] {
     }
     if (src.startsWith('../')) src = src.slice(3);
     if (BASE_SCRIPTS.has(src)) continue;
-    if (src.includes('matomo') || src.includes('iubenda')) continue;
+    if (src.includes('matomo') || src.includes('iubenda') || src.includes('consently')) continue;
     if (!scripts.includes(src)) scripts.push(src);
   }
   return scripts;

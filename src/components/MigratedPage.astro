@@ -35,8 +35,11 @@ const localeLegacyPath = hasItLegacyHtml
   : locale === 'it' && entry.stem === 'brand-guidelines'
     ? 'brand-guidelines.it.html'
     : entry.legacyPath;
+const LEGAL_STEMS = new Set(['privacy', 'terms']);
 const skipBodyLocalize =
-  hasItLegacyHtml || (locale === 'it' && entry.stem === 'brand-guidelines');
+  hasItLegacyHtml ||
+  (locale === 'it' && entry.stem === 'brand-guidelines') ||
+  LEGAL_STEMS.has(entry.stem);
 let bodyHtml = extractLegacyBody(localeLegacyPath);
 if (!skipBodyLocalize) {
   bodyHtml = localizeBody(bodyHtml, locale, localizeStem);
