@@ -1,13 +1,14 @@
 /* About Page Styles */
 @import url('./style.css');
 
-/* Enhanced Team Grid */
+/* Enhanced Team Grid — 3 columns, last row centered when incomplete */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: var(--space-2xl);
   margin-top: var(--space-3xl);
-  align-items: stretch; /* Ensures all cards have same height */
 }
 
 .team-member {
@@ -15,11 +16,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 0 1 calc((100% - 2 * var(--space-2xl)) / 3);
+  max-width: calc((100% - 2 * var(--space-2xl)) / 3);
+  box-sizing: border-box;
   padding: var(--space-2xl);
-  height: 100%; /* Ensures equal height */
+  height: auto;
   min-height: 650px; /* Increased to accommodate 2-line names */
   position: relative; /* For blur positioning */
-  overflow: hidden; /* Contains the blur effect */;
+  overflow: hidden; /* Contains the blur effect */
 }
 
 /* Division-specific silhouette glow backgrounds */
@@ -204,6 +208,58 @@
   box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.3);
 }
 
+/* Hall of Fame — compact alumni cards */
+.hall-of-fame {
+  padding-top: 0;
+}
+
+.hall-of-fame .section-header {
+  margin-bottom: var(--space-xl);
+}
+
+.hof-member {
+  min-height: 0;
+  padding: var(--space-xl);
+  opacity: 0.92;
+}
+
+.hof-member .team-photo-container {
+  width: 160px;
+  height: 210px;
+  margin-bottom: var(--space-lg);
+}
+
+.hof-member .team-photo {
+  width: 160px;
+  height: 210px;
+  filter: grayscale(0.35);
+  transition: filter 0.3s ease;
+}
+
+.hof-member:hover .team-photo {
+  filter: grayscale(0);
+}
+
+.hof-member h4 {
+  min-height: 0;
+  margin-bottom: var(--space-sm);
+  font-size: 1.2rem;
+}
+
+.hof-tenure {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 22rem;
+}
+
+.hof-member .team-links {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+}
+
 .team-photo-wrapper {
   display: flex;
   align-items: center;
@@ -225,11 +281,12 @@
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-xl);
   }
-  
+
   .team-member {
+    flex-basis: calc((100% - 2 * var(--space-xl)) / 3);
+    max-width: calc((100% - 2 * var(--space-xl)) / 3);
     min-height: 600px;
     padding: var(--space-xl);
   }
@@ -260,15 +317,26 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-lg);
   }
-  
+
   .team-member {
+    flex-basis: calc((100% - var(--space-lg)) / 2);
+    max-width: calc((100% - var(--space-lg)) / 2);
     min-height: 550px;
     padding: var(--space-lg);
+  }
+
+  .hof-member {
+    min-height: 0;
+  }
+
+  .hof-member .team-photo-container,
+  .hof-member .team-photo {
+    width: 140px;
+    height: 185px;
   }
   
   .team-member h4 {
@@ -306,15 +374,20 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .team-grid {
-    grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-  
+
   .team-member {
+    flex-basis: 100%;
+    max-width: 100%;
     min-height: 500px;
     padding: var(--space-md);
+  }
+
+  .hof-member {
+    min-height: 0;
   }
   
   .team-member h4 {

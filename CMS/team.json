@@ -34,6 +34,9 @@
   },
   {
     "id": "filippo-valle",
+    "hallOfFame": true,
+    "from": "2022",
+    "to": "2026",
     "division": "engineering",
     "photo": "CMS/team/fvalle.webp",
     "links": [
@@ -283,7 +286,7 @@
   {
     "id": "nicola-gutierrez",
     "division": "engineering",
-    "photo": "CMS/team/ngutierrez.png",
+    "photo": "CMS/team/ngutierrez.webp",
     "links": [
       {
         "type": "Linkedin",
@@ -316,7 +319,7 @@
   {
     "id": "filippo-ferrando-damillano",
     "division": "engineering",
-    "photo": "CMS/team/ferrando.png",
+    "photo": "CMS/team/ferrando.webp",
     "links": [
       {
         "type": "Linkedin",
@@ -349,7 +352,7 @@
   {
     "id": "paolo-beci",
     "division": "engineering",
-    "photo": "CMS/team/pbeci.png",
+    "photo": "CMS/team/pbeci.webp",
     "links": [
       {
         "type": "Linkedin",
@@ -381,6 +384,9 @@
   },
   {
     "id": "giulia-borgoni",
+    "hallOfFame": true,
+    "from": "2023",
+    "to": "2025",
     "division": "business",
     "photo": "CMS/team/gborgoni.webp",
     "links": [
@@ -505,6 +511,9 @@
   },
   {
     "id": "lorenzo-canciani",
+    "hallOfFame": true,
+    "from": "2024",
+    "to": "2026",
     "division": "engineering",
     "photo": "CMS/team/lcanciani.webp",
     "links": [

@@ -1,6 +1,6 @@
 {
   "page": "about",
-  "count": 50,
+  "count": 52,
   "strings": [
     {
       "id": "body.about.h1.1",
@@ -31,6 +31,14 @@
       "en": "Meet Our Team",
       "it": "",
       "fr": "",
+      "source": "about.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.about.h2.hof",
+      "en": "Hall of Fame",
+      "it": "Hall of Fame",
+      "fr": "Hall of Fame",
       "source": "about.html",
       "context": "<h2>"
     },
@@ -199,6 +207,14 @@
       "en": "The experts behind Elemento's innovative cloud platform",
       "it": "",
       "fr": "",
+      "source": "about.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.about.p.hof",
+      "en": "Cloudnauts who helped build Elemento — and left their mark",
+      "it": "Cloudnauti che hanno contribuito a costruire Elemento — e lasciato il segno",
+      "fr": "Les cloudnautes qui ont contribué à bâtir Elemento — et laissé leur empreinte",
       "source": "about.html",
       "context": "<p>"
     },
