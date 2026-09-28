@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="footer-bottom">
                 <p>${f.legal}</p>
-                <p>${f.copyright} | <a href="${localizedHref('privacy.html')}">${f.privacy}</a> | <a href="${localizedHref('privacy.html')}#cookie-policy">${f.cookies}</a> | <a href="${localizedHref('terms.html')}">${f.terms}</a></p>
+                <p>${f.copyright} | <a href="${localizedHref('privacy.html')}">${f.privacy}</a> | <a href="${localizedHref('cookie.html')}">${f.cookies}</a> | <a href="${localizedHref('terms.html')}">${f.terms}</a></p>
             </div>
         </div>
     </section>`;
