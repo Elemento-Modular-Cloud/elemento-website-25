@@ -30777,6 +30777,14 @@
       "context": ""
     },
     {
+      "id": "ui.footer.electrosDocs",
+      "en": "Electros Docs",
+      "it": "Guida Electros",
+      "fr": "Guide Electros",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.footer.legal",
       "en": "Elemento Srl - VAT IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Fully paid-up share capital 14.341,58€",
       "it": "Elemento Srl - P.IVA IT03959360045 - Registro Produttori AEE n° IT24120000016642 - Capitale sociale interamente versato 14.341,58€",

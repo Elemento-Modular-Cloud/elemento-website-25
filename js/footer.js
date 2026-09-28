@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="footer-section">
                     <h3>${f.resources}</h3>
                     <ul>
+                        <li><a href="https://docs.electros.cloud" target="_blank" rel="noopener noreferrer">${f.electrosDocs || 'Electros Docs'}</a></li>
                         <li><a href="https://bookstack.elemento.cloud" target="_blank" rel="noopener noreferrer">${f.documentation}</a></li>
                         <li><a href="${localizedHref('brand-guidelines.html')}">${f.brandGuidelines}</a></li>
                         <li><a href="${localizedHref('blog.html')}">${ui.nav.blog}</a></li>
