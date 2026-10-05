@@ -455,17 +455,11 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     'install-atomos': [
       ['Install the AtomOS CLI tool:', 'Installa lo strumento CLI AtomOS:'],
       ['Ready to deploy your first VM in minutes!', 'Pronto a distribuire la tua prima VM in pochi minuti!'],
-      ['Ready to manage your multicloud infrastructure!', 'Pronto a gestire la tua infrastruttura multicloud!'],
-      ['Configure Electros CLI from ~/.elemento/config', 'Configura la CLI Electros da ~/.elemento/config'],
-      ['Start managing VMs across all your clouds!', 'Inizia a gestire le VM su tutti i tuoi cloud!'],
     ],
     electros: [
-      ['Configure Electros CLI from ~/.elemento/config', 'Configura la CLI Electros da ~/.elemento/config'],
-      ['Start managing VMs across all your clouds!', 'Inizia a gestire le VM su tutti i tuoi cloud!'],
-      ['Ready to manage your multicloud infrastructure!', 'Pronto a gestire la tua infrastruttura multicloud!'],
       [
-        'Surfaces to run<br><small>Linux, macOS, Windows apps, plus elemento-cli</small>',
-        "Modalità per eseguire<br><small>l'app Linux, macOS, Windows e elemento-cli</small>",
+        'Platforms to run<br><small>Native apps for Linux, macOS, and Windows</small>',
+        "Piattaforme<br><small>App native per Linux, macOS e Windows</small>",
       ],
       [
         'Cloud & hybrid targets<br><small>AWS, Azure, Google Cloud, and on-prem infrastructure</small>',
@@ -562,14 +556,12 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     'install-atomos': [
       ['Install the AtomOS CLI tool:', 'Installez l\'outil CLI AtomOS :'],
       ['Ready to deploy your first VM in minutes!', 'Prêt à déployer votre première VM en quelques minutes !'],
-      ['Ready to manage your multicloud infrastructure!', 'Prêt à gérer votre infrastructure multicloud !'],
-      ['Configure Electros CLI from ~/.elemento/config', 'Configurez la CLI Electros depuis ~/.elemento/config'],
-      ['Start managing VMs across all your clouds!', 'Gérez vos VM sur tous vos clouds !'],
     ],
     electros: [
-      ['Configure Electros CLI from ~/.elemento/config', 'Configurez la CLI Electros depuis ~/.elemento/config'],
-      ['Start managing VMs across all your clouds!', 'Gérez vos VM sur tous vos clouds !'],
-      ['Ready to manage your multicloud infrastructure!', 'Prêt à gérer votre infrastructure multicloud !'],
+      [
+        'Platforms to run<br><small>Native apps for Linux, macOS, and Windows</small>',
+        'Plateformes<br><small>Apps natives pour Linux, macOS et Windows</small>',
+      ],
     ],
     'signup-success': [
       ['Check your email', 'Vérifiez votre e-mail'],

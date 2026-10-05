@@ -1367,8 +1367,8 @@
     "legacyPath": "electros.html",
     "group": "root",
     "slug": "electros",
-    "title": "Electros App — Orchestration Dashboard & CLI | Elemento Cloud",
-    "description": "Electros is Elemento Cloud's orchestration dashboard and CLI for managing VMs, storage, and networks across public clouds and on-prem infrastructure.",
+    "title": "Electros App — Orchestration Dashboard | Elemento Cloud",
+    "description": "Electros is Elemento Cloud's orchestration dashboard for managing VMs, storage, and networks across public clouds and on-prem infrastructure.",
     "robots": "index, follow",
     "ogType": "product",
     "extraCss": [
