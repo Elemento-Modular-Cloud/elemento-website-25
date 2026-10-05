@@ -4,7 +4,7 @@ import { pagesByGroup } from '../../lib/manifest';
 
 export function getStaticPaths() {
   return pagesByGroup('root', 'it')
-    .filter((p) => p.stem !== 'index' && !p.stem.includes('/'))
+    .filter((p) => p.stem !== 'index' && p.stem !== '404' && !p.stem.includes('/'))
     .map((entry) => ({
       params: { page: entry.stem },
       props: { entry },

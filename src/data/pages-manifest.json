@@ -9,9 +9,11 @@
     "robots": "noindex, nofollow",
     "ogType": "website",
     "extraCss": [
-      "css/home.css"
+      "css/404.css"
     ],
-    "extraScripts": [],
+    "extraScripts": [
+      "js/404.js"
+    ],
     "type": "legacy",
     "locales": [
       "en",
