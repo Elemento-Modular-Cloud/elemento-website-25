@@ -351,6 +351,40 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Comparison tables */
+.blog-content .blog-table-wrap {
+    overflow-x: auto;
+    margin: var(--space-xl) 0;
+    border: 1px solid var(--glassmorphism-border);
+    border-radius: var(--card-border-radius);
+}
+
+.blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-secondary);
+    font-size: 0.95rem;
+}
+
+.blog-content th,
+.blog-content td {
+    padding: var(--space-md) var(--space-lg);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--glassmorphism-border);
+}
+
+.blog-content th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-color);
+    background: color-mix(in srgb, var(--primary-color) 12%, transparent);
+}
+
+.blog-content tbody tr:last-child td {
+    border-bottom: none;
+}
+
 /* Enhanced Typography for Numbers */
 .blog-content ol {
     counter-reset: item;

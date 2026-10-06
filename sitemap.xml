@@ -261,6 +261,18 @@
   <!-- Featured blog posts -->
   <!-- BLOG_SITEMAP_POSTS_START -->
   <url>
+    <loc>https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://elemento.cloud/blog-posts/2026-08-26-how-to-evaluate-a-neocloud.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://elemento.cloud/blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>

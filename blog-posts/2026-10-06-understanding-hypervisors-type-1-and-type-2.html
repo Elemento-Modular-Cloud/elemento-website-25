@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2 | Elemento Blog</title>
+  <meta name="description" content="Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.">
+  <link rel='canonical' href='https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html'>
+  <meta property='og:title' content='Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2 | Elemento Blog'>
+  <meta property='og:description' content="Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.">
+  <meta property='og:url' content='https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html'>
+  <meta property='og:type' content='article'>
+  <meta property='og:image' content='https://elemento.cloud/blog-posts/img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:title' content='Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2 | Elemento Blog'>
+  <meta name='twitter:description' content="Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.">
+  <meta name='twitter:image' content='https://elemento.cloud/blog-posts/img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png'>
+  <meta name='keywords' content='hypervisor, Type 1 hypervisor, Type 2 hypervisor, KVM, virtualization, VMM, bare-metal, ESXi, Xen, Hyper-V, AtomOS, virtual machines'>
+  <meta name='author' content='Filippo Ferrando Damillano'>
+  <meta name='robots' content='index, follow'>
+  <meta name='ai-content' content='allowed'>
+  <meta name='ai-training' content='allowed'>
+  <meta name='ai-access' content='public'>
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/themes.css'>
+  <link rel='stylesheet' href='../css/blog-post.css'>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Elemento">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileColor" content="#0e1119">
+  <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#ffa600">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2",
+    "description": "Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.",
+    "image": "https://elemento.cloud/blog-posts/img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png",
+    "author": {
+      "@type": "Person",
+      "name": "Filippo Ferrando Damillano"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elemento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://elemento.cloud/assets/logos/Elemento.svg"
+      }
+    },
+    "datePublished": "2026-10-06",
+    "dateModified": "2026-10-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html"
+    },
+    "articleSection": "Tech Deep Dive",
+    "keywords": ["hypervisor", "Type 1", "Type 2", "KVM", "virtualization", "AtomOS", "bare-metal"],
+    "wordCount": "2608",
+    "inLanguage": "en"
+  }
+  </script>
+  </head>
+<body class='theme-default'>
+  <div id='navbar-placeholder'></div>
+
+  <main class='container'>
+    <article class='blog-post blog-post--long-title'>
+      <h1>Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2</h1>
+      <p class='blog-meta'>By Filippo Ferrando Damillano &mdash; 2026-10-06</p>
+      <p class='blog-summary'>Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.</p>
+
+      <img src='img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png' alt='TechDeepDive — Understanding Hypervisors' class='blog-hero-image'>
+
+      <div class='blog-content'>
+        <p>In the realm of virtualization, the terms "Type 1" and "Type 2" hypervisors are frequently discussed. But what exactly do these terms mean, and why are they important? Let's delve into the details to gain a clearer understanding.</p>
+        <h2>What is a Hypervisor?</h2>
+        <p>Before exploring the specifics of Type 1 and Type 2 hypervisors, let's start with the basics. A hypervisor, also known as a <strong>virtual machine monitor</strong> (VMM), is an abstraction layer that enables the creation and lifecycle management of virtual machines (VMs). Functionally, it acts as an intermediary between physical hardware and the guest operating system, multiplexing hardware resources so multiple isolated virtual instances can run concurrently on a single physical host. This hardware abstraction is foundational to modern computing, powering everything: from rapid development and testing environments to dynamic resource optimization and fault-tolerant disaster recovery.</p>
+        <p>Under the hood, hypervisors interact directly with the CPU execution modes, memory management units (MMU) and I/O primitives:</p>
+        <h3>Hardware-Assisted virtualization:</h3>
+        <p>Modern hypervisors rely on CPU instruction set extensions, like Intel VT-x and AMD-V, to fulfill the <a href="https://en.wikipedia.org/wiki/Popek_and_Goldberg_virtualization_requirements">Popek-Goldberg</a> virtualization requirements without relying on slow software-based dynamic translation. These extensions introduce hardware execution state, typically split in two: <code>VMX Root</code> ( hypervisor running with unrestricted access), <code>VMX non-Root</code> ( guest os system execute). Certain privileged operations or sensitive CPU instructions , specifically those configured to be intercepted in the Virtual Machine Control Structure (<code>VMCS</code>), triggers a <code>VM-Exit</code> event, suspending the guest and handing the execution back to the hypervisor (in fact, much of the optimization work over the past 15 years has consisted precisely of reducing these exits). After the operation is handled (or emulated), the hypervisor will update the guest state and issue a <code>VMLAUNCH</code> (for the initial entry) or <code>VMRESUME</code> (for subsequent entries) to drop back into a non-root state.</p>
+        <h3>Nested Memory Translation:</h3>
+        <p>To isolate memory space safely, hypervisors handle a two-tier translation pipeline. Guest operating systems manage their own virtual-to-physical address mappings, translating a Guest Virtual Address (<code>GVA</code>) to a Guest Physical Address (<code>GPA</code>). However, these "physical" addresses are just intermediate abstractions. The hypervisor uses hardware-assisted page table structures (depending on the host hardware, like Extended Page Tables (<code>EPT</code>) on Intel or Nested Page Tables (<code>NPT</code>) on AMD) exclusively to convert that <code>GPA</code> to the underlying Host Physical Address (<code>HPA</code>). The CPU hardware automatically combines these two stages during the page walk process.</p>
+        <h3>I/O Interception and Acceleration:</h3>
+        <p>For input/output operations, the hypervisor manages guest access through device traps, paravirtualized (direct guest-to-hypervisor “tunnel”) device driver, like <code>virtio</code>, or direct hardware passthrough, using <code>IOMMU</code> (Input-Output Memory Management Unit). This ensures strict device isolation while giving guests VM near-native throughput for network and storage.</p>
+        <h2>Type 1 Hypervisors: Bare-Metal Solutions</h2>
+        <p>Type 1 hypervisors, often referred to as "bare-metal" hypervisors, executes directly on host hardware without relying on a general-purpose underlying OS. Occupying the lowest layer of the execution hierarchy (VMX Root on x86 hardware for example), a Type 1 hypervisor exercises exclusive control over physical silicon, managing CPU scheduling, memory address translation and device I/O directly. By removing an intermediate host OS, Type 1 hypervisors minimize execution latency, maximize resource density, and drastically shrink the host attack surface, making them the standard for enterprise cloud infrastructure.</p>
+        <h3>Architectural Models: Microkernel vs. Kernel-Integrated</h3>
+        <p>While all Type 1 hypervisors run on bare silicon, they manage hardware through distinct architectural paradigms:</p>
+        <ul>
+        <li><strong>Microkernel-Based (e.g., VMware ESXi):</strong> Utilizes a custom, highly stripped-down kernel (VMkernel) designed exclusively to handle CPU scheduling, memory partitioning, and hardware access. Drivers run natively within this lightweight hypervisor, keeping the host footprint minimal (~150MB) and tightly isolated.</li>
+        <li><strong>Privileged Domain / Driver Domain (e.g., Xen):</strong> Functions as a minimal hypervisor running directly on hardware, while delegating hardware driver execution and management orchestration to a highly privileged virtual machine (often referred to as Dom0). This serves as the architectural missing link between the ESXi microkernel and Hyper-V partitioned models.</li>
+        <li><strong>Monolithic / Kernel-Integrated (e.g., KVM):</strong> Converts the Linux kernel itself into a bare-metal hypervisor via specialized modules (<code>kvm.ko</code>). When initialized, KVM leverages the host kernel’s mature scheduler, memory manager, and extensive hardware driver ecosystem while executing guests directly in VMX non-Root mode.</li>
+        <li><strong>Partitioned Architectures (e.g., Microsoft Hyper-V):</strong> Upon installation, Hyper-V initializes underneath the existing Windows Server OS, demoting it to a privileged "Parent Partition." The Parent Partition manages hypervisor orchestration and driver access, while "Child Partitions" execute guest workloads.</li>
+        </ul>
+        <h3>Low-Level Execution & Hardware Interfacing</h3>
+        <ul>
+        <li><strong>NUMA-Aware vCPU Scheduling:</strong> Physical CPU cores are scheduled directly to guest virtual CPUs (vCPUs). To avoid latency penalties, Type 1 hypervisors map vCPUs and guest memory allocations strictly within the local Non-Uniform Memory Access (NUMA) node on multi-socket platforms.</li>
+        <li><strong>Direct Hardware I/O Pathing:</strong> Replaces slow software device emulation with hardware-assisted passthrough via Single Root I/O Virtualization (SR-IOV) and IOMMU configurations. This grants guest VMs direct, isolated access to physical PCIe devices (such as NVMe drives or 100GbE NICs) at sub-microsecond latency.</li>
+        <li><strong>Memory Management & Overcommit:</strong> Operates hardware-assisted nested paging (EPT/NPT) directly to bypass double-translation overheads. Features like memory ballooning and host-level transparent page sharing dynamically reclaim idle RAM across instances under high load</li>
+        </ul>
+        <h3>Operational Advantages and Trade-Offs</h3>
+        <ul>
+        <li><strong>Key Advantages:</strong> Near-native compute efficiency (&lt;1–3% execution overhead), robust security due to lack of a bloat-prone desktop OS, and high availability features (e.g., live migration).</li>
+        <li><strong>Trade-Offs:</strong> Strict Hardware Compatibility List (HCL) restrictions, operational management complexity, and potentially high enterprise licensing costs.</li>
+        </ul>
+        <h2>Type 2 Hypervisors: Hosted Solutions</h2>
+        <p>Type 2 hypervisors, also known as "hosted" hypervisors, execute as software applications on top of a conventional host operating system (such as Windows, macOS, or Linux). Instead of seizing direct control of host hardware, a Type 2 hypervisor relies on the host OS kernel to manage fundamental low-level operations, including CPU thread scheduling, physical memory mapping, and device driver communication. While this architecture simplifies local deployment and developer workflows, it introduces structural performance overhead and deep software abstraction dependencies.</p>
+        <h3>Low-Level Execution & Host Kernel Interfacing</h3>
+        <ul>
+        <li><strong>Context Switching & Ring Transitions:</strong> The hypervisor application operates in user space (Ring 3), working in tandem with custom host kernel modules (Ring 0) to invoke hardware virtualization extensions (Intel VT-x / AMD-V). When a guest VM triggers a <strong>VM-Exit</strong>, control passes from VMX Non-Root mode back to the host kernel. If the exit requires user space intervention (such as for emulated devices), it forces a heavy context switch to return execution to the hypervisor process before the guest can resume. Conversely, "lightweight" exits are managed directly within the kernel module without returning to the process.</li>
+        <li><strong>Double-Scheduling Contention:</strong> Compute tasks suffer from multi-layered scheduling jitter. The guest OS scheduler manages internal tasks across virtual CPUs (vCPUs), while the host OS scheduler independently treats those vCPUs as standard host threads, forcing them to compete for CPU cycles alongside host processes (like web browsers or IDEs).</li>
+        <li><strong>Memory Mapping Dependencies:</strong> Hosted hypervisors reserve guest RAM within the hypervisor process address space using standard host allocation calls (e.g., <code>mmap</code> or <code>VirtualAlloc</code>). While the VMM accounting tracks GVA → GPA → HVA (Host Virtual Address), the actual hardware translation once the EPT is populated is still fundamentally a two-stage process (GPA → HPA) just like in Type 1. However, because the host OS manages the HVA space, if the host experiences memory pressure, it could swap the HVA containing guest memory to disk, causing severe performance degradation. (Note that KVM also utilizes this GVA → GPA → HVA → HPA accounting structure).</li>
+        <li><strong>I/O Abstraction via Host System Calls:</strong> Guest I/O requests cannot bypass the host kernel. Virtual device shims trap guest storage or network interrupts, translate them into host OS system calls (e.g., POSIX operations or Windows IRPs), and hand them off to the host OS hardware drivers, introducing latency compared to direct hardware passthrough.</li>
+        </ul>
+        <h3>Ecosystem & Architecture Evolution</h3>
+        <p>The traditional Type 1 and Type 2 taxonomy, famously defined by Robert Goldberg in 1972-73, is increasingly viewed as obsolete. Platforms like VMware Workstation, Oracle VirtualBox, Parallels Desktop, and QEMU historically relied on custom kernel drivers. Today, modern Type 2 hypervisors increasingly integrate with native host hypervisor APIs (such as Apple’s <strong>Hypervisor.framework</strong> or Microsoft’s <strong>Windows Hypervisor Platform - WHPX</strong>). These APIs effectively transform Type 2 applications into front-ends that interface with a native system hypervisor, blurring the historic dividing lines.</p>
+        <p><strong>Operational Trade-Offs</strong></p>
+        <ul>
+        <li><strong>Advantages:</strong> Zero dedicated hardware requirements, native host-guest integration (shared clipboards, drag-and-drop, shared filesystems), and low operational complexity for local testing.</li>
+        <li><strong>Trade-Offs:</strong> Expanded attack surface (host OS vulnerabilities compromise all underlying guest VMs), reduced I/O throughput, and latency caused by double-scheduling and layered address translation.</li>
+        </ul>
+        <h2>Choosing the Right Hypervisor</h2>
+        <p>The choice between Type 1 and Type 2 hypervisors depends on your specific needs. If you require high performance, security, and are managing a data center or enterprise environment, Type 1 hypervisors are the optimal choice. They are ideal for large-scale deployments and mission-critical applications. Conversely, if you are a developer, tester, or just starting with virtualization and need something easy to set up and use, Type 2 hypervisors are great. They are perfect for testing, development, and learning.</p>
+        <div class="blog-table-wrap">
+        <table>
+        <thead><tr>
+        <th>Dimension</th>
+        <th>Type 1 (Bare-Metal)</th>
+        <th>Type 2 (Hosted)</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+        <td><strong>Execution Tier</strong></td>
+        <td>Direct hardware control (VMX Root Mode)</td>
+        <td>User space process (Ring 3) relying on host OS kernel</td>
+        </tr>
+        <tr>
+        <td><strong>I/O Overhead</strong></td>
+        <td>Variable (Sub-microsecond with SR-IOV/passthrough, higher with vSwitches or emulated storage)</td>
+        <td>Multi-layered context switching (Host syscall trapping)</td>
+        </tr>
+        <tr>
+        <td><strong>Memory Mapping</strong></td>
+        <td>2-tier hardware translation (EPT/NPT)</td>
+        <td>2-tier hardware translation (EPT/NPT), but reliant on host OS paging (HVA) introducing swap risks</td>
+        </tr>
+        <tr>
+        <td><strong>Host Attack Surface</strong></td>
+        <td>Minimal (Stripped-down microkernel or constrained management partitions)</td>
+        <td>Expansive (Includes host OS, background services, GUI)</td>
+        </tr>
+        <tr>
+        <td><strong>Fault Tolerance</strong></td>
+        <td>High (Guest failure/panic isolated from bare metal)</td>
+        <td>Low (Host OS crash or blue-screen brings down all VMs)</td>
+        </tr>
+        <tr>
+        <td><strong>Deployment Target</strong></td>
+        <td>Multi-tenant cloud, enterprise SAN/NAS clusters</td>
+        <td>Desktop development, malware analysis, OS testing</td>
+        </tr>
+        </tbody></table></div>
+        <h3>The "Type 1.5" Architectural Hybrid: The KVM Paradox</h3>
+        <p>Kernel-based Virtual Machine (KVM) challenges the rigid binary classification between Type 1 and Type 2 architectures:</p>
+        <ul>
+        <li><strong>Why it functions as Type 1:</strong> Upon loading the <code>kvm.ko</code> module, KVM converts the host Linux kernel directly into a hypervisor. The kernel executes in Ring 0 / VMX Root mode with direct access to physical hardware primitives, scheduling guests directly into VMX Non-Root mode without a middleman host OS.</li>
+        <li><strong>Why it resembles Type 2:</strong> Each virtual machine is managed as a standard Linux process (usually via QEMU) with a unique Process ID (PID). A developer interacts with the VM using standard POSIX utilities, and vCPUs are scheduled as standard Linux <code>task_struct</code> threads using the Completely Fair Scheduler (CFS).</li>
+        <li><strong>The Hybrid Classification:</strong> KVM is architecturally a <strong>Type 1 bare-metal hypervisor</strong> that leverages an enterprise-grade Linux kernel as its bootloader and hardware driver layer, giving it the efficiency of bare metal paired with the modular driver support of a hosted system.</li>
+        </ul>
+        <p>This is why Elemento has chosen KVM as the virtualization base; it allows us to build the <a href="https://elemento.cloud/atomos.html">AtomOS</a> foundations on a known-good platform like RHEL, leaving the possibility (to the end user) to interact directly with the OS</p>
+        <h3>Use Cases for Hypervisors</h3>
+        <p>To provide a better understanding of how hypervisors are used in the real world, let's explore some common use cases. Type 1 hypervisors are often used to consolidate multiple physical servers into fewer, more powerful machines, reducing hardware costs and improving resource utilization. They are also used for disaster recovery, creating snapshots and backups of VMs to facilitate recovery from hardware failures or other disasters.</p>
+        <p>Type 2 hypervisors are ideal for developers who need to test their applications on different OSs and environments. They allow for quick setup of VMs to test code in isolation. Many cloud providers use Type 1 hypervisors to manage their infrastructure, offering scalable and flexible computing resources to their customers. Type 2 hypervisors can also be used to run multiple OSs on a single desktop or laptop, useful for users who need to run applications available only on certain OSs.</p>
+        <h3>Real-World use cases:</h3>
+        <p><strong>Enterprise Server Consolidation & High Availability (Type 1):</strong> Consolidates hundreds of legacy physical servers onto dense multi-socket host nodes. Coupled with shared storage (SAN/NVMe-oF), Type 1 platforms enable zero-downtime Live Migration (e.g., vMotion) by streaming dirty RAM pages across 100GbE links while the target node resumes execution.</p>
+        <p><strong>Disaster Recovery & CBT (Type 1):</strong> Utilizes Changed Block Tracking (CBT) at the hypervisor storage controller layer to take continuous, block-level delta snapshots. This allows rapid Point-In-Time (PIT) recovery without interrupting live I/O queues.</p>
+        <p><strong>Multi-Tenant Public Cloud Infrastructure (Type 1):</strong> Underpins cloud providers (e.g., AWS EC2, GCP, Azure) where strict multi-tenant hardware isolation, tenant network virtualization (VXLAN/GENEVE), and strict QoS resource limits are mandatory.</p>
+        <p><strong>Cross-Platform Development & Malware Sandboxing (Type 2):</strong> Enables developers to spin up isolated Linux/Windows environments directly on macOS or Windows hosts. Security researchers leverage Type 2 hypervisors to detonate zero-day malware inside disposable guest environments equipped with RAM freeze and rewind capabilities.</p>
+        <h3>The Future of Hypervisors</h3>
+        <p>The hypervisor ecosystem is undergoing an architectural transformation driven by container convergence, AI workload acceleration, and distributed edge execution. Rather than competing directly with containerization, hypervisors are increasingly embedding beneath container runtimes through lightweight microVM frameworks like AWS Firecracker, Kata Containers, and Cloud Hypervisor. By stripping away much of the legacy motherboard emulation—though features like ACPI have been subsequently supported on x86 for compatibility—and legacy PCI buses in favor of minimal <code>virtio</code> implementations, microVMs reduce the VMM process overhead to around 5 milliseconds (with full application boot times sitting closer to ~125 ms) and maintain a memory overhead of roughly 5 megabytes. This yields the rapid elasticity of standard OCI containers alongside the hardware-enforced memory isolation and security boundaries of a full hypervisor.</p>
+        <p>Simultaneously, the explosive growth of artificial intelligence and machine learning is reshaping hypervisor resource scheduling. Modern hypervisors must extend beyond vCPU and RAM allocation to manage direct hardware access for GPU clusters and specialized neural processing hardware. Using Virtual Function I/O (VFIO) passthrough, Single Root I/O Virtualization (SR-IOV), and vGPU partitioning architectures, hypervisors enable guest virtual machines to access physical Tensor cores and High Bandwidth Memory (HBM) with negligible Direct Memory Access (DMA) overhead. This allows multi-tenant cloud platforms to dynamically slice and allocate enterprise GPU hardware across isolated AI training and inference workloads without sacrificing near-native performance.</p>
+        <p>At the network edge, virtualization is adapting to strict latency constraints and heterogeneous hardware through real-time hypervisors like ACRN and embedded Xen configurations. Edge hypervisors partition System-on-Chip (SoC) platforms to run deterministic Real-Time Operating Systems (RTOS) for critical control loops side-by-side with non-deterministic Linux environments for data analytics. By combining strict hardware core-pinning, physical interrupt isolation, and telemetry driven by eBPF in the host kernel (such as within Dom0), modern edge environments maintain microsecond-level execution guarantees even when highly distributed.</p>
+        <h3>Conclusion</h3>
+        <p>Hypervisors have fundamentally evolved from simple physical server consolidation tools into the foundational execution fabric of modern infrastructure. From high-throughput bare-metal Type 1 architectures and flexible Type 2 developer engines to hyper-optimized microVMs and real-time edge abstractions, virtualization remains the definitive mechanism for secure, hardware-enforced tenant isolation and dynamic resource management. As computing workloads scale from multi-tenant AI clusters to micro-edge nodes, a deep architectural understanding of hypervisor mechanics continues to be a crucial prerequisite for designing resilient, scalable systems.</p>
+        <p><a href="https://elemento.cloud/atomos.html">Discover AtomOS</a>, Elemento’s hypervisor, and all the new features we just launched</p>
+      </div>
+    </article>
+  </main>
+
+  <div id='footer-placeholder'></div>
+
+  <script src='../js/navbar.js' defer></script>
+  <script src='../js/main.js' defer></script>
+  <script src='../js/themes.js' defer></script>
+  <script src='../js/footer.js' defer></script>
+</body>
+</html>

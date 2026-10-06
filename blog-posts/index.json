@@ -1,5 +1,14 @@
 [
   {
+    "title": "Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2",
+    "author": "Filippo Ferrando Damillano",
+    "date": "2026-10-06",
+    "summary": "Type 1 vs Type 2 hypervisors explained: bare-metal vs hosted architectures, nested memory translation, I/O paths, the KVM hybrid paradox, and why Elemento builds AtomOS on KVM.",
+    "filename": "2026-10-06-understanding-hypervisors-type-1-and-type-2.html",
+    "main_image": "img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png",
+    "thumbnail_image": "img/2026-10-06-understanding-hypervisors-type-1-and-type-2.png"
+  },
+  {
     "title": "How to Evaluate a Neocloud: A Practical Guide for AI Infrastructure Teams",
     "author": "Elemento Team",
     "date": "2026-08-26",
@@ -9,7 +18,7 @@
     "thumbnail_image": "img/2026-08-26-how-to-evaluate-a-neocloud.jpg"
   },
   {
-    "title": "What Is a Metacloud \u2014 And How to Start Running One This Summer",
+    "title": "What Is a Metacloud — And How to Start Running One This Summer",
     "author": "Elemento Team",
     "date": "2026-07-06",
     "summary": "A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.",
@@ -30,7 +39,7 @@
     "title": "The Price of Technological Dependence: Why VMware Lock-In Is Now a Strategic Risk",
     "author": "Elemento Team",
     "date": "2026-05-26",
-    "summary": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control\u2014and how AtomOS helps.",
+    "summary": "After Broadcom's acquisition of VMware, licensing changes and deep infrastructure lock-in have turned vendor dependence into strategic risk. Learn why a VMware exit strategy is about control—and how AtomOS helps.",
     "filename": "2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk.html",
     "main_image": "img/2026-05-26-vmware-lock-in-strategic-risk.webp",
     "thumbnail_image": "img/2026-05-26-vmware-lock-in-strategic-risk.webp"
