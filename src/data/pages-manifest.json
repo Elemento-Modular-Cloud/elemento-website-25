@@ -1421,8 +1421,7 @@
     ],
     "extraScripts": [
       "js/faq.js",
-      "js/atmosphere_hero_with_logo.js",
-      "js/electros.js"
+      "js/atmosphere_hero_with_logo.js"
     ],
     "type": "legacy",
     "locales": [
@@ -1705,9 +1704,7 @@
     "extraCss": [
       "css/signup-success.css"
     ],
-    "extraScripts": [
-      "js/electros.js"
-    ],
+    "extraScripts": [],
     "type": "legacy",
     "locales": [
       "en",
