@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AtomOS — Powering Your Cloud with Linux Hypervisor | Elemento Cloud</title>
-    <meta name="description" content="AtomOS is a lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
+    <meta name="description" content="AtomOS is a free forever Linux hypervisor for bare metal and private clouds. High availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup — RHEL-compatible and clustering-native.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://elemento.cloud/atomos.html">
@@ -18,7 +18,7 @@
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
-    <meta property="og:description" content="Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
+    <meta property="og:description" content="Free forever Linux hypervisor with high availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.">
     <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
     <meta property="og:url" content="https://elemento.cloud/atomos.html">
     <meta property="og:type" content="product">
@@ -28,7 +28,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
-    <meta name="twitter:description" content="Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.">
+    <meta name="twitter:description" content="Free forever Linux hypervisor with high availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.">
     <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
     
     <!-- Additional SEO Meta Tags -->
@@ -68,7 +68,7 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "AtomOS",
-      "description": "Lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.",
+      "description": "Free forever Linux hypervisor for bare metal and private clouds. High availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.",
       "url": "https://elemento.cloud/atomos.html",
       "applicationCategory": "Virtualization Software",
       "operatingSystem": "Linux",
@@ -91,6 +91,10 @@
         "Mainline Linux kernel",
         "Incredible hardware support from upstream",
         "Super fast security updates",
+        "High availability with automatic VM failover",
+        "Live VM update — CPU, RAM, volumes and networks without downtime",
+        "Multi-tenant networking with per-user quotas",
+        "Native Veeam Backup & Replication compatibility",
         "GPU passthrough support",
         "Autonomous clustering with C4 protocol",
         "Secure boot and ECC memory support",
@@ -657,14 +661,14 @@
     </section>
 
     <!-- Page Header -->
-    <section class="section section-header-padded">
+    <section class="section section-header-padded" id="intro">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">The <span class="highlight-pixel">Next-gen </span> Linux Hypervisor you were waiting for</h2>
             </div>
         </div>
          <div class="container">            
-            <div class="grid grid-2 grid-centered">
+            <div class="grid grid-2 grid-centered atomos-intro-layout">
                 <div class="fade-in">
                     <p>
                         No need to be fancy to be just right. At Elemento, we believe in the Linux paradigm.  
@@ -714,7 +718,83 @@
                     </div>
                 </div>
                 
-                <div class="content-image"> <img src="./assets/img/Atomos - Hero - 1.webp" alt="AtomOS Linux Hypervisor Architecture" class="hero-detail-image"> </div>
+                <div class="content-image atomos-intro-media">
+                    <div class="atomos-intro-video">
+                        <iframe
+                            src="https://livid.com/embed/KGLWwDDpqRFy"
+                            title="Introducing AtomOS"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share"
+                            allowfullscreen
+                            frameborder="0"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New / New Features (from Introducing AtomOS) -->
+    <section class="section features" id="whats-new">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What's <span class="highlight-pixel">New</span> in AtomOS</h2>
+                <p class="section-subtitle">The latest capabilities that turn any server into a production-ready private cloud — free forever, support optional.</p>
+            </div>
+
+            <div class="grid grid-2 atomos-whats-new-grid">
+                <div class="card fade-in atomos-feature-card">
+                    <div class="atomos-feature-index">01</div>
+                    <div class="card-icon"><i class="hn hn-cybersecurity" style="color: var(--green);"></i></div>
+                    <h3>High Availability</h3>
+                    <p class="atomos-feature-tagline">Zero interruption. Maximum resilience.</p>
+                    <p>When a physical host fails, surviving nodes take its VMs over automatically — so workloads keep running without manual failover.</p>
+                </div>
+
+                <div class="card fade-in atomos-feature-card atomos-feature-card-accent">
+                    <div class="atomos-feature-index">02</div>
+                    <div class="card-icon"><i class="hn hn-trending" style="color: var(--accent-color);"></i></div>
+                    <h3>Live VM Update</h3>
+                    <p class="atomos-feature-tagline">Update VMs while they run.</p>
+                    <p>Change resources and settings on a live virtual machine without stopping it: add CPU and RAM on the fly, attach or detach volumes and networks, and tune autostart, HA priority, and load balancing.</p>
+                </div>
+
+                <div class="card fade-in atomos-feature-card">
+                    <div class="atomos-feature-index">03</div>
+                    <div class="card-icon"><i class="hn hn-link" style="color: var(--blue);"></i></div>
+                    <h3>Multi-Tenant Networking</h3>
+                    <p class="atomos-feature-tagline">One fabric. Every tenant.</p>
+                    <p>Apply the same multi-tenant logic you already use for storage and VMs to the network: admins see every user's networks from one pane, with per-user quotas on networks and IP addresses.</p>
+                </div>
+
+                <div class="card fade-in atomos-feature-card">
+                    <div class="atomos-feature-index">04</div>
+                    <div class="card-icon"><i class="hn hn-save" style="color: var(--blue-light);"></i></div>
+                    <h3>Backup &amp; Replication</h3>
+                    <p class="atomos-feature-tagline">Native Veeam. 100% compatible.</p>
+                    <p>AtomOS integrates natively with Veeam Backup &amp; Replication for hypervisor-level snapshots and backup of your virtual environments.</p>
+                </div>
+
+                <div class="card fade-in atomos-feature-card">
+                    <div class="atomos-feature-index">05</div>
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--purple);"></i></div>
+                    <h3>GPU Passthrough</h3>
+                    <p class="atomos-feature-tagline">Real GPUs. Straight to the VM.</p>
+                    <p>Native PCI passthrough assigns physical GPUs directly to virtual machines — no software mediation layer — for AI/ML training and inference on your own hardware, with no extra licensing.</p>
+                </div>
+
+                <div class="card fade-in atomos-feature-card">
+                    <div class="atomos-feature-index"><i class="fas fa-star" aria-hidden="true"></i></div>
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--orange);"></i></div>
+                    <h3>Manage It Your Way</h3>
+                    <p class="atomos-feature-tagline">Web GUI · CLI · Electros Metacloud.</p>
+                    <p>Operate from Cockpit at <code>localhost:9090</code>, automate with <code>atomos-cli</code>, or govern AtomOS alongside VMware, AWS, Azure, GCP, and Proxmox from the Electros control plane.</p>
+                </div>
+            </div>
+
+            <div class="hero-cta atomos-whats-new-cta">
+                <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Deploy in Minutes</a>
+                <a href="https://atomos.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-cart-shopping"></i> Get your free licence</a>
             </div>
         </div>
     </section>
