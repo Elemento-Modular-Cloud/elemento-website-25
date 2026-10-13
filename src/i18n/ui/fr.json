@@ -367,7 +367,7 @@
     },
     "full-solution-demo": {
       "description": "Votre démo solution complète est prénotée. Contrôlez l'e-mail et acceptez l'invitation au calendrier pour confirmer la participation.",
-      "title": "Démo confirmées — AtomOS et Electros | Elemento"
+      "title": "Démo confirmées — Electros et AtomOS | Elemento"
     },
     "install-atomos": {
       "description": "Guide d'installation complet de l'hyperviseur AtomOS et du tableau de bord d'orchestration Electros. Faites fonctionner les deux produits en quelques minutes avec des instructions étape par étape.",
@@ -635,7 +635,7 @@
     },
     "grazie_full-solution-demo": {
       "description": "Votre démo solution complète est prénotée. Contrôlez l'e-mail et acceptez l'invitation au calendrier pour confirmer la participation.",
-      "title": "Démo confirmées — AtomOS et Electros | Elemento"
+      "title": "Démo confirmées — Electros et AtomOS | Elemento"
     },
     "solutions_ai": {
       "description": "Entraînez, déployez et faites évoluer les charges de travail d'IA de manière transparente sur les cloud et les nœuds sur site. Elemento fournit une gestion de cluster GPU et des environnements d'IA multi-cloud.",

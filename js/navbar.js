@@ -326,13 +326,13 @@ class Navbar {
                             <a href="${this.getLocalizedHref('products.html')}" class="nav-link ${this.getSectionNavActiveClass('products')}">${this.t('nav.products', 'Products')} <span class="dropdown-arrow">▼</span></a>
                             <div class="dropdown-menu mobile-dropdown">
                                 <ul>
-                                    <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
-                                        <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
-                                        <span class="">AtomOS</span>
-                                    </a></li>
                                     <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClassByStem('electros')}">
                                         <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                         <span class="">Electros</span>
+                                    </a></li>
+                                    <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
+                                        <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
+                                        <span class="">AtomOS</span>
                                     </a></li>
                                 </ul>
                             </div>
@@ -368,13 +368,13 @@ class Navbar {
                     <div class="dropdown-menu desktop-dropdown" data-nav-dropdown-panel="products">
                         <div class="container">
                             <ul>
-                                <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
-                                    <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
-                                    <span class="">AtomOS</span>
-                                </a></li>
                                 <li><a href="${this.getLocalizedHref('electros.html')}" class="dropdown-link ${this.getActiveClassByStem('electros')}">
                                     <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                     <span class="">Electros</span>
+                                </a></li>
+                                <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
+                                    <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
+                                    <span class="">AtomOS</span>
                                 </a></li>
                             </ul>
                         </div>

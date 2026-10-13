@@ -596,17 +596,17 @@
     },
     {
       "id": "ui.pages.products.title",
-      "en": "Elemento | Products | AtomOS & Electros",
-      "it": "Elemento | Prodotti | AtomOS e Electros",
-      "fr": "Elemento | Produits | AtomOS et Electros",
+      "en": "Elemento | Products | Electros & AtomOS",
+      "it": "Elemento | Prodotti | Electros e AtomOS",
+      "fr": "Elemento | Produits | Electros et AtomOS",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.signup.description",
-      "en": "Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",
-      "it": "Registrati a Elemento per accedere ad AtomOS e Electros. Inizia con il piano gratuito o contatta le vendite.",
-      "fr": "Inscrivez-vous à Elemento pour accéder à AtomOS et Electros. Commencez avec notre offre gratuite ou contactez les ventes.",
+      "en": "Sign up for Elemento to access Electros and AtomOS. Start with our free tier or contact sales.",
+      "it": "Registrati a Elemento per accedere ad Electros e AtomOS. Inizia con il piano gratuito o contatta le vendite.",
+      "fr": "Inscrivez-vous à Elemento pour accéder à Electros et AtomOS. Commencez avec notre offre gratuite ou contactez les ventes.",
       "source": "src/i18n/ui",
       "context": ""
     },

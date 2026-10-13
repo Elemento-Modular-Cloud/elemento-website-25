@@ -72,14 +72,14 @@
       "description": "Complete infrastructure platform designed for regulated environments with built-in compliance and security",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Secure hypervisor environment with built-in compliance controls"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Compliance-ready dashboard with audit and reporting capabilities"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Secure hypervisor environment with built-in compliance controls"
         }
       ],
       "cta": {
@@ -266,14 +266,14 @@
       "description": "Piattaforma infrastrutturale completa progettata per ambienti regolamentati con conformità e sicurezza integrate",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Ambiente hypervisor sicuro con controlli di conformità integrati"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard pronto per la conformità con funzionalità di audit e reporting"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Ambiente hypervisor sicuro con controlli di conformità integrati"
         }
       ],
       "cta": {
@@ -460,14 +460,14 @@
       "description": "Plateforme d'infrastructure complète conçue pour les environnements réglementés avec conformité et sécurité intégrées",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Environnement d'hyperviseur sécurisé avec contrôles de conformité intégrés"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord prêt pour la conformité avec des capacités d'audit et de reporting"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Environnement d'hyperviseur sécurisé avec contrôles de conformité intégrés"
         }
       ],
       "cta": {

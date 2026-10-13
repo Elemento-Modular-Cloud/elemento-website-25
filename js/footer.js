@@ -96,8 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="footer-section">
                     <h3>${f.products}</h3>
                     <ul>
-                        <li><a href="${localizedHref('atomos.html')}">Atomos</a></li>
                         <li><a href="${localizedHref('electros.html')}">Electros</a></li>
+                        <li><a href="${localizedHref('atomos.html')}">Atomos</a></li>
                         <li><a href="${localizedHref('products.html')}">${f.allProducts}</a></li>
                     </ul>
                 </div>

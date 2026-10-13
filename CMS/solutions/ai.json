@@ -72,14 +72,14 @@
       "description": "Complete infrastructure platform designed for AI/ML workloads with GPU cluster management",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "GPU-optimized hypervisor for consistent AI/ML environments"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for managing GPU clusters and AI workloads"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "GPU-optimized hypervisor for consistent AI/ML environments"
         }
       ],
       "cta": {
@@ -266,14 +266,14 @@
       "description": "Piattaforma infrastrutturale completa progettata per carichi di lavoro AI/ML con gestione del cluster GPU",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hypervisor ottimizzato per GPU per ambienti AI/ML coerenti"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per la gestione di cluster GPU e carichi di lavoro AI"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hypervisor ottimizzato per GPU per ambienti AI/ML coerenti"
         }
       ],
       "cta": {
@@ -460,14 +460,14 @@
       "description": "Plateforme d'infrastructure complète conçue pour les charges de travail IA/ML avec gestion de cluster GPU",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hyperviseur optimisé par GPU pour des environnements IA/ML cohérents"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour la gestion des clusters GPU et des charges de travail d'IA"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hyperviseur optimisé par GPU pour des environnements IA/ML cohérents"
         }
       ],
       "cta": {

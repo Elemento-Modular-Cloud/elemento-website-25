@@ -72,14 +72,14 @@
       "description": "Unified infrastructure that bridges legacy systems with modern cloud analytics",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Consistent hypervisor environment for edge and cloud processing"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for monitoring all manufacturing systems"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Consistent hypervisor environment for edge and cloud processing"
         }
       ],
       "cta": {
@@ -266,14 +266,14 @@
       "description": "Infrastruttura unificata che collega i sistemi legacy con la moderna analisi cloud",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Ambiente hypervisor coerente per l'elaborazione edge e cloud"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per il monitoraggio di tutti i sistemi di produzione"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Ambiente hypervisor coerente per l'elaborazione edge e cloud"
         }
       ],
       "cta": {
@@ -460,14 +460,14 @@
       "description": "Infrastructure unifiée qui relie les systèmes existants aux analyses cloud modernes",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Environnement d'hyperviseur cohérent pour le traitement en périphérie et dans le cloud"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour surveiller tous les systèmes de fabrication"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Environnement d'hyperviseur cohérent pour le traitement en périphérie et dans le cloud"
         }
       ],
       "cta": {

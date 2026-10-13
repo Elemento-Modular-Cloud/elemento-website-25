@@ -764,9 +764,9 @@
     },
     {
       "id": "body.technology.p.44",
-      "en": "AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.",
-      "it": "AtomOS e Electros sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
-      "fr": "AtomOS et Electros sont les produits. Atomosphere est la technologie de connectivité qui alimente Electros.",
+      "en": "Electros and AtomOS are the products. Atomosphere is the connectivity technology that powers Electros.",
+      "it": "Electros e AtomOS sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
+      "fr": "Electros et AtomOS sont les produits. Atomosphere est la technologie de connectivité qui alimente Electros.",
       "source": "technology.html",
       "context": "<p>"
     },

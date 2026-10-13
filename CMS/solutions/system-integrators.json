@@ -72,14 +72,14 @@
       "description": "Complete infrastructure platform that enables system integrators to deliver sovereign cloud environments",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Production-grade hypervisor for consistent multi-tenant environments"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "White-label dashboard for managing client infrastructure"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Production-grade hypervisor for consistent multi-tenant environments"
         }
       ],
       "cta": {
@@ -266,14 +266,14 @@
       "description": "Piattaforma infrastrutturale completa che consente agli integratori di sistema di fornire ambienti cloud sovrani",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hypervisor per ambienti di produzione per ambienti multi-tenant coerenti"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard white label per la gestione dell'infrastruttura del cliente"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hypervisor per ambienti di produzione per ambienti multi-tenant coerenti"
         }
       ],
       "cta": {
@@ -460,14 +460,14 @@
       "description": "Plateforme d'infrastructure complète qui permet aux intégrateurs de systèmes de fournir des environnements cloud souverains",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hyperviseur de niveau production pour des environnements multi-locataires cohérents"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord en marque blanche pour la gestion de l'infrastructure client"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hyperviseur de niveau production pour des environnements multi-locataires cohérents"
         }
       ],
       "cta": {

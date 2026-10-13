@@ -204,9 +204,9 @@
     },
     {
       "id": "body.solutions_index.p.9",
-      "en": "All solutions are built on our core products: AtomOS and Electros",
-      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS e Electros",
-      "fr": "Toutes les solutions reposent sur nos produits principaux : AtomOS et Electros",
+      "en": "All solutions are built on our core products: Electros and AtomOS",
+      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: Electros e AtomOS",
+      "fr": "Toutes les solutions reposent sur nos produits principaux : Electros et AtomOS",
       "source": "solutions/index.html",
       "context": "<p>"
     },

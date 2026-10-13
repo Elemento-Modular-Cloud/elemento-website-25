@@ -364,7 +364,7 @@
       "description": "La tua soluzione demo completa è prenotata. Controlla l'e-mail e accetta l'invito del calendario per confermare la partecipazione."
     },
     "install-atomos": {
-      "description": "Guida all'installazione completa per l'hypervisor AtomOS e il dashboard di orchestrazione Electros. Metti in funzione entrambi i prodotti in pochi minuti con istruzioni dettagliate.",
+      "description": "Guida all'installazione completa per il dashboard di orchestrazione Electros e l'hypervisor AtomOS. Metti in funzione entrambi i prodotti in pochi minuti con istruzioni dettagliate.",
       "title": "Guida all'installazione — AtomOS ed Electros | Elemento Cloud"
     },
     "orbital": {

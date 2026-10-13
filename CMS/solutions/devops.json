@@ -46,14 +46,14 @@
       "description": "Unified infrastructure management that eliminates environment drift and accelerates your CI/CD pipelines",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Consistent hypervisor environment across all deployments"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for managing all your infrastructure"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Consistent hypervisor environment across all deployments"
         }
       ],
       "cta": {
@@ -161,16 +161,16 @@
       "subtitle": "Everything you need for modern DevOps workflows",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Production-grade hypervisor for consistent environments",
-          "link": "../atomos.html"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for infrastructure management",
           "link": "../electros.html"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Production-grade hypervisor for consistent environments",
+          "link": "../atomos.html"
         }
       ]
     },
@@ -258,14 +258,14 @@
       "description": "Gestione unificata dell'infrastruttura che elimina la deriva ambientale e accelera le pipeline CI/CD",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Ambiente hypervisor coerente in tutte le distribuzioni"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per la gestione di tutta la tua infrastruttura"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Ambiente hypervisor coerente in tutte le distribuzioni"
         }
       ],
       "cta": {
@@ -373,16 +373,16 @@
       "subtitle": "Tutto ciò di cui hai bisogno per i moderni flussi di lavoro DevOps",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hypervisor per ambienti di produzione per ambienti coerenti",
-          "link": "../atomos.html"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per la gestione dell'infrastruttura",
           "link": "../electros.html"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hypervisor per ambienti di produzione per ambienti coerenti",
+          "link": "../atomos.html"
         }
       ]
     },
@@ -470,14 +470,14 @@
       "description": "Gestion unifiée de l'infrastructure qui élimine la dérive de l'environnement et accélère vos pipelines CI/CD",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Environnement d'hyperviseur cohérent dans tous les déploiements"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour gérer toute votre infrastructure"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Environnement d'hyperviseur cohérent dans tous les déploiements"
         }
       ],
       "cta": {
@@ -585,16 +585,16 @@
       "subtitle": "Tout ce dont vous avez besoin pour des workflows DevOps modernes",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hyperviseur de niveau production pour des environnements cohérents",
-          "link": "../atomos.html"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour la gestion de l'infrastructure",
           "link": "../electros.html"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hyperviseur de niveau production pour des environnements cohérents",
+          "link": "../atomos.html"
         }
       ]
     },

@@ -72,14 +72,14 @@
       "description": "Complete platform designed to replace VMware with modern, cloud-native infrastructure",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Modern hypervisor replacing VMware vSphere with better performance"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified management console replacing VMware vCenter"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Modern hypervisor replacing VMware vSphere with better performance"
         }
       ],
       "cta": {
@@ -257,14 +257,14 @@
       "description": "Piattaforma completa progettata per sostituire VMware con un'infrastruttura moderna e nativa del cloud",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hypervisor moderno che sostituisce VMware vSphere con prestazioni migliori"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Console di gestione unificata che sostituisce VMware vCenter"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hypervisor moderno che sostituisce VMware vSphere con prestazioni migliori"
         }
       ],
       "cta": {
@@ -442,14 +442,14 @@
       "description": "Plateforme complète conçue pour remplacer VMware par une infrastructure cloud native moderne",
       "items": [
         {
-          "logo": "../assets/logos/Atomos.svg",
-          "name": "AtomOS",
-          "description": "Hyperviseur moderne remplaçant VMware vSphere avec de meilleures performances"
-        },
-        {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Console de gestion unifiée remplaçant VMware vCenter"
+        },
+        {
+          "logo": "../assets/logos/Atomos.svg",
+          "name": "AtomOS",
+          "description": "Hyperviseur moderne remplaçant VMware vSphere avec de meilleures performances"
         }
       ],
       "cta": {
