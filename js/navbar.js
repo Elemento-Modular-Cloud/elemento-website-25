@@ -197,8 +197,8 @@ class Navbar {
 
     // Add method to check if current page is a product page
     isProductPage() {
-        const productStems = ['atomos', 'electros', 'atomosphere', 'products'];
-        const productPages = ['atomos.html', 'electros.html', 'atomosphere.html', 'products.html'];
+        const productStems = ['atomos', 'electros', 'products'];
+        const productPages = ['atomos.html', 'electros.html', 'products.html'];
         return productStems.includes(this.getPageStem()) || productPages.includes(this.currentPage);
     }
 
@@ -208,12 +208,19 @@ class Navbar {
         return resourceStems.includes(this.getPageStem()) || resourcePages.includes(this.currentPage);
     }
 
+    isTechnologyPage() {
+        const technologyStems = ['technology', 'atomosphere'];
+        const technologyPages = ['technology.html', 'atomosphere.html'];
+        return technologyStems.includes(this.getPageStem()) || technologyPages.includes(this.currentPage);
+    }
+
     getActiveClassByStem(stem) {
         return this.getPageStem() === stem ? 'active' : '';
     }
 
     getSectionNavActiveClass(section) {
         if (section === 'products' && this.isProductPage()) return 'active';
+        if (section === 'technology' && this.isTechnologyPage()) return 'active';
         if (section === 'resources' && this.isResourcesPage()) return 'active';
         return '';
     }
@@ -327,6 +334,13 @@ class Navbar {
                                         <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                         <span class="">Electros</span>
                                     </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown" data-nav-dropdown="technology">
+                            <a href="${this.getLocalizedHref('technology.html')}" class="nav-link ${this.getSectionNavActiveClass('technology')}">${this.t('nav.technology', 'Technology')} <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-menu mobile-dropdown">
+                                <ul>
                                     <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClassByStem('atomosphere')}">
                                         <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                         <span class="">Atomosphere</span>
@@ -334,7 +348,6 @@ class Navbar {
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="${this.getLocalizedHref('technology.html')}" class="nav-link ${this.getActiveClass('technology.html')}">${this.t('nav.technology', 'Technology')}</a></li>
                         <li><a href="${this.getLocalizedHref('about.html')}" class="nav-link ${this.getActiveClass('about.html')}">${this.t('nav.about', 'About')}</a></li>
                         <li><a href="${this.getLocalizedHref('contact.html')}" class="nav-link ${this.getActiveClass('contact.html')}">${this.t('nav.contact', 'Contact')}</a></li>
                         <li class="dropdown" data-nav-dropdown="resources">
@@ -363,6 +376,12 @@ class Navbar {
                                     <img src="${basePath}assets/logos/Electros.svg" alt="Electros icon" class="product-icon" width="20" height="20">
                                     <span class="">Electros</span>
                                 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu desktop-dropdown" data-nav-dropdown-panel="technology">
+                        <div class="container">
+                            <ul>
                                 <li><a href="${this.getLocalizedHref('atomosphere.html')}" class="dropdown-link ${this.getActiveClassByStem('atomosphere')}">
                                     <img src="${basePath}assets/logos/Atomosphere.svg" alt="Atomosphere icon" class="product-icon" width="20" height="20">
                                     <span class="">Atomosphere</span>
@@ -479,25 +498,32 @@ class Navbar {
     }
 
     showSectionDropdowns() {
+        // Only one sticky section panel at a time — hide others first.
+        document.querySelectorAll('.desktop-dropdown').forEach((menu) => {
+            menu.classList.remove('show');
+        });
         if (this.isProductPage()) {
             document.querySelector('[data-nav-dropdown-panel="products"]')?.classList.add('show');
-        }
-        if (this.isResourcesPage()) {
+        } else if (this.isTechnologyPage()) {
+            document.querySelector('[data-nav-dropdown-panel="technology"]')?.classList.add('show');
+        } else if (this.isResourcesPage()) {
             document.querySelector('[data-nav-dropdown-panel="resources"]')?.classList.add('show');
         }
     }
 
     shouldKeepDropdownOpen(panelId) {
         if (panelId === 'products') return this.isProductPage();
+        if (panelId === 'technology') return this.isTechnologyPage();
         if (panelId === 'resources') return this.isResourcesPage();
         return false;
     }
 
     hideAllDesktopDropdowns(exceptPanelId = null) {
+        // When hovering a specific panel, hide every other panel — including sticky
+        // section menus — so only one full-width submenu is visible.
         document.querySelectorAll('.desktop-dropdown').forEach((menu) => {
             const panelId = menu.getAttribute('data-nav-dropdown-panel');
             if (exceptPanelId && panelId === exceptPanelId) return;
-            if (this.shouldKeepDropdownOpen(panelId)) return;
             menu.classList.remove('show');
         });
     }
@@ -505,6 +531,12 @@ class Navbar {
     initDropdowns() {
         const dropdowns = document.querySelectorAll('.dropdown[data-nav-dropdown]');
         let hideTimeout;
+
+        const scheduleRestoreSectionDropdown = () => {
+            hideTimeout = setTimeout(() => {
+                this.showSectionDropdowns();
+            }, 300);
+        };
 
         dropdowns.forEach((dropdown) => {
             const panelId = dropdown.dataset.navDropdown;
@@ -524,24 +556,22 @@ class Navbar {
             });
 
             dropdown.addEventListener('mouseleave', () => {
-                if (window.innerWidth > 768 && !this.shouldKeepDropdownOpen(panelId)) {
-                    hideTimeout = setTimeout(() => {
-                        desktopDropdownMenu.classList.remove('show');
-                    }, 300);
+                if (window.innerWidth > 768) {
+                    scheduleRestoreSectionDropdown();
                 }
             });
 
             desktopDropdownMenu.addEventListener('mouseenter', () => {
                 if (window.innerWidth > 768) {
                     clearTimeout(hideTimeout);
+                    this.hideAllDesktopDropdowns(panelId);
+                    desktopDropdownMenu.classList.add('show');
                 }
             });
 
             desktopDropdownMenu.addEventListener('mouseleave', () => {
-                if (window.innerWidth > 768 && !this.shouldKeepDropdownOpen(panelId)) {
-                    hideTimeout = setTimeout(() => {
-                        desktopDropdownMenu.classList.remove('show');
-                    }, 300);
+                if (window.innerWidth > 768) {
+                    scheduleRestoreSectionDropdown();
                 }
             });
         });

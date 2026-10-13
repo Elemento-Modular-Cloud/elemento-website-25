@@ -20,7 +20,7 @@ export default defineConfig({
     '/en/technology/electros.html': '/electros.html',
     '/en/technology/blog.html': '/blog.html',
     '/en/technology/sign-up.html': '/signup.html',
-    '/en/technology/cloud-network.html': '/technology.html',
+    '/en/technology/cloud-network.html': '/atomosphere.html',
     '/en/technology/404.html': '/404.html',
     '/grazie/atomos-demo-it': '/it/grazie/atomos-demo.html',
     '/grazie/full-solution-demo-it': '/it/grazie/full-solution-demo.html',

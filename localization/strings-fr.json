@@ -1842,11 +1842,11 @@
     },
     {
       "id": "body.atomos.ui.11",
-      "en": "Learn About Atomosphere",
-      "it": "",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
       "source": "atomos.html",
       "context": "class",
-      "fr": "En savoir plus sur l'atmosphère"
+      "fr": "Comment fonctionne la connectivité"
     },
     {
       "id": "body.atomos.ui.12",
@@ -2618,11 +2618,11 @@
     },
     {
       "id": "body.atomosphere.ui.1",
-      "en": "Connect. Unify. Control.",
-      "it": "",
+      "en": "Technology behind Electros",
+      "it": "Tecnologia dietro Electros",
       "source": "atomosphere.html",
       "context": "class",
-      "fr": "Connecter. Unifier. Contrôle."
+      "fr": "Technologie derrière Electros"
     },
     {
       "id": "body.atomosphere.ui.2",
@@ -14330,11 +14330,11 @@
     },
     {
       "id": "body.index.ui.5",
-      "en": "Learn About Atomosphere",
-      "it": "",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
       "source": "index.html",
       "context": "class",
-      "fr": "En savoir plus sur l'atmosphère"
+      "fr": "Comment fonctionne la connectivité"
     },
     {
       "id": "body.index.ui.6",
@@ -15466,11 +15466,11 @@
     },
     {
       "id": "body.products.h2.1",
-      "en": "One Platform, three Products",
-      "it": "",
+      "en": "One Platform, two Products",
+      "it": "Una piattaforma, due prodotti",
       "source": "products.html",
       "context": "<h2>",
-      "fr": "Une plateforme, trois produits"
+      "fr": "Une plateforme, deux produits"
     },
     {
       "id": "body.products.h2.2",
@@ -16986,11 +16986,11 @@
     },
     {
       "id": "body.solutions_index.p.9",
-      "en": "All solutions are built on our core products: AtomOS, Electros, and Atomosphere",
-      "it": "",
+      "en": "All solutions are built on our core products: AtomOS and Electros",
+      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS e Electros",
       "source": "solutions/index.html",
       "context": "<p>",
-      "fr": "Toutes les solutions sont construites sur nos produits principaux : AtomOS, Electros et Atomosphere"
+      "fr": "Toutes les solutions reposent sur nos produits principaux : AtomOS et Electros"
     },
     {
       "id": "body.solutions_index.ui.1",
@@ -18634,11 +18634,11 @@
     },
     {
       "id": "body.technology.h2.8",
-      "en": "Our Products",
-      "it": "",
+      "en": "Products & Technology",
+      "it": "Prodotti e tecnologia",
       "source": "technology.html",
       "context": "<h2>",
-      "fr": "Nos produits"
+      "fr": "Produits et technologie"
     },
     {
       "id": "body.technology.h2.9",
@@ -19322,11 +19322,11 @@
     },
     {
       "id": "body.technology.p.44",
-      "en": "Explore our comprehensive suite of cloud infrastructure products",
-      "it": "",
+      "en": "AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.",
+      "it": "AtomOS e Electros sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
       "source": "technology.html",
       "context": "<p>",
-      "fr": "Découvrez notre suite complète de produits d'infrastructure cloud"
+      "fr": "AtomOS et Electros sont les produits. Atomosphere est la technologie de connectivité qui alimente Electros."
     },
     {
       "id": "body.technology.p.45",
@@ -19346,11 +19346,11 @@
     },
     {
       "id": "body.technology.p.47",
-      "en": "Advanced networking platform providing global connectivity, intelligent load balancing, and seamless traffic management.",
-      "it": "",
+      "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
+      "it": "Fabric di connettività backend per Electros — un gateway API unificato su cloud privati e i tuoi account AWS, Azure, GCP e altri CSP.",
       "source": "technology.html",
       "context": "<p>",
-      "fr": "Plate-forme réseau avancée offrant une connectivité mondiale, un équilibrage de charge intelligent et une gestion transparente du trafic."
+      "fr": "Fabric de connectivité backend pour Electros — une passerelle API unifiée sur les clouds privés et vos comptes AWS, Azure, GCP et autres CSP."
     },
     {
       "id": "body.technology.p.48",
@@ -19554,11 +19554,11 @@
     },
     {
       "id": "body.thank-you_full-solution-demo-en.p.1",
-      "en": "Get ready to discover the full synergy of AtomOS, Electros, and Atomosphere. A confirmation has been sent to your email address.",
-      "it": "",
+      "en": "Get ready to discover the full synergy of AtomOS and Electros. A confirmation has been sent to your email address.",
+      "it": "Preparati a scoprire l'intera sinergia di AtomOS e Electros. Una conferma è stata inviata al tuo indirizzo email.",
       "source": "thank-you/full-solution-demo-en/index.html",
       "context": "<p>",
-      "fr": "Préparez-vous à découvrir toute la synergie d'AtomOS, Electros et Atomosphere. Une confirmation a été envoyée à votre adresse e-mail."
+      "fr": "Préparez-vous à découvrir toute la synergie d'AtomOS et d'Electros. Une confirmation a été envoyée à votre adresse e-mail."
     },
     {
       "id": "body.thank-you_full-solution-demo-en.p.2",
@@ -27274,19 +27274,19 @@
     },
     {
       "id": "ui.pages.products.title",
-      "en": "Elemento | Products | AtomOS, Electros & Atomosphere",
-      "it": "Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud",
+      "en": "Elemento | Products | AtomOS & Electros",
+      "it": "Elemento | Prodotti | AtomOS e Electros",
       "source": "src/i18n/ui",
       "context": "",
-      "fr": "Elemento | Produits | AtomOS, Électros & Atomosphère"
+      "fr": "Elemento | Produits | AtomOS et Electros"
     },
     {
       "id": "ui.pages.signup.description",
-      "en": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
-      "it": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
+      "en": "Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",
+      "it": "Registrati a Elemento per accedere ad AtomOS e Electros. Inizia con il piano gratuito o contatta le vendite.",
       "source": "src/i18n/ui",
       "context": "",
-      "fr": "Inscrivez-vous à Elemento pour accéder à AtomOS, Electros et Atomosphere. Commencez par notre niveau gratuit ou contactez le service commercial."
+      "fr": "Inscrivez-vous à Elemento pour accéder à AtomOS et Electros. Commencez avec notre offre gratuite ou contactez les ventes."
     },
     {
       "id": "ui.pages.signup.heroSubtitle",

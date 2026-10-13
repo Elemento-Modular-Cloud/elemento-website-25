@@ -76,9 +76,9 @@
     },
     {
       "id": "body.technology.h2.8",
-      "en": "Our Products",
-      "it": "",
-      "fr": "",
+      "en": "Products & Technology",
+      "it": "Prodotti e tecnologia",
+      "fr": "Produits et technologie",
       "source": "technology.html",
       "context": "<h2>"
     },
@@ -764,9 +764,9 @@
     },
     {
       "id": "body.technology.p.44",
-      "en": "Explore our comprehensive suite of cloud infrastructure products",
-      "it": "",
-      "fr": "",
+      "en": "AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.",
+      "it": "AtomOS e Electros sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
+      "fr": "AtomOS et Electros sont les produits. Atomosphere est la technologie de connectivité qui alimente Electros.",
       "source": "technology.html",
       "context": "<p>"
     },
@@ -788,9 +788,9 @@
     },
     {
       "id": "body.technology.p.47",
-      "en": "Advanced networking platform providing global connectivity, intelligent load balancing, and seamless traffic management.",
-      "it": "",
-      "fr": "",
+      "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
+      "it": "Fabric di connettività backend per Electros — un gateway API unificato su cloud privati e i tuoi account AWS, Azure, GCP e altri CSP.",
+      "fr": "Fabric de connectivité backend pour Electros — une passerelle API unifiée sur les clouds privés et vos comptes AWS, Azure, GCP et autres CSP.",
       "source": "technology.html",
       "context": "<p>"
     },

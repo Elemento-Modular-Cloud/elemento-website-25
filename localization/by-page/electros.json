@@ -308,9 +308,9 @@
     },
     {
       "id": "body.electros.li.5",
-      "en": "Deep integration with AtomOS and Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "Provider-agnostic provisioning with AtomOS integration",
+      "it": "Provisioning indipendente dal provider con integrazione AtomOS",
+      "fr": "Provisionnement indépendant du fournisseur avec intégration AtomOS",
       "source": "electros.html",
       "context": "<li>"
     },
@@ -612,9 +612,9 @@
     },
     {
       "id": "body.electros.p.8",
-      "en": "Stack integrations AtomOS and Atomosphere for provisioning and control",
-      "it": "",
-      "fr": "",
+      "en": "Unified API Atomosphere-powered connectivity across every connected cloud",
+      "it": "API unificata: connettività Atomosphere su ogni cloud connesso",
+      "fr": "API unifiée : connectivité Atomosphere sur chaque cloud connecté",
       "source": "electros.html",
       "context": "<p>"
     },

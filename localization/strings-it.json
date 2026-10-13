@@ -1612,8 +1612,8 @@
     },
     {
       "id": "body.atomos.ui.11",
-      "en": "Learn About Atomosphere",
-      "it": "Scopri di più su Atomosphere",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
       "source": "atomos.html",
       "context": "class"
     },
@@ -2291,8 +2291,8 @@
     },
     {
       "id": "body.atomosphere.ui.1",
-      "en": "Connect. Unify. Control.",
-      "it": "COLLEGARE. UNIFICARE. CONTROLLARE.",
+      "en": "Technology behind Electros",
+      "it": "Tecnologia dietro Electros",
       "source": "atomosphere.html",
       "context": "class"
     },
@@ -12539,8 +12539,8 @@
     },
     {
       "id": "body.index.ui.5",
-      "en": "Learn About Atomosphere",
-      "it": "Scopri di più su Atomosphere",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
       "source": "index.html",
       "context": "class"
     },
@@ -13533,8 +13533,8 @@
     },
     {
       "id": "body.products.h2.1",
-      "en": "One Platform, three Products",
-      "it": "Una piattaforma, tre prodotti",
+      "en": "One Platform, two Products",
+      "it": "Una piattaforma, due prodotti",
       "source": "products.html",
       "context": "<h2>"
     },
@@ -14863,8 +14863,8 @@
     },
     {
       "id": "body.solutions_index.p.9",
-      "en": "All solutions are built on our core products: AtomOS, Electros, and Atomosphere",
-      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS, Electros e Atomosphere",
+      "en": "All solutions are built on our core products: AtomOS and Electros",
+      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS e Electros",
       "source": "solutions/index.html",
       "context": "<p>"
     },
@@ -16305,8 +16305,8 @@
     },
     {
       "id": "body.technology.h2.8",
-      "en": "Our Products",
-      "it": "I nostri prodotti",
+      "en": "Products & Technology",
+      "it": "Prodotti e tecnologia",
       "source": "technology.html",
       "context": "<h2>"
     },
@@ -16907,8 +16907,8 @@
     },
     {
       "id": "body.technology.p.44",
-      "en": "Explore our comprehensive suite of cloud infrastructure products",
-      "it": "Esplora la nostra suite completa di prodotti per l'infrastruttura cloud",
+      "en": "AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.",
+      "it": "AtomOS e Electros sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
       "source": "technology.html",
       "context": "<p>"
     },
@@ -16928,8 +16928,8 @@
     },
     {
       "id": "body.technology.p.47",
-      "en": "Advanced networking platform providing global connectivity, intelligent load balancing, and seamless traffic management.",
-      "it": "Piattaforma di rete avanzata che fornisce connettività globale, bilanciamento intelligente del carico e gestione continua del traffico.",
+      "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
+      "it": "Fabric di connettività backend per Electros — un gateway API unificato su cloud privati e i tuoi account AWS, Azure, GCP e altri CSP.",
       "source": "technology.html",
       "context": "<p>"
     },
@@ -17110,8 +17110,8 @@
     },
     {
       "id": "body.thank-you_full-solution-demo-en.p.1",
-      "en": "Get ready to discover the full synergy of AtomOS, Electros, and Atomosphere. A confirmation has been sent to your email address.",
-      "it": "Preparati a scoprire l'intera sinergia di AtomOS, Electros e Atomosphere. Una conferma è stata inviata al tuo indirizzo email.",
+      "en": "Get ready to discover the full synergy of AtomOS and Electros. A confirmation has been sent to your email address.",
+      "it": "Preparati a scoprire l'intera sinergia di AtomOS e Electros. Una conferma è stata inviata al tuo indirizzo email.",
       "source": "thank-you/full-solution-demo-en/index.html",
       "context": "<p>"
     },
@@ -23865,15 +23865,15 @@
     },
     {
       "id": "ui.pages.products.title",
-      "en": "Elemento | Products | AtomOS, Electros & Atomosphere",
-      "it": "Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud",
+      "en": "Elemento | Products | AtomOS & Electros",
+      "it": "Elemento | Prodotti | AtomOS e Electros",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.signup.description",
-      "en": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
-      "it": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
+      "en": "Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",
+      "it": "Registrati a Elemento per accedere ad AtomOS e Electros. Inizia con il piano gratuito o contatta le vendite.",
       "source": "src/i18n/ui",
       "context": ""
     },

@@ -80,11 +80,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for managing GPU clusters and AI workloads"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "API layer for seamless integration with AI/ML frameworks and tools"
         }
       ],
       "cta": {
@@ -279,11 +274,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per la gestione di cluster GPU e carichi di lavoro AI"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API per un'integrazione perfetta con framework e strumenti AI/ML"
         }
       ],
       "cta": {
@@ -478,11 +468,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour la gestion des clusters GPU et des charges de travail d'IA"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API pour une intégration transparente avec les frameworks et outils AI/ML"
         }
       ],
       "cta": {

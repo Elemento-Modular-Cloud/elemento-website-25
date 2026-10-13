@@ -4,17 +4,17 @@
   "strings": [
     {
       "id": "body.atomosphere.h1.1",
-      "en": "Atomosphere: The Gateway to +235 data centers",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere: The connectivity fabric for Electros",
+      "it": "Atomosphere: il fabric di connettività per Electros",
+      "fr": "Atomosphere : le fabric de connectivité pour Electros",
       "source": "atomosphere.html",
       "context": "<h1>"
     },
     {
       "id": "body.atomosphere.h2.1",
-      "en": "The Federated Multicloud Gateway for Your Infrastructure",
-      "it": "",
-      "fr": "",
+      "en": "The connectivity technology behind Electros",
+      "it": "La tecnologia di connettività dietro Electros",
+      "fr": "La technologie de connectivité derrière Electros",
       "source": "atomosphere.html",
       "context": "<h2>"
     },
@@ -68,9 +68,9 @@
     },
     {
       "id": "body.atomosphere.h2.8",
-      "en": "Ready to unify your CSP APIs?",
-      "it": "",
-      "fr": "",
+      "en": "Ready to connect every cloud in Electros?",
+      "it": "Pronto a collegare ogni cloud in Electros?",
+      "fr": "Prêt à connecter chaque cloud dans Electros ?",
       "source": "atomosphere.html",
       "context": "<h2>"
     },
@@ -284,9 +284,9 @@
     },
     {
       "id": "body.atomosphere.li.2",
-      "en": "Products",
-      "it": "",
-      "fr": "",
+      "en": "Technology",
+      "it": "Tecnologia",
+      "fr": "Technologie",
       "source": "atomosphere.html",
       "context": "<li>"
     },
@@ -332,9 +332,9 @@
     },
     {
       "id": "body.atomosphere.li.8",
-      "en": "Deep integration with Electros orchestration dashboard and CLI",
-      "it": "",
-      "fr": "",
+      "en": "Powers Electros private-cloud and CSP connectivity",
+      "it": "Alimenta la connettività di Electros a cloud privati e CSP",
+      "fr": "Alimente la connectivité Electros aux clouds privés et CSP",
       "source": "atomosphere.html",
       "context": "<li>"
     },
@@ -348,9 +348,9 @@
     },
     {
       "id": "body.atomosphere.p.1",
-      "en": "Instead of learning separate APIs for AWS, Azure, Google Cloud, and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
+      "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare.",
+      "fr": "Atomosphere est le backend qui permet à Electros de se connecter aux clouds privés et à vos comptes CSP existants — une seule API sur AWS, Azure, Google Cloud, on-prem et plus. Ce n'est pas un produit séparé à acheter.",
       "source": "atomosphere.html",
       "context": "<p>"
     },
@@ -556,9 +556,9 @@
     },
     {
       "id": "body.atomosphere.p.33",
-      "en": "Experience unified multicloud management with Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere powers Electros connectivity — start with Electros to manage private clouds and existing CSP accounts from one place.",
+      "it": "Atomosphere alimenta la connettività di Electros — inizia con Electros per gestire cloud privati e account CSP esistenti da un unico posto.",
+      "fr": "Atomosphere alimente la connectivité d'Electros — commencez avec Electros pour gérer les clouds privés et vos comptes CSP existants depuis un seul endroit.",
       "source": "atomosphere.html",
       "context": "<p>"
     },
@@ -572,17 +572,17 @@
     },
     {
       "id": "body.atomosphere.p.5",
-      "en": "Elemento's Atomosphere gateway acts as a universal proxy that abstracts cloud provider APIs into a unified protocol , enabling cross-provider VM management , pricing comparison , and seamless migrations .",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere is the backend fabric that lets Electros act as a universal proxy over private clouds and CSP APIs — enabling cross-provider VM management, pricing comparison, and seamless migrations.",
+      "it": "Atomosphere è il fabric backend che consente a Electros di fungere da proxy universale su cloud privati e API CSP — abilitando gestione VM cross-provider, confronto prezzi e migrazioni senza interruzioni.",
+      "fr": "Atomosphere est le fabric backend qui permet à Electros d'agir comme un proxy universel sur les clouds privés et les API CSP — permettant la gestion VM multi-fournisseurs, la comparaison des prix et des migrations transparentes.",
       "source": "atomosphere.html",
       "context": "<p>"
     },
     {
       "id": "body.atomosphere.p.6",
-      "en": "Instead of learning separate APIs for AWS , Azure , Google Cloud , and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
+      "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare.",
+      "fr": "Atomosphere est le backend qui permet à Electros de se connecter aux clouds privés et à vos comptes CSP existants — une seule API sur AWS, Azure, Google Cloud, on-prem et plus. Ce n'est pas un produit séparé à acheter.",
       "source": "atomosphere.html",
       "context": "<p>"
     },
@@ -676,17 +676,17 @@
     },
     {
       "id": "body.atomosphere.ui.1",
-      "en": "Connect. Unify. Control.",
-      "it": "",
-      "fr": "",
+      "en": "Technology behind Electros",
+      "it": "Tecnologia dietro Electros",
+      "fr": "Technologie derrière Electros",
       "source": "atomosphere.html",
       "context": "class"
     },
     {
       "id": "body.atomosphere.ui.2",
-      "en": "Instead of learning separate APIs for AWS, Azure, Google Cloud, and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
-      "it": "",
-      "fr": "",
+      "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
+      "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare.",
+      "fr": "Atomosphere est le backend qui permet à Electros de se connecter aux clouds privés et à vos comptes CSP existants — une seule API sur AWS, Azure, Google Cloud, on-prem et plus. Ce n'est pas un produit séparé à acheter.",
       "source": "atomosphere.html",
       "context": "class"
     },
@@ -724,9 +724,9 @@
     },
     {
       "id": "body.atomosphere.ui.7",
-      "en": "Get started with Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "Get started with Electros",
+      "it": "Inizia con Electros",
+      "fr": "Commencer avec Electros",
       "source": "atomosphere.html",
       "context": "class"
     },

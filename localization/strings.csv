@@ -228,7 +228,7 @@ body.atomos.th.5,qcow2,,,atomos.html,<th>
 body.atomos.th.6,raw,,,atomos.html,<th>
 body.atomos.ui.1,Deploy. Virtualize. Scale.,,,atomos.html,class
 body.atomos.ui.10,Learn About Electros,,,atomos.html,class
-body.atomos.ui.11,Learn About Atomosphere,,,atomos.html,class
+body.atomos.ui.11,How connectivity works,,,atomos.html,class
 body.atomos.ui.12,Learn About Orbital,,,atomos.html,class
 body.atomos.ui.13,Buy AtomOS,,,atomos.html,class
 body.atomos.ui.14,Download Free Edition,,,atomos.html,class
@@ -325,7 +325,7 @@ body.atomosphere.th.4,Networking,,,atomosphere.html,<th>
 body.atomosphere.th.5,K8s,,,atomosphere.html,<th>
 body.atomosphere.th.6,Bare-metal,,,atomosphere.html,<th>
 body.atomosphere.th.7,Status,,,atomosphere.html,<th>
-body.atomosphere.ui.1,Connect. Unify. Control.,,,atomosphere.html,class
+body.atomosphere.ui.1,Technology behind Electros,,,atomosphere.html,class
 body.atomosphere.ui.2,"Instead of learning separate APIs for AWS, Azure, Google Cloud, and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",,,atomosphere.html,class
 body.atomosphere.ui.3,Discover the platform,,,atomosphere.html,class
 body.atomosphere.ui.4,Join as a Provider,,,atomosphere.html,class
@@ -2248,7 +2248,7 @@ body.index.ui.1,"Elemento lets you build and run your own cloud infrastructure w
 body.index.ui.2,Book a call,,,index.html,class
 body.index.ui.3,Learn About AtomOS,,,index.html,class
 body.index.ui.4,Learn About Electros,,,index.html,class
-body.index.ui.5,Learn About Atomosphere,,,index.html,class
+body.index.ui.5,How connectivity works,,,index.html,class
 body.index.ui.6,Start Free Trial,,,index.html,class
 body.index.ui.7,Book a call,,,index.html,class
 body.install-atomos.button.1,AtomOS Hypervisor,,,install-atomos.html,<button>
@@ -2390,7 +2390,7 @@ body.orbital.ui.5,Explore Configurations,,,orbital.html,class
 body.orbital.ui.6,Get a Quote,,,orbital.html,class
 body.orbital.ui.7,View All Products,,,orbital.html,class
 body.products.h1.1,Meet the Elemento Products,,,products.html,<h1>
-body.products.h2.1,"One Platform, three Products",,,products.html,<h2>
+body.products.h2.1,"One Platform, two Products",,,products.html,<h2>
 body.products.h2.2,Four Ways to Deploy Your Cloud,,,products.html,<h2>
 body.products.h2.3,Deployment Model Comparison,,,products.html,<h2>
 body.products.h2.4,Why Choose Elemento?,,,products.html,<h2>
@@ -2579,7 +2579,7 @@ body.solutions_index.p.5,"Empowering public institutions with sovereign, interop
 body.solutions_index.p.6,Run sensitive workloads across private and public clouds with full data governance. Enterprise-grade security with built-in compliance.,,,solutions/index.html,<p>
 body.solutions_index.p.7,"Empower system integrators to deliver sovereign, elastic cloud environments under their own brand. Build recurring-revenue models around infrastructure.",,,solutions/index.html,<p>
 body.solutions_index.p.8,"Replace VMware with modern virtualization platform. Get better performance, lower costs, and cloud-native architecture with our unified infrastructure solution.",,,solutions/index.html,<p>
-body.solutions_index.p.9,"All solutions are built on our core products: AtomOS, Electros, and Atomosphere",,,solutions/index.html,<p>
+body.solutions_index.p.9,"All solutions are built on our core products: AtomOS and Electros",,,solutions/index.html,<p>
 body.solutions_index.ui.1,Start Free Trial,,,solutions/index.html,class
 body.solutions_index.ui.2,Schedule Demo,,,solutions/index.html,class
 body.solutions_industrial.h2.1,From Shop Floor to Cloud Analytics,,,solutions/industrial.html,<h2>
@@ -2785,7 +2785,7 @@ body.technology.h2.4,System Architecture,,,technology.html,<h2>
 body.technology.h2.5,Technology Stack,,,technology.html,<h2>
 body.technology.h2.6,Green Cloud,,,technology.html,<h2>
 body.technology.h2.7,Innovation & Future Roadmap,,,technology.html,<h2>
-body.technology.h2.8,Our Products,,,technology.html,<h2>
+body.technology.h2.8,Products & Technology,,,technology.html,<h2>
 body.technology.h2.9,Experience Our Technology,,,technology.html,<h2>
 body.technology.h3.1,Elemento Cloud Network,,,technology.html,<h3>
 body.technology.h3.10,Control Plane,,,technology.html,<h3>
@@ -2871,10 +2871,10 @@ body.technology.p.40,Advanced algorithms that consider carbon intensity when mak
 body.technology.p.41,Collaborating with leading universities and research institutions to advance cloud computing technology.,,,technology.html,<p>
 body.technology.p.42,Extending our platform to edge locations for low-latency applications and IoT deployments.,,,technology.html,<p>
 body.technology.p.43,Implementing advanced security models that verify every request and connection.,,,technology.html,<p>
-body.technology.p.44,Explore our comprehensive suite of cloud infrastructure products,,,technology.html,<p>
+body.technology.p.44,AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.,,,technology.html,<p>
 body.technology.p.45,Advanced container orchestration platform built on Kubernetes for seamless deployment and management of containerized applications.,,,technology.html,<p>
 body.technology.p.46,Intelligent infrastructure automation platform that simplifies deployment and management of cloud resources across multiple providers.,,,technology.html,<p>
-body.technology.p.47,"Advanced networking platform providing global connectivity, intelligent load balancing, and seamless traffic management.",,,technology.html,<p>
+body.technology.p.47,"Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",,,technology.html,<p>
 body.technology.p.48,Ready to see how our cutting-edge technology can transform your infrastructure? Learn about our company background and explore our product offerings .,,,technology.html,<p>
 body.technology.p.5,"With a cloud-agnostic and infrastructure-neutral design, Elemento ensures businesses can scale , adapt , and innovate without vendor lock-in.",,,technology.html,<p>
 body.technology.p.6,Structured guides and specs on our BookStack wiki,,,technology.html,<p>
@@ -2900,7 +2900,7 @@ body.thank-you_atomos-demo-en.p.2,🔔 Action Required: Please check your inbox 
 body.thank-you_atomos-demo-en.ui.1,Explore AtomOS,,,thank-you/atomos-demo-en/index.html,class
 body.thank-you_atomos-demo-en.ui.2,Back to homepage,,,thank-you/atomos-demo-en/index.html,class
 body.thank-you_full-solution-demo-en.h1.1,Success! Your Demo is Scheduled.,,,thank-you/full-solution-demo-en/index.html,<h1>
-body.thank-you_full-solution-demo-en.p.1,"Get ready to discover the full synergy of AtomOS, Electros, and Atomosphere. A confirmation has been sent to your email address.",,,thank-you/full-solution-demo-en/index.html,<p>
+body.thank-you_full-solution-demo-en.p.1,"Get ready to discover the full synergy of AtomOS and Electros. A confirmation has been sent to your email address.",,,thank-you/full-solution-demo-en/index.html,<p>
 body.thank-you_full-solution-demo-en.p.2,🗓️ Please Note: Check your email and accept the calendar invite now to confirm your attendance. We look forward to building your sovereign AI infrastructure together.,,,thank-you/full-solution-demo-en/index.html,<p>
 body.thank-you_full-solution-demo-en.ui.1,Explore the platform,,,thank-you/full-solution-demo-en/index.html,class
 body.thank-you_full-solution-demo-en.ui.2,Back to homepage,,,thank-you/full-solution-demo-en/index.html,class
@@ -3883,8 +3883,8 @@ ui.pages.index.title,Elemento | Unified private and public Cloud platform,Elemen
 ui.pages.products.description,"Explore Elemento's modular cloud products: AtomOS hypervisor, Electros orchestration, and Atomosphere API layer.","Esplora i prodotti completi della piattaforma cloud di Elemento, tra cui l'hypervisor AtomOS, il dashboard di orchestrazione Electros e il proxy API Atomosphere per la gestione unificata dell'infrastruttura.","Explorez les produits complets de plate-forme cloud d'Elemento, notamment l'hyperviseur AtomOS, le tableau de bord d'orchestration Electros et le proxy API Atomosphere pour une gestion unifiée de l'infrastructure.",src/i18n/ui,
 ui.pages.products.heroSubtitle,Modular building blocks for a unified multi-cloud platform.,Componenti modulari per una piattaforma multi-cloud unificata.,Elementos de base modulaires pour une plateforme multi-cloud unifiée.,src/i18n/ui,
 ui.pages.products.heroTitle,Our products,I nostri prodotti,Nos produits,src/i18n/ui,
-ui.pages.products.title,"Elemento | Products | AtomOS, Electros & Atomosphere",Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud,Elemento | Produits | Plateforme de gestion et d'infrastructure cloud,src/i18n/ui,
-ui.pages.signup.description,"Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.,Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.,src/i18n/ui,
+ui.pages.products.title,"Elemento | Products | AtomOS & Electros",Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud,Elemento | Produits | Plateforme de gestion et d'infrastructure cloud,src/i18n/ui,
+ui.pages.signup.description,"Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.,Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.,src/i18n/ui,
 ui.pages.signup.heroSubtitle,Start building on Elemento today.,Inizia oggi a costruire su Elemento.,Commencez à construire sur Elemento dès aujourd’hui.,src/i18n/ui,
 ui.pages.signup.heroTitle,Sign up,Registrati,S'inscrire,src/i18n/ui,
 ui.pages.signup.title,Elemento | Sign up | Start your cloud platform journey,Iscriviti - Elemento Cloud Platform,S'inscrire - Plateforme Elemento Cloud,src/i18n/ui,

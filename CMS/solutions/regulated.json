@@ -80,11 +80,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Compliance-ready dashboard with audit and reporting capabilities"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Secure API layer with encryption and access controls"
         }
       ],
       "cta": {
@@ -279,11 +274,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard pronto per la conformità con funzionalità di audit e reporting"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API sicuro con crittografia e controlli di accesso"
         }
       ],
       "cta": {
@@ -478,11 +468,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord prêt pour la conformité avec des capacités d'audit et de reporting"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API sécurisée avec cryptage et contrôles d'accès"
         }
       ],
       "cta": {

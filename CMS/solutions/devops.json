@@ -54,11 +54,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for managing all your infrastructure"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "API layer for seamless cloud provider integration"
         }
       ],
       "cta": {
@@ -176,12 +171,6 @@
           "name": "Electros",
           "description": "Unified dashboard for infrastructure management",
           "link": "../electros.html"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "API layer for multi-cloud orchestration",
-          "link": "../atomosphere.html"
         }
       ]
     },
@@ -277,11 +266,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per la gestione di tutta la tua infrastruttura"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API per un'integrazione perfetta del provider cloud"
         }
       ],
       "cta": {
@@ -399,12 +383,6 @@
           "name": "Electros",
           "description": "Dashboard unificato per la gestione dell'infrastruttura",
           "link": "../electros.html"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API per l'orchestrazione multi-cloud",
-          "link": "../atomosphere.html"
         }
       ]
     },
@@ -500,11 +478,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour gérer toute votre infrastructure"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API pour une intégration transparente des fournisseurs de cloud"
         }
       ],
       "cta": {
@@ -622,12 +595,6 @@
           "name": "Electros",
           "description": "Tableau de bord unifié pour la gestion de l'infrastructure",
           "link": "../electros.html"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API pour l'orchestration multi-cloud",
-          "link": "../atomosphere.html"
         }
       ]
     },

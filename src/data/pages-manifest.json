@@ -81,10 +81,10 @@
     "legacyPath": "atomosphere.html",
     "group": "root",
     "slug": "atomosphere",
-    "title": "Atomosphere — Federated Multicloud Gateway | Elemento",
-    "description": "Elemento's multicloud API gateway connects 235+ clouds and on-prem nodes into one programmable network. Unified control, seamless portability.",
+    "title": "Atomosphere — Electros Connectivity Technology | Elemento",
+    "description": "Atomosphere is the connectivity technology behind Electros — unifying private clouds and existing CSP accounts into one programmable API.",
     "robots": "index, follow",
-    "ogType": "product",
+    "ogType": "website",
     "extraCss": [
       "css/atmosphere.css",
       "css/planet-styles/planet-cloudnetwork.css",

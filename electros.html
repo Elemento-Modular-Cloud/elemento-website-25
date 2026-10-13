@@ -602,18 +602,26 @@
                     </p>
                     <br>
                     <p>
-                        Whether you're managing VMs on <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">Google Cloud</span>, or your own <span class="pixel-word">on-premise infrastructure</span>, Electros gives you a unified interface for complete control.
+                        Whether you're managing VMs on <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">Google Cloud</span>, or your own <span class="pixel-word">private cloud</span>, Electros gives you a unified interface for complete control — connected through Atomosphere.
                     </p>
                     
                     <div class="feature-list-container">
                         <ul class="feature-list">
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Real-time cost monitoring for cloud workloads
+                                Connect private clouds and existing CSP accounts (AWS, Azure, GCP, 10+)
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Deep integration with AtomOS and Atomosphere
+                                One dashboard and one API across providers
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Cross-cloud cost comparison in the UI
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="hn hn-check"></i></span>
+                                Provider-agnostic provisioning with AtomOS integration
                             </li>
                         </ul>
                     </div>
@@ -621,6 +629,7 @@
                     <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
                         <a href="https://electros.cloud/#download" class="btn btn-primary"><i class="fas fa-download"></i> Download Electros Now</a>
                         <a href="https://docs.electros.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-book"></i> User guide</a>
+                        <a href="atomosphere.html" class="btn btn-outline">How connectivity works</a>
                     </div>
                 </div>
                 
@@ -656,16 +665,16 @@
                     <div class="stat-icon">
                         <i class="hn hn-cloud"></i>
                     </div>
-                    <h3>4+</h3>
-                    <p>Cloud & hybrid targets<br><small>AWS, Azure, Google Cloud, and on-prem infrastructure</small></p>
+                    <h3>10+</h3>
+                    <p>Cloud & hybrid targets<br><small>Private clouds plus AWS, Azure, GCP, and more CSP accounts</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
                         <i class="hn hn-cog"></i>
                     </div>
-                    <h3>2</h3>
-                    <p>Stack integrations<br><small>AtomOS and Atomosphere for provisioning and control</small></p>
+                    <h3>1</h3>
+                    <p>Unified API<br><small>Atomosphere-powered connectivity across every connected cloud</small></p>
                 </div>
 
                 
@@ -705,7 +714,7 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-grid" style="color: var(--blue);"></i></div>
                     <h3>Hybrid & Multicloud Orchestration</h3>
-                    <p>Deploy VMs across public clouds and private nodes seamlessly, balancing cost, performance, and compliance.</p>
+                    <p>Deploy VMs across private clouds and your existing CSP accounts seamlessly, balancing cost, performance, and compliance from one control plane.</p>
                 </div>
                 
                 <div class="card fade-in">
@@ -717,7 +726,7 @@
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-code" style="color: var(--purple);"></i></div>
                     <h3>Unified APIs</h3>
-                    <p>Automate infrastructure-as-code. Unified APIs power scripting, CI/CD, and cloud pipeline workflows.</p>
+                    <p>One Elemento API over AWS, Azure, GCP, and more — automate IaC, CI/CD, and cloud pipelines without learning every CSP SDK.</p>
                 </div>
             </div>
         </div>
@@ -835,12 +844,15 @@
             </div>
             <div class="grid grid-2 c4-content">
                 <div class="fade-in">
-                    <p>Electros is a desktop app backed by core services for hybrid and multicloud work. It automatically selects the appropriate protocol based on the guest OS—SSH for Linux, RDP/VNC for Windows—and keeps operations coherent across environments.</p>
+                    <p>Electros is a desktop app backed by core services for hybrid and multicloud work. Atomosphere translates CSP and private-cloud APIs into one Elemento protocol so Electros can provision, compare costs, and operate workloads without you switching consoles.</p>
                     <div class="c4-benefits">
                         <h4>Technical Architecture:</h4>
                         <ul>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span> Shared core services underpin the desktop app
+                            </li>
+                            <li class="feature-list-item">
+                                <span class="feature-check"><i class="fas fa-check"></i></span> Atomosphere API proxy over private clouds and CSP accounts
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span> Automatic protocol selection based on guest OS
@@ -849,16 +861,17 @@
                                 <span class="feature-check"><i class="fas fa-check"></i></span> Unified workflows for VMs, storage, and networking
                             </li>
                             <li class="feature-list-item">
-                                <span class="feature-check"><i class="fas fa-check"></i></span> Multi- and hybrid-cloud ready
+                                <span class="feature-check"><i class="fas fa-check"></i></span> Provider-agnostic provisioning and cost comparison
                             </li>
                         </ul>
                     </div>
+                    <p style="margin-top: var(--space-md);"><a href="atomosphere.html">How Atomosphere connectivity works →</a></p>
                 </div>
                 <div class="fade-in">
                     <div class="card c4-card">
                         <div class="feature-icon c4-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
                         <h3>Unified Architecture</h3>
-                        <p>The desktop app builds on shared foundations for VMs, storage, and networking, with coverage expanding in each release.</p>
+                        <p>Electros ⇄ Atomosphere ⇄ your private clouds and existing AWS/Azure/GCP accounts — one control plane, no middleman billing.</p>
                     </div>
                 </div>
             </div>

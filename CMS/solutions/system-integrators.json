@@ -80,11 +80,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "White-label dashboard for managing client infrastructure"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "API layer for seamless multi-cloud orchestration and management"
         }
       ],
       "cta": {
@@ -279,11 +274,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard white label per la gestione dell'infrastruttura del cliente"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API per orchestrazione e gestione multi-cloud senza interruzioni"
         }
       ],
       "cta": {
@@ -478,11 +468,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord en marque blanche pour la gestion de l'infrastructure client"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API pour une orchestration et une gestion multi-cloud transparentes"
         }
       ],
       "cta": {

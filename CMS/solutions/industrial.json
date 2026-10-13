@@ -80,11 +80,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Unified dashboard for monitoring all manufacturing systems"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "API layer for seamless integration with existing MES/ERP systems"
         }
       ],
       "cta": {
@@ -175,7 +170,7 @@
         },
         {
           "question": "Can Elemento work with our existing MES and ERP systems?",
-          "answer": "Yes! Elemento's Atomosphere API layer provides seamless integration with popular MES systems like SAP, Oracle, and custom solutions. We support both cloud and on-premise deployments."
+          "answer": "Yes! Electros provides seamless integration with popular MES systems like SAP, Oracle, and custom solutions via Elemento's connectivity layer. We support both cloud and on-premise deployments."
         },
         {
           "question": "How does Elemento handle the high data volumes from industrial sensors?",
@@ -279,11 +274,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard unificato per il monitoraggio di tutti i sistemi di produzione"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API per una perfetta integrazione con i sistemi MES/ERP esistenti"
         }
       ],
       "cta": {
@@ -374,7 +364,7 @@
         },
         {
           "question": "Elemento può funzionare con i nostri sistemi MES ed ERP esistenti?",
-          "answer": "Sì! Il livello API Atomosphere di Elemento fornisce un'integrazione perfetta con i sistemi MES più diffusi come SAP, Oracle e soluzioni personalizzate. Supportiamo sia implementazioni cloud che on-premise."
+          "answer": "Sì! Electros fornisce un'integrazione perfetta con i sistemi MES più diffusi come SAP, Oracle e soluzioni personalizzate tramite il layer di connettività Elemento. Supportiamo sia implementazioni cloud che on-premise."
         },
         {
           "question": "In che modo Elemento gestisce gli elevati volumi di dati provenienti dai sensori industriali?",
@@ -478,11 +468,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord unifié pour surveiller tous les systèmes de fabrication"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API pour une intégration transparente avec les systèmes MES/ERP existants"
         }
       ],
       "cta": {
@@ -573,7 +558,7 @@
         },
         {
           "question": "Elemento peut-il fonctionner avec nos systèmes MES et ERP existants ?",
-          "answer": "Oui! La couche API Atomosphere d'Elemento offre une intégration transparente avec les systèmes MES populaires tels que SAP, Oracle et les solutions personnalisées. Nous prenons en charge les déploiements cloud et sur site."
+          "answer": "Oui! Electros offre une intégration transparente avec les systèmes MES populaires tels que SAP, Oracle et les solutions personnalisées via la couche de connectivité Elemento. Nous prenons en charge les déploiements cloud et sur site."
         },
         {
           "question": "Comment Elemento gère-t-il les volumes élevés de données provenant des capteurs industriels ?",

@@ -80,11 +80,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Government dashboard with audit trails and compliance reporting"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Secure API layer for government system integration"
         }
       ],
       "cta": {
@@ -279,11 +274,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Dashboard governativo con percorsi di controllo e reporting di conformità"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Livello API sicuro per l'integrazione dei sistemi governativi"
         }
       ],
       "cta": {
@@ -478,11 +468,6 @@
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
           "description": "Tableau de bord du gouvernement avec pistes d'audit et rapports de conformité"
-        },
-        {
-          "logo": "../assets/logos/Atomosphere.svg",
-          "name": "Atomosphere",
-          "description": "Couche API sécurisée pour l'intégration des systèmes gouvernementaux"
         }
       ],
       "cta": {

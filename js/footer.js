@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul>
                         <li><a href="${localizedHref('atomos.html')}">Atomos</a></li>
                         <li><a href="${localizedHref('electros.html')}">Electros</a></li>
-                        <li><a href="${localizedHref('atomosphere.html')}">Atomosphere</a></li>
                         <li><a href="${localizedHref('products.html')}">${f.allProducts}</a></li>
                     </ul>
                 </div>
@@ -107,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul>
                         <li><a href="${localizedHref('about.html')}">${f.aboutUs}</a></li>
                         <li><a href="${localizedHref('technology.html')}">${ui.nav.technology}</a></li>
+                        <li><a href="${localizedHref('atomosphere.html')}">Atomosphere</a></li>
                         <li><a href="${localizedHref('contact.html')}">${ui.nav.contact}</a></li>
                         <li><a href="${localizedHref('careers.html')}">${f.careers}</a></li>
                     </ul>

@@ -596,17 +596,17 @@
     },
     {
       "id": "ui.pages.products.title",
-      "en": "Elemento | Products | AtomOS, Electros & Atomosphere",
-      "it": "Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud",
-      "fr": "Elemento | Produits | Plateforme de gestion et d'infrastructure cloud",
+      "en": "Elemento | Products | AtomOS & Electros",
+      "it": "Elemento | Prodotti | AtomOS e Electros",
+      "fr": "Elemento | Produits | AtomOS et Electros",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.signup.description",
-      "en": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
-      "it": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
-      "fr": "Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.",
+      "en": "Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",
+      "it": "Registrati a Elemento per accedere ad AtomOS e Electros. Inizia con il piano gratuito o contatta le vendite.",
+      "fr": "Inscrivez-vous à Elemento pour accéder à AtomOS et Electros. Commencez avec notre offre gratuite ou contactez les ventes.",
       "source": "src/i18n/ui",
       "context": ""
     },

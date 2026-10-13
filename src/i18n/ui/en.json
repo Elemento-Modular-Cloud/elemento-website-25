@@ -105,14 +105,14 @@
       "heroSubtitle": "We're here to help with sales, support, and partnerships."
     },
     "products": {
-      "title": "Elemento | Products | AtomOS, Electros & Atomosphere",
-      "description": "Explore Elemento's modular cloud products: AtomOS hypervisor, Electros orchestration, and Atomosphere API layer.",
+      "title": "Elemento | Products | AtomOS & Electros",
+      "description": "Explore Elemento's cloud platform products: AtomOS hypervisor and Electros orchestration dashboard for unified private and public cloud management.",
       "heroTitle": "Our products",
       "heroSubtitle": "Modular building blocks for a unified multi-cloud platform."
     },
     "signup": {
       "title": "Elemento | Sign up | Start your cloud platform journey",
-      "description": "Sign up for Elemento to access AtomOS, Electros, and Atomosphere. Start with our free tier or contact sales.",
+      "description": "Sign up for Elemento to access AtomOS and Electros. Start with our free tier or contact sales.",
       "heroTitle": "Sign up",
       "heroSubtitle": "Start building on Elemento today."
     },

@@ -63,7 +63,7 @@ Configure content in the `pageConfig` object:
 const pageConfig = {
     persona: 'your-persona',
     category: 'technical|industry|business',
-    products: ['atomos', 'electros', 'atomosphere'],
+    products: ['atomos', 'electros'],
     content: {
         hero: {
             tagline: 'Your Tagline',

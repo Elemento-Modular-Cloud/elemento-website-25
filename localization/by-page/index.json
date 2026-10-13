@@ -476,17 +476,17 @@
     },
     {
       "id": "body.index.li.15",
-      "en": "10+ CSPs unified via Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "10+ CSPs unified through Electros",
+      "it": "Oltre 10 CSP unificati tramite Electros",
+      "fr": "Plus de 10 CSP unifiés via Electros",
       "source": "index.html",
       "context": "<li>"
     },
     {
       "id": "body.index.li.16",
-      "en": "235+ data centers reachable through Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "235+ data centers reachable from one dashboard",
+      "it": "Oltre 235 data center raggiungibili da un'unica dashboard",
+      "fr": "Plus de 235 centres de données accessibles depuis un seul tableau de bord",
       "source": "index.html",
       "context": "<li>"
     },
@@ -1252,9 +1252,9 @@
     },
     {
       "id": "body.index.ui.5",
-      "en": "Learn About Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
+      "fr": "Comment fonctionne la connectivité",
       "source": "index.html",
       "context": "class"
     },

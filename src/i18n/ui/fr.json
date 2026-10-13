@@ -141,8 +141,8 @@
       "title": "AtomOS — Alimenter votre cloud avec l'hyperviseur Linux | Nuage Elementoaire"
     },
     "atomosphere": {
-      "description": "La passerelle API multicloud d'Elemento connecte plus de 235 cloud et nœuds sur site en un seul réseau programmable. Contrôle unifié, portabilité transparente.",
-      "title": "Atomosphère — Passerelle multicloud fédérée | Elemento"
+      "description": "Atomosphere est la technologie de connectivité derrière Electros — unifiant les clouds privés et les comptes CSP existants en une seule API programmable.",
+      "title": "Atomosphere — Technologie de connectivité pour Electros | Elemento"
     },
     "2023-01-01-7-cloud-curiorities": {
       "description": "Le cloud computing a révolutionné la façon dont nous travaillons, jouons et stockons des données. Une enquête...",
@@ -367,7 +367,7 @@
     },
     "full-solution-demo": {
       "description": "Votre démo solution complète est prénotée. Contrôlez l'e-mail et acceptez l'invitation au calendrier pour confirmer la participation.",
-      "title": "Démo confirmées — AtomOS, Electros et Atomosphere | Elemento"
+      "title": "Démo confirmées — AtomOS et Electros | Elemento"
     },
     "install-atomos": {
       "description": "Guide d'installation complet de l'hyperviseur AtomOS et du tableau de bord d'orchestration Electros. Faites fonctionner les deux produits en quelques minutes avec des instructions étape par étape.",
@@ -419,7 +419,7 @@
     },
     "full-solution-demo-en": {
       "description": "Votre démo complète de solution est réservée. Vérifiez votre courrier électronique et acceptez l'invitation du calendrier pour confirmer votre présence.",
-      "title": "Démo prévue — AtomOS, Electros &amp; Atomosphère | Elemento"
+      "title": "Démo prévue — AtomOS &amp; Electros | Elemento"
     },
     "partnership-dev": {
       "description": "Votre appel d’introduction au partenariat est programmé. Acceptez l'invitation du calendrier afin que les deux équipes soient alignées pour la conversation.",
@@ -635,7 +635,7 @@
     },
     "grazie_full-solution-demo": {
       "description": "Votre démo solution complète est prénotée. Contrôlez l'e-mail et acceptez l'invitation au calendrier pour confirmer la participation.",
-      "title": "Démo confirmées — AtomOS, Electros et Atomosphere | Elemento"
+      "title": "Démo confirmées — AtomOS et Electros | Elemento"
     },
     "solutions_ai": {
       "description": "Entraînez, déployez et faites évoluer les charges de travail d'IA de manière transparente sur les cloud et les nœuds sur site. Elemento fournit une gestion de cluster GPU et des environnements d'IA multi-cloud.",
@@ -675,7 +675,7 @@
     },
     "thank-you_full-solution-demo-en": {
       "description": "Votre démo complète de solution est réservée. Vérifiez votre courrier électronique et acceptez l'invitation du calendrier pour confirmer votre présence.",
-      "title": "Démo prévue — AtomOS, Electros &amp; Atomosphère | Elemento"
+      "title": "Démo prévue — AtomOS &amp; Electros | Elemento"
     },
     "thank-you_partnership-dev": {
       "description": "Votre appel d’introduction au partenariat est programmé. Acceptez l'invitation du calendrier afin que les deux équipes soient alignées pour la conversation.",

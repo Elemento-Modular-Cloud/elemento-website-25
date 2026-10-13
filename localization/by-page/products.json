@@ -12,9 +12,9 @@
     },
     {
       "id": "body.products.h2.1",
-      "en": "One Platform, three Products",
-      "it": "",
-      "fr": "",
+      "en": "One Platform, two Products",
+      "it": "Una piattaforma, due prodotti",
+      "fr": "Une plateforme, deux produits",
       "source": "products.html",
       "context": "<h2>"
     },
@@ -804,7 +804,7 @@
     },
     {
       "id": "meta.products.description",
-      "en": "Explore Elemento's comprehensive cloud platform products including AtomOS hypervisor, Electros orchestration dashboard, and Atomosphere API proxy for unified infrastructure management.",
+      "en": "Explore Elemento's cloud platform products: AtomOS hypervisor and Electros orchestration dashboard for unified private and public cloud management.",
       "it": "",
       "fr": "",
       "source": "products.html",

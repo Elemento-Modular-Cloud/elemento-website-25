@@ -1372,9 +1372,9 @@
     },
     {
       "id": "body.atomos.ui.11",
-      "en": "Learn About Atomosphere",
-      "it": "",
-      "fr": "",
+      "en": "How connectivity works",
+      "it": "Come funziona la connettività",
+      "fr": "Comment fonctionne la connectivité",
       "source": "atomos.html",
       "context": "class"
     },
