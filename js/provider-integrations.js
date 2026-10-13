@@ -30,15 +30,15 @@ class ProviderIntegrationsHandler {
     setup() {
         console.log('🚀 Initializing Provider Integrations Handler...');
         
-        // Find the table container
-        this.tableContainer = document.querySelector('.comparison-table tbody');
-        this.statusCards = document.querySelectorAll('.grid.grid-3 .card');
+        // Scope to the provider integrations table so pages with other comparison tables work.
+        this.tableContainer = document.querySelector('.provider-integrations-table tbody');
+        this.statusCards = document.querySelectorAll('[data-provider-status-cards] .card');
         
         console.log('🎯 Table container found:', !!this.tableContainer);
         console.log('🎯 Status cards found:', this.statusCards.length);
         
         if (!this.tableContainer) {
-            console.error('❌ Could not find comparison table tbody');
+            console.error('❌ Could not find provider-integrations-table tbody');
             console.error('🔍 Available tables:', document.querySelectorAll('table').length);
             console.error('🔍 Available tbody elements:', document.querySelectorAll('tbody').length);
             return;

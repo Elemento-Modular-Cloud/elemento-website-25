@@ -386,17 +386,26 @@
 .electros-intro-layout {
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
     gap: var(--space-2xl);
+    align-items: start;
+}
+
+/* Prevent iframe/media intrinsic min-width from crushing the copy column */
+.electros-intro-layout > * {
+    min-width: 0;
 }
 
 .content-image.electros-intro-media {
     max-height: none;
+    height: auto;
     align-items: stretch;
     width: 100%;
+    max-width: 100%;
 }
 
 .electros-intro-video {
     position: relative;
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
     padding: 0;
     border-radius: var(--radius-2xl);

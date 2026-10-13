@@ -629,7 +629,7 @@
                     <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
                         <a href="https://electros.cloud/#download" class="btn btn-primary"><i class="fas fa-download"></i> Download Electros Now</a>
                         <a href="https://docs.electros.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-book"></i> User guide</a>
-                        <a href="atomosphere.html" class="btn btn-outline">How connectivity works</a>
+                        <a href="#atomosphere" class="btn btn-outline">Atomosphere &amp; providers</a>
                     </div>
                 </div>
                 
@@ -878,8 +878,102 @@
         </div>
     </section>
 
+    <!-- Atomosphere connectivity features -->
+    <section class="section features" id="atomosphere">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connected through <span class="highlight-pixel">Atomosphere</span></h2>
+                <p class="section-subtitle">Atomosphere is the connectivity technology behind Electros — one Elemento API over private clouds and your existing CSP accounts</p>
+            </div>
 
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-shuffle" style="color: var(--blue);"></i></div>
+                    <h3>Universal API Abstraction</h3>
+                    <p>Learn one API — <span class="pixel-word">Elemento's</span> — while Atomosphere translates to <span class="pixel-word">AWS</span>, <span class="pixel-word">Azure</span>, <span class="pixel-word">GCP</span>, <span class="pixel-word">on-prem KVM</span>, and more.</p>
+                </div>
 
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-box-usd" style="color: var(--green);"></i></div>
+                    <h3>Dynamic Cloud-Cost Comparison</h3>
+                    <p>Electros surfaces cost-per-VM metrics across CSP accounts. Atomosphere helps identify the <span class="pixel-word">best-priced resources</span> across providers in real time.</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-bolt" style="color: var(--orange);"></i></div>
+                    <h3>Provider-Agnostic Provisioning</h3>
+                    <p>Launch a VM wherever you choose — private cloud or public CSP — through the same Electros dashboard or script.</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--purple);"></i></div>
+                    <h3>Expandable CSP Integration</h3>
+                    <p><span class="pixel-word">10+ major CSPs</span> supported today, with ongoing API integrations and <span class="pixel-word">custom provider support</span> for enterprise customers.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--space-2xl);">
+                <a href="atomosphere.html" class="btn btn-secondary">Deep dive into Atomosphere</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provider Integration Status Section -->
+    <section class="section" id="providers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Provider Compatibility</h2>
+                <p class="section-subtitle">What Electros can manage today via Atomosphere — supported functionalities across integrated CSPs</p>
+            </div>
+
+            <div class="comparison-table fade-in">
+                <div class="table-container comparison-table-container">
+                    <table class="comparison-table provider-integrations-table">
+                        <thead>
+                            <tr class="comparison-table-header">
+                                <th>Provider</th>
+                                <th>VM Management</th>
+                                <th>Object storage</th>
+                                <th>Block storage</th>
+                                <th>Networking</th>
+                                <th>K8s</th>
+                                <th>DBaaS</th>
+                                <th>Bare-metal</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9" style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                                    <p>Loading provider data...</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-3" data-provider-status-cards style="margin-top: var(--space-xl);">
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-check-circle" style="color: var(--green);"></i></div>
+                    <h4>Production Ready</h4>
+                    <p>Loading...</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-clock" style="color: var(--yellow);"></i></div>
+                    <h4>Beta Testing</h4>
+                    <p>Loading...</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--red);"></i></div>
+                    <h4>In Development</h4>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Support Table Section -->
     <section class="section">
@@ -1010,6 +1104,7 @@
     <script src="js/faq.js" defer></script>
     <script src="js/footer.js" defer></script>
     <script src="js/atmosphere_hero_with_logo.js" defer></script>
+    <script src="js/provider-integrations.js" defer></script>
     <script src="js/themes.js" defer></script>
     <script src="js/main.js" defer></script>
 </body>
