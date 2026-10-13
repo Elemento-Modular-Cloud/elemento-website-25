@@ -1497,7 +1497,7 @@
                     "type": "matcher",
                     "sub_type": "vm",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "STaaS",
@@ -1505,7 +1505,7 @@
                     "type": "storage",
                     "sub_type": "storage",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "blockStorage",
@@ -1513,7 +1513,7 @@
                     "type": "storage",
                     "sub_type": "blockstorage",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "networking",
@@ -1521,7 +1521,7 @@
                     "type": "network",
                     "sub_type": "network",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "k8s",
@@ -1529,7 +1529,7 @@
                     "type": "service",
                     "sub_type": "container",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "costApi",
@@ -1537,7 +1537,7 @@
                     "type": "matcher",
                     "sub_type": "billing",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "dbaas",
@@ -1727,7 +1727,7 @@
                             "certifications": []
                         }
                     },
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "STaaS",
@@ -1735,7 +1735,7 @@
                     "type": "storage",
                     "sub_type": "storage",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "blockStorage",
@@ -1743,7 +1743,7 @@
                     "type": "storage",
                     "sub_type": "blockstorage",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "networking",
@@ -1751,7 +1751,7 @@
                     "type": "network",
                     "sub_type": "network",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "k8s",
@@ -1759,7 +1759,7 @@
                     "type": "service",
                     "sub_type": "container",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "costApi",
@@ -1767,7 +1767,7 @@
                     "type": "matcher",
                     "sub_type": "billing",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "dbaas",
@@ -1775,7 +1775,7 @@
                     "type": "service",
                     "sub_type": "database",
                     "regions": {},
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "bareMetal",
