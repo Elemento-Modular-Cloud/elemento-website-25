@@ -119,6 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li><a href="${localizedHref('brand-guidelines.html')}">${f.brandGuidelines}</a></li>
                         <li><a href="${localizedHref('blog.html')}">${ui.nav.blog}</a></li>
                         <li><a href="${localizedHref('videos.html')}">${ui.nav.videos}</a></li>
+                        <li><a href="https://press.elemento.cloud" target="_blank" rel="noopener noreferrer">${ui.nav.pressKit || 'Press kit'}</a></li>
+                        <li><a href="https://academy.elemento.cloud" target="_blank" rel="noopener noreferrer">${ui.nav.academy || 'Academy'}</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

@@ -356,6 +356,8 @@ class Navbar {
                                 <ul>
                                     <li><a href="${this.getLocalizedHref('blog.html')}" class="dropdown-link ${this.getActiveClassByStem('blog')}">${this.t('nav.blog', 'Blog')}</a></li>
                                     <li><a href="${this.getLocalizedHref('videos.html')}" class="dropdown-link ${this.getActiveClassByStem('videos')}">${this.t('nav.videos', 'Videos')}</a></li>
+                                    <li><a href="https://press.elemento.cloud" class="dropdown-link" target="_blank" rel="noopener noreferrer">${this.t('nav.pressKit', 'Press kit')}</a></li>
+                                    <li><a href="https://academy.elemento.cloud" class="dropdown-link" target="_blank" rel="noopener noreferrer">${this.t('nav.academy', 'Academy')}</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -394,6 +396,8 @@ class Navbar {
                             <ul>
                                 <li><a href="${this.getLocalizedHref('blog.html')}" class="dropdown-link ${this.getActiveClassByStem('blog')}">${this.t('nav.blog', 'Blog')}</a></li>
                                 <li><a href="${this.getLocalizedHref('videos.html')}" class="dropdown-link ${this.getActiveClassByStem('videos')}">${this.t('nav.videos', 'Videos')}</a></li>
+                                <li><a href="https://press.elemento.cloud" class="dropdown-link" target="_blank" rel="noopener noreferrer">${this.t('nav.pressKit', 'Press kit')}</a></li>
+                                <li><a href="https://academy.elemento.cloud" class="dropdown-link" target="_blank" rel="noopener noreferrer">${this.t('nav.academy', 'Academy')}</a></li>
                             </ul>
                         </div>
                     </div>

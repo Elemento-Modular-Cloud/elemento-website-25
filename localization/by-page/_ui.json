@@ -403,6 +403,14 @@
       "context": ""
     },
     {
+      "id": "ui.nav.academy",
+      "en": "Academy",
+      "it": "Academy",
+      "fr": "Academy",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.nav.blog",
       "en": "Blog",
       "it": "Blog",
@@ -431,6 +439,14 @@
       "en": "Elemento home",
       "it": "Home Elemento",
       "fr": "Accueil Elemento",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.nav.pressKit",
+      "en": "Press kit",
+      "it": "Press kit",
+      "fr": "Press kit",
       "source": "src/i18n/ui",
       "context": ""
     },
