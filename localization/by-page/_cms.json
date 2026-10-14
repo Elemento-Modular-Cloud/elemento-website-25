@@ -1,7 +1,31 @@
 {
   "page": "_cms",
-  "count": 717,
+  "count": 737,
   "strings": [
+    {
+      "id": "CMS.atomosphere-videos-en.0.title",
+      "en": "Discover Atomosphere",
+      "it": "",
+      "fr": "",
+      "source": "CMS/atomosphere-videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.atomosphere-videos-en.1.title",
+      "en": "Atmosphere Demo",
+      "it": "",
+      "fr": "",
+      "source": "CMS/atomosphere-videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.atomosphere-videos-en.2.title",
+      "en": "Atomosphere Benefits",
+      "it": "",
+      "fr": "",
+      "source": "CMS/atomosphere-videos-en.json",
+      "context": ""
+    },
     {
       "id": "CMS.orbital.0.description",
       "en": "Entry-level server configuration for small deployments and development environments",
@@ -84,7 +108,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aruba.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -108,7 +132,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aruba.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -124,7 +148,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aruba.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -132,6 +156,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aruba.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aruba.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -147,72 +179,8 @@
       "context": ""
     },
     {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.0.display_name",
-      "en": "VM Management",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.1.display_name",
-      "en": "Storage as a Service",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.2.display_name",
-      "en": "Block Storage",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.3.display_name",
-      "en": "Networking",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.4.display_name",
-      "en": "Kubernetes",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.5.display_name",
-      "en": "Cost API",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.services.6.display_name",
-      "en": "Bare metal",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.arubacloud.svg_filename",
-      "en": "arubacloud_icon.svg",
-      "it": "",
-      "fr": "",
-      "source": "CMS/provider-integrations.json",
-      "context": ""
-    },
-    {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aws.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -236,7 +204,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aws.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -252,7 +220,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aws.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -260,6 +228,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aws.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.aws.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -276,7 +252,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.azure.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -300,7 +276,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.azure.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -316,7 +292,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.azure.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -324,6 +300,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.azure.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.azure.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -340,7 +324,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.clastix.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -364,7 +348,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.clastix.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -444,7 +428,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.clastix.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -452,6 +436,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.clastix.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.clastix.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -468,7 +460,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.cubbit.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -492,7 +484,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.cubbit.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -508,7 +500,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.cubbit.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -516,6 +508,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.cubbit.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.cubbit.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -532,7 +532,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.gigas.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -556,7 +556,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.gigas.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -572,7 +572,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.gigas.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -580,6 +580,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.gigas.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.gigas.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -596,7 +604,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.google.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -620,7 +628,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.google.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -636,7 +644,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.google.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -644,6 +652,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.google.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.google.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -660,7 +676,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.hetzner.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -684,7 +700,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.hetzner.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -700,7 +716,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.hetzner.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -708,6 +724,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.hetzner.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.hetzner.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -724,7 +748,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ibm.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -748,7 +772,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ibm.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -764,7 +788,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ibm.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -772,6 +796,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ibm.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ibm.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -788,7 +820,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.impossiblecloud.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -812,7 +844,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.impossiblecloud.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -828,7 +860,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.impossiblecloud.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -836,6 +868,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.impossiblecloud.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.impossiblecloud.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -852,7 +892,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ionos.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -876,7 +916,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ionos.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -892,7 +932,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ionos.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -900,6 +940,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ionos.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ionos.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -915,8 +963,80 @@
       "context": ""
     },
     {
-      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.0.display_name",
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.0.display_name",
       "en": "VM Management",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.1.display_name",
+      "en": "Storage as a Service",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.2.display_name",
+      "en": "Block Storage",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.3.display_name",
+      "en": "Networking",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.4.display_name",
+      "en": "Kubernetes",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.5.display_name",
+      "en": "Cost API",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.6.display_name",
+      "en": "DBaaS",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.services.7.display_name",
+      "en": "Bare metal",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.leaseweb.svg_filename",
+      "en": "leaseweb_icon.svg",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.0.display_name",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -940,7 +1060,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -956,7 +1076,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -964,6 +1084,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.linode.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -980,7 +1108,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.oracle.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1004,7 +1132,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.oracle.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1020,7 +1148,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.oracle.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1028,6 +1156,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.oracle.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.oracle.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -1044,7 +1180,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ovh.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1068,7 +1204,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ovh.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1084,7 +1220,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ovh.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1092,6 +1228,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ovh.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.ovh.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -1108,7 +1252,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.scaleway.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1132,7 +1276,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.scaleway.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1148,7 +1292,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.scaleway.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1156,6 +1300,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.scaleway.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.scaleway.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -1172,7 +1324,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.upcloud.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1196,7 +1348,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.upcloud.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1212,7 +1364,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.upcloud.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1220,6 +1372,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.upcloud.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.upcloud.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -1236,7 +1396,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.wasabi.services.0.display_name",
-      "en": "VM Management",
+      "en": "Gestion des machines virtuelles",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1260,7 +1420,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.wasabi.services.3.display_name",
-      "en": "Networking",
+      "en": "Reté",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1276,7 +1436,7 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.wasabi.services.5.display_name",
-      "en": "Cost API",
+      "en": "API des coûts",
       "it": "",
       "fr": "",
       "source": "CMS/provider-integrations.json",
@@ -1284,6 +1444,14 @@
     },
     {
       "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.wasabi.services.6.display_name",
+      "en": "Métal nu",
+      "it": "",
+      "fr": "",
+      "source": "CMS/provider-integrations.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.provider-integrations.ELEMENTO_SUPPORTED_PROVIDERS.wasabi.services.7.display_name",
       "en": "Bare metal",
       "it": "",
       "fr": "",
@@ -1684,14 +1852,6 @@
     },
     {
       "id": "CMS.solutions.ai.solution.items.0.description",
-      "en": "GPU-optimized hypervisor for consistent AI/ML environments",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/ai.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.ai.solution.items.1.description",
       "en": "Unified dashboard for managing GPU clusters and AI workloads",
       "it": "",
       "fr": "",
@@ -1699,8 +1859,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.ai.solution.items.2.description",
-      "en": "API layer for seamless integration with AI/ML frameworks and tools",
+      "id": "CMS.solutions.ai.solution.items.1.description",
+      "en": "GPU-optimized hypervisor for consistent AI/ML environments",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/ai.json",
@@ -2204,14 +2364,6 @@
     },
     {
       "id": "CMS.solutions.devops.products.items.0.description",
-      "en": "Production-grade hypervisor for consistent environments",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/devops.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.devops.products.items.1.description",
       "en": "Unified dashboard for infrastructure management",
       "it": "",
       "fr": "",
@@ -2219,8 +2371,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.devops.products.items.2.description",
-      "en": "API layer for multi-cloud orchestration",
+      "id": "CMS.solutions.devops.products.items.1.description",
+      "en": "Production-grade hypervisor for consistent environments",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/devops.json",
@@ -2260,14 +2412,6 @@
     },
     {
       "id": "CMS.solutions.devops.solution.items.0.description",
-      "en": "Consistent hypervisor environment across all deployments",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/devops.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.devops.solution.items.1.description",
       "en": "Unified dashboard for managing all your infrastructure",
       "it": "",
       "fr": "",
@@ -2275,8 +2419,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.devops.solution.items.2.description",
-      "en": "API layer for seamless cloud provider integration",
+      "id": "CMS.solutions.devops.solution.items.1.description",
+      "en": "Consistent hypervisor environment across all deployments",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/devops.json",
@@ -2500,7 +2644,7 @@
     },
     {
       "id": "CMS.solutions.industrial.faq.items.2.answer",
-      "en": "Yes! Elemento's Atomosphere API layer provides seamless integration with popular MES systems like SAP, Oracle, and custom solutions. We support both cloud and on-premise deployments.",
+      "en": "Yes! Electros provides seamless integration with popular MES systems like SAP, Oracle, and custom solutions via Elemento's connectivity layer. We support both cloud and on-premise deployments.",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/industrial.json",
@@ -2796,14 +2940,6 @@
     },
     {
       "id": "CMS.solutions.industrial.solution.items.0.description",
-      "en": "Consistent hypervisor environment for edge and cloud processing",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/industrial.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.industrial.solution.items.1.description",
       "en": "Unified dashboard for monitoring all manufacturing systems",
       "it": "",
       "fr": "",
@@ -2811,8 +2947,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.industrial.solution.items.2.description",
-      "en": "API layer for seamless integration with existing MES/ERP systems",
+      "id": "CMS.solutions.industrial.solution.items.1.description",
+      "en": "Consistent hypervisor environment for edge and cloud processing",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/industrial.json",
@@ -3332,14 +3468,6 @@
     },
     {
       "id": "CMS.solutions.public-sector.solution.items.0.description",
-      "en": "Sovereign hypervisor environment with government-grade security",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/public-sector.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.public-sector.solution.items.1.description",
       "en": "Government dashboard with audit trails and compliance reporting",
       "it": "",
       "fr": "",
@@ -3347,8 +3475,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.public-sector.solution.items.2.description",
-      "en": "Secure API layer for government system integration",
+      "id": "CMS.solutions.public-sector.solution.items.1.description",
+      "en": "Sovereign hypervisor environment with government-grade security",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/public-sector.json",
@@ -3868,14 +3996,6 @@
     },
     {
       "id": "CMS.solutions.regulated.solution.items.0.description",
-      "en": "Secure hypervisor environment with built-in compliance controls",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/regulated.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.regulated.solution.items.1.description",
       "en": "Compliance-ready dashboard with audit and reporting capabilities",
       "it": "",
       "fr": "",
@@ -3883,8 +4003,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.regulated.solution.items.2.description",
-      "en": "Secure API layer with encryption and access controls",
+      "id": "CMS.solutions.regulated.solution.items.1.description",
+      "en": "Secure hypervisor environment with built-in compliance controls",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/regulated.json",
@@ -4404,14 +4524,6 @@
     },
     {
       "id": "CMS.solutions.system-integrators.solution.items.0.description",
-      "en": "Production-grade hypervisor for consistent multi-tenant environments",
-      "it": "",
-      "fr": "",
-      "source": "CMS/solutions/system-integrators.json",
-      "context": ""
-    },
-    {
-      "id": "CMS.solutions.system-integrators.solution.items.1.description",
       "en": "White-label dashboard for managing client infrastructure",
       "it": "",
       "fr": "",
@@ -4419,8 +4531,8 @@
       "context": ""
     },
     {
-      "id": "CMS.solutions.system-integrators.solution.items.2.description",
-      "en": "API layer for seamless multi-cloud orchestration and management",
+      "id": "CMS.solutions.system-integrators.solution.items.1.description",
+      "en": "Production-grade hypervisor for consistent multi-tenant environments",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/system-integrators.json",
@@ -4916,7 +5028,7 @@
     },
     {
       "id": "CMS.solutions.vmware-alternative.solution.items.0.description",
-      "en": "Modern hypervisor replacing VMware vSphere with better performance",
+      "en": "Unified management console replacing VMware vCenter",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/vmware-alternative.json",
@@ -4924,7 +5036,7 @@
     },
     {
       "id": "CMS.solutions.vmware-alternative.solution.items.1.description",
-      "en": "Unified management console replacing VMware vCenter",
+      "en": "Modern hypervisor replacing VMware vSphere with better performance",
       "it": "",
       "fr": "",
       "source": "CMS/solutions/vmware-alternative.json",
@@ -5652,7 +5764,7 @@
     },
     {
       "id": "CMS.videos-en.0.title",
-      "en": "Elemento's Vision",
+      "en": "AtomOS Free",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5660,7 +5772,7 @@
     },
     {
       "id": "CMS.videos-en.1.title",
-      "en": "C4 Protocol",
+      "en": "The Metacloud",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5668,6 +5780,54 @@
     },
     {
       "id": "CMS.videos-en.10.title",
+      "en": "Electros USPs",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.11.title",
+      "en": "Discover Atomosphere",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.12.title",
+      "en": "Atmosphere Demo",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.13.title",
+      "en": "Atomosphere Benefits",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.14.title",
+      "en": "AtomOS vs. VMware",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.15.title",
+      "en": "AtomOS vs. Proxmox",
+      "it": "",
+      "fr": "",
+      "source": "CMS/videos-en.json",
+      "context": ""
+    },
+    {
+      "id": "CMS.videos-en.16.title",
       "en": "AtomOS vs. Hyper-V",
       "it": "",
       "fr": "",
@@ -5676,7 +5836,7 @@
     },
     {
       "id": "CMS.videos-en.2.title",
-      "en": "Discover Atom OS",
+      "en": "New AtomOS Features",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5684,7 +5844,7 @@
     },
     {
       "id": "CMS.videos-en.3.title",
-      "en": "AtomOS demo",
+      "en": "Elemento's Vision",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5692,7 +5852,7 @@
     },
     {
       "id": "CMS.videos-en.4.title",
-      "en": "AtomOS USPs",
+      "en": "C4 Protocol",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5700,7 +5860,7 @@
     },
     {
       "id": "CMS.videos-en.5.title",
-      "en": "Discover Electros",
+      "en": "Introducing AtomOS",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5708,7 +5868,7 @@
     },
     {
       "id": "CMS.videos-en.6.title",
-      "en": "Electros Demo",
+      "en": "AtomOS demo",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5716,7 +5876,7 @@
     },
     {
       "id": "CMS.videos-en.7.title",
-      "en": "Electros USPs",
+      "en": "AtomOS USPs",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5724,7 +5884,7 @@
     },
     {
       "id": "CMS.videos-en.8.title",
-      "en": "AtomOS vs. VMware",
+      "en": "Discover Electros",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",
@@ -5732,7 +5892,7 @@
     },
     {
       "id": "CMS.videos-en.9.title",
-      "en": "AtomOS vs. Proxmox",
+      "en": "Electros Demo",
       "it": "",
       "fr": "",
       "source": "CMS/videos-en.json",

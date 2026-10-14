@@ -1,6 +1,6 @@
 {
   "page": "solutions_public-sector",
-  "count": 37,
+  "count": 33,
   "strings": [
     {
       "id": "body.solutions_public-sector.h2.1",
@@ -35,14 +35,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h3.10",
-      "en": "Data Spaces: The Value of Connected Data",
-      "it": "",
-      "fr": "",
-      "source": "solutions/public-sector.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_public-sector.h3.2",
       "en": "Citizen Services",
       "it": "",
@@ -68,14 +60,6 @@
     },
     {
       "id": "body.solutions_public-sector.h3.5",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/public-sector.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_public-sector.h3.6",
       "en": "Electros",
       "it": "",
       "fr": "",
@@ -83,15 +67,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h3.7",
-      "en": "Atomosphere",
+      "id": "body.solutions_public-sector.h3.6",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/public-sector.html",
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h3.8",
+      "id": "body.solutions_public-sector.h3.7",
       "en": "Italy's National Cloud",
       "it": "",
       "fr": "",
@@ -99,7 +83,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h3.9",
+      "id": "body.solutions_public-sector.h3.8",
       "en": "The European Open Science Cloud",
       "it": "",
       "fr": "",
@@ -107,15 +91,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h4.1",
-      "en": "Sovereign Hypervisor",
+      "id": "body.solutions_public-sector.h3.9",
+      "en": "Data Spaces: The Value of Connected Data",
       "it": "",
       "fr": "",
       "source": "solutions/public-sector.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.solutions_public-sector.h4.2",
+      "id": "body.solutions_public-sector.h4.1",
       "en": "Government Services Dashboard",
       "it": "",
       "fr": "",
@@ -123,8 +107,8 @@
       "context": "<h4>"
     },
     {
-      "id": "body.solutions_public-sector.h4.3",
-      "en": "Government Integration API",
+      "id": "body.solutions_public-sector.h4.2",
+      "en": "Sovereign Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/public-sector.html",
@@ -140,14 +124,6 @@
     },
     {
       "id": "body.solutions_public-sector.p.10",
-      "en": "Discover insights on government cloud sovereignty, smart city initiatives, and public sector digital transformation.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/public-sector.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_public-sector.p.11",
       "en": "Learn about sovereign cloud initiatives and how governments are building national digital infrastructure.",
       "it": "",
       "fr": "",
@@ -155,7 +131,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_public-sector.p.12",
+      "id": "body.solutions_public-sector.p.11",
       "en": "Explore how public sector data spaces are enabling research and innovation across government institutions.",
       "it": "",
       "fr": "",
@@ -163,7 +139,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_public-sector.p.13",
+      "id": "body.solutions_public-sector.p.12",
       "en": "Understand how smart cities leverage connected data for better citizen services and urban planning.",
       "it": "",
       "fr": "",
@@ -212,14 +188,6 @@
     },
     {
       "id": "body.solutions_public-sector.p.7",
-      "en": "Government-grade hypervisor with air-gapped deployment capabilities, encryption at rest, and compliance-ready architecture. Deploy in secure government data centers with full audit trail support.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/public-sector.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_public-sector.p.8",
       "en": "Unified dashboard for managing citizen services, eGovernment applications, and smart city infrastructure. Real-time monitoring, compliance reporting, and citizen service optimization.",
       "it": "",
       "fr": "",
@@ -227,8 +195,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.solutions_public-sector.p.8",
+      "en": "Government-grade hypervisor with air-gapped deployment capabilities, encryption at rest, and compliance-ready architecture. Deploy in secure government data centers with full audit trail support.",
+      "it": "",
+      "fr": "",
+      "source": "solutions/public-sector.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.solutions_public-sector.p.9",
-      "en": "Secure API layer for integrating government systems, IoT sensors, and citizen services. End-to-end encryption, data sovereignty controls, and compliance monitoring for public sector requirements.",
+      "en": "Discover insights on government cloud sovereignty, smart city initiatives, and public sector digital transformation.",
       "it": "",
       "fr": "",
       "source": "solutions/public-sector.html",
@@ -252,7 +228,7 @@
     },
     {
       "id": "body.solutions_public-sector.ui.3",
-      "en": "Learn More",
+      "en": "Read More",
       "it": "",
       "fr": "",
       "source": "solutions/public-sector.html",
@@ -268,14 +244,6 @@
     },
     {
       "id": "body.solutions_public-sector.ui.5",
-      "en": "Read More",
-      "it": "",
-      "fr": "",
-      "source": "solutions/public-sector.html",
-      "context": "class"
-    },
-    {
-      "id": "body.solutions_public-sector.ui.6",
       "en": "Read More",
       "it": "",
       "fr": "",

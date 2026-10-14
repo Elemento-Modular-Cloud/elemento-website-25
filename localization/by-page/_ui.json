@@ -1,20 +1,20 @@
 {
   "page": "_ui",
-  "count": 90,
+  "count": 105,
   "strings": [
     {
       "id": "ui.banner.atomosDiscountAria",
-      "en": "Grab today AtomOS: 150 euros off the first purchase",
-      "it": "Approfitta oggi di AtomOS: 150 euro di sconto sul primo acquisto",
-      "fr": "Profitez d'AtomOS aujourd'hui : 150 euros de réduction sur le premier achat",
+      "en": "AtomOS is free forever. Get 150 euros off your first support plan.",
+      "it": "AtomOS è gratuito per sempre. 150 euro di sconto sul primo piano di supporto.",
+      "fr": "AtomOS est gratuit pour toujours. 150 euros de réduction sur votre premier plan de support.",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.banner.atomosDiscountText",
-      "en": "Grab today AtomOS - 150€ off the first purchase",
-      "it": "Approfitta oggi di AtomOS: 150€ di sconto sul primo acquisto",
-      "fr": "Profitez d'AtomOS aujourd'hui : 150 € de réduction sur le premier achat",
+      "en": "AtomOS is free forever — 150€ off your first support plan",
+      "it": "AtomOS è gratuito per sempre — 150€ di sconto sul primo piano di supporto",
+      "fr": "AtomOS est gratuit pour toujours — 150 € de réduction sur votre premier plan de support",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -339,6 +339,70 @@
       "context": ""
     },
     {
+      "id": "ui.footer.terms",
+      "en": "Terms and Conditions",
+      "it": "Termini e condizioni",
+      "fr": "Conditions générales",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.hypervisor",
+      "en": "Hypervisor",
+      "it": "Hypervisor",
+      "fr": "Hyperviseur",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.objectStorage",
+      "en": "Object storage",
+      "it": "Object storage",
+      "fr": "Stockage objet",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.privateCloud",
+      "en": "Private cloud",
+      "it": "Cloud privato",
+      "fr": "Cloud privé",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.publicCloud",
+      "en": "Public cloud",
+      "it": "Cloud pubblico",
+      "fr": "Cloud public",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.sovereignCloud",
+      "en": "Sovereign cloud",
+      "it": "Cloud sovrano",
+      "fr": "Cloud souverain",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.sovereignHypervisor",
+      "en": "Sovereign hypervisor",
+      "it": "Hypervisor sovrano",
+      "fr": "Hyperviseur souverain",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.homeHero.orbitTags.virtualization",
+      "en": "Virtualization",
+      "it": "Virtualizzazione",
+      "fr": "Virtualisation",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.langSwitcher.en",
       "en": "EN",
       "it": "EN",
@@ -587,8 +651,24 @@
       "context": ""
     },
     {
+      "id": "ui.pages.privacy.description",
+      "en": "Privacy policy for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+      "it": "Informativa sulla privacy di elemento.cloud, electros.cloud e delle applicazioni e dei servizi correlati forniti da Elemento Srl.",
+      "fr": "Politique de confidentialité de elemento.cloud, electros.cloud et des applications et services associés fournis par Elemento Srl.",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.pages.privacy.title",
+      "en": "Privacy Policy | Elemento",
+      "it": "Informativa sulla privacy | Elemento",
+      "fr": "Politique de confidentialité | Elemento",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
       "id": "ui.pages.products.description",
-      "en": "Explore Elemento's modular cloud products: AtomOS hypervisor, Electros orchestration, and Atomosphere API layer.",
+      "en": "Explore Elemento's cloud platform products: Electros orchestration dashboard and AtomOS hypervisor for unified private and public cloud management.",
       "it": "Esplora i prodotti completi della piattaforma cloud di Elemento, tra cui l'hypervisor AtomOS, il dashboard di orchestrazione Electros e il proxy API Atomosphere per la gestione unificata dell'infrastruttura.",
       "fr": "Explorez les produits complets de plate-forme cloud d'Elemento, notamment l'hyperviseur AtomOS, le tableau de bord d'orchestration Electros et le proxy API Atomosphere pour une gestion unifiée de l'infrastructure.",
       "source": "src/i18n/ui",
@@ -613,16 +693,16 @@
     {
       "id": "ui.pages.products.title",
       "en": "Elemento | Products | Electros & AtomOS",
-      "it": "Elemento | Prodotti | Electros e AtomOS",
-      "fr": "Elemento | Produits | Electros et AtomOS",
+      "it": "Elemento | Prodotti | Piattaforma di gestione e infrastruttura cloud",
+      "fr": "Elemento | Produits | Plateforme de gestion et d'infrastructure cloud",
       "source": "src/i18n/ui",
       "context": ""
     },
     {
       "id": "ui.pages.signup.description",
       "en": "Sign up for Elemento to access Electros and AtomOS. Start with our free tier or contact sales.",
-      "it": "Registrati a Elemento per accedere ad Electros e AtomOS. Inizia con il piano gratuito o contatta le vendite.",
-      "fr": "Inscrivez-vous à Elemento pour accéder à Electros et AtomOS. Commencez avec notre offre gratuite ou contactez les ventes.",
+      "it": "Unisciti a Elemento e inizia con il futuro del cloud computing. Iscriviti gratuitamente e inizia a costruire la tua infrastruttura cloud.",
+      "fr": "Rejoignez Elemento et démarrez avec l'avenir du cloud computing. Inscrivez-vous gratuitement et commencez à construire votre infrastructure cloud.",
       "source": "src/i18n/ui",
       "context": ""
     },
@@ -647,6 +727,22 @@
       "en": "Elemento | Sign up | Start your cloud platform journey",
       "it": "Iscriviti - Elemento Cloud Platform",
       "fr": "S'inscrire - Plateforme Elemento Cloud",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.pages.terms.description",
+      "en": "Terms and conditions for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+      "it": "Termini e condizioni di elemento.cloud, electros.cloud e delle applicazioni e dei servizi correlati forniti da Elemento Srl.",
+      "fr": "Conditions générales de elemento.cloud, electros.cloud et des applications et services associés fournis par Elemento Srl.",
+      "source": "src/i18n/ui",
+      "context": ""
+    },
+    {
+      "id": "ui.pages.terms.title",
+      "en": "Terms and Conditions | Elemento",
+      "it": "Termini e condizioni | Elemento",
+      "fr": "Conditions générales | Elemento",
       "source": "src/i18n/ui",
       "context": ""
     },

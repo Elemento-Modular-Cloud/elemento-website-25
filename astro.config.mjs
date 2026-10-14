@@ -32,5 +32,18 @@ export default defineConfig({
       },
     },
     plugins: [localeDevRoutes()],
+    server: {
+      proxy: {
+        // Same-origin portal API for local signup (avoids browser CORS)
+        '/api/portal': {
+          target: 'https://portal.elemento.cloud',
+          changeOrigin: true,
+          secure: true,
+          // /api/portal/v2/... → /api/v2/...
+          rewrite: (path) => path.replace(/^\/api\/portal/, '/api'),
+        },
+      },
+    },
   },
 });
+

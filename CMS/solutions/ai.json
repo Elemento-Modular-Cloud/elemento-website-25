@@ -268,12 +268,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Dashboard unificato per la gestione di cluster GPU e carichi di lavoro AI"
+          "description": "Hypervisor ottimizzato per GPU per ambienti AI/ML coerenti"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hypervisor ottimizzato per GPU per ambienti AI/ML coerenti"
+          "description": "Dashboard unificato per la gestione di cluster GPU e carichi di lavoro AI"
         }
       ],
       "cta": {
@@ -462,12 +462,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Tableau de bord unifié pour la gestion des clusters GPU et des charges de travail d'IA"
+          "description": "Hyperviseur optimisé par GPU pour des environnements IA/ML cohérents"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hyperviseur optimisé par GPU pour des environnements IA/ML cohérents"
+          "description": "Tableau de bord unifié pour la gestion des clusters GPU et des charges de travail d'IA"
         }
       ],
       "cta": {

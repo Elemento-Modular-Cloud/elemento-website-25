@@ -1,0 +1,3 @@
+# Cloudflare Pages / compatible hosts: proxy portal API for website signup
+# (browser calls /api/portal/... same-origin; host forwards to portal)
+/api/portal/*  https://portal.elemento.cloud/api/:splat  200

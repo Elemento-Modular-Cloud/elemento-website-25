@@ -1,0 +1,3110 @@
+{
+  "page": "cookie",
+  "count": 388,
+  "strings": [
+    {
+      "id": "body.cookie.h1.1",
+      "en": "Cookie Policy of www.elemento.cloud and www.electros.cloud",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.cookie.h2.1",
+      "en": "Scope of this policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.2",
+      "en": "Introduction",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.3",
+      "en": "Owner and Data Controller",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.4",
+      "en": "How this Application uses Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.5",
+      "en": "How to manage preferences and provide or withdraw consent on this Application",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.6",
+      "en": "Definitions and legal references",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h2.7",
+      "en": "How can we help?",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.cookie.h3.1",
+      "en": "Necessary",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.10",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.11",
+      "en": "User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.12",
+      "en": "Data Subject",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.13",
+      "en": "Data Processor (or Processor)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.14",
+      "en": "Data Controller (or Owner)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.15",
+      "en": "This Application",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.16",
+      "en": "Service",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.17",
+      "en": "European Union (or EU)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.18",
+      "en": "Cookie",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.19",
+      "en": "Tracker",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.2",
+      "en": "Functionality",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.20",
+      "en": "Legal information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.21",
+      "en": "What you can do",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.22",
+      "en": "In case of issues",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.3",
+      "en": "Experience",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.4",
+      "en": "Measurement",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.5",
+      "en": "Marketing",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.6",
+      "en": "How to control or delete Cookies and similar technologies via your device settings",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.7",
+      "en": "How to opt out of interest-based advertising",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.8",
+      "en": "Consequences of denying the use of Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h3.9",
+      "en": "Personal Data (or Data) / Personal Information (or Information)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.cookie.h4.1",
+      "en": "Trackers managed directly by the Owner",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.2",
+      "en": "Trackers managed by third parties",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.3",
+      "en": "Trackers managed by third parties",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.4",
+      "en": "Trackers managed by third parties",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.5",
+      "en": "Trackers managed directly by the Owner",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.6",
+      "en": "Trackers managed by third parties",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h4.7",
+      "en": "Trackers managed by third parties",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.cookie.h5.1",
+      "en": "Consent management (Consently)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.10",
+      "en": "ProductBridge",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.11",
+      "en": "PressDeck",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.12",
+      "en": "Livid",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.13",
+      "en": "Gumlet",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.14",
+      "en": "Google Fonts",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.15",
+      "en": "Google Maps Widget",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.16",
+      "en": "Content delivery networks",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.17",
+      "en": "Matomo (self-hosted)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.18",
+      "en": "PostHog product analytics and session replay",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.19",
+      "en": "Metricool",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.2",
+      "en": "Interface preferences",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.20",
+      "en": "LinkedIn analytics",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.21",
+      "en": "LinkedIn conversion tracking (LinkedIn Insight Tag)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.22",
+      "en": "Happierleads",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.23",
+      "en": "YouTube",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.24",
+      "en": "LinkedIn embedded content",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.3",
+      "en": "Form and registration state",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.4",
+      "en": "HyperMonitor",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.5",
+      "en": "Cloudflare Turnstile",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.6",
+      "en": "Cloudflare",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.7",
+      "en": "Booking page",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.8",
+      "en": "HUMAN Security (bot protection)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.h5.9",
+      "en": "Web3Forms",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.cookie.li.1",
+      "en": "the website www.elemento.cloud and its subdomains, including hypermonitor.elemento.cloud, book.elemento.cloud, matomo.elemento.cloud and press.elemento.cloud;",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.10",
+      "en": "__Host-authjs.csrf-token (cookie, app.consently.net): duration of the session — set by the provider's script",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.100",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.101",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.102",
+      "en": "_pk_id.* (cookie, matomo.elemento.cloud): 13 months — identifies the returning visitor",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.103",
+      "en": "_pk_ses.* (cookie, matomo.elemento.cloud): 30 minutes — identifies the current visit",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.104",
+      "en": "browser information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.105",
+      "en": "browsing history",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.106",
+      "en": "clicks",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.107",
+      "en": "device information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.108",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.109",
+      "en": "number of Users",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.11",
+      "en": "__Secure-authjs.callback-url (cookie, app.consently.net): duration of the session — set by the provider's script",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.110",
+      "en": "page views",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.111",
+      "en": "session statistics",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.112",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.113",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.114",
+      "en": "PostHog, Inc. (Germany) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.115",
+      "en": "ph_*_posthog (cookie): 1 year — distinct identifier and session for PostHog, set only after Analytics consent",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.116",
+      "en": "ph_*_posthog (localStorage): stored until cleared by the User — distinct identifier and session for PostHog, set only after Analytics consent",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.117",
+      "en": "number of Users",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.118",
+      "en": "session statistics",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.119",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.12",
+      "en": "elemento-theme (localStorage): selected theme — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.120",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.121",
+      "en": "Metricool Software, S.L. (Spain) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.122",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.123",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.124",
+      "en": "LinkedIn Ireland Unlimited Company (Ireland) – Privacy Policy – Opt out",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.125",
+      "en": "AnalyticsSyncHistory (cookie, linkedin.com): 1 month",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.126",
+      "en": "device information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.127",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.128",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.129",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.13",
+      "en": "elemento-theme-index (localStorage): selected theme — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.130",
+      "en": "LinkedIn Ireland Unlimited Company (Ireland) – Privacy Policy – Opt out",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.131",
+      "en": "LinkedIn Corporation (United States) – Privacy Policy – Opt out",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.132",
+      "en": "bcookie (cookie, linkedin.com): 1 year",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.133",
+      "en": "bscookie (cookie, www.linkedin.com ): 1 year",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.134",
+      "en": "lidc (cookie, linkedin.com): 1 day",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.135",
+      "en": "li_sugr (cookie, linkedin.com): 3 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.136",
+      "en": "UserMatchHistory (cookie, linkedin.com): 1 month",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.137",
+      "en": "li_adsId (localStorage, snap.licdn.com): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.138",
+      "en": "browsing history",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.139",
+      "en": "company name",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.14",
+      "en": "elemento-theme-preference (localStorage): selected theme — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.140",
+      "en": "email address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.141",
+      "en": "first name",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.142",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.143",
+      "en": "job title",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.144",
+      "en": "last name",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.145",
+      "en": "page views",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.146",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.147",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.148",
+      "en": "Happierleads – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.149",
+      "en": "hl_last_tracking_time (localStorage): time of the last visit recorded — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.15",
+      "en": "el-lang (localStorage): selected language — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.150",
+      "en": "hl_full_mode_pages (localStorage): the pages of this Application visited in the current identification session — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.151",
+      "en": "activeTabId (localStorage): identifies the browser tab — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.152",
+      "en": "hl_rec_cfg (sessionStorage): the recording configuration received from the provider — duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.153",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.154",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.155",
+      "en": "video views",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.156",
+      "en": "Google Ireland Limited (Ireland) – Privacy Policy – Opt out",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.157",
+      "en": "VISITOR_INFO1_LIVE (cookie, youtube.com): 6 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.158",
+      "en": "VISITOR_PRIVACY_METADATA (cookie, youtube.com): 6 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.159",
+      "en": "__Secure-ROLLOUT_TOKEN (cookie, youtube.com): 6 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.16",
+      "en": "elemento-form-logs (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.160",
+      "en": "__Secure-YNID (cookie, youtube.com): 6 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.161",
+      "en": "__Secure-YEC (cookie, youtube.com): stores the visitor's consent state for the embedded player",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.162",
+      "en": "YSC (cookie, youtube.com): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.163",
+      "en": "ytidb::LAST_RESULT_ENTRY_KEY, yt-icons-last-purged, __sak (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.164",
+      "en": "JSESSIONID (cookie, www.linkedin.com ): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.165",
+      "en": "lang (cookie, linkedin.com): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.166",
+      "en": "see what Cookies or other similar technologies have been set on the device;",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.167",
+      "en": "block Cookies or similar technologies;",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.168",
+      "en": "clear Cookies or similar technologies from the browser.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.169",
+      "en": "Google Chrome",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.17",
+      "en": "elemento-contact-logs (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.170",
+      "en": "Mozilla Firefox",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.171",
+      "en": "Apple Safari",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.172",
+      "en": "Microsoft Edge",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.173",
+      "en": "Brave",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.174",
+      "en": "Opera",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.175",
+      "en": "Ask us to know and access the information we hold on you — subject: \"Right of access\"",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.176",
+      "en": "Ask us to correct information we hold on you — subject: \"Right to rectification\"",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.177",
+      "en": "Ask us to be forgotten (delete the information we hold on you) — subject: \"Right to be forgotten\"",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.178",
+      "en": "Ask to port your data to another service — subject: \"Right to data portability\"",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.18",
+      "en": "elemento-registration-success (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.19",
+      "en": "elemento-registration-timestamp (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.2",
+      "en": "the website www.electros.cloud and its subdomains, including launchpad.electros.cloud;",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.20",
+      "en": "__Host-authjs.csrf-token (cookie, hypermonitor.elemento.cloud): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.21",
+      "en": "__Secure-authjs.callback-url (cookie, hypermonitor.elemento.cloud): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.22",
+      "en": "hypermonitor-theme (cookie): 1 year",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.23",
+      "en": "elemento-theme-preference (localStorage): selected theme — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.24",
+      "en": "browser fingerprint",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.25",
+      "en": "browser information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.26",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.27",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.28",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.29",
+      "en": "Cloudflare, Inc. (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.3",
+      "en": "any other website, application or interface through which the Owner makes its Service available and which links to this cookie policy.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.30",
+      "en": "cf.turnstile.u (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.31",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.32",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.33",
+      "en": "Cloudflare, Inc. (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.34",
+      "en": "__cf_bm (cookie, set on the third-party domain — e.g. linkedin.com, ingest.gumlytics.com): 30 minutes",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.35",
+      "en": "__Secure-next-auth.csrf-token (cookie): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.36",
+      "en": "__Secure-next-auth.callback-url (cookie): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.37",
+      "en": "__clnds (cookie): 13 months",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.38",
+      "en": "nextauth.message (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.39",
+      "en": "timeOption.is24hClock (localStorage): 12/24-hour preference — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.4",
+      "en": "consently (cookie): 1 year — records the User's consent choices",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.40",
+      "en": "__next (sessionStorage): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.41",
+      "en": "browser fingerprint",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.42",
+      "en": "browser information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.43",
+      "en": "device information",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.44",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.45",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.46",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.47",
+      "en": "HUMAN Security, Inc. (United States)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.48",
+      "en": "_pxvid (cookie, protechts.net): 1 year",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.49",
+      "en": "_px3 (cookie, protechts.net): a few minutes",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.5",
+      "en": "consently_lang (cookie): the language in which the consent notice is displayed",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.50",
+      "en": "pxcts (cookie, protechts.net): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.51",
+      "en": "_pxttld (cookie, protechts.net and li.protechts.net): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.52",
+      "en": "PXdOjV695v_px_fp (localStorage): the browser fingerprint — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.53",
+      "en": "PXdOjV695v_px-ff, PXdOjV695v_px_hvd (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.54",
+      "en": "pxsid, PXdOjV695v_px_c_p_*, PXdOjV695v_px_nfsp (sessionStorage): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.55",
+      "en": "the data entered by the User in the form",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.56",
+      "en": "email address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.57",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.58",
+      "en": "Web3Creative (India) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.59",
+      "en": "Data communicated while using the service",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.6",
+      "en": "consently-tc-string (cookie): 1 year — set only where the IAB Transparency and Consent Framework is enabled",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.60",
+      "en": "email address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.61",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.62",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.63",
+      "en": "ProductBridge – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.64",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.65",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.66",
+      "en": "PressDeck – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.67",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.68",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.69",
+      "en": "Livid, Inc. (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.7",
+      "en": "consently-ac-string (cookie): 1 year — set only where Google Additional Consent is enabled",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.70",
+      "en": "livid_viewer_id (cookie, livid.com): 1 year",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.71",
+      "en": "livid.language (cookie, livid.com): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.72",
+      "en": "livid-analytics-viewer (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.73",
+      "en": "livid-analytics-session (sessionStorage): duration of the session",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.74",
+      "en": "media-chrome-pref-muted (localStorage): player mute preference — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.75",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.76",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.77",
+      "en": "Gumlet Pte. Ltd. (Singapore) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.78",
+      "en": "gm_analytics_user_id (cookie, play.gumlet.io, and localStorage): duration of the session / stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.79",
+      "en": "gm_analytics_session_id (cookie, play.gumlet.io, and localStorage): duration of the session / stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.8",
+      "en": "consently-gpp-string (localStorage): set only where the Global Privacy Platform is enabled",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.80",
+      "en": "gumlet_embed_bandwidth_estimate (localStorage): stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.81",
+      "en": "progress_time_ (localStorage): playback position — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.82",
+      "en": "audio_language (localStorage): audio track preference — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.83",
+      "en": "playback_rate (localStorage): playback speed preference — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.84",
+      "en": "media-chrome-pref-muted (localStorage): player mute preference — stored until cleared by the User",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.85",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.86",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.87",
+      "en": "Google Ireland Limited (Ireland) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.88",
+      "en": "Google LLC (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.89",
+      "en": "Trackers",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.9",
+      "en": "elemento_cookie_preference (localStorage and sessionStorage): the User's cookie preference for this Application",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.90",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.91",
+      "en": "Google Ireland Limited (Ireland) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.92",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.93",
+      "en": "Usage Data",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.94",
+      "en": "Cloudflare, Inc. (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.95",
+      "en": "Prospect One Sp. z o.o. sp. k. (Poland) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.96",
+      "en": "GitHub Inc. (United States) – Privacy Policy",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.97",
+      "en": "IP address",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.98",
+      "en": "number of Users",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.li.99",
+      "en": "session statistics",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.cookie.p.1",
+      "en": "These documents are provided in English, which is the authoritative version.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.10",
+      "en": "Elemento Srl Via Virginio Allione 2, 12100 Cuneo (Italy) VAT number: IT03959360045 — Registro delle Imprese di Cuneo / REA no.: CN - 326571",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.100",
+      "en": "The LinkedIn Insight Tag connects data from the LinkedIn advertising network with actions performed on this Application. It tracks conversions that can be attributed to LinkedIn ads and enables the Owner to target groups of Users on the basis of their past use of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.101",
+      "en": "Users may opt out of behavioural targeting features through their device settings, their LinkedIn account settings or by visiting the AdChoices opt-out page .",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.102",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.103",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.104",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.105",
+      "en": "Company: Happierleads Place of processing: Ireland (servers), United Kingdom (provider's headquarters).",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.106",
+      "en": "Happierleads is a B2B visitor identification service. Through a script installed on this Application, and by matching the technical data of the visit against the provider's own database, it allows the Owner to identify the organisation and, in some cases, the individual person visiting this Application, in order to contact them about the Owner's Products.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.107",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.108",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.109",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.11",
+      "en": "Owner contact email: hello@elemento.cloud",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.110",
+      "en": "The service does not set Cookies: it stores the information above in the browser and performs the identification on the provider's servers, starting from the technical data of the visit. The script also receives from the provider a configuration for the recording of the visitor's session — including mouse movements, scrolling and interactions with media. This recording function is currently disabled. Should the Owner enable it, this cookie policy and the privacy policy of this Application will be updated beforehand.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.111",
+      "en": "Part of the identification is performed on the provider's servers, starting from the technical data of the visit. Where the User does not give consent to this category of Trackers, the script is not loaded and the identification does not take place.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.112",
+      "en": "Company: Google Ireland Limited Place of processing: Ireland, United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.113",
+      "en": "The booking page of this Application embeds videos hosted on YouTube. When such a page is loaded, YouTube sets its own Trackers, including Trackers used for advertising purposes.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.114",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.115",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.116",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.117",
+      "en": "Company: LinkedIn Ireland Unlimited Company Place of processing: Ireland",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.118",
+      "en": "Some pages of this Application embed LinkedIn content. When such a page is loaded, LinkedIn sets its own Trackers.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.119",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.12",
+      "en": "This Application uses so-called \"technical\" Cookies and other similar Trackers to carry out activities that are strictly necessary for the operation or delivery of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.120",
+      "en": "Whenever the use of Trackers is based on consent, Users can provide or withdraw such consent by setting or updating their preferences via the privacy choices panel available on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.121",
+      "en": "With regard to any third-party Trackers, Users can manage their preferences via the related opt-out link (where provided), by using the means indicated in the third party's privacy policy, or by contacting the third party.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.122",
+      "en": "Users may use their own browser settings to:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.123",
+      "en": "The browser settings, however, do not allow granular control of consent by category.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.124",
+      "en": "Users can, for example, find information about how to manage Cookies in the most commonly used browsers at the following addresses:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.125",
+      "en": "Users may also manage certain categories of Trackers used on mobile apps by opting out through relevant device settings, such as the device advertising settings, or tracking settings in general.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.126",
+      "en": "Notwithstanding the above, Users may follow the instructions provided by YourOnlineChoices (EU and UK), the Network Advertising Initiative (US), the Digital Advertising Alliance (US), DAAC (Canada), DDAI (Japan) or other similar services. Such initiatives allow Users to select their tracking preferences for most of the advertising tools. The Owner thus recommends that Users make use of these resources in addition to the information provided in this document.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.127",
+      "en": "The Digital Advertising Alliance offers an application called AppChoices that helps Users to control interest-based advertising on mobile apps.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.128",
+      "en": "Users are free to decide whether or not to allow the use of Trackers. However, please note that Trackers help this Application to provide a better experience and advanced functionalities to Users, in line with the purposes outlined in this document. Therefore, if the User chooses to block the use of Trackers, the Owner may be unable to provide related features.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.129",
+      "en": "Any information that directly, indirectly, or in connection with other information — including a personal identification number — allows for the identification or identifiability of a natural person.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.13",
+      "en": "Company: Consently, owned by Dorik, Inc. — 600 North Broad Street, Ste 5 PMB 2145, Middletown, DE 19709, United States Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.130",
+      "en": "Information collected automatically through this Application (or third-party services employed in this Application), which can include: the IP addresses or domain names of the computers utilized by the Users who use this Application, the URI addresses (Uniform Resource Identifier), the time of the request, the method utilized to submit the request to the server, the size of the file received in response, the numerical code indicating the status of the server's answer (successful outcome, error, etc.), the country of origin, the features of the browser and the operating system utilized by the User, the various time details per visit (e.g., the time spent on each page within the Application) and the details about the path followed within the Application with special reference to the sequence of pages visited, and other parameters about the device operating system and/or the User's IT environment.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.131",
+      "en": "The individual using this Application who, unless otherwise specified, coincides with the Data Subject.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.132",
+      "en": "The natural person to whom the Personal Data refers.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.133",
+      "en": "The natural or legal person, public authority, agency or other body which processes Personal Data on behalf of the Controller, as described in this privacy policy.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.134",
+      "en": "The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of Personal Data, including the security measures concerning the operation and use of this Application. The Data Controller, unless otherwise specified, is the Owner of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.135",
+      "en": "The means by which the Personal Data of the User is collected and processed.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.136",
+      "en": "The service provided by this Application as described in these Terms and on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.137",
+      "en": "Unless otherwise specified, all references made within this document to the European Union include all current member states to the European Union and the European Economic Area.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.138",
+      "en": "Cookies are Trackers consisting of small sets of data stored in the User's browser.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.139",
+      "en": "Tracker indicates any technology — e.g. Cookies, unique identifiers, web beacons, embedded scripts, e-tags and fingerprinting — that enables the tracking of Users, for example by accessing or storing information on the User's device.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.14",
+      "en": "The consent management platform used by this Application presents the cookie notice, collects the User's choices and keeps a record of the consent given, so that the choices are applied on subsequent visits.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.140",
+      "en": "This policy has been prepared based on provisions of multiple legislations.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.141",
+      "en": "This policy relates solely to this Application, if not stated otherwise within this document.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.142",
+      "en": "You can exercise your rights over the data we hold on you at any time, free of charge, by writing to hello@elemento.cloud :",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.143",
+      "en": "You can also manage your tracking preferences at any time through the privacy choices panel available on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.144",
+      "en": "For information about the processing of your personal data beyond Trackers, please refer to the Privacy Policy of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.145",
+      "en": "While we strive to create a positive user experience, we understand that issues may occasionally arise between us and our users. If this is the case, please feel free to contact us at hello@elemento.cloud .",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.146",
+      "en": "www.elemento.cloud — www.electros.cloud Elemento Srl Via Virginio Allione 2, 12100 Cuneo (Italy)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.147",
+      "en": "Owner contact email: hello@elemento.cloud",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.15",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.16",
+      "en": "Company: this Application",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.17",
+      "en": "These Trackers store the choices the User makes about how this Application is displayed, so that they are preserved between visits.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.18",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.19",
+      "en": "Company: this Application",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.2",
+      "en": "Welcome to the cookie policy of www.elemento.cloud and www.electros.cloud . This policy will help you understand what cookies and tracking technologies we use, how we use them and what your rights are in relation to it.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.20",
+      "en": "These Trackers keep track of the forms submitted from the User's browser and of the outcome of the registration process, so that the interface can be displayed correctly and duplicate submissions can be avoided.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.21",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.22",
+      "en": "Company: this Application (hypermonitor.elemento.cloud)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.23",
+      "en": "HyperMonitor is a service of the Owner, embedded in some pages of www.elemento.cloud and www.electros.cloud , which displays cloud incident and outage information. These Trackers are strictly necessary for its authentication and display.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.24",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.25",
+      "en": "Company: Cloudflare, Inc. Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.26",
+      "en": "Cloudflare Turnstile is a spam and bot protection service provided by Cloudflare, Inc., used to protect the forms of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.27",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.28",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.29",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.3",
+      "en": "Latest update: October 6, 2026",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.30",
+      "en": "Company: Cloudflare, Inc. Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.31",
+      "en": "Cloudflare provides bot protection and traffic filtering in front of several of the third-party services embedded in this Application. Where those services are used, Cloudflare sets its own security Tracker on the relevant third-party domain.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.32",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.33",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.34",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.35",
+      "en": "Company: this Application (book.elemento.cloud), built on the Lunacal platform",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.36",
+      "en": "The booking page of this Application allows Users to schedule a call with the Owner. These Trackers keep the booking session open and store the display preferences of the calendar.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.37",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.38",
+      "en": "Company: HUMAN Security, Inc. (protechts.net) Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.39",
+      "en": "The booking page of this Application is protected against automated traffic and scraping by a bot-detection service, which loads a script and an auxiliary frame from the protechts.net domain. In order to distinguish automated traffic from real visitors, the service builds a technical fingerprint of the browser — including graphics capabilities, installed fonts and plugins, screen characteristics and language settings.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.4",
+      "en": "In this document, \"this Application\" means all of the following properties operated by the Owner:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.40",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.41",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.42",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.43",
+      "en": "This Application uses Trackers to enable basic interactions and functionalities, allowing Users to access selected features of the Service and facilitating the User's communication with the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.44",
+      "en": "Company: Web3Creative Place of processing: India",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.45",
+      "en": "Web3Forms receives and delivers to the Owner the content of the contact and registration forms available on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.46",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.47",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.48",
+      "en": "Company: ProductBridge Place of processing: European Union (AWS, Paris; backups in Germany), with AI analysis performed in the United States under Standard Contractual Clauses",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.49",
+      "en": "ProductBridge powers the chat and support widget, the public roadmap, the changelog, the feedback area and the surveys of this Application. Its Trackers keep the support conversation associated with the same visitor between page loads and, where the User has created an account in the feedback area, keep that session open.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.5",
+      "en": "The Trackers described below are not necessarily present on every one of these properties: each of them uses only those that are needed for the features it offers. Consent is collected separately on each domain, because Trackers set on one domain are not readable from another.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.50",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.51",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.52",
+      "en": "Company: PressDeck Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.53",
+      "en": "PressDeck hosts the press area of this Application at press.elemento.cloud, where press material and assets can be read and downloaded. No registration is required to access it.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.54",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.55",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.56",
+      "en": "This Application uses Trackers to improve the quality of the user experience and enable interactions with external content, networks and platforms.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.57",
+      "en": "Company: Livid, Inc. Place of processing: United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.58",
+      "en": "Livid is a video hosting and streaming service that allows this Application to embed video content on its pages without advertising.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.59",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.6",
+      "en": "This document informs Users about the technologies that help this Application to achieve the purposes described below. Such technologies allow the Owner to access and store information (for example by using a Cookie) or use resources (for example by running a script) on a User's device as they interact with this Application.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.60",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.61",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.62",
+      "en": "Company: Gumlet Pte. Ltd. Place of processing: Singapore",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.63",
+      "en": "Gumlet is a video hosting and streaming service that allows this Application to embed video content on its pages without advertising. Playback statistics are collected by the provider through its own endpoint (ingest.gumlytics.com).",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.64",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.65",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.66",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.67",
+      "en": "Company: Google Ireland Limited or Google LLC Place of processing: Ireland, United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.68",
+      "en": "Google Fonts is a typeface visualization service that allows this Application to incorporate content of this kind on its pages. The typefaces are requested from Google's servers when the page is loaded.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.69",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.7",
+      "en": "For simplicity, all such technologies are defined as \"Trackers\" within this document — unless there is a reason to differentiate. For example, while Cookies can be used on both web and mobile browsers, it would be inaccurate to talk about Cookies in the context of mobile apps as they are a browser-based Tracker. For this reason, within this document, the term Cookies is only used where it is specifically meant to indicate that particular type of Tracker.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.70",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.71",
+      "en": "Company: Google Ireland Limited Place of processing: Ireland",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.72",
+      "en": "Google Maps is a maps visualization service that allows this Application to incorporate content of this kind on its pages.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.73",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.74",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.75",
+      "en": "Company: Cloudflare, Inc.; Prospect One Sp. z o.o. sp. k.; Quill project maintainers; GitHub Inc. Place of processing: United States, Poland",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.76",
+      "en": "Some software libraries and graphic assets used by this Application are loaded from public content delivery networks: cdnjs (Cloudflare), jsDelivr (Prospect One), cdn.quilljs.com and GitHub's raw content endpoint. These services receive the IP address of the User and the technical data of the request in order to deliver the file.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.77",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.78",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.79",
+      "en": "This Application uses Trackers to measure traffic and analyze User behavior to improve the Service.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.8",
+      "en": "Some of the purposes for which Trackers are used may also require the User's consent. Whenever consent is given, it can be freely withdrawn at any time following the instructions provided in this document.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.80",
+      "en": "Company: this Application (matomo.elemento.cloud)",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.81",
+      "en": "Matomo is analytics software installed on the Owner's own infrastructure, used to measure the traffic of this Application. The Data is processed directly by the Owner and is not shared with third parties.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.82",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.83",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.84",
+      "en": "Company: PostHog, Inc. Place of processing: Germany",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.85",
+      "en": "PostHog product analytics is an analytics service provided by PostHog, Inc. that gives the Owner insight into the use of this Application by Users. On this Application it is also used for session replay: recordings of how Users interact with pages, with form inputs masked. Session replay uses the same PostHog persistence described below; it does not set additional cookies.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.86",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.87",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.88",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.89",
+      "en": "Company: Metricool Software, S.L. Place of processing: Spain",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.9",
+      "en": "This Application uses Trackers managed directly by the Owner (so-called \"first-party\" Trackers) and Trackers that enable services provided by a third party (so-called \"third-party\" Trackers). Unless otherwise specified within this document, third-party providers may access the Trackers managed by them. The validity and expiration periods of Cookies and other similar Trackers may vary depending on the lifetime set by the Owner or the relevant provider. Some of them expire upon termination of the User's browsing session. In addition to what is specified in the descriptions within each of the categories below, Users may find more precise and updated information regarding lifetime specification as well as any other relevant information — such as the presence of other Trackers — in the linked privacy policies of the respective third-party providers or by contacting the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.90",
+      "en": "Metricool is a social media and web analytics service that allows the Owner to measure the traffic of this Application and the effect of the content published on the Owner's social media accounts.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.91",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.92",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.93",
+      "en": "Company: LinkedIn Ireland Unlimited Company and LinkedIn Corporation Place of processing: Ireland, United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.94",
+      "en": "The LinkedIn Insight Tag installed on this Application also collects aggregated statistics about the visits attributable to LinkedIn.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.95",
+      "en": "Personal Data processed:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.96",
+      "en": "Service provided by:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.97",
+      "en": "Trackers:",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.98",
+      "en": "This Application uses Trackers to deliver personalized ads or marketing content, and to measure their performance.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.cookie.p.99",
+      "en": "Company: LinkedIn Ireland Unlimited Company and LinkedIn Corporation Place of processing: Ireland, United States",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.cookie.description",
+      "en": "Cookie policy for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.cookie.title",
+      "en": "Cookie Policy | Elemento",
+      "it": "",
+      "fr": "",
+      "source": "cookie.html",
+      "context": "meta title"
+    }
+  ]
+}

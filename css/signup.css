@@ -1,7 +1,8 @@
 /* Signup page — form embedded via iframe (parent page) */
 
 :root {
-    --signup-nav-offset: 80px;
+    /* Fixed navbar (80px) + announcement banner when present */
+    --signup-nav-offset: calc(80px + var(--announcement-banner-height, 40px));
 }
 
 body:has(.signup-iframe-section) {
@@ -19,7 +20,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 }
 
 .signup-iframe-section .container {
-    max-width: 520px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
 }
@@ -28,7 +29,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 .form-iframe {
     display: block;
     width: 100%;
-    min-height: 640px;
+    min-height: 720px;
     border: none;
     border-radius: 0;
     background: transparent;
@@ -42,6 +43,6 @@ body:has(.signup-iframe-section) .breadcrumb {
     }
 
     .form-iframe {
-        min-height: 560px;
+        min-height: 640px;
     }
 }

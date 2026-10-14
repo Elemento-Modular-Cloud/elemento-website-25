@@ -12898,23 +12898,23 @@
     },
     {
       "id": "body.forms_signup.button.1",
-      "en": "Get Started",
+      "en": "Create account",
       "it": "",
       "source": "forms/signup.html",
       "context": "<button>",
-      "fr": "Commencer"
+      "fr": "Créer un compte"
     },
     {
       "id": "body.forms_signup.h1.1",
-      "en": "Join Elemento",
+      "en": "Create your account",
       "it": "",
       "source": "forms/signup.html",
       "context": "<h1>",
-      "fr": "Rejoignez Elemento"
+      "fr": "Créez votre compte"
     },
     {
       "id": "body.forms_signup.label.1",
-      "en": "First Name *",
+      "en": "First name *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
@@ -12922,83 +12922,75 @@
     },
     {
       "id": "body.forms_signup.label.2",
-      "en": "Last Name *",
+      "en": "Last name *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "Nom de famille *"
+      "fr": "Nom *"
     },
     {
       "id": "body.forms_signup.label.3",
-      "en": "Email Address *",
+      "en": "Email *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "Adresse e-mail *"
+      "fr": "E-mail *"
     },
     {
       "id": "body.forms_signup.label.4",
-      "en": "Company",
+      "en": "Password *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "Entreprise"
+      "fr": "Mot de passe *"
     },
     {
       "id": "body.forms_signup.label.5",
-      "en": "Role",
+      "en": "Confirm password *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "Rôle"
+      "fr": "Confirmer le mot de passe *"
     },
     {
       "id": "body.forms_signup.label.6",
-      "en": "Primary Use Case",
-      "it": "",
-      "source": "forms/signup.html",
-      "context": "<label>",
-      "fr": "Cas d'utilisation principal"
-    },
-    {
-      "id": "body.forms_signup.label.7",
       "en": "Subscribe to our newsletter for updates and insights",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "Abonnez-vous à notre newsletter pour des mises à jour et des informations"
+      "fr": "Abonnez-vous à la newsletter pour les mises à jour et analyses"
     },
     {
-      "id": "body.forms_signup.label.8",
-      "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
+      "id": "body.forms_signup.label.7",
+      "en": "I agree to the Terms and Conditions , Privacy Policy , and Cookie Policy *",
       "it": "",
       "source": "forms/signup.html",
       "context": "<label>",
-      "fr": "J'accepte les conditions générales (IT), la politique de confidentialité et la politique en matière de cookies *"
+      "fr": "J'accepte les Conditions générales, la Politique de confidentialité et la Politique de cookies *"
     },
     {
       "id": "body.forms_signup.p.1",
-      "en": "Get started with the future of cloud computing",
+      "en": "Includes a personal organisation and a 14-day Electros trial. Then download Electros and sign in.",
       "it": "",
       "source": "forms/signup.html",
       "context": "<p>",
-      "fr": "Commencez avec l'avenir du cloud computing"
+      "fr": "Inclut une organisation personnelle et un essai Electros de 14 jours. Téléchargez ensuite Electros et connectez-vous."
     },
     {
       "id": "body.forms_signup.p.2",
-      "en": "Please complete all required fields.",
+      "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
       "it": "",
       "source": "forms/signup.html",
       "context": "<p>",
-      "fr": "Veuillez remplir tous les champs obligatoires."
+      "fr": "Au moins 12 caractères, avec majuscules et minuscules, un chiffre et un symbole."
     },
     {
       "id": "body.forms_signup.p.3",
-      "en": "${message}",
+      "en": "Already have an account? Sign in & buy a seat",
       "it": "",
       "source": "forms/signup.html",
       "context": "<p>",
-      "fr": "${message}"
+      "fr": "Vous avez déjà un compte ? Connectez-vous et achetez un siège"
     },
     {
       "id": "body.grazie_atomos-demo.h1.1",
@@ -26406,7 +26398,7 @@
       "it": "",
       "source": "forms/signup.html",
       "context": "meta title",
-      "fr": "S'inscrire - Elemento"
+      "fr": "Inscription - Elemento"
     },
     {
       "id": "meta.grazie_atomos-demo.description",
@@ -27327,6 +27319,382 @@
       "source": "src/i18n/ui",
       "context": "",
       "fr": "Merci d'avoir programmé votre démonstration complète de solution !"
+    },
+    {
+      "id": "body.buy-seat.button.1",
+      "en": "Continue",
+      "it": "",
+      "fr": "Continuer",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.2",
+      "en": "Back",
+      "it": "",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.3",
+      "en": "Choose another organisation",
+      "it": "",
+      "fr": "Choisir une autre organisation",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.4",
+      "en": "Back",
+      "it": "",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.5",
+      "en": "Continue to Stripe",
+      "it": "",
+      "fr": "Continuer vers Stripe",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.6",
+      "en": "Back",
+      "it": "",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.7",
+      "en": "Save & continue to Stripe",
+      "it": "",
+      "fr": "Enregistrer et continuer vers Stripe",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.h1.1",
+      "en": "Buy an Electros seat",
+      "it": "",
+      "fr": "Acheter un siège Electros",
+      "source": "buy-seat.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.buy-seat.h2.1",
+      "en": "Sign in",
+      "it": "",
+      "fr": "Connexion",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.2",
+      "en": "Choose organisation",
+      "it": "",
+      "fr": "Choisir l’organisation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.3",
+      "en": "You already have a paid seat in this organisation!",
+      "it": "",
+      "fr": "Vous avez déjà un siège payant dans cette organisation !",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.4",
+      "en": "Plan & billing",
+      "it": "",
+      "fr": "Offre et facturation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.5",
+      "en": "Billing details",
+      "it": "",
+      "fr": "Coordonnées de facturation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.label.1",
+      "en": "Email",
+      "it": "",
+      "fr": "E-mail",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.10",
+      "en": "Country (ISO)",
+      "it": "",
+      "fr": "Pays (ISO)",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.11",
+      "en": "Province",
+      "it": "",
+      "fr": "Province",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.12",
+      "en": "ZIP / CAP",
+      "it": "",
+      "fr": "Code postal",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.13",
+      "en": "City",
+      "it": "",
+      "fr": "Ville",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.2",
+      "en": "Password",
+      "it": "",
+      "fr": "Mot de passe",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.3",
+      "en": "Plan",
+      "it": "",
+      "fr": "Offre",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.4",
+      "en": "Billing",
+      "it": "",
+      "fr": "Facturation",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.5",
+      "en": "Company name",
+      "it": "",
+      "fr": "Raison sociale",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.6",
+      "en": "VAT number",
+      "it": "",
+      "fr": "N° de TVA",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.7",
+      "en": "Fiscal code",
+      "it": "",
+      "fr": "Code fiscal",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.8",
+      "en": "SDI code",
+      "it": "",
+      "fr": "Code SDI",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.9",
+      "en": "Address",
+      "it": "",
+      "fr": "Adresse",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.li.1",
+      "en": "Home",
+      "it": "",
+      "fr": "Accueil",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.2",
+      "en": "Electros",
+      "it": "",
+      "fr": "Electros",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.3",
+      "en": "Buy a seat",
+      "it": "",
+      "fr": "Acheter un siège",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.4",
+      "en": "1 Sign in",
+      "it": "",
+      "fr": "1 Connexion",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.5",
+      "en": "2 Organisation",
+      "it": "",
+      "fr": "2 Organisation",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.6",
+      "en": "3 Plan & Stripe",
+      "it": "",
+      "fr": "3 Offre et Stripe",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.p.1",
+      "en": "Electros",
+      "it": "",
+      "fr": "Electros",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.10",
+      "en": "VAT or fiscal code can be left blank when not applicable; address fields are required.",
+      "it": "",
+      "fr": "Le n° de TVA ou le code fiscal peut rester vide s’il ne s’applique pas ; l’adresse est obligatoire.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.2",
+      "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
+      "it": "",
+      "fr": "Connectez-vous, choisissez l’organisation qui doit détenir le siège, sélectionnez une offre, puis payez sur Stripe.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.3",
+      "en": "Use your Elemento account email and password.",
+      "it": "",
+      "fr": "Utilisez l’e-mail et le mot de passe de votre compte Elemento.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.4",
+      "en": "No account yet? Create one",
+      "it": "",
+      "fr": "Pas encore de compte ? Créez-en un",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.5",
+      "en": "Select the organisation that should receive the seat.",
+      "it": "",
+      "fr": "Sélectionnez l’organisation qui doit recevoir le siège.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.6",
+      "en": "Organisation: —",
+      "it": "",
+      "fr": "Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.7",
+      "en": "No further purchase is needed for this organisation. Open Electros to manage billing, or choose another organisation below.",
+      "it": "",
+      "fr": "Aucun nouvel achat n’est nécessaire pour cette organisation. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation ci-dessous.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.8",
+      "en": "Organisation: —",
+      "it": "",
+      "fr": "Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.9",
+      "en": "Required before Stripe checkout. Organisation: —",
+      "it": "",
+      "fr": "Obligatoire avant le paiement Stripe. Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.ui.1",
+      "en": "Back to Electros",
+      "it": "",
+      "fr": "Retour à Electros",
+      "source": "buy-seat.html",
+      "context": "class"
+    },
+    {
+      "id": "body.forms_signup.p.4",
+      "en": "Please complete all required fields.",
+      "it": "",
+      "fr": "Veuillez remplir tous les champs obligatoires.",
+      "source": "forms/signup.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.forms_signup.p.5",
+      "en": "${message}",
+      "it": "",
+      "fr": "${message}",
+      "source": "forms/signup.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.buy-seat.description",
+      "en": "Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.",
+      "it": "",
+      "fr": "Connectez-vous à votre compte Elemento, choisissez une organisation et achetez un siège Electros via Stripe.",
+      "source": "buy-seat.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.buy-seat.title",
+      "en": "Buy an Electros seat | Elemento",
+      "it": "",
+      "fr": "Acheter un siège Electros | Elemento",
+      "source": "buy-seat.html",
+      "context": "meta title"
     }
   ],
   "translatedAt": "2026-05-23T16:38:05Z"

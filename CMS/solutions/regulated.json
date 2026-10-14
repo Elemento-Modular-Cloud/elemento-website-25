@@ -268,12 +268,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Dashboard pronto per la conformità con funzionalità di audit e reporting"
+          "description": "Ambiente hypervisor sicuro con controlli di conformità integrati"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Ambiente hypervisor sicuro con controlli di conformità integrati"
+          "description": "Dashboard pronto per la conformità con funzionalità di audit e reporting"
         }
       ],
       "cta": {
@@ -462,12 +462,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Tableau de bord prêt pour la conformité avec des capacités d'audit et de reporting"
+          "description": "Environnement d'hyperviseur sécurisé avec contrôles de conformité intégrés"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Environnement d'hyperviseur sécurisé avec contrôles de conformité intégrés"
+          "description": "Tableau de bord prêt pour la conformité avec des capacités d'audit et de reporting"
         }
       ],
       "cta": {

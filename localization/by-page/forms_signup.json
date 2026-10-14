@@ -1,116 +1,124 @@
 {
   "page": "forms_signup",
-  "count": 14,
+  "count": 15,
   "strings": [
     {
       "id": "body.forms_signup.button.1",
-      "en": "Get Started",
-      "it": "",
-      "fr": "",
+      "en": "Create account",
+      "it": "Crea account",
+      "fr": "Créer un compte",
       "source": "forms/signup.html",
       "context": "<button>"
     },
     {
       "id": "body.forms_signup.h1.1",
-      "en": "Join Elemento",
-      "it": "",
-      "fr": "",
+      "en": "Create your account",
+      "it": "Crea il tuo account",
+      "fr": "Créez votre compte",
       "source": "forms/signup.html",
       "context": "<h1>"
     },
     {
       "id": "body.forms_signup.label.1",
-      "en": "First Name *",
-      "it": "",
-      "fr": "",
+      "en": "First name *",
+      "it": "Nome *",
+      "fr": "Prénom *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.2",
-      "en": "Last Name *",
-      "it": "",
-      "fr": "",
+      "en": "Last name *",
+      "it": "Cognome *",
+      "fr": "Nom *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.3",
-      "en": "Email Address *",
-      "it": "",
-      "fr": "",
+      "en": "Email *",
+      "it": "Email *",
+      "fr": "E-mail *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.4",
-      "en": "Company",
-      "it": "",
-      "fr": "",
+      "en": "Password *",
+      "it": "Password *",
+      "fr": "Mot de passe *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.5",
-      "en": "Role",
-      "it": "",
-      "fr": "",
+      "en": "Confirm password *",
+      "it": "Conferma password *",
+      "fr": "Confirmer le mot de passe *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.6",
-      "en": "Primary Use Case",
-      "it": "",
-      "fr": "",
+      "en": "Subscribe to our newsletter for updates and insights",
+      "it": "Iscriviti alla newsletter per aggiornamenti e approfondimenti",
+      "fr": "Abonnez-vous à la newsletter pour les mises à jour et analyses",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.label.7",
-      "en": "Subscribe to our newsletter for updates and insights",
-      "it": "",
-      "fr": "",
-      "source": "forms/signup.html",
-      "context": "<label>"
-    },
-    {
-      "id": "body.forms_signup.label.8",
-      "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
-      "it": "",
-      "fr": "",
+      "en": "I agree to the Terms and Conditions , Privacy Policy , and Cookie Policy *",
+      "it": "Accetto i Termini e Condizioni, la Privacy Policy e la Cookie Policy *",
+      "fr": "J'accepte les Conditions générales, la Politique de confidentialité et la Politique de cookies *",
       "source": "forms/signup.html",
       "context": "<label>"
     },
     {
       "id": "body.forms_signup.p.1",
-      "en": "Get started with the future of cloud computing",
-      "it": "",
-      "fr": "",
+      "en": "Includes a personal organisation and a 14-day Electros trial. Then download Electros and sign in.",
+      "it": "Include un’organizzazione personale e una prova Electros di 14 giorni. Poi scarica Electros e accedi.",
+      "fr": "Inclut une organisation personnelle et un essai Electros de 14 jours. Téléchargez ensuite Electros et connectez-vous.",
       "source": "forms/signup.html",
       "context": "<p>"
     },
     {
       "id": "body.forms_signup.p.2",
-      "en": "Please complete all required fields.",
-      "it": "",
-      "fr": "",
+      "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
+      "it": "Almeno 12 caratteri, con maiuscole e minuscole, un numero e un simbolo.",
+      "fr": "Au moins 12 caractères, avec majuscules et minuscules, un chiffre et un symbole.",
       "source": "forms/signup.html",
       "context": "<p>"
     },
     {
       "id": "body.forms_signup.p.3",
+      "en": "Already have an account? Sign in & buy a seat",
+      "it": "Hai già un account? Accedi e acquista un seat",
+      "fr": "Vous avez déjà un compte ? Connectez-vous et achetez un siège",
+      "source": "forms/signup.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.forms_signup.p.4",
+      "en": "Please complete all required fields.",
+      "it": "Compila tutti i campi obbligatori.",
+      "fr": "Veuillez remplir tous les champs obligatoires.",
+      "source": "forms/signup.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.forms_signup.p.5",
       "en": "${message}",
-      "it": "",
-      "fr": "",
+      "it": "${message}",
+      "fr": "${message}",
       "source": "forms/signup.html",
       "context": "<p>"
     },
     {
       "id": "meta.forms_signup.title",
       "en": "Sign Up - Elemento",
-      "it": "",
-      "fr": "",
+      "it": "Registrati - Elemento",
+      "fr": "Inscription - Elemento",
       "source": "forms/signup.html",
       "context": "meta title"
     }

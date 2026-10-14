@@ -1,11 +1,31 @@
 /**
- * Signup page — iframe embed: height, theme sync, and form-submitted redirect.
+ * Signup page — iframe embed: locale src, height, theme sync, and form-submitted redirect.
  */
 (function () {
     const iframe = document.getElementById('signupIframe');
     if (!iframe) return;
 
     const MIN_HEIGHT = 640;
+
+    function localizedEmbedSrc() {
+        const i18n = window.ElementoI18n;
+        const locale = i18n?.getPageLocale?.() || 'en';
+        if (i18n?.localeStemHref) {
+            return i18n.localeStemHref('forms/embed/signup', locale);
+        }
+        return locale === 'en'
+            ? '/forms/embed/signup.html'
+            : `/${locale}/forms/embed/signup.html`;
+    }
+
+    // Point the iframe at the localized embed (IT/FR) before first paint when possible.
+    try {
+        const nextSrc = localizedEmbedSrc();
+        const current = iframe.getAttribute('src') || '';
+        if (nextSrc && !current.includes(nextSrc.replace(/^\//, ''))) {
+            iframe.src = nextSrc;
+        }
+    } catch (_) { /* keep markup src */ }
 
     function setIframeHeight() {
         try {
@@ -71,11 +91,28 @@
     iframe.addEventListener('error', function () {
         const section = iframe.closest('.signup-iframe-section');
         if (!section) return;
+        const i18n = window.ElementoI18n;
+        const locale = i18n?.getPageLocale?.() || 'en';
+        const copy = {
+            en: {
+                msg: 'Failed to load signup form. Please refresh the page or try again later.',
+                btn: 'Refresh Page',
+            },
+            it: {
+                msg: 'Impossibile caricare il modulo di registrazione. Ricarica la pagina o riprova più tardi.',
+                btn: 'Ricarica la pagina',
+            },
+            fr: {
+                msg: 'Impossible de charger le formulaire d’inscription. Actualisez la page ou réessayez plus tard.',
+                btn: 'Actualiser la page',
+            },
+        };
+        const t = copy[locale] || copy.en;
         section.innerHTML = `
             <div class="container" style="text-align: center; padding: var(--space-4xl) 0;">
-                <p>Failed to load signup form. Please refresh the page or try again later.</p>
+                <p>${t.msg}</p>
                 <button type="button" class="btn btn-primary" onclick="location.reload()" style="margin-top: var(--space-md);">
-                    Refresh Page
+                    ${t.btn}
                 </button>
             </div>`;
     });

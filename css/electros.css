@@ -458,3 +458,152 @@
     height: 100%;
     border: none;
 }
+
+/* Get started — register vs buy seat */
+.get-started-choices {
+    align-items: stretch;
+}
+
+.get-started-choice {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.get-started-choice p {
+    flex: 1;
+    margin-bottom: var(--space-md);
+}
+
+.get-started-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-items: center;
+    margin-top: auto;
+}
+
+.subscribe-panel {
+    margin-top: var(--space-2xl);
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--space-xl) var(--space-2xl);
+}
+
+.subscribe-panel[hidden] {
+    display: none !important;
+}
+
+.subscribe-panel-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.subscribe-panel-header h3 {
+    margin: 0 0 var(--space-xs);
+}
+
+.subscribe-panel-header p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.subscribe-error {
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid color-mix(in srgb, #dc3545 40%, transparent);
+    background: color-mix(in srgb, #dc3545 12%, transparent);
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.subscribe-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.subscribe-form-row label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.subscribe-form-row input,
+.subscribe-form-row select {
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--border-color, color-mix(in srgb, var(--text-color) 16%, transparent));
+    background: var(--card-bg-color, var(--background-color));
+    color: var(--text-color);
+    font: inherit;
+}
+
+.subscribe-form-row input:focus,
+.subscribe-form-row select:focus {
+    outline: none;
+    border-color: var(--primary-color, var(--accent-color));
+}
+
+.subscribe-step-lead {
+    margin: 0 0 var(--space-md);
+    color: var(--text-secondary);
+}
+
+.subscribe-org-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.subscribe-org-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.9rem 1rem;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--border-color, color-mix(in srgb, var(--text-color) 16%, transparent));
+    background: color-mix(in srgb, var(--text-color) 4%, transparent);
+    color: var(--text-color);
+    cursor: pointer;
+    font: inherit;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.subscribe-org-btn:hover {
+    border-color: var(--primary-color, var(--accent-color));
+    background: color-mix(in srgb, var(--primary-color, var(--accent-color)) 10%, transparent);
+}
+
+.subscribe-org-name {
+    font-weight: 700;
+}
+
+.subscribe-org-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.subscribe-empty {
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-md);
+}
+
+.subscribe-plan-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-items: center;
+}

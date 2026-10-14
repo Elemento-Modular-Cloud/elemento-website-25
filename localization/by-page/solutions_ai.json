@@ -1,6 +1,6 @@
 {
   "page": "solutions_ai",
-  "count": 37,
+  "count": 33,
   "strings": [
     {
       "id": "body.solutions_ai.h2.1",
@@ -35,14 +35,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h3.10",
-      "en": "The Benefits of Virtualization for Cloud Computing",
-      "it": "",
-      "fr": "",
-      "source": "solutions/ai.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_ai.h3.2",
       "en": "Framework Integration",
       "it": "",
@@ -68,14 +60,6 @@
     },
     {
       "id": "body.solutions_ai.h3.5",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/ai.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_ai.h3.6",
       "en": "Electros",
       "it": "",
       "fr": "",
@@ -83,15 +67,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h3.7",
-      "en": "Atomosphere",
+      "id": "body.solutions_ai.h3.6",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/ai.html",
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h3.8",
+      "id": "body.solutions_ai.h3.7",
       "en": "The Era of Big Data",
       "it": "",
       "fr": "",
@@ -99,7 +83,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h3.9",
+      "id": "body.solutions_ai.h3.8",
       "en": "Edge Computing: Insights from Gartner Research",
       "it": "",
       "fr": "",
@@ -107,15 +91,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h4.1",
-      "en": "GPU-Ready Hypervisor",
+      "id": "body.solutions_ai.h3.9",
+      "en": "The Benefits of Virtualization for Cloud Computing",
       "it": "",
       "fr": "",
       "source": "solutions/ai.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.solutions_ai.h4.2",
+      "id": "body.solutions_ai.h4.1",
       "en": "AI/ML Management Console",
       "it": "",
       "fr": "",
@@ -123,8 +107,8 @@
       "context": "<h4>"
     },
     {
-      "id": "body.solutions_ai.h4.3",
-      "en": "AI/ML Integration API",
+      "id": "body.solutions_ai.h4.2",
+      "en": "GPU-Ready Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/ai.html",
@@ -140,14 +124,6 @@
     },
     {
       "id": "body.solutions_ai.p.10",
-      "en": "Explore our latest insights on AI/ML infrastructure, edge computing, and cloud optimization.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/ai.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_ai.p.11",
       "en": "Discover how big data is transforming AI/ML workloads and the infrastructure needed to process massive datasets efficiently.",
       "it": "",
       "fr": "",
@@ -155,7 +131,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_ai.p.12",
+      "id": "body.solutions_ai.p.11",
       "en": "Learn how edge computing is revolutionizing AI workloads by bringing processing closer to data sources for faster insights.",
       "it": "",
       "fr": "",
@@ -163,7 +139,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_ai.p.13",
+      "id": "body.solutions_ai.p.12",
       "en": "Understand how virtualization optimizes AI/ML infrastructure for better resource utilization and performance.",
       "it": "",
       "fr": "",
@@ -212,14 +188,6 @@
     },
     {
       "id": "body.solutions_ai.p.7",
-      "en": "Production-grade hypervisor with GPU passthrough support, CUDA integration, and optimized performance for AI/ML workloads. Deploy on-premise or in hybrid cloud environments.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/ai.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_ai.p.8",
       "en": "Unified dashboard for managing GPU clusters, monitoring training progress, and optimizing resource allocation. Real-time metrics, automated scaling, and cost tracking for AI/ML workloads.",
       "it": "",
       "fr": "",
@@ -227,8 +195,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.solutions_ai.p.8",
+      "en": "Production-grade hypervisor with GPU passthrough support, CUDA integration, and optimized performance for AI/ML workloads. Deploy on-premise or in hybrid cloud environments.",
+      "it": "",
+      "fr": "",
+      "source": "solutions/ai.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.solutions_ai.p.9",
-      "en": "Comprehensive API for integrating with AI/ML frameworks, data sources, and cloud providers. Support for TensorFlow, PyTorch, Kubernetes, and automated model deployment.",
+      "en": "Explore our latest insights on AI/ML infrastructure, edge computing, and cloud optimization.",
       "it": "",
       "fr": "",
       "source": "solutions/ai.html",
@@ -252,7 +228,7 @@
     },
     {
       "id": "body.solutions_ai.ui.3",
-      "en": "Learn More",
+      "en": "Read More",
       "it": "",
       "fr": "",
       "source": "solutions/ai.html",
@@ -268,14 +244,6 @@
     },
     {
       "id": "body.solutions_ai.ui.5",
-      "en": "Read More",
-      "it": "",
-      "fr": "",
-      "source": "solutions/ai.html",
-      "context": "class"
-    },
-    {
-      "id": "body.solutions_ai.ui.6",
       "en": "Read More",
       "it": "",
       "fr": "",

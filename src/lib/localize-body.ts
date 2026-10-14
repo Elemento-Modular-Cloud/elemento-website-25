@@ -254,7 +254,12 @@ function localizeMappedElements(html: string, map: Map<string, string>): string 
       const translated = map.get(plain) ?? map.get(plainText(inner));
       if (!translated) return full;
       if (/<a\b/i.test(inner) && !hasEmphasisMarkup(inner)) {
-        return `<${tag}${attrs}>${translated}</${tag}>`;
+        // Keep a sole child <a> (translate its text). Never flatten mixed markup to plain text.
+        const singleAnchor = inner.match(/^\s*(<a\b[^>]*>)([\s\S]*?)(<\/a>)\s*$/i);
+        if (singleAnchor && !/<a\b/i.test(singleAnchor[2])) {
+          return `<${tag}${attrs}>${singleAnchor[1]}${translated}${singleAnchor[3]}</${tag}>`;
+        }
+        return full;
       }
       const next = applyInlineTranslation(inner, map);
       return `<${tag}${attrs}>${next}</${tag}>`;

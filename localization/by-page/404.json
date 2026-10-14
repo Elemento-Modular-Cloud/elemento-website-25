@@ -19,8 +19,24 @@
       "context": "<h1>"
     },
     {
-      "id": "body.404.h3.1",
+      "id": "body.404.h2.1",
       "en": "Can't find what you're looking for?",
+      "it": "",
+      "fr": "",
+      "source": "404.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.404.h2.2",
+      "en": "Popular Destinations",
+      "it": "",
+      "fr": "",
+      "source": "404.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.404.h3.1",
+      "en": "Products",
       "it": "",
       "fr": "",
       "source": "404.html",
@@ -28,30 +44,14 @@
     },
     {
       "id": "body.404.h3.2",
-      "en": "Popular Destinations",
+      "en": "Resources",
       "it": "",
       "fr": "",
       "source": "404.html",
       "context": "<h3>"
     },
     {
-      "id": "body.404.h4.1",
-      "en": "Products",
-      "it": "",
-      "fr": "",
-      "source": "404.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.404.h4.2",
-      "en": "Resources",
-      "it": "",
-      "fr": "",
-      "source": "404.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.404.p.1",
+      "id": "body.404.p.2",
       "en": "Looks like this page got lost in the cloud! Don't worry though - our platform is still here to help you build amazing things.",
       "it": "",
       "fr": "",

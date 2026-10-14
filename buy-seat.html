@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy an Electros seat | Elemento</title>
+    <meta name="description" content="Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.">
+    <link rel="canonical" href="https://elemento.cloud/buy-seat.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Buy an Electros seat | Elemento">
+    <meta property="og:description" content="Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.">
+    <meta property="og:url" content="https://elemento.cloud/buy-seat.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elemento">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/themes.css" as="style">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/buy-seat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="page-buy-seat">
+    <div id="navbar-placeholder"></div>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+                <li class="breadcrumb-item"><a href="electros.html" class="breadcrumb-link">Electros</a></li>
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">Buy a seat</li>
+            </ol>
+        </div>
+    </nav>
+
+    <main class="buy-seat-page" id="main-content">
+        <div class="container">
+            <header class="buy-seat-intro">
+                <p class="buy-seat-eyebrow">Electros</p>
+                <h1>Buy an Electros seat</h1>
+                <p class="buy-seat-lead">Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.</p>
+            </header>
+
+            <div class="subscribe-panel" id="subscribeFlow">
+                <div class="subscribe-panel-header">
+                    <ol class="subscribe-steps" id="subscribeStepsLabel" aria-label="Checkout progress">
+                        <li class="is-active"><span class="subscribe-step-num">1</span><span class="subscribe-step-name">Sign in</span></li>
+                        <li><span class="subscribe-step-num">2</span><span class="subscribe-step-name">Organisation</span></li>
+                        <li><span class="subscribe-step-num">3</span><span class="subscribe-step-name">Plan &amp; Stripe</span></li>
+                    </ol>
+                </div>
+
+                <div class="subscribe-alert" id="subscribeError" hidden></div>
+
+                <div data-step="login">
+                    <div class="subscribe-step-body">
+                        <header class="subscribe-step-heading">
+                            <h2>Sign in</h2>
+                            <p>Use your Elemento account email and password.</p>
+                        </header>
+                        <form id="subscribeLoginForm" class="subscribe-form" autocomplete="on" novalidate>
+                            <div class="subscribe-form-row">
+                                <label for="subscribeEmail">Email</label>
+                                <input type="email" id="subscribeEmail" name="username" autocomplete="username" inputmode="email" autocapitalize="off" autocorrect="off" spellcheck="false" required placeholder="you@company.com">
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="subscribePassword">Password</label>
+                                <input type="password" id="subscribePassword" name="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required placeholder="Your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary subscribe-submit">Continue</button>
+                        </form>
+                        <p class="buy-seat-foot">
+                            No account yet?
+                            <a href="signup.html">Create one</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div data-step="org" hidden>
+                    <div class="subscribe-step-body">
+                        <header class="subscribe-step-heading">
+                            <h2>Choose organisation</h2>
+                            <p>Select the organisation that should receive the seat.</p>
+                        </header>
+                        <div id="subscribeOrgList" class="subscribe-org-list"></div>
+                        <div class="subscribe-plan-actions">
+                            <button type="button" class="btn btn-secondary" data-subscribe-back="login">Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-step="already-paid" hidden>
+                    <div class="subscribe-success-card">
+                        <div class="subscribe-success-icon" aria-hidden="true">
+                            <i class="fas fa-circle-check"></i>
+                        </div>
+                        <h2 class="subscribe-success-title">You already have a paid seat in this organisation!</h2>
+                        <p class="subscribe-success-org">Organisation: <strong id="subscribeAlreadyPaidOrg">—</strong></p>
+                        <p class="subscribe-success-lead">No further purchase is needed for this organisation. Open Electros to manage billing, or choose another organisation below.</p>
+                        <div class="subscribe-plan-actions subscribe-success-actions">
+                            <button type="button" class="btn btn-secondary" data-subscribe-back="org">Choose another organisation</button>
+                            <a class="btn btn-primary" href="electros.html">Back to Electros</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-step="plan" hidden>
+                    <div class="subscribe-step-body">
+                        <header class="subscribe-step-heading">
+                            <h2>Plan &amp; billing</h2>
+                            <p>Organisation: <strong id="subscribeSelectedOrg">—</strong></p>
+                        </header>
+                        <form id="subscribePlanForm" class="subscribe-form" novalidate>
+                            <div class="subscribe-form-row">
+                                <label for="subscribeTier">Plan</label>
+                                <select id="subscribeTier" name="tier" required>
+                                    <option value="">Loading plans…</option>
+                                </select>
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="subscribeFrequency">Billing</label>
+                                <select id="subscribeFrequency" name="billing_frequency" required>
+                                    <option value="yearly">Yearly</option>
+                                    <option value="monthly">Monthly</option>
+                                </select>
+                            </div>
+                            <div class="subscribe-plan-actions">
+                                <button type="button" class="btn btn-secondary" data-subscribe-back="org">Back</button>
+                                <button type="submit" class="btn btn-primary subscribe-submit">Continue to Stripe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div data-step="billing" hidden>
+                    <div class="subscribe-step-body subscribe-step-body--wide">
+                        <header class="subscribe-step-heading">
+                            <h2>Billing details</h2>
+                            <p>Required before Stripe checkout. Organisation: <strong id="subscribeBillingOrg">—</strong></p>
+                        </header>
+                        <form id="subscribeBillingForm" class="subscribe-form" autocomplete="organization" novalidate>
+                        <div class="subscribe-form-grid">
+                            <div class="subscribe-form-row subscribe-form-row--full">
+                                <label for="billingCompanyName">Company name</label>
+                                <input type="text" id="billingCompanyName" name="company_name" autocomplete="organization">
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingVatCode">VAT number</label>
+                                <input type="text" id="billingVatCode" name="vat_code" autocomplete="off">
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingFiscalCode">Fiscal code</label>
+                                <input type="text" id="billingFiscalCode" name="fiscal_code" autocomplete="off">
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingSdi">SDI code</label>
+                                <input type="text" id="billingSdi" name="sdi_code" value="0000000" autocomplete="off">
+                            </div>
+                            <div class="subscribe-form-row subscribe-form-row--full">
+                                <label for="billingAddress">Address</label>
+                                <input type="text" id="billingAddress" name="full_address" autocomplete="street-address" required>
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingNationality">Country (ISO)</label>
+                                <input type="text" id="billingNationality" name="nationality" maxlength="2" autocomplete="country" value="IT" required>
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingProvince">Province</label>
+                                <input type="text" id="billingProvince" name="province" autocomplete="address-level1" required>
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingZip">ZIP / CAP</label>
+                                <input type="text" id="billingZip" name="zip_code" autocomplete="postal-code" required>
+                            </div>
+                            <div class="subscribe-form-row">
+                                <label for="billingCity">City</label>
+                                <input type="text" id="billingCity" name="city" autocomplete="address-level2" required>
+                            </div>
+                        </div>
+                        <p class="subscribe-hint">VAT or fiscal code can be left blank when not applicable; address fields are required.</p>
+                        <div class="subscribe-plan-actions">
+                            <button type="button" class="btn btn-secondary" data-subscribe-back="plan">Back</button>
+                            <button type="submit" class="btn btn-primary subscribe-submit">Save &amp; continue to Stripe</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/splash-screen.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/themes.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/electros-subscribe.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+/* Buy Electros seat — dedicated checkout page */
+
+:root {
+    /* Fixed navbar (80px) + announcement banner when present */
+    --buy-seat-nav-offset: calc(80px + var(--announcement-banner-height, 40px));
+}
+
+body.page-buy-seat {
+    scroll-padding-top: calc(var(--buy-seat-nav-offset) + var(--space-md, 1rem));
+}
+
+body.page-buy-seat .breadcrumb {
+    display: none;
+}
+
+.buy-seat-page {
+    width: 100%;
+    padding: calc(var(--buy-seat-nav-offset) + var(--space-xl, 2rem)) 0 var(--space-4xl, 4rem);
+}
+
+.buy-seat-page > .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg, 1.5rem);
+}
+
+.buy-seat-intro {
+    text-align: center;
+    margin-bottom: var(--space-xl, 2rem);
+}
+
+.buy-seat-eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary-color, #ffa600);
+}
+
+.buy-seat-intro h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+    line-height: 1.15;
+}
+
+.buy-seat-lead {
+    margin: 0 auto;
+    max-width: 34rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+    font-size: 1.05rem;
+}
+
+.buy-seat-foot {
+    margin: 1.5rem 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.buy-seat-foot a {
+    color: var(--primary-color, #ffa600);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.buy-seat-foot a:hover {
+    text-decoration: underline;
+}
+
+/* —— Shared step card —— */
+.subscribe-panel {
+    --subscribe-panel-min-height: 31rem;
+    display: flex;
+    flex-direction: column;
+    min-height: var(--subscribe-panel-min-height);
+    padding: clamp(1.75rem, 3.5vw, 2.5rem);
+    border: 1px solid color-mix(in srgb, var(--text-color) 22%, transparent);
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            165deg,
+            color-mix(in srgb, var(--primary-color, #ffa600) 9%, transparent) 0%,
+            transparent 46%
+        ),
+        color-mix(in srgb, var(--card-bg-color, var(--background-color)) 88%, #111 12%);
+    box-shadow:
+        0 1px 0 color-mix(in srgb, #fff 8%, transparent) inset,
+        0 18px 48px rgba(0, 0, 0, 0.32);
+    overflow: visible;
+}
+
+.subscribe-panel-header {
+    flex-shrink: 0;
+    margin: 0 0 1.75rem;
+    padding: 0;
+}
+
+.subscribe-panel > [data-step] {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.subscribe-panel > [data-step][hidden] {
+    display: none;
+}
+
+/* Progress */
+.subscribe-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.subscribe-steps li {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.65rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+    background: color-mix(in srgb, var(--text-color) 4%, transparent);
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 65%, transparent));
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.subscribe-steps li.is-active {
+    border-color: color-mix(in srgb, var(--primary-color, #ffa600) 55%, transparent);
+    background: color-mix(in srgb, var(--primary-color, #ffa600) 14%, transparent);
+    color: var(--text-color);
+}
+
+.subscribe-steps li.is-done {
+    border-color: color-mix(in srgb, #2f9e44 40%, transparent);
+    color: var(--text-color);
+}
+
+.subscribe-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--text-color) 10%, transparent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.subscribe-steps li.is-active .subscribe-step-num {
+    background: var(--primary-color, #ffa600);
+    color: #111;
+}
+
+.subscribe-steps li.is-done .subscribe-step-num {
+    background: #2f9e44;
+    color: #fff;
+}
+
+.subscribe-step-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 560px) {
+    .subscribe-steps {
+        gap: 0.35rem;
+    }
+
+    .subscribe-steps li {
+        justify-content: center;
+        padding: 0.55rem 0.4rem;
+    }
+
+    .subscribe-step-name {
+        display: none;
+    }
+}
+
+/* Step body */
+.subscribe-step-body {
+    width: 100%;
+    max-width: 26rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.subscribe-step-body--wide {
+    max-width: 100%;
+}
+
+.subscribe-step-heading {
+    margin: 0 0 1.35rem;
+}
+
+.subscribe-step-heading h2 {
+    margin: 0 0 0.4rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: clamp(1.35rem, 2.6vw, 1.65rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+.subscribe-step-heading p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-alert {
+    margin: 0 0 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, #dc3545 40%, transparent);
+    background: color-mix(in srgb, #dc3545 12%, transparent);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
+.subscribe-alert--success {
+    border-color: color-mix(in srgb, #2f9e44 45%, transparent);
+    background: color-mix(in srgb, #2f9e44 16%, transparent);
+}
+
+/* Success card state */
+.subscribe-panel--success {
+    border-color: color-mix(in srgb, #2f9e44 40%, transparent);
+    background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, color-mix(in srgb, #2f9e44 18%, transparent), transparent 70%),
+        color-mix(in srgb, var(--card-bg-color, var(--background-color)) 92%, #000 8%);
+}
+
+.subscribe-panel--success .subscribe-panel-header {
+    display: none;
+}
+
+.subscribe-success-card {
+    text-align: center;
+    padding: clamp(1rem, 3vw, 1.75rem) 0.25rem;
+    margin: auto 0;
+    width: 100%;
+}
+
+.subscribe-panel > [data-step="already-paid"] {
+    justify-content: center;
+}
+
+.subscribe-success-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 1.25rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, #2f9e44 18%, transparent);
+    color: #2f9e44;
+    font-size: 1.75rem;
+}
+
+.subscribe-success-title {
+    margin: 0 0 0.75rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: clamp(1.35rem, 2.8vw, 1.75rem);
+    line-height: 1.25;
+    color: var(--text-color);
+}
+
+.subscribe-success-org {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-success-lead {
+    margin: 0 auto 1.75rem;
+    max-width: 28rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 72%, transparent));
+}
+
+.subscribe-success-actions {
+    justify-content: center;
+}
+
+.subscribe-success-actions .btn {
+    min-width: 11rem;
+}
+
+/* Forms */
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 100%;
+}
+
+.subscribe-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.subscribe-form-row label {
+    font-weight: 600;
+    font-size: 0.88rem;
+    letter-spacing: 0.01em;
+}
+
+.subscribe-form-row input,
+.subscribe-form-row select {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, var(--text-color) 22%, transparent);
+    background: color-mix(in srgb, var(--text-color) 6%, transparent);
+    color: var(--text-color);
+    font: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.subscribe-form-row input::placeholder {
+    color: color-mix(in srgb, var(--text-color) 40%, transparent);
+}
+
+.subscribe-form-row input:hover,
+.subscribe-form-row select:hover {
+    border-color: color-mix(in srgb, var(--text-color) 34%, transparent);
+}
+
+.subscribe-form-row input:focus,
+.subscribe-form-row select:focus {
+    outline: none;
+    border-color: var(--primary-color, #ffa600);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color, #ffa600) 22%, transparent);
+    background: color-mix(in srgb, var(--text-color) 8%, transparent);
+}
+
+.subscribe-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .subscribe-form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subscribe-form-row--full {
+        grid-column: 1 / -1;
+    }
+}
+
+.subscribe-hint {
+    margin: 0.15rem 0 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-step-lead {
+    margin: 0 0 var(--space-md, 1rem);
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-org-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin: 0 0 1.25rem;
+    flex: 1 1 auto;
+}
+
+.subscribe-org-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
+    background: color-mix(in srgb, var(--text-color) 5%, transparent);
+    color: var(--text-color);
+    cursor: pointer;
+    font: inherit;
+    transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+
+.subscribe-org-btn:hover {
+    border-color: var(--primary-color, #ffa600);
+    background: color-mix(in srgb, var(--primary-color, #ffa600) 12%, transparent);
+    transform: translateY(-1px);
+}
+
+.subscribe-org-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+.subscribe-org-name {
+    font-weight: 700;
+}
+
+.subscribe-org-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-empty {
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+    margin: 0 0 var(--space-md, 1rem);
+}
+
+.subscribe-plan-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.subscribe-form .btn,
+.subscribe-plan-actions .btn {
+    justify-content: center;
+}
+
+.subscribe-submit {
+    width: 100%;
+    min-height: 3rem;
+    margin-top: 0.35rem;
+    font-weight: 700;
+}
+
+.subscribe-plan-actions .subscribe-submit {
+    width: auto;
+    flex: 1 1 12rem;
+}
+
+.subscribe-form .btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+@media (max-width: 640px) {
+    .subscribe-panel {
+        --subscribe-panel-min-height: 28rem;
+        border-radius: 14px;
+    }
+}

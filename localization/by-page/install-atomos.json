@@ -1,6 +1,6 @@
 {
   "page": "install-atomos",
-  "count": 50,
+  "count": 35,
   "strings": [
     {
       "id": "body.install-atomos.button.1",
@@ -69,46 +69,6 @@
     {
       "id": "body.install-atomos.h4.3",
       "en": "Desktop Application",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.install-atomos.h4.4",
-      "en": "CLI Installation",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.install-atomos.h4.5",
-      "en": "Linux",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.install-atomos.h4.6",
-      "en": "macOS",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.install-atomos.h4.7",
-      "en": "Windows",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.install-atomos.h4.8",
-      "en": "Ubuntu/Debian",
       "it": "",
       "fr": "",
       "source": "install-atomos.html",
@@ -219,38 +179,6 @@
       "context": "<li>"
     },
     {
-      "id": "body.install-atomos.li.21",
-      "en": "Python 3.9 or higher",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<li>"
-    },
-    {
-      "id": "body.install-atomos.li.22",
-      "en": "pip package manager",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<li>"
-    },
-    {
-      "id": "body.install-atomos.li.23",
-      "en": "Network access to cloud providers",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<li>"
-    },
-    {
-      "id": "body.install-atomos.li.24",
-      "en": "SSH client for remote access",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "<li>"
-    },
-    {
       "id": "body.install-atomos.li.3",
       "en": "Installation Guide",
       "it": "",
@@ -324,7 +252,7 @@
     },
     {
       "id": "body.install-atomos.p.3",
-      "en": "Download native applications for your operating system with full GUI capabilities.",
+      "en": "Download native applications for Linux, macOS, and Windows from the Electros website.",
       "it": "",
       "fr": "",
       "source": "install-atomos.html",
@@ -332,55 +260,7 @@
     },
     {
       "id": "body.install-atomos.ui.1",
-      "en": "x64 AppImage",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.2",
-      "en": "ARM64 AppImage",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.3",
-      "en": "Intel (x64)",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.4",
-      "en": "Apple Silicon (ARM64)",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.5",
-      "en": "x64",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.6",
-      "en": "x64 Package",
-      "it": "",
-      "fr": "",
-      "source": "install-atomos.html",
-      "context": "class"
-    },
-    {
-      "id": "body.install-atomos.ui.7",
-      "en": "ARM64 Package",
+      "en": "Download on electros.cloud",
       "it": "",
       "fr": "",
       "source": "install-atomos.html",

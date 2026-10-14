@@ -1,0 +1,614 @@
+{
+  "page": "blog-posts_2026-07-06-what-is-a-metacloud-how-to-start",
+  "count": 76,
+  "strings": [
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h1.1",
+      "en": "What Is a Metacloud — And How to Start Running One This Summer",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.1",
+      "en": "Metacloud, defined (without the buzzwords)",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.2",
+      "en": "Why not just 'do multi-cloud'?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.3",
+      "en": "The Elemento metacloud stack",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.4",
+      "en": "How to start your metacloud in four steps",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.5",
+      "en": "Try the metacloud free this summer",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.h2.6",
+      "en": "Key takeaways",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h1.1",
+      "en": "Cos'è un Metacloud — e come iniziare a usarne uno quest'estate",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.1",
+      "en": "Metacloud, definito (senza buzzword)",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.2",
+      "en": "Perché non basta 'fare multi-cloud'?",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.3",
+      "en": "Lo stack metacloud di Elemento",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.4",
+      "en": "Come avviare il tuo metacloud in quattro passi",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.5",
+      "en": "Prova il metacloud gratis quest'estate",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.h2.6",
+      "en": "Punti chiave",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.1",
+      "en": "A cura del team Elemento &mdash; 2026-07-06",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.10",
+      "en": "Perché il multi-cloud, nella pratica, troppo spesso diventa multi-silo . Ti ritrovi con diversi provider che non interoperano nativamente, cuciti insieme con integrazioni custom fragili e costose da mantenere. Hai più opzioni sulla carta e meno controllo nella realtà.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.11",
+      "en": "I dati lo confermano. Gartner prevede che oltre il 50% delle organizzazioni non raggiungerà i risultati attesi dal multi-cloud entro il 2029 — in gran parte per problemi di interoperabilità. Nel frattempo, la spesa globale in IaaS cloud sovrano dovrebbe raggiungere 80 miliardi di dollari nel 2026 , con una crescita europea di circa l'83% anno su anno. E nonostante l'hype del cloud pubblico, IDC e Gartner stimano che circa l'80% dei workload enterprise giri ancora on-premises o in cloud privato.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.12",
+      "en": "Messi insieme, questi numeri descrivono un'opportunità molto specifica: la maggior parte dell'infrastruttura enterprise è già ibrida ed eterogenea — le manca solo un livello che la governi come un sistema coerente. Quel livello è il metacloud, e fare bene l'interoperabilità è esattamente ciò che separa un vero metacloud da una bella dashboard appiccicata sopra il caos.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.13",
+      "en": "Elemento Cloud è una piattaforma metacloud. Invece di sostituire la tua infrastruttura, aggiunge un livello di controllo e federazione sopra cloud privati, cloud pubblici, cloud sovrani, hypervisor e Kubernetes. Tre prodotti lo rendono possibile.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.14",
+      "en": "Electros™ — il control plane. Electros è il nucleo operativo: un hyper-orchestrator che ti offre un'unica interfaccia per scoprire, governare, mediare e orchestrare risorse in ogni ambiente connesso. Una dashboard per salute, capacità e costi. Orchestrazione cross-provider per deploy, migrazione e scaling senza tooling specifico per piattaforma. Governance, tagging e policy di attribuzione costi coerenti ovunque. Accesso VNC unificato (e presto RDP e SSH), senza bastion separato. Automazione tramite API REST che si integrano direttamente nelle pipeline CI/CD e infrastructure-as-code. È gratis per tutta l'estate — ne parliamo più avanti.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.15",
+      "en": "Atomosphere™ — il tessuto universale dei provider. Atomosphere è il livello di connettività distribuita: proxy API lato provider ed endpoint di federazione che espongono infrastruttura e servizi al metacloud attraverso un modello comune di interoperabilità. Invece di centralizzare l'infrastruttura, permette a provider eterogenei di unirsi a una federazione comune mantenendo la propria indipendenza operativa. È così che Electros può parlare con tutto senza forzare nulla a standardizzarsi.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.16",
+      "en": "AtomOS® — l'hypervisor aperto. Per i team che guardano oltre VMware, AtomOS è una piattaforma di virtualizzazione di nuova generazione basata su Linux KVM e QEMU, su base compatibile RHEL. GPU passthrough per workload AI, live migration, clustering autonomo, ampia compatibilità storage — nessun motore hypervisor proprietario, nessun lock-in sul vendor storage. Trasforma hardware commodity in un ambiente cloud-ready e sovereign-ready.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.17",
+      "en": "Insieme mantengono la promessa del metacloud: un control plane, ogni provider, zero lock-in forzato.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.18",
+      "en": "Non devi riarchitettare tutto. Parti in piccolo e amplia man mano che il valore si dimostra.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.19",
+      "en": "1. Mappa workload e dipendenze. Identifica cosa è critico, quali dati richiedono un controllo giurisdizionale rigoroso, quali servizi sono davvero portabili rispetto a quelli vincolati a un singolo provider, e quanto costerebbe davvero uscire da ogni vendor. Questo fa emergere il lock-in nascosto e definisce le priorità.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.2",
+      "en": "Un metacloud è il control plane che governa cloud, hypervisor e provider senza sostituirli. Scopri cos'è, perché batte il multi-cloud e come iniziare gratis quest'estate con Electros.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.20",
+      "en": "2. Collega Electros a un perimetro ristretto. Non fare tutto in una volta. Scegli un caso d'uso delimitato — un ambiente dev/test, un setup di disaster recovery cross-provider, o il ribilanciamento di alcuni workload tra on-prem e cloud pubblico — collegalo a Electros e inizia a gestirlo con un unico modello. Misura i benefici prima di ampliare lo scope.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.21",
+      "en": "3. Federisci i provider con Atomosphere. Porta cloud e hypervisor in una federazione comune senza standardizzarli. Ogni ambiente mantiene la propria indipendenza; Electros li governa tutti attraverso un'unica superficie operativa.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.22",
+      "en": "4. Automatizza e governa via API. Integra resource discovery, workload placement, provisioning, policy enforcement e visibilità dei costi nelle toolchain CLI, API e IaC esistenti. È qui che la governance smette di essere un collo di bottiglia e diventa un abilitatore.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.23",
+      "en": "Ecco la parte su cui vale la pena agire oggi. La nuova versione di Electros è gratuita per tutta l'estate 2026 — un modo senza impegno per collegare i tuoi ambienti esistenti, vedere l'intero patrimonio in un'unica vista e capire cosa fanno davvero le operazioni provider-neutral al tuo lavoro quotidiano.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.24",
+      "en": "Non c'è infrastruttura da smantellare e nulla da migrare. Punti Electros su ciò che già esegui e inizi a governarlo come un unico sistema.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.25",
+      "en": "👉 Scarica Electros gratis — estate 2026",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.26",
+      "en": "Vuoi vedere come un metacloud si applica al tuo patrimonio specifico — la tua esposizione VMware, i requisiti di sovranità, la roadmap AI/GPU? Parla con chi lo costruisce.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.27",
+      "en": "📅 Prenota una call con il team Elemento",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.28",
+      "en": "Un metacloud è il control plane sopra i tuoi provider di infrastruttura — unifica, governa e rende interoperabili qualsiasi cloud, hypervisor o ambiente, senza sostituire nulla né creare nuovo lock-in. Batte il multi-cloud perché risolve l'interoperabilità invece di moltiplicare i silos. Con Elemento, Electros ti offre il control plane, Atomosphere federisce i provider e AtomOS un percorso aperto per uscire da VMware. E in questo momento, Electros è gratis per tutta l'estate — il modo più semplice per avviare il tuo primo metacloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.29",
+      "en": "L'infrastruttura deve restare dove si trova. I tuoi workload — e la tua libertà di spostarli — ti appartengono.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.3",
+      "en": "La maggior parte delle aziende non ha un problema di cloud. Ha un problema di dipendenza .",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.4",
+      "en": "Esegui già workload su cloud pubblici, data center privati, hypervisor, nodi edge e — sempre più spesso — ambienti sovrani. Quello che non hai è un modo unico per governarli tutti. Ogni provider porta la propria console, la propria superficie API, il proprio modello operativo e le proprie meccaniche di lock-in. Il risultato è familiare: operazioni frammentate, overhead di gestione in crescita e la scomoda consapevolezza di possedere i workload ma non la libertà di spostarli.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.5",
+      "en": "Un metacloud risolve questo — e quest'estate puoi provarlo gratis. Di seguito vedremo cos'è davvero un metacloud, perché batte un setup multi-cloud tradizionale e come avviarne uno con Electros , il control plane di Elemento Cloud, ora disponibile in una nuova versione gratuita per tutta l'estate 2026.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.6",
+      "en": "Ogni era dell'infrastruttura è stata definita da un'astrazione che ha trasformato lo strato sottostante in commodity. Le macchine virtuali hanno astratto i server fisici. Kubernetes ha astratto i container. Il metacloud astrae i provider di infrastruttura stessi.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.7",
+      "en": "In concreto, un metacloud è un control plane che si colloca sopra i tuoi cloud, hypervisor e ambienti Kubernetes e li unifica in un unico livello operativo, di governance e di procurement — preservando l'indipendenza di ogni provider e la portabilità dei workload. Non sostituisce la tua infrastruttura. Federisce ciò che hai già.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.8",
+      "en": "Questo ultimo punto è tutto il gioco. La gestione cloud tradizionale gestisce un provider alla volta, con tooling e governance specifici per provider saldati all'infrastruttura stessa. Un metacloud gestisce molti provider simultaneamente, attraverso un modello operativo comune, con la governance nettamente separata dalla proprietà. Smetti di migrare e inizi a federare.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.p.9",
+      "en": "Il principio fondamentale: l'infrastruttura deve restare dove si trova. I workload devono girare dove ha più senso.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.1",
+      "en": "By Elemento Team &mdash; 2026-07-06",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.10",
+      "en": "Because multi-cloud, in practice, too often becomes multi-silo . You end up with several providers that don’t interoperate natively, stitched together with brittle custom integrations that are expensive to maintain. You get more options on paper and less control in reality.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.11",
+      "en": "The data backs this up. Gartner forecasts that more than 50% of organizations won’t achieve the results they expect from multi-cloud by 2029 — largely because of interoperability problems. Meanwhile, worldwide sovereign cloud IaaS spending is projected to hit $80 billion in 2026 , with European spend growing roughly 83% year over year. And despite the public-cloud hype, IDC and Gartner estimate that around 80% of enterprise workloads still run on-premises or in private cloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.12",
+      "en": "Put together, these numbers describe a very specific opportunity: most enterprise infrastructure is already hybrid and heterogeneous — it just lacks a layer that governs it as one coherent system. That layer is the metacloud, and getting interoperability right is exactly what separates a real metacloud from a pretty dashboard bolted on top of chaos.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.13",
+      "en": "Elemento Cloud is a metacloud platform. Instead of replacing your infrastructure, it adds a control and federation layer above private clouds, public clouds, sovereign clouds, hypervisors and Kubernetes. Three products make it work.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.14",
+      "en": "Electros™ — the control plane. Electros is the operational core: a hyper-orchestrator that gives you one interface to discover, govern, broker and orchestrate resources across every connected environment. One dashboard for health, capacity and cost. Cross-provider orchestration to deploy, migrate and scale without platform-specific tooling. Consistent governance, tagging and cost-attribution policies everywhere. Unified VNC (and soon RDP and SSH) access, no separate bastion required. Automation through REST APIs that drop straight into your CI/CD and infrastructure-as-code pipelines. This is free all summer — more on that below.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.15",
+      "en": "Atomosphere™ — the universal provider fabric. Atomosphere is the distributed connectivity layer: provider-side API proxies and federation endpoints that expose infrastructure and services to the metacloud through a common interoperability model. Rather than centralizing your infrastructure, it lets heterogeneous providers join a common federation while keeping their operational independence. It’s how Electros can speak to everything without forcing anything to standardize.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.16",
+      "en": "AtomOS® — the open hypervisor. For teams looking beyond VMware, AtomOS is a next-generation virtualization platform built on Linux KVM and QEMU, running on a RHEL-compatible foundation. GPU passthrough for AI workloads, live migration, autonomous clustering, broad storage compatibility — no proprietary hypervisor engine, no storage vendor lock-in. It turns commodity hardware into a cloud-ready, sovereign-ready environment.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.17",
+      "en": "Together they deliver the metacloud promise: one control plane, every provider, zero forced lock-in.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.18",
+      "en": "You don’t rearchitect everything. You start small and expand as the value proves out.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.19",
+      "en": "1. Map your workloads and dependencies. Identify what’s critical, which data needs strict jurisdictional control, which services are genuinely portable versus locked to a single provider, and what it would actually cost to exit each vendor. This surfaces your hidden lock-in and sets priorities.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.2",
+      "en": "A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.20",
+      "en": "2. Connect Electros to a narrow perimeter. Don’t boil the ocean. Pick one bounded use case — a dev/test estate, a cross-provider disaster-recovery setup, or rebalancing a few workloads between on-prem and public cloud — connect it to Electros, and start operating it through one model. Measure the benefits before you widen the scope.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.21",
+      "en": "3. Federate your providers with Atomosphere. Bring your clouds and hypervisors into a common federation without standardizing them. Each environment keeps its independence; Electros governs them all through one operational surface.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.22",
+      "en": "4. Automate and govern via API. Wire resource discovery, workload placement, provisioning, policy enforcement and cost visibility into your existing CLI, API and IaC toolchains. This is where governance stops being a bottleneck and becomes an enabler.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.23",
+      "en": "Here’s the part worth acting on today. The new version of Electros is free for the entire summer of 2026 — a no-commitment way to connect your existing environments, see your whole estate through a single pane, and feel what provider-neutral operations actually do to your day-to-day.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.24",
+      "en": "There’s no infrastructure to rip out and nothing to migrate. You point Electros at what you already run and start governing it as one system.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.25",
+      "en": "👉 Download Electros free — summer 2026",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.26",
+      "en": "Want to see how a metacloud maps to your specific estate — your VMware exposure, your sovereignty requirements, your AI/GPU roadmap? Talk to the people who build it.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.27",
+      "en": "📅 Book a call with the Elemento team",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.28",
+      "en": "A metacloud is the control plane above your infrastructure providers — it unifies, governs and makes interoperable any cloud, hypervisor or environment, without replacing anything or creating new lock-in. It beats multi-cloud because it solves interoperability instead of multiplying silos. With Elemento, Electros gives you the control plane, Atomosphere federates your providers, and AtomOS offers an open path off VMware. And right now, Electros is free for the whole summer — the easiest possible way to run your first metacloud.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.29",
+      "en": "Infrastructure should stay where it is. Your workloads — and your freedom to move them — belong to you.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.3",
+      "en": "Most enterprises don’t have a cloud problem. They have a dependency problem.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.4",
+      "en": "You already run workloads across public clouds, private data centers, hypervisors, edge nodes and — increasingly — sovereign environments. What you don’t have is a single way to govern all of it. Every provider brings its own console, its own API surface, its own operating model and its own lock-in mechanics. The result is familiar: fragmented operations, ballooning management overhead, and the uncomfortable realization that you own your workloads but not the freedom to move them.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.5",
+      "en": "A metacloud fixes that — and this summer you can try it for free. Below we’ll cover what a metacloud actually is, why it beats a traditional multi-cloud setup, and exactly how to spin one up with Electros , the Elemento Cloud control plane, now available in a new version that’s free for the entire summer of 2026.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.6",
+      "en": "Every era of infrastructure has been defined by one abstraction that turned the layer beneath it into a commodity. Virtual machines abstracted physical servers. Kubernetes abstracted containers. The metacloud abstracts infrastructure providers themselves.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.7",
+      "en": "Concretely, a metacloud is a control plane that sits above your clouds, hypervisors and Kubernetes environments and unifies them into a single operational, governance and procurement layer — while preserving each provider’s independence and your workloads’ portability. It does not replace your infrastructure. It federates what you already have.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.8",
+      "en": "That last point is the whole game. Traditional cloud management handles one provider at a time, with provider-specific tooling and governance welded to the infrastructure itself. A metacloud handles many providers simultaneously, through one common operating model, with governance cleanly separated from ownership. You stop migrating and start federating.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.p.9",
+      "en": "The core principle: infrastructure should stay where it is. Workloads should run where they make the most sense.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.description",
+      "en": "A metacloud is the control plane that governs any cloud, hypervisor and provider without replacing them. Learn what it is, why it beats multi-cloud, and how to start free this summer with Electros.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.description",
+      "en": "Un metacloud è il control plane che governa cloud, hypervisor e provider senza sostituirli. Scopri cos'è, perché batte il multi-cloud e come iniziare gratis quest'estate con Electros.",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.it.title",
+      "en": "Cos'è un Metacloud? Guida pratica per avviarne uno con Electros | Blog Elemento",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.it.html",
+      "context": "meta title"
+    },
+    {
+      "id": "meta.blog-posts_2026-07-06-what-is-a-metacloud-how-to-start.title",
+      "en": "What Is a Metacloud? A Practical Guide to Running One with Electros | Elemento Blog",
+      "it": "",
+      "fr": "",
+      "source": "blog-posts/2026-07-06-what-is-a-metacloud-how-to-start.html",
+      "context": "meta title"
+    }
+  ]
+}

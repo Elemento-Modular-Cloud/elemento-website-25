@@ -1432,6 +1432,29 @@
     ]
   },
   {
+    "stem": "buy-seat",
+    "legacyPath": "buy-seat.html",
+    "group": "root",
+    "slug": "buy-seat",
+    "title": "Buy an Electros seat | Elemento",
+    "description": "Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.",
+    "robots": "index, follow",
+    "ogType": "website",
+    "extraCss": [
+      "css/breadcrumb.css",
+      "css/buy-seat.css"
+    ],
+    "extraScripts": [
+      "js/electros-subscribe.js"
+    ],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "forms/getintouch",
     "legacyPath": "forms/getintouch.html",
     "group": "forms",
@@ -1506,12 +1529,10 @@
     "description": "",
     "robots": "index, follow",
     "ogType": "website",
-    "extraCss": [],
-    "extraScripts": [
-      "https://challenges.cloudflare.com/turnstile/v0/api.js",
-      "https://web3forms.com/client/script.js",
-      "https://www.google.com/recaptcha/api.js?render=6Le_4x8sAAAAAHJrKNwbJUakP2hkcilketrulwTX"
+    "extraCss": [
+      "css/forms.css"
     ],
+    "extraScripts": [],
     "type": "legacy",
     "locales": [
       "en",

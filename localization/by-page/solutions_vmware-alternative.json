@@ -68,7 +68,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.h3.5",
-      "en": "AtomOS",
+      "en": "Electros",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -76,7 +76,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.h3.6",
-      "en": "Electros",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -108,7 +108,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.h4.1",
-      "en": "Modern Hypervisor",
+      "en": "Unified Management",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -116,7 +116,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.h4.2",
-      "en": "Unified Management",
+      "en": "Modern Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -212,7 +212,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.p.8",
-      "en": "Production-grade hypervisor with better performance than VMware vSphere. Native cloud integration, container support, and automated management capabilities.",
+      "en": "Replace VMware vCenter with modern management console. Unified dashboard for on-premise and cloud infrastructure with API-first operations.",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -220,7 +220,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.p.9",
-      "en": "Replace VMware vCenter with modern management console. Unified dashboard for on-premise and cloud infrastructure with API-first operations.",
+      "en": "Production-grade hypervisor with better performance than VMware vSphere. Native cloud integration, container support, and automated management capabilities.",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",
@@ -252,7 +252,7 @@
     },
     {
       "id": "body.solutions_vmware-alternative.td.12",
-      "en": "Electros (Web UI + CLI) & REST API",
+      "en": "Electros dashboard & REST API",
       "it": "",
       "fr": "",
       "source": "solutions/vmware-alternative.html",

@@ -35,11 +35,11 @@
       },
       {
         "en": "Go Home",
-        "it": "Torna alla home"
+        "it": "Vai a casa"
       },
       {
         "en": "Search",
-        "it": "Cerca"
+        "it": "Ricerca"
       }
     ],
     "about": [
@@ -230,8 +230,8 @@
     ],
     "atomos": [
       {
-        "en": "Unlike CPU-core or VM-count based licensing, AtomOS's per-server support pricing encourages organizations to maximize the value of each physical server. This drives investment in larger, more efficient hardware that can host more workloads with better performance per watt.",
-        "it": "A differenza delle licenze basate sui core CPU o sul numero di macchine virtuali, il prezzo del supporto per server di AtomOS incoraggia le organizzazioni a massimizzare il valore di ciascun server fisico. Ciò spinge a investire in hardware più grande ed efficiente in grado di ospitare più carichi di lavoro con migliori prestazioni per watt."
+        "en": "Unlike CPU-core or VM-count based licensing, AtomOS's server-based pricing encourages organizations to maximize the value of each physical server. This drives investment in larger, more efficient hardware that can host more workloads with better performance per watt.",
+        "it": "A differenza delle licenze basate sui core CPU o sul numero di macchine virtuali, i prezzi basati sui server di AtomOS incoraggiano le organizzazioni a massimizzare il valore di ciascun server fisico. Ciò spinge a investire in hardware più grande ed efficiente in grado di ospitare più carichi di lavoro con migliori prestazioni per watt."
       },
       {
         "en": "AtomOS runs on top of a RHEL-compliant underlying OS — without customisation or forks. This means you get the full benefit of Red Hat's ecosystem: battle-tested stability, enterprise-grade support, and complete compatibility with the RHEL ecosystem.",
@@ -258,8 +258,8 @@
         "it": "Calcola quanto potresti risparmiare con AtomOS rispetto a VMware. Scopri come la nostra soluzione di virtualizzazione ti aiuta a evitare l'aumento dei costi, senza compromettere l'affidabilità a livello enterprise."
       },
       {
-        "en": "By pricing support per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.",
-        "it": "Applicando al supporto un prezzo per server anziché per core CPU o VM, incoraggiamo le organizzazioni a scegliere hardware potente ed efficiente in grado di gestire più carichi di lavoro con un minore consumo energetico."
+        "en": "By charging per server rather than per CPU core or VM, we encourage organizations to choose powerful, efficient hardware that can handle more workloads with less energy consumption.",
+        "it": "Facendo pagare per server anziché per core CPU o VM, incoraggiamo le organizzazioni a scegliere hardware potente ed efficiente in grado di gestire più carichi di lavoro con un minore consumo energetico."
       },
       {
         "en": "The kernel is mainline Linux — no vendor patches or proprietary extensions. This empowers incredible hardware support and super fast security updates (and updates in general).",
@@ -322,8 +322,8 @@
         "it": "Qualsiasi FS condiviso: GlusterFS, Ceph, NFS, iSCSI, ecc.: opzioni di archiviazione flessibili per la tua infrastruttura."
       },
       {
-        "en": "Our support model incentivizes efficient resource utilization and sustainable infrastructure choices",
-        "it": "Il nostro modello di supporto incentiva l’utilizzo efficiente delle risorse e le scelte infrastrutturali sostenibili"
+        "en": "Our pricing model incentivizes efficient resource utilization and sustainable infrastructure choices",
+        "it": "Il nostro modello di prezzo incentiva l’utilizzo efficiente delle risorse e le scelte infrastrutturali sostenibili"
       },
       {
         "en": "AtomOS supports a wide range of Linux and Windows guest OSes for flexible deployment scenarios",
@@ -386,8 +386,8 @@
         "it": "Ottieni AtomOS in esecuzione sulla tua infrastruttura in modo rapido e semplice"
       },
       {
-        "en": "The full hypervisor is free on every server — you only pay for optional support",
-        "it": "L'hypervisor completo è gratuito su ogni server — paghi solo il supporto opzionale"
+        "en": "From free community use to enterprise production deployments",
+        "it": "Dall'utilizzo gratuito da parte della comunità alle distribuzioni di produzione aziendale"
       },
       {
         "en": "Enterprise-grade features designed for production workloads",
@@ -510,8 +510,8 @@
         "it": "Installa moduli aggiuntivi (ZFS, GlusterFS)"
       },
       {
-        "en": "Per-Server Support Pricing Drives Green Economy",
-        "it": "Il prezzo del supporto per server favorisce l’economia green"
+        "en": "Server-Based Pricing Drives Green Economy",
+        "it": "I prezzi basati su server favoriscono l’economia green"
       },
       {
         "en": "Incredible hardware support from upstream",
@@ -530,76 +530,8 @@
         "it": "Basato su server (non core CPU o conteggio VM)"
       },
       {
-        "en": "AtomOS — Free Forever",
-        "it": "AtomOS: gratis per sempre"
-      },
-      {
-        "en": "Optional Support Plans",
-        "it": "Piani di supporto opzionali"
-      },
-      {
-        "en": "Per server, per year — all plans include 8x5 coverage",
-        "it": "Per server, all'anno — tutti i piani includono copertura 8x5"
-      },
-      {
-        "en": "8x5 coverage",
-        "it": "Copertura 8x5"
-      },
-      {
-        "en": "Around-the-clock coverage",
-        "it": "Copertura 24 ore su 24"
-      },
-      {
-        "en": "✓ Email ticketing support",
-        "it": "✓ Supporto con ticketing via email"
-      },
-      {
-        "en": "✓ 8x5 coverage (business hours)",
-        "it": "✓ Copertura 8x5 (orario lavorativo)"
-      },
-      {
-        "en": "✓ Guaranteed upgrade path",
-        "it": "✓ Percorso di aggiornamento garantito"
-      },
-      {
-        "en": "✓ Full CLI control (virsh, qemu-img)",
-        "it": "✓ Controllo CLI completo (virsh, qemu-img)"
-      },
-      {
-        "en": "✓ Everything in Base",
-        "it": "✓ Tutto ciò che è incluso in Base"
-      },
-      {
-        "en": "✓ Phone & call support",
-        "it": "✓ Supporto telefonico e via chiamata"
-      },
-      {
-        "en": "✓ Support in Italian and English",
-        "it": "✓ Supporto in italiano e inglese"
-      },
-      {
-        "en": "✓ Everything in Pro",
-        "it": "✓ Tutto ciò che è incluso in Pro"
-      },
-      {
-        "en": "✓ 24x7 coverage",
-        "it": "✓ Copertura 24x7"
-      },
-      {
-        "en": "✓ Tailored SLAs for your workloads",
-        "it": "✓ SLA su misura per i tuoi carichi di lavoro"
-      },
-      {
-        "en": "Get Base Support",
-        "it": "Attiva il supporto Base"
-      },
-      {
-        "en": "Get Pro Support",
-        "it": "Attiva il supporto Pro"
-      },
-      {
-        "en": "Contact Sales",
-        "it": "Contatta il commerciale"
+        "en": "AtomOS Community Edition — Free Forever",
+        "it": "AtomOS Community Edition: gratis per sempre"
       },
       {
         "en": "Super fast security updates and patches",
@@ -686,8 +618,8 @@
         "it": "Ulteriori informazioni sulla tecnologia"
       },
       {
-        "en": "AtomOS is Free, Forever",
-        "it": "AtomOS è gratis, per sempre"
+        "en": "Choose Your AtomOS Edition",
+        "it": "Scegli la tua edizione AtomOS"
       },
       {
         "en": "Frequently Asked Questions",
@@ -710,16 +642,16 @@
         "it": "Vantaggi dell’economia green:"
       },
       {
-        "en": "How connectivity works",
-        "it": "Come funziona la connettività"
-      },
-      {
         "en": "Broad Hardware Support",
         "it": "Ampio supporto hardware"
       },
       {
         "en": "Is AtomOS open-source?",
         "it": "AtomOS è open source?"
+      },
+      {
+        "en": "How connectivity works",
+        "it": "Come funziona la connettività"
       },
       {
         "en": "Get Enterprise License",
@@ -946,8 +878,8 @@
         "it": "Caratteristica"
       },
       {
-        "en": "Get it Free",
-        "it": "Ottienilo gratis"
+        "en": "Buy Now",
+        "it": "Acquista ora"
       },
       {
         "en": "Type 1",
@@ -975,29 +907,29 @@
       },
       {
         "en": "raw",
-        "it": "formato grezzo (raw)"
+        "it": "grezzo (raw)"
       }
     ],
     "atomosphere": [
       {
-        "en": "Atomosphere is the backend fabric that lets Electros act as a universal proxy over private clouds and CSP APIs — enabling cross-provider VM management, pricing comparison, and seamless migrations.",
-        "it": "Atomosphere è il fabric backend che consente a Electros di fungere da proxy universale su cloud privati e API CSP — abilitando gestione VM cross-provider, confronto prezzi e migrazioni senza interruzioni."
+        "en": "Elemento's Atomosphere gateway acts as a universal proxy that abstracts cloud provider APIs into a unified protocol , enabling cross-provider VM management , pricing comparison , and seamless migrations .",
+        "it": "Il gateway Atomosphere di Elemento funge da proxy universale che astrae le API del provider cloud in un protocollo unificato, consentendo la gestione delle VM tra provider, il confronto dei prezzi e le migrazioni senza interruzioni."
       },
       {
         "en": "The Elemento API proxy sits between your applications and CSP APIs, providing unified access while you continue billing directly with your existing cloud providers. No markup, no middleman billing.",
         "it": "Il proxy API Elemento è un layer che è un layer che si trova tra le tue applicazioni e le API dei CSP, fornendo accesso unificato mentre continui a fatturare direttamente con i tuoi fornitori cloud esistenti. Non applichiamo nessun markup, nessun costo come intermediari."
       },
       {
-        "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
-        "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare."
+        "en": "Instead of learning separate APIs for AWS , Azure , Google Cloud , and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
+        "it": "Invece di apprendere API separate per AWS, Azure, Google Cloud e altri CSP, Atomosphere fornisce un'unica API per gestirli tutti mentre continui a utilizzare i tuoi account cloud esistenti."
       },
       {
-        "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
-        "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare."
+        "en": "Instead of learning separate APIs for AWS, Azure, Google Cloud, and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
+        "it": "Invece di apprendere API separate per AWS, Azure, Google Cloud e altri CSP (cloud service provider), Atomosphere fornisce un'unica API per gestirli tutti mentre continui a utilizzare i tuoi account cloud esistenti."
       },
       {
-        "en": "Atomosphere is the backend that lets Electros connect to private clouds and your existing CSP accounts — one API across AWS, Azure, Google Cloud, on-prem, and more. Not a separate product to buy.",
-        "it": "Atomosphere è il backend che consente a Electros di connettersi a cloud privati e ai tuoi account CSP esistenti — un'unica API su AWS, Azure, Google Cloud, on-prem e altro. Non è un prodotto separato da acquistare."
+        "en": "Instead of learning separate APIs for AWS, Azure, Google Cloud, and other CSPs, Atomosphere provides one API to rule them all while you continue using your existing cloud accounts.",
+        "it": "Invece di apprendere API separate per AWS, Azure, Google Cloud e altri CSP (cloud service provider), Atomosphere fornisce un'unica API per gestirli tutti mentre continui a utilizzare i tuoi account cloud esistenti."
       },
       {
         "en": "All clouds connected through Atomosphere appear in the Electros interface and CLI as a unified provider list . No need to remember multiple credentials or APIs.",
@@ -1068,12 +1000,12 @@
         "it": "Livello di astrazione API universale per account CSP esistenti"
       },
       {
-        "en": "Atomosphere powers Electros connectivity — start with Electros to manage private clouds and existing CSP accounts from one place.",
-        "it": "Atomosphere alimenta la connettività di Electros — inizia con Electros per gestire cloud privati e account CSP esistenti da un unico posto."
+        "en": "Experience unified multicloud management with Atomosphere",
+        "it": "Sperimenta la gestione multicloud unificata con Atomosphere"
       },
       {
-        "en": "The connectivity technology behind Electros",
-        "it": "La tecnologia di connettività dietro Electros"
+        "en": "The Federated Multicloud Gateway for Your Infrastructure",
+        "it": "Il gateway multicloud federato per la tua infrastruttura"
       },
       {
         "en": "Unified interface while using your existing CSP accounts",
@@ -1108,8 +1040,8 @@
         "it": "Gestione unificata su tutti i cloud connessi"
       },
       {
-        "en": "Atomosphere: The connectivity fabric for Electros",
-        "it": "Atomosphere: il fabric di connettività per Electros"
+        "en": "Atomosphere: The Gateway to +235 data centers",
+        "it": "Atomosphere: il gateway per oltre 235 data center"
       },
       {
         "en": "✓ Real-time cost monitoring and optimization",
@@ -1156,16 +1088,16 @@
         "it": "Perfetta integrazione con Electros"
       },
       {
-        "en": "Ready to connect every cloud in Electros?",
-        "it": "Pronto a collegare ogni cloud in Electros?"
+        "en": "Ready to unify your CSP APIs?",
+        "it": "Pronto a unificare le tue API CSP?"
       },
       {
         "en": "Dynamic Cloud-Cost Comparison",
         "it": "Confronto dinamico dei costi del cloud"
       },
       {
-        "en": "Get started with Electros",
-        "it": "Inizia con Electros"
+        "en": "Get started with Atomosphere",
+        "it": "Inizia con Atomosphere"
       },
       {
         "en": "Provider Integration Status",
@@ -1178,6 +1110,10 @@
       {
         "en": "Expandable CSP Integration",
         "it": "Integrazione CSP espandibile"
+      },
+      {
+        "en": "Technology behind Electros",
+        "it": "Tecnologia dietro Electros"
       },
       {
         "en": "Universal API Abstraction",
@@ -1194,10 +1130,6 @@
       {
         "en": "Loading provider data...",
         "it": "Caricamento dati fornitore..."
-      },
-      {
-        "en": "Connect. Unify. Control.",
-        "it": "COLLEGARE. UNIFICARE. CONTROLLARE."
       },
       {
         "en": "API proxy architecture",
@@ -3968,7 +3900,7 @@
     ],
     "blog-posts_2026-04-23-the-future-of-cloud-what-cloud-really-means-why-its-centralized-and-what-comes-next": [
       {
-        "en": "By leveraging our integrated stack— AtomOS for infrastructure portability and GPU orchestration, and Electros for unified governance across hybrid environments (powered by Atomosphere connectivity)—we transform disparate cloud resources into a single, coherent operating system. Elemento empowers your organization to reclaim control over data, optimize CAPEX/OPEX models, and eliminate vendor lock-in for good. We don’t just offer \"another cloud\"; we provide the interoperable foundation your business needs to remain independent, secure, and future-proof.",
+        "en": "By leveraging our integrated stack— AtomOS for infrastructure portability and GPU orchestration, Electros for unified governance across hybrid environments, and Atomosphere for true sovereign cloud federation—we transform disparate cloud resources into a single, coherent operating system. Elemento empowers your organization to reclaim control over data, optimize CAPEX/OPEX models, and eliminate vendor lock-in for good. We don’t just offer \"another cloud\"; we provide the interoperable foundation your business needs to remain independent, secure, and future-proof.",
         "it": "Sfruttando il nostro stack integrato (AtomOS per la portabilità dell'infrastruttura e l'orchestrazione della GPU, Electros per la governance unificata in ambienti ibridi e Atomosphere per una vera federazione del cloud sovrano) trasformiamo risorse cloud disparate in un unico sistema operativo coerente. Elemento consente alla tua organizzazione di riprendere il controllo sui dati, ottimizzare i modelli CAPEX/OPEX ed eliminare definitivamente i vincoli con i fornitori. Non offriamo solo \"un'altra nuvola\"; forniamo la base interoperabile di cui la tua azienda ha bisogno per rimanere indipendente, sicura e a prova di futuro."
       },
       {
@@ -4702,7 +4634,7 @@
         "it": "I token dell'interfaccia utente del prodotto su elemento.cloud potrebbero differire leggermente; tratta questa pagina come riferimento al colore di marketing e css/themes.css per l'implementazione."
       },
       {
-        "en": "Atomos and Electros — capitalize as proper nouns. Atomosphere is technology (not a product). Use each product’s SVG from All products alongside the name when possible.",
+        "en": "Atomos , Electros , and Atomosphere — capitalize as proper nouns. Use each product’s SVG from All products alongside the name when possible.",
         "it": "Atomos, Electros e Atomosphere: scrivono in maiuscolo come nomi propri. Utilizza l'SVG di ciascun prodotto da Tutti i prodotti accanto al nome, quando possibile."
       },
       {
@@ -5566,32 +5498,8 @@
         "it": "Connettività perfetta su tutte le tue macchine virtuali con la selezione intelligente del protocollo"
       },
       {
-        "en": "Electros is free with your Elemento account until September 2026. From September 2026, it moves to a SaaS subscription pricing model. Existing users will be notified ahead of the change.",
-        "it": "Electros è gratuito con il tuo account Elemento fino a settembre 2026. Da settembre 2026 passa a un modello di prezzo in abbonamento SaaS. Gli utenti esistenti saranno avvisati prima del cambiamento."
-      },
-      {
-        "en": "Free until September 2026",
-        "it": "Gratuito fino a settembre 2026"
-      },
-      {
-        "en": "Electros is free with your Elemento account today — a SaaS subscription model arrives in September 2026",
-        "it": "Electros oggi è gratuito con il tuo account Elemento — un modello in abbonamento SaaS arriverà a settembre 2026"
-      },
-      {
-        "en": "Free today",
-        "it": "Gratuito oggi"
-      },
-      {
-        "en": "Use Electros at no cost with your Elemento account until September 2026. All current features are included with no additional licensing fees.",
-        "it": "Usa Electros senza costi con il tuo account Elemento fino a settembre 2026. Tutte le funzionalità attuali sono incluse senza costi di licenza aggiuntivi."
-      },
-      {
-        "en": "SaaS subscription from September 2026",
-        "it": "Abbonamento SaaS da settembre 2026"
-      },
-      {
-        "en": "From September 2026, Electros moves to a SaaS-style subscription. Pricing details will be published ahead of the change, and existing users will be notified in advance.",
-        "it": "Da settembre 2026, Electros passa a un abbonamento in stile SaaS. I dettagli sui prezzi saranno pubblicati prima del cambiamento e gli utenti esistenti saranno avvisati in anticipo."
+        "en": "Yes, Electros is free with your Elemento account. No additional licensing fees required.",
+        "it": "Sì, Electros è gratuito con il tuo account Elemento. Non sono richiesti costi di licenza aggiuntivi."
       },
       {
         "en": "Yes, basic inventory and local VM management work without network, syncing when online.",
@@ -5638,8 +5546,8 @@
         "it": "Utilizza elemento-cli per script e pipeline insieme all'app desktop"
       },
       {
-        "en": "Unified API Atomosphere-powered connectivity across every connected cloud",
-        "it": "API unificata: connettività Atomosphere su ogni cloud connesso"
+        "en": "Stack integrations AtomOS and Atomosphere for provisioning and control",
+        "it": "Integrazioni stack AtomOS e Atomosphere per il provisioning e il controllo"
       },
       {
         "en": "Powerful capabilities for managing hybrid and multicloud environments",
@@ -5698,8 +5606,8 @@
         "it": "Domande comuni sulla funzionalità di Electros"
       },
       {
-        "en": "Provider-agnostic provisioning with AtomOS integration",
-        "it": "Provisioning indipendente dal provider con integrazione AtomOS"
+        "en": "Deep integration with AtomOS and Atomosphere",
+        "it": "Profonda integrazione con AtomOS e Atomosphere"
       },
       {
         "en": "Electros Cross‑Platform & Protocol Support",
@@ -6294,56 +6202,48 @@
     ],
     "forms_signup": [
       {
-        "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
-        "it": "Accetto i Termini e Condizioni (IT), Privacy Policy e Cookie Policy *"
+        "en": "Includes a personal organisation and a 14-day Electros trial. Then download Electros and sign in.",
+        "it": "Include un’organizzazione personale e una prova Electros di 14 giorni. Poi scarica Electros e accedi."
+      },
+      {
+        "en": "I agree to the Terms and Conditions , Privacy Policy , and Cookie Policy *",
+        "it": "Accetto i Termini e Condizioni, la Privacy Policy e la Cookie Policy *"
+      },
+      {
+        "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
+        "it": "Almeno 12 caratteri, con maiuscole e minuscole, un numero e un simbolo."
       },
       {
         "en": "Subscribe to our newsletter for updates and insights",
-        "it": "Iscriviti alla nostra newsletter per aggiornamenti e approfondimenti"
+        "it": "Iscriviti alla newsletter per aggiornamenti e approfondimenti"
       },
       {
-        "en": "Get started with the future of cloud computing",
-        "it": "Inizia con il futuro del cloud computing"
+        "en": "Already have an account? Sign in & buy a seat",
+        "it": "Hai già un account? Accedi e acquista un seat"
       },
       {
         "en": "Please complete all required fields.",
-        "it": "Si prega di completare tutti i campi obbligatori."
+        "it": "Compila tutti i campi obbligatori."
       },
       {
-        "en": "Primary Use Case",
-        "it": "Caso d'uso primario"
+        "en": "Create your account",
+        "it": "Crea il tuo account"
       },
       {
-        "en": "Email Address *",
-        "it": "Indirizzo e-mail *"
+        "en": "Confirm password *",
+        "it": "Conferma password *"
       },
       {
-        "en": "Join Elemento",
-        "it": "Unisciti a Elemento"
+        "en": "Create account",
+        "it": "Crea account"
       },
       {
-        "en": "First Name *",
-        "it": "Nome di battesimo *"
+        "en": "First name *",
+        "it": "Nome *"
       },
       {
-        "en": "Get Started",
-        "it": "Inizia"
-      },
-      {
-        "en": "Last Name *",
+        "en": "Last name *",
         "it": "Cognome *"
-      },
-      {
-        "en": "${message}",
-        "it": "${messaggio}"
-      },
-      {
-        "en": "Company",
-        "it": "Azienda"
-      },
-      {
-        "en": "Role",
-        "it": "Ruolo"
       }
     ],
     "grazie_atomos-demo": [
@@ -6367,30 +6267,6 @@
       }
     ],
     "index": [
-      {
-        "en": "Electros, the control plane for every cloud, hypervisor and sovereign infrastructure.",
-        "it": "<a href=\"electros.html\" class=\"home-tagline-link home-tagline-link--electros\">Electros</a>, il control plane per ogni cloud, hypervisor e infrastruttura sovrana."
-      },
-      {
-        "en": "Govern, move and optimise workloads across AWS, Azure, Google Cloud, OVHcloud, VMware, Proxmox and AtomOS — without replacing what already exists.",
-        "it": "Governa, sposta e ottimizza i carichi di lavoro su AWS, Azure, Google Cloud, OVHcloud, VMware, Proxmox e <a href=\"atomos.html\" class=\"home-tagline-link home-tagline-link--atomos\">AtomOS</a> — senza sostituire ciò che già esiste."
-      },
-      {
-        "en": "Book a Metacloud Assessment",
-        "it": "Prenota una valutazione Metacloud"
-      },
-      {
-        "en": "Run VMware Exit Assessment",
-        "it": "Avvia la valutazione di uscita da VMware"
-      },
-      {
-        "en": "One governance layer across public clouds, hypervisors and sovereign providers — without replacing what you already run.",
-        "it": "Un unico layer di governance su cloud pubblici, hypervisor e provider sovrani — senza sostituire ciò che già esegui."
-      },
-      {
-        "en": "Elemento Homepage Hero",
-        "it": "Hero homepage Elemento"
-      },
       {
         "en": "Elemento is a vendor-neutral cloud platform that abstracts away the differences between cloud providers. Unlike traditional providers that lock you into their ecosystem, Elemento gives you a unified interface to deploy and manage workloads across AWS, Azure, Google Cloud, and your own infrastructure. This means you can move workloads freely without rewriting applications or changing your deployment processes.",
         "it": "Elemento è una piattaforma cloud indipendente dal fornitore che elimina le differenze tra i fornitori di servizi cloud. A differenza dei fornitori tradizionali che ti vincolano al loro ecosistema, Elemento ti offre un'interfaccia unificata per distribuire e gestire carichi di lavoro su AWS, Azure, Google Cloud e sulla tua infrastruttura. Ciò significa che puoi spostare liberamente i carichi di lavoro senza riscrivere le applicazioni o modificare i processi di distribuzione."
@@ -6420,8 +6296,8 @@
         "it": "Sì! Elemento supporta completamente Kubernetes e carichi di lavoro container. Puoi distribuire e gestire i cluster Kubernetes su qualsiasi provider cloud e la nostra piattaforma fornisce funzionalità di orchestrazione aggiuntive su Kubernetes. Supportiamo anche contenitori Docker, grafici Helm e altri strumenti nativi del contenitore."
       },
       {
-        "en": "AtomOS is free forever — the full hypervisor with unlimited VMs on every server. Electros is free with your Elemento account until September 2026 (moving to a SaaS subscription afterwards), including connectivity to private clouds and your existing CSP accounts. This is perfect for testing, development, and production alike. Optional AtomOS support plans (Base and Pro, 8x5) are available whenever you need them.",
-        "it": "AtomOS è gratuito per sempre — l'hypervisor completo con VM illimitate su ogni server. Electros è gratuito con il tuo account Elemento fino a settembre 2026 (dopodiché passa a un abbonamento SaaS) e ottieni anche l'accesso all'API Atomosphere. Questo è perfetto sia per test e sviluppo che per la produzione. Piani di supporto AtomOS opzionali (Base e Pro, 8x5) sono disponibili quando ti servono."
+        "en": "Elemento offers a generous free tier that includes up to 2 VMs on AtomOS, basic Electros features, and access to Atomosphere API. This is perfect for testing, development, and small projects. You can upgrade to paid plans anytime for additional features, support, and higher usage limits.",
+        "it": "Elemento offre un generoso livello gratuito che include fino a 2 VM su AtomOS, funzionalità di base di Electros e accesso all'API Atomosphere. Questo è perfetto per test, sviluppo e piccoli progetti. Puoi passare ai piani a pagamento in qualsiasi momento per funzionalità aggiuntive, supporto e limiti di utilizzo più elevati."
       },
       {
         "en": "We provide comprehensive documentation, video tutorials, and a knowledge base. Enterprise customers get dedicated support with SLAs, while community users can access our active community forum and GitHub repositories. We also offer training programs and workshops for teams.",
@@ -6612,8 +6488,8 @@
         "it": "Guest accelerati dalla GPU tramite passthrough automatico"
       },
       {
-        "en": "235+ data centers reachable from one dashboard",
-        "it": "Oltre 235 data center raggiungibili da un'unica dashboard"
+        "en": "235+ data centers reachable through Atomosphere",
+        "it": "Oltre 235 data center raggiungibili tramite Atomosphere"
       },
       {
         "en": "Software-defined networking & VLAN segmentation",
@@ -6772,8 +6648,8 @@
         "it": "Il livello API per il cloud federato"
       },
       {
-        "en": "10+ CSPs unified through Electros",
-        "it": "Oltre 10 CSP unificati tramite Electros"
+        "en": "10+ CSPs unified via Atomosphere",
+        "it": "Oltre 10 CSP unificati tramite Atomosphere"
       },
       {
         "en": "Composable cloud infrastructure",
@@ -6860,12 +6736,12 @@
         "it": "Cluster e reti"
       },
       {
-        "en": "How connectivity works",
-        "it": "Come funziona la connettività"
-      },
-      {
         "en": "20 GB+ free disk space",
         "it": "20 GB+ di spazio libero su disco"
+      },
+      {
+        "en": "How connectivity works",
+        "it": "Come funziona la connettività"
       },
       {
         "en": "Escape vendor lock-in",
@@ -7654,10 +7530,6 @@
         "it": "✓ Nessun margine di profitto o commissione di intermediazione"
       },
       {
-        "en": "One Platform, two Products",
-        "it": "Una piattaforma, due prodotti"
-      },
-      {
         "en": "✓ Green computing incentives",
         "it": "✓ Incentivi per il cloud sostenibile"
       },
@@ -7668,6 +7540,10 @@
       {
         "en": "Meet the Elemento Products",
         "it": "Scopri i prodotti Elemento"
+      },
+      {
+        "en": "One Platform, two Products",
+        "it": "Una piattaforma, due prodotti"
       },
       {
         "en": "Learn About Our Technology",
@@ -8164,12 +8040,12 @@
         "it": "Orchestrazione e gestione multi-cloud. Connetti e gestisci senza problemi tutti i provider."
       },
       {
-        "en": "All solutions are built on our core products: AtomOS and Electros",
-        "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS e Electros"
-      },
-      {
         "en": "Tailored solutions for different industries, roles, and business scenarios",
         "it": "Soluzioni su misura per diversi settori, ruoli e scenari aziendali"
+      },
+      {
+        "en": "All solutions are built on our core products: AtomOS and Electros",
+        "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: AtomOS e Electros"
       },
       {
         "en": "Ready to Transform Your Infrastructure?",
@@ -8980,6 +8856,10 @@
         "it": "Sei pronto a vedere come la nostra tecnologia all'avanguardia può trasformare la tua infrastruttura? Scopri il background della nostra azienda ed esplora la nostra offerta di prodotti."
       },
       {
+        "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
+        "it": "Fabric di connettività backend per Electros — un gateway API unificato su cloud privati e i tuoi account AWS, Azure, GCP e altri CSP."
+      },
+      {
         "en": "With a cloud-agnostic and infrastructure-neutral design, Elemento ensures businesses can scale , adapt , and innovate without vendor lock-in.",
         "it": "Con un design indipendente dal cloud e indipendente svincolato svincolato dall'infrastruttura, Elemento garantisce che le aziende possano scalare, adattarsi e innovare senza vincoli con i fornitori."
       },
@@ -9012,10 +8892,6 @@
         "it": "Flussi di lavoro da riga di comando per l'installazione, la configurazione e il funzionamento di AtomOS insieme alla configurazione guidata e alle demo del cloud privato."
       },
       {
-        "en": "Advanced networking platform providing global connectivity, intelligent load balancing, and seamless traffic management.",
-        "it": "Piattaforma di rete avanzata che fornisce connettività globale, bilanciamento intelligente del carico e gestione continua del traffico."
-      },
-      {
         "en": "Discover the advanced technology stack and innovative architecture that powers Elemento's cutting-edge cloud solutions.",
         "it": "Scopri lo stack tecnologico avanzato e l'architettura innovativa che alimentano le soluzioni cloud all'avanguardia di Elemento."
       },
@@ -9038,6 +8914,10 @@
       {
         "en": "Collaborating with leading universities and research institutions to advance cloud computing technology.",
         "it": "Collaborare con le principali università e istituti di ricerca per far avanzare la tecnologia del cloud computing."
+      },
+      {
+        "en": "AtomOS and Electros are the products. Atomosphere is the connectivity technology that powers Electros.",
+        "it": "AtomOS e Electros sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros."
       },
       {
         "en": "Terraform, Ansible and Pulumi integration for automated infrastructure management and deployment.",
@@ -9082,10 +8962,6 @@
       {
         "en": "Modern and proven technologies powering our cloud-native platform",
         "it": "Tecnologie moderne e comprovate che alimentano la nostra piattaforma nativa del cloud"
-      },
-      {
-        "en": "Explore our comprehensive suite of cloud infrastructure products",
-        "it": "Esplora la nostra suite completa di prodotti per l'infrastruttura cloud"
       },
       {
         "en": "Partnering with renewable-powered data centers worldwide.",
@@ -9212,6 +9088,10 @@
         "it": "Informatica sensibile al CO2"
       },
       {
+        "en": "Products & Technology",
+        "it": "Prodotti e tecnologia"
+      },
+      {
         "en": "Security & Compliance",
         "it": "Sicurezza e conformità"
       },
@@ -9326,10 +9206,6 @@
       {
         "en": "Key Features:",
         "it": "Caratteristiche principali:"
-      },
-      {
-        "en": "Our Products",
-        "it": "I nostri prodotti"
       },
       {
         "en": "Green Cloud",
@@ -9860,6 +9736,160 @@
       {
         "en": "Why timing matters",
         "it": "Perché il tempismo è importante"
+      }
+    ],
+    "buy-seat": [
+      {
+        "en": "No further purchase is needed for this organisation. Open Electros to manage billing, or choose another organisation below.",
+        "it": "Non è necessario un ulteriore acquisto per questa organizzazione. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione qui sotto."
+      },
+      {
+        "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
+        "it": "Accedi, scegli l’organizzazione che deve ricevere il seat, seleziona un piano e completa il pagamento su Stripe."
+      },
+      {
+        "en": "VAT or fiscal code can be left blank when not applicable; address fields are required.",
+        "it": "Partita IVA o codice fiscale possono restare vuoti se non applicabili; l’indirizzo è obbligatorio."
+      },
+      {
+        "en": "Select the organisation that should receive the seat.",
+        "it": "Seleziona l’organizzazione che deve ricevere il seat."
+      },
+      {
+        "en": "You already have a paid seat in this organisation!",
+        "it": "Hai già un seat a pagamento in questa organizzazione!"
+      },
+      {
+        "en": "Required before Stripe checkout. Organisation: —",
+        "it": "Obbligatorio prima del checkout Stripe. Organizzazione: —"
+      },
+      {
+        "en": "Use your Elemento account email and password.",
+        "it": "Usa email e password del tuo account Elemento."
+      },
+      {
+        "en": "Choose another organisation",
+        "it": "Scegli un’altra organizzazione"
+      },
+      {
+        "en": "No account yet? Create one",
+        "it": "Non hai ancora un account? Creane uno"
+      },
+      {
+        "en": "Save & continue to Stripe",
+        "it": "Salva e continua su Stripe"
+      },
+      {
+        "en": "Buy an Electros seat",
+        "it": "Acquista un seat Electros"
+      },
+      {
+        "en": "Choose organisation",
+        "it": "Scegli organizzazione"
+      },
+      {
+        "en": "Continue to Stripe",
+        "it": "Continua su Stripe"
+      },
+      {
+        "en": "Back to Electros",
+        "it": "Torna a Electros"
+      },
+      {
+        "en": "Billing details",
+        "it": "Dati di fatturazione"
+      },
+      {
+        "en": "3 Plan & Stripe",
+        "it": "3 Piano e Stripe"
+      },
+      {
+        "en": "Organisation: —",
+        "it": "Organizzazione: —"
+      },
+      {
+        "en": "Organisation: —",
+        "it": "Organizzazione: —"
+      },
+      {
+        "en": "Plan & billing",
+        "it": "Piano e fatturazione"
+      },
+      {
+        "en": "2 Organisation",
+        "it": "2 Organizzazione"
+      },
+      {
+        "en": "Country (ISO)",
+        "it": "Paese (ISO)"
+      },
+      {
+        "en": "Company name",
+        "it": "Ragione sociale"
+      },
+      {
+        "en": "Fiscal code",
+        "it": "Codice fiscale"
+      },
+      {
+        "en": "VAT number",
+        "it": "Partita IVA"
+      },
+      {
+        "en": "Buy a seat",
+        "it": "Acquista un seat"
+      },
+      {
+        "en": "ZIP / CAP",
+        "it": "CAP"
+      },
+      {
+        "en": "1 Sign in",
+        "it": "1 Accedi"
+      },
+      {
+        "en": "Continue",
+        "it": "Continua"
+      },
+      {
+        "en": "Province",
+        "it": "Provincia"
+      },
+      {
+        "en": "SDI code",
+        "it": "Codice SDI"
+      },
+      {
+        "en": "Sign in",
+        "it": "Accedi"
+      },
+      {
+        "en": "Billing",
+        "it": "Fatturazione"
+      },
+      {
+        "en": "Address",
+        "it": "Indirizzo"
+      },
+      {
+        "en": "Back",
+        "it": "Indietro"
+      },
+      {
+        "en": "Back",
+        "it": "Indietro"
+      },
+      {
+        "en": "Back",
+        "it": "Indietro"
+      },
+      {
+        "en": "City",
+        "it": "Città"
+      },
+      {
+        "en": "Plan",
+        "it": "Piano"
       }
     ]
   }

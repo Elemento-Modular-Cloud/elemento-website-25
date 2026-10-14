@@ -84,7 +84,7 @@
     },
     {
       "id": "body.forms_getintouch.label.8",
-      "en": "I agree to the Terms and Conditions (IT) , Privacy Policy , and Cookie Policy *",
+      "en": "I agree to the Terms and Conditions , Privacy Policy , and Cookie Policy *",
       "it": "",
       "fr": "",
       "source": "forms/getintouch.html",

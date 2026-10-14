@@ -139,8 +139,8 @@
       "title": "AtomOS: potenzia il tuo cloud con l'hypervisor Linux | Elemento Cloud"
     },
     "atomosphere": {
-      "description": "Atomosphere è la tecnologia di connettività dietro Electros — unifica cloud privati e account CSP esistenti in un'unica API programmabile.",
-      "title": "Atomosphere — Tecnologia di connettività per Electros | Elemento"
+      "description": "Il gateway API multicloud di Elemento connette oltre 235 cloud e nodi on-premise in un'unica rete programmabile. Controllo unificato, portabilità senza interruzioni.",
+      "title": "Atomosphere: gateway multicloud federato | Elemento"
     },
     "2023-01-01-7-cloud-curiorities": {
       "description": "Il cloud computing ha rivoluzionato il modo in cui lavoriamo, giochiamo e memorizziamo i dati. Un sondaggio...",
@@ -366,7 +366,7 @@
       "description": "La tua soluzione demo completa è prenotata. Controlla l'e-mail e accetta l'invito del calendario per confermare la partecipazione."
     },
     "install-atomos": {
-      "description": "Guida all'installazione completa per il dashboard di orchestrazione Electros e l'hypervisor AtomOS. Metti in funzione entrambi i prodotti in pochi minuti con istruzioni dettagliate.",
+      "description": "Guida all'installazione completa per l'hypervisor AtomOS e il dashboard di orchestrazione Electros. Metti in funzione entrambi i prodotti in pochi minuti con istruzioni dettagliate.",
       "title": "Guida all'installazione — AtomOS ed Electros | Elemento Cloud"
     },
     "orbital": {
@@ -415,7 +415,7 @@
     },
     "full-solution-demo-en": {
       "description": "La tua demo della soluzione completa è prenotata. Controlla la tua email e accetta l'invito del calendario per confermare la tua partecipazione.",
-      "title": "Demo in programma: AtomOS &amp; Electros | Elemento"
+      "title": "Demo in programma: AtomOS, Electros &amp; Atomosfera | Elemento"
     },
     "partnership-dev": {
       "description": "La tua chiamata introduttiva alla partnership è programmata. Accetta l'invito del calendario in modo che entrambi i team siano allineati per la conversazione.",
@@ -623,7 +623,7 @@
       "title": "Candidatura presentata - Elemento"
     },
     "forms_signup": {
-      "title": "Iscriviti - Elemento"
+      "title": "Registrati - Elemento"
     },
     "grazie_atomos-demo": {
       "description": "La tua demo AtomOS è prenotata. Controlla l'e-mail e accetta l'invito del calendario per confermare l'appuntamento."
@@ -669,7 +669,7 @@
     },
     "thank-you_full-solution-demo-en": {
       "description": "La tua demo della soluzione completa è prenotata. Controlla la tua email e accetta l'invito del calendario per confermare la tua partecipazione.",
-      "title": "Demo in programma: AtomOS &amp; Electros | Elemento"
+      "title": "Demo in programma: AtomOS, Electros &amp; Atomosfera | Elemento"
     },
     "thank-you_partnership-dev": {
       "description": "La tua chiamata introduttiva alla partnership è programmata. Accetta l'invito del calendario in modo che entrambi i team siano allineati per la conversazione.",
@@ -702,6 +702,10 @@
     "blog-posts_2026-05-26-the-price-of-technological-dependence-why-vmware-lock-in-is-now-a-strategic-risk": {
       "description": "Dopo l'acquisizione di VMware da parte di Broadcom, i cambiamenti nelle licenze e il profondo vincolo dell'infrastruttura hanno trasformato la dipendenza dai fornitori in un rischio strategico. Scopri perché una strategia di uscita da VMware è incentrata sul controllo e in che modo AtomOS può essere d'aiuto.",
       "title": "Il prezzo della dipendenza tecnologica: perché il lock-in di VMware è ora un rischio strategico | Blog Elemento"
+    },
+    "buy-seat": {
+      "description": "Accedi al tuo account Elemento, scegli un’organizzazione e acquista un seat Electros tramite Stripe.",
+      "title": "Acquista un seat Electros | Elemento"
     }
   },
   "cms": {

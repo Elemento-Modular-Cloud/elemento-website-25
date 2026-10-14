@@ -1,0 +1,4238 @@
+{
+  "page": "terms",
+  "count": 529,
+  "strings": [
+    {
+      "id": "body.terms.h1.1",
+      "en": "Terms and Conditions of www.elemento.cloud and www.electros.cloud",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.terms.h2.1",
+      "en": "Introduction",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.10",
+      "en": "Definitions and legal references",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.2",
+      "en": "What the User should know at a glance",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.3",
+      "en": "How this Application works",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.4",
+      "en": "TERMS AND CONDITIONS OF SALE",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.5",
+      "en": "User rights",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.6",
+      "en": "Guarantees",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.7",
+      "en": "Liability and indemnification",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.8",
+      "en": "Common provisions",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h2.9",
+      "en": "Dispute resolution",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.terms.h3.1",
+      "en": "Resale of third-party cloud resources",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.10",
+      "en": "Artificial intelligence features",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.11",
+      "en": "Paid Products",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.12",
+      "en": "Product description",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.13",
+      "en": "Purchasing process",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.14",
+      "en": "Order submission",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.15",
+      "en": "Prices",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.16",
+      "en": "Offers and discounts",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.17",
+      "en": "Coupons",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.18",
+      "en": "Methods of payment",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.19",
+      "en": "Retention of Product ownership",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.2",
+      "en": "Account registration",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.20",
+      "en": "Retention of usage rights",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.21",
+      "en": "Sale of hardware",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.22",
+      "en": "Delivery of goods",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.23",
+      "en": "Delivery of digital content",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.24",
+      "en": "Performance of services",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.25",
+      "en": "Term and termination",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.26",
+      "en": "Right of withdrawal",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.27",
+      "en": "UK User rights",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.28",
+      "en": "Brazilian User rights",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.29",
+      "en": "Legal guarantee of conformity for goods under EU law",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.3",
+      "en": "Content on this Application",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.30",
+      "en": "Legal guarantee on second-hand or used goods",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.31",
+      "en": "Conformity to contract for Consumers in the United Kingdom",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.32",
+      "en": "Legal guarantee of conformity for goods for Consumers in Brazil",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.33",
+      "en": "Legal guarantee of conformity for services for Consumers in Brazil",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.34",
+      "en": "Hardware warranty for Business Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.35",
+      "en": "After-sales assistance",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.36",
+      "en": "Indemnification",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.37",
+      "en": "Limitation of liability",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.38",
+      "en": "Australian Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.39",
+      "en": "US Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.4",
+      "en": "Content provided by Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.40",
+      "en": "No Waiver",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.41",
+      "en": "Service interruption",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.42",
+      "en": "Service reselling",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.43",
+      "en": "Press area",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.44",
+      "en": "Feedback, feature requests and public roadmap",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.45",
+      "en": "Online events, webinars and podcasts",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.46",
+      "en": "Customer references",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.47",
+      "en": "Privacy policy",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.48",
+      "en": "Intellectual property rights",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.49",
+      "en": "Changes to these Terms",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.5",
+      "en": "Access to external resources",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.50",
+      "en": "Assignment of contract",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.51",
+      "en": "Contacts",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.52",
+      "en": "Severability",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.53",
+      "en": "Authoritative version of these Terms",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.54",
+      "en": "Governing law",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.55",
+      "en": "Venue of jurisdiction",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.56",
+      "en": "Surviving provisions (US Users)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.57",
+      "en": "Amicable dispute resolution",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.58",
+      "en": "Online dispute resolution for Consumers",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.59",
+      "en": "This Application (or this Application)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.6",
+      "en": "Acceptable use",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.60",
+      "en": "Agreement",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.61",
+      "en": "Brazilian (or Brazil)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.62",
+      "en": "Business User",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.63",
+      "en": "Consumer",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.64",
+      "en": "Coupon",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.65",
+      "en": "European (or Europe)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.66",
+      "en": "Natural Person",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.67",
+      "en": "Owner (or We)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.68",
+      "en": "Product",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.69",
+      "en": "Service",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.7",
+      "en": "\"Tell-a-friend\"",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.70",
+      "en": "Terms",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.71",
+      "en": "United Kingdom (or UK)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.72",
+      "en": "User (or You)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.73",
+      "en": "Example withdrawal form",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.8",
+      "en": "Software license",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h3.9",
+      "en": "API usage terms",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.terms.h4.1",
+      "en": "Conditions for account registration",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.10",
+      "en": "Scraping",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.11",
+      "en": "User protection",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.12",
+      "en": "Failed delivery",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.13",
+      "en": "Subscriptions",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.14",
+      "en": "Trial period",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.15",
+      "en": "Lifetime subscription",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.16",
+      "en": "Fixed-term subscriptions",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.17",
+      "en": "Automatic renewal of fixed-term subscriptions",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.18",
+      "en": "Exception for Consumers based in Germany",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.19",
+      "en": "Terms and conditions applying to extra features",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.2",
+      "en": "Account termination",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.20",
+      "en": "Who the right of withdrawal applies to",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.21",
+      "en": "Exercising the right of withdrawal",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.22",
+      "en": "Effects of withdrawal",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.23",
+      "en": "Exceptions from the right of withdrawal",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.24",
+      "en": "Right to cancel",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.25",
+      "en": "Right of regret",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.26",
+      "en": "Limitation of liability",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.27",
+      "en": "Disclaimer of Warranties",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.28",
+      "en": "Limitations of liability",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.29",
+      "en": "Indemnification",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.3",
+      "en": "Account suspension and deletion",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.30",
+      "en": "EU Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.31",
+      "en": "US Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.32",
+      "en": "Prevalence of national law",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.33",
+      "en": "Exception for Consumers in Brazil",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.34",
+      "en": "Exception for Consumers in Europe",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.35",
+      "en": "Exception for Consumers in Brazil",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.36",
+      "en": "US Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.37",
+      "en": "UK Consumers",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.4",
+      "en": "Rights regarding content on this Application — All rights reserved",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.5",
+      "en": "Rights regarding content provided by Users",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.6",
+      "en": "Liability for provided content",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.7",
+      "en": "Conduct restrictions",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.8",
+      "en": "Excessive use of the Service",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h4.9",
+      "en": "Excessive use of the API",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.terms.h5.1",
+      "en": "Termination by the User",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.10",
+      "en": "…on the purchase of services",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.11",
+      "en": "Exceptions from the right of regret",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.2",
+      "en": "Termination by the User",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.3",
+      "en": "…on the purchase of services",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.4",
+      "en": "Exercising the right to cancel",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.5",
+      "en": "Effects of cancellation",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.6",
+      "en": "…on the purchase of services",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.7",
+      "en": "Exceptions from the right to cancel",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.8",
+      "en": "Exercising the right of regret",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.h5.9",
+      "en": "Effects of regret",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<h5>"
+    },
+    {
+      "id": "body.terms.li.1",
+      "en": "the use of this websites, and related Application and services, and,",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.10",
+      "en": "Please note that some provisions in these Terms may only apply to certain categories of Users. In particular, certain provisions may only apply to Consumers or to those Users that do not qualify as Consumers. Such limitations are always explicitly mentioned within each affected clause. In the absence of any such mention, clauses apply to all Users.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.100",
+      "en": "personal injury or property damage, of any nature whatsoever, resulting from User access to or use of the Service;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.101",
+      "en": "any unauthorized access to or use of the Owner's secure servers and/or any and all personal information stored therein;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.102",
+      "en": "any interruption or cessation of transmission to or from the Service;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.103",
+      "en": "any bugs, viruses, trojan horses, or the like that may be transmitted to or through the Service;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.104",
+      "en": "any errors or omissions in any content or for any loss or damage incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available through the Service; and/or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.105",
+      "en": "the defamatory, offensive, or illegal conduct of any User or third party.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.106",
+      "en": "User's use of and access to the Service, including any data or content transmitted or received by User;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.107",
+      "en": "User's violation of these terms, including, but not limited to, User's breach of any of the representations and warranties set forth in these terms;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.108",
+      "en": "User's violation of any third-party rights, including, but not limited to, any right of privacy or intellectual property rights;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.109",
+      "en": "User's violation of any statutory law, rule, or regulation;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.11",
+      "en": "The right of withdrawal on this Application applies to all Consumers, regardless of their habitual residence.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.110",
+      "en": "any content that is submitted from User's account, including third party access with User's unique username, password or other security measure, if applicable, including, but not limited to, misleading, false, or inaccurate information;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.111",
+      "en": "User's willfull misconduct; or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.112",
+      "en": "statutory provision by User or its affiliates, officers, directors, agents, co-branders, partners, suppliers and employees to the extent allowed by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.113",
+      "en": "any feedback, idea, proposal or suggestion they submit is provided voluntarily and without any expectation of confidentiality or of compensation, and the Owner may use, implement, modify and commercially exploit it without restriction and without any obligation towards the User;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.114",
+      "en": "the content they submit in such area may be visible to other Users, together with the name or username under which it was submitted, and is subject to the provisions of these Terms on content provided by Users;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.115",
+      "en": "feedback and support requests may be analysed by automated systems, as described in the privacy policy of this Application;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.116",
+      "en": "the public roadmap describes what the Owner currently intends to develop. It is provided for information only, it does not form part of the Agreement, and it does not constitute a commitment as to the availability, the content or the release date of any feature. The Owner may change or abandon any item of the roadmap at any time, and no right may be derived from it by Users.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.117",
+      "en": "to Users who are Consumers;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.118",
+      "en": "to Users who access the Service only under a free plan or during a trial period;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.119",
+      "en": "where a separate agreement between the Owner and the User provides otherwise, including any confidentiality undertaking.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.12",
+      "en": "Hardware is sold exclusively to Business Users. The Owner does not sell hardware to Consumers.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.120",
+      "en": "the User's grant of licenses under these Terms shall survive indefinitely;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.121",
+      "en": "the User's indemnification obligations shall survive for a period of five years from the date of termination;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.122",
+      "en": "the disclaimer of warranties and representations, and the stipulations under the section containing indemnity and limitation of liability provisions, shall survive indefinitely.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.123",
+      "en": "Ordered on: _______________________________________________ (insert the date)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.124",
+      "en": "Received on: _______________________________________________ (insert the date)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.125",
+      "en": "Name of consumer(s): _______________________________________________",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.126",
+      "en": "Address of consumer(s): _______________________________________________",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.127",
+      "en": "Date: _______________________________________________",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.13",
+      "en": "Part of the Service consists of computing resources supplied by third-party cloud providers and resold by the Owner in its own name.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.14",
+      "en": "This Application uses automatic renewal for Product subscriptions. Information about the a) renewal period, b) termination details and c) termination notice can be found in the relevant section of these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.15",
+      "en": "The public roadmap published on this Application is provided for information only and is not a commitment as to the features the Owner will release.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.16",
+      "en": "Where a Business User purchases a Product, the Owner may include that User's name and logo in the customer list published on this Application. The User can object at any time, as described in the relevant section of these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.17",
+      "en": "Important: Consumers based in Germany have different rules applying to them as described in the relevant section of these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.18",
+      "en": "the availability, performance and service levels of the resources depend on the underlying provider, and the Owner does not guarantee availability, performance or service levels beyond those granted to the Owner by that provider;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.19",
+      "en": "where a failure is attributable to the underlying provider, any remedy owed by the Owner to the User in respect of that failure is limited to the remedy, credit or compensation that the Owner actually obtains from that provider in respect of the same event;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.2",
+      "en": "any other related Agreement or legal relationship with the Owner",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.20",
+      "en": "the underlying provider may change its terms, technical specifications, regions of operation or prices; where such changes affect the resources purchased by the User, the Owner will inform the User and the provisions of these Terms on changes to the Terms shall apply;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.21",
+      "en": "the underlying provider may suspend or terminate the resources in case of breach of its acceptable use policy, and the Owner may suspend the User's resources accordingly.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.22",
+      "en": "Accounts registered by bots or any other automated methods are not permitted.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.23",
+      "en": "Unless otherwise specified, each User must register only one account.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.24",
+      "en": "Unless explicitly permitted, a User account may not be shared with other persons.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.25",
+      "en": "User has violated these Terms; and/or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.26",
+      "en": "User's access or use of this Application may cause injury to the Owner, other Users or third parties; and/or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.27",
+      "en": "the use of this Application by the User may cause violation of law or regulations; and/or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.28",
+      "en": "in case of an investigation by legal action or governmental involvement; and/or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.29",
+      "en": "the account or its use is deemed to be, at the Owner's sole discretion inappropriate or offensive or in violation of these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.3",
+      "en": "this website, including its subdomains and any other website through which the Owner makes its Service available;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.30",
+      "en": "upon becoming aware of any (alleged) violation of these Terms, any third-party rights, or applicable law, based on such content;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.31",
+      "en": "if a notice of infringement of intellectual property rights is received;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.32",
+      "en": "if a notice of violation of a third party's privacy, including their intimate privacy, is received;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.33",
+      "en": "upon order of a public authority; or",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.34",
+      "en": "where the Owner is made aware that the content, while being accessible via this Application, may represent a risk for Users, third parties and/or the availability of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.35",
+      "en": "pretending to fulfill any possible condition or requirements for accessing this Application and/or using the Services, such as for instance being adult according to law or qualifying as a Consumer;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.36",
+      "en": "concealing their identity or stealing someone else's identity or pretend to be or represent a third-party, if not allowed to do so by such third-party;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.37",
+      "en": "manipulating identifiers to disguise or otherwise conceal the origin of their messages or of the content posted;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.38",
+      "en": "defaming, abusing, harassing, using threatening practices, threatening or violating the legal rights of others in any other way;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.39",
+      "en": "promoting activity that may endanger the User's life or the life of any other User or lead to physical harm. This includes but is not limited to suicide threats or instigations, intentional physical trauma, the use of illegal drugs, or excessive drinking. Under no circumstance is any User allowed to post any content promoting and/or encouraging and/or showing any self-destructive or violent behavior on this Application;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.4",
+      "en": "applications for mobile, tablet and other smart device systems;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.40",
+      "en": "probing, scanning or testing the vulnerability of this Application, including the services or any network connected to the website, nor breaching the security or authentication measures on this Application, including the services or any network connected to this Application;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.41",
+      "en": "installing, embedding, uploading or otherwise incorporating any malware into or via this Application;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.42",
+      "en": "using this Application or the technical infrastructure in an abusive, excessive or otherwise inappropriate way (for example: for spamming purposes);",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.43",
+      "en": "attempting to disrupt or tamper with the technical infrastructure in a manner that harms or places an undue burden on this Application or the Service;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.44",
+      "en": "offering Products via this Application that cannot legally be sold or that are currently not available for sale (e.g. not in stock);",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.45",
+      "en": "manipulating the price of Products offered or failing to deliver Products sold.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.46",
+      "en": "using a resource of this Application excessively in relation to other Users of this Application — in such cases, the Owner, at its sole discretion, additionally reserves the right to suspend the User's account or limit the related activity until the User reduces the excessive consumption.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.47",
+      "en": "sending abusive or excessively frequent requests to the Service via the API. The Owner will determine what constitutes abuse or excessive usage of the API and additionally reserves the right to temporarily or permanently suspend access to the API by the User. In such cases, the Owner will make a reasonable attempt to alert the User prior to suspension.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.48",
+      "en": "adopting any automated process to extract, harvest or scrape information, data and/or content from this Application and all the digital properties thereto related unless where explicitly allowed to do so by the Owner;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.49",
+      "en": "publishing or otherwise disseminating false, inaccurate, misleading, defamatory, or libellous content regarding any Products offered via this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.5",
+      "en": "the Application Program Interfaces (API);",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.50",
+      "en": "misappropriating any account in use by another User;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.51",
+      "en": "harvesting or collecting any personally identifying information of other Users including but not limited to their email addresses or contact information, by circumventing the privacy setting of other Users' accounts on this Application or by any other means;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.52",
+      "en": "using any information relating to other Users, including personal or contact data, for purposes other than those this Application is intended for.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.53",
+      "en": "the User expressly understands and agrees that the Owner bears no responsibility and shall not be held liable for any damages or losses resulting from the User's use of the API or their use of any third-party products/services that access data through the API.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.54",
+      "en": "output generated by such features is produced automatically and may be inaccurate, incomplete or unsuitable for the User's specific purpose;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.55",
+      "en": "output generated by such features does not constitute professional, legal, financial or technical advice, and Users shall not rely on it as the sole basis for any decision;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.56",
+      "en": "Users are solely responsible for the input they submit to such features, and shall not submit content that they are not entitled to process or disclose, nor any data that they are required to keep confidential towards third parties;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.57",
+      "en": "Users are solely responsible for reviewing and validating any output before using it, in particular where such output is applied to production systems or infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.58",
+      "en": "Users must choose the desired Product and verify their purchase selection.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.59",
+      "en": "After having reviewed the information displayed in the purchase selection, Users may place the order by submitting it.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.6",
+      "en": "the Service;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.60",
+      "en": "The submission of an order determines contract conclusion and therefore creates for the User the obligation to pay the price, taxes and possible further fees and expenses, as specified on the order page.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.61",
+      "en": "In case the purchased Product requires an action from the User, such as the provision of personal information or data, specifications or special wishes, the order submission creates an obligation for the User to cooperate accordingly.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.62",
+      "en": "Upon submission of the order, Users will receive a receipt confirming that the order has been received.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.63",
+      "en": "either exclusive or inclusive of any applicable fees, taxes and costs, depending on the section the User is browsing.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.64",
+      "en": "Each Coupon is only valid when used in the manner and within the timeframe specified on the website and/or the Coupon;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.65",
+      "en": "A Coupon may only be applied, in its entirety, at the actual time of purchase — partial use is not permitted;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.66",
+      "en": "Unless otherwise stated, single-use Coupons may only be used once per purchase and therefore may only be applied a single time even in cases involving installment-based purchases;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.67",
+      "en": "A Coupon cannot be applied cumulatively;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.68",
+      "en": "The Coupon must be redeemed exclusively within the time specified in the offer. After this period, the Coupon will automatically expire, precluding any possibility for the User to claim the relevant rights, including cash-out;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.69",
+      "en": "The User is not entitled to any credit/refund/compensation if there is a difference between the value of the Coupon and the redeemed value;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.7",
+      "en": "any applications, sample and content files, source code, scripts, instruction sets or software included as part of the Service, as well as any related documentation;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.70",
+      "en": "The Coupon is intended solely for non-commercial use. Any reproduction, counterfeiting and commercial trade of the Coupon is strictly forbidden, along with any illegal activity related to the purchase and/or use of the Coupon.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.71",
+      "en": "Regarding the purchase of goods, the withdrawal period expires 14 days after the day on which the User or a third party — other than the carrier and designated by the User — takes physical possession of the goods.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.72",
+      "en": "Regarding the purchase of several goods ordered together but delivered separately or in case of purchase of a single good consisting of multiple lots or pieces delivered separately, the withdrawal period expires 14 days after the day on which the User or a third party — other than the carrier and designated by the User — acquires physical possession of the last good, lot or piece.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.73",
+      "en": "Regarding the purchase of a service , the withdrawal period expires 14 days after the day that the contract is entered into, unless the User has waived the withdrawal right.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.74",
+      "en": "In case of purchase of a digital content not supplied in a tangible medium , the withdrawal period expires 14 days after the day that the contract is entered into, unless the User has waived the withdrawal right.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.75",
+      "en": "for the supply of digital content which is not supplied on a tangible medium, if the contract places the Consumer under no obligation to pay but rather to provide or undertake to provide personal data and performance has begun;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.76",
+      "en": "for the provision of services, after the service has been fully performed, if the contract places the Consumer under no obligation to pay but rather to provide or undertake to provide personal data;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.77",
+      "en": "for the provision of services, after the service has been fully performed, if the contract places the Consumer under an obligation to pay and performance has begun with the Consumer's prior express consent after acknowledging that their right of withdrawal is lost once the service has been fully performed;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.78",
+      "en": "for the supply of digital content which is not supplied on a tangible medium, if the contract places the Consumer under an obligation to pay and performance has begun with the Consumer's prior express consent after acknowledging that their right of withdrawal is thereby lost and such circumstances have been confirmed by the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.79",
+      "en": "Regarding the purchase of goods, the cancellation period expires 14 days after the day on which the User or a third party — other than the carrier and designated by the User — takes physical possession of the goods.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.8",
+      "en": "any paid assistance and support plans.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.80",
+      "en": "Regarding the purchase of several goods ordered together but delivered separately or in case of purchase of a single good consisting of multiple lots or pieces delivered separately, the cancellation period expires 14 days after the day on which the User or a third party — other than the carrier and designated by the User — acquires physical possession of the last good, lot or piece.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.81",
+      "en": "Regarding the purchase of a service , the cancellation period expires 14 days after the day that the contract is entered into, unless the User has waived the right to cancel.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.82",
+      "en": "In case of purchase of a digital content not supplied in a tangible medium , the cancellation period expires 14 days after the day that the contract is entered into, unless the User has waived the right to cancel.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.83",
+      "en": "for the supply of digital content which is not supplied on a tangible medium if the performance has begun with the consumer's prior express consent and with their acknowledgment that their right to cancel is thereby lost;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.84",
+      "en": "for the provision of services, after the service has been fully performed if the performance has begun with the consumer's prior express request, and with their acknowledgment that their right to cancel is lost once the contract has been fully performed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.85",
+      "en": "Regarding the purchase of a service , the regret period expires seven (7) days after the day that the contract is entered into and only if the service has not yet been provided.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.86",
+      "en": "In the event of the purchase of digital content , the regret period expires seven (7) days after the day that the contract is entered into and only if the digital content has not yet been provided and integrated into the Consumer's device.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.87",
+      "en": "to the provision of services, after the service has been fully performed, if the performance has begun within seven (7) days of the date the contract was entered into with the express prior consent of the Consumer and with their acknowledgment that their right of regret will be forfeited once the contract has been fully performed;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.88",
+      "en": "to the supply of digital content if the provision and availability of the content has already begun within seven (7) days of the date the contract was entered into with the express prior consent of the Consumer and with their acknowledgment that their right of regret will be forfeited.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.89",
+      "en": "non-durable goods shall have a thirty-day (30 day) guarantee; and",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.9",
+      "en": "Service Level Agreement",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.90",
+      "en": "durable goods shall have a ninety-day (90 day) guarantee.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.91",
+      "en": "non-durable services shall have a thirty-day (30 day) guarantee; and",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.92",
+      "en": "durable services shall have a ninety-day (90 day) guarantee.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.93",
+      "en": "damages or losses resulting from interruptions or malfunctions of this Application due to acts of force majeure, or unforeseen and unforeseeable events and, in any case, independent of the will and beyond the control of the Owner, such as, but not limited to, failures or disruptions of telephone or electrical lines, the Internet and / or other means of transmission, unavailability of websites, strikes, natural disasters, viruses and cyber attacks, interruptions in the delivery of products, third-party services or applications;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.94",
+      "en": "any loss of business opportunities and any other loss, even indirect, that may be incurred by the User (such as, but not limited to, trading losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, etc.);",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.95",
+      "en": "any losses that are not the direct consequence of a breach of the Terms by the Owner;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.96",
+      "en": "any damage, prejudice or loss occurring due to viruses or other malware contained in or connected to files available for download from the internet or via this Application. Users are responsible for implementing sufficient security measures — such as anti-viruses and firewalls to prevent any such infection or attack and for securing backup copies of all data or information exchanged via or uploaded to this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.97",
+      "en": "any indirect, punitive, incidental, special, consequential or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data or other intangible losses, arising out of or relating to the use of, or inability to use, the Service; and",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.98",
+      "en": "any damage, loss or injury resulting from hacking, tampering or other unauthorized access or use of the Service or User account or the information contained therein;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.li.99",
+      "en": "any errors, mistakes, or inaccuracies of content;",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.terms.p.1",
+      "en": "These documents are provided in English, which is the authoritative version.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.10",
+      "en": "The following documents are incorporated by reference into these Terms:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.100",
+      "en": "Unless otherwise stated, the delivery costs are the responsibility of the User. The Owner cannot be held responsible for any errors, delays (including cases where the User fails to collect the goods within the deadline set by the Owner or the carrier), damages to or loss of the goods after handover to the carrier.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.101",
+      "en": "If the goods are returned to the Owner due to a failed delivery, Users must bear the costs of the resulting storage. Users must further arrange a new delivery attempt at their own expense, after agreeing with the Owner appropriate collection times and conditions. Should the User fail to do so, the Owner may, at its sole discretion, cancel the contract or arrange a new delivery at the User's expense. In both cases, the Owner reserves the right to compensation for any damage suffered due to the failed delivery.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.102",
+      "en": "Unless otherwise stated, digital content purchased on this Application is delivered via download on the device(s) chosen by Users.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.103",
+      "en": "Users acknowledge and accept that in order to download and/or use the Product, the intended device(s) may be required to meet the technical requirements specified on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.104",
+      "en": "Users acknowledge and accept that the ability to download the purchased Product may be limited in time and space.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.105",
+      "en": "The purchased service shall be performed or made available within the timeframe specified on this Application or as communicated before the order submission.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.106",
+      "en": "Subscriptions allow Users to receive a Product continuously or regularly over time. Details regarding the type of subscription and termination are outlined below.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.107",
+      "en": "Users have the option to test this Application or selected Products during a limited and non-renewable trial period, at no cost. Some features or functions of this Application may not be available to Users during the trial period. Further conditions applicable to the trial period, including its duration, will be specified on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.108",
+      "en": "The trial period shall end automatically and shall not convert into any paid Product unless the User actively purchases such paid Product.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.109",
+      "en": "Lifetime subscriptions are subscriptions lasting for the entire lifetime of the subscribed Product. Paid lifetime subscriptions start on the day the payment is received by the Owner. They only expire if and when the relevant Product is discontinued.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.11",
+      "en": "Through Atomosphere, the Owner makes available computing resources — such as compute, storage and network capacity — that are supplied by third-party cloud providers, including but not limited to Amazon Web Services and Microsoft Azure.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.110",
+      "en": "Paid fixed-term subscriptions start on the day the payment is received by the Owner and last for the subscription period chosen by the User or otherwise specified during the purchasing process.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.111",
+      "en": "Once the subscription period expires, the Product shall no longer be accessible.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.112",
+      "en": "Subscriptions are automatically renewed through the payment method that the User chose during purchase.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.113",
+      "en": "The renewed subscription will last for a period equal to the original term.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.114",
+      "en": "The User shall receive a reminder of the upcoming renewal with reasonable advance, outlining the procedure to be followed in order to cancel the automatic renewal.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.115",
+      "en": "Subscriptions may be terminated by sending a clear and unambiguous termination notice to the Owner using the contact details provided in this document, or — if applicable — by using the corresponding controls inside this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.116",
+      "en": "If the notice of termination is received by the Owner before the subscription renews, the termination shall take effect as soon as the current period is completed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.117",
+      "en": "However, regardless of the above, if the User is based in Germany and qualifies as a Consumer, the following applies:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.118",
+      "en": "At the end of the initial term, subscriptions are automatically extended for an unlimited period, unless the User terminates before the end of such term.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.119",
+      "en": "The fee due upon extension will be charged on the payment method that the User chose during purchase.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.12",
+      "en": "The Owner purchases such resources in its own name and resells them to Users. The contract for the supply of such resources is concluded between the Owner and the User, and the Owner invoices the User directly. Users have no direct contractual relationship with the underlying provider, unless expressly stated otherwise.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.120",
+      "en": "After extension, the subscription will last for an indefinite period and may be terminated monthly.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.121",
+      "en": "The User shall receive a reminder of the upcoming unlimited extension with reasonable advance, outlining the procedure to be followed in order to prevent the extension or terminate the subscription thereafter.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.122",
+      "en": "Extended subscriptions may be terminated at any time by sending a clear and unambiguous termination notice to the Owner using the contact details provided in this document, or — if applicable — by using the corresponding controls inside this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.123",
+      "en": "If the notice of termination is received by the Owner no later than one month before the end of the current month, the subscription shall expire at the end of such month.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.124",
+      "en": "Users that have an active subscription may purchase single extra add-ons or features, described in the relevant section of this Application. Unless otherwise specified, such extras are subject to the same terms applicable to the main Product, including all provisions of this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.125",
+      "en": "Unless exceptions apply, the User may be eligible to withdraw from the contract within the period specified below (generally 14 days), for any reason and without justification. Users can learn more about the withdrawal conditions within this section.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.126",
+      "en": "The right of withdrawal is a right designed for European Consumers in the case of distance contracts (because the User is not able to see or try the Products before closing the contract). Withdrawal from the contract terminates the obligation of the contracting parties to perform the contract.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.127",
+      "en": "On this Application the right of withdrawal applies to all Consumers, regardless of where they are based, without prejudice to any more specific rights available to Users based on applicable law and/or this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.128",
+      "en": "Unless any exception mentioned below applies, if any, Users who are Consumers have a right to withdraw from the contract within the specified period applicable to their case, for any reason and without justification.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.129",
+      "en": "Users that do not fit this qualification, cannot benefit from the rights described in this section. In particular, the right of withdrawal does not apply to the sale of hardware, which is offered exclusively to Business Users.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.13",
+      "en": "Before the User completes a purchase, the Owner makes available the terms of service and the privacy policy of the underlying provider whose resources are being purchased. By placing the order, the User confirms having been given access to those documents and undertakes to use the resources in compliance with them, including any acceptable use policy, technical restriction, export control or sanctions requirement imposed by that provider.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.130",
+      "en": "To exercise their right of withdrawal, Users must send to the Owner an unequivocal statement of their intention to withdraw from the contract.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.131",
+      "en": "To this end, Users may use the model withdrawal form available from within the \"definitions\" section of this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.132",
+      "en": "To the extent the Owner offers such feature, Users can also electronically fill out and submit the model withdrawal form or any other unequivocal statement on this Application. If using this option, the Owner will communicate Users an acknowledgement of receipt of such a withdrawal on a durable medium (e.g. by email) without delay.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.133",
+      "en": "Users are, however, free to express their intention to withdraw from the contract by making an unequivocal statement in any other suitable way. In order to meet the deadline within which they can exercise such right, Users must send the withdrawal notice before the withdrawal period expires.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.134",
+      "en": "When does the withdrawal period expire?",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.135",
+      "en": "Users who correctly withdraw from a contract will be reimbursed by the Owner for all payments made to the Owner, including, if any, those covering the costs of delivery.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.136",
+      "en": "However, any additional costs resulting from the choice of a particular delivery method other than the least expensive type of standard delivery offered by the Owner, will not be reimbursed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.137",
+      "en": "Such reimbursement shall be made without undue delay and, in any event, no later than 14 days from the day on which the Owner is informed of the User's decision to withdraw from the contract. Unless otherwise agreed with the User, reimbursements will be made using the same means of payment as used to process the initial transaction. In any event, the User shall not incur any costs or fees as a result of such reimbursement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.138",
+      "en": "Where a User exercises the right of withdrawal after having requested that the service be performed before the withdrawal period expires, the User shall pay to the Owner an amount which is in proportion to the part of service provided.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.139",
+      "en": "Such payment shall be calculated based on the fee contractually agreed upon, and be proportional to the part of service provided until the time the User withdraws, compared with the full coverage of the contract.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.14",
+      "en": "Users acknowledge and accept that:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.140",
+      "en": "The right of withdrawal does not apply to contracts:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.141",
+      "en": "Unless exceptions apply, Users who are Consumers in the United Kingdom have a legal right of cancellation under UK law and may be eligible to withdraw from contracts made online (distance contracts) within the period specified below (generally 14 days), for any reason and without justification.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.142",
+      "en": "Users that do not qualify as Consumers, cannot benefit from the rights described in this section. Users can learn more about the cancellation conditions within this section.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.143",
+      "en": "To exercise their right to cancel, Users must send to the Owner an unequivocal statement of their intention to withdraw from the contract. To this end, Users may use the model withdrawal form available from within the \"definitions\" section of this document. Users are, however, free to express their intention to withdraw from the contract by making an unequivocal statement in any other suitable way. In order to meet the deadline within which they can exercise such right, Users must send the withdrawal notice before the cancellation period expires.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.144",
+      "en": "When does the cancellation period expire?",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.145",
+      "en": "Users who correctly withdraw from a contract will be reimbursed by the Owner for all payments made to the Owner, including, if any, those covering the costs of delivery.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.146",
+      "en": "However, any additional costs resulting from the choice of a particular delivery method other than the least expensive type of standard delivery offered by the Owner, will not be reimbursed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.147",
+      "en": "Such reimbursement shall be made without undue delay and, in any event, no later than 14 days from the day on which the Owner is informed of the User's decision to withdraw from the contract. Unless otherwise agreed with the User, reimbursements will be made using the same means of payment as used to process the initial transaction. In any event, the User shall not incur any costs or fees as a result of such reimbursement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.148",
+      "en": "Where a User exercises the right to cancel after having requested that the service be performed before the cancellation period expires, the User shall pay to the Owner an amount which is in proportion to the part of service provided.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.149",
+      "en": "Such payment shall be calculated based on the fee contractually agreed upon, and be proportional to the part of service provided until the time the User withdraws, compared with the full coverage of the contract.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.15",
+      "en": "Nothing in this section limits the Owner's liability for its own acts or omissions, nor any liability that cannot be excluded or limited under applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.150",
+      "en": "The right to cancel does not apply to contracts:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.151",
+      "en": "Unless an applicable exception is stated below, Users who are Consumers in Brazil have a legal right of regret under Brazilian law. This means that the Consumer has the right to withdraw from contracts made online (distance contracts or any contract signed away from business premises) within seven (7) days of the date the contract was entered into or the receipt of the product or service, for any reason and without justification. The right of regret may be exercised by the Consumer via contact channels listed at the beginning of this document and in accordance with the guidelines in this section.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.152",
+      "en": "To exercise their right of regret, Users must send to the Owner an unequivocal statement of their intention to withdraw from the contract. To this end, Users may use the model withdrawal form available from within the \"definitions\" section of this document. Users are, however, free to express their intention to withdraw from the contract by making an unequivocal statement in any other suitable way. In order to meet the deadline within which they can exercise such right, Users must send the regret notice before the regret period expires.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.153",
+      "en": "Users who correctly withdraw from a contract will be reimbursed by the Owner for all payments made to the Owner, including, if any, those covering the costs of delivery.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.154",
+      "en": "However, any additional costs resulting from the choice of a particular delivery method other than the least expensive type of standard delivery offered by the Owner, will not be reimbursed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.155",
+      "en": "Such reimbursement shall be made without undue delay and, in any event, no later than 14 days from the day on which the Owner is informed of the User's decision to withdraw from the contract or the actual return of the product, whichever occurs later. Unless otherwise agreed with the User, reimbursements will be made using the same means of payment as used to process the initial transaction. In any event, the User shall not incur any costs or fees as a result of such reimbursement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.156",
+      "en": "Where a User exercises the right of regret after having requested that the service be performed before the regret period expires, the User shall pay to the Owner an amount which is in proportion to the part of the service provided.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.157",
+      "en": "Such payment shall be calculated based on the fee contractually agreed upon, and be proportional to the part of service provided until the time the User withdraws.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.158",
+      "en": "The right of regret in the form and term provided for in these Terms shall not apply in the following cases:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.159",
+      "en": "Under EU law, for a minimum period of 2 years from delivery, traders guarantee the conformity of the goods they sell to Consumers.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.16",
+      "en": "To use the Service Users must register or create a User account, providing all required data or information in a complete and truthful manner. Failure to do so will cause unavailability of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.160",
+      "en": "Where Users qualify as European Consumers, the legal guarantee of conformity for goods applies to the items available on this Application in accordance with the laws of the country of their habitual residence.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.161",
+      "en": "National laws of such country may grant Users broader rights.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.162",
+      "en": "In particular, Consumers based in France can exercise guarantee rights within two years of delivery of the good without being required to provide evidence of the good's defect or lack of conformity. The period of time for which the Consumer is exempted from providing evidence of the fault is reduced to six months in case of used goods.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.163",
+      "en": "When exercising guarantee rights, Consumers may choose between requesting replacement or reparation of the faulty good at the conditions set out in the French Consumer Code.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.164",
+      "en": "This statutory guarantee of conformity applies regardless of any commercial guarantee possibly offered by the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.165",
+      "en": "Consumers may also exercise their right of guarantee for hidden faults according to the relevant provisions of the French Civil Code, choosing between cancelling the purchase or requesting a price reduction.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.166",
+      "en": "Consumers who do not qualify as European may benefit from legal guarantee of conformity rights in accordance with the legislation of the country of their habitual residence.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.167",
+      "en": "Under EU law, for a minimum period of 1 year after delivery, traders guarantee the conformity of used goods they sell to Consumers in accordance with the laws of the country of their habitual residence. National laws of such country may grant such Users broader rights.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.168",
+      "en": "Users in the United Kingdom qualifying as Consumers have a right to receive goods that are in conformity with the contract.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.169",
+      "en": "The legal guarantee applicable to goods sold by this Application (both physical and digital) complies with the following terms, according to the Consumer Protection Code:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.17",
+      "en": "Users are responsible for keeping their login credentials confidential and safe. For this reason, Users are also required to choose passwords that meet the highest standards of strength permitted by this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.170",
+      "en": "The warranty period starts from the date of goods delivery.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.171",
+      "en": "The warranty is not applicable in cases of misuse, natural events or if it has been subjected to any maintenance other than that provided by this Application. The warranty may be claimed through the contact channels provided by this Application. The Owner shall bear the costs of shipping the goods for technical assessment, if necessary. The Owner, at its own discretion, may also offer a contractual warranty in addition to the legal warranty. The regulations applicable to contractual warranties can be found in the specifications provided by this Application. If no such information is provided, only the statutory provisions shall apply.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.172",
+      "en": "The legal guarantee applicable to services sold by this Application complies with the following terms, according to the Consumer Protection Code:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.173",
+      "en": "The warranty period starts from the end of the performance of services.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.174",
+      "en": "The warranty is not applicable in cases of service misuse, natural events or if it has been subjected to any maintenance other than that provided by this Application. The warranty may be claimed through the contact channels provided by this Application. If applicable, the Owner shall bear the costs of shipping any goods for technical assessment. The Owner, at its own discretion, may also offer a contractual warranty in addition to the legal warranty. The regulations applicable to contractual warranties can be found in the specifications provided by this Application. If no such information is provided, only the statutory provisions shall apply.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.175",
+      "en": "Hardware supplied by the Owner is covered by the warranty granted by the relevant manufacturer, for the duration and under the conditions set out in the manufacturer's warranty terms applicable to the specific unit, which are communicated to the User before the order is placed. Where the manufacturer provides direct assistance to the end customer, warranty claims shall be handled through the manufacturer's support channels.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.176",
+      "en": "The Owner warrants the configuration work it performs on the hardware it supplies.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.177",
+      "en": "Statutory warranties applicable to sales between businesses remain unaffected. In particular, the User shall report any lack of conformity to the Owner within the terms set out in article 1495 of the Italian Civil Code.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.178",
+      "en": "Users who have purchased products on this Application are entitled to the after-sales assistance services described in the relevant section of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.179",
+      "en": "Unless otherwise explicitly stated or agreed with Users, the Owner's liability for damages in connection with the execution of the Agreement shall be excluded, limited and/or reduced to the maximum extent permitted by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.18",
+      "en": "By registering, Users agree to be fully responsible for all activities that occur under their username and password. Users are required to immediately and unambiguously inform the Owner via the contact details indicated in this document, if they think their personal information, including but not limited to User accounts, access credentials or personal data, have been violated, unduly disclosed or stolen.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.180",
+      "en": "The User agrees to indemnify and hold the Owner and its subsidiaries, affiliates, officers, directors, agents, co-branders, partners and employees harmless from and against any claim or demand — including but not limited to lawyer's fees and costs — made by any third party due to or in relation with any culpable violation of these Terms, third-party rights or statutory provisions connected to the use of the Service by the User or its affiliates, officers, directors, agents, co-branders, partners and employees to the extent allowed by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.181",
+      "en": "Unless otherwise explicitly stated and without prejudice to mandatory law, Users shall have no right to claim damages against the Owner (or any natural or legal person acting on its behalf).",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.182",
+      "en": "This does not apply to damages to life, health or physical integrity, damages resulting from the breach of material contractual obligations such as any obligation strictly necessary to achieve the purpose of the contract, and/or damages resulting from intent or gross negligence, as long as this Application has been appropriately and correctly used by the User.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.183",
+      "en": "Unless damages have been caused by way of intent or gross negligence, or they affect life, health or physical integrity, the Owner shall only be liable to the extent of typical and foreseeable damages at the moment the contract was entered into.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.184",
+      "en": "In particular, within the limits stated above, the Owner shall not be liable for:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.185",
+      "en": "Notwithstanding the above, the following limitation applies to all Users other than Natural Persons:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.186",
+      "en": "In any event of liability, the compensation may not exceed the total payments that have been, will be or would be received by the Owner from the User based on the contract over a period of 12 months, or throughout the duration of the Agreement, if shorter.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.187",
+      "en": "Nothing in these Terms excludes, restricts or modifies any guarantee, condition, warranty, right or remedy which the User may have under the Competition and Consumer Act 2010 (Cth) or any similar state and territory legislation and which cannot be excluded, restricted or modified (non-excludable right). To the fullest extent permitted by law, our liability to the User, including liability for a breach of a non-excludable right and liability which is not otherwise excluded under these Terms, is limited, at the Owner's sole discretion, to the re-performance of the services or the payment of the cost of having the services supplied again.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.188",
+      "en": "This Application is provided strictly on an \"as is\" and \"as available\" basis. Use of the Service is at Users' own risk. To the maximum extent permitted by applicable law, the Owner expressly disclaims all conditions, representations, and warranties — whether express, implied, statutory or otherwise, including, but not limited to, any implied warranty of merchantability, fitness for a particular purpose, or non-infringement of third-party rights. No advice or information, whether oral or written, obtained by the User from the Owner or through the Service will create any warranty not expressly stated herein. The foregoing applies except as expressly set out in the Service Level Agreement incorporated into these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.189",
+      "en": "Without limiting the foregoing, the Owner, its subsidiaries, affiliates, licensors, officers, directors, agents, co-branders, partners, suppliers and employees do not warrant that the content is accurate, reliable or correct; that the Service will meet Users' requirements; that the Service will be available at any particular time or location, uninterrupted or secure; that any defects or errors will be corrected; or that the Service is free of viruses or other harmful components. Any content downloaded or otherwise obtained through the use of the Service is downloaded at Users' own risk and Users shall be solely responsible for any damage to Users' computer system or mobile device or loss of data that results from such download or Users' use of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.19",
+      "en": "Registration of User accounts on this Application is subject to the conditions outlined below. By registering, Users agree to meet such conditions.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.190",
+      "en": "The Owner does not warrant, endorse, guarantee, or assume responsibility for any product or service advertised or offered by a third party through the Service or any hyperlinked website or service, and the Owner shall not be a party to or in any way monitor any transaction between Users and third-party providers of products or services.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.191",
+      "en": "The Service may become inaccessible or it may not function properly with Users' web browser, mobile device, and/or operating system. The Owner cannot be held liable for any perceived or actual damages arising from Service content, operation, or use of this Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.192",
+      "en": "Federal law, some states, and other jurisdictions, do not allow the exclusion and limitations of certain implied warranties. The above exclusions may not apply to Users. This Agreement gives Users specific legal rights, and Users may also have other rights which vary from state to state. The disclaimers and exclusions under this agreement shall not apply to the extent prohibited by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.193",
+      "en": "To the maximum extent permitted by applicable law, in no event shall the Owner, and its subsidiaries, affiliates, officers, directors, agents, co-branders, partners, suppliers and employees be liable for:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.194",
+      "en": "In no event shall the Owner, and its subsidiaries, affiliates, officers, directors, agents, co-branders, partners, suppliers and employees be liable for any claims, proceedings, liabilities, obligations, damages, losses or costs in an amount exceeding the amount paid by User to the Owner hereunder in the preceding 12 months, or the period of duration of this agreement between the Owner and User, whichever is shorter.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.195",
+      "en": "This limitation of liability section shall apply to the fullest extent permitted by law in the applicable jurisdiction whether the alleged liability is based on contract, tort, negligence, strict liability, or any other basis, even if the User has been advised of the possibility of such damage.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.196",
+      "en": "Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, therefore the above limitations or exclusions may not apply to the User. The terms give User specific legal rights, and User may also have other rights which vary from jurisdiction to jurisdiction. The disclaimers, exclusions, and limitations of liability under the terms shall not apply to the extent prohibited by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.197",
+      "en": "The User agrees to defend, indemnify and hold the Owner and its subsidiaries, affiliates, officers, directors, agents, co-branders, partners, suppliers and employees harmless from and against any and all claims or demands, damages, obligations, losses, liabilities, costs or debt, and expenses, including, but not limited to, legal fees and expenses, arising from",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.198",
+      "en": "The Owner's failure to assert any right or provision under these Terms shall not constitute a waiver of any such right or provision. No waiver shall be considered a further or continuing waiver of such term or any other term.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.199",
+      "en": "To ensure the best possible service level, the Owner reserves the right to interrupt the Service for maintenance, system updates or any other changes, informing the Users appropriately.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.2",
+      "en": "These Terms govern",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.20",
+      "en": "Users may terminate their account and stop using the Service at any time by directly contacting the Owner at the contact details provided in this document, or — where applicable — by using the corresponding controls inside this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.200",
+      "en": "Within the limits of law, the Owner may also decide to suspend or discontinue the Service altogether. If the Service is discontinued, the Owner will cooperate with Users to enable them to withdraw personal data or information and will respect Users' rights relating to continued product use and/or compensation, as provided for by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.201",
+      "en": "Additionally, the Service might not be available due to reasons outside the Owner's reasonable control, such as \"force majeure\" events (infrastructural breakdowns or blackouts etc.).",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.202",
+      "en": "The provisions of this section apply without prejudice to the Service Level Agreement incorporated into these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.203",
+      "en": "Users may not reproduce, duplicate, copy, sell, resell or exploit any portion of this Application and of its Service without the Owner's express prior written permission, granted either directly or through a legitimate reselling program.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.204",
+      "en": "The Owner makes available a press area at press.elemento.cloud, where press material and brand assets are published. Access does not require registration.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.205",
+      "en": "The Owner grants any person accessing the press area a non-exclusive, non-transferable and revocable licence to reproduce the material published there for the sole purpose of reporting on, or referring to, the Owner and its Products. The material may not be altered, and may not be used in a way that suggests an endorsement, a partnership or a sponsorship by the Owner, or in association with content that is unlawful or that may harm the Owner's reputation. All intellectual property rights in such material remain with the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.206",
+      "en": "This Application makes available an area where Users may submit feedback, report problems, propose new features and vote on the proposals of other Users, as well as a public roadmap and a changelog.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.207",
+      "en": "Users acknowledge and accept that:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.208",
+      "en": "The Owner organises webinars and online live events and produces podcasts, which are published on this Application and on third-party platforms. These activities are run on a third-party platform, as indicated in the privacy policy of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.209",
+      "en": "Registration for an online event is free of charge unless otherwise stated, and requires the data indicated in the registration form — as a rule first name, last name, company name and email address. The Owner and the platform used send the registrant the confirmation of the registration, one or more reminders before the event and, where applicable, a message after it containing the recording or the related material. Such messages are functional to the event the User has registered for; they do not constitute a newsletter and the User may unsubscribe from the newsletter separately.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.21",
+      "en": "Termination shall take effect at the end of the subscription period already paid for by the User, and no refund shall be due for the remaining part of that period, without prejudice to any statutory right of withdrawal or termination available to the User and to the provisions of these Terms on changes to the Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.210",
+      "en": "Online events are as a rule recorded. Participants who take part with their microphone or camera, who intervene in the chat or who submit questions acknowledge and accept that their contribution may be recorded and that the recording — in whole or in part, including extracts and clips — may be published by the Owner on this Application, on the Owner's channels and on third-party platforms, for an indefinite period. Participants who do not wish to appear in the recording may take part without activating their microphone and camera and without intervening. Any objection subsequent to the publication may be raised by writing to the Owner at the contact details provided in this document, and the Owner shall assess it in accordance with the privacy policy of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.211",
+      "en": "The Owner may change the date, the time, the speakers or the programme of an event, or cancel it, giving notice to the registrants at the email address provided. The content presented during an event is provided for information purposes only, does not form part of the Agreement and does not constitute a commitment as to the availability, the content or the release date of any feature.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.212",
+      "en": "Users may not record, reproduce or redistribute an event or a podcast of the Owner, in whole or in part, without the Owner's express prior written permission, save for the material that the Owner makes expressly available for that purpose.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.213",
+      "en": "Where the User is a Business User and has purchased a Product, the User grants the Owner a non-exclusive, worldwide, royalty-free and revocable licence to use the User's company name, trade name and logo for the sole purpose of identifying the User as a customer of the Owner — in particular in the customer list published on this Application and in the Owner's commercial and marketing materials.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.214",
+      "en": "The licence is limited to the form of the name and logo that the User makes publicly available, lasts for the duration of the Agreement, and does not allow the Owner to state or imply any endorsement, partnership or sponsorship by the User beyond the mere fact that the User uses the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.215",
+      "en": "The Owner shall use the User's name and logo only where the registration or payment details provided by the User establish that the User is acting on behalf of the organisation concerned. Where the organisation would be identified only by inference — for example from the domain of an email address — the Owner shall obtain the organisation's confirmation before publication.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.216",
+      "en": "The User may object to such use at any time, before or after publication, by writing to the Owner at the contact details provided in this document. No reason needs to be given and no consequence for the User arises from the objection. The Owner shall remove the User's name and logo from the customer list and from any material under its control as soon as possible and in any event within 30 days of receiving the request, and shall not reinstate it without the User's agreement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.217",
+      "en": "This section does not apply:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.218",
+      "en": "For information about the use of their personal data, Users must refer to the privacy policy of this Application which is hereby declared to be part of these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.219",
+      "en": "Without prejudice to any more specific provision of these Terms, any intellectual property rights, such as copyrights, trademark rights, patent rights and design rights related to this Application are the exclusive property of the Owner or its licensors and are subject to the protection granted by applicable laws or international treaties relating to intellectual property.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.22",
+      "en": "The Owner reserves the right to suspend or terminate the User's account at any time and without notice, at the Owner's sole discretion, in these cases:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.220",
+      "en": "All trademarks — nominal or figurative — and all other marks, trade names, service marks, word marks, illustrations, images, or logos appearing in connection with this Application are, and remain, the exclusive property of the Owner or its licensors and are subject to the protection granted by applicable laws or international treaties related to intellectual property.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.221",
+      "en": "The Owner reserves the right to amend or otherwise modify these Terms at any time. In such cases, the Owner will appropriately inform the User of these changes.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.222",
+      "en": "Such changes will only affect the relationship with the User from the date communicated to Users onwards.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.223",
+      "en": "The continued use of the Service will signify the User's acceptance of the revised Terms. If Users do not wish to be bound by the changes, they must stop using the Service and may terminate the Agreement before the changes come into effect, by notifying the Owner using the contact details provided in this document. In such case, the Owner shall reimburse the User for the part of any prepaid period that has not been used.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.224",
+      "en": "The applicable previous version will govern the relationship prior to the User's acceptance. The User can obtain any previous version from the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.225",
+      "en": "The Owner will appropriately inform the User of upcoming changes 30 days before they come into effect.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.226",
+      "en": "The Owner reserves the right to transfer, assign, dispose of by novation, or subcontract any or all rights or obligations under these Terms, taking the User's legitimate interests into account. Provisions regarding changes of these Terms will apply accordingly.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.227",
+      "en": "Users may not assign or transfer their rights or obligations under these Terms in any way, without the written permission of the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.228",
+      "en": "All communications relating to the use of this Application must be sent using the contact information stated in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.229",
+      "en": "Should any provision of these Terms be deemed or become invalid or unenforceable under applicable law, the invalidity or unenforceability of such provision shall not affect the validity of the remaining provisions, which shall remain in full force and effect.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.23",
+      "en": "The suspension or deletion of User accounts shall not entitle Users to any claims for compensation, damages or reimbursement. The suspension or deletion of accounts due to causes attributable to the User does not exempt the User from paying any applicable fees or prices.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.230",
+      "en": "Should any provision of these Terms be or be deemed void, invalid or unenforceable, the parties shall do their best to find, in an amicable way, an agreement on valid and enforceable provisions thereby substituting the void, invalid or unenforceable parts. In case of failure to do so, the void, invalid or unenforceable provisions shall be replaced by the applicable statutory provisions, if so permitted or stated under the applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.231",
+      "en": "Without prejudice to the above, the nullity, invalidity or impossibility to enforce a particular provision of these Terms shall not nullify the entire Agreement, unless the severed provisions are essential to the Agreement, or of such importance that the parties would not have entered into the contract if they had known that the provision would not be valid, or in cases where the remaining provisions would translate into an unacceptable hardship on any of the parties.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.232",
+      "en": "Any such invalid or unenforceable provision will be interpreted, construed and reformed to the extent reasonably required to render it valid, enforceable and consistent with its original intent. These Terms constitute the entire Agreement between Users and the Owner with respect to the subject matter hereof, and supersede all other communications, including but not limited to all prior agreements, between the parties with respect to such subject matter. These Terms will be enforced to the fullest extent permitted by law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.233",
+      "en": "These Terms are drawn up and revised in English. Other language versions of these Terms are provided for information purposes only. In the event of any inconsistency between different linguistic versions, the original version shall always prevail.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.234",
+      "en": "These Terms are governed by the law of the place where the Owner is based, as disclosed in the relevant section of this document, without regard to conflict of laws principles.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.235",
+      "en": "However, regardless of the above, if the law of the country that the User is located in provides for higher applicable consumer protection standards, such higher standards shall prevail.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.236",
+      "en": "If the User qualifies as a Consumer in Brazil and the product and/or service is commercialized in Brazil, Brazilian law will apply.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.237",
+      "en": "The exclusive competence to decide on any controversy resulting from or connected to these Terms lies with the courts of the place where the Owner is based, as displayed in the relevant section of this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.238",
+      "en": "The above does not apply to any Users that qualify as European Consumers, nor to Consumers based in the United Kingdom, Switzerland, Norway or Iceland.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.239",
+      "en": "The above does not apply to Users in Brazil that qualify as Consumers.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.24",
+      "en": "Unless where otherwise specified or clearly recognizable, all content available on this Application is owned or provided by the Owner or its licensors.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.240",
+      "en": "Each party specifically waives any right to trial by jury in any court in connection with any action or litigation. Any claims under these terms shall proceed individually and no party shall join in a class action or other proceeding with or on behalf of others.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.241",
+      "en": "Consumers based in England and Wales may bring legal proceedings in connection with these Terms in the English and Welsh courts. Consumers based in Scotland may bring legal proceedings in connection with these Terms in either the Scottish or the English courts. Consumers based in Northern Ireland may bring legal proceedings in connection with these Terms in either the Northern Irish or the English courts.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.242",
+      "en": "This Agreement shall continue in effect until it is terminated by either this Application or the User. Upon termination, the provisions contained in these Terms that by their context are intended to survive termination or expiration will survive, including but not limited to the following:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.243",
+      "en": "Users may bring any disputes to the Owner who will try to resolve them amicably.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.244",
+      "en": "While Users' right to take legal action shall always remain unaffected, in the event of any controversy regarding the use of this Application or the Service, Users are kindly asked to contact the Owner at the contact details provided in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.245",
+      "en": "The User may submit the complaint including a brief description and if applicable, the details of the related order, purchase, or account, to the Owner's email address specified in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.246",
+      "en": "The Owner will process the complaint without undue delay and within 7 days of receiving it.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.247",
+      "en": "The European Commission's Online Dispute Resolution (ODR) platform, previously available for alternative dispute resolutions that facilitated an out-of-court method for solving disputes related to and stemming from online sale and service contracts, has been officially discontinued as of 20 July 2025, following the adoption of EU Regulation 2024/3228.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.248",
+      "en": "Although the platform is no longer available, Users are encouraged to reach out directly to the Owner to resolve any concerns or issues. Users are kindly asked to contact the Owner at the contact details provided in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.249",
+      "en": "The property that enables the provision of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.25",
+      "en": "The Owner undertakes its utmost effort to ensure that the content provided on this Application infringes no applicable legal provisions or third-party rights. However, it may not always be possible to achieve such a result. In such cases, without prejudice to any legal prerogatives of Users to enforce their rights, Users are kindly asked to preferably report related complaints using the contact details provided in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.250",
+      "en": "Any legally binding or contractual relationship between the Owner and the User, governed by these Terms.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.251",
+      "en": "Applies where a User, regardless of nationality, is in Brazil.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.252",
+      "en": "Any User that does not qualify as a Consumer.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.253",
+      "en": "Consumer is any User qualifying as such under applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.254",
+      "en": "Any code or voucher, in print or electronic form, which allows the User to purchase the Product at a discounted price.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.255",
+      "en": "Applies where a User, regardless of nationality, is in the EU.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.256",
+      "en": "Any individual human being including, but not limited to, Consumers.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.257",
+      "en": "Indicates the natural person(s) or legal entity that provides this Application and/or the Service to Users.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.258",
+      "en": "A good or service available through this Application, such as e.g. physical goods, digital files, software, booking services etc., and any other types of products separately defined herein, such as Digital Products.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.259",
+      "en": "The service provided by this Application as described in these Terms and on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.26",
+      "en": "The Owner holds and reserves all intellectual property rights for any such content.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.260",
+      "en": "All provisions applicable to the use of this Application and/or the Service as described in this document, including any other related documents or agreements, and as updated from time to time.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.261",
+      "en": "Applies where a User, regardless of nationality, is in the United Kingdom.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.262",
+      "en": "Any natural person or legal entity using this Application and/or the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.263",
+      "en": "Addressed to:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.264",
+      "en": "Elemento Srl, Via Virginio Allione 2, 12100 Cuneo (Italy) hello@elemento.cloud",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.265",
+      "en": "I/We hereby give notice that I/we withdraw from my/our contract of sale of the following goods/for the provision of the following service:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.266",
+      "en": "_______________________________________________ (insert a description of the goods/services that are subject to the respective withdrawal)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.267",
+      "en": "(sign if this form is notified on paper)",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.268",
+      "en": "Latest update: September 25, 2026",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.27",
+      "en": "Users may not, therefore, use such content in any way that is not necessary or implicit in the proper use of the Service.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.28",
+      "en": "In particular, but without limitation, Users may not copy, download, share (beyond the limits set forth below), modify, translate, transform, publish, transmit, sell, sublicense, edit, transfer/assign to third parties or create derivative works from the content available on this Application, nor allow any third party to do so through the User or their device, even without the User's knowledge.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.29",
+      "en": "Where explicitly stated on this Application, the User may download, copy and/or share some content available through this Application for its sole personal and non-commercial use and provided that the copyright attributions and all the other attributions requested by the Owner are correctly implemented.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.3",
+      "en": "in a legally binding way. Capitalized words are defined in the relevant dedicated section of this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.30",
+      "en": "Any applicable statutory limitation or exception to copyright shall stay unaffected.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.31",
+      "en": "The Owner allows Users to upload, share or provide their own content to this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.32",
+      "en": "By providing content to this Application, Users confirm that they are legally allowed to do so and that they are not infringing any statutory provisions and/or third-party rights.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.33",
+      "en": "Users acknowledge and accept that by providing their own content on this Application they grant the Owner a non-exclusive, fully paid-up and royalty-free license to process such content solely for the operation and maintenance of this Application as contractually required.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.34",
+      "en": "To the extent permitted by applicable law, Users waive any moral rights in connection with content they provide to this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.35",
+      "en": "Users acknowledge, accept and confirm that all content they provide through this Application is provided subject to the same general conditions set forth for content on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.36",
+      "en": "Users are solely liable for any content they upload, post, share, or provide through this Application. Users acknowledge and accept that the Owner does not filter or moderate such content .",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.37",
+      "en": "However, the Owner reserves the right to remove, delete or block such content at its own discretion and, without prior notice, to deny the uploading User access to this Application:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.38",
+      "en": "The removal, deletion or blocking of content shall not entitle Users that have provided such content or that are liable for it, to any claims for compensation, damages or reimbursement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.39",
+      "en": "Users agree to hold the Owner harmless from and against any claim asserted and/or damage suffered due to content they provided to or provided through this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.4",
+      "en": "The User must read this document carefully.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.40",
+      "en": "Through this Application Users may have access to external resources provided by third parties. Users acknowledge and accept that the Owner has no control over such resources and is therefore not responsible for their content and availability.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.41",
+      "en": "Conditions applicable to any resources provided by third parties, including those applicable to any possible grant of rights in content, result from each such third parties' terms and conditions or, in the absence of those, applicable statutory law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.42",
+      "en": "This Application and the Service may only be used within the scope of what they are provided for, under these Terms and applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.43",
+      "en": "Users are solely responsible for making sure that their use of this Application and/or the Service violates no applicable law, regulations or third-party rights.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.44",
+      "en": "Therefore, the Owner reserves the right to take any appropriate measure to protect its legitimate interests including denying Users access to this Application or the Service, terminating contracts, reporting any misconduct performed through this Application or the Service to the competent authorities — such as judicial or administrative authorities — whenever Users are suspected to be in violation of any laws, regulations, third-party rights and/or these Terms, including, but not limited to, by engaging in any of the following activities:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.45",
+      "en": "This Application gives Users the opportunity to receive advantages if, as a result of their recommendation, any new User purchases a Product offered on this Application. In order to take advantage of this offer, Users may invite others to purchase the Products on this Application by sending them a tell-a-friend code provided by the Owner. Such codes can only be redeemed once. If upon purchase of the Products on this Application any of the persons invited redeems a tell-a-friend code, the inviting User shall receive the advantage or benefit (such as: a price reduction, an additional service feature, an upgrade etc.) specified on this Application. Tell-a-friend codes may be limited to specific Products among those offered on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.46",
+      "en": "The Owner reserves the right to end the offer at any time at its own discretion.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.47",
+      "en": "While no general limitation applies to the number of persons that can be invited, the amount of advantage or benefit that each inviting User can receive, may be limited.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.48",
+      "en": "Any intellectual or industrial property rights, and any other exclusive rights on software or technical applications embedded in or related to this Application are held by the Owner and/or its licensors.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.49",
+      "en": "Subject to Users' compliance with and notwithstanding any divergent provision of these Terms, the Owner merely grants Users a revocable, non-exclusive, non-sublicensable and non-transferable license to use the software and/or any other technical means embedded in the Service within the scope and for the purposes of this Application and the Service offered.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.5",
+      "en": "Any other contract or agreement entered into between the Owner and the User shall always prevail over the provisions of these Terms. Therefore, in such cases, these Terms shall apply only residually and in accordance with applicable provisions in such agreements or contracts.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.50",
+      "en": "This license does not grant Users any rights to access, usage or disclosure of the original source code. All techniques, algorithms, and procedures contained in the software and any documentation thereto related is the Owner's or its licensors' sole property.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.51",
+      "en": "The provisions of this section do not apply to any software component that the Owner distributes under an open source or other third-party licence. Such components are governed exclusively by the terms of the applicable licence, which are made available together with the relevant component.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.52",
+      "en": "All rights and license grants to Users shall immediately terminate upon any termination or expiration of the Agreement.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.53",
+      "en": "Without prejudice to the above, under this license Users may download, install, use and run the software on the number of devices specified on this Application or in the Product description applicable to the licence purchased, provided that such devices are common and up-to-date in terms of technology and market standards.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.54",
+      "en": "The Owner reserves the right to release updates, fixes and further developments of this Application and/or its related software. Users may need to download and install such updates to continue using this Application and/or its related software.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.55",
+      "en": "However, in order to get access to completely new versions or releases of the software Users may need to purchase a separate license.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.56",
+      "en": "Notwithstanding the foregoing, the User undertakes to immediately delete any copies of the software upon the expiry of the license under which such software is provided to the User.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.57",
+      "en": "Users may access their data relating to this Application via the Application Program Interface (API). Any use of the API, including use of the API through a third-party product/service that accesses this Application, is bound by these Terms and, in addition, by the following specific terms:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.58",
+      "en": "Some features of this Application and of the Products offered through it are powered by artificial intelligence systems, operated by the Owner or by third-party providers disclosed in the privacy policy of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.59",
+      "en": "Users acknowledge and accept that:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.6",
+      "en": "This Application is provided by:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.60",
+      "en": "The Owner gives no warranty as to the accuracy, completeness or fitness for purpose of any output generated by artificial intelligence features, to the maximum extent permitted by applicable law.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.61",
+      "en": "Some of the Products provided on this Application, as part of the Service, are provided on the basis of payment.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.62",
+      "en": "The fees, duration and conditions applicable to the purchase of such Products are described below and in the dedicated sections of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.63",
+      "en": "To purchase Products, the User must register or log into this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.64",
+      "en": "Prices, descriptions or availability of Products are outlined in the respective sections of this Application and are subject to change without notice.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.65",
+      "en": "While Products on this Application are presented with the greatest accuracy technically possible, representation on this Application through any means (including, as the case may be, graphic material, images, colors, sounds) is for reference only and implies no warranty as to the characteristics of the purchased Product.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.66",
+      "en": "The characteristics of the chosen Product will be outlined during the purchasing process.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.67",
+      "en": "Any steps taken from choosing a Product to order submission form part of the purchasing process.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.68",
+      "en": "The purchasing process includes these steps:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.69",
+      "en": "When the User submits an order, the following applies:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.7",
+      "en": "Elemento Srl Via Virginio Allione 2, 12100 Cuneo (Italy) VAT number: IT03959360045 — Registro delle Imprese di Cuneo / REA no.: CN - 326571",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.70",
+      "en": "All notifications related to the described purchasing process shall be sent to the email address provided by the User for such purposes.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.71",
+      "en": "Users are informed during the purchasing process and before order submission, about any fees, taxes and costs (including, if any, delivery costs) that they will be charged.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.72",
+      "en": "Prices on this Application are displayed:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.73",
+      "en": "The Owner may offer discounts or provide special offers for the purchase of Products. Any such offer or discount shall always be subject to the eligibility criteria and the terms and conditions set out in the corresponding section of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.74",
+      "en": "Offers and discounts are always granted at the Owner's sole discretion.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.75",
+      "en": "Repeated or recurring offers or discounts create no claim/title or right that Users may enforce in the future.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.76",
+      "en": "Depending on the case, discounts or offers shall be valid for a limited time only or while stocks last. If an offer or discount is limited by time, the time indications refer to the time zone of the Owner, as indicated in the Owner's location details in this document.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.77",
+      "en": "Offers or discounts can be based on Coupons.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.78",
+      "en": "If breach of the conditions applicable to Coupons occurs, the Owner can legitimately refuse to fulfill its contractual obligations and expressly reserves the right to take appropriate legal action to protect its rights and interests.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.79",
+      "en": "Notwithstanding the provisions below, any additional or diverging rules applicable to using the Coupon displayed in the corresponding information page or on the Coupon itself shall always prevail.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.8",
+      "en": "Owner contact email: hello@elemento.cloud",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.80",
+      "en": "Unless otherwise stated, these rules apply to the use of Coupons:",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.81",
+      "en": "Information related to accepted payment methods is made available during the purchasing process.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.82",
+      "en": "Some payment methods may only be available subject to additional conditions or fees. In such cases related information can be found in the dedicated section of this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.83",
+      "en": "Payment methods marked accordingly are managed directly by the Owner. In this case, the Owner collects and stores the data necessary for the processing of payments and for fulfilling any legal obligation related to them. The User may read the privacy policy of this Application to learn more about the data processing and Users' rights regarding their data.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.84",
+      "en": "Other payment methods — if any — are independently provided by third-party services. In such cases this Application collects no payment information — such as credit card details — but only receives a notification from the relevant third-party provider once the payment has been successfully completed.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.85",
+      "en": "If payment through the available methods fail, the Owner shall be under no obligation to fulfill the purchase order. If a payment fails or is refused, the Owner reserves the right to claim any related expenses or damages from the User.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.86",
+      "en": "Until payment of the total purchase price is received by the Owner, any Products ordered shall not become the User's property.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.87",
+      "en": "Users do not acquire any rights to use the purchased Product until the total purchase price is received by the Owner.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.88",
+      "en": "In addition to its digital Products, the Owner occasionally supplies physical hardware — such as servers — sourced from manufacturers including Dell, HPE and Lenovo, and configured by the Owner according to the specifications agreed with the User.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.89",
+      "en": "Hardware is offered exclusively to Business Users. The Owner does not sell hardware to Consumers. Accordingly, the provisions of these Terms concerning the right of withdrawal, the right to cancel, the right of regret and the legal guarantee of conformity for Consumers do not apply to the sale of hardware.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.9",
+      "en": "\"This Application\" refers to",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.90",
+      "en": "Orders for hardware are agreed individually with the User. The specific manufacturer, model and configuration of each unit are those set out in the order confirmation. Lead times are indicative and depend on the availability of components from the manufacturer.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.91",
+      "en": "Once the Owner has started configuring a unit to the User's specifications, the order may no longer be cancelled by the User, save as otherwise agreed in writing.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.92",
+      "en": "Deliveries are made to the address indicated by the User and in the manner specified in the order summary.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.93",
+      "en": "Upon delivery, Users should verify the content of the delivery and report anomalies without undue delay, using the contact details provided in this document or as described in the delivery note. Users may refuse to accept the parcel if visibly damaged.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.94",
+      "en": "Goods are delivered to the following countries or territories: EU Countries, UK, Switzerland.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.95",
+      "en": "Delivery times are specified on this Application or during the purchasing process.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.96",
+      "en": "Deliveries are made under the conditions and within the timeframe stated on this Application.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.97",
+      "en": "Unless otherwise stated, the delivery costs are the responsibility of the User.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.98",
+      "en": "The risk of loss of or damage to the goods shall pass to the User upon handover to the carrier.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.terms.p.99",
+      "en": "For an additional fee, the User can choose insured delivery. In this case, the risks covered and the applicable terms and conditions are set out in the insurance policy.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "<p>"
+    },
+    {
+      "id": "meta.terms.description",
+      "en": "Terms and conditions for elemento.cloud, electros.cloud, related applications and services provided by Elemento Srl.",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.terms.title",
+      "en": "Terms and Conditions | Elemento",
+      "it": "",
+      "fr": "",
+      "source": "terms.html",
+      "context": "meta title"
+    }
+  ]
+}

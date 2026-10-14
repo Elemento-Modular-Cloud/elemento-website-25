@@ -1,0 +1,366 @@
+{
+  "page": "buy-seat",
+  "count": 45,
+  "strings": [
+    {
+      "id": "body.buy-seat.button.1",
+      "en": "Continue",
+      "it": "Continua",
+      "fr": "Continuer",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.2",
+      "en": "Back",
+      "it": "Indietro",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.3",
+      "en": "Choose another organisation",
+      "it": "Scegli un’altra organizzazione",
+      "fr": "Choisir une autre organisation",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.4",
+      "en": "Back",
+      "it": "Indietro",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.5",
+      "en": "Continue to Stripe",
+      "it": "Continua su Stripe",
+      "fr": "Continuer vers Stripe",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.6",
+      "en": "Back",
+      "it": "Indietro",
+      "fr": "Retour",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.button.7",
+      "en": "Save & continue to Stripe",
+      "it": "Salva e continua su Stripe",
+      "fr": "Enregistrer et continuer vers Stripe",
+      "source": "buy-seat.html",
+      "context": "<button>"
+    },
+    {
+      "id": "body.buy-seat.h1.1",
+      "en": "Buy an Electros seat",
+      "it": "Acquista un seat Electros",
+      "fr": "Acheter un siège Electros",
+      "source": "buy-seat.html",
+      "context": "<h1>"
+    },
+    {
+      "id": "body.buy-seat.h2.1",
+      "en": "Sign in",
+      "it": "Accedi",
+      "fr": "Connexion",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.2",
+      "en": "Choose organisation",
+      "it": "Scegli organizzazione",
+      "fr": "Choisir l’organisation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.3",
+      "en": "You already have a paid seat in this organisation!",
+      "it": "Hai già un seat a pagamento in questa organizzazione!",
+      "fr": "Vous avez déjà un siège payant dans cette organisation !",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.4",
+      "en": "Plan & billing",
+      "it": "Piano e fatturazione",
+      "fr": "Offre et facturation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.h2.5",
+      "en": "Billing details",
+      "it": "Dati di fatturazione",
+      "fr": "Coordonnées de facturation",
+      "source": "buy-seat.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.buy-seat.label.1",
+      "en": "Email",
+      "it": "Email",
+      "fr": "E-mail",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.10",
+      "en": "Country (ISO)",
+      "it": "Paese (ISO)",
+      "fr": "Pays (ISO)",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.11",
+      "en": "Province",
+      "it": "Provincia",
+      "fr": "Province",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.12",
+      "en": "ZIP / CAP",
+      "it": "CAP",
+      "fr": "Code postal",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.13",
+      "en": "City",
+      "it": "Città",
+      "fr": "Ville",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.2",
+      "en": "Password",
+      "it": "Password",
+      "fr": "Mot de passe",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.3",
+      "en": "Plan",
+      "it": "Piano",
+      "fr": "Offre",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.4",
+      "en": "Billing",
+      "it": "Fatturazione",
+      "fr": "Facturation",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.5",
+      "en": "Company name",
+      "it": "Ragione sociale",
+      "fr": "Raison sociale",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.6",
+      "en": "VAT number",
+      "it": "Partita IVA",
+      "fr": "N° de TVA",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.7",
+      "en": "Fiscal code",
+      "it": "Codice fiscale",
+      "fr": "Code fiscal",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.8",
+      "en": "SDI code",
+      "it": "Codice SDI",
+      "fr": "Code SDI",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.label.9",
+      "en": "Address",
+      "it": "Indirizzo",
+      "fr": "Adresse",
+      "source": "buy-seat.html",
+      "context": "<label>"
+    },
+    {
+      "id": "body.buy-seat.li.1",
+      "en": "Home",
+      "it": "Home",
+      "fr": "Accueil",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.2",
+      "en": "Electros",
+      "it": "Electros",
+      "fr": "Electros",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.3",
+      "en": "Buy a seat",
+      "it": "Acquista un seat",
+      "fr": "Acheter un siège",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.4",
+      "en": "1 Sign in",
+      "it": "1 Accedi",
+      "fr": "1 Connexion",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.5",
+      "en": "2 Organisation",
+      "it": "2 Organizzazione",
+      "fr": "2 Organisation",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.li.6",
+      "en": "3 Plan & Stripe",
+      "it": "3 Piano e Stripe",
+      "fr": "3 Offre et Stripe",
+      "source": "buy-seat.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.buy-seat.p.1",
+      "en": "Electros",
+      "it": "Electros",
+      "fr": "Electros",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.10",
+      "en": "VAT or fiscal code can be left blank when not applicable; address fields are required.",
+      "it": "Partita IVA o codice fiscale possono restare vuoti se non applicabili; l’indirizzo è obbligatorio.",
+      "fr": "Le n° de TVA ou le code fiscal peut rester vide s’il ne s’applique pas ; l’adresse est obligatoire.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.2",
+      "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
+      "it": "Accedi, scegli l’organizzazione che deve ricevere il seat, seleziona un piano e completa il pagamento su Stripe.",
+      "fr": "Connectez-vous, choisissez l’organisation qui doit détenir le siège, sélectionnez une offre, puis payez sur Stripe.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.3",
+      "en": "Use your Elemento account email and password.",
+      "it": "Usa email e password del tuo account Elemento.",
+      "fr": "Utilisez l’e-mail et le mot de passe de votre compte Elemento.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.4",
+      "en": "No account yet? Create one",
+      "it": "Non hai ancora un account? Creane uno",
+      "fr": "Pas encore de compte ? Créez-en un",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.5",
+      "en": "Select the organisation that should receive the seat.",
+      "it": "Seleziona l’organizzazione che deve ricevere il seat.",
+      "fr": "Sélectionnez l’organisation qui doit recevoir le siège.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.6",
+      "en": "Organisation: —",
+      "it": "Organizzazione: —",
+      "fr": "Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.7",
+      "en": "No further purchase is needed for this organisation. Open Electros to manage billing, or choose another organisation below.",
+      "it": "Non è necessario un ulteriore acquisto per questa organizzazione. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione qui sotto.",
+      "fr": "Aucun nouvel achat n’est nécessaire pour cette organisation. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation ci-dessous.",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.8",
+      "en": "Organisation: —",
+      "it": "Organizzazione: —",
+      "fr": "Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.p.9",
+      "en": "Required before Stripe checkout. Organisation: —",
+      "it": "Obbligatorio prima del checkout Stripe. Organizzazione: —",
+      "fr": "Obligatoire avant le paiement Stripe. Organisation : —",
+      "source": "buy-seat.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.buy-seat.ui.1",
+      "en": "Back to Electros",
+      "it": "Torna a Electros",
+      "fr": "Retour à Electros",
+      "source": "buy-seat.html",
+      "context": "class"
+    },
+    {
+      "id": "meta.buy-seat.description",
+      "en": "Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.",
+      "it": "Accedi al tuo account Elemento, scegli un’organizzazione e acquista un seat Electros tramite Stripe.",
+      "fr": "Connectez-vous à votre compte Elemento, choisissez une organisation et achetez un siège Electros via Stripe.",
+      "source": "buy-seat.html",
+      "context": "meta description"
+    },
+    {
+      "id": "meta.buy-seat.title",
+      "en": "Buy an Electros seat | Elemento",
+      "it": "Acquista un seat Electros | Elemento",
+      "fr": "Acheter un siège Electros | Elemento",
+      "source": "buy-seat.html",
+      "context": "meta title"
+    }
+  ]
+}

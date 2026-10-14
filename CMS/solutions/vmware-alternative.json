@@ -259,12 +259,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Console di gestione unificata che sostituisce VMware vCenter"
+          "description": "Hypervisor moderno che sostituisce VMware vSphere con prestazioni migliori"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hypervisor moderno che sostituisce VMware vSphere con prestazioni migliori"
+          "description": "Console di gestione unificata che sostituisce VMware vCenter"
         }
       ],
       "cta": {
@@ -444,12 +444,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Console de gestion unifiée remplaçant VMware vCenter"
+          "description": "Hyperviseur moderne remplaçant VMware vSphere avec de meilleures performances"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hyperviseur moderne remplaçant VMware vSphere avec de meilleures performances"
+          "description": "Console de gestion unifiée remplaçant VMware vCenter"
         }
       ],
       "cta": {

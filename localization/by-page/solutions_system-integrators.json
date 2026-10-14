@@ -1,6 +1,6 @@
 {
   "page": "solutions_system-integrators",
-  "count": 37,
+  "count": 33,
   "strings": [
     {
       "id": "body.solutions_system-integrators.h2.1",
@@ -35,14 +35,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h3.10",
-      "en": "Kyndryl: Guiding Innovation and Business Transformation",
-      "it": "",
-      "fr": "",
-      "source": "solutions/system-integrators.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_system-integrators.h3.2",
       "en": "Multi-Tenant Management",
       "it": "",
@@ -68,14 +60,6 @@
     },
     {
       "id": "body.solutions_system-integrators.h3.5",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/system-integrators.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_system-integrators.h3.6",
       "en": "Electros",
       "it": "",
       "fr": "",
@@ -83,15 +67,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h3.7",
-      "en": "Atomosphere",
+      "id": "body.solutions_system-integrators.h3.6",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/system-integrators.html",
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h3.8",
+      "id": "body.solutions_system-integrators.h3.7",
       "en": "The Multi-Cloud Conundrum: Is It Really That Difficult",
       "it": "",
       "fr": "",
@@ -99,7 +83,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h3.9",
+      "id": "body.solutions_system-integrators.h3.8",
       "en": "Public, Private, Hybrid and Multicloud",
       "it": "",
       "fr": "",
@@ -107,15 +91,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h4.1",
-      "en": "White-Label Hypervisor",
+      "id": "body.solutions_system-integrators.h3.9",
+      "en": "Kyndryl: Guiding Innovation and Business Transformation",
       "it": "",
       "fr": "",
       "source": "solutions/system-integrators.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.solutions_system-integrators.h4.2",
+      "id": "body.solutions_system-integrators.h4.1",
       "en": "Partner Management Console",
       "it": "",
       "fr": "",
@@ -123,8 +107,8 @@
       "context": "<h4>"
     },
     {
-      "id": "body.solutions_system-integrators.h4.3",
-      "en": "Partner Integration API",
+      "id": "body.solutions_system-integrators.h4.2",
+      "en": "White-Label Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/system-integrators.html",
@@ -140,14 +124,6 @@
     },
     {
       "id": "body.solutions_system-integrators.p.10",
-      "en": "Explore multi-cloud strategies, deployment options, and partner success stories for system integrators.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/system-integrators.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_system-integrators.p.11",
       "en": "Navigate the complexities of multi-cloud management and learn strategies for successful integration.",
       "it": "",
       "fr": "",
@@ -155,7 +131,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_system-integrators.p.12",
+      "id": "body.solutions_system-integrators.p.11",
       "en": "Understand the different cloud deployment models and how to choose the right approach for your clients.",
       "it": "",
       "fr": "",
@@ -163,7 +139,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_system-integrators.p.13",
+      "id": "body.solutions_system-integrators.p.12",
       "en": "Learn from a leading system integrator's success story in guiding business transformation through cloud.",
       "it": "",
       "fr": "",
@@ -212,14 +188,6 @@
     },
     {
       "id": "body.solutions_system-integrators.p.7",
-      "en": "Deploy branded hypervisor environments for your clients with complete customization control. Multi-tenant architecture with isolated client environments and automated provisioning.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/system-integrators.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_system-integrators.p.8",
       "en": "Unified dashboard for managing all client environments, billing, and usage tracking. Real-time monitoring, automated scaling, and comprehensive reporting for your consulting business.",
       "it": "",
       "fr": "",
@@ -227,8 +195,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.solutions_system-integrators.p.8",
+      "en": "Deploy branded hypervisor environments for your clients with complete customization control. Multi-tenant architecture with isolated client environments and automated provisioning.",
+      "it": "",
+      "fr": "",
+      "source": "solutions/system-integrators.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.solutions_system-integrators.p.9",
-      "en": "Comprehensive API for integrating with your existing tools and workflows. Support for custom integrations, third-party services, and automated client onboarding processes.",
+      "en": "Explore multi-cloud strategies, deployment options, and partner success stories for system integrators.",
       "it": "",
       "fr": "",
       "source": "solutions/system-integrators.html",
@@ -252,7 +228,7 @@
     },
     {
       "id": "body.solutions_system-integrators.ui.3",
-      "en": "Learn More",
+      "en": "Read More",
       "it": "",
       "fr": "",
       "source": "solutions/system-integrators.html",
@@ -268,14 +244,6 @@
     },
     {
       "id": "body.solutions_system-integrators.ui.5",
-      "en": "Read More",
-      "it": "",
-      "fr": "",
-      "source": "solutions/system-integrators.html",
-      "context": "class"
-    },
-    {
-      "id": "body.solutions_system-integrators.ui.6",
       "en": "Read More",
       "it": "",
       "fr": "",

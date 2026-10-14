@@ -135,15 +135,175 @@ html.is-embedded .checkbox-label {
 
 html.is-embedded .form-container {
     width: 100%;
-    max-width: 520px;
+    max-width: none;
     margin: 0 auto;
-    padding: var(--space-2xl);
+    padding: var(--space-2xl) var(--space-3xl);
     background: var(--background-color);
     border: 1px solid var(--border-color, var(--glassmorphism-border));
     border-radius: var(--radius-xl, 12px);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+}
+
+/* Matches buy-seat subscribe panel */
+.form-container--checkout,
+html.is-embedded .form-container--checkout {
+    max-width: 720px;
+    padding: clamp(1.75rem, 3.5vw, 2.5rem);
+    border: 1px solid color-mix(in srgb, var(--text-color) 22%, transparent);
+    border-radius: 18px;
+    background:
+        linear-gradient(
+            165deg,
+            color-mix(in srgb, var(--primary-color, #ffa600) 9%, transparent) 0%,
+            transparent 46%
+        ),
+        color-mix(in srgb, var(--card-bg-color, var(--background-color)) 88%, #111 12%);
+    box-shadow:
+        0 1px 0 color-mix(in srgb, #fff 8%, transparent) inset,
+        0 18px 48px rgba(0, 0, 0, 0.32);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.form-container--checkout .form-header {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.form-container--checkout .form-title {
+    font-family: 'Red Hat Display', var(--font-heading, sans-serif);
+    font-size: clamp(1.35rem, 2.6vw, 1.65rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+}
+
+.form-container--checkout .form-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.form-container--checkout .form-group {
+    margin-bottom: 1.1rem;
+}
+
+.form-container--checkout .form-row {
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.form-container--checkout .form-group label {
+    margin-bottom: 0.45rem;
+    font-size: 0.88rem;
+}
+
+.form-container--checkout .form-group input,
+.form-container--checkout .form-group textarea,
+.form-container--checkout .form-group select {
+    min-height: 3rem;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, var(--text-color) 22%, transparent);
+    background: color-mix(in srgb, var(--text-color) 6%, transparent);
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.form-container--checkout .form-group input::placeholder {
+    color: color-mix(in srgb, var(--text-color) 40%, transparent);
+}
+
+.form-container--checkout .form-group input:hover,
+.form-container--checkout .form-group textarea:hover,
+.form-container--checkout .form-group select:hover {
+    border-color: color-mix(in srgb, var(--text-color) 34%, transparent);
+}
+
+.form-container--checkout .form-group input:focus,
+.form-container--checkout .form-group textarea:focus,
+.form-container--checkout .form-group select:focus {
+    border-color: var(--primary-color, #ffa600);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color, #ffa600) 22%, transparent);
+    background: color-mix(in srgb, var(--text-color) 8%, transparent);
+}
+
+.form-container--checkout .checkbox-label {
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-top: 0.85rem;
+    line-height: 1.45;
+}
+
+.form-container--checkout .checkbox-label input[type="checkbox"] {
+    margin-top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary-color, #ffa600);
+    flex: none;
+}
+
+.form-container--checkout .checkbox-label a {
+    color: var(--primary-color, #ffa600);
+    font-weight: 600;
+}
+
+.form-container--checkout .form-submit,
+.form-container--checkout .btn.form-submit {
+    width: 100%;
+    min-height: 3rem;
+    margin-top: 1.25rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.form-container--checkout .form-foot {
+    margin: 1.5rem 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.form-container--checkout .form-foot a {
+    color: var(--primary-color, #ffa600);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-container--checkout .form-foot a:hover {
+    text-decoration: underline;
+}
+
+.form-container--checkout .form-error-message {
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, #dc3545 40%, transparent);
+    background: color-mix(in srgb, #dc3545 14%, transparent);
+    color: var(--text-color);
+}
+
+@media (max-width: 640px) {
+    .form-container--checkout,
+    html.is-embedded .form-container--checkout {
+        padding: 1.5rem 1.15rem;
+        border-radius: 14px;
+    }
+}
+
+/* Iframe viewport is narrower than the page; keep name fields side-by-side */
+html.is-embedded .form-row {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 560px) {
+    html.is-embedded .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    html.is-embedded .form-container {
+        padding: var(--space-xl) var(--space-lg);
+    }
 }
 
 .form-header {
@@ -184,6 +344,13 @@ html.is-embedded .form-container {
     color: var(--text-color);
     font-size: 0.9rem;
     letter-spacing: 0.01em;
+}
+
+.form-field-hint {
+    margin: 0.4rem 0 0;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--text-secondary, color-mix(in srgb, var(--text-color) 65%, transparent));
 }
 
 .form-group input,

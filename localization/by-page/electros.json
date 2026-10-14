@@ -1,6 +1,6 @@
 {
   "page": "electros",
-  "count": 112,
+  "count": 154,
   "strings": [
     {
       "id": "body.electros.blockquote.1",
@@ -21,6 +21,38 @@
     {
       "id": "body.electros.h2.1",
       "en": "The Orchestration Dashboard for any Cloud",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.electros.h2.10",
+      "en": "Get started with Electros",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.electros.h2.11",
+      "en": "Trial and subscription",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.electros.h2.12",
+      "en": "Frequently Asked Questions",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.electros.h2.13",
+      "en": "Ready to manage your hybrid cloud workloads with a single app?",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -68,7 +100,7 @@
     },
     {
       "id": "body.electros.h2.7",
-      "en": "Electros Cross‑Platform & Protocol Support",
+      "en": "Connected through Atomosphere",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -76,7 +108,7 @@
     },
     {
       "id": "body.electros.h2.8",
-      "en": "Frequently Asked Questions",
+      "en": "Provider Compatibility",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -84,7 +116,7 @@
     },
     {
       "id": "body.electros.h2.9",
-      "en": "Ready to manage your hybrid cloud workloads with a single app?",
+      "en": "Electros Cross‑Platform & Protocol Support",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -93,6 +125,62 @@
     {
       "id": "body.electros.h3.1",
       "en": "Universal Dashboard",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.10",
+      "en": "Dynamic Cloud-Cost Comparison",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.11",
+      "en": "Provider-Agnostic Provisioning",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.12",
+      "en": "Expandable CSP Integration",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.13",
+      "en": "I need an account",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.14",
+      "en": "I already have an account",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.15",
+      "en": "14-day free trial",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.electros.h3.16",
+      "en": "Subscribe for your seat",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -108,7 +196,7 @@
     },
     {
       "id": "body.electros.h3.3",
-      "en": "Automation-ready CLI",
+      "en": "Native desktop app",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -132,7 +220,7 @@
     },
     {
       "id": "body.electros.h3.7",
-      "en": "CLI",
+      "en": "Unified APIs",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -140,7 +228,7 @@
     },
     {
       "id": "body.electros.h3.8",
-      "en": "Desktop Installers",
+      "en": "Unified Architecture",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -148,7 +236,7 @@
     },
     {
       "id": "body.electros.h3.9",
-      "en": "Unified Architecture",
+      "en": "Universal API Abstraction",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -164,6 +252,14 @@
     },
     {
       "id": "body.electros.h4.10",
+      "en": "What access protocols are supported?",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.electros.h4.11",
       "en": "Is Electros free to use?",
       "it": "",
       "fr": "",
@@ -172,38 +268,6 @@
     },
     {
       "id": "body.electros.h4.2",
-      "en": "Linux",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.electros.h4.3",
-      "en": "macOS",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.electros.h4.4",
-      "en": "Windows",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.electros.h4.5",
-      "en": "Ubuntu/Debian",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<h4>"
-    },
-    {
-      "id": "body.electros.h4.6",
       "en": "Technical Architecture:",
       "it": "",
       "fr": "",
@@ -211,8 +275,40 @@
       "context": "<h4>"
     },
     {
+      "id": "body.electros.h4.3",
+      "en": "Production Ready",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.electros.h4.4",
+      "en": "Beta Testing",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.electros.h4.5",
+      "en": "In Development",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h4>"
+    },
+    {
+      "id": "body.electros.h4.6",
+      "en": "How do I get started?",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<h4>"
+    },
+    {
       "id": "body.electros.h4.7",
-      "en": "Does Electros run offline?",
+      "en": "Where do I pay?",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -220,7 +316,7 @@
     },
     {
       "id": "body.electros.h4.8",
-      "en": "Can I mix GUI and CLI workflows?",
+      "en": "Does Electros run offline?",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -228,7 +324,7 @@
     },
     {
       "id": "body.electros.h4.9",
-      "en": "What access protocols are supported?",
+      "en": "Which operating systems are supported?",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -283,6 +379,30 @@
       "context": "<li>"
     },
     {
+      "id": "body.electros.li.10",
+      "en": "Automatic protocol selection based on guest OS",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.electros.li.11",
+      "en": "Unified workflows for VMs, storage, and networking",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<li>"
+    },
+    {
+      "id": "body.electros.li.12",
+      "en": "Provider-agnostic provisioning and cost comparison",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<li>"
+    },
+    {
       "id": "body.electros.li.2",
       "en": "Products",
       "it": "",
@@ -300,7 +420,7 @@
     },
     {
       "id": "body.electros.li.4",
-      "en": "Real-time cost monitoring for cloud workloads",
+      "en": "Connect private clouds and existing CSP accounts (AWS, Azure, GCP, 10+)",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -308,15 +428,15 @@
     },
     {
       "id": "body.electros.li.5",
-      "en": "Provider-agnostic provisioning with AtomOS integration",
-      "it": "Provisioning indipendente dal provider con integrazione AtomOS",
-      "fr": "Provisionnement indépendant du fournisseur avec intégration AtomOS",
+      "en": "One dashboard and one API across providers",
+      "it": "",
+      "fr": "",
       "source": "electros.html",
       "context": "<li>"
     },
     {
       "id": "body.electros.li.6",
-      "en": "Shared core services underpin the desktop app and CLI (coverage still expanding)",
+      "en": "Cross-cloud cost comparison in the UI",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -324,7 +444,7 @@
     },
     {
       "id": "body.electros.li.7",
-      "en": "Automatic protocol selection based on guest OS",
+      "en": "Provider-agnostic provisioning with AtomOS integration",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -332,7 +452,7 @@
     },
     {
       "id": "body.electros.li.8",
-      "en": "GUI and CLI gain overlapping workflows over time—not every action exists in both yet",
+      "en": "Shared core services underpin the desktop app",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -340,7 +460,7 @@
     },
     {
       "id": "body.electros.li.9",
-      "en": "Multi- and hybrid-cloud ready",
+      "en": "Atomosphere API proxy over private clouds and CSP accounts",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -380,7 +500,7 @@
     },
     {
       "id": "body.electros.p.13",
-      "en": "Deploy VMs across public clouds and private nodes seamlessly, balancing cost, performance, and compliance.",
+      "en": "Deploy VMs across private clouds and your existing CSP accounts seamlessly, balancing cost, performance, and compliance from one control plane.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -396,7 +516,7 @@
     },
     {
       "id": "body.electros.p.15",
-      "en": "Automate infrastructure-as-code. Electros CLI powers scripting, CI/CD, and cloud pipeline workflows.",
+      "en": "One Elemento API over AWS, Azure, GCP, and more — automate IaC, CI/CD, and cloud pipelines without learning every CSP SDK.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -476,7 +596,7 @@
     },
     {
       "id": "body.electros.p.24",
-      "en": "Get started with the Electros orchestration dashboard",
+      "en": "Get started with the Electros orchestration dashboard — native installers for Linux, macOS, and Windows",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -484,14 +604,6 @@
     },
     {
       "id": "body.electros.p.25",
-      "en": "Native applications for your operating system with full GUI capabilities.",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.electros.p.26",
       "en": "How Electros works behind the scenes",
       "it": "",
       "fr": "",
@@ -499,8 +611,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.electros.p.26",
+      "en": "Electros is a desktop app backed by core services for hybrid and multicloud work. Atomosphere translates CSP and private-cloud APIs into one Elemento protocol so Electros can provision, compare costs, and operate workloads without you switching consoles.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.electros.p.27",
-      "en": "Electros combines a desktop app with elemento-cli, backed by core services for hybrid and multicloud work. It automatically selects the appropriate protocol based on the guest OS—SSH for Linux, RDP/VNC for Windows—and keeps operations coherent across environments.",
+      "en": "How Atomosphere connectivity works →",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -508,7 +628,7 @@
     },
     {
       "id": "body.electros.p.28",
-      "en": "Desktop and CLI build on the same foundations for VMs, storage, and networking. Today some flows are richer in one surface than the other; alignment improves with each release.",
+      "en": "Electros ⇄ Atomosphere ⇄ your private clouds and existing AWS/Azure/GCP accounts — one control plane, no middleman billing.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -516,7 +636,7 @@
     },
     {
       "id": "body.electros.p.29",
-      "en": "Comprehensive support across operating systems and access protocols",
+      "en": "Atomosphere is the connectivity technology behind Electros — one Elemento API over private clouds and your existing CSP accounts",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -524,7 +644,7 @@
     },
     {
       "id": "body.electros.p.3",
-      "en": "Use elemento-cli for scripting and pipelines alongside the desktop app",
+      "en": "A single Electros app for Linux, macOS, and Windows—with full GUI capabilities",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -532,7 +652,7 @@
     },
     {
       "id": "body.electros.p.30",
-      "en": "Common questions about Electros functionality",
+      "en": "Learn one API — Elemento's — while Atomosphere translates to AWS , Azure , GCP , on-prem KVM , and more.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -540,7 +660,7 @@
     },
     {
       "id": "body.electros.p.31",
-      "en": "Yes, basic inventory and local VM management work without network, syncing when online.",
+      "en": "Electros surfaces cost-per-VM metrics across CSP accounts. Atomosphere helps identify the best-priced resources across providers in real time.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -548,7 +668,7 @@
     },
     {
       "id": "body.electros.p.32",
-      "en": "Yes. Both use the same core services, but coverage differs—some tasks are desktop-first or CLI-first today. Check release notes for what each surface supports.",
+      "en": "Launch a VM wherever you choose — private cloud or public CSP — through the same Electros dashboard or script.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -556,7 +676,7 @@
     },
     {
       "id": "body.electros.p.33",
-      "en": "SSH (Linux/BSD), RDP/VNC (Windows/Linux GUI). 4K streaming is coming soon.",
+      "en": "10+ major CSPs supported today, with ongoing API integrations and custom provider support for enterprise customers.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -564,7 +684,7 @@
     },
     {
       "id": "body.electros.p.34",
-      "en": "Yes, Electros is free with your Elemento account. No additional licensing fees required.",
+      "en": "What Electros can manage today via Atomosphere — supported functionalities across integrated CSPs",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -572,7 +692,39 @@
     },
     {
       "id": "body.electros.p.35",
-      "en": "Experience the power of Electros for unified multicloud management",
+      "en": "Loading provider data...",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.36",
+      "en": "Loading...",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.37",
+      "en": "Loading...",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.38",
+      "en": "Loading...",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.39",
+      "en": "Comprehensive support across operating systems and access protocols",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -580,7 +732,87 @@
     },
     {
       "id": "body.electros.p.4",
-      "en": "Electros is Elemento Cloud's orchestration dashboard—available as a native desktop app (Linux, macOS, Windows) and CLI. It provides cohesive visibility, provisioning, and remote access for workloads across any integrated infrastructure.",
+      "en": "Electros is Elemento Cloud's orchestration dashboard—available as a native desktop app for Linux, macOS, and Windows. It provides cohesive visibility, provisioning, and remote access for workloads across any integrated infrastructure.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.40",
+      "en": "No account yet? Register first. Already have one? Open Buy a seat to purchase for an organisation.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.41",
+      "en": "Register to create your Elemento account and personal organisation. You get a 14-day Electros trial (once per account). After that, come back here to buy a seat.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.42",
+      "en": "Sign in with email and password, pick the organisation that should hold the seat, choose a plan, then pay in Stripe.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.43",
+      "en": "New accounts get a 14-day free trial once. Each organisation includes one Electros seat — buy a seat after you sign in.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.44",
+      "en": "Once per Elemento account. When you sign up, we create your organisation with one Electros seat so you can start immediately.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.45",
+      "en": "During or after the trial, open Buy a seat, pick an organisation and plan, then complete Stripe checkout. One seat is valid in one organisation.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.46",
+      "en": "Common questions about Electros functionality",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.47",
+      "en": "If you do not have an Elemento account yet, create one first — you get an organisation and a 14-day free trial. If you already have an account, open Buy a seat to purchase for an organisation via Stripe.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.48",
+      "en": "On the Buy a seat page, sign in, choose an organisation and plan, then Stripe opens in your browser. Subscribe during the trial so you do not lose access when it ends.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.49",
+      "en": "Yes, basic inventory and local VM management work without network, syncing when online.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -588,7 +820,39 @@
     },
     {
       "id": "body.electros.p.5",
-      "en": "Whether you're managing VMs on AWS , Azure , Google Cloud , or your own on-premise infrastructure , Electros gives you a unified interface for complete control.",
+      "en": "Whether you're managing VMs on AWS , Azure , Google Cloud , or your own private cloud , Electros gives you a unified interface for complete control — connected through Atomosphere.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.50",
+      "en": "Native desktop apps for Linux, macOS, and Windows. Get AppImage, DMG, EXE, and .deb packages from electros.cloud .",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.51",
+      "en": "SSH (Linux/BSD), RDP/VNC (Windows/Linux GUI). 4K streaming is coming soon.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.52",
+      "en": "New accounts get a 14-day free trial once. After that, each organisation needs an Electros seat subscription — one seat per organisation. Sign in above to buy a seat; checkout opens in Stripe.",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.electros.p.53",
+      "en": "Create an account for the trial, or sign in to buy a seat for an organisation",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -596,7 +860,7 @@
     },
     {
       "id": "body.electros.p.6",
-      "en": "Surfaces to run Linux, macOS, Windows apps, plus elemento-cli",
+      "en": "Platforms to run Native apps for Linux, macOS, and Windows",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -604,7 +868,7 @@
     },
     {
       "id": "body.electros.p.7",
-      "en": "Cloud & hybrid targets AWS, Azure, Google Cloud, and on-prem infrastructure",
+      "en": "Cloud & hybrid targets Private clouds plus AWS, Azure, GCP, and more CSP accounts",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -613,8 +877,8 @@
     {
       "id": "body.electros.p.8",
       "en": "Unified API Atomosphere-powered connectivity across every connected cloud",
-      "it": "API unificata: connettività Atomosphere su ogni cloud connesso",
-      "fr": "API unifiée : connectivité Atomosphere sur chaque cloud connecté",
+      "it": "",
+      "fr": "",
       "source": "electros.html",
       "context": "<p>"
     },
@@ -628,7 +892,7 @@
     },
     {
       "id": "body.electros.td.1",
-      "en": "Operating System",
+      "en": "Loading provider data...",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -636,22 +900,6 @@
     },
     {
       "id": "body.electros.td.10",
-      "en": "Expanding",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<td>"
-    },
-    {
-      "id": "body.electros.td.11",
-      "en": "Shared core services; not every workflow is available in both yet",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<td>"
-    },
-    {
-      "id": "body.electros.td.12",
       "en": "Licensing",
       "it": "",
       "fr": "",
@@ -659,16 +907,16 @@
       "context": "<td>"
     },
     {
-      "id": "body.electros.td.13",
-      "en": "Free",
+      "id": "body.electros.td.11",
+      "en": "Seat subscription",
       "it": "",
       "fr": "",
       "source": "electros.html",
       "context": "<td>"
     },
     {
-      "id": "body.electros.td.14",
-      "en": "Free with your Elemento account",
+      "id": "body.electros.td.12",
+      "en": "14-day trial, then one seat per organisation",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -676,7 +924,7 @@
     },
     {
       "id": "body.electros.td.2",
-      "en": "Full Support",
+      "en": "Operating System",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -684,22 +932,6 @@
     },
     {
       "id": "body.electros.td.3",
-      "en": "Linux, macOS, Windows",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<td>"
-    },
-    {
-      "id": "body.electros.td.4",
-      "en": "VM Access Protocols",
-      "it": "",
-      "fr": "",
-      "source": "electros.html",
-      "context": "<td>"
-    },
-    {
-      "id": "body.electros.td.5",
       "en": "Full Support",
       "it": "",
       "fr": "",
@@ -707,8 +939,24 @@
       "context": "<td>"
     },
     {
+      "id": "body.electros.td.4",
+      "en": "Linux, macOS, Windows",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<td>"
+    },
+    {
+      "id": "body.electros.td.5",
+      "en": "VM Access Protocols",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<td>"
+    },
+    {
       "id": "body.electros.td.6",
-      "en": "SSH, VNC, RDP",
+      "en": "Full Support",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -716,7 +964,7 @@
     },
     {
       "id": "body.electros.td.7",
-      "en": "4K Streaming (future)",
+      "en": "SSH, VNC, RDP",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -724,7 +972,7 @@
     },
     {
       "id": "body.electros.td.8",
-      "en": "In Development",
+      "en": "4K Streaming (future)",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -732,7 +980,7 @@
     },
     {
       "id": "body.electros.td.9",
-      "en": "CLI vs. GUI coverage",
+      "en": "In Development",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -740,6 +988,14 @@
     },
     {
       "id": "body.electros.th.1",
+      "en": "Provider",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.10",
       "en": "Feature",
       "it": "",
       "fr": "",
@@ -747,7 +1003,7 @@
       "context": "<th>"
     },
     {
-      "id": "body.electros.th.2",
+      "id": "body.electros.th.11",
       "en": "Support Level",
       "it": "",
       "fr": "",
@@ -755,8 +1011,72 @@
       "context": "<th>"
     },
     {
-      "id": "body.electros.th.3",
+      "id": "body.electros.th.12",
       "en": "Details",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.2",
+      "en": "VM Management",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.3",
+      "en": "Object storage",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.4",
+      "en": "Block storage",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.5",
+      "en": "Networking",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.6",
+      "en": "K8s",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.7",
+      "en": "DBaaS",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.8",
+      "en": "Bare-metal",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "<th>"
+    },
+    {
+      "id": "body.electros.th.9",
+      "en": "Status",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -772,7 +1092,7 @@
     },
     {
       "id": "body.electros.ui.10",
-      "en": "x64",
+      "en": "Deep dive into Atomosphere",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -780,7 +1100,7 @@
     },
     {
       "id": "body.electros.ui.11",
-      "en": "x64 Package",
+      "en": "Create account",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -788,7 +1108,7 @@
     },
     {
       "id": "body.electros.ui.12",
-      "en": "ARM64 Package",
+      "en": "Download Electros",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -796,7 +1116,7 @@
     },
     {
       "id": "body.electros.ui.13",
-      "en": "Download Electros",
+      "en": "Sign in & buy a seat",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -812,7 +1132,23 @@
     },
     {
       "id": "body.electros.ui.15",
-      "en": "Book a call",
+      "en": "Create account",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "class"
+    },
+    {
+      "id": "body.electros.ui.16",
+      "en": "Sign in & buy a seat",
+      "it": "",
+      "fr": "",
+      "source": "electros.html",
+      "context": "class"
+    },
+    {
+      "id": "body.electros.ui.17",
+      "en": "Download Electros",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -828,7 +1164,7 @@
     },
     {
       "id": "body.electros.ui.3",
-      "en": "Get it now",
+      "en": "Get started",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -844,7 +1180,7 @@
     },
     {
       "id": "body.electros.ui.5",
-      "en": "Download Electros Now",
+      "en": "Book a call",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -852,7 +1188,7 @@
     },
     {
       "id": "body.electros.ui.6",
-      "en": "x64 AppImage",
+      "en": "Download Electros Now",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -860,7 +1196,7 @@
     },
     {
       "id": "body.electros.ui.7",
-      "en": "ARM64 AppImage",
+      "en": "User guide",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -868,7 +1204,7 @@
     },
     {
       "id": "body.electros.ui.8",
-      "en": "Intel (x64)",
+      "en": "Atomosphere & providers",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -876,7 +1212,7 @@
     },
     {
       "id": "body.electros.ui.9",
-      "en": "Apple Silicon (ARM64)",
+      "en": "Download on electros.cloud",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -884,7 +1220,7 @@
     },
     {
       "id": "meta.electros.description",
-      "en": "Electros is Elemento Cloud's orchestration dashboard and CLI for managing VMs, storage, and networks across public clouds and on-prem infrastructure.",
+      "en": "Electros is Elemento Cloud's orchestration dashboard for managing VMs, storage, and networks across public clouds and on-prem infrastructure.",
       "it": "",
       "fr": "",
       "source": "electros.html",
@@ -892,7 +1228,7 @@
     },
     {
       "id": "meta.electros.title",
-      "en": "Electros App — Orchestration Dashboard & CLI | Elemento Cloud",
+      "en": "Electros App — Orchestration Dashboard | Elemento Cloud",
       "it": "",
       "fr": "",
       "source": "electros.html",

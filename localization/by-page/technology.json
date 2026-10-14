@@ -1,6 +1,6 @@
 {
   "page": "technology",
-  "count": 120,
+  "count": 122,
   "strings": [
     {
       "id": "body.technology.h1.1",
@@ -77,8 +77,8 @@
     {
       "id": "body.technology.h2.8",
       "en": "Products & Technology",
-      "it": "Prodotti e tecnologia",
-      "fr": "Produits et technologie",
+      "it": "",
+      "fr": "",
       "source": "technology.html",
       "context": "<h2>"
     },
@@ -92,7 +92,7 @@
     },
     {
       "id": "body.technology.h3.1",
-      "en": "Elemento Cloud Network",
+      "en": "Atomosphere",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -100,7 +100,7 @@
     },
     {
       "id": "body.technology.h3.10",
-      "en": "Control Plane",
+      "en": "C4 Protocol",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -108,7 +108,7 @@
     },
     {
       "id": "body.technology.h3.11",
-      "en": "Data Plane",
+      "en": "Control Plane",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -116,7 +116,7 @@
     },
     {
       "id": "body.technology.h3.12",
-      "en": "Management Layer",
+      "en": "Data Plane",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -124,7 +124,7 @@
     },
     {
       "id": "body.technology.h3.13",
-      "en": "Observability Stack",
+      "en": "Management Layer",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -132,7 +132,7 @@
     },
     {
       "id": "body.technology.h3.14",
-      "en": "Containerization & AtomOS",
+      "en": "Observability Stack",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -140,7 +140,7 @@
     },
     {
       "id": "body.technology.h3.15",
-      "en": "Infrastructure as Code",
+      "en": "Containerization & AtomOS",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -148,7 +148,7 @@
     },
     {
       "id": "body.technology.h3.16",
-      "en": "Monitoring & Observability",
+      "en": "Infrastructure as Code",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -156,7 +156,7 @@
     },
     {
       "id": "body.technology.h3.17",
-      "en": "Security & Compliance",
+      "en": "Monitoring & Observability",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -164,7 +164,7 @@
     },
     {
       "id": "body.technology.h3.18",
-      "en": "Networking",
+      "en": "Security & Compliance",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -172,7 +172,7 @@
     },
     {
       "id": "body.technology.h3.19",
-      "en": "Storage & Databases",
+      "en": "Networking",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -180,14 +180,22 @@
     },
     {
       "id": "body.technology.h3.2",
-      "en": "AtomOS comparison tables",
+      "en": "Elemento Cloud Network",
       "it": "",
       "fr": "",
       "source": "technology.html",
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.21",
+      "id": "body.technology.h3.20",
+      "en": "Storage & Databases",
+      "it": "",
+      "fr": "",
+      "source": "technology.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.technology.h3.22",
       "en": "10ms",
       "it": "",
       "fr": "",
@@ -195,7 +203,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.24",
+      "id": "body.technology.h3.25",
       "en": "Green Workload Placement",
       "it": "",
       "fr": "",
@@ -203,7 +211,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.25",
+      "id": "body.technology.h3.26",
       "en": "Carbon Monitoring",
       "it": "",
       "fr": "",
@@ -211,7 +219,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.26",
+      "id": "body.technology.h3.27",
       "en": "Renewable Energy",
       "it": "",
       "fr": "",
@@ -219,7 +227,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.27",
+      "id": "body.technology.h3.28",
       "en": "Sustainability Reporting",
       "it": "",
       "fr": "",
@@ -227,7 +235,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.28",
+      "id": "body.technology.h3.29",
       "en": "AI-Powered Optimization",
       "it": "",
       "fr": "",
@@ -235,16 +243,8 @@
       "context": "<h3>"
     },
     {
-      "id": "body.technology.h3.29",
-      "en": "Carbon-Aware Computing",
-      "it": "",
-      "fr": "",
-      "source": "technology.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.technology.h3.3",
-      "en": "Electros",
+      "en": "AtomOS comparison tables",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -252,7 +252,7 @@
     },
     {
       "id": "body.technology.h3.30",
-      "en": "Research Partnerships",
+      "en": "Carbon-Aware Computing",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -260,7 +260,7 @@
     },
     {
       "id": "body.technology.h3.31",
-      "en": "Edge Computing",
+      "en": "Research Partnerships",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -268,7 +268,7 @@
     },
     {
       "id": "body.technology.h3.32",
-      "en": "Zero-Trust Security",
+      "en": "Edge Computing",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -276,7 +276,7 @@
     },
     {
       "id": "body.technology.h3.33",
-      "en": "Atomos",
+      "en": "Zero-Trust Security",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -292,6 +292,14 @@
     },
     {
       "id": "body.technology.h3.35",
+      "en": "AtomOS",
+      "it": "",
+      "fr": "",
+      "source": "technology.html",
+      "context": "<h3>"
+    },
+    {
+      "id": "body.technology.h3.36",
       "en": "Atomosphere",
       "it": "",
       "fr": "",
@@ -300,7 +308,7 @@
     },
     {
       "id": "body.technology.h3.4",
-      "en": "C4 whitepaper & specs",
+      "en": "Electros",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -308,7 +316,7 @@
     },
     {
       "id": "body.technology.h3.5",
-      "en": "Meson tech pack",
+      "en": "C4 whitepaper & specs",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -316,7 +324,7 @@
     },
     {
       "id": "body.technology.h3.6",
-      "en": "Nucleus CLI & install",
+      "en": "Meson tech pack",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -324,7 +332,7 @@
     },
     {
       "id": "body.technology.h3.7",
-      "en": "Key Features:",
+      "en": "Nucleus CLI & install",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -332,7 +340,7 @@
     },
     {
       "id": "body.technology.h3.8",
-      "en": "Protocol Services:",
+      "en": "Key Features:",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -340,7 +348,7 @@
     },
     {
       "id": "body.technology.h3.9",
-      "en": "C4 Protocol",
+      "en": "Protocol Services:",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -468,7 +476,7 @@
     },
     {
       "id": "body.technology.p.10",
-      "en": "Desktop and mobile documentation for deploying, managing, using, and retiring VMs consistently across providers.",
+      "en": "Feature-by-feature views of our Linux KVM-based hypervisor versus VMware ESXi, with guest OS coverage and filesystem versus disk-image compatibility matrices.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -476,7 +484,7 @@
     },
     {
       "id": "body.technology.p.11",
-      "en": "Formal write-up on cloud service composition with the C4 protocol and the connector specification your integrations can target.",
+      "en": "Desktop and mobile documentation for deploying, managing, using, and retiring VMs consistently across providers.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -484,7 +492,7 @@
     },
     {
       "id": "body.technology.p.12",
-      "en": "How we translate existing cloud provider APIs into the shapes Elemento expects, so integrations stay maintainable.",
+      "en": "Formal write-up on cloud service composition with the C4 protocol and the connector specification your integrations can target.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -492,7 +500,7 @@
     },
     {
       "id": "body.technology.p.13",
-      "en": "Command-line workflows for installing, configuring, and operating AtomOS alongside guided setup and private-cloud demos.",
+      "en": "How we translate existing cloud provider APIs into the shapes Elemento expects, so integrations stay maintainable.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -500,7 +508,7 @@
     },
     {
       "id": "body.technology.p.14",
-      "en": "Built with modern, proven technologies for reliability, performance, and sustainability",
+      "en": "Command-line workflows for installing, configuring, and operating AtomOS alongside guided setup and private-cloud demos.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -508,7 +516,7 @@
     },
     {
       "id": "body.technology.p.15",
-      "en": "Our patented C4 Protocol (patented in Italy, patent pending worldwide) is a standardized protocol that enables cloud service providers to integrate seamlessly with enterprise-grade multi-cloud management platforms. This revolutionary technology simplifies cloud provider integration and expands market reach. The Elemento Cloud Network book on BookStack hosts the C4 whitepaper, connector specification, and Meson tech pack for mapping existing provider APIs into C4-shaped services. Learn about our product ecosystem and technical insights .",
+      "en": "Built with modern, proven technologies for reliability, performance, and sustainability",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -516,7 +524,7 @@
     },
     {
       "id": "body.technology.p.16",
-      "en": "Patented technology enabling standardized multi-cloud integration and resource management across any cloud provider.",
+      "en": "Our patented C4 Protocol (patented in Italy, patent pending worldwide) is a standardized protocol that enables cloud service providers to integrate seamlessly with enterprise-grade multi-cloud management platforms. This revolutionary technology simplifies cloud provider integration and expands market reach. The Elemento Cloud Network book on BookStack hosts the C4 whitepaper, connector specification, and Meson tech pack for mapping existing provider APIs into C4-shaped services. Learn about our product ecosystem and technical insights .",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -524,7 +532,7 @@
     },
     {
       "id": "body.technology.p.17",
-      "en": "How the core layers of Elemento work together",
+      "en": "Patented technology enabling standardized multi-cloud integration and resource management across any cloud provider.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -532,7 +540,7 @@
     },
     {
       "id": "body.technology.p.18",
-      "en": "The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces. Documentation describes this as the Elemento Cloud Network gateway that links existing clouds into a single operational model.",
+      "en": "How the core layers of Elemento work together",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -540,7 +548,7 @@
     },
     {
       "id": "body.technology.p.19",
-      "en": "The execution layer where your applications run, including compute resources, storage systems, and networking components.",
+      "en": "The central management layer that orchestrates all platform operations, including Kubernetes control plane, API gateway, and management interfaces. Documentation describes this as the Elemento Cloud Network gateway that links existing clouds into a single operational model.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -556,7 +564,7 @@
     },
     {
       "id": "body.technology.p.20",
-      "en": "User interfaces, APIs, and automation tools that provide access to platform capabilities and enable infrastructure as code. Electros covers desktop and mobile control planes for the full VM lifecycle on any cloud, while Nucleus documents the CLI for installing and operating AtomOS—both are indexed on BookStack .",
+      "en": "The execution layer where your applications run, including compute resources, storage systems, and networking components.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -564,7 +572,7 @@
     },
     {
       "id": "body.technology.p.21",
-      "en": "Comprehensive monitoring, logging, and analytics that provide insights into performance, costs, and environmental impact. Learn about our monitoring solutions and support services .",
+      "en": "User interfaces, APIs, and automation tools that provide access to platform capabilities and enable infrastructure as code. Electros covers desktop and mobile control planes for the full VM lifecycle on any cloud, while Nucleus documents the CLI for installing and operating AtomOS—both are indexed on BookStack .",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -572,7 +580,7 @@
     },
     {
       "id": "body.technology.p.22",
-      "en": "Modern and proven technologies powering our cloud-native platform",
+      "en": "Comprehensive monitoring, logging, and analytics that provide insights into performance, costs, and environmental impact. Learn about our monitoring solutions and support services .",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -580,7 +588,7 @@
     },
     {
       "id": "body.technology.p.23",
-      "en": "Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment. AtomOS is our Linux KVM-based hypervisor; the wiki publishes ESXi-oriented comparison tables , guest OS notes, and filesystem versus disk-image guidance.",
+      "en": "Modern and proven technologies powering our cloud-native platform",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -588,7 +596,7 @@
     },
     {
       "id": "body.technology.p.24",
-      "en": "Terraform, Ansible and Pulumi integration for automated infrastructure management and deployment.",
+      "en": "Docker containers with Kubernetes orchestration for consistent deployment and scaling across any environment. AtomOS is our Linux KVM-based hypervisor; the wiki publishes ESXi-oriented comparison tables , guest OS notes, and filesystem versus disk-image guidance.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -596,7 +604,7 @@
     },
     {
       "id": "body.technology.p.25",
-      "en": "Prometheus, Grafana, and ELK stack for comprehensive monitoring, logging, and alerting.",
+      "en": "Terraform, Ansible and Pulumi integration for automated infrastructure management and deployment.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -604,7 +612,7 @@
     },
     {
       "id": "body.technology.p.26",
-      "en": "Built-in security scanning, compliance frameworks, and enterprise-grade encryption.",
+      "en": "Prometheus, Grafana, and ELK stack for comprehensive monitoring, logging, and alerting.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -612,7 +620,7 @@
     },
     {
       "id": "body.technology.p.27",
-      "en": "Advanced networking with load balancing, service mesh, and global traffic management.",
+      "en": "Built-in security scanning, compliance frameworks, and enterprise-grade encryption.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -620,7 +628,7 @@
     },
     {
       "id": "body.technology.p.28",
-      "en": "Distributed storage systems with automatic backup, replication, and disaster recovery.",
+      "en": "Advanced networking with load balancing, service mesh, and global traffic management.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -628,7 +636,7 @@
     },
     {
       "id": "body.technology.p.29",
-      "en": "Uptime",
+      "en": "Distributed storage systems with automatic backup, replication, and disaster recovery.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -644,7 +652,7 @@
     },
     {
       "id": "body.technology.p.30",
-      "en": "Average Latency",
+      "en": "Uptime",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -652,7 +660,7 @@
     },
     {
       "id": "body.technology.p.31",
-      "en": "Energy Savings",
+      "en": "Average Latency",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -660,7 +668,7 @@
     },
     {
       "id": "body.technology.p.32",
-      "en": "Datacenters Connected",
+      "en": "Energy Savings",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -668,7 +676,7 @@
     },
     {
       "id": "body.technology.p.33",
-      "en": "Technology with sustainability at its core.",
+      "en": "Datacenters Connected",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -676,7 +684,7 @@
     },
     {
       "id": "body.technology.p.34",
-      "en": "Optimize resource allocation based on energy efficiency and carbon impact.",
+      "en": "Technology with sustainability at its core.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -684,7 +692,7 @@
     },
     {
       "id": "body.technology.p.35",
-      "en": "Track energy usage and CO₂ emissions across providers.",
+      "en": "Optimize resource allocation based on energy efficiency and carbon impact.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -692,7 +700,7 @@
     },
     {
       "id": "body.technology.p.36",
-      "en": "Partnering with renewable-powered data centers worldwide.",
+      "en": "Track energy usage and CO₂ emissions across providers.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -700,7 +708,7 @@
     },
     {
       "id": "body.technology.p.37",
-      "en": "Analytics and reporting to meet ESG and compliance goals.",
+      "en": "Partnering with renewable-powered data centers worldwide.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -708,7 +716,7 @@
     },
     {
       "id": "body.technology.p.38",
-      "en": "Continuously evolving to stay ahead of enterprise needs",
+      "en": "Analytics and reporting to meet ESG and compliance goals.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -716,7 +724,7 @@
     },
     {
       "id": "body.technology.p.39",
-      "en": "Machine learning algorithms that automatically optimize resource allocation, cost management, and performance tuning.",
+      "en": "Continuously evolving to stay ahead of enterprise needs",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -732,7 +740,7 @@
     },
     {
       "id": "body.technology.p.40",
-      "en": "Advanced algorithms that consider carbon intensity when making workload placement decisions.",
+      "en": "Machine learning algorithms that automatically optimize resource allocation, cost management, and performance tuning.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -740,7 +748,7 @@
     },
     {
       "id": "body.technology.p.41",
-      "en": "Collaborating with leading universities and research institutions to advance cloud computing technology.",
+      "en": "Advanced algorithms that consider carbon intensity when making workload placement decisions.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -748,7 +756,7 @@
     },
     {
       "id": "body.technology.p.42",
-      "en": "Extending our platform to edge locations for low-latency applications and IoT deployments.",
+      "en": "Collaborating with leading universities and research institutions to advance cloud computing technology.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -756,7 +764,7 @@
     },
     {
       "id": "body.technology.p.43",
-      "en": "Implementing advanced security models that verify every request and connection.",
+      "en": "Extending our platform to edge locations for low-latency applications and IoT deployments.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -764,15 +772,15 @@
     },
     {
       "id": "body.technology.p.44",
-      "en": "Electros and AtomOS are the products. Atomosphere is the connectivity technology that powers Electros.",
-      "it": "Electros e AtomOS sono i prodotti. Atomosphere è la tecnologia di connettività che alimenta Electros.",
-      "fr": "Electros et AtomOS sont les produits. Atomosphere est la technologie de connectivité qui alimente Electros.",
+      "en": "Implementing advanced security models that verify every request and connection.",
+      "it": "",
+      "fr": "",
       "source": "technology.html",
       "context": "<p>"
     },
     {
       "id": "body.technology.p.45",
-      "en": "Advanced container orchestration platform built on Kubernetes for seamless deployment and management of containerized applications.",
+      "en": "Electros and AtomOS are the products. Atomosphere is the connectivity technology that powers Electros.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -780,7 +788,7 @@
     },
     {
       "id": "body.technology.p.46",
-      "en": "Intelligent infrastructure automation platform that simplifies deployment and management of cloud resources across multiple providers.",
+      "en": "Orchestration dashboard that manages VMs across private clouds and existing CSP accounts from one interface.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -788,14 +796,22 @@
     },
     {
       "id": "body.technology.p.47",
-      "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
-      "it": "Fabric di connettività backend per Electros — un gateway API unificato su cloud privati e i tuoi account AWS, Azure, GCP e altri CSP.",
-      "fr": "Fabric de connectivité backend pour Electros — une passerelle API unifiée sur les clouds privés et vos comptes AWS, Azure, GCP et autres CSP.",
+      "en": "Linux hypervisor for bare-metal and on-premise clouds — the compute foundation of the Elemento platform.",
+      "it": "",
+      "fr": "",
       "source": "technology.html",
       "context": "<p>"
     },
     {
       "id": "body.technology.p.48",
+      "en": "Backend connectivity fabric for Electros — a unified API gateway over private clouds and your existing AWS, Azure, GCP, and other CSP accounts.",
+      "it": "",
+      "fr": "",
+      "source": "technology.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.technology.p.49",
       "en": "Ready to see how our cutting-edge technology can transform your infrastructure? Learn about our company background and explore our product offerings .",
       "it": "",
       "fr": "",
@@ -828,7 +844,7 @@
     },
     {
       "id": "body.technology.p.8",
-      "en": "API gateway patterns that connect existing clouds, plus starter content that ties together C4, installs, and deeper technical packs.",
+      "en": "The connectivity fabric behind Electros — unifying private clouds and existing CSP accounts into one programmable API.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -836,7 +852,7 @@
     },
     {
       "id": "body.technology.p.9",
-      "en": "Feature-by-feature views of our Linux KVM-based hypervisor versus VMware ESXi, with guest OS coverage and filesystem versus disk-image compatibility matrices.",
+      "en": "API gateway patterns that connect existing clouds, plus starter content that ties together C4, installs, and deeper technical packs.",
       "it": "",
       "fr": "",
       "source": "technology.html",
@@ -852,7 +868,7 @@
     },
     {
       "id": "body.technology.ui.10",
-      "en": "Learn More",
+      "en": "How it works",
       "it": "",
       "fr": "",
       "source": "technology.html",

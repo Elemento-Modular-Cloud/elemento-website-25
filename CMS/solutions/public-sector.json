@@ -268,12 +268,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Dashboard governativo con percorsi di controllo e reporting di conformità"
+          "description": "Ambiente hypervisor sovrano con sicurezza di livello governativo"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Ambiente hypervisor sovrano con sicurezza di livello governativo"
+          "description": "Dashboard governativo con percorsi di controllo e reporting di conformità"
         }
       ],
       "cta": {
@@ -462,12 +462,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Tableau de bord du gouvernement avec pistes d'audit et rapports de conformité"
+          "description": "Environnement d'hyperviseur souverain avec une sécurité de niveau gouvernemental"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Environnement d'hyperviseur souverain avec une sécurité de niveau gouvernemental"
+          "description": "Tableau de bord du gouvernement avec pistes d'audit et rapports de conformité"
         }
       ],
       "cta": {

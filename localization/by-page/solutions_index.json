@@ -1,6 +1,6 @@
 {
   "page": "solutions_index",
-  "count": 30,
+  "count": 24,
   "strings": [
     {
       "id": "body.solutions_index.h2.1",
@@ -29,14 +29,6 @@
     {
       "id": "body.solutions_index.h3.1",
       "en": "AI/Data Science",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_index.h3.10",
-      "en": "Atomosphere",
       "it": "",
       "fr": "",
       "source": "solutions/index.html",
@@ -91,22 +83,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_index.h3.8",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_index.h3.9",
-      "en": "Electros",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_index.p.1",
       "en": "Tailored solutions for different industries, roles, and business scenarios",
       "it": "",
@@ -116,30 +92,6 @@
     },
     {
       "id": "body.solutions_index.p.10",
-      "en": "The operating system for your cloud infrastructure. Unified management across all environments.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_index.p.11",
-      "en": "High-performance computing and GPU management. Perfect for AI/ML and scientific workloads.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_index.p.12",
-      "en": "Multi-cloud orchestration and management. Seamlessly connect and manage across providers.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/index.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_index.p.13",
       "en": "Join thousands of organizations already using Elemento to build more efficient, secure, and scalable cloud environments.",
       "it": "",
       "fr": "",
@@ -205,8 +157,8 @@
     {
       "id": "body.solutions_index.p.9",
       "en": "All solutions are built on our core products: Electros and AtomOS",
-      "it": "Tutte le soluzioni sono basate sui nostri prodotti principali: Electros e AtomOS",
-      "fr": "Toutes les solutions reposent sur nos produits principaux : Electros et AtomOS",
+      "it": "",
+      "fr": "",
       "source": "solutions/index.html",
       "context": "<p>"
     },

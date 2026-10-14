@@ -1,6 +1,6 @@
 {
   "page": "solutions_regulated",
-  "count": 37,
+  "count": 33,
   "strings": [
     {
       "id": "body.solutions_regulated.h2.1",
@@ -35,14 +35,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h3.10",
-      "en": "Keep Your Business Secure: The Importance of Cloud Backup",
-      "it": "",
-      "fr": "",
-      "source": "solutions/regulated.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_regulated.h3.2",
       "en": "Data Sovereignty",
       "it": "",
@@ -68,14 +60,6 @@
     },
     {
       "id": "body.solutions_regulated.h3.5",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/regulated.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_regulated.h3.6",
       "en": "Electros",
       "it": "",
       "fr": "",
@@ -83,15 +67,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h3.7",
-      "en": "Atomosphere",
+      "id": "body.solutions_regulated.h3.6",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/regulated.html",
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h3.8",
+      "id": "body.solutions_regulated.h3.7",
       "en": "Thales Annual Report: Escalating Ransomware Attacks",
       "it": "",
       "fr": "",
@@ -99,7 +83,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h3.9",
+      "id": "body.solutions_regulated.h3.8",
       "en": "The Importance of Cybersecurity in the Digital Age",
       "it": "",
       "fr": "",
@@ -107,15 +91,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h4.1",
-      "en": "Secure Hypervisor",
+      "id": "body.solutions_regulated.h3.9",
+      "en": "Keep Your Business Secure: The Importance of Cloud Backup",
       "it": "",
       "fr": "",
       "source": "solutions/regulated.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.solutions_regulated.h4.2",
+      "id": "body.solutions_regulated.h4.1",
       "en": "Compliance Dashboard",
       "it": "",
       "fr": "",
@@ -123,8 +107,8 @@
       "context": "<h4>"
     },
     {
-      "id": "body.solutions_regulated.h4.3",
-      "en": "Secure Data Gateway",
+      "id": "body.solutions_regulated.h4.2",
+      "en": "Secure Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/regulated.html",
@@ -140,14 +124,6 @@
     },
     {
       "id": "body.solutions_regulated.p.10",
-      "en": "Explore security best practices, compliance strategies, and data protection for regulated environments.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/regulated.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_regulated.p.11",
       "en": "Understand the growing security threats and digital sovereignty requirements for regulated industries.",
       "it": "",
       "fr": "",
@@ -155,7 +131,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_regulated.p.12",
+      "id": "body.solutions_regulated.p.11",
       "en": "Learn about critical cybersecurity measures and compliance requirements for sensitive data protection.",
       "it": "",
       "fr": "",
@@ -163,7 +139,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_regulated.p.13",
+      "id": "body.solutions_regulated.p.12",
       "en": "Discover essential data protection strategies and secure backup solutions for regulated environments.",
       "it": "",
       "fr": "",
@@ -212,14 +188,6 @@
     },
     {
       "id": "body.solutions_regulated.p.7",
-      "en": "Production-grade hypervisor with enterprise security features, encryption at rest, and compliance-ready architecture. Deploy in air-gapped environments with full audit trail support.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/regulated.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_regulated.p.8",
       "en": "Unified dashboard with compliance monitoring, audit reporting, and security controls. Real-time alerts, access logging, and automated compliance reporting for regulatory requirements.",
       "it": "",
       "fr": "",
@@ -227,8 +195,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.solutions_regulated.p.8",
+      "en": "Production-grade hypervisor with enterprise security features, encryption at rest, and compliance-ready architecture. Deploy in air-gapped environments with full audit trail support.",
+      "it": "",
+      "fr": "",
+      "source": "solutions/regulated.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.solutions_regulated.p.9",
-      "en": "Encrypted API layer with data sovereignty controls and compliance reporting. Secure data transmission with end-to-end encryption and regulatory compliance monitoring.",
+      "en": "Explore security best practices, compliance strategies, and data protection for regulated environments.",
       "it": "",
       "fr": "",
       "source": "solutions/regulated.html",
@@ -252,7 +228,7 @@
     },
     {
       "id": "body.solutions_regulated.ui.3",
-      "en": "Learn More",
+      "en": "Read More",
       "it": "",
       "fr": "",
       "source": "solutions/regulated.html",
@@ -268,14 +244,6 @@
     },
     {
       "id": "body.solutions_regulated.ui.5",
-      "en": "Read More",
-      "it": "",
-      "fr": "",
-      "source": "solutions/regulated.html",
-      "context": "class"
-    },
-    {
-      "id": "body.solutions_regulated.ui.6",
       "en": "Read More",
       "it": "",
       "fr": "",

@@ -1,6 +1,6 @@
 {
   "page": "solutions_industrial",
-  "count": 37,
+  "count": 33,
   "strings": [
     {
       "id": "body.solutions_industrial.h2.1",
@@ -35,14 +35,6 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h3.10",
-      "en": "Optimizing Storage Space in Cloud Computing",
-      "it": "",
-      "fr": "",
-      "source": "solutions/industrial.html",
-      "context": "<h3>"
-    },
-    {
       "id": "body.solutions_industrial.h3.2",
       "en": "Real-time Analytics",
       "it": "",
@@ -68,14 +60,6 @@
     },
     {
       "id": "body.solutions_industrial.h3.5",
-      "en": "AtomOS",
-      "it": "",
-      "fr": "",
-      "source": "solutions/industrial.html",
-      "context": "<h3>"
-    },
-    {
-      "id": "body.solutions_industrial.h3.6",
       "en": "Electros",
       "it": "",
       "fr": "",
@@ -83,15 +67,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h3.7",
-      "en": "Atomosphere",
+      "id": "body.solutions_industrial.h3.6",
+      "en": "AtomOS",
       "it": "",
       "fr": "",
       "source": "solutions/industrial.html",
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h3.8",
+      "id": "body.solutions_industrial.h3.7",
       "en": "Datacenters: An Inevitable Transformation",
       "it": "",
       "fr": "",
@@ -99,7 +83,7 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h3.9",
+      "id": "body.solutions_industrial.h3.8",
       "en": "Edge Computing: Insights from Gartner Research",
       "it": "",
       "fr": "",
@@ -107,15 +91,15 @@
       "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h4.1",
-      "en": "Industrial-Grade Hypervisor",
+      "id": "body.solutions_industrial.h3.9",
+      "en": "Optimizing Storage Space in Cloud Computing",
       "it": "",
       "fr": "",
       "source": "solutions/industrial.html",
-      "context": "<h4>"
+      "context": "<h3>"
     },
     {
-      "id": "body.solutions_industrial.h4.2",
+      "id": "body.solutions_industrial.h4.1",
       "en": "Manufacturing Control Center",
       "it": "",
       "fr": "",
@@ -123,8 +107,8 @@
       "context": "<h4>"
     },
     {
-      "id": "body.solutions_industrial.h4.3",
-      "en": "Industrial Data Gateway",
+      "id": "body.solutions_industrial.h4.2",
+      "en": "Industrial-Grade Hypervisor",
       "it": "",
       "fr": "",
       "source": "solutions/industrial.html",
@@ -140,14 +124,6 @@
     },
     {
       "id": "body.solutions_industrial.p.10",
-      "en": "Learn about industrial infrastructure transformation, edge computing, and data optimization for manufacturing.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/industrial.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_industrial.p.11",
       "en": "Discover how industrial datacenters are evolving to support modern manufacturing and IoT infrastructure.",
       "it": "",
       "fr": "",
@@ -155,7 +131,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_industrial.p.12",
+      "id": "body.solutions_industrial.p.11",
       "en": "Learn how edge computing is revolutionizing manufacturing with real-time processing and local data analytics.",
       "it": "",
       "fr": "",
@@ -163,7 +139,7 @@
       "context": "<p>"
     },
     {
-      "id": "body.solutions_industrial.p.13",
+      "id": "body.solutions_industrial.p.12",
       "en": "Reduce costs and carbon emissions while optimizing industrial data storage and processing infrastructure.",
       "it": "",
       "fr": "",
@@ -212,14 +188,6 @@
     },
     {
       "id": "body.solutions_industrial.p.7",
-      "en": "Production-ready hypervisor with real-time capabilities, PLC integration, and edge computing support. Deploy on-premise or in hybrid cloud environments with full industrial protocol support.",
-      "it": "",
-      "fr": "",
-      "source": "solutions/industrial.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.solutions_industrial.p.8",
       "en": "Unified dashboard for monitoring production lines, equipment status, and data flows. Real-time alerts, predictive analytics, and integration with existing MES/ERP systems.",
       "it": "",
       "fr": "",
@@ -227,8 +195,16 @@
       "context": "<p>"
     },
     {
+      "id": "body.solutions_industrial.p.8",
+      "en": "Production-ready hypervisor with real-time capabilities, PLC integration, and edge computing support. Deploy on-premise or in hybrid cloud environments with full industrial protocol support.",
+      "it": "",
+      "fr": "",
+      "source": "solutions/industrial.html",
+      "context": "<p>"
+    },
+    {
       "id": "body.solutions_industrial.p.9",
-      "en": "Secure API layer connecting shop floor systems to cloud analytics. Supports Modbus, OPC-UA, and industrial protocols with data transformation and routing capabilities.",
+      "en": "Learn about industrial infrastructure transformation, edge computing, and data optimization for manufacturing.",
       "it": "",
       "fr": "",
       "source": "solutions/industrial.html",
@@ -252,7 +228,7 @@
     },
     {
       "id": "body.solutions_industrial.ui.3",
-      "en": "Learn More",
+      "en": "Read More",
       "it": "",
       "fr": "",
       "source": "solutions/industrial.html",
@@ -268,14 +244,6 @@
     },
     {
       "id": "body.solutions_industrial.ui.5",
-      "en": "Read More",
-      "it": "",
-      "fr": "",
-      "source": "solutions/industrial.html",
-      "context": "class"
-    },
-    {
-      "id": "body.solutions_industrial.ui.6",
       "en": "Read More",
       "it": "",
       "fr": "",

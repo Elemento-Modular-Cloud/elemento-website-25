@@ -1,0 +1,851 @@
+/**
+ * Electros seat purchase:
+ * login → scopes → relogin/org → plan → (billing details if needed) → subscribe → Stripe
+ */
+(function () {
+  const PORTAL = '/api/portal/v2';
+
+  const UI = {
+    en: {
+      alreadyPaidTitle: 'You already have a paid seat in this organisation!',
+      alreadyActiveTitle: 'You already have an active seat in this organisation!',
+      alreadyPaidLead:
+        'No further purchase is needed for this organisation. Open Electros to manage billing, or choose another organisation below.',
+      alreadyActiveLead:
+        'This organisation already has a trial seat. Open Electros to manage billing or convert to a paid plan, or choose another organisation below.',
+      enterCredentials: 'Enter your email and password.',
+      signInFailed: 'Sign-in failed. Check your credentials and try again.',
+      noToken: 'Login succeeded but no access token was returned.',
+      selectOrgPlan: 'Select an organisation, plan, and billing period.',
+      openingStripe: 'Opening Stripe…',
+      continueStripe: 'Continue to Stripe',
+      seatReady: 'Seat ready',
+      seatReadyLead:
+        'No payment needed — your seat was granted (trial or already covered). You can open Electros and sign in.',
+      addBilling: 'Add invoicing details to continue to Stripe.',
+      incompleteBilling:
+        'Billing details for this organisation are incomplete. Fill them in below, then continue.',
+      billingRequired: 'Address, ZIP, city, province, and country are required.',
+      billingSavedIncomplete:
+        'Billing details were saved but still look incomplete. Check the fields and try again.',
+      billingSaveFailed: 'Could not save billing details.',
+      choosePlan: 'Choose a plan, then continue to Stripe.',
+      orgOpenFailed: 'Could not open that organisation. Try again.',
+      noOrgs: 'No organisations available for seat purchase on this account.',
+      signingIn: 'Signing in…',
+      continue: 'Continue',
+      saving: 'Saving…',
+      saveContinue: 'Save & continue to Stripe',
+      alreadyPaidShort: 'You already have a paid seat in this organisation!',
+      alreadyHasSeat:
+        'This organisation already has an Electros seat. Open Electros to manage billing, or pick another organisation.',
+      checkoutFailed:
+        'Checkout could not be started. If this organisation already has a seat, manage billing in Electros; otherwise try again shortly.',
+      verifyEmail:
+        'Verify your email before buying a seat. Check your inbox for the Elemento verification link, then try again.',
+      noPermission: 'You do not have permission to buy a seat for this organisation.',
+      notFound: 'Account, organisation, or plan was not found.',
+      noCheckoutUrl: 'No Stripe checkout URL was returned.',
+      tryAgain: 'Could not start checkout. Try again.',
+      trialMeta: ' · trial',
+    },
+    it: {
+      alreadyPaidTitle: 'Hai già un seat a pagamento in questa organizzazione!',
+      alreadyActiveTitle: 'Hai già un seat attivo in questa organizzazione!',
+      alreadyPaidLead:
+        'Non è necessario un ulteriore acquisto per questa organizzazione. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione qui sotto.',
+      alreadyActiveLead:
+        'Questa organizzazione ha già un seat in prova. Apri Electros per gestire la fatturazione o passare a un piano a pagamento, oppure scegli un’altra organizzazione.',
+      enterCredentials: 'Inserisci email e password.',
+      signInFailed: 'Accesso non riuscito. Controlla le credenziali e riprova.',
+      noToken: 'Accesso riuscito ma non è stato restituito alcun token.',
+      selectOrgPlan: 'Seleziona organizzazione, piano e periodo di fatturazione.',
+      openingStripe: 'Apertura di Stripe…',
+      continueStripe: 'Continua su Stripe',
+      seatReady: 'Seat pronto',
+      seatReadyLead:
+        'Nessun pagamento necessario — il seat è stato assegnato (prova o già coperto). Puoi aprire Electros e accedere.',
+      addBilling: 'Aggiungi i dati di fatturazione per continuare su Stripe.',
+      incompleteBilling:
+        'I dati di fatturazione di questa organizzazione sono incompleti. Compilali qui sotto, poi continua.',
+      billingRequired: 'Indirizzo, CAP, città, provincia e paese sono obbligatori.',
+      billingSavedIncomplete:
+        'I dati di fatturazione sono stati salvati ma risultano ancora incompleti. Controlla i campi e riprova.',
+      billingSaveFailed: 'Impossibile salvare i dati di fatturazione.',
+      choosePlan: 'Scegli un piano, poi continua su Stripe.',
+      orgOpenFailed: 'Impossibile aprire quella organizzazione. Riprova.',
+      noOrgs: 'Nessuna organizzazione disponibile per l’acquisto di un seat su questo account.',
+      signingIn: 'Accesso in corso…',
+      continue: 'Continua',
+      saving: 'Salvataggio…',
+      saveContinue: 'Salva e continua su Stripe',
+      alreadyPaidShort: 'Hai già un seat a pagamento in questa organizzazione!',
+      alreadyHasSeat:
+        'Questa organizzazione ha già un seat Electros. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione.',
+      checkoutFailed:
+        'Impossibile avviare il checkout. Se questa organizzazione ha già un seat, gestisci la fatturazione in Electros; altrimenti riprova a breve.',
+      verifyEmail:
+        'Verifica la tua email prima di acquistare un seat. Controlla la casella di posta per il link Elemento, poi riprova.',
+      noPermission: 'Non hai i permessi per acquistare un seat per questa organizzazione.',
+      notFound: 'Account, organizzazione o piano non trovato.',
+      noCheckoutUrl: 'Nessun URL di checkout Stripe è stato restituito.',
+      tryAgain: 'Impossibile avviare il checkout. Riprova.',
+      trialMeta: ' · prova',
+    },
+    fr: {
+      alreadyPaidTitle: 'Vous avez déjà un siège payant dans cette organisation !',
+      alreadyActiveTitle: 'Vous avez déjà un siège actif dans cette organisation !',
+      alreadyPaidLead:
+        'Aucun nouvel achat n’est nécessaire pour cette organisation. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation ci-dessous.',
+      alreadyActiveLead:
+        'Cette organisation a déjà un siège d’essai. Ouvrez Electros pour gérer la facturation ou passer à une offre payante, ou choisissez une autre organisation.',
+      enterCredentials: 'Saisissez votre e-mail et votre mot de passe.',
+      signInFailed: 'Connexion échouée. Vérifiez vos identifiants et réessayez.',
+      noToken: 'Connexion réussie mais aucun jeton n’a été renvoyé.',
+      selectOrgPlan: 'Sélectionnez une organisation, une offre et une périodicité.',
+      openingStripe: 'Ouverture de Stripe…',
+      continueStripe: 'Continuer vers Stripe',
+      seatReady: 'Siège prêt',
+      seatReadyLead:
+        'Aucun paiement nécessaire — le siège a été attribué (essai ou déjà couvert). Vous pouvez ouvrir Electros et vous connecter.',
+      addBilling: 'Ajoutez les coordonnées de facturation pour continuer vers Stripe.',
+      incompleteBilling:
+        'Les coordonnées de facturation de cette organisation sont incomplètes. Complétez-les ci-dessous, puis continuez.',
+      billingRequired: 'Adresse, code postal, ville, province et pays sont obligatoires.',
+      billingSavedIncomplete:
+        'Les coordonnées ont été enregistrées mais semblent encore incomplètes. Vérifiez les champs et réessayez.',
+      billingSaveFailed: 'Impossible d’enregistrer les coordonnées de facturation.',
+      choosePlan: 'Choisissez une offre, puis continuez vers Stripe.',
+      orgOpenFailed: 'Impossible d’ouvrir cette organisation. Réessayez.',
+      noOrgs: 'Aucune organisation disponible pour l’achat d’un siège sur ce compte.',
+      signingIn: 'Connexion…',
+      continue: 'Continuer',
+      saving: 'Enregistrement…',
+      saveContinue: 'Enregistrer et continuer vers Stripe',
+      alreadyPaidShort: 'Vous avez déjà un siège payant dans cette organisation !',
+      alreadyHasSeat:
+        'Cette organisation a déjà un siège Electros. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation.',
+      checkoutFailed:
+        'Impossible de démarrer le paiement. Si cette organisation a déjà un siège, gérez la facturation dans Electros ; sinon réessayez sous peu.',
+      verifyEmail:
+        'Vérifiez votre e-mail avant d’acheter un siège. Consultez votre boîte de réception pour le lien Elemento, puis réessayez.',
+      noPermission: 'Vous n’avez pas l’autorisation d’acheter un siège pour cette organisation.',
+      notFound: 'Compte, organisation ou offre introuvable.',
+      noCheckoutUrl: 'Aucune URL de paiement Stripe n’a été renvoyée.',
+      tryAgain: 'Impossible de démarrer le paiement. Réessayez.',
+      trialMeta: ' · essai',
+    },
+  };
+
+  function pageLocale() {
+    if (window.ElementoI18n?.getPageLocale) return window.ElementoI18n.getPageLocale();
+    const lang = document.documentElement.lang;
+    if (lang === 'it' || lang === 'fr') return lang;
+    const path = window.location.pathname;
+    if (path.startsWith('/it/') || path === '/it') return 'it';
+    if (path.startsWith('/fr/') || path === '/fr') return 'fr';
+    return 'en';
+  }
+
+  function t(key) {
+    const loc = pageLocale();
+    return (UI[loc] && UI[loc][key]) || UI.en[key] || key;
+  }
+
+  const panel = document.getElementById('subscribeFlow');
+  if (!panel) return;
+
+  const steps = {
+    login: panel.querySelector('[data-step="login"]'),
+    org: panel.querySelector('[data-step="org"]'),
+    'already-paid': panel.querySelector('[data-step="already-paid"]'),
+    plan: panel.querySelector('[data-step="plan"]'),
+    billing: panel.querySelector('[data-step="billing"]'),
+  };
+  const errorEl = document.getElementById('subscribeError');
+  const orgList = document.getElementById('subscribeOrgList');
+  const tierSelect = document.getElementById('subscribeTier');
+  const freqSelect = document.getElementById('subscribeFrequency');
+  const loginForm = document.getElementById('subscribeLoginForm');
+  const planForm = document.getElementById('subscribePlanForm');
+  const billingForm = document.getElementById('subscribeBillingForm');
+  const stepsLabel = document.getElementById('subscribeStepsLabel');
+
+  /** @type {{ accessToken: string|null, username: string|null, email: string|null, orgId: string|null, orgName: string|null, hasBillingDetails: boolean, pendingTier: string|null, pendingFrequency: string|null }} */
+  const state = {
+    accessToken: null,
+    username: null,
+    email: null,
+    orgId: null,
+    orgName: null,
+    hasBillingDetails: false,
+    pendingTier: null,
+    pendingFrequency: null,
+  };
+
+  function formatError(detail) {
+    if (detail == null || detail === '') return '';
+    if (typeof detail === 'string') {
+      try {
+        const parsed = JSON.parse(detail);
+        if (parsed && typeof parsed === 'object') {
+          return formatError(parsed) || detail;
+        }
+      } catch (_) { /* plain string */ }
+      return detail;
+    }
+    if (Array.isArray(detail)) {
+      return detail
+        .map((item) => {
+          if (typeof item === 'string') return item;
+          if (item && typeof item === 'object') {
+            return item.msg || item.message || item.error_msg || JSON.stringify(item);
+          }
+          return String(item);
+        })
+        .filter(Boolean)
+        .join(' ');
+    }
+    if (typeof detail === 'object') {
+      if (detail.error_msg || detail.message || detail.detail) {
+        return formatError(detail.error_msg || detail.message || detail.detail);
+      }
+      try {
+        return JSON.stringify(detail);
+      } catch (_) {
+        return String(detail);
+      }
+    }
+    return String(detail);
+  }
+
+  function tokenClaims() {
+    try {
+      const token = state.accessToken;
+      if (!token) return null;
+      const part = token.split('.')[1];
+      if (!part) return null;
+      const normalized = part.replace(/-/g, '+').replace(/_/g, '/');
+      const padded = normalized + '='.repeat((4 - (normalized.length % 4)) % 4);
+      return JSON.parse(atob(padded));
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function checkoutUrlFrom(data) {
+    const checkout = data && data.checkouts && data.checkouts[0];
+    return (checkout && checkout.checkout_url) || null;
+  }
+
+  function isIncompleteBillingError(err) {
+    const raw = ((err && err.message) || '').toLowerCase();
+    return err && err.status === 403 && raw.includes('billing details are incomplete');
+  }
+
+  function billingDetailsComplete(details) {
+    if (!details || typeof details !== 'object') return false;
+    return Boolean(
+      details.full_address &&
+        details.zip_code &&
+        details.city &&
+        details.province &&
+        details.nationality
+    );
+  }
+
+  async function tryPaymentLinks() {
+    for (const path of ['/subscription/payment-links', '/subscription/payment-links/owner']) {
+      try {
+        const data = await portalFetch(path, { method: 'POST' });
+        const url = checkoutUrlFrom(data);
+        if (url) {
+          window.location.href = url;
+          return true;
+        }
+      } catch (_) { /* try next */ }
+    }
+    return false;
+  }
+
+  function friendlySubscribeError(err) {
+    const raw = (err && err.message) || '';
+    const status = err && err.status;
+    const lower = raw.toLowerCase();
+
+    if (status === 409 || (lower.includes('already') && lower.includes('subscription'))) {
+      return t('alreadyPaidTitle');
+    }
+    if (status === 400 && (lower.includes('verif') || lower.includes('email'))) {
+      return t('verifyEmail');
+    }
+    if (status === 403) {
+      return raw || t('noPermission');
+    }
+    if (status === 404) {
+      return raw || t('notFound');
+    }
+    if (status >= 500 || lower.includes('internal server error')) {
+      return t('checkoutFailed');
+    }
+    return raw || t('tryAgain');
+  }
+
+  function showAlert(message, tone) {
+    if (!errorEl) return;
+    errorEl.textContent = message || '';
+    errorEl.hidden = !message;
+    errorEl.classList.toggle('subscribe-alert--success', Boolean(message) && tone === 'success');
+  }
+
+  function showError(message) {
+    showAlert(message, 'error');
+  }
+
+  function showSuccess(message) {
+    showAlert(message, 'success');
+  }
+
+  /** Any active seat (trial or paid) — this org should not enter plan/Stripe again. */
+  function hasExistingSeat(subscription) {
+    if (!subscription || typeof subscription !== 'object') return false;
+    const status = String(subscription.status || '').toLowerCase();
+    return status === 'active' || status === 'trialing';
+  }
+
+  function updateProgress(name) {
+    if (!stepsLabel) return;
+    const items = Array.from(stepsLabel.querySelectorAll('li'));
+    if (!items.length) return;
+    const activeIndex = {
+      login: 0,
+      org: 1,
+      'already-paid': 1,
+      plan: 2,
+      billing: 2,
+    }[name];
+    items.forEach((item, index) => {
+      item.classList.toggle('is-active', index === activeIndex);
+      item.classList.toggle('is-done', Number.isInteger(activeIndex) && index < activeIndex);
+    });
+  }
+
+  function showStep(name) {
+    Object.entries(steps).forEach(([key, el]) => {
+      if (!el) return;
+      el.hidden = key !== name;
+    });
+    showAlert('');
+    panel.classList.toggle('subscribe-panel--success', name === 'already-paid');
+    updateProgress(name);
+  }
+
+  /**
+   * After org-scoped relogin, skip plan/Stripe when the org already has an active seat.
+   * GET /subscription is authoritative (incl. free-trial seats with status=active).
+   */
+  async function checkPaidSeatForOrg() {
+    const email = state.email || state.username || '';
+    const paths = ['/subscription'];
+    if (email) {
+      paths.push(`/subscription?email=${encodeURIComponent(email)}`);
+    }
+    paths.push('/subscription/org');
+
+    for (const path of paths) {
+      try {
+        const data = await portalFetch(path);
+        const list = Array.isArray(data) ? data : data ? [data] : [];
+        const existing = list.find((sub) => hasExistingSeat(sub));
+        if (existing) return existing;
+      } catch (_) { /* try next signal */ }
+    }
+
+    const claims = tokenClaims() || {};
+    if (claims.elemento_active_subscriber === true) {
+      return { status: 'active', is_trial: false };
+    }
+    return null;
+  }
+
+  function showAlreadyPaid(orgName, subscription) {
+    const orgEl = document.getElementById('subscribeAlreadyPaidOrg');
+    const titleEl = document.querySelector('[data-step="already-paid"] .subscribe-success-title');
+    const leadEl = document.querySelector('[data-step="already-paid"] .subscribe-success-lead');
+    if (orgEl) orgEl.textContent = orgName || '—';
+    const isTrial = Boolean(subscription && subscription.is_trial);
+    if (titleEl) {
+      titleEl.textContent = isTrial
+        ? t('alreadyActiveTitle')
+        : t('alreadyPaidTitle');
+    }
+    if (leadEl) {
+      leadEl.textContent = isTrial
+        ? t('alreadyActiveLead')
+        : t('alreadyPaidLead');
+    }
+    showStep('already-paid');
+  }
+
+  async function portalFetch(path, options = {}) {
+    const headers = {
+      Accept: 'application/json',
+      ...(options.headers || {}),
+    };
+    if (options.body && !headers['Content-Type']) {
+      headers['Content-Type'] = 'application/json';
+    }
+    // Login must not send Authorization — Bearer null is rejected as an invalid JWT.
+    if (options.auth === false) {
+      delete headers.Authorization;
+    } else if (state.accessToken) {
+      headers.Authorization = `Bearer ${state.accessToken}`;
+    }
+
+    const response = await fetch(`${PORTAL}${path}`, {
+      method: options.method || 'GET',
+      headers,
+      body: options.body ? JSON.stringify(options.body) : undefined,
+    });
+
+    const text = await response.text();
+    let data = null;
+    try {
+      data = text ? JSON.parse(text) : null;
+    } catch (_) {
+      data = null;
+    }
+
+    if (!response.ok) {
+      const detail =
+        (data && (data.detail ?? data.message ?? data.error_msg)) ??
+        (data && typeof data === 'object' ? data : null) ??
+        text;
+      const message = formatError(detail) || text || `HTTP ${response.status}`;
+      const err = new Error(message);
+      err.status = response.status;
+      err.body = data || text;
+      throw err;
+    }
+    return data;
+  }
+
+  function selectableScopes(scopes) {
+    const out = [];
+    (scopes || []).forEach((org) => {
+      if (org.selectable) {
+        out.push({
+          orgId: org.org_id,
+          label: org.org_name || org.org_id,
+          role: org.role || '',
+          isTrial: Boolean(org.is_trial),
+          suborg: null,
+        });
+      }
+      (org.suborgs || []).forEach((sub) => {
+        if (sub.selectable === false) return;
+        out.push({
+          orgId: sub.org_id,
+          label: `${org.org_name || org.org_id} / ${sub.suborg_name || sub.suborg_id}`,
+          role: sub.role || '',
+          isTrial: Boolean(org.is_trial),
+          suborg: sub.suborg_id || sub.suborg_name,
+        });
+      });
+    });
+    return out;
+  }
+
+  function setFallbackTiers() {
+    if (!tierSelect) return;
+    tierSelect.innerHTML =
+      '<option value="standard">standard</option><option value="pro">pro</option>';
+  }
+
+  async function loadTiers() {
+    if (!tierSelect) return;
+    try {
+      const tiers = await portalFetch('/subscription/tiers');
+      tierSelect.innerHTML = '';
+      (Array.isArray(tiers) ? tiers : [])
+        .filter((t) => t.public !== false && t.active !== false)
+        .sort((a, b) => (a.level || 0) - (b.level || 0))
+        .forEach((t) => {
+          const opt = document.createElement('option');
+          opt.value = t.name;
+          const label = t.display_name || t.name;
+          const yearly = t.price_yearly != null ? ` · €${t.price_yearly}/yr` : '';
+          const monthly = t.price_monthly != null ? ` · €${t.price_monthly}/mo` : '';
+          opt.textContent = `${label}${monthly}${yearly}`;
+          tierSelect.appendChild(opt);
+        });
+      if (!tierSelect.options.length) setFallbackTiers();
+    } catch (_) {
+      setFallbackTiers();
+    }
+  }
+
+  function escapeHtml(value) {
+    return String(value || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function fillBillingForm(details) {
+    if (!billingForm || !details) return;
+    const map = {
+      billingCompanyName: details.company_name,
+      billingNationality: details.nationality || 'IT',
+      billingVatCode: details.vat_code,
+      billingFiscalCode: details.fiscal_code,
+      billingAddress: details.full_address,
+      billingZip: details.zip_code,
+      billingCity: details.city,
+      billingProvince: details.province,
+      billingSdi: details.sdi_code || '0000000',
+    };
+    Object.entries(map).forEach(([id, value]) => {
+      const el = document.getElementById(id);
+      if (el && value != null && value !== '') el.value = value;
+    });
+  }
+
+  async function refreshBillingDetails() {
+    try {
+      const details = await portalFetch('/account/details');
+      state.hasBillingDetails = billingDetailsComplete(details);
+      fillBillingForm(details);
+      return details;
+    } catch (err) {
+      state.hasBillingDetails = false;
+      if (err.status !== 404) throw err;
+      return null;
+    }
+  }
+
+  function askForBillingDetails(message) {
+    const orgLabel = document.getElementById('subscribeBillingOrg');
+    if (orgLabel) orgLabel.textContent = state.orgName || '—';
+    showStep('billing');
+    if (message) showError(message);
+  }
+
+  function readBillingPayload() {
+    const nationality = (document.getElementById('billingNationality').value || 'IT').trim().toUpperCase();
+    let sdi = (document.getElementById('billingSdi').value || '').trim();
+    if (!sdi) sdi = nationality === 'IT' ? '0000000' : 'XXXXXXX';
+
+    return {
+      fiscal_code: (document.getElementById('billingFiscalCode').value || '').trim() || null,
+      vat_code: (document.getElementById('billingVatCode').value || '').trim() || null,
+      company_name: (document.getElementById('billingCompanyName').value || '').trim() || null,
+      full_address: (document.getElementById('billingAddress').value || '').trim(),
+      zip_code: (document.getElementById('billingZip').value || '').trim(),
+      city: (document.getElementById('billingCity').value || '').trim(),
+      province: (document.getElementById('billingProvince').value || '').trim(),
+      sdi_code: sdi,
+      nationality,
+    };
+  }
+
+  function renderOrgs(scopes) {
+    const items = selectableScopes(scopes);
+    orgList.innerHTML = '';
+    if (!items.length) {
+      orgList.innerHTML =
+        `<p class="subscribe-empty">${escapeHtml(t('noOrgs'))}</p>`;
+      return;
+    }
+    items.forEach((item) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'subscribe-org-btn';
+      btn.innerHTML = `
+        <span class="subscribe-org-name">${escapeHtml(item.label)}</span>
+        <span class="subscribe-org-meta">${escapeHtml(item.role)}${item.isTrial ? t('trialMeta') : ''}</span>
+      `;
+      btn.addEventListener('click', () => selectOrg(item));
+      orgList.appendChild(btn);
+    });
+  }
+
+  async function selectOrg(item) {
+    showError('');
+    const orgButtons = orgList ? Array.from(orgList.querySelectorAll('.subscribe-org-btn')) : [];
+    orgButtons.forEach((btn) => {
+      btn.disabled = true;
+    });
+    try {
+      const body = { org_id: item.orgId };
+      if (item.suborg) body.suborg = item.suborg;
+      const relogin = await portalFetch('/auth/relogin', {
+        method: 'POST',
+        body,
+      });
+      if (relogin && relogin.access_token) {
+        state.accessToken = relogin.access_token;
+      }
+      state.orgId = item.orgId;
+      state.orgName = item.label;
+      const orgLabel = document.getElementById('subscribeSelectedOrg');
+      if (orgLabel) orgLabel.textContent = item.label;
+
+      // Seat gate: never advance to plan/Stripe when this org already has an active seat.
+      const existingSeat = await checkPaidSeatForOrg();
+      if (existingSeat) {
+        showAlreadyPaid(item.label, existingSeat);
+        return;
+      }
+
+      await loadTiers();
+      try {
+        await refreshBillingDetails();
+      } catch (_) {
+        state.hasBillingDetails = false;
+      }
+      showStep('plan');
+    } catch (err) {
+      if (err.status === 400 || err.status === 404) {
+        state.orgId = item.orgId;
+        state.orgName = item.label;
+        const orgLabel = document.getElementById('subscribeSelectedOrg');
+        if (orgLabel) orgLabel.textContent = item.label;
+        const existingSeat = await checkPaidSeatForOrg();
+        if (existingSeat) {
+          showAlreadyPaid(item.label, existingSeat);
+          return;
+        }
+        await loadTiers();
+        showStep('plan');
+        return;
+      }
+      showError(err.message || t('orgOpenFailed'));
+    } finally {
+      orgButtons.forEach((btn) => {
+        btn.disabled = false;
+      });
+    }
+  }
+
+  /**
+   * @returns {Promise<'redirected'|'ready'|'needs-billing'|void>}
+   */
+  async function startCheckout(tier, billing_frequency) {
+    state.pendingTier = tier;
+    state.pendingFrequency = billing_frequency;
+
+    if (!state.hasBillingDetails) {
+      try {
+        await refreshBillingDetails();
+      } catch (_) { /* treat as missing */ }
+    }
+    if (!state.hasBillingDetails) {
+      askForBillingDetails(t('addBilling'));
+      return 'needs-billing';
+    }
+
+    try {
+      const existing = await portalFetch('/subscription/');
+      const status = existing && String(existing.status || '').toLowerCase();
+      if (existing && (status === 'incomplete' || status === 'incomplete_expired' || status === 'past_due')) {
+        if (await tryPaymentLinks()) return 'redirected';
+      }
+    } catch (_) { /* no current subscription */ }
+
+    let data;
+    try {
+      data = await portalFetch('/subscription/subscribe', {
+        method: 'POST',
+        body: {
+          email: state.email || state.username,
+          tier,
+          billing_frequency,
+        },
+      });
+    } catch (err) {
+      if (isIncompleteBillingError(err)) {
+        state.hasBillingDetails = false;
+        askForBillingDetails(
+          t('incompleteBilling')
+        );
+        return 'needs-billing';
+      }
+      if (err.status === 409 || err.status >= 500) {
+        if (await tryPaymentLinks()) return 'redirected';
+        const claims = tokenClaims() || {};
+            if (claims.elemento_active_subscriber === true || err.status === 409) {
+          showAlreadyPaid(state.orgName, { is_trial: false });
+          return 'already-paid';
+        }
+      }
+      throw err;
+    }
+
+    const url = checkoutUrlFrom(data);
+    if (url) {
+      window.location.href = url;
+      return 'redirected';
+    }
+    const checkout = data && data.checkouts && data.checkouts[0];
+    const trialGranted =
+      checkout &&
+      Array.isArray(checkout.subscriptions) &&
+      checkout.subscriptions.some((s) => s && s.is_trial);
+    if (trialGranted || (checkout && checkout.checkout_url == null)) {
+      return 'ready';
+    }
+    throw new Error(t('noCheckoutUrl'));
+  }
+
+  panel.querySelectorAll('[data-subscribe-back]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const to = btn.getAttribute('data-subscribe-back');
+      if (to) showStep(to);
+    });
+  });
+
+  if (loginForm) {
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      showError('');
+      const submitBtn = loginForm.querySelector('[type="submit"]');
+      const emailEl = document.getElementById('subscribeEmail');
+      const passwordEl = document.getElementById('subscribePassword');
+      const email = emailEl.value.trim();
+      const password = passwordEl.value;
+      emailEl.style.borderColor = '';
+      passwordEl.style.borderColor = '';
+      if (!email || !password) {
+        if (!email) emailEl.style.borderColor = '#DC3545';
+        if (!password) passwordEl.style.borderColor = '#DC3545';
+        showError(t('enterCredentials'));
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('signingIn');
+      try {
+        const data = await portalFetch('/auth/userpass', {
+          method: 'POST',
+          auth: false,
+          body: { username: email, password },
+        });
+        if (!data || !data.access_token) {
+          throw new Error(t('noToken'));
+        }
+        state.accessToken = data.access_token;
+        state.username = data.username || email;
+        state.email = email;
+        const scopes = await portalFetch('/auth/scopes');
+        renderOrgs(scopes && scopes.scopes);
+        showStep('org');
+      } catch (err) {
+        showError(err.message || t('signInFailed'));
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = t('continue');
+      }
+    });
+  }
+
+  if (planForm) {
+    planForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      showError('');
+      const submitBtn = planForm.querySelector('[type="submit"]');
+      const tier = tierSelect.value;
+      const billing_frequency = freqSelect.value;
+      if (!state.orgId || !tier || !billing_frequency) {
+        showError(t('selectOrgPlan'));
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('openingStripe');
+      try {
+        const result = await startCheckout(tier, billing_frequency);
+        if (result === 'ready') {
+          submitBtn.textContent = t('seatReady');
+          const lead = planForm.closest('[data-step="plan"]')?.querySelector('.subscribe-step-lead');
+          if (lead) {
+            lead.textContent =
+              t('seatReadyLead');
+          }
+          return;
+        }
+        if (result === 'needs-billing' || result === 'redirected' || result === 'already-paid') return;
+      } catch (err) {
+        showError(friendlySubscribeError(err));
+      } finally {
+        if (submitBtn.textContent === t('openingStripe')) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = t('continueStripe');
+        }
+      }
+    });
+  }
+
+  if (billingForm) {
+    billingForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      showError('');
+      const submitBtn = billingForm.querySelector('[type="submit"]');
+      const payload = readBillingPayload();
+      if (!payload.full_address || !payload.zip_code || !payload.city || !payload.province || !payload.nationality) {
+        showError(t('billingRequired'));
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('saving');
+      try {
+        // Keys fiscal_code / vat_code must be present even when null (portal contract).
+        if (state.hasBillingDetails) {
+          await portalFetch('/account/details', { method: 'PATCH', body: payload });
+        } else {
+          try {
+            await portalFetch('/account/details', { method: 'POST', body: payload });
+          } catch (err) {
+            // Already created elsewhere — update instead.
+            if (err.status === 409 || err.status === 400 || err.status === 422) {
+              await portalFetch('/account/details', { method: 'PATCH', body: payload });
+            } else {
+              throw err;
+            }
+          }
+        }
+        state.hasBillingDetails = true;
+
+        const tier = state.pendingTier || (tierSelect && tierSelect.value);
+        const billing_frequency = state.pendingFrequency || (freqSelect && freqSelect.value);
+        if (!tier || !billing_frequency) {
+          showStep('plan');
+          showError(t('choosePlan'));
+          return;
+        }
+
+        submitBtn.textContent = t('openingStripe');
+        const result = await startCheckout(tier, billing_frequency);
+        if (result === 'ready') {
+          showStep('plan');
+          const planBtn = planForm && planForm.querySelector('[type="submit"]');
+          if (planBtn) planBtn.textContent = t('seatReady');
+          return;
+        }
+        if (result === 'needs-billing') {
+          showError(t('billingSavedIncomplete'));
+          return;
+        }
+        if (result === 'already-paid' || result === 'redirected') return;
+      } catch (err) {
+        showError(err.message || t('billingSaveFailed'));
+      } finally {
+        if (submitBtn.textContent !== t('seatReady')) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = t('saveContinue');
+        }
+      }
+    });
+  }
+
+  showStep('login');
+})();

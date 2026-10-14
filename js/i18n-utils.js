@@ -10,7 +10,7 @@
     'about', 'atomos', 'atomosphere', 'blog', 'blog-posts', 'bookings', 'brand-guidelines',
     'careers', 'compare-costs', 'contact', 'editor', 'electros', 'forms', 'getintouch',
     'grazie', 'install-atomos', 'orbital', 'products', 'provider-candidature', 'provider-success',
-    'signup', 'signup-success', 'solutions', 'technology', 'thank-you', 'videos', '404',
+    'signup', 'signup-success', 'buy-seat', 'solutions', 'technology', 'thank-you', 'videos', '404',
     'assets', 'css', 'js', 'CMS', 'components',
   ]);
 

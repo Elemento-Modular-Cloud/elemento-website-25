@@ -33,6 +33,7 @@ const COPY_FILES = [
   'ai.txt',
   'llms.txt',
   'llms-full.txt',
+  '_redirects',
 ];
 
 function copyRecursive(src, dest) {

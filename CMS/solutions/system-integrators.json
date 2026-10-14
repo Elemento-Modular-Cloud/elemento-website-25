@@ -268,12 +268,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Dashboard white label per la gestione dell'infrastruttura del cliente"
+          "description": "Hypervisor per ambienti di produzione per ambienti multi-tenant coerenti"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hypervisor per ambienti di produzione per ambienti multi-tenant coerenti"
+          "description": "Dashboard white label per la gestione dell'infrastruttura del cliente"
         }
       ],
       "cta": {
@@ -462,12 +462,12 @@
         {
           "logo": "../assets/logos/Electros.svg",
           "name": "Electros",
-          "description": "Tableau de bord en marque blanche pour la gestion de l'infrastructure client"
+          "description": "Hyperviseur de niveau production pour des environnements multi-locataires cohérents"
         },
         {
           "logo": "../assets/logos/Atomos.svg",
           "name": "AtomOS",
-          "description": "Hyperviseur de niveau production pour des environnements multi-locataires cohérents"
+          "description": "Tableau de bord en marque blanche pour la gestion de l'infrastructure client"
         }
       ],
       "cta": {
