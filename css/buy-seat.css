@@ -403,6 +403,13 @@ body.page-buy-seat .breadcrumb {
     width: 100%;
 }
 
+.subscribe-trial-note {
+    margin: 0 0 var(--space-md);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
 .subscribe-step-lead {
     margin: 0 0 var(--space-md, 1rem);
     color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));

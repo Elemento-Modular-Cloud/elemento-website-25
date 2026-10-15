@@ -9782,6 +9782,10 @@
         "fr": "Continuer vers Stripe"
       },
       {
+        "en": "This organisation is on a free trial. You can buy a paid seat before it ends.",
+        "fr": "Cette organisation est en essai gratuit. Vous pouvez acheter un siège payant avant la fin de l’essai."
+      },
+      {
         "en": "Back to Electros",
         "fr": "Retour à Electros"
       },

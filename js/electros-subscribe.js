@@ -217,6 +217,7 @@
     detailsRowExists: false,
     pendingTier: null,
     pendingFrequency: null,
+    upgradingTrial: false,
   };
 
   let resendTimer = null;
@@ -312,6 +313,7 @@
     const lower = raw.toLowerCase();
 
     if (status === 409 || (lower.includes('already') && lower.includes('subscription'))) {
+      if (state.upgradingTrial) return t('tryAgain');
       return t('alreadyPaidTitle');
     }
     if (status === 400 && (lower.includes('verif') || lower.includes('email'))) {
@@ -349,11 +351,22 @@
     showAlert(message, 'success');
   }
 
-  /** Any active seat (trial or paid) — this org should not enter plan/Stripe again. */
-  function hasExistingSeat(subscription) {
+  /** A paid seat blocks checkout. A free trial does not. */
+  function isTrialSeat(subscription) {
     if (!subscription || typeof subscription !== 'object') return false;
-    const status = String(subscription.status || '').toLowerCase();
-    return status === 'active' || status === 'trialing';
+    if (subscription.is_trial === true) return true;
+    return String(subscription.status || '').toLowerCase() === 'trialing';
+  }
+
+  function isPaidSeat(subscription) {
+    if (!subscription || typeof subscription !== 'object') return false;
+    if (isTrialSeat(subscription)) return false;
+    return String(subscription.status || '').toLowerCase() === 'active';
+  }
+
+  function setTrialNote(show) {
+    const note = document.getElementById('subscribeTrialNote');
+    if (note) note.hidden = !show;
   }
 
   function updateProgress(name) {
@@ -385,10 +398,10 @@
   }
 
   /**
-   * After org-scoped relogin, skip plan/Stripe when the org already has an active seat.
-   * GET /subscription is authoritative (incl. free-trial seats with status=active).
+   * After org-scoped relogin, skip plan/Stripe only for a paid seat.
+   * A free trial (is_trial, or the org's trial flag) can still buy a paid plan.
    */
-  async function checkPaidSeatForOrg() {
+  async function findOrgSeat(orgIsTrial) {
     const email = state.email || state.username || '';
     const paths = ['/subscription'];
     if (email) {
@@ -396,20 +409,25 @@
     }
     paths.push('/subscription/org');
 
+    let trial = orgIsTrial ? { status: 'active', is_trial: true } : null;
     for (const path of paths) {
       try {
         const data = await portalFetch(path);
         const list = Array.isArray(data) ? data : data ? [data] : [];
-        const existing = list.find((sub) => hasExistingSeat(sub));
-        if (existing) return existing;
+        const paid = list.find((sub) => isPaidSeat(sub));
+        if (paid && !orgIsTrial) return { paid, trial: null };
+        const foundTrial = list.find((sub) => isTrialSeat(sub));
+        if (foundTrial) trial = foundTrial;
+        else if (orgIsTrial && paid) trial = { ...paid, is_trial: true };
       } catch (_) { /* try next signal */ }
     }
 
+    if (trial) return { paid: null, trial };
     const claims = tokenClaims() || {};
     if (claims.elemento_active_subscriber === true) {
-      return { status: 'active', is_trial: false };
+      return { paid: { status: 'active', is_trial: false }, trial: null };
     }
-    return null;
+    return { paid: null, trial: null };
   }
 
   function showAlreadyPaid(orgName, subscription) {
@@ -637,6 +655,9 @@
     state.detailsRowExists = false;
     state.pendingTier = null;
     state.pendingFrequency = null;
+    state.upgradingTrial = false;
+    const trialNote = document.getElementById('subscribeTrialNote');
+    if (trialNote) trialNote.hidden = true;
   }
 
   function clearResendCooldown() {
@@ -815,12 +836,13 @@
       const orgLabel = document.getElementById('subscribeSelectedOrg');
       if (orgLabel) orgLabel.textContent = item.label;
 
-      // Seat gate: never advance to plan/Stripe when this org already has an active seat.
-      const existingSeat = await checkPaidSeatForOrg();
-      if (existingSeat) {
-        showAlreadyPaid(item.label, existingSeat);
+      const seat = await findOrgSeat(item.isTrial);
+      if (seat.paid) {
+        showAlreadyPaid(item.label, seat.paid);
         return;
       }
+      state.upgradingTrial = Boolean(seat.trial);
+      setTrialNote(state.upgradingTrial);
 
       await loadTiers();
       try {
@@ -835,11 +857,13 @@
         state.orgName = item.label;
         const orgLabel = document.getElementById('subscribeSelectedOrg');
         if (orgLabel) orgLabel.textContent = item.label;
-        const existingSeat = await checkPaidSeatForOrg();
-        if (existingSeat) {
-          showAlreadyPaid(item.label, existingSeat);
+        const seat = await findOrgSeat(item.isTrial);
+        if (seat.paid) {
+          showAlreadyPaid(item.label, seat.paid);
           return;
         }
+        state.upgradingTrial = Boolean(seat.trial);
+        setTrialNote(state.upgradingTrial);
         await loadTiers();
         showStep('plan');
         return;
@@ -878,8 +902,11 @@
     } catch (_) { /* no current subscription */ }
 
     let data;
+    const checkoutPath = state.upgradingTrial
+      ? '/subscription/change-tier'
+      : '/subscription/subscribe';
     try {
-      data = await portalFetch('/subscription/subscribe', {
+      data = await portalFetch(checkoutPath, {
         method: 'POST',
         body: {
           email: state.email || state.username,
@@ -895,15 +922,33 @@
         );
         return 'needs-billing';
       }
-      if (err.status === 409 || err.status >= 500) {
+      if (!state.upgradingTrial && err.status === 409) {
+        const seat = await findOrgSeat(false);
+        if (seat.trial && !seat.paid) {
+          state.upgradingTrial = true;
+          setTrialNote(true);
+          data = await portalFetch('/subscription/change-tier', {
+            method: 'POST',
+            body: {
+              email: state.email || state.username,
+              tier,
+              billing_frequency,
+            },
+          });
+        } else {
+          if (await tryPaymentLinks()) return 'redirected';
+          showAlreadyPaid(state.orgName, seat.paid || { is_trial: false });
+          return 'already-paid';
+        }
+      } else if (err.status === 409 || err.status >= 500) {
         if (await tryPaymentLinks()) return 'redirected';
         const claims = tokenClaims() || {};
-            if (claims.elemento_active_subscriber === true || err.status === 409) {
+        if (!state.upgradingTrial && (claims.elemento_active_subscriber === true || err.status === 409)) {
           showAlreadyPaid(state.orgName, { is_trial: false });
           return 'already-paid';
         }
       }
-      throw err;
+      if (!data) throw err;
     }
 
     const url = checkoutUrlFrom(data);
@@ -916,7 +961,7 @@
       checkout &&
       Array.isArray(checkout.subscriptions) &&
       checkout.subscriptions.some((s) => s && s.is_trial);
-    if (trialGranted || (checkout && checkout.checkout_url == null)) {
+    if (!state.upgradingTrial && (trialGranted || (checkout && checkout.checkout_url == null))) {
       return 'ready';
     }
     throw new Error(t('noCheckoutUrl'));
