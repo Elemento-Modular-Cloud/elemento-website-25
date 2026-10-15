@@ -3,7 +3,8 @@
  * login → scopes → relogin/org → plan → (billing details if needed) → subscribe → Stripe
  */
 (function () {
-  const PORTAL = '/api/portal/v2';
+  // Direct portal call. GitHub Pages cannot proxy /api/portal.
+  const PORTAL = 'https://portal.elemento.cloud/api/v2';
 
   const UI = {
     en: {
