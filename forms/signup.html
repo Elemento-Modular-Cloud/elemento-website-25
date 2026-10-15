@@ -100,8 +100,8 @@
     </div>
 
     <script>
-        // Same-origin proxy → https://portal.elemento.cloud (see astro.config.mjs + public/_redirects)
-        const PORTAL_REGISTER_URL = '/api/portal/v2/account/register/login';
+        // Direct portal call. Same-origin /api/portal is not available on static hosts.
+        const PORTAL_REGISTER_URL = 'https://portal.elemento.cloud/api/v2/account/register/login';
         // Matches Electros access-client bootstrap when no session token exists yet
         const PORTAL_BOOTSTRAP_AUTH = 'Bearer null';
 
