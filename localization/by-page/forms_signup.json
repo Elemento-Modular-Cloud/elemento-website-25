@@ -84,9 +84,9 @@
     },
     {
       "id": "body.forms_signup.p.2",
-      "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
-      "it": "Almeno 12 caratteri, con maiuscole e minuscole, un numero e un simbolo.",
-      "fr": "Au moins 12 caractères, avec majuscules et minuscules, un chiffre et un symbole.",
+      "en": "At least 60 bits of entropy, from a long passphrase or a mix of characters.",
+      "it": "Almeno 60 bit di entropia, con una passphrase lunga o un mix di caratteri.",
+      "fr": "Au moins 60 bits d’entropie, avec une longue passphrase ou un mélange de caractères.",
       "source": "forms/signup.html",
       "context": "<p>"
     },

@@ -6446,8 +6446,8 @@
         "fr": "J'accepte les Conditions générales, la Politique de confidentialité et la Politique de cookies *"
       },
       {
-        "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
-        "fr": "Au moins 12 caractères, avec majuscules et minuscules, un chiffre et un symbole."
+        "en": "At least 60 bits of entropy, from a long passphrase or a mix of characters.",
+        "fr": "Au moins 60 bits d’entropie, avec une longue passphrase ou un mélange de caractères."
       },
       {
         "en": "Subscribe to our newsletter for updates and insights",

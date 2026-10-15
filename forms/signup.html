@@ -47,16 +47,16 @@
                     id="password"
                     name="new-password"
                     autocomplete="new-password"
-                    passwordrules="minlength: 12; required: lower; required: upper; required: digit; required: special;"
-                    minlength="12"
+                    passwordrules="minlength: 8; maxlength: 128;"
                     maxlength="128"
                     autocapitalize="off"
                     autocorrect="off"
                     spellcheck="false"
                     required
-                    aria-describedby="passwordHint"
-                    placeholder="At least 12 characters">
-                <p class="form-field-hint" id="passwordHint">At least 12 characters, with upper and lower case, a number, and a symbol.</p>
+                    aria-describedby="passwordHint passwordEntropy"
+                    placeholder="Long passphrase or mixed characters">
+                <p class="form-field-hint" id="passwordHint">At least 60 bits of entropy, from a long passphrase or a mix of characters.</p>
+                <p class="form-field-hint" id="passwordEntropy" aria-live="polite"></p>
             </div>
 
             <div class="form-group">
@@ -66,7 +66,6 @@
                     id="passwordConfirm"
                     name="new-password-confirm"
                     autocomplete="new-password"
-                    minlength="12"
                     maxlength="128"
                     autocapitalize="off"
                     autocorrect="off"
@@ -107,12 +106,9 @@
 
         const UI = {
             en: {
-                pwdMin: 'Password must be at least 12 characters.',
+                pwdEntropy: 'Password is about {bits} bits. Use at least 60.',
                 pwdMax: 'Password must be at most 128 characters.',
-                pwdLower: 'Password must include a lowercase letter.',
-                pwdUpper: 'Password must include an uppercase letter.',
-                pwdNumber: 'Password must include a number.',
-                pwdSymbol: 'Password must include a symbol (e.g. !@#$%).',
+                entropy: '{bits} / 60 bits',
                 pwdMatch: 'Passwords do not match.',
                 waitSubmit: 'Please wait before submitting again.',
                 tooMany: 'Too many submission attempts. Please try again later.',
@@ -126,12 +122,9 @@
                 regFailedNetwork: 'Registration failed. Could not reach the Elemento portal. Please try again.',
             },
             it: {
-                pwdMin: 'La password deve avere almeno 12 caratteri.',
+                pwdEntropy: 'La password vale circa {bits} bit. Servono almeno 60.',
                 pwdMax: 'La password può avere al massimo 128 caratteri.',
-                pwdLower: 'La password deve includere una lettera minuscola.',
-                pwdUpper: 'La password deve includere una lettera maiuscola.',
-                pwdNumber: 'La password deve includere un numero.',
-                pwdSymbol: 'La password deve includere un simbolo (es. !@#$%).',
+                entropy: '{bits} / 60 bit',
                 pwdMatch: 'Le password non coincidono.',
                 waitSubmit: 'Attendi prima di inviare di nuovo.',
                 tooMany: 'Troppi tentativi di invio. Riprova più tardi.',
@@ -145,12 +138,9 @@
                 regFailedNetwork: 'Registrazione non riuscita. Impossibile raggiungere il portale Elemento. Riprova.',
             },
             fr: {
-                pwdMin: 'Le mot de passe doit contenir au moins 12 caractères.',
+                pwdEntropy: 'Le mot de passe fait environ {bits} bits. Il en faut au moins 60.',
                 pwdMax: 'Le mot de passe peut contenir au maximum 128 caractères.',
-                pwdLower: 'Le mot de passe doit inclure une lettre minuscule.',
-                pwdUpper: 'Le mot de passe doit inclure une lettre majuscule.',
-                pwdNumber: 'Le mot de passe doit inclure un chiffre.',
-                pwdSymbol: 'Le mot de passe doit inclure un symbole (p. ex. !@#$%).',
+                entropy: '{bits} / 60 bits',
                 pwdMatch: 'Les mots de passe ne correspondent pas.',
                 waitSubmit: 'Veuillez patienter avant de renvoyer le formulaire.',
                 tooMany: 'Trop de tentatives. Réessayez plus tard.',
@@ -211,26 +201,42 @@
             setTimeout(() => errorDiv.classList.remove('show'), 8000);
         }
 
+        const MIN_ENTROPY_BITS = 60;
+
+        function passwordEntropyBits(value) {
+            if (!value) return 0;
+            let pool = 0;
+            if (/[a-z]/.test(value)) pool += 26;
+            if (/[A-Z]/.test(value)) pool += 26;
+            if (/[0-9]/.test(value)) pool += 10;
+            if (/[^A-Za-z0-9]/.test(value)) pool += 33;
+            if (pool < 2 || new Set(value).size < 2) return 0;
+            return Math.floor(value.length * Math.log2(pool));
+        }
+
+        function renderPasswordEntropy(value) {
+            const el = document.getElementById('passwordEntropy');
+            if (!el) return;
+            el.textContent = value ? t('entropy').replace('{bits}', String(passwordEntropyBits(value))) : '';
+        }
+
         function passwordStrengthError(value) {
-            if (!value || value.length < 12) {
-                return t('pwdMin');
-            }
-            if (value.length > 128) {
+            if (value && value.length > 128) {
                 return t('pwdMax');
             }
-            if (!/[a-z]/.test(value)) {
-                return t('pwdLower');
-            }
-            if (!/[A-Z]/.test(value)) {
-                return t('pwdUpper');
-            }
-            if (!/[0-9]/.test(value)) {
-                return t('pwdNumber');
-            }
-            if (!/[^A-Za-z0-9]/.test(value)) {
-                return t('pwdSymbol');
+            const bits = passwordEntropyBits(value);
+            if (bits < MIN_ENTROPY_BITS) {
+                return t('pwdEntropy').replace('{bits}', String(bits));
             }
             return '';
+        }
+
+        const passwordInput = document.getElementById('password');
+        if (passwordInput) {
+            passwordInput.addEventListener('input', () => {
+                renderPasswordEntropy(passwordInput.value);
+                if (!passwordStrengthError(passwordInput.value)) passwordInput.style.borderColor = '';
+            });
         }
 
         function validateForm() {

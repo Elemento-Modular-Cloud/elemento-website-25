@@ -33074,7 +33074,7 @@
     },
     {
       "id": "body.forms_signup.p.2",
-      "en": "At least 12 characters, with upper and lower case, a number, and a symbol.",
+      "en": "At least 60 bits of entropy, from a long passphrase or a mix of characters.",
       "it": "",
       "fr": "",
       "source": "forms/signup.html",

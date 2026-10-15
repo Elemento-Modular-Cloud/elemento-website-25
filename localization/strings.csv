@@ -4132,7 +4132,7 @@ body.forms_signup.label.5,Confirm password *,,,forms/signup.html,<label>
 body.forms_signup.label.6,Subscribe to our newsletter for updates and insights,,,forms/signup.html,<label>
 body.forms_signup.label.7,"I agree to the Terms and Conditions , Privacy Policy , and Cookie Policy *",,,forms/signup.html,<label>
 body.forms_signup.p.1,Includes a personal organisation and a 14-day Electros trial. Then download Electros and sign in.,,,forms/signup.html,<p>
-body.forms_signup.p.2,"At least 12 characters, with upper and lower case, a number, and a symbol.",,,forms/signup.html,<p>
+body.forms_signup.p.2,"At least 60 bits of entropy, from a long passphrase or a mix of characters.",,,forms/signup.html,<p>
 body.forms_signup.p.3,Already have an account? Sign in & buy a seat,,,forms/signup.html,<p>
 body.forms_signup.p.4,Please complete all required fields.,,,forms/signup.html,<p>
 body.forms_signup.p.5,${message},,,forms/signup.html,<p>
