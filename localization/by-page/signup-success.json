@@ -1,78 +1,126 @@
 {
   "page": "signup-success",
-  "count": 9,
+  "count": 14,
   "strings": [
     {
-      "id": "body.signup-success.h1.1",
-      "en": "Welcome to Elemento !",
-      "it": "",
-      "fr": "",
+      "id": "meta.signup-success.title",
+      "en": "Welcome to Elemento - Registration Successful",
+      "it": "Benvenuto in Elemento: registrazione riuscita",
+      "fr": "Bienvenue sur Elemento - Inscription réussie",
       "source": "signup-success.html",
-      "context": "<h1>"
+      "context": "meta title"
     },
     {
-      "id": "body.signup-success.h2.1",
-      "en": "Desktop installers",
-      "it": "",
-      "fr": "",
+      "id": "meta.signup-success.description",
+      "en": "Your Elemento account is ready. Open Electros, AtomOS, or LaunchPad, buy Electros seats, or start with LaunchPad.",
+      "it": "Il tuo account Elemento è pronto. Apri Electros, AtomOS o LaunchPad, acquista posti Electros o inizia con LaunchPad.",
+      "fr": "Votre compte Elemento est prêt. Ouvrez Electros, AtomOS ou LaunchPad, achetez des sièges Electros ou commencez avec LaunchPad.",
       "source": "signup-success.html",
-      "context": "<h2>"
+      "context": "meta description"
     },
     {
       "id": "body.signup-success.p.1",
       "en": "Registration complete",
-      "it": "",
-      "fr": "",
+      "it": "Registrazione completata",
+      "fr": "Inscription terminée",
       "source": "signup-success.html",
       "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.h1.1",
+      "en": "Welcome to Elemento!",
+      "it": "Benvenuto su Elemento!",
+      "fr": "Bienvenue chez Elemento !",
+      "source": "signup-success.html",
+      "context": "<h1>"
     },
     {
       "id": "body.signup-success.p.2",
-      "en": "Your Elemento account and organisation are ready, with a 14-day Electros trial. Download Electros and sign in to get started — subscribe in the app before the trial ends.",
-      "it": "",
-      "fr": "",
-      "source": "signup-success.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.signup-success.p.3",
-      "en": "Check your email — confirm your address if prompted, then sign in to Electros with the password you chose.",
-      "it": "",
-      "fr": "",
-      "source": "signup-success.html",
-      "context": "<p>"
-    },
-    {
-      "id": "body.signup-success.p.4",
-      "en": "Native Electros apps for Linux, macOS, and Windows",
-      "it": "",
-      "fr": "",
+      "en": "Your Elemento account is ready. Go to Electros, AtomOS, or LaunchPad.",
+      "it": "Il tuo account Elemento è pronto. Vai su Electros, AtomOS o LaunchPad.",
+      "fr": "Votre compte Elemento est prêt. Allez sur Electros, AtomOS ou LaunchPad.",
       "source": "signup-success.html",
       "context": "<p>"
     },
     {
       "id": "body.signup-success.ui.1",
-      "en": "Download on electros.cloud",
-      "it": "",
-      "fr": "",
+      "en": "Buy Electros seats",
+      "it": "Acquista posti Electros",
+      "fr": "Acheter des sièges Electros",
       "source": "signup-success.html",
       "context": "class"
     },
     {
-      "id": "meta.signup-success.description",
-      "en": "Welcome to Elemento! Your account has been successfully created. Get started with your cloud infrastructure journey.",
-      "it": "",
-      "fr": "",
+      "id": "body.signup-success.ui.2",
+      "en": "Open LaunchPad",
+      "it": "Apri LaunchPad",
+      "fr": "Ouvrir LaunchPad",
       "source": "signup-success.html",
-      "context": "meta description"
+      "context": "class"
     },
     {
-      "id": "meta.signup-success.title",
-      "en": "Welcome to Elemento - Registration Successful",
-      "it": "",
-      "fr": "",
+      "id": "body.signup-success.p.3",
+      "en": "Check your email — confirm your address if prompted, then sign in with the password you chose.",
+      "it": "Controlla la tua email — conferma l’indirizzo se richiesto, poi accedi con la password che hai scelto.",
+      "fr": "Vérifiez votre e-mail — confirmez l’adresse si on vous le demande, puis connectez-vous avec le mot de passe choisi.",
       "source": "signup-success.html",
-      "context": "meta title"
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.h2.1",
+      "en": "Electros, AtomOS, and LaunchPad",
+      "it": "Electros, AtomOS e LaunchPad",
+      "fr": "Electros, AtomOS et LaunchPad",
+      "source": "signup-success.html",
+      "context": "<h2>"
+    },
+    {
+      "id": "body.signup-success.p.4",
+      "en": "Desktop control plane for AtomOS, VMware, Proxmox, and public clouds. Your account includes a 14-day trial.",
+      "it": "Control plane desktop per AtomOS, VMware, Proxmox e cloud pubblici. Il tuo account include una prova di 14 giorni.",
+      "fr": "Control plane de bureau pour AtomOS, VMware, Proxmox et les clouds publics. Votre compte inclut un essai de 14 jours.",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.ui.3",
+      "en": "Download Electros",
+      "it": "Scarica Electros",
+      "fr": "Télécharger Electros",
+      "source": "signup-success.html",
+      "context": "class"
+    },
+    {
+      "id": "body.signup-success.p.5",
+      "en": "Linux hypervisor for bare metal and private clouds. Free forever.",
+      "it": "Hypervisor Linux per bare metal e cloud privati. Gratis per sempre.",
+      "fr": "Hyperviseur Linux pour le bare metal et les clouds privés. Gratuit pour toujours.",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.ui.4",
+      "en": "Explore AtomOS",
+      "it": "Scopri AtomOS",
+      "fr": "Découvrir AtomOS",
+      "source": "signup-success.html",
+      "context": "class"
+    },
+    {
+      "id": "body.signup-success.p.6",
+      "en": "A private cloud on your own machine: open AI models, virtual machines, and services.",
+      "it": "Un cloud privato sulla tua macchina: modelli AI open, macchine virtuali e servizi.",
+      "fr": "Un cloud privé sur votre machine : modèles d’IA ouverts, machines virtuelles et services.",
+      "source": "signup-success.html",
+      "context": "<p>"
+    },
+    {
+      "id": "body.signup-success.ui.5",
+      "en": "Go to LaunchPad",
+      "it": "Vai a LaunchPad",
+      "fr": "Aller sur LaunchPad",
+      "source": "signup-success.html",
+      "context": "class"
     }
   ]
 }

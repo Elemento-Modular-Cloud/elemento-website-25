@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Elemento - Registration Successful</title>
-    <meta name="description" content="Welcome to Elemento! Your account has been successfully created. Get started with your cloud infrastructure journey.">
+    <meta name="description" content="Your Elemento account is ready. Open Electros, AtomOS, or LaunchPad, buy Electros seats, or start with LaunchPad.">
     <link rel="canonical" href="https://elemento.cloud/signup-success.html">
     <meta name="robots" content="noindex, nofollow">
     <!-- Favicon -->
@@ -39,29 +39,42 @@
                 <p class="signup-success-eyebrow">Registration complete</p>
                 <h1 class="signup-success-title">Welcome to <span class="pixel-accent">Elemento</span>!</h1>
                 <p class="signup-success-lead hero-subtitle">
-                    Your Elemento account and organisation are ready, with a 14-day Electros trial. Download Electros and sign in to get started — subscribe in the app before the trial ends.
+                    Your Elemento account is ready. Go to Electros, AtomOS, or LaunchPad.
                 </p>
+                <div class="signup-success-actions">
+                    <a class="btn btn-primary" href="buy-seat.html">Buy Electros seats</a>
+                    <a class="btn btn-primary" href="https://launchpad.electros.cloud">Open LaunchPad</a>
+                </div>
                 <div class="signup-success-email-alert email-notification">
                     <i class="fas fa-envelope" aria-hidden="true"></i>
                     <p>
-                        <strong>Check your email</strong> — confirm your address if prompted, then sign in to Electros with the password you chose.
+                        <strong>Check your email</strong> — confirm your address if prompted, then sign in with the password you chose.
                     </p>
                 </div>
             </header>
 
-            <section class="signup-success-downloads fade-in" aria-labelledby="downloads-heading">
-                <div class="signup-success-downloads-header">
-                    <h2 id="downloads-heading">
-                        <i class="fas fa-desktop" aria-hidden="true"></i>
-                        Desktop installers
-                    </h2>
-                    <p>Native Electros apps for Linux, macOS, and Windows</p>
-                </div>
-                <div class="text-center" style="margin-top: 1.5rem;">
-                    <a href="https://electros.cloud/#download" class="btn btn-primary">
-                        <i class="fas fa-download" aria-hidden="true"></i> Download on electros.cloud
-                    </a>
-                </div>
+            <section class="signup-success-products fade-in" aria-labelledby="products-heading">
+                <h2 id="products-heading">Electros, AtomOS, and LaunchPad</h2>
+                <ul class="signup-success-product-grid">
+                    <li class="signup-success-product">
+                        <img src="assets/logos/Electros.svg" alt="" width="48" height="48">
+                        <h3><a href="electros.html">Electros</a></h3>
+                        <p>Desktop control plane for AtomOS, VMware, Proxmox, and public clouds. Your account includes a 14-day trial.</p>
+                        <a class="signup-success-product-link" href="https://electros.cloud/#download">Download Electros</a>
+                    </li>
+                    <li class="signup-success-product">
+                        <img src="assets/logos/Atomos.svg" alt="" width="48" height="48">
+                        <h3><a href="atomos.html">AtomOS</a></h3>
+                        <p>Linux hypervisor for bare metal and private clouds. Free forever.</p>
+                        <a class="signup-success-product-link" href="atomos.html">Explore AtomOS</a>
+                    </li>
+                    <li class="signup-success-product">
+                        <span class="signup-success-mark" aria-hidden="true">LP</span>
+                        <h3><a href="https://launchpad.electros.cloud">LaunchPad</a></h3>
+                        <p>A private cloud on your own machine: open AI models, virtual machines, and services.</p>
+                        <a class="signup-success-product-link" href="https://launchpad.electros.cloud">Go to LaunchPad</a>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
@@ -85,7 +98,7 @@
                     lead.innerHTML =
                         'Your account has been created. We sent a confirmation to <strong>' +
                         userEmail +
-                        '</strong>. Download Electros to get started.';
+                        '</strong>. Go to Electros, AtomOS, or LaunchPad.';
                 }
             }
         });

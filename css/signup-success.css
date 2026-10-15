@@ -2,7 +2,7 @@
 
 :root {
     --signup-success-nav-offset: 80px;
-    --signup-success-max: 880px;
+    --signup-success-max: 1080px;
 }
 
 body:has(.signup-success-page) {
@@ -90,6 +90,106 @@ body:has(.signup-success-page) .breadcrumb {
 
 .signup-success-email-alert strong {
     color: var(--text-color);
+}
+
+.signup-success-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin: 0 auto var(--space-xl);
+}
+
+.signup-success-actions .btn {
+    min-width: 14rem;
+    justify-content: center;
+}
+
+.signup-success-products h2 {
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 0 var(--space-xl);
+}
+
+.signup-success-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-success-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-xl);
+    background: var(--glassmorphism-background, var(--background-color));
+    border: 1px solid var(--glassmorphism-border, var(--border-color));
+    border-radius: var(--radius-xl, 16px);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.signup-success-product img,
+.signup-success-mark {
+    width: 48px;
+    height: 48px;
+}
+
+.signup-success-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: var(--button-text-color, #1a1c20);
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.signup-success-product h3 {
+    margin: 0;
+    font-family: var(--font-heading, 'Red Hat Display', sans-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.signup-success-product h3 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.signup-success-product h3 a:hover {
+    color: var(--primary-color);
+}
+
+.signup-success-product p {
+    margin: 0;
+    flex: 1;
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+.signup-success-product-link {
+    margin-top: var(--space-sm);
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.signup-success-product-link:hover {
+    text-decoration: underline;
 }
 
 /* Downloads */
@@ -199,8 +299,13 @@ body:has(.signup-success-page) .breadcrumb {
         padding-bottom: var(--space-3xl);
     }
 
+    .signup-success-product-grid,
     .signup-success-download-grid {
         grid-template-columns: 1fr;
+    }
+
+    .signup-success-actions .btn {
+        width: 100%;
     }
 
     .signup-success-downloads {
@@ -215,6 +320,7 @@ body:has(.signup-success-page) .breadcrumb {
 }
 
 /* Dark theme */
+[data-theme="dark"] .signup-success-product,
 [data-theme="dark"] .signup-success-downloads {
     background: color-mix(in srgb, var(--background-color) 92%, white);
 }

@@ -7848,6 +7848,62 @@
     ],
     "signup-success": [
       {
+        "en": "Registration complete",
+        "it": "Registrazione completata"
+      },
+      {
+        "en": "Your Elemento account is ready. Go to Electros, AtomOS, or LaunchPad.",
+        "it": "Il tuo account Elemento è pronto. Vai su Electros, AtomOS o LaunchPad."
+      },
+      {
+        "en": "Electros, AtomOS, and LaunchPad",
+        "it": "Electros, AtomOS e LaunchPad"
+      },
+      {
+        "en": "Desktop control plane for AtomOS, VMware, Proxmox, and public clouds. Your account includes a 14-day trial.",
+        "it": "Control plane desktop per AtomOS, VMware, Proxmox e cloud pubblici. Il tuo account include una prova di 14 giorni."
+      },
+      {
+        "en": "Linux hypervisor for bare metal and private clouds. Free forever.",
+        "it": "Hypervisor Linux per bare metal e cloud privati. Gratis per sempre."
+      },
+      {
+        "en": "A private cloud on your own machine: open AI models, virtual machines, and services.",
+        "it": "Un cloud privato sulla tua macchina: modelli AI open, macchine virtuali e servizi."
+      },
+      {
+        "en": "confirm your address if prompted, then sign in with the password you chose.",
+        "it": "conferma l’indirizzo se richiesto, poi accedi con la password che hai scelto."
+      },
+      {
+        "en": "Your account has been created. We sent a confirmation to ",
+        "it": "Il tuo account è stato creato. Abbiamo inviato una conferma a "
+      },
+      {
+        "en": ". Go to Electros, AtomOS, or LaunchPad.",
+        "it": ". Vai su Electros, AtomOS o LaunchPad."
+      },
+      {
+        "en": "Buy Electros seats",
+        "it": "Acquista posti Electros"
+      },
+      {
+        "en": "Open LaunchPad",
+        "it": "Apri LaunchPad"
+      },
+      {
+        "en": "Download Electros",
+        "it": "Scarica Electros"
+      },
+      {
+        "en": "Explore AtomOS",
+        "it": "Scopri AtomOS"
+      },
+      {
+        "en": "Go to LaunchPad",
+        "it": "Vai a LaunchPad"
+      },
+      {
         "en": "Your account has been successfully created. You're now ready to start building your cloud infrastructure with the Electros orchestration dashboard.",
         "it": "Il tuo account è stato creato con successo. Ora sei pronto per iniziare a costruire la tua infrastruttura cloud con il dashboard di orchestrazione di Electros."
       },
