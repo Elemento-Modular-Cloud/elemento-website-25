@@ -66,10 +66,15 @@ const TR = {
   'Resend code': { it: 'Invia di nuovo il codice', fr: 'Renvoyer le code' },
   'Verify email': { it: 'Verifica email', fr: 'Vérifier l’e-mail' },
   Invoice: { it: 'Fattura', fr: 'Facture' },
+  'Sign-in': { it: 'Accesso', fr: 'Connexion' },
+  'Verify email': { it: 'Verifica email', fr: 'Vérifier l’e-mail' },
+  'Invoice details': { it: 'Dati fattura', fr: 'Facturation' },
+  'Select org': { it: 'Scegli org', fr: 'Choisir l’org' },
+  Checkout: { it: 'Checkout', fr: 'Paiement' },
   Organisation: { it: 'Organizzazione', fr: 'Organisation' },
-  'These invoicing details are required before you choose an organisation.': {
-    it: 'Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione.',
-    fr: 'Ces coordonnées de facturation sont obligatoires avant de choisir une organisation.',
+  'Your email is verified. Add invoicing details before you choose an organisation.': {
+    it: 'La tua email è verificata. Aggiungi i dati di fatturazione prima di scegliere un’organizzazione.',
+    fr: 'Votre e-mail est vérifié. Ajoutez les coordonnées de facturation avant de choisir une organisation.',
   },
   'Buy an Electros seat': { it: 'Acquista un seat Electros', fr: 'Acheter un siège Electros' },
   'Sign in': { it: 'Accedi', fr: 'Connexion' },

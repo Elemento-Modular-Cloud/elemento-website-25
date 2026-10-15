@@ -9646,8 +9646,8 @@
         "fr": "Vous avez déjà un siège payant dans cette organisation !"
       },
       {
-        "en": "These invoicing details are required before you choose an organisation.",
-        "fr": "Ces coordonnées de facturation sont obligatoires avant de choisir une organisation."
+        "en": "Your email is verified. Add invoicing details before you choose an organisation.",
+        "fr": "Votre e-mail est vérifié. Ajoutez les coordonnées de facturation avant de choisir une organisation."
       },
       {
         "en": "Use your Elemento account email and password.",
@@ -9688,6 +9688,26 @@
       {
         "en": "Resend code",
         "fr": "Renvoyer le code"
+      },
+      {
+        "en": "Invoice details",
+        "fr": "Facturation"
+      },
+      {
+        "en": "Verify email",
+        "fr": "Vérifier l’e-mail"
+      },
+      {
+        "en": "Select org",
+        "fr": "Choisir l’org"
+      },
+      {
+        "en": "Checkout",
+        "fr": "Paiement"
+      },
+      {
+        "en": "Sign-in",
+        "fr": "Connexion"
       },
       {
         "en": "Invoice",

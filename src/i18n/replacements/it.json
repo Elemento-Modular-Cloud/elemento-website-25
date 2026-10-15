@@ -9836,8 +9836,8 @@
         "it": "Hai già un seat a pagamento in questa organizzazione!"
       },
       {
-        "en": "These invoicing details are required before you choose an organisation.",
-        "it": "Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione."
+        "en": "Your email is verified. Add invoicing details before you choose an organisation.",
+        "it": "La tua email è verificata. Aggiungi i dati di fatturazione prima di scegliere un’organizzazione."
       },
       {
         "en": "Use your Elemento account email and password.",
@@ -9882,6 +9882,26 @@
       {
         "en": "Organisation",
         "it": "Organizzazione"
+      },
+      {
+        "en": "Invoice details",
+        "it": "Dati fattura"
+      },
+      {
+        "en": "Verify email",
+        "it": "Verifica email"
+      },
+      {
+        "en": "Select org",
+        "it": "Scegli org"
+      },
+      {
+        "en": "Checkout",
+        "it": "Checkout"
+      },
+      {
+        "en": "Sign-in",
+        "it": "Accesso"
       },
       {
         "en": "Invoice",

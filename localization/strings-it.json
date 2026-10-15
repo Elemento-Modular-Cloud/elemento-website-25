@@ -25027,8 +25027,8 @@
     },
     {
       "id": "body.buy-seat.p.9",
-      "en": "These invoicing details are required before you choose an organisation.",
-      "it": "Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione.",
+      "en": "Your email is verified. Add invoicing details before you choose an organisation.",
+      "it": "La tua email è verificata. Aggiungi i dati di fatturazione prima di scegliere un’organizzazione.",
       "fr": "",
       "source": "buy-seat.html",
       "context": "<p>"

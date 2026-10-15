@@ -332,9 +332,9 @@
     },
     {
       "id": "body.buy-seat.p.9",
-      "en": "These invoicing details are required before you choose an organisation.",
-      "it": "Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione.",
-      "fr": "Ces coordonnées de facturation sont obligatoires avant de choisir une organisation.",
+      "en": "Your email is verified. Add invoicing details before you choose an organisation.",
+      "it": "La tua email è verificata. Aggiungi i dati di fatturazione prima di scegliere un’organizzazione.",
+      "fr": "Votre e-mail est vérifié. Ajoutez les coordonnées de facturation avant de choisir une organisation.",
       "source": "buy-seat.html",
       "context": "<p>"
     },

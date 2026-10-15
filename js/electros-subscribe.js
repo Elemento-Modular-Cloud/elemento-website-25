@@ -23,7 +23,7 @@
       seatReady: 'Seat ready',
       seatReadyLead:
         'No payment needed — your seat was granted (trial or already covered). You can open Electros and sign in.',
-      addBilling: 'Add invoicing details to continue.',
+      addBilling: 'Your email is verified. Add invoicing details to continue.',
       incompleteBilling:
         'Billing details for this organisation are incomplete. Fill them in below, then continue.',
       billingRequired: 'Address, ZIP, city, province, and country are required.',
@@ -76,7 +76,7 @@
       seatReady: 'Seat pronto',
       seatReadyLead:
         'Nessun pagamento necessario — il seat è stato assegnato (prova o già coperto). Puoi aprire Electros e accedere.',
-      addBilling: 'Aggiungi i dati di fatturazione per continuare.',
+      addBilling: 'La tua email è verificata. Aggiungi i dati di fatturazione per continuare.',
       incompleteBilling:
         'I dati di fatturazione di questa organizzazione sono incompleti. Compilali qui sotto, poi continua.',
       billingRequired: 'Indirizzo, CAP, città, provincia e paese sono obbligatori.',
@@ -129,7 +129,7 @@
       seatReady: 'Siège prêt',
       seatReadyLead:
         'Aucun paiement nécessaire — le siège a été attribué (essai ou déjà couvert). Vous pouvez ouvrir Electros et vous connecter.',
-      addBilling: 'Ajoutez les coordonnées de facturation pour continuer.',
+      addBilling: 'Votre e-mail est vérifié. Ajoutez les coordonnées de facturation pour continuer.',
       incompleteBilling:
         'Les coordonnées de facturation de cette organisation sont incomplètes. Complétez-les ci-dessous, puis continuez.',
       billingRequired: 'Adresse, code postal, ville, province et pays sont obligatoires.',
@@ -214,6 +214,7 @@
     orgId: null,
     orgName: null,
     hasBillingDetails: false,
+    detailsRowExists: false,
     pendingTier: null,
     pendingFrequency: null,
   };
@@ -333,10 +334,15 @@
     errorEl.textContent = message || '';
     errorEl.hidden = !message;
     errorEl.classList.toggle('subscribe-alert--success', Boolean(message) && tone === 'success');
+    errorEl.classList.toggle('subscribe-alert--info', Boolean(message) && tone === 'info');
   }
 
   function showError(message) {
     showAlert(message, 'error');
+  }
+
+  function showInfo(message) {
+    showAlert(message, 'info');
   }
 
   function showSuccess(message) {
@@ -550,16 +556,56 @@
     });
   }
 
+  function userFacingError(err, fallback) {
+    const raw = (err && err.message) || '';
+    if (!raw || detailsRowUnreadable(err) || raw.includes('Input should be') || raw.includes('pydantic.dev') || raw.length > 240) {
+      return fallback;
+    }
+    return raw;
+  }
+  function detailsRowUnreadable(err) {
+    const raw = ((err && err.message) || '').toLowerCase();
+    return raw.includes('accountdetailsresponse') || (raw.includes('validation error') && raw.includes('full_address'));
+  }
+
   async function refreshBillingDetails() {
     try {
       const details = await portalFetch('/account/details');
+      state.detailsRowExists = true;
       state.hasBillingDetails = billingDetailsComplete(details);
       fillBillingForm(details);
       return details;
     } catch (err) {
       state.hasBillingDetails = false;
-      if (err.status !== 404) throw err;
-      return null;
+      if (err.status === 404) {
+        state.detailsRowExists = false;
+        return null;
+      }
+      if (detailsRowUnreadable(err)) {
+        state.detailsRowExists = true;
+        return null;
+      }
+      throw err;
+    }
+  }
+
+  async function saveBillingDetails(payload) {
+    if (state.hasBillingDetails || state.detailsRowExists) {
+      await portalFetch('/account/details', { method: 'PATCH', body: payload });
+      state.detailsRowExists = true;
+      return;
+    }
+    try {
+      await portalFetch('/account/details', { method: 'POST', body: payload });
+      state.detailsRowExists = true;
+    } catch (err) {
+      // The row is already there, including the case where its address fields are null.
+      if (err.status === 409 || err.status === 400 || err.status === 422 || detailsRowUnreadable(err)) {
+        await portalFetch('/account/details', { method: 'PATCH', body: payload });
+        state.detailsRowExists = true;
+        return;
+      }
+      throw err;
     }
   }
 
@@ -570,7 +616,7 @@
     if (back) back.setAttribute('data-subscribe-back', fromCheckout ? 'plan' : 'login');
     if (submit) submit.textContent = fromCheckout ? t('saveContinueStripe') : t('saveContinue');
     showStep('billing');
-    if (message) showError(message);
+    if (message) showInfo(message);
   }
 
   function emailVerifiedFromToken() {
@@ -588,6 +634,7 @@
     state.orgId = null;
     state.orgName = null;
     state.hasBillingDetails = false;
+    state.detailsRowExists = false;
     state.pendingTier = null;
     state.pendingFrequency = null;
   }
@@ -672,7 +719,12 @@
       await refreshBillingDetails();
     } catch (err) {
       state.hasBillingDetails = false;
-      askForBillingDetails(err.message || t('billingSaveFailed'));
+      if (detailsRowUnreadable(err)) state.detailsRowExists = true;
+      if (err.status === 401) {
+        showError(t('refreshFailed'));
+        return;
+      }
+      askForBillingDetails(t('addBilling'));
       return;
     }
     if (!state.hasBillingDetails) {
@@ -974,20 +1026,7 @@
       submitBtn.textContent = t('saving');
       try {
         // Keys fiscal_code / vat_code must be present even when null (portal contract).
-        if (state.hasBillingDetails) {
-          await portalFetch('/account/details', { method: 'PATCH', body: payload });
-        } else {
-          try {
-            await portalFetch('/account/details', { method: 'POST', body: payload });
-          } catch (err) {
-            // Already created elsewhere — update instead.
-            if (err.status === 409 || err.status === 400 || err.status === 422) {
-              await portalFetch('/account/details', { method: 'PATCH', body: payload });
-            } else {
-              throw err;
-            }
-          }
-        }
+        await saveBillingDetails(payload);
         const saved = await refreshBillingDetails();
         if (!billingDetailsComplete(saved)) {
           state.hasBillingDetails = false;
@@ -1017,7 +1056,7 @@
         }
         if (result === 'already-paid' || result === 'redirected') return;
       } catch (err) {
-        showError(err.message || t('billingSaveFailed'));
+        showError(userFacingError(err, t('billingSaveFailed')));
       } finally {
         if (submitBtn.textContent !== t('seatReady')) {
           submitBtn.disabled = false;
