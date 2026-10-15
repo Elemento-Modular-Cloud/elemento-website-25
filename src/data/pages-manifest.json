@@ -1410,7 +1410,7 @@
     "group": "root",
     "slug": "electros",
     "title": "Electros App — Orchestration Dashboard | Elemento Cloud",
-    "description": "Electros is Elemento Cloud's orchestration dashboard for managing VMs, storage, and networks across public clouds and on-prem infrastructure.",
+    "description": "Electros is Elemento Cloud's desktop dashboard for AtomOS, VMware ESXi, Proxmox, and Meson targets. Start with a 14-day trial — one seat per organisation.",
     "robots": "index, follow",
     "ogType": "product",
     "extraCss": [
@@ -1421,8 +1421,7 @@
     ],
     "extraScripts": [
       "js/faq.js",
-      "js/atmosphere_hero_with_logo.js",
-      "js/provider-integrations.js"
+      "js/atmosphere_hero_with_logo.js"
     ],
     "type": "legacy",
     "locales": [

@@ -347,8 +347,8 @@
       "title": "Editor dei post del blog - Elemento"
     },
     "electros": {
-      "description": "Electros è il dashboard di orchestrazione e la CLI di Elemento Cloud per la gestione di VM, storage e reti su cloud pubblici e infrastrutture on-premise.",
-      "title": "App Electros: dashboard di orchestrazione e CLI | Elemento Cloud"
+      "description": "Electros è la dashboard desktop di Elemento Cloud per target AtomOS, VMware ESXi, Proxmox e Meson. Inizia con una prova di 14 giorni — un seat per organizzazione.",
+      "title": "App Electros — Dashboard di orchestrazione | Elemento Cloud"
     },
     "getintouch": {
       "title": "Mettiti in contatto con Elemento"

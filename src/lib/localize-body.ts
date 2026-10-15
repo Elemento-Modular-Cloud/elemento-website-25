@@ -467,16 +467,20 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
         "Piattaforme<br><small>App native per Linux, macOS e Windows</small>",
       ],
       [
-        'Cloud & hybrid targets<br><small>AWS, Azure, Google Cloud, and on-prem infrastructure</small>',
-        "Target cloud e ibridi<br><small>AWS, Azure, Google Cloud e all'infrastruttura on-premise</small>",
+        'Target types<br><small>AtomOS, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson</small>',
+        'Tipi di target<br><small>AtomOS, VMware ESXi 6 o 7, Proxmox VE 7 o 8 e account Meson pubblici o privati</small>',
       ],
       [
-        'Ship-ready builds<br><small>AppImage, DMG, EXE, and DEB—x64 and ARM64 where supported</small>',
-        'Build pronte<br><small>AppImage, DMG, EXE e DEB—x64 e ARM64 dove supportato</small>',
+        'Desktop app<br><small>One interface for the AtomOS, hypervisor, and Meson targets you register</small>',
+        "App desktop<br><small>Un'interfaccia per i target AtomOS, hypervisor e Meson che registri</small>",
       ],
       [
-        /Electros:<br>\s*<span class="pixel-accent">Any-Cloud<\/span>\s*Control Center/gi,
-        'Electros:<br><span class="pixel-accent">La dashboard</span> Centro di controllo di ogni Cloud',
+        'Installers<br><small>9 installers across Linux, macOS and Windows</small>',
+        'Installer<br><small>9 installer per Linux, macOS e Windows</small>',
+      ],
+      [
+        /Electros:<br>\s*<span class="pixel-accent">Fleet<\/span>\s*Control Center/gi,
+        'Electros:<br><span class="pixel-accent">Flotta</span> Centro di controllo',
       ],
     ],
     'signup-success': [
@@ -566,6 +570,22 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
       [
         'Platforms to run<br><small>Native apps for Linux, macOS, and Windows</small>',
         'Plateformes<br><small>Apps natives pour Linux, macOS et Windows</small>',
+      ],
+      [
+        'Target types<br><small>AtomOS, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson</small>',
+        'Types de cibles<br><small>AtomOS, VMware ESXi 6 ou 7, Proxmox VE 7 ou 8, et comptes Meson publics ou privés</small>',
+      ],
+      [
+        'Desktop app<br><small>One interface for the AtomOS, hypervisor, and Meson targets you register</small>',
+        'Application desktop<br><small>Une interface pour les cibles AtomOS, hyperviseurs et Meson que vous enregistrez</small>',
+      ],
+      [
+        'Installers<br><small>9 installers across Linux, macOS and Windows</small>',
+        'Installateurs<br><small>9 installateurs pour Linux, macOS et Windows</small>',
+      ],
+      [
+        /Electros:<br>\s*<span class="pixel-accent">Fleet<\/span>\s*Control Center/gi,
+        'Electros:<br><span class="pixel-accent">Flotte</span> Centre de contrôle',
       ],
     ],
     'signup-success': [

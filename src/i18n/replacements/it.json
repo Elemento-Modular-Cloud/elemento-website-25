@@ -5438,188 +5438,264 @@
         "it": "Ci destreggiavamo tra una dozzina di console. Con Electros, sembra una finestra su milioni di macchine in tutto il mondo, sia che abbiamo bisogno di un potente host CPU, di uno massivo stack di GPU per l'intelligenza artificiale o di qualcosa di intermedio. Quando abbiamo bisogno di qualcosa di più unico on-prem, utilizziamo comunque la stessa interfaccia. Questa coerenza è ciò che ci ha convinti ad adottare Electros."
       },
       {
-        "en": "Electros provides intelligent remote access that automatically selects the optimal protocol based on your VM's operating system and configuration. Whether you're connecting to Linux servers, Windows workstations, or specialized appliances, Electros ensures you get the best possible remote experience.",
-        "it": "Electros fornisce un accesso remoto intelligente che seleziona automaticamente il protocollo ottimale in base al sistema operativo e alla configurazione della tua VM. Che tu ti connetta a server Linux, workstation Windows o dispositivi specializzati, Electros ti garantisce la migliore esperienza remota possibile."
+        "en": "Open an embedded VNC console for long-lived virtual machines. For public-cloud Spot VMs, the Electros desktop app can open an SSH terminal to a reachable instance. SSH Terminal requires a running Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open the desktop SSH window.",
+        "it": "Apri una console VNC integrata per macchine virtuali di lunga durata. Per le VM Spot su cloud pubblico, l'app desktop Electros può aprire un terminale SSH su un'istanza raggiungibile. Il terminale SSH richiede una VM Spot in esecuzione con un indirizzo IPv4 pubblico raggiungibile e la porta TCP 22. Le build del browser non possono aprire la finestra SSH del desktop."
       },
       {
-        "en": "Electros combines a desktop app with elemento-cli, backed by core services for hybrid and multicloud work. It automatically selects the appropriate protocol based on the guest OS—SSH for Linux, RDP/VNC for Windows—and keeps operations coherent across environments.",
-        "it": "Electros combina un'app desktop con elemento-cli, supportata da servizi core per il lavoro ibrido e multicloud. Seleziona automaticamente il protocollo appropriato in base al sistema operativo guest (SSH per Linux, RDP/VNC per Windows) e mantiene le operazioni coerenti tra gli ambienti."
+        "en": "Native desktop apps for Linux, macOS, and Windows. v3.3.0 publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.",
+        "it": "App desktop native per Linux, macOS e Windows. v3.3.0 pubblica nove installer: AppImage Linux x64 e ARM64, DEB Debian/Ubuntu x64 e ARM64, RPM Linux x64 e ARM64, DMG macOS Intel x64 e Apple Silicon ARM64, ed EXE Windows x64."
       },
       {
-        "en": "Electros is Elemento Cloud's orchestration dashboard—available as a native desktop app (Linux, macOS, Windows) and CLI. It provides cohesive visibility, provisioning, and remote access for workloads across any integrated infrastructure.",
-        "it": "Electros è il dashboard di orchestrazione di Elemento Cloud, disponibile come app desktop nativa (Linux, macOS, Windows) e CLI. Fornisce visibilità, provisioning e accesso remoto coerenti per i carichi di lavoro su qualsiasi infrastruttura integrata."
+        "en": "See workload counts, compute capacity, VM states, storage, networking, PaaS/SaaS health and target reachability in one operational view. The dashboard provides status and shortcuts; editing remains on the relevant resource page.",
+        "it": "Visualizza i conteggi del carico di lavoro, la capacità di elaborazione, gli stati delle VM, lo storage, il networking, lo stato PaaS/SaaS e la raggiungibilità del target in un'unica vista operativa. La dashboard fornisce lo stato e le scorciatoie; la modifica rimane nella pagina delle risorse pertinente."
       },
       {
-        "en": "We used to juggle a dozen consoles. With Electros , it feels like one window onto millions of machines worldwide—whether we need a beefy CPU host , a GPU-heavy stack for AI, or something in between.",
-        "it": "Ci destreggiavamo tra una dozzina di console. Con Electros, sembra una finestra su milioni di macchine in tutto il mondo, sia che abbiamo bisogno di un potente host CPU, di uno massivo stack di GPU per l'intelligenza artificiale o di qualcosa di intermedio."
+        "en": "Electros is Elemento Cloud's orchestration dashboard—available as a native desktop app for Linux, macOS, and Windows. It provides visibility, provisioning, and remote access for workloads on the targets you register.",
+        "it": "Electros è la dashboard di orchestrazione di Elemento Cloud, disponibile come app desktop nativa per Linux, macOS e Windows. Fornisce visibilità, provisioning e accesso remoto per i carichi di lavoro sulle destinazioni registrate."
       },
       {
-        "en": "Orchestrate, monitor, and automate hybrid & multi-cloud environments from a single, unified interface—covering VMs, storage, and networking across public clouds and on-premises.",
-        "it": "Orchestra, monitora e automatizza ambienti ibridi e multi-cloud da un'unica interfaccia unificata, che copre VM, storage e rete su cloud pubblici e on-premise."
+        "en": "If you do not have an Elemento account yet, create one first — you get an organisation and a 14-day free trial. If you already have an account, open Buy a seat to purchase for an organisation via Stripe.",
+        "it": "Se non hai ancora un account Elemento, creane uno prima: ottieni un'organizzazione e una prova gratuita di 14 giorni. Se hai già un account, apri Acquista un posto per acquistare per un'organizzazione tramite Stripe."
       },
       {
-        "en": "Desktop and CLI build on the same foundations for VMs, storage, and networking. Today some flows are richer in one surface than the other; alignment improves with each release.",
-        "it": "Desktop e CLI si basano sulle stesse fondamenta per VM, lo storage e la rete. Oggi alcuni flussi sono più completi in alcuni di questi; l'allineamento migliora con ogni nuova versione che rilasciamo."
+        "en": "Electros is a desktop app backed by core services for the targets you register. Atomosphere connects public and private Meson accounts so Electros can provision and operate workloads on those accounts.",
+        "it": "Electros è un'app desktop supportata da servizi di base per i target registrati. Atomosphere collega account Meson pubblici e privati in modo che Electros possa eseguire il provisioning e gestire i carichi di lavoro su tali account."
       },
       {
-        "en": "Whether you're managing VMs on AWS , Azure , Google Cloud , or your own on-premise infrastructure , Electros gives you a unified interface for complete control.",
-        "it": "Che tu gestisca VM su AWS, Azure, Google Cloud o sulla tua infrastruttura on-premise, Electros ti offre un'interfaccia unificata per il controllo completo."
+        "en": "New accounts get a 14-day free trial once. After that, each organisation needs an Electros seat subscription — one seat per organisation. Sign in above to buy a seat; checkout opens in Stripe.",
+        "it": "I nuovi account ottengono una prova gratuita di 14 giorni una volta. Dopodiché, ogni organizzazione ha bisogno di un abbonamento Electros — un posto per organizzazione. Accedi qui sopra per acquistare un posto; il check-out si apre in Stripe."
       },
       {
-        "en": "Yes. Both use the same core services, but coverage differs—some tasks are desktop-first or CLI-first today. Check release notes for what each surface supports.",
-        "it": "SÌ. Entrambi utilizzano gli stessi servizi principali, ma la copertura è diversa: oggi alcune attività sono desktop-first o CLI-first. Controlla le note sulla versione per ciò che supporta ciascuna modalità."
+        "en": "Register AtomOS, hypervisor and Meson targets; group them into reusable scenarios; enable the targets needed for the current working session; and manage organisation-level usage permissions.",
+        "it": "Registra i target AtomOS, hypervisor e Meson; raggruppali in scenari riutilizzabili; abilita i target necessari per la sessione di lavoro corrente; e gestisci le autorizzazioni di utilizzo a livello di organizzazione."
       },
       {
-        "en": "When we need something more exotic on-prem , we still reach for the same interface . That consistency is what sold us.",
-        "it": "Quando abbiamo bisogno di qualcosa di più unico on-prem, utilizziamo comunque la stessa interfaccia. Questa coerenza è ciò che ci ha convinti ad adottare Electros."
+        "en": "Atomosphere connects the public and private Meson accounts you register. Private Meson guides are currently available for AWS , Azure , Google Cloud , OVHcloud , UpCloud and Scaleway .",
+        "it": "Atomosphere collega gli account Meson pubblici e privati che registri. Le guide private di Meson sono attualmente disponibili per AWS , Azure , Google Cloud , OVHcloud , UpCloud e Scaleway ."
       },
       {
-        "en": "Deploy VMs across public clouds and private nodes seamlessly, balancing cost, performance, and compliance.",
-        "it": "Distribuisci le VM su cloud pubblici e nodi privati ​​senza interruzioni, bilanciando costi, prestazioni e conformità."
+        "en": "Electros opens an embedded VNC console for long-lived virtual machines. For public-cloud Spot VMs, the desktop app can open an SSH terminal when the instance is running and reachable.",
+        "it": "Electros apre una console VNC integrata per macchine virtuali di lunga durata. Per le macchine virtuali Spot su cloud pubblico, l'app desktop può aprire un terminale SSH quando l'istanza è in esecuzione e raggiungibile."
       },
       {
-        "en": "Automate infrastructure-as-code. Electros CLI powers scripting, CI/CD, and cloud pipeline workflows.",
-        "it": "Automatizza l'infrastruttura come codice. La CLI di Electros potenzia i flussi di lavoro di scripting, CI/CD e pipeline cloud."
+        "en": "SSH Terminal is available in the desktop app and requires a running Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open the desktop SSH window.",
+        "it": "Il terminale SSH è disponibile nell'app desktop e richiede una VM Spot in esecuzione con un indirizzo IPv4 pubblico raggiungibile e la porta TCP 22. Le build del browser non possono aprire la finestra SSH del desktop."
       },
       {
-        "en": "Embed a screenshot or carousel of the app UI showing VM list and remote session capabilities.",
-        "it": "Incorpora uno screenshot o un carosello dell'interfaccia utente dell'app che mostra l'elenco delle VM e le funzionalità della sessione remota."
+        "en": "Electros caches selected static resources for a more resilient desktop experience. Managing live resources still requires connectivity to the relevant target and Elemento services.",
+        "it": "Electros memorizza nella cache risorse statiche selezionate per un'esperienza desktop più resiliente. La gestione delle risorse live richiede ancora la connettività al target di riferimento e ai servizi Elemento."
       },
       {
-        "en": "Manage VMs across AWS, Azure, Google Cloud, and on-premise infrastructure from one interface",
-        "it": "Gestisci le VM su AWS, Azure, Google Cloud e infrastruttura on-premise da un'unica interfaccia"
+        "en": "Atomosphere connects the public and private Meson accounts you register. Private Meson guides are currently available for AWS, Azure, Google Cloud, OVHcloud, UpCloud and Scaleway.",
+        "it": "Atomosphere collega gli account Meson pubblici e privati che registri. Le guide private di Meson sono attualmente disponibili per AWS, Azure, Google Cloud, OVHcloud, UpCloud e Scaleway."
       },
       {
-        "en": "[Demo image placeholder - Electros App desktop interface showing VM list and remote session]",
-        "it": "[Segnaposto immagine dimostrativa - Interfaccia desktop dell'app Electros che mostra l'elenco delle VM e la sessione remota]"
+        "en": "Register and govern AtomOS hosts, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson cloud accounts from one interface — connected through Atomosphere.",
+        "it": "Registra e governa gli host AtomOS, VMware ESXi 6 o 7, Proxmox VE 7 o 8 e gli account cloud Meson pubblici o privati da un'unica interfaccia, connessa tramite Atomosphere."
       },
       {
-        "en": "Seamless connectivity across all your virtual machines with intelligent protocol selection",
-        "it": "Connettività perfetta su tutte le tue macchine virtuali con la selezione intelligente del protocollo"
+        "en": "On the Buy a seat page, sign in, choose an organisation and plan, then Stripe opens in your browser. Subscribe during the trial so you do not lose access when it ends.",
+        "it": "Nella pagina Acquista un posto, accedi, scegli un'organizzazione e pianifica, quindi Stripe si apre nel tuo browser. Iscriviti durante la prova in modo da non perdere l'accesso quando termina."
       },
       {
-        "en": "Yes, Electros is free with your Elemento account. No additional licensing fees required.",
-        "it": "Sì, Electros è gratuito con il tuo account Elemento. Non sono richiesti costi di licenza aggiuntivi."
+        "en": "Register to create your Elemento account and personal organisation. You get a 14-day Electros trial (once per account). After that, come back here to buy a seat.",
+        "it": "Registrati per creare il tuo account Elemento e la tua organizzazione personale. Ottieni una prova Electros di 14 giorni (una volta per account). Dopodiché, torna qui per comprare un posto."
       },
       {
-        "en": "Yes, basic inventory and local VM management work without network, syncing when online.",
-        "it": "Sì, l'inventario di base e la gestione delle VM locali funzionano senza rete e si sincronizzano quando sono online."
+        "en": "Create and operate virtual machines from the Electros dashboard after a target is enabled. Registering a target does not power it on or provision a workload.",
+        "it": "Crea e gestisci macchine virtuali dalla dashboard Electros dopo aver abilitato un target. La registrazione di una destinazione non la accende né esegue il provisioning di un carico di lavoro."
       },
       {
-        "en": "GUI and CLI gain overlapping workflows over time—not every action exists in both yet",
-        "it": "La GUI e la CLI ottengono flussi di lavoro sovrapposti nel tempo: non tutte le azioni esistono ancora in entrambe"
+        "en": "Register VMware ESXi 6 or 7, Proxmox VE 7 or 8, and AtomOS hosts alongside Meson accounts. Versions shown here match the current connections guide.",
+        "it": "Registrare gli host VMware ESXi 6 o 7, Proxmox VE 7 o 8 e AtomOS insieme agli account Meson. Le versioni mostrate qui corrispondono alla guida alle connessioni correnti."
       },
       {
-        "en": "Shared core services underpin the desktop app and CLI (coverage still expanding)",
-        "it": "I servizi principali condivisi sono alla base dell'app desktop e della CLI (copertura ancora in espansione)"
+        "en": "During or after the trial, open Buy a seat, pick an organisation and plan, then complete Stripe checkout. One seat is valid in one organisation.",
+        "it": "Durante o dopo la prova, apri Acquista un posto, scegli un'organizzazione e pianifica, quindi completa il checkout di Stripe. Un posto è valido in una sola organizzazione."
       },
       {
-        "en": "Cloud & hybrid targets AWS, Azure, Google Cloud, and on-prem infrastructure",
-        "it": "Il cloud e l'ibrido sono destinati ad AWS, Azure, Google Cloud e all'infrastruttura on-premise"
+        "en": "Known issue in v3.3.0: creating a VM can succeed while form restoration shows a failure notification. The virtual machine is still created.",
+        "it": "Problema noto nella v3.3.0: la creazione di una VM può avere successo mentre il ripristino del modulo mostra una notifica di errore. La macchina virtuale è ancora creata."
       },
       {
-        "en": "Ship-ready builds AppImage, DMG, EXE, and DEB—x64 and ARM64 where supported",
-        "it": "Build pronte AppImage, DMG, EXE e DEB—x64 e ARM64 dove supportato"
+        "en": "The consolidated VM edit form is not complete in v3.3.0. Use the available row and attached-resource actions for supported live changes.",
+        "it": "Il modulo unico di modifica della VM non è completo in v3.3.0. Per le modifiche supportate usa le azioni di riga e delle risorse collegate."
       },
       {
-        "en": "Auto-select SSH, RDP, or VNC protocols based on your VM's operating system",
-        "it": "Seleziona automaticamente i protocolli SSH, RDP o VNC in base al sistema operativo della tua VM"
+        "en": "Once per Elemento account. When you sign up, we create your organisation with one Electros seat so you can start immediately.",
+        "it": "Una volta per account Elemento. Quando ti iscrivi, creiamo la tua organizzazione con una sede Electros in modo che tu possa iniziare immediatamente."
       },
       {
-        "en": "SSH (Linux/BSD), RDP/VNC (Windows/Linux GUI). 4K streaming is coming soon.",
-        "it": "SSH (Linux/BSD), RDP/VNC (GUI Windows/Linux). Lo streaming 4K sarà presto disponibile."
+        "en": "Running public-cloud Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open this window.",
+        "it": "Esecuzione di una VM Spot nel cloud pubblico con un indirizzo IPv4 pubblico raggiungibile e la porta TCP 22. Le build del browser non possono aprire questa finestra."
       },
       {
-        "en": "Native applications for your operating system with full GUI capabilities.",
-        "it": "Applicazioni native per il tuo sistema operativo con funzionalità GUI complete."
+        "en": "New accounts get a 14-day free trial once. Each organisation includes one Electros seat — buy a seat after you sign in.",
+        "it": "I nuovi account ottengono una prova gratuita di 14 giorni una volta. Ogni organizzazione include un posto Electros: acquista un posto dopo aver effettuato l'accesso."
+      },
+      {
+        "en": "Register and govern AtomOS hosts, VMware ESXi, Proxmox, and public or private Meson cloud accounts from one interface.",
+        "it": "Registra e governa gli host AtomOS, VMware ESXi, Proxmox e gli account cloud Meson pubblici o privati da un'unica interfaccia."
+      },
+      {
+        "en": "Sign in with email and password, pick the organisation that should hold the seat, choose a plan, then pay in Stripe.",
+        "it": "Accedi con e-mail e password, scegli l'organizzazione che dovrebbe occupare il posto, scegli un piano, quindi paga in Stripe."
+      },
+      {
+        "en": "Compare eligible deployment targets using provider, region, sizing, availability and sustainability information.",
+        "it": "Confronta gli obiettivi di distribuzione idonei utilizzando informazioni su provider, regione, dimensioni, disponibilità e sostenibilità."
+      },
+      {
+        "en": "The networking guide lists Bridge and marks that type disabled. v3.3.0 does not offer bridged-network creation.",
+        "it": "La guida di rete elenca il bridge e contrassegna il tipo disabilitato. v3.3.0 non offre la creazione di reti a ponte."
+      },
+      {
+        "en": "Registration records a target. Enabling it for a session is a separate step and does not provision a workload.",
+        "it": "La registrazione registra un obiettivo. L'abilitazione per una sessione è un passaggio separato e non fornisce un carico di lavoro."
+      },
+      {
+        "en": "Desktop SSH terminal for a running public-cloud Spot VM with a reachable public IPv4 address and TCP port 22.",
+        "it": "Terminale SSH desktop per una VM Spot su cloud pubblico in esecuzione con un indirizzo IPv4 pubblico raggiungibile e porta TCP 22."
+      },
+      {
+        "en": "Current desktop release: v3.3.0 — 6 October 2026. Review the release notes and known issues before deploying.",
+        "it": "Release desktop attuale: v3.3.0 — 6 ottobre 2026. Leggi le note di rilascio e i problemi noti prima di distribuire."
+      },
+      {
+        "en": "Electros ⇄ Atomosphere ⇄ the AtomOS hosts, ESXi and Proxmox hypervisors, and Meson accounts you register.",
+        "it": "Electros ⇄ Atomosphere ⇄ gli host AtomOS, gli hypervisor ESXi e Proxmox e gli account Meson registrati."
+      },
+      {
+        "en": "No account yet? Register first. Already have one? Open Buy a seat to purchase for an organisation.",
+        "it": "Non hai ancora un account? Registrati prima. Ne hai già uno? Apri Acquista un posto per acquistare per un'organizzazione."
+      },
+      {
+        "en": "Host selection using provider, region, sizing, availability, and sustainability information",
+        "it": "Selezione dell'host utilizzando informazioni su provider, regione, dimensioni, disponibilità e sostenibilità"
+      },
+      {
+        "en": "Embedded graphical console for long-lived virtual machines. The guest must be running.",
+        "it": "Console grafica integrata per macchine virtuali di lunga durata. L'ospite deve essere in esecuzione."
+      },
+      {
+        "en": "Embedded VNC for long-lived virtual machines, and desktop SSH for reachable Spot VMs",
+        "it": "VNC integrato per macchine virtuali di lunga durata e SSH desktop per macchine virtuali Spot raggiungibili"
+      },
+      {
+        "en": "Volume edit, grow or resize, conversion, and deletion when the host supports them",
+        "it": "Modifica, ingrandimento o ridimensionamento del volume, conversione ed eliminazione quando l'host li supporta"
+      },
+      {
+        "en": "Advanced HA, EFI, Intel TDX, CPU flags, architecture, ECC, VLAN, and PCI options",
+        "it": "Opzioni avanzate HA, EFI, Intel TDX, flag CPU, architettura, ecc, VLAN e PCI"
+      },
+      {
+        "en": "Target types are separate from the private-cloud providers with a current guide",
+        "it": "I tipi di destinazione sono separati dai provider di cloud privato con una guida corrente"
+      },
+      {
+        "en": "Create an account for the trial, or sign in to buy a seat for an organisation",
+        "it": "Crea un account per la prova o accedi per acquistare un posto per un'organizzazione"
+      },
+      {
+        "en": "Register AtomOS, hypervisor, and Meson targets without powering on a host",
+        "it": "Registra obiettivi AtomOS, hypervisor e Meson senza accendere un host"
       },
       {
         "en": "Experience the unified interface for managing your cloud infrastructure",
         "it": "Sperimenta l'interfaccia unificata per la gestione della tua infrastruttura cloud"
       },
       {
-        "en": "Connect via SSH, VNC, or RDP with a single click from the desktop app.",
-        "it": "Connettiti tramite SSH, VNC o RDP con un solo clic dall'app desktop."
+        "en": "Embedded VNC for long-lived VMs, and desktop SSH for reachable Spot VMs",
+        "it": "VNC integrato per VMS di lunga durata e SSH desktop per VMS Spot raggiungibili"
       },
       {
-        "en": "Use elemento-cli for scripting and pipelines alongside the desktop app",
-        "it": "Utilizza elemento-cli per script e pipeline insieme all'app desktop"
-      },
-      {
-        "en": "Stack integrations AtomOS and Atomosphere for provisioning and control",
-        "it": "Integrazioni stack AtomOS e Atomosphere per il provisioning e il controllo"
+        "en": "Installers in v3.3.0, and the remote-access scope those builds support",
+        "it": "Installatori in v3.3.0 e l'ambito di accesso remoto che supportano le build"
       },
       {
         "en": "Powerful capabilities for managing hybrid and multicloud environments",
         "it": "Potenti funzionalità per la gestione di ambienti ibridi e multicloud"
       },
       {
-        "en": "Comprehensive support across operating systems and access protocols",
-        "it": "Supporto completo per tutti i sistemi operativi e protocolli di accesso"
+        "en": "Group targets into scenarios and enable them for the current session",
+        "it": "Raggruppa gli obiettivi in scenari e abilitali per la sessione corrente"
       },
       {
-        "en": "Experience the power of Electros for unified multicloud management",
-        "it": "Scopri la potenza di Electros per la gestione multicloud unificata"
-      },
-      {
-        "en": "Shared core services; not every workflow is available in both yet",
-        "it": "Servizi principali condivisi; non tutti i flussi di lavoro sono ancora disponibili in entrambi"
+        "en": "VM, storage, and networking actions on the relevant resource page",
+        "it": "Azioni di VM, storage e networking sulla relativa pagina delle risorse"
       },
       {
         "en": "Ready to manage your hybrid cloud workloads with a single app?",
         "it": "Pronto a gestire i carichi di lavoro del cloud ibrido con un'unica app?"
       },
       {
-        "en": "Virtual Network Computing for cross-platform graphical access",
-        "it": "Virtual Network Computing per l'accesso grafico multipiattaforma"
+        "en": "Graphical console from the VM row. The guest must be running.",
+        "it": "Console grafica dalla riga VM. L'ospite deve essere in esecuzione."
       },
       {
-        "en": "Surfaces to run Linux, macOS, Windows apps, plus elemento-cli",
-        "it": "Modalità per eseguire app Linux, macOS, Windows e elemento-cli"
+        "en": "What the v3.3.0 desktop app can do on an enabled target",
+        "it": "Cosa può fare l'app desktop v3.3.0 su un target abilitato"
       },
       {
-        "en": "Remote Desktop Protocol for Windows and Linux GUI sessions",
-        "it": "Protocollo Desktop remoto per sessioni GUI Windows e Linux"
+        "en": "Local libvirt NAT, isolated, routed, and open networks",
+        "it": "Libvirt NAT locale, reti isolate, instradate e aperte"
       },
       {
-        "en": "Get started with the Electros orchestration dashboard",
-        "it": "Inizia con il dashboard di orchestrazione di Electros"
+        "en": "Atomosphere connectivity for registered Meson accounts",
+        "it": "Connettività dell'atomosfera per gli account Meson registrati"
       },
       {
-        "en": "Secure shell access for Linux, BSD, and Unix systems",
-        "it": "Accesso sicuro alla shell per sistemi Linux, BSD e Unix"
+        "en": "A native Electros app for Linux, macOS, and Windows",
+        "it": "Un'app Electros nativa per Linux, macOS e Windows"
       },
       {
-        "en": "Intelligent protocol detection based on guest OS",
-        "it": "Rilevamento intelligente del protocollo basato sul sistema operativo guest"
+        "en": "The Orchestration Dashboard for registered targets",
+        "it": "La dashboard di orchestrazione per i target registrati"
       },
       {
-        "en": "Automatic protocol selection based on guest OS",
-        "it": "Selezione automatica del protocollo in base al sistema operativo guest"
+        "en": "Basic, advanced, and blueprint-based VM creation",
+        "it": "Creazione di VM di base, avanzate e basate su blueprint"
       },
       {
-        "en": "Real-time cost monitoring for cloud workloads",
-        "it": "Monitoraggio dei costi in tempo reale per i carichi di lavoro cloud"
+        "en": "Virtual machines guide · Spot VM and SSH guide",
+        "it": "Guida alle macchine virtuali · Guida Spot VM e SSH"
       },
       {
         "en": "Common questions about Electros functionality",
         "it": "Domande comuni sulla funzionalità di Electros"
       },
       {
-        "en": "Deep integration with AtomOS and Atomosphere",
-        "it": "Profonda integrazione con AtomOS e Atomosphere"
+        "en": "14-day trial, then one seat per organisation",
+        "it": "14 giorni di prova, poi un posto per organizzazione"
       },
       {
-        "en": "Electros Cross‑Platform & Protocol Support",
-        "it": "Supporto multipiattaforma e protocollo Electros"
+        "en": "Manage organisation-level usage permissions",
+        "it": "Gestisci le autorizzazioni di utilizzo a livello di organizzazione"
       },
       {
-        "en": "The Orchestration Dashboard for any Cloud",
-        "it": "Il dashboard di orchestrazione per tutti i cloud"
+        "en": "Virtual machines, storage, and networking",
+        "it": "Macchine virtuali, storage e networking"
       },
       {
-        "en": "Coming soon: 4K at 60fps remote streaming",
-        "it": "Prossimamente: streaming remoto 4K a 60 fps"
+        "en": "Desktop app for Linux, macOS, and Windows",
+        "it": "App desktop per Linux, macOS e Windows"
+      },
+      {
+        "en": "Which operating systems are supported?",
+        "it": "Quali sistemi operativi sono supportati?"
+      },
+      {
+        "en": "Power, reboot, force-off, and deletion",
+        "it": "Accensione, riavvio, spegnimento forzato ed eliminazione"
+      },
+      {
+        "en": "Attach and detach volumes and networks",
+        "it": "Collegare e scollegare volumi e reti"
+      },
+      {
+        "en": "AtomOS port forwards and port tunnels",
+        "it": "Inoltro delle porte AtomOS e tunnel delle porte"
       },
       {
         "en": "What access protocols are supported?",
@@ -5630,52 +5706,96 @@
         "it": "Come funziona Electros dietro le quinte"
       },
       {
-        "en": "Electros: Any-Cloud Control Center",
-        "it": "Electros: La dashboard Centro di controllo di ogni Cloud"
+        "en": "How Atomosphere connectivity works →",
+        "it": "Come funziona la connettività Atomosphere →"
       },
       {
-        "en": "Hybrid & Multicloud Orchestration",
-        "it": "Orchestrazione ibrida e multicloud"
+        "en": "DHCP pools, reservations, and routes",
+        "it": "Pool, prenotazioni e percorsi DHCP"
       },
       {
-        "en": "Can I mix GUI and CLI workflows?",
-        "it": "Posso combinare flussi di lavoro GUI e CLI?"
+        "en": "Targets and private Meson providers",
+        "it": "Target e provider Meson privati"
       },
       {
-        "en": "Unified Remote Access Protocols",
-        "it": "Protocolli di accesso remoto unificato"
+        "en": "Desktop platforms and remote access",
+        "it": "Piattaforme desktop e accesso remoto"
       },
       {
-        "en": "Free with your Elemento account",
-        "it": "Gratis con il tuo account Elemento"
+        "en": "Targets, scenarios and permissions",
+        "it": "Obiettivi, scenari e autorizzazioni"
       },
       {
-        "en": "Orchestrate. Monitor. Automate.",
-        "it": "Orchestrare. Monitorare. Automatizzare."
+        "en": "Provisioning on an enabled target",
+        "it": "Provisioning su un target abilitato"
       },
       {
-        "en": "Multi- and hybrid-cloud ready",
-        "it": "Predisposizione per multi-cloud e cloud ibrido"
+        "en": "Checksums: combined_checksums.txt",
+        "it": "Checksum: combined_checksums.txt"
+      },
+      {
+        "en": "Cloud-init configuration volumes",
+        "it": "Volumi di configurazione Cloud-init"
+      },
+      {
+        "en": "Clone non-AtomOS VMs to AtomOS",
+        "it": "Clona VM non AtomOS in AtomOS"
+      },
+      {
+        "en": "Connected through Atomosphere",
+        "it": "Connesso tramite Atomosphere"
+      },
+      {
+        "en": "Multi-host Tailscale networks",
+        "it": "Reti Tailscale multi-host"
+      },
+      {
+        "en": "AtomOS migration and backups",
+        "it": "Migrazione e backup AtomOS"
+      },
+      {
+        "en": "Empty qcow2 and raw volumes",
+        "it": "Volumi qcow2 e raw vuoti"
       },
       {
         "en": "Frequently Asked Questions",
         "it": "Domande frequenti"
       },
       {
-        "en": "Electros Desktop Interface",
-        "it": "Interfaccia desktop di Electros"
-      },
-      {
         "en": "Does Electros run offline?",
         "it": "Electros funziona offline?"
       },
       {
-        "en": "Current Protocol Support:",
-        "it": "Supporto del protocollo attuale:"
+        "en": "Get started with Electros",
+        "it": "Inizia con Electros"
+      },
+      {
+        "en": "Registered Meson accounts",
+        "it": "Account Meson registrati"
+      },
+      {
+        "en": "I already have an account",
+        "it": "Ho già un account"
+      },
+      {
+        "en": "Architectures and formats",
+        "it": "Architetture e formati"
+      },
+      {
+        "en": "Desktop operating systems",
+        "it": "Sistemi operativi desktop"
+      },
+      {
+        "en": "Remote access in v3.3.0:",
+        "it": "Accesso remoto in v3.3.0:"
       },
       {
         "en": "Is Electros free to use?",
         "it": "Electros è gratuito?"
+      },
+      {
+        "en": "Subscribe for your seat",
+        "it": "Iscriviti per il tuo posto"
       },
       {
         "en": "Technical Architecture:",
@@ -5686,16 +5806,32 @@
         "it": "Guarda Electros in azione"
       },
       {
-        "en": "Remote Access Built In",
+        "en": "Trial and subscription",
+        "it": "Versione di prova e abbonamento"
+      },
+      {
+        "en": "Remote access built in",
         "it": "Accesso remoto integrato"
       },
       {
-        "en": "4K Streaming (future)",
-        "it": "Streaming 4K (futuro)"
+        "en": "Hypervisors and AtomOS",
+        "it": "Hypervisor e AtomOS"
       },
       {
-        "en": "Download Electros Now",
-        "it": "Scarica subito Electro"
+        "en": "Meson private accounts",
+        "it": "Account privati Meson"
+      },
+      {
+        "en": "Deployment comparison",
+        "it": "Confronto distribuzione"
+      },
+      {
+        "en": "How do I get started?",
+        "it": "Come si inizia?"
+      },
+      {
+        "en": "Meson public accounts",
+        "it": "Account Meson pubblici"
       },
       {
         "en": "Core Usage Scenarios",
@@ -5706,124 +5842,64 @@
         "it": "Architettura unificata"
       },
       {
-        "en": "Automation-ready CLI",
-        "it": "CLI pronta per l'automazione"
-      },
-      {
-        "en": "CLI vs. GUI coverage",
-        "it": "Copertura CLI e GUI"
-      },
-      {
-        "en": "Universal Dashboard",
-        "it": "Dashboard universale"
-      },
-      {
-        "en": "Smart Remote Access",
-        "it": "Accesso remoto intelligente"
-      },
-      {
-        "en": "VM Access Protocols",
-        "it": "Protocolli di accesso alle macchine virtuali"
-      },
-      {
-        "en": "Desktop Installers",
-        "it": "Installatori desktop"
+        "en": "ISO and tool images",
+        "it": "Immagini ISO e strumenti"
       },
       {
         "en": "Download Electros",
         "it": "Scarica Electros"
       },
       {
-        "en": "Download Electros",
-        "it": "Scarica Electros"
+        "en": "I need an account",
+        "it": "Mi serve un account"
       },
       {
-        "en": "Operating System",
-        "it": "Sistema operativo"
+        "en": "Connections guide",
+        "it": "Guida alle connessioni"
+      },
+      {
+        "en": "v3.3.0 installers",
+        "it": "Installer v3.3.0"
+      },
+      {
+        "en": "Seat subscription",
+        "it": "Abbonamento posti"
+      },
+      {
+        "en": "Networking guide",
+        "it": "Guida di rete"
+      },
+      {
+        "en": "Desktop app only",
+        "it": "App Desktop"
+      },
+      {
+        "en": "Fleet dashboard",
+        "it": "Dashboard flotta"
+      },
+      {
+        "en": "Where do I pay?",
+        "it": "Dove pago?"
       },
       {
         "en": "Under the Hood",
         "it": "Sotto il cofano"
       },
       {
-        "en": "Auto-Selection",
-        "it": "Selezione automatica"
+        "en": "Long-lived VMs",
+        "it": "VM di lunga durata"
       },
       {
-        "en": "In Development",
-        "it": "In sviluppo"
+        "en": "Storage guide",
+        "it": "Guida allo storage"
       },
       {
-        "en": "ARM64 AppImage",
-        "it": "Immagine dell'app ARM64"
-      },
-      {
-        "en": "Support Level",
-        "it": "Livello di supporto"
-      },
-      {
-        "en": "ARM64 Package",
-        "it": "Pacchetto ARM64"
-      },
-      {
-        "en": "Full Support",
-        "it": "Supporto completo"
-      },
-      {
-        "en": "Full Support",
-        "it": "Supporto completo"
-      },
-      {
-        "en": "x64 Package",
-        "it": "Pacchetto x64"
-      },
-      {
-        "en": "Book a call",
-        "it": "Prenota una chiamata"
-      },
-      {
-        "en": "Book a call",
-        "it": "Prenota una chiamata"
-      },
-      {
-        "en": "Learn More",
-        "it": "Saperne di più"
-      },
-      {
-        "en": "Get it now",
-        "it": "Ottienilo adesso"
-      },
-      {
-        "en": "Expanding",
-        "it": "In espansione"
-      },
-      {
-        "en": "Licensing",
-        "it": "Licenza"
-      },
-      {
-        "en": "Ultra HD",
-        "it": "UltraHD"
+        "en": "Cloud images",
+        "it": "Immagini cloud"
       },
       {
         "en": "Products",
         "it": "Prodotti"
-      },
-      {
-        "en": "Feature",
-        "it": "Caratteristica"
-      },
-      {
-        "en": "Details",
-        "it": "Dettagli"
-      },
-      {
-        "en": "Free",
-        "it": "Gratuito"
-      },
-      {
-        "en": "RDP",
-        "it": "PSR"
       }
     ],
     "forms_getintouch": [
