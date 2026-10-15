@@ -113,8 +113,8 @@ body.page-buy-seat .breadcrumb {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.35rem;
 }
 
 .subscribe-steps li {
@@ -122,12 +122,12 @@ body.page-buy-seat .breadcrumb {
     align-items: center;
     gap: 0.55rem;
     margin: 0;
-    padding: 0.65rem 0.75rem;
+    padding: 0.55rem 0.4rem;
     border-radius: 999px;
     border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
     background: color-mix(in srgb, var(--text-color) 4%, transparent);
     color: var(--text-secondary, color-mix(in srgb, var(--text-color) 65%, transparent));
-    font-size: 0.82rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.2;
 }
@@ -373,6 +373,17 @@ body.page-buy-seat .breadcrumb {
     margin: 0.15rem 0 0;
     font-size: 0.85rem;
     color: var(--text-secondary, color-mix(in srgb, var(--text-color) 70%, transparent));
+}
+
+.subscribe-code-input {
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.subscribe-resend {
+    width: 100%;
 }
 
 .subscribe-step-lead {

@@ -9630,8 +9630,8 @@
         "fr": "Aucun nouvel achat n’est nécessaire pour cette organisation. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation ci-dessous."
       },
       {
-        "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
-        "fr": "Connectez-vous, choisissez l’organisation qui doit détenir le siège, sélectionnez une offre, puis payez sur Stripe."
+        "en": "Sign in, verify your email, add invoicing details, choose an organisation, then pay in Stripe.",
+        "fr": "Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation, choisissez une organisation, puis payez sur Stripe."
       },
       {
         "en": "VAT or fiscal code can be left blank when not applicable; address fields are required.",
@@ -9646,8 +9646,8 @@
         "fr": "Vous avez déjà un siège payant dans cette organisation !"
       },
       {
-        "en": "Required before Stripe checkout. Organisation: —",
-        "fr": "Obligatoire avant le paiement Stripe. Organisation : —"
+        "en": "These invoicing details are required before you choose an organisation.",
+        "fr": "Ces coordonnées de facturation sont obligatoires avant de choisir une organisation."
       },
       {
         "en": "Use your Elemento account email and password.",
@@ -9662,8 +9662,36 @@
         "fr": "Pas encore de compte ? Créez-en un"
       },
       {
+        "en": "Enter the 6-digit code sent to",
+        "fr": "Saisissez le code à 6 chiffres envoyé à"
+      },
+      {
         "en": "Save & continue to Stripe",
         "fr": "Enregistrer et continuer vers Stripe"
+      },
+      {
+        "en": "Verification code",
+        "fr": "Code de vérification"
+      },
+      {
+        "en": "Verify your email",
+        "fr": "Vérifiez votre e-mail"
+      },
+      {
+        "en": "Save & continue",
+        "fr": "Enregistrer et continuer"
+      },
+      {
+        "en": "Verify email",
+        "fr": "Vérifier l’e-mail"
+      },
+      {
+        "en": "Resend code",
+        "fr": "Renvoyer le code"
+      },
+      {
+        "en": "Invoice",
+        "fr": "Facture"
       },
       {
         "en": "Buy an Electros seat",

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy an Electros seat | Elemento</title>
-    <meta name="description" content="Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.">
+    <meta name="description" content="Sign in, verify your email, add invoicing details, and buy an Electros seat via Stripe.">
     <link rel="canonical" href="https://elemento.cloud/buy-seat.html">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Buy an Electros seat | Elemento">
-    <meta property="og:description" content="Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.">
+    <meta property="og:description" content="Sign in, verify your email, add invoicing details, and buy an Electros seat via Stripe.">
     <meta property="og:url" content="https://elemento.cloud/buy-seat.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Elemento">
@@ -43,15 +43,17 @@
             <header class="buy-seat-intro">
                 <p class="buy-seat-eyebrow">Electros</p>
                 <h1>Buy an Electros seat</h1>
-                <p class="buy-seat-lead">Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.</p>
+                <p class="buy-seat-lead">Sign in, verify your email, add invoicing details, choose an organisation, then pay in Stripe.</p>
             </header>
 
             <div class="subscribe-panel" id="subscribeFlow">
                 <div class="subscribe-panel-header">
                     <ol class="subscribe-steps" id="subscribeStepsLabel" aria-label="Checkout progress">
                         <li class="is-active"><span class="subscribe-step-num">1</span><span class="subscribe-step-name">Sign in</span></li>
-                        <li><span class="subscribe-step-num">2</span><span class="subscribe-step-name">Organisation</span></li>
-                        <li><span class="subscribe-step-num">3</span><span class="subscribe-step-name">Plan &amp; Stripe</span></li>
+                        <li><span class="subscribe-step-num">2</span><span class="subscribe-step-name">Email</span></li>
+                        <li><span class="subscribe-step-num">3</span><span class="subscribe-step-name">Invoice</span></li>
+                        <li><span class="subscribe-step-num">4</span><span class="subscribe-step-name">Organisation</span></li>
+                        <li><span class="subscribe-step-num">5</span><span class="subscribe-step-name">Stripe</span></li>
                     </ol>
                 </div>
 
@@ -78,6 +80,27 @@
                             No account yet?
                             <a href="signup.html">Create one</a>
                         </p>
+                    </div>
+                </div>
+
+                <div data-step="verify" hidden>
+                    <div class="subscribe-step-body">
+                        <header class="subscribe-step-heading">
+                            <h2>Verify your email</h2>
+                            <p>Enter the 6-digit code sent to <strong id="subscribeVerifyEmail">—</strong>.</p>
+                        </header>
+                        <form id="subscribeVerifyForm" class="subscribe-form" autocomplete="off" novalidate>
+                            <div class="subscribe-form-row">
+                                <label for="subscribeVerifyCode">Verification code</label>
+                                <input type="text" id="subscribeVerifyCode" class="subscribe-code-input" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required placeholder="123456">
+                            </div>
+                            <p class="subscribe-hint" id="subscribeVerifyResendHint"></p>
+                            <button type="button" class="btn btn-secondary subscribe-resend" id="subscribeResendCode" hidden>Resend code</button>
+                            <button type="submit" class="btn btn-primary subscribe-submit">Verify email</button>
+                        </form>
+                        <div class="subscribe-plan-actions">
+                            <button type="button" class="btn btn-secondary" data-subscribe-back="login">Back</button>
+                        </div>
                     </div>
                 </div>
 
@@ -141,7 +164,7 @@
                     <div class="subscribe-step-body subscribe-step-body--wide">
                         <header class="subscribe-step-heading">
                             <h2>Billing details</h2>
-                            <p>Required before Stripe checkout. Organisation: <strong id="subscribeBillingOrg">—</strong></p>
+                            <p>These invoicing details are required before you choose an organisation.</p>
                         </header>
                         <form id="subscribeBillingForm" class="subscribe-form" autocomplete="organization" novalidate>
                         <div class="subscribe-form-grid">
@@ -185,7 +208,7 @@
                         <p class="subscribe-hint">VAT or fiscal code can be left blank when not applicable; address fields are required.</p>
                         <div class="subscribe-plan-actions">
                             <button type="button" class="btn btn-secondary" data-subscribe-back="plan">Back</button>
-                            <button type="submit" class="btn btn-primary subscribe-submit">Save &amp; continue to Stripe</button>
+                            <button type="submit" class="btn btn-primary subscribe-submit">Save &amp; continue</button>
                         </div>
                         </form>
                     </div>
@@ -201,6 +224,6 @@
     <script src="js/footer.js" defer></script>
     <script src="js/themes.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="js/electros-subscribe.js?v=20261015c" defer></script>
+    <script src="js/electros-subscribe.js?v=20261015d" defer></script>
 </body>
 </html>

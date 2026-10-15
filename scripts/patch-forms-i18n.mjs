@@ -56,6 +56,21 @@ const TR = {
     it: 'Salva e continua su Stripe',
     fr: 'Enregistrer et continuer vers Stripe',
   },
+  'Save & continue': { it: 'Salva e continua', fr: 'Enregistrer et continuer' },
+  'Verify your email': { it: 'Verifica la tua email', fr: 'Vérifiez votre e-mail' },
+  'Enter the 6-digit code sent to': {
+    it: 'Inserisci il codice a 6 cifre inviato a',
+    fr: 'Saisissez le code à 6 chiffres envoyé à',
+  },
+  'Verification code': { it: 'Codice di verifica', fr: 'Code de vérification' },
+  'Resend code': { it: 'Invia di nuovo il codice', fr: 'Renvoyer le code' },
+  'Verify email': { it: 'Verifica email', fr: 'Vérifier l’e-mail' },
+  Invoice: { it: 'Fattura', fr: 'Facture' },
+  Organisation: { it: 'Organizzazione', fr: 'Organisation' },
+  'These invoicing details are required before you choose an organisation.': {
+    it: 'Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione.',
+    fr: 'Ces coordonnées de facturation sont obligatoires avant de choisir une organisation.',
+  },
   'Buy an Electros seat': { it: 'Acquista un seat Electros', fr: 'Acheter un siège Electros' },
   'Sign in': { it: 'Accedi', fr: 'Connexion' },
   'Choose organisation': { it: 'Scegli organizzazione', fr: 'Choisir l’organisation' },
@@ -84,9 +99,9 @@ const TR = {
   '1 Sign in': { it: '1 Accedi', fr: '1 Connexion' },
   '2 Organisation': { it: '2 Organizzazione', fr: '2 Organisation' },
   '3 Plan & Stripe': { it: '3 Piano e Stripe', fr: '3 Offre et Stripe' },
-  'Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.': {
-    it: 'Accedi, scegli l’organizzazione che deve ricevere il seat, seleziona un piano e completa il pagamento su Stripe.',
-    fr: 'Connectez-vous, choisissez l’organisation qui doit détenir le siège, sélectionnez une offre, puis payez sur Stripe.',
+  'Sign in, verify your email, add invoicing details, choose an organisation, then pay in Stripe.': {
+    it: 'Accedi, verifica la tua email, aggiungi i dati di fatturazione, scegli un’organizzazione, poi paga su Stripe.',
+    fr: 'Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation, choisissez une organisation, puis payez sur Stripe.',
   },
   'Use your Elemento account email and password.': {
     it: 'Usa email e password del tuo account Elemento.',
@@ -105,18 +120,14 @@ const TR = {
     it: 'Non è necessario un ulteriore acquisto per questa organizzazione. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione qui sotto.',
     fr: 'Aucun nouvel achat n’est nécessaire pour cette organisation. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation ci-dessous.',
   },
-  'Required before Stripe checkout. Organisation: —': {
-    it: 'Obbligatorio prima del checkout Stripe. Organizzazione: —',
-    fr: 'Obligatoire avant le paiement Stripe. Organisation : —',
-  },
   'VAT or fiscal code can be left blank when not applicable; address fields are required.': {
     it: 'Partita IVA o codice fiscale possono restare vuoti se non applicabili; l’indirizzo è obbligatorio.',
     fr: 'Le n° de TVA ou le code fiscal peut rester vide s’il ne s’applique pas ; l’adresse est obligatoire.',
   },
   'Back to Electros': { it: 'Torna a Electros', fr: 'Retour à Electros' },
-  'Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.': {
-    it: 'Accedi al tuo account Elemento, scegli un’organizzazione e acquista un seat Electros tramite Stripe.',
-    fr: 'Connectez-vous à votre compte Elemento, choisissez une organisation et achetez un siège Electros via Stripe.',
+  'Sign in, verify your email, add invoicing details, and buy an Electros seat via Stripe.': {
+    it: 'Accedi, verifica la tua email, aggiungi i dati di fatturazione e acquista un seat Electros tramite Stripe.',
+    fr: 'Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation et achetez un siège Electros via Stripe.',
   },
   'Buy an Electros seat | Elemento': {
     it: 'Acquista un seat Electros | Elemento',

@@ -688,7 +688,7 @@
       "title": "Réservation terminée — PR &amp; Commercialisation | Elemento"
     },
     "buy-seat": {
-      "description": "Connectez-vous à votre compte Elemento, choisissez une organisation et achetez un siège Electros via Stripe.",
+      "description": "Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation et achetez un siège Electros via Stripe.",
       "title": "Acheter un siège Electros | Elemento"
     }
   },

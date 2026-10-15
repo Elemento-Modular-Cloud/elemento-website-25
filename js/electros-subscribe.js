@@ -1,6 +1,6 @@
 /**
  * Electros seat purchase:
- * login → scopes → relogin/org → plan → (billing details if needed) → subscribe → Stripe
+ * login → email code → invoicing details → scopes → relogin/org → plan → subscribe → Stripe
  */
 (function () {
   // Direct portal call. GitHub Pages cannot proxy /api/portal.
@@ -23,7 +23,7 @@
       seatReady: 'Seat ready',
       seatReadyLead:
         'No payment needed — your seat was granted (trial or already covered). You can open Electros and sign in.',
-      addBilling: 'Add invoicing details to continue to Stripe.',
+      addBilling: 'Add invoicing details to continue.',
       incompleteBilling:
         'Billing details for this organisation are incomplete. Fill them in below, then continue.',
       billingRequired: 'Address, ZIP, city, province, and country are required.',
@@ -36,14 +36,24 @@
       signingIn: 'Signing in…',
       continue: 'Continue',
       saving: 'Saving…',
-      saveContinue: 'Save & continue to Stripe',
+      saveContinue: 'Save & continue',
+      saveContinueStripe: 'Save & continue to Stripe',
+      enterCode: 'Enter the 6-digit code from your email.',
+      codeInvalid: 'That code is wrong or has expired. Request a new one if you need to.',
+      verifying: 'Verifying…',
+      verify: 'Verify email',
+      resend: 'Resend code',
+      resendWait: 'You can ask for a new code in {m} min {s}s.',
+      codeSendFailed: 'Could not send the verification code. Try again.',
+      refreshFailed: 'Your email was verified, but the session could not be refreshed. Sign in again.',
+      stillUnverified: 'This session still shows the email as unverified. Sign in again.',
       alreadyPaidShort: 'You already have a paid seat in this organisation!',
       alreadyHasSeat:
         'This organisation already has an Electros seat. Open Electros to manage billing, or pick another organisation.',
       checkoutFailed:
         'Checkout could not be started. If this organisation already has a seat, manage billing in Electros; otherwise try again shortly.',
       verifyEmail:
-        'Verify your email before buying a seat. Check your inbox for the Elemento verification link, then try again.',
+        'Verify your email with the code we send you before buying a seat.',
       noPermission: 'You do not have permission to buy a seat for this organisation.',
       notFound: 'Account, organisation, or plan was not found.',
       noCheckoutUrl: 'No Stripe checkout URL was returned.',
@@ -66,7 +76,7 @@
       seatReady: 'Seat pronto',
       seatReadyLead:
         'Nessun pagamento necessario — il seat è stato assegnato (prova o già coperto). Puoi aprire Electros e accedere.',
-      addBilling: 'Aggiungi i dati di fatturazione per continuare su Stripe.',
+      addBilling: 'Aggiungi i dati di fatturazione per continuare.',
       incompleteBilling:
         'I dati di fatturazione di questa organizzazione sono incompleti. Compilali qui sotto, poi continua.',
       billingRequired: 'Indirizzo, CAP, città, provincia e paese sono obbligatori.',
@@ -79,14 +89,24 @@
       signingIn: 'Accesso in corso…',
       continue: 'Continua',
       saving: 'Salvataggio…',
-      saveContinue: 'Salva e continua su Stripe',
+      saveContinue: 'Salva e continua',
+      saveContinueStripe: 'Salva e continua su Stripe',
+      enterCode: 'Inserisci il codice a 6 cifre ricevuto via email.',
+      codeInvalid: 'Il codice è errato o scaduto. Richiedine uno nuovo se serve.',
+      verifying: 'Verifica…',
+      verify: 'Verifica email',
+      resend: 'Invia di nuovo il codice',
+      resendWait: 'Puoi chiedere un nuovo codice tra {m} min {s}s.',
+      codeSendFailed: 'Impossibile inviare il codice di verifica. Riprova.',
+      refreshFailed: 'Email verificata, ma la sessione non è stata aggiornata. Accedi di nuovo.',
+      stillUnverified: 'Questa sessione risulta ancora con email non verificata. Accedi di nuovo.',
       alreadyPaidShort: 'Hai già un seat a pagamento in questa organizzazione!',
       alreadyHasSeat:
         'Questa organizzazione ha già un seat Electros. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione.',
       checkoutFailed:
         'Impossibile avviare il checkout. Se questa organizzazione ha già un seat, gestisci la fatturazione in Electros; altrimenti riprova a breve.',
       verifyEmail:
-        'Verifica la tua email prima di acquistare un seat. Controlla la casella di posta per il link Elemento, poi riprova.',
+        'Verifica la tua email con il codice che ti inviamo prima di acquistare un seat.',
       noPermission: 'Non hai i permessi per acquistare un seat per questa organizzazione.',
       notFound: 'Account, organizzazione o piano non trovato.',
       noCheckoutUrl: 'Nessun URL di checkout Stripe è stato restituito.',
@@ -109,7 +129,7 @@
       seatReady: 'Siège prêt',
       seatReadyLead:
         'Aucun paiement nécessaire — le siège a été attribué (essai ou déjà couvert). Vous pouvez ouvrir Electros et vous connecter.',
-      addBilling: 'Ajoutez les coordonnées de facturation pour continuer vers Stripe.',
+      addBilling: 'Ajoutez les coordonnées de facturation pour continuer.',
       incompleteBilling:
         'Les coordonnées de facturation de cette organisation sont incomplètes. Complétez-les ci-dessous, puis continuez.',
       billingRequired: 'Adresse, code postal, ville, province et pays sont obligatoires.',
@@ -122,14 +142,24 @@
       signingIn: 'Connexion…',
       continue: 'Continuer',
       saving: 'Enregistrement…',
-      saveContinue: 'Enregistrer et continuer vers Stripe',
+      saveContinue: 'Enregistrer et continuer',
+      saveContinueStripe: 'Enregistrer et continuer vers Stripe',
+      enterCode: 'Saisissez le code à 6 chiffres reçu par e-mail.',
+      codeInvalid: 'Ce code est incorrect ou expiré. Demandez-en un nouveau si besoin.',
+      verifying: 'Vérification…',
+      verify: 'Vérifier l’e-mail',
+      resend: 'Renvoyer le code',
+      resendWait: 'Vous pourrez demander un nouveau code dans {m} min {s} s.',
+      codeSendFailed: 'Impossible d’envoyer le code de vérification. Réessayez.',
+      refreshFailed: 'E-mail vérifié, mais la session n’a pas pu être renouvelée. Reconnectez-vous.',
+      stillUnverified: 'Cette session indique encore un e-mail non vérifié. Reconnectez-vous.',
       alreadyPaidShort: 'Vous avez déjà un siège payant dans cette organisation !',
       alreadyHasSeat:
         'Cette organisation a déjà un siège Electros. Ouvrez Electros pour gérer la facturation, ou choisissez une autre organisation.',
       checkoutFailed:
         'Impossible de démarrer le paiement. Si cette organisation a déjà un siège, gérez la facturation dans Electros ; sinon réessayez sous peu.',
       verifyEmail:
-        'Vérifiez votre e-mail avant d’acheter un siège. Consultez votre boîte de réception pour le lien Elemento, puis réessayez.',
+        'Vérifiez votre e-mail avec le code que nous vous envoyons avant d’acheter un siège.',
       noPermission: 'Vous n’avez pas l’autorisation d’acheter un siège pour cette organisation.',
       notFound: 'Compte, organisation ou offre introuvable.',
       noCheckoutUrl: 'Aucune URL de paiement Stripe n’a été renvoyée.',
@@ -158,6 +188,7 @@
 
   const steps = {
     login: panel.querySelector('[data-step="login"]'),
+    verify: panel.querySelector('[data-step="verify"]'),
     org: panel.querySelector('[data-step="org"]'),
     'already-paid': panel.querySelector('[data-step="already-paid"]'),
     plan: panel.querySelector('[data-step="plan"]'),
@@ -168,21 +199,26 @@
   const tierSelect = document.getElementById('subscribeTier');
   const freqSelect = document.getElementById('subscribeFrequency');
   const loginForm = document.getElementById('subscribeLoginForm');
+  const verifyForm = document.getElementById('subscribeVerifyForm');
   const planForm = document.getElementById('subscribePlanForm');
   const billingForm = document.getElementById('subscribeBillingForm');
   const stepsLabel = document.getElementById('subscribeStepsLabel');
 
-  /** @type {{ accessToken: string|null, username: string|null, email: string|null, orgId: string|null, orgName: string|null, hasBillingDetails: boolean, pendingTier: string|null, pendingFrequency: string|null }} */
+  /** @type {{ accessToken: string|null, refreshToken: string|null, username: string|null, email: string|null, emailVerified: boolean, orgId: string|null, orgName: string|null, hasBillingDetails: boolean, pendingTier: string|null, pendingFrequency: string|null }} */
   const state = {
     accessToken: null,
+    refreshToken: null,
     username: null,
     email: null,
+    emailVerified: false,
     orgId: null,
     orgName: null,
     hasBillingDetails: false,
     pendingTier: null,
     pendingFrequency: null,
   };
+
+  let resendTimer = null;
 
   function formatError(detail) {
     if (detail == null || detail === '') return '';
@@ -320,10 +356,11 @@
     if (!items.length) return;
     const activeIndex = {
       login: 0,
-      org: 1,
-      'already-paid': 1,
-      plan: 2,
+      verify: 1,
       billing: 2,
+      org: 3,
+      'already-paid': 3,
+      plan: 4,
     }[name];
     items.forEach((item, index) => {
       item.classList.toggle('is-active', index === activeIndex);
@@ -527,10 +564,140 @@
   }
 
   function askForBillingDetails(message) {
-    const orgLabel = document.getElementById('subscribeBillingOrg');
-    if (orgLabel) orgLabel.textContent = state.orgName || '—';
+    const fromCheckout = Boolean(state.pendingTier && state.pendingFrequency);
+    const back = document.querySelector('[data-step="billing"] [data-subscribe-back]');
+    const submit = billingForm && billingForm.querySelector('[type="submit"]');
+    if (back) back.setAttribute('data-subscribe-back', fromCheckout ? 'plan' : 'login');
+    if (submit) submit.textContent = fromCheckout ? t('saveContinueStripe') : t('saveContinue');
     showStep('billing');
     if (message) showError(message);
+  }
+
+  function emailVerifiedFromToken() {
+    const claims = tokenClaims() || {};
+    return claims.elemento_email_verified === true;
+  }
+
+  function resetSession() {
+    clearResendCooldown();
+    state.accessToken = null;
+    state.refreshToken = null;
+    state.username = null;
+    state.email = null;
+    state.emailVerified = false;
+    state.orgId = null;
+    state.orgName = null;
+    state.hasBillingDetails = false;
+    state.pendingTier = null;
+    state.pendingFrequency = null;
+  }
+
+  function clearResendCooldown() {
+    if (resendTimer) {
+      clearInterval(resendTimer);
+      resendTimer = null;
+    }
+  }
+
+  function showResendNow() {
+    clearResendCooldown();
+    const hint = document.getElementById('subscribeVerifyResendHint');
+    const resendBtn = document.getElementById('subscribeResendCode');
+    if (hint) hint.textContent = '';
+    if (resendBtn) resendBtn.hidden = false;
+  }
+
+  function startResendCooldown() {
+    clearResendCooldown();
+    const hint = document.getElementById('subscribeVerifyResendHint');
+    const resendBtn = document.getElementById('subscribeResendCode');
+    if (resendBtn) resendBtn.hidden = true;
+    let left = 120;
+    const tick = () => {
+      if (left <= 0) {
+        showResendNow();
+        return;
+      }
+      const minutes = Math.floor(left / 60);
+      const seconds = left % 60;
+      if (hint) {
+        hint.textContent = t('resendWait')
+          .replace('{m}', String(minutes))
+          .replace('{s}', String(seconds));
+      }
+      left -= 1;
+    };
+    tick();
+    resendTimer = setInterval(tick, 1000);
+  }
+
+  async function requestVerificationCode() {
+    await portalFetch('/account/verify-email/request', { method: 'POST' });
+    startResendCooldown();
+  }
+
+  async function beginEmailVerification() {
+    const emailEl = document.getElementById('subscribeVerifyEmail');
+    const codeEl = document.getElementById('subscribeVerifyCode');
+    if (emailEl) emailEl.textContent = state.email || state.username || '—';
+    if (codeEl) codeEl.value = '';
+    showStep('verify');
+    try {
+      await requestVerificationCode();
+    } catch (err) {
+      showResendNow();
+      showError(err.message || t('codeSendFailed'));
+    }
+  }
+
+  async function refreshSession() {
+    if (!state.refreshToken) throw new Error(t('refreshFailed'));
+    const data = await portalFetch('/auth/refresh', {
+      method: 'POST',
+      body: { refresh_token: state.refreshToken },
+    });
+    if (!data || !data.access_token) throw new Error(t('refreshFailed'));
+    state.accessToken = data.access_token;
+    if (data.refresh_token) state.refreshToken = data.refresh_token;
+  }
+
+  async function showOrganisations() {
+    const scopes = await portalFetch('/auth/scopes');
+    renderOrgs(scopes && scopes.scopes);
+    showStep('org');
+  }
+
+  async function continueAfterVerified() {
+    try {
+      await refreshBillingDetails();
+    } catch (err) {
+      state.hasBillingDetails = false;
+      askForBillingDetails(err.message || t('billingSaveFailed'));
+      return;
+    }
+    if (!state.hasBillingDetails) {
+      state.pendingTier = null;
+      state.pendingFrequency = null;
+      askForBillingDetails(t('addBilling'));
+      return;
+    }
+    try {
+      await showOrganisations();
+    } catch (err) {
+      showStep('org');
+      if (orgList) orgList.innerHTML = '';
+      showError(err.message || t('orgOpenFailed'));
+    }
+  }
+
+  async function continueAfterAuth() {
+    if (!emailVerifiedFromToken()) {
+      state.emailVerified = false;
+      await beginEmailVerification();
+      return;
+    }
+    state.emailVerified = true;
+    await continueAfterVerified();
   }
 
   function readBillingPayload() {
@@ -587,6 +754,9 @@
       });
       if (relogin && relogin.access_token) {
         state.accessToken = relogin.access_token;
+      }
+      if (relogin && relogin.refresh_token) {
+        state.refreshToken = relogin.refresh_token;
       }
       state.orgId = item.orgId;
       state.orgName = item.label;
@@ -703,6 +873,7 @@
   panel.querySelectorAll('[data-subscribe-back]').forEach((btn) => {
     btn.addEventListener('click', () => {
       const to = btn.getAttribute('data-subscribe-back');
+      if (to === 'login') resetSession();
       if (to) showStep(to);
     });
   });
@@ -736,11 +907,14 @@
           throw new Error(t('noToken'));
         }
         state.accessToken = data.access_token;
+        state.refreshToken = data.refresh_token || null;
         state.username = data.username || email;
         state.email = email;
-        const scopes = await portalFetch('/auth/scopes');
-        renderOrgs(scopes && scopes.scopes);
-        showStep('org');
+        state.orgId = null;
+        state.orgName = null;
+        state.pendingTier = null;
+        state.pendingFrequency = null;
+        await continueAfterAuth();
       } catch (err) {
         showError(err.message || t('signInFailed'));
       } finally {
@@ -814,13 +988,18 @@
             }
           }
         }
+        const saved = await refreshBillingDetails();
+        if (!billingDetailsComplete(saved)) {
+          state.hasBillingDetails = false;
+          showError(t('billingSavedIncomplete'));
+          return;
+        }
         state.hasBillingDetails = true;
 
-        const tier = state.pendingTier || (tierSelect && tierSelect.value);
-        const billing_frequency = state.pendingFrequency || (freqSelect && freqSelect.value);
+        const tier = state.pendingTier;
+        const billing_frequency = state.pendingFrequency;
         if (!tier || !billing_frequency) {
-          showStep('plan');
-          showError(t('choosePlan'));
+          await showOrganisations();
           return;
         }
 
@@ -842,8 +1021,69 @@
       } finally {
         if (submitBtn.textContent !== t('seatReady')) {
           submitBtn.disabled = false;
-          submitBtn.textContent = t('saveContinue');
+          submitBtn.textContent = (state.pendingTier && state.pendingFrequency)
+            ? t('saveContinueStripe')
+            : t('saveContinue');
         }
+      }
+    });
+  }
+
+  const verifyCodeInput = document.getElementById('subscribeVerifyCode');
+  if (verifyCodeInput) {
+    verifyCodeInput.addEventListener('input', () => {
+      const digits = verifyCodeInput.value.replace(/\D/g, '').slice(0, 6);
+      if (verifyCodeInput.value !== digits) verifyCodeInput.value = digits;
+    });
+  }
+
+  const resendBtn = document.getElementById('subscribeResendCode');
+  if (resendBtn) {
+    resendBtn.addEventListener('click', async () => {
+      showError('');
+      resendBtn.disabled = true;
+      try {
+        await requestVerificationCode();
+      } catch (err) {
+        showResendNow();
+        showError(err.message || t('codeSendFailed'));
+      } finally {
+        resendBtn.disabled = false;
+      }
+    });
+  }
+
+  if (verifyForm) {
+    verifyForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      showError('');
+      const codeEl = document.getElementById('subscribeVerifyCode');
+      const submitBtn = verifyForm.querySelector('[type="submit"]');
+      const code = (codeEl.value || '').replace(/\D/g, '');
+      if (code.length !== 6) {
+        codeEl.style.borderColor = '#DC3545';
+        showError(t('enterCode'));
+        return;
+      }
+      codeEl.style.borderColor = '';
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('verifying');
+      try {
+        await portalFetch('/account/verify-email/confirm', {
+          method: 'POST',
+          body: { code },
+        });
+        await refreshSession();
+        if (!emailVerifiedFromToken()) throw new Error(t('stillUnverified'));
+        state.emailVerified = true;
+        clearResendCooldown();
+        await continueAfterVerified();
+      } catch (err) {
+        if (err.status === 400) showError(t('codeInvalid'));
+        else showError(err.message || t('codeInvalid'));
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = t('verify');
       }
     });
   }

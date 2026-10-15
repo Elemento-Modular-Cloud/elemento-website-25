@@ -27370,9 +27370,9 @@
     },
     {
       "id": "body.buy-seat.button.7",
-      "en": "Save & continue to Stripe",
+      "en": "Save & continue",
       "it": "",
-      "fr": "Enregistrer et continuer vers Stripe",
+      "fr": "Enregistrer et continuer",
       "source": "buy-seat.html",
       "context": "<button>"
     },
@@ -27594,9 +27594,9 @@
     },
     {
       "id": "body.buy-seat.p.2",
-      "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
+      "en": "Sign in, verify your email, add invoicing details, choose an organisation, then pay in Stripe.",
       "it": "",
-      "fr": "Connectez-vous, choisissez l’organisation qui doit détenir le siège, sélectionnez une offre, puis payez sur Stripe.",
+      "fr": "Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation, choisissez une organisation, puis payez sur Stripe.",
       "source": "buy-seat.html",
       "context": "<p>"
     },
@@ -27650,9 +27650,9 @@
     },
     {
       "id": "body.buy-seat.p.9",
-      "en": "Required before Stripe checkout. Organisation: —",
+      "en": "These invoicing details are required before you choose an organisation.",
       "it": "",
-      "fr": "Obligatoire avant le paiement Stripe. Organisation : —",
+      "fr": "Ces coordonnées de facturation sont obligatoires avant de choisir une organisation.",
       "source": "buy-seat.html",
       "context": "<p>"
     },
@@ -27682,9 +27682,9 @@
     },
     {
       "id": "meta.buy-seat.description",
-      "en": "Sign in to your Elemento account, choose an organisation, and buy an Electros seat via Stripe.",
+      "en": "Sign in, verify your email, add invoicing details, and buy an Electros seat via Stripe.",
       "it": "",
-      "fr": "Connectez-vous à votre compte Elemento, choisissez une organisation et achetez un siège Electros via Stripe.",
+      "fr": "Connectez-vous, vérifiez votre e-mail, ajoutez les coordonnées de facturation et achetez un siège Electros via Stripe.",
       "source": "buy-seat.html",
       "context": "meta description"
     },

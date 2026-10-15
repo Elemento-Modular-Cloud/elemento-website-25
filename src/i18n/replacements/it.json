@@ -9820,8 +9820,8 @@
         "it": "Non è necessario un ulteriore acquisto per questa organizzazione. Apri Electros per gestire la fatturazione, oppure scegli un’altra organizzazione qui sotto."
       },
       {
-        "en": "Sign in, choose the organisation that should hold the seat, pick a plan, then complete payment in Stripe.",
-        "it": "Accedi, scegli l’organizzazione che deve ricevere il seat, seleziona un piano e completa il pagamento su Stripe."
+        "en": "Sign in, verify your email, add invoicing details, choose an organisation, then pay in Stripe.",
+        "it": "Accedi, verifica la tua email, aggiungi i dati di fatturazione, scegli un’organizzazione, poi paga su Stripe."
       },
       {
         "en": "VAT or fiscal code can be left blank when not applicable; address fields are required.",
@@ -9836,8 +9836,8 @@
         "it": "Hai già un seat a pagamento in questa organizzazione!"
       },
       {
-        "en": "Required before Stripe checkout. Organisation: —",
-        "it": "Obbligatorio prima del checkout Stripe. Organizzazione: —"
+        "en": "These invoicing details are required before you choose an organisation.",
+        "it": "Questi dati di fatturazione sono obbligatori prima di scegliere un’organizzazione."
       },
       {
         "en": "Use your Elemento account email and password.",
@@ -9852,8 +9852,40 @@
         "it": "Non hai ancora un account? Creane uno"
       },
       {
+        "en": "Enter the 6-digit code sent to",
+        "it": "Inserisci il codice a 6 cifre inviato a"
+      },
+      {
         "en": "Save & continue to Stripe",
         "it": "Salva e continua su Stripe"
+      },
+      {
+        "en": "Verification code",
+        "it": "Codice di verifica"
+      },
+      {
+        "en": "Verify your email",
+        "it": "Verifica la tua email"
+      },
+      {
+        "en": "Save & continue",
+        "it": "Salva e continua"
+      },
+      {
+        "en": "Verify email",
+        "it": "Verifica email"
+      },
+      {
+        "en": "Resend code",
+        "it": "Invia di nuovo il codice"
+      },
+      {
+        "en": "Organisation",
+        "it": "Organizzazione"
+      },
+      {
+        "en": "Invoice",
+        "it": "Fattura"
       },
       {
         "en": "Buy an Electros seat",
