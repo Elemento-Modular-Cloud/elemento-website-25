@@ -139,8 +139,8 @@
       "description": "Les vidéos Elemento sont disponibles en anglais et en italien. Choisissez la bibliothèque qui vous convient."
     },
     "atomos": {
-      "description": "AtomOS est un hyperviseur Linux léger et hautes performances pour les cloud nus et sur site. Compatible RHEL, prêt pour le GPU et compatible avec le clustering.",
-      "title": "AtomOS — Alimenter votre cloud avec l'hyperviseur Linux | Nuage Elementoaire"
+      "description": "AtomOS 1.11.0 est l'hyperviseur KVM Linux d'Elemento. Installez le calcul, le stockage, ou les deux avec atomos-cli, et pilotez les hôtes depuis Electros. L'hyperviseur est gratuit.",
+      "title": "AtomOS — Hyperviseur Linux pour votre infrastructure | Elemento Cloud"
     },
     "atomosphere": {
       "description": "La passerelle API multicloud d'Elemento connecte plus de 235 cloud et nœuds sur site en un seul réseau programmable. Contrôle unifié, portabilité transparente.",

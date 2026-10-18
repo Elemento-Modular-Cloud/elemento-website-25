@@ -453,9 +453,28 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
       ],
     ],
     atomos: [
-      ['Install the AtomOS CLI tool:', 'Installa lo strumento CLI AtomOS:'],
+      [
+        'What <span class="highlight-pixel">1.11.0</span> actually ships',
+        'Cosa spedisce davvero <span class="highlight-pixel">1.11.0</span>',
+      ],
+      [
+        'AlmaLinux underneath. <span class="highlight-pixel">Not</span> a fork.',
+        'AlmaLinux sotto. <span class="highlight-pixel">Non</span> è un fork.',
+      ],
+      [
+        /AtomOS:<br>\s*The Linux hypervisor<br>\s*for <span class="pixel-accent">your servers<\/span>/,
+        'AtomOS:<br>L\'hypervisor Linux<br>per <span class="pixel-accent">i tuoi server</span>',
+      ],
+      ['KVM. atomos-cli. Electros.', 'KVM. atomos-cli. Electros.'],
       ['Install the AtomOS services', 'Installa i servizi AtomOS'],
-      ['Ready to deploy your first VM in minutes!', 'Pronto a distribuire la tua prima VM in pochi minuti!'],
+      [
+        'Save the bootstrap, read it, then run it:',
+        'Salva il bootstrap, leggilo, poi eseguilo:',
+      ],
+      [
+        'Reboot, then check the host with atomos-cli --check before you place a workload.',
+        'Riavvia, poi controlla l\'host con atomos-cli --check prima di collocare un carico.',
+      ],
     ],
     'install-atomos': [
       ['Install the AtomOS CLI tool:', 'Installa lo strumento CLI AtomOS:'],
@@ -566,9 +585,28 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
       ],
     ],
     atomos: [
-      ['Install the AtomOS CLI tool:', 'Installez l\'outil CLI AtomOS :'],
+      [
+        'What <span class="highlight-pixel">1.11.0</span> actually ships',
+        'Ce que <span class="highlight-pixel">1.11.0</span> livre vraiment',
+      ],
+      [
+        'AlmaLinux underneath. <span class="highlight-pixel">Not</span> a fork.',
+        'AlmaLinux en dessous. <span class="highlight-pixel">Pas</span> un fork.',
+      ],
+      [
+        /AtomOS:<br>\s*The Linux hypervisor<br>\s*for <span class="pixel-accent">your servers<\/span>/,
+        'AtomOS:<br>L\'hyperviseur Linux<br>pour <span class="pixel-accent">vos serveurs</span>',
+      ],
+      ['KVM. atomos-cli. Electros.', 'KVM. atomos-cli. Electros.'],
       ['Install the AtomOS services', 'Installez les services AtomOS'],
-      ['Ready to deploy your first VM in minutes!', 'Prêt à déployer votre première VM en quelques minutes !'],
+      [
+        'Save the bootstrap, read it, then run it:',
+        'Enregistrez le bootstrap, lisez-le, puis exécutez-le :',
+      ],
+      [
+        'Reboot, then check the host with atomos-cli --check before you place a workload.',
+        'Redémarrez, puis contrôlez l\'hôte avec atomos-cli --check avant de placer une charge.',
+      ],
     ],
     'install-atomos': [
       ['Install the AtomOS CLI tool:', 'Installez l\'outil CLI AtomOS :'],

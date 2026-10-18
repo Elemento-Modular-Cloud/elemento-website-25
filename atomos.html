@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtomOS — Powering Your Cloud with Linux Hypervisor | Elemento Cloud</title>
-    <meta name="description" content="AtomOS is a free forever Linux hypervisor for bare metal and private clouds. High availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup — RHEL-compatible and clustering-native.">
+    <title>AtomOS — Linux hypervisor for your infrastructure | Elemento Cloud</title>
+    <meta name="description" content="AtomOS 1.11.0 is Elemento's Linux-native KVM hypervisor. Install compute, storage, or both with atomos-cli, and govern hosts from Electros. The hypervisor is free.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://elemento.cloud/atomos.html">
@@ -18,7 +18,7 @@
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
-    <meta property="og:description" content="Free forever Linux hypervisor with high availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.">
+    <meta property="og:description" content="AtomOS 1.11.0 is Elemento's Linux-native KVM hypervisor. Install compute, storage, or both with atomos-cli, and govern hosts from Electros. The hypervisor is free.">
     <meta property="og:image" content="https://elemento.cloud/assets/img/banner.webp">
     <meta property="og:url" content="https://elemento.cloud/atomos.html">
     <meta property="og:type" content="product">
@@ -28,7 +28,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AtomOS — Linux Hypervisor for Cloud Infrastructure">
-    <meta name="twitter:description" content="Free forever Linux hypervisor with high availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.">
+    <meta name="twitter:description" content="AtomOS 1.11.0 is Elemento's Linux-native KVM hypervisor. Install compute, storage, or both with atomos-cli, and govern hosts from Electros. The hypervisor is free.">
     <meta name="twitter:image" content="https://elemento.cloud/assets/img/banner.webp">
     
     <!-- Additional SEO Meta Tags -->
@@ -68,11 +68,11 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "AtomOS",
-      "description": "Free forever Linux hypervisor for bare metal and private clouds. High availability, live VM update, GPU passthrough, multi-tenant networking, and native Veeam backup.",
+      "description": "AtomOS 1.11.0 is Elemento's Linux-native KVM hypervisor. Install compute, storage, or both with atomos-cli, and govern hosts from Electros. The hypervisor is free.",
       "url": "https://elemento.cloud/atomos.html",
       "applicationCategory": "Virtualization Software",
       "operatingSystem": "Linux",
-      "softwareVersion": "Latest",
+      "softwareVersion": "1.11.0",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -86,20 +86,13 @@
         "url": "https://elemento.cloud"
       },
       "featureList": [
-        "KVM-based hypervisor",
-        "RHEL-compliant base — no customisation, no forks",
-        "Mainline Linux kernel",
-        "Incredible hardware support from upstream",
-        "Super fast security updates",
-        "High availability with automatic VM failover",
-        "Live VM update — CPU, RAM, volumes and networks without downtime",
-        "Multi-tenant networking with per-user quotas",
-        "Native Veeam Backup & Replication compatibility",
-        "GPU passthrough support",
-        "Autonomous clustering with C4 protocol",
-        "Secure boot and ECC memory support",
-        "Live VM migration",
-        "Nested virtualization"
+        "KVM, QEMU and libvirt",
+        "atomos-cli roles: Compute, Storage, or Full on AlmaLinux",
+        "Ubuntu and Debian documented for storage-only",
+        "Fleet workflow in Electros",
+        "GPU PCI passthrough when IOMMU groups allow it",
+        "C4 capacity discovery",
+        "Free hypervisor licence"
       ]
     }
     </script>
@@ -609,17 +602,17 @@
         <div class="hero-container hero-left">
             <div class="hero-content">
                 <div class="hero-buttons fade-in">
-                    <div class="hero-tagline">Deploy. Virtualize. Scale.</div>
+                    <div class="hero-tagline">KVM. atomos-cli. Electros.</div>
                     <h1 class="hero-title">
                         AtomOS:<br>
-                        The Hypervisor
-                        for <span class="pixel-accent">your infrastructure</span>
+                        The Linux hypervisor<br>
+                        for <span class="pixel-accent">your servers</span>
                     </h1>
                     <div class="hero-subtitle">
-                        <p>AtomOS is a next-gen Linux hypervisor built for bare-metal, GPU-enabled, and autonomous infrastructure. RHEL-compatible, lightweight, and clustering-native — no central controller required.</p>
+                        <p>Family 1.11.0. KVM, QEMU and libvirt on AlmaLinux, installed with atomos-cli as compute, storage, or both. Electros is the fleet screen. The hypervisor stays free.</p>
                     </div>
                     <div class="hero-cta">
-                        <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Deploy in Minutes</a>
+                        <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Install with atomos-cli</a>
                         <a href="https://atomos.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-cart-shopping"></i> Get it now</a>
                     </div>
                 </div>
@@ -633,8 +626,8 @@
                     <i class="hn hn-cog"></i>
                 </div>
                 <div class="floating-box-content">
-                    <h3>KVM-Based Hypervisor</h3>
-                    <p>Built on proven KVM and QEMU technology with RHEL compatibility and no vendor lock-in</p>
+                    <h3>KVM, QEMU, libvirt</h3>
+                    <p>Compute runs on AlmaLinux. atomos-cli installs Compute, Storage, or Full. Ubuntu and Debian are documented for storage only.</p>
                 </div>
             </div>
             
@@ -643,8 +636,8 @@
                     <i class="hn hn-lock-alt"></i>
                 </div>
                 <div class="floating-box-content">
-                    <h3>Enterprise Security</h3>
-                    <p>Secure boot, ECC memory support, and advanced GPU passthrough for production workloads</p>
+                    <h3>GPU passthrough</h3>
+                    <p>PCI passthrough can hand a physical GPU to a guest. Partitioned GPUs are not in this release. Validate the GPU and driver on your hardware.</p>
                 </div>
             </div>
             
@@ -653,8 +646,8 @@
                     <i class="hn hn-cloud"></i>
                 </div>
                 <div class="floating-box-content">
-                    <h3>Cloud Integration</h3>
-                    <p>Seamless integration with public clouds and hybrid infrastructure management</p>
+                    <h3>Governed from Electros</h3>
+                    <p>Electros registers the host, checks the certificate, and runs the VM workflow. The host itself is still Linux, atomos-cli, and libvirt.</p>
                 </div>
             </div>
         </div>
@@ -684,27 +677,23 @@
                         <ul class="feature-list">
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                RHEL-compatible, KVM-based virtualization platform
+                                RHEL-compatible base: AlmaLinux for compute and full installs
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                No vendor lock-in: upstream Linux and open standards
+                                Three roles from atomos-cli: Compute, Storage, or Full
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Secure boot, ECC memory, GPU passthrough
+                                GPU PCI passthrough — validate the card, driver, and IOMMU group
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Zero centralized services — autonomous clustering with C4 protocol
+                                C4 discovers capacity. It does not by itself provide quorum, fencing, or failover
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Nested virtualization-ready (GCP, AWS, Azure)
-                            </li>
-                            <li class="feature-list-item">
-                                <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Ideal for hybrid, on-premise, and edge computing
+                                Fleet workflow in Electros, host operations on the machine
                             </li>
                         </ul>
                     </div>
@@ -734,66 +723,127 @@
         </div>
     </section>
 
+    <!-- Fleet vs local console -->
+    <section class="section" id="planes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Electros runs the fleet. The local UI runs one server.</h2>
+                <p class="section-subtitle">Electros is the desktop for every registered AtomOS host. The local console is the machine you are on.</p>
+            </div>
+
+            <div class="ao-planes">
+                <figure class="ao-fleet">
+                    <figcaption>Many hosts</figcaption>
+                    <div class="ao-node ao-node--electros">
+                        <img src="assets/logos/Electros.svg" alt="" width="36" height="36">
+                        <strong>Electros</strong>
+                        <small>Desktop. Every registered host.</small>
+                    </div>
+                    <div class="ao-stem" aria-hidden="true"></div>
+                    <div class="ao-hosts">
+                        <div class="ao-host">
+                            <img src="assets/logos/Atomos.svg" alt="" width="28" height="28">
+                            <strong>Host A</strong>
+                            <small>AtomOS</small>
+                        </div>
+                        <div class="ao-host">
+                            <img src="assets/logos/Atomos.svg" alt="" width="28" height="28">
+                            <strong>Host B</strong>
+                            <small>AtomOS</small>
+                        </div>
+                        <div class="ao-host ao-host--focus">
+                            <img src="assets/logos/Atomos.svg" alt="" width="28" height="28">
+                            <strong>Host C</strong>
+                            <small>AtomOS</small>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="ao-zoom">
+                    <figcaption>Open Host C</figcaption>
+                    <div class="ao-node ao-node--local">
+                        <img src="assets/logos/Atomos.svg" alt="" width="36" height="36">
+                        <strong>Local UI</strong>
+                        <small>This server only.</small>
+                    </div>
+                    <ul class="ao-stack">
+                        <li>atomos-cli</li>
+                        <li>systemd</li>
+                        <li>libvirt and KVM</li>
+                    </ul>
+                    <div class="ao-vms" aria-hidden="true">
+                        <span>VM</span>
+                        <span>VM</span>
+                        <span>VM</span>
+                    </div>
+                    <p>The local console lists this machine. Electros lists Host A, Host B, and Host C.</p>
+                </figure>
+            </div>
+
+            <h3 class="ao-roles-title">One install command. Three roles.</h3>
+            <div class="ao-roles">
+                <article class="ao-role">
+                    <p class="ao-role-cmd">atomos-cli --install Compute</p>
+                    <h3>Compute</h3>
+                    <p>AlmaLinux. Virtual machines on this host.</p>
+                </article>
+                <article class="ao-role">
+                    <p class="ao-role-cmd">atomos-cli --install Storage</p>
+                    <h3>Storage</h3>
+                    <p>AlmaLinux, Ubuntu, or Debian. Volumes on this host.</p>
+                </article>
+                <article class="ao-role ao-role--full">
+                    <p class="ao-role-cmd">atomos-cli --install Full</p>
+                    <h3>Full</h3>
+                    <p>AlmaLinux. Compute and storage on the same host.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- What's New / New Features (from Introducing AtomOS) -->
     <section class="section features" id="whats-new">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">What's <span class="highlight-pixel">New</span> in AtomOS</h2>
-                <p class="section-subtitle">The latest capabilities that turn any server into a production-ready private cloud — free forever, support optional.</p>
+                <h2 class="section-title">What <span class="highlight-pixel">1.11.0</span> actually ships</h2>
+                <p class="section-subtitle">From the 16 October 2026 technical manual.</p>
             </div>
 
-            <div class="grid grid-2 atomos-whats-new-grid">
-                <div class="card fade-in atomos-feature-card">
-                    <div class="atomos-feature-index">01</div>
-                    <div class="card-icon"><i class="hn hn-cybersecurity" style="color: var(--green);"></i></div>
-                    <h3>High Availability</h3>
-                    <p class="atomos-feature-tagline">Zero interruption. Maximum resilience.</p>
-                    <p>When a physical host fails, surviving nodes take its VMs over automatically — so workloads keep running without manual failover.</p>
-                </div>
-
-                <div class="card fade-in atomos-feature-card atomos-feature-card-accent">
-                    <div class="atomos-feature-index">02</div>
-                    <div class="card-icon"><i class="hn hn-trending" style="color: var(--accent-color);"></i></div>
-                    <h3>Live VM Update</h3>
-                    <p class="atomos-feature-tagline">Update VMs while they run.</p>
-                    <p>Change resources and settings on a live virtual machine without stopping it: add CPU and RAM on the fly, attach or detach volumes and networks, and tune autostart, HA priority, and load balancing.</p>
-                </div>
-
-                <div class="card fade-in atomos-feature-card">
-                    <div class="atomos-feature-index">03</div>
-                    <div class="card-icon"><i class="hn hn-link" style="color: var(--blue);"></i></div>
-                    <h3>Multi-Tenant Networking</h3>
-                    <p class="atomos-feature-tagline">One fabric. Every tenant.</p>
-                    <p>Apply the same multi-tenant logic you already use for storage and VMs to the network: admins see every user's networks from one pane, with per-user quotas on networks and IP addresses.</p>
-                </div>
-
-                <div class="card fade-in atomos-feature-card">
-                    <div class="atomos-feature-index">04</div>
-                    <div class="card-icon"><i class="hn hn-save" style="color: var(--blue-light);"></i></div>
-                    <h3>Backup &amp; Replication</h3>
-                    <p class="atomos-feature-tagline">Native Veeam. 100% compatible.</p>
-                    <p>AtomOS integrates natively with Veeam Backup &amp; Replication for hypervisor-level snapshots and backup of your virtual environments.</p>
-                </div>
-
-                <div class="card fade-in atomos-feature-card">
-                    <div class="atomos-feature-index">05</div>
-                    <div class="card-icon"><i class="hn hn-cog" style="color: var(--purple);"></i></div>
-                    <h3>GPU Passthrough</h3>
-                    <p class="atomos-feature-tagline">Real GPUs. Straight to the VM.</p>
-                    <p>Native PCI passthrough assigns physical GPUs directly to virtual machines — no software mediation layer — for AI/ML training and inference on your own hardware, with no extra licensing.</p>
-                </div>
-
-                <div class="card fade-in atomos-feature-card">
-                    <div class="atomos-feature-index"><i class="fas fa-star" aria-hidden="true"></i></div>
-                    <div class="card-icon"><i class="hn hn-grid" style="color: var(--orange);"></i></div>
-                    <h3>Manage It Your Way</h3>
-                    <p class="atomos-feature-tagline">Web GUI · CLI · Electros Metacloud.</p>
-                    <p>Operate from Cockpit at <code>localhost:9090</code>, automate with <code>atomos-cli</code>, or govern AtomOS alongside VMware, AWS, Azure, GCP, and Proxmox from the Electros control plane.</p>
-                </div>
+            <div class="atomos-status-board">
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--doc">Documented</p>
+                    <h3>Compute, storage, vaults</h3>
+                    <p>KVM virtual machines, volumes, and the host bridge are the baseline. Install Compute, Storage, or Full with atomos-cli. A vault module is not a configured pool until you create it.</p>
+                </article>
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--doc">Documented</p>
+                    <h3>Two admin planes</h3>
+                    <p>Electros registers every host in the fleet. atomos-cli stays on the single machine.</p>
+                </article>
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--doc">Documented</p>
+                    <h3>GPU PCI passthrough</h3>
+                    <p>A physical GPU can be assigned to a guest when IOMMU groups allow it. Partitioned GPUs, MIG, and SR-IOV are not part of this release.</p>
+                </article>
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--check">Prove it on your build</p>
+                    <h3>Live migration and load balancing</h3>
+                    <p>Live migration needs matching CPUs, shared storage, and a network path. Dynamic load balancing exists on suitable builds. Measure the trigger, pinning, and maintenance window before you rely on it.</p>
+                </article>
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--check">Prove it on your build</p>
+                    <h3>Hot CPU and RAM</h3>
+                    <p>Hot add is implemented. Windows guests do not support hot-unplug of CPU or RAM. A successful API call is not proof the guest is using the new size.</p>
+                </article>
+                <article class="card fade-in">
+                    <p class="atomos-status atomos-status--check">Prove it on your build</p>
+                    <h3>Backup and Veeam</h3>
+                    <p>Integration components exist. A certified restore runbook does not. Test full and file restore, including a database, on the Veeam and AtomOS versions you will run.</p>
+                </article>
             </div>
 
             <div class="hero-cta atomos-whats-new-cta">
-                <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Deploy in Minutes</a>
+                <a href="#installation" class="btn btn-primary"><i class="fas fa-rocket"></i> Install with atomos-cli</a>
                 <a href="https://atomos.elemento.cloud" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-cart-shopping"></i> Get your free licence</a>
             </div>
         </div>
@@ -803,37 +853,37 @@
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Built on <span class="highlight-pixel">RHEL-Compliant</span> Foundation</h2>
-                <p class="section-subtitle">No customisation. No forks. Just a rock-solid, upstream-aligned base that powers enterprise-grade reliability.</p>
+                <h2 class="section-title">AlmaLinux underneath. <span class="highlight-pixel">Not</span> a fork.</h2>
+                <p class="section-subtitle">Compute and full installs use AlmaLinux. A Red Hat hardware catalogue is evidence about the OS, not an AtomOS certification.</p>
             </div>
             
             <div class="grid grid-2 grid-centered">
                 <div class="fade-in">
                     <p>
-                        AtomOS runs on top of a <span class="pixel-word">RHEL-compliant</span> underlying OS — without customisation or forks. This means you get the full benefit of Red Hat's ecosystem: battle-tested stability, enterprise-grade support, and complete compatibility with the RHEL ecosystem.
+                        Compute and full installs use a supported <span class="pixel-word">AlmaLinux 9</span> release. The October 2026 guide uses 9.8. Do not treat that as support for 10.x.
                     </p>
                     <br>
                     <p>
-                        The kernel is <span class="pixel-word">mainline Linux</span> — no vendor patches or proprietary extensions. This empowers <span class="emphasis-pixel">incredible hardware support</span> and <span class="emphasis-pixel">super fast security updates</span> (and updates in general).
+                        A Red Hat hardware catalogue describes the operating system. It is <span class="emphasis-pixel">not an AtomOS certification</span> of your server, GPU, or NIC.
                     </p>
                     
                     <div class="feature-list-container">
                         <ul class="feature-list">
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                RHEL-compliant base — no customisation, no forks
+                                AlmaLinux for Compute and Full
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Mainline Linux kernel
+                                Ubuntu and Debian for storage-only, on documented versions
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Incredible hardware support from upstream
+                                SUSE is still a lab combination
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="hn hn-check"></i></span>
-                                Super fast security updates and patches
+                                Recommended sizing starts at 16 GB RAM and 8 threads
                             </li>
                         </ul>
                     </div>
@@ -842,13 +892,13 @@
                 <div class="fade-in">
                     <div class="card">
                         <div class="card-icon"><i class="hn hn-cybersecurity" style="color: var(--green);"></i></div>
-                        <h3>Upstream & Fast</h3>
-                        <p>Mainline kernel and RHEL-compliant userspace mean you get security fixes and updates as soon as they're available — no waiting for vendor backports or custom patches.</p>
+                        <h3>Check the build</h3>
+                        <p>Install an AlmaLinux release the chosen AtomOS build actually supports. Confirm hostname, DNS, NTP, and a clean reboot before you run atomos-cli.</p>
                     </div>
                     <div class="card" style="margin-top: 1rem;">
                         <div class="card-icon"><i class="hn hn-cog" style="color: var(--blue);"></i></div>
-                        <h3>Broad Hardware Support</h3>
-                        <p>Leverage the full breadth of Linux hardware support. New devices, GPUs, and NICs work out of the box with upstream drivers.</p>
+                        <h3>Prove the hardware</h3>
+                        <p>Confirm the kernel sees virtualization, disks, NICs, and the IOMMU groups you need. A catalogue entry is not a passthrough test.</p>
                     </div>
                 </div>
             </div>
@@ -864,32 +914,32 @@
                     <div class="stat-icon">
                         <i class="hn hn-cog"></i>
                     </div>
-                    <h3>GPU</h3>
-                    <p>Automatic passthrough</p>
+                    <h3>1.11.0</h3>
+                    <p>Reference family<br><small>Manual updated 16 October 2026. Check the build you install.</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
                         <i class="hn hn-trending"></i>
                     </div>
-                    <h3>+70%</h3>
-                    <p>VM CPU performance</p>
+                    <h3>3</h3>
+                    <p>Install roles<br><small>Compute, Storage, or Full</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3>1000+</h3>
-                    <p>VMs per Host</p>
+                    <h3>€0</h3>
+                    <p>Hypervisor licence<br><small>Support plans are optional</small></p>
                 </div>
                 
                 <div class="stat-item fade-in">
                     <div class="stat-icon">
                         <i class="hn hn-plane"></i>
                     </div>
-                    <h3>10x</h3>
-                    <p>Faster Deployments</p>
+                    <h3>9</h3>
+                    <p>AlmaLinux<br><small>Compute and full. Not 10.x.</small></p>
                 </div>
             </div>
         </div>
@@ -899,8 +949,8 @@
     <section class="section features" id="installation">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Quickstart Install in 3 Minutes</h2>
-                <p class="section-subtitle">Get AtomOS running on your infrastructure quickly and easily</p>
+                <h2 class="section-title">Install with atomos-cli</h2>
+                <p class="section-subtitle">Inspect the bootstrap script, then install Compute, Storage, or Full. The help on the build you installed wins if it differs from this page.</p>
             </div>
             
             <div class="card fade-in installation-card">
@@ -909,15 +959,14 @@
                         <strong><i class="fas fa-rocket" style="color: var(--accent-color);"></i> AtomOS Installation Guide</strong>
                     </div>
                     <div class="terminal-step">
-                        <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install Linux OS based on what kind of node you desire:
+                        <strong><i class="fas fa-download" style="color: var(--blue);"></i> 1.</strong> Install the operating system for the role:
                         <ul style="margin-left: 1rem;">
-                            <li><strong><i class="fas fa-microchip"></i></strong> compute-only node: AlmaLinux 9, Rocky Linux 9</li>
-                            <li><strong><i class="fas fa-hard-drive"></i></strong> storage-only node: AlmaLinux 9, Rocky Linux 9, Ubuntu ≥24</li></li>
-                            <li><strong><i class="fas fa-robot"></i></strong> complete installation (compute + storage): AlmaLinux 9</li>
+                            <li><strong><i class="fas fa-microchip"></i></strong> Compute or Full: a supported AlmaLinux 9 release. The October 2026 guide uses 9.8.</li>
+                            <li><strong><i class="fas fa-hard-drive"></i></strong> Storage-only: documented Ubuntu or Debian releases, or AlmaLinux 9.</li>
                         </ul>
                     </div>
                     <div class="terminal-step">
-                        <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Install the AtomOS CLI tool:<br><code class="terminal-code">curl -fsSL https://repo.elemento.cloud/get-atomos.sh | sudo bash</code>
+                        <strong><i class="fas fa-terminal" style="color: var(--blue);"></i> 2.</strong> Save the bootstrap, read it, then run it:<br><code class="terminal-code">curl -fsSL https://repo.elemento.cloud/get-atomos.sh -o /tmp/get-atomos.sh</code><br><code class="terminal-code">less /tmp/get-atomos.sh &amp;&amp; sudo bash /tmp/get-atomos.sh</code>
                     </div>
                     <div class="terminal-footer">
                         <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Now you can use the AtomOS CLI to install AtomOS</strong>
@@ -928,48 +977,45 @@
                         <strong><i class="fas fa-rocket" style="color: var(--accent-color);"></i></strong> Install the AtomOS services
                     </div>
                     <div class="terminal-step">
-                        <strong><i class="fas fa-circle-info" style="color: var(--blue);"></i></strong> Use <code class="terminal-code">on-prem</code> for local installations or <code class="terminal-code">cloud</code>  if you are on a CSP bare metal.
+                        <strong><i class="fas fa-circle-info" style="color: var(--blue);"></i></strong> The documented role names are Compute, Storage, and Full, with <code class="terminal-code">on-prem</code>. If <code class="terminal-code">atomos-cli --help</code> differs, follow the installed build.
                     </div>
                     <div class="terminal-step-success">
                         <strong>
                             <i class="fas fa-terminal" style="color: var(--green);"></i>
                             <i class="fas fa-hard-drive" style="color: var(--green);"></i> 3.
                         </strong> 
-                        Install for a storage-only node:<br><code class="terminal-code">sudo atomos-cli --install storage &lt;on-prem | cloud&gt;</code>
+                        Install for a storage-only node:<br><code class="terminal-code">sudo atomos-cli --install Storage on-prem</code>
                     </div>
                     <div class="terminal-step-success">
                         <strong>
                             <i class="fas fa-terminal" style="color: var(--green);"></i>
                             <i class="fas fa-microchip" style="color: var(--green);"></i> 3.
                         </strong> 
-                        Install for a compute-only node:<br><code class="terminal-code">sudo atomos-cli --install compute &lt;on-prem | cloud&gt;</code>
+                        Install for a compute-only node:<br><code class="terminal-code">sudo atomos-cli --install Compute on-prem</code>
                     </div>
                     <div class="terminal-step-success">
                         <strong>
                             <i class="fas fa-terminal" style="color: var(--green);"></i>
                             <i class="fas fa-robot" style="color: var(--green);"></i> 3.
                         </strong> 
-                        Install for a complete AtomOS version:<br><code class="terminal-code">sudo atomos-cli --install full &lt;on-prem | cloud&gt;</code>
+                        Install for a complete AtomOS version:<br><code class="terminal-code">sudo atomos-cli --install Full on-prem</code>
                     </div>
                     <div class="terminal-step">
                         <strong><i class="fas fa-gear" style="color: var(--blue);"></i> 4.</strong> Follow AtomOS CLI indications to conclude the configuration:
                         <ul style="margin-left: 1rem;">
-                            <li><i class="fas fa-download" style="color: var(--blue);"></i> Install additiona modules (ZFS, GlusterFS)</li>
+                            <li><i class="fas fa-download" style="color: var(--blue);"></i> Optional modules such as ZFS, GlusterFS, Lazydocker, and NVMe-oF. Installing a module does not create the pool.</li>
                             <li><i class="fas fa-hard-drive" style="color: var(--blue);"></i> Setup the storage</li>
                             <li><i class="fas fa-ethernet" style="color: var(--blue);"></i> Setup the network</li>
                         </ul>
                     </div>
                     <div class="terminal-step-success">
-                        <strong><i class="fas fa-globe" style="color: var(--blue-light);"></i> 5.</strong> Access Web UI at <code class="terminal-code">localhost:9090</code>
+                        <strong><i class="fas fa-power-off" style="color: var(--blue-light);"></i> 5.</strong> Reboot the host.
                     </div>
                     <div class="terminal-step-success">
-                        <strong><i class="fas fa-power-off" style="color: var(--blue-light);"></i> 6.</strong> Reboot the host.
-                    </div>
-                    <div class="terminal-step-success">
-                        <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 7.</strong> Install <strong>Electros</strong> on your PC or Mac to launch and manage VMs from anywhere
+                        <strong><i class="fas fa-cube" style="color: var(--purple);"></i> 6.</strong> Install <strong>Electros</strong> on your PC or Mac to launch and manage VMs from anywhere
                     </div>
                     <div class="terminal-footer">
-                        <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Ready to deploy your first VM in minutes!</strong>
+                        <strong><i class="fas fa-check-circle" style="color: var(--green);"></i> Reboot, then check the host with atomos-cli --check before you place a workload.</strong>
                     </div>
                 </div>
             </div>
@@ -980,45 +1026,45 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Advanced Hypervisor Features for Private Cloud Deployments</h2>
-                <p class="section-subtitle">Enterprise-grade features designed for production workloads</p>
+                <h2 class="section-title">What you operate on the host</h2>
+                <p class="section-subtitle">Documented host capabilities from the 1.11.0 manual. Each one still needs a test on the build you install.</p>
             </div>
             
             <div class="grid grid-3">
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-save" style="color: var(--blue);"></i></div>
-                    <h3>Thin Provisioning</h3>
-                    <p>Supported via qcow2 format for efficient storage utilization and dynamic disk allocation.</p>
+                    <h3>Volumes</h3>
+                    <p>Virtual machines use volumes on the host. qcow2 is the thin format to validate with the storage you choose.</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-shuffle" style="color: var(--green);"></i></div>
-                    <h3>Live VM Migration</h3>
-                    <p>Over fast LAN + shared FS for zero-downtime workload mobility.</p>
+                    <h3>Live migration</h3>
+                    <p>Possible when CPUs match, storage is shared, and the network path is there. Measure it before you schedule maintenance around it.</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-lock" style="color: var(--orange);"></i></div>
-                    <h3>Secure Boot + vTPM</h3>
-                    <p>Full support for secure boot and Virtual Trusted Platform Module for enhanced security.</p>
+                    <h3>Hot CPU and RAM</h3>
+                    <p>Hot add is implemented. Windows guests do not support hot-unplug of CPU or RAM.</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-code-block" style="color: var(--purple);"></i></div>
-                    <h3>Command Line Tools</h3>
-                    <p>Standard Linux virtualization tools for automation and scripting.</p>
+                    <h3>atomos-cli</h3>
+                    <p>Install, bridge setup, status, and the cluster secret are host commands. Electros does not replace the machine's own Linux admin.</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="hn hn-trending" style="color: var(--blue-light);"></i></div>
-                    <h3>Load Balancing</h3>
-                    <p>Automatically distributes workloads across nodes without needing a central controller. Each server makes local decisions to balance traffic, ensuring high performance, resilience, and seamless scalability.</p>
+                    <h3>Load balancing</h3>
+                    <p>Dynamic placement exists on suitable builds. Confirm the trigger, pinning, and the maintenance window on your cluster.</p>
                 </div>
                 
                 <div class="card fade-in">
                     <div class="card-icon"><i class="fas fa-database" style="color: var(--green-light);"></i></div>
-                    <h3>Storage Backends</h3>
-                    <p>Any shared FS: GlusterFS, Ceph, NFS, iSCSI, etc. - flexible storage options for your infrastructure.</p>
+                    <h3>Storage modules</h3>
+                    <p>The wizard can offer ZFS, GlusterFS, Lazydocker, and NVMe-oF. Ceph needs an explicit compatibility check. Installing a module does not configure the pool.</p>
                 </div>
             </div>
         </div>
@@ -1071,7 +1117,7 @@
                             <tr class="comparison-table-row">
                                 <td class="comparison-table-cell">Cluster Setup</td>
                                 <td class="comparison-table-cell-secondary">Manual w/ License</td>
-                                <td class="comparison-table-cell-primary">Auto-discovery w/ License (with our C4 patented protocol)</td>
+                                <td class="comparison-table-cell-primary">C4 publishes capacity. Failover is a separate test.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1081,7 +1127,7 @@
             <div class="cost-calculator-block">
                 <div class="section-header" style="margin-top: 9.5rem;" id="cost-calculator">
                     <h2 class="section-title" id="atomos-page-title">Compare Costs — AtomOS vs VMware</h2>
-                    <p class="section-subtitle" id="atomos-page-subtitle">Calculate how much you could save with AtomOS compared to VMware. Discover how our virtualization solution helps you escape rising costs, without compromising enterprise-level reliability.</p>
+                    <p class="section-subtitle" id="atomos-page-subtitle">The hypervisor licence is €0 per server. Compare that with a VMware licence on the same hardware.</p>
                     <p style="margin-top: 0.5rem;"><a href="compare-costs.html" style="font-size: 0.9rem; color: var(--text-muted);">Standalone calculator page →</a></p>
                 </div>
                 <div class="fade-in" data-atomos-calculator></div>
@@ -1093,8 +1139,8 @@
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Compatible Guest Operating Systems</h2>
-                <p class="section-subtitle">AtomOS supports a wide range of Linux and Windows guest OSes for flexible deployment scenarios</p>
+                <h2 class="section-title">Prove the guest you will run</h2>
+                <p class="section-subtitle">The 1.11.0 manual does not publish a certified guest matrix. KVM can boot many Linux and Windows systems. Windows does not support hot-unplug of CPU or RAM.</p>
             </div>
             
             <div class="grid grid-3">
@@ -1116,7 +1162,7 @@
                         <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> OpenBSD</span>
                         <span class="os-tag"><i class="fab fa-freebsd" style="color: var(--os-freebsd);"></i> FreeBSD</span>
                         <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> NetBSD</span>
-                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> <span class="highlight-pixel">Virtually any Linux...</span></span>
+                        <span class="os-tag"><i class="fab fa-linux" style="color: var(--os-linux);"></i> Other Linux guests — test them</span>
                     </div>
                 </div>
                 
@@ -1155,53 +1201,22 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Filesystem & Disk Format Compatibility</h2>
-                <p class="section-subtitle">For performance, use raw or qcow2 on stable Linux-native FS (EXT4, XFS). Avoid BTRFS/ReFS stacking with qcow2.</p>
+                <h2 class="section-title">Storage you configure</h2>
+                <p class="section-subtitle">Installing a module does not create the pool. Ceph stays off until that build has been validated.</p>
             </div>
-            
-            <div class="comparison-table fade-in">
-                <div class="table-container comparison-table-container">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr class="comparison-table-header">
-                                <th>Filesystem</th>
-                                <th>qcow2</th>
-                                <th>raw</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">NTFS</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Stable</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-check" style="color: var(--green);"></i><br> Stable</td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">ReFS</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">EXT4</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Recommended</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Full support</td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">XFS</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Recommended</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-check" style="color: var(--green);"></i><br> Full support</td>
-                            </tr>
-                            <tr class="comparison-table-row-alt">
-                                <td class="comparison-table-cell">BTRFS</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
-                                <td class="comparison-table-cell-warning"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
-                            </tr>
-                            <tr class="comparison-table-row">
-                                <td class="comparison-table-cell">ZFS</td>
-                                <td class="comparison-table-cell-error"><i class="fas fa-times" style="color: var(--red);"></i><br> Avoid CoW-on-CoW</td>
-                                <td class="comparison-table-cell-success"><i class="fas fa-exclamation-triangle" style="color: var(--yellow);"></i><br> Not recommended</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <h3>ZFS and GlusterFS</h3>
+                    <p>The install wizard can offer these modules. A module on disk is not a pool, an export, or a shared filesystem.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>NVMe-oF and iSCSI</h3>
+                    <p>The manual lists them among storage paths to design. Confirm the network, the target, and a reboot before you place virtual disks there.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Ceph</h3>
+                    <p>Leave Ceph disabled until you have an explicit compatibility check for the AtomOS build you are running.</p>
                 </div>
             </div>
         </div>
@@ -1211,32 +1226,32 @@
     <section class="section features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Self-Healing Clusters with C4 Protocol</h2>
-                <p class="section-subtitle">Autonomous clustering without centralized management</p>
+                <h2 class="section-title">C4 finds capacity. It does not fail over for you.</h2>
+                <p class="section-subtitle">Hosts publish what they can run. A client can ask for a match. Quorum, fencing, and automatic VM restart are a separate test.</p>
             </div>
             
             <div class="grid grid-2 c4-content">
                 <div class="fade-in">
-                    <p><span class="pixel-brand">AtomOS</span> implements Elemento's <span class="emphasis-pixel">C4 protocol</span> for automatic peer discovery and trust-based node linking. No need for orchestrators, matchmaker services, or controller VMs.</p>
+                    <p><span class="pixel-brand">C4</span> is the discovery and capability layer. Hosts advertise capacity. That visibility is not the same as permission to place a workload, and it is not high availability.</p>
                     
                     <div class="c4-benefits">
                         <h4>Key Benefits:</h4>
                         <ul>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span>
-                                Automatic node discovery and trust establishment
+                                Hosts advertise capacity. Multi-node installs share one cluster secret
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span>
-                                No centralized management or single points of failure
+                                Electros still decides which connection is active
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span>
-                                Self-healing cluster topology with automatic failover
+                                Failover, fencing, and split-brain behaviour must be tested on your cluster
                             </li>
                             <li class="feature-list-item">
                                 <span class="feature-check"><i class="fas fa-check"></i></span>
-                                Distributed control plane with peer-to-peer communication
+                                A single host has no intrinsic high availability
                             </li>
                         </ul>
                     </div>
@@ -1247,8 +1262,8 @@
                 <div class="fade-in">
                     <div class="card c4-card">
                         <div class="feature-icon c4-icon"><i class="fas fa-network-wired" style="color: var(--blue);"></i></div>
-                        <h3>Autonomous Clustering</h3>
-                        <p>Every host participates in its own discovery and control fabric without external dependencies.</p>
+                        <h3>Discovery, then a decision</h3>
+                        <p>C4 can help place a workload on a compatible host. It does not elect a leader or fence a failed node for you.</p>
                     </div>
                 </div>
             </div>
@@ -1273,27 +1288,27 @@
                     <ul class="plan-features">
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Unlimited VMs and nested virt
+                            No per-VM or per-core hypervisor licence
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Web GUI (Cockpit + Electros orchestration dashboard)
+                            Local console for that server, Electros for the fleet
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Monitoring + Alerts (Grafana stack)
+                            atomos-cli on the host
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Live migration
+                            Live migration — validate CPU, shared storage, and network on your build
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Full CLI control (virsh, qemu-img)
+                            Host administration with Linux, systemd, and libvirt
                         </li>
                         <li class="feature-list-item">
                             <span class="feature-check">✓</span>
-                            Guaranteed upgrade path
+                            Optional support plans, sold per server
                         </li>
                     </ul>
                     <div class="plan-cta">
@@ -1448,26 +1463,31 @@
                 <p class="section-subtitle">Common questions about AtomOS deployment and usage</p>
             </div>
             
-            <div class="grid grid-2">
-                <div class="card fade-in">
-                    <h4>What platforms support AtomOS?</h4>
-                    <p>Runs on x86_64 servers (Intel/AMD) with virtualization support. Also runs as nested guest in AWS/GCP/Azure metal VMs.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h4>Can I use AtomOS for gaming or AI workloads?</h4>
-                    <p>Yes. GPU passthrough is supported for NVIDIA (GTX960+) and AMD cards, tested for gaming, 3D rendering, and inference engines.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h4>Does AtomOS require a central manager?</h4>
-                    <p>No. Unlike vSphere or Proxmox, clustering is embedded — every host participates in its own discovery and control fabric.</p>
-                </div>
-                
-                <div class="card fade-in">
-                    <h4>Is AtomOS open-source?</h4>
-                    <p>Core hypervisor is open. Electros and C4 protocol orchestration layers are licensed with commercial support options.</p>
-                </div>
+            <div class="electros-spoilers">
+                <details class="electros-spoiler">
+                    <summary>Which operating system does AtomOS install on?</summary>
+                    <p>Compute and full installs use a supported AlmaLinux 9 release. The October 2026 guide uses 9.8 and does not extend that to 10.x. Ubuntu and Debian are documented for storage-only. SUSE is still a lab combination.</p>
+                </details>
+                <details class="electros-spoiler">
+                    <summary>Can I pass a GPU to a virtual machine?</summary>
+                    <p>PCI passthrough is the documented path, and it depends on IOMMU groups, the GPU, and the driver. Partitioned GPUs are not in this release. Prove the card on the hardware you will ship.</p>
+                </details>
+                <details class="electros-spoiler">
+                    <summary>Does clustering fail over by itself?</summary>
+                    <p>No. C4 discovers capacity. Quorum, fencing, fault detection, and automatic VM restart are still a test you run. A single host has no intrinsic high availability.</p>
+                </details>
+                <details class="electros-spoiler">
+                    <summary>How do Electros and the host split the work?</summary>
+                    <p>Electros registers the target, checks the certificate, and runs the VM workflow. The machine itself is administered with Linux, atomos-cli, systemd, and libvirt.</p>
+                </details>
+                <details class="electros-spoiler">
+                    <summary>Is Veeam a certified backup?</summary>
+                    <p>Integration components are available. Restore of a whole VM or a single file still has to be measured on your Veeam build, guest, and AtomOS version. RAID is not a backup.</p>
+                </details>
+                <details class="electros-spoiler">
+                    <summary>Is the hypervisor free?</summary>
+                    <p>Yes. The AtomOS hypervisor licence is €0 per server. Optional support plans are separate. Check the installed component versions before you treat a procedure as supported.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -1509,8 +1529,8 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Transform any machine into a production-ready hypervisor with AtomOS.</h2>
-                <p class="section-subtitle">Experience the power of Linux-native virtualization for your infrastructure</p>
+                <h2 class="section-title">Run KVM on your servers. Govern the fleet from Electros.</h2>
+                <p class="section-subtitle">The hypervisor licence is €0 per server. Support plans are optional.</p>
             </div>
             
             <div class="text-center" style="display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; align-items: center;">

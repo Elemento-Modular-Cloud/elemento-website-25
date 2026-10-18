@@ -52,8 +52,8 @@
     "legacyPath": "atomos.html",
     "group": "root",
     "slug": "atomos",
-    "title": "AtomOS — Powering Your Cloud with Linux Hypervisor | Elemento Cloud",
-    "description": "AtomOS is a lightweight, high-performance Linux hypervisor for bare metal and on-premise clouds. RHEL-compatible, GPU-ready, and clustering-enabled.",
+    "title": "AtomOS — Linux hypervisor for your infrastructure | Elemento Cloud",
+    "description": "AtomOS 1.11.0 is Elemento's Linux-native KVM hypervisor. Install compute, storage, or both with atomos-cli, and govern hosts from Electros. The hypervisor is free.",
     "robots": "index, follow",
     "ogType": "product",
     "extraCss": [

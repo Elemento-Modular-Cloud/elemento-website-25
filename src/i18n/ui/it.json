@@ -135,8 +135,8 @@
       "description": "Guarda keynote, webinar e registrazioni prodotto di Elemento. Video incorporati e risorse dal team Elemento."
     },
     "atomos": {
-      "description": "AtomOS è un hypervisor Linux leggero e ad alte prestazioni per cloud bare metal e on-premise. Compatibile con RHEL, pronto per GPU e abilitato per il clustering.",
-      "title": "AtomOS: potenzia il tuo cloud con l'hypervisor Linux | Elemento Cloud"
+      "description": "AtomOS 1.11.0 è l'hypervisor KVM Linux di Elemento. Installa compute, storage o entrambi con atomos-cli e governa gli host da Electros. L'hypervisor è gratuito.",
+      "title": "AtomOS — Hypervisor Linux per la tua infrastruttura | Elemento Cloud"
     },
     "atomosphere": {
       "description": "Il gateway API multicloud di Elemento connette oltre 235 cloud e nodi on-premise in un'unica rete programmabile. Controllo unificato, portabilità senza interruzioni.",

@@ -230,6 +230,466 @@
     ],
     "atomos": [
       {
+        "en": "Electros runs the fleet. The local UI runs one server.",
+        "it": "Electros gestisce la flotta. L'interfaccia locale gestisce un solo server."
+      },
+      {
+        "en": "Electros is the desktop for every registered AtomOS host. The local console is the machine you are on.",
+        "it": "Electros è il desktop di ogni host AtomOS registrato. La console locale è la macchina su cui ti trovi."
+      },
+      {
+        "en": "Many hosts",
+        "it": "Molti host"
+      },
+      {
+        "en": "Desktop. Every registered host.",
+        "it": "Desktop. Ogni host registrato."
+      },
+      {
+        "en": "Open Host C",
+        "it": "Apri l'host C"
+      },
+      {
+        "en": "This server only.",
+        "it": "Solo questo server."
+      },
+      {
+        "en": "libvirt and KVM",
+        "it": "libvirt e KVM"
+      },
+      {
+        "en": "The local console lists this machine. Electros lists Host A, Host B, and Host C.",
+        "it": "La console locale elenca questa macchina. Electros elenca l'host A, l'host B e l'host C."
+      },
+      {
+        "en": "One install command. Three roles.",
+        "it": "Un solo comando di installazione. Tre ruoli."
+      },
+      {
+        "en": "AlmaLinux. Virtual machines on this host.",
+        "it": "AlmaLinux. Macchine virtuali su questo host."
+      },
+      {
+        "en": "AlmaLinux, Ubuntu, or Debian. Volumes on this host.",
+        "it": "AlmaLinux, Ubuntu o Debian. Volumi su questo host."
+      },
+      {
+        "en": "AlmaLinux. Compute and storage on the same host.",
+        "it": "AlmaLinux. Compute e storage sullo stesso host."
+      },
+      {
+        "en": "From the 16 October 2026 technical manual.",
+        "it": "Dal manuale tecnico del 16 ottobre 2026."
+      },
+      {
+        "en": "Electros registers every host in the fleet. atomos-cli stays on the single machine.",
+        "it": "Electros registra ogni host della flotta. atomos-cli resta sulla singola macchina."
+      },
+      {
+        "en": "Local UI",
+        "it": "Interfaccia locale"
+      },
+      {
+        "en": "Family 1.11.0. KVM, QEMU and libvirt on AlmaLinux, installed with atomos-cli as compute, storage, or both. Electros is the fleet screen. The hypervisor stays free.",
+        "it": "Famiglia 1.11.0. KVM, QEMU e libvirt su AlmaLinux, installati con atomos-cli come compute, storage o entrambi. Electros è la schermata della flotta. L'hypervisor resta gratuito."
+      },
+      {
+        "en": "Compute runs on AlmaLinux. atomos-cli installs Compute, Storage, or Full. Ubuntu and Debian are documented for storage only.",
+        "it": "Il compute gira su AlmaLinux. atomos-cli installa Compute, Storage o Full. Ubuntu e Debian sono documentati solo per lo storage."
+      },
+      {
+        "en": "PCI passthrough can hand a physical GPU to a guest. Partitioned GPUs are not in this release. Validate the GPU and driver on your hardware.",
+        "it": "Il passthrough PCI può assegnare una GPU fisica a un guest. Le GPU partizionate non sono in questa release. Valida GPU e driver sul tuo hardware."
+      },
+      {
+        "en": "Electros registers the host, checks the certificate, and runs the VM workflow. The host itself is still Linux, atomos-cli, and libvirt.",
+        "it": "Electros registra l'host, controlla il certificato ed esegue il flusso delle VM. L'host resta Linux, atomos-cli e libvirt."
+      },
+      {
+        "en": "From the 16 October 2026 technical manual. Documented behaviour is not the same as a failover you have already tested.",
+        "it": "Dal manuale tecnico del 16 ottobre 2026. Un comportamento documentato non è un failover che hai già collaudato."
+      },
+      {
+        "en": "KVM virtual machines, volumes, and the host bridge are the baseline. Install Compute, Storage, or Full with atomos-cli. A vault module is not a configured pool until you create it.",
+        "it": "Macchine virtuali KVM, volumi e il bridge dell'host sono la base. Installa Compute, Storage o Full con atomos-cli. Un modulo vault non è un pool finché non lo crei."
+      },
+      {
+        "en": "On the host: Linux, atomos-cli, systemd, libvirt. In the fleet: Electros registers the target, checks the fingerprint, and runs the VM workflow inside your organisation's permissions.",
+        "it": "Sull'host: Linux, atomos-cli, systemd, libvirt. Nella flotta: Electros registra il target, controlla l'impronta ed esegue il flusso delle VM dentro i permessi della tua organizzazione."
+      },
+      {
+        "en": "A physical GPU can be assigned to a guest when IOMMU groups allow it. Partitioned GPUs, MIG, and SR-IOV are not part of this release.",
+        "it": "Una GPU fisica può essere assegnata a un guest quando i gruppi IOMMU lo consentono. GPU partizionate, MIG e SR-IOV non fanno parte di questa release."
+      },
+      {
+        "en": "Live migration needs matching CPUs, shared storage, and a network path. Dynamic load balancing exists on suitable builds. Measure the trigger, pinning, and maintenance window before you rely on it.",
+        "it": "La migrazione live richiede CPU compatibili, storage condiviso e un percorso di rete. Il bilanciamento dinamico esiste su build adatte. Misura trigger, pinning e finestra di manutenzione prima di farci affidamento."
+      },
+      {
+        "en": "Hot add is implemented. Windows guests do not support hot-unplug of CPU or RAM. A successful API call is not proof the guest is using the new size.",
+        "it": "L'hot add è implementato. I guest Windows non supportano l'hot-unplug di CPU o RAM. Una chiamata API riuscita non dimostra che il guest usi la nuova dimensione."
+      },
+      {
+        "en": "Integration components exist. A certified restore runbook does not. Test full and file restore, including a database, on the Veeam and AtomOS versions you will run.",
+        "it": "I componenti di integrazione esistono. Un runbook di restore certificato no. Prova il restore completo e di file, incluso un database, sulle versioni Veeam e AtomOS che eseguirai."
+      },
+      {
+        "en": "C4 publishes capacity so a client can ask for a compatible host. It does not, by itself, give you quorum, fencing, leader election, or automatic VM restart. Treat failover as a test you still have to pass.",
+        "it": "C4 pubblica la capacità così un client può chiedere un host compatibile. Da solo non dà quorum, fencing, elezione di un leader o riavvio automatico delle VM. Il failover è un test che devi ancora superare."
+      },
+      {
+        "en": "Compute and full installs use AlmaLinux. A Red Hat hardware catalogue is evidence about the OS, not an AtomOS certification.",
+        "it": "Le installazioni compute e full usano AlmaLinux. Un catalogo hardware Red Hat parla del sistema operativo, non è una certificazione AtomOS."
+      },
+      {
+        "en": "Compute and full installs use a supported AlmaLinux 9 release. The October 2026 guide uses 9.8. Do not treat that as support for 10.x.",
+        "it": "Le installazioni compute e full usano una release AlmaLinux 9 supportata. La guida di ottobre 2026 usa la 9.8. Non considerarla un supporto per la 10.x."
+      },
+      {
+        "en": "A Red Hat hardware catalogue describes the operating system. It is not an AtomOS certification of your server, GPU, or NIC.",
+        "it": "Un catalogo hardware Red Hat descrive il sistema operativo. Non è una certificazione AtomOS del server, della GPU o della NIC."
+      },
+      {
+        "en": "Ubuntu and Debian for storage-only, on documented versions",
+        "it": "Ubuntu e Debian solo per lo storage, sulle versioni documentate"
+      },
+      {
+        "en": "SUSE is still a lab combination",
+        "it": "SUSE è ancora una combinazione da laboratorio"
+      },
+      {
+        "en": "Recommended sizing starts at 16 GB RAM and 8 threads",
+        "it": "Il dimensionamento consigliato parte da 16 GB di RAM e 8 thread"
+      },
+      {
+        "en": "AlmaLinux for Compute and Full",
+        "it": "AlmaLinux per Compute e Full"
+      },
+      {
+        "en": "Install an AlmaLinux release the chosen AtomOS build actually supports. Confirm hostname, DNS, NTP, and a clean reboot before you run atomos-cli.",
+        "it": "Installa una release AlmaLinux che la build AtomOS scelta supporta davvero. Conferma hostname, DNS, NTP e un reboot pulito prima di eseguire atomos-cli."
+      },
+      {
+        "en": "Confirm the kernel sees virtualization, disks, NICs, and the IOMMU groups you need. A catalogue entry is not a passthrough test.",
+        "it": "Conferma che il kernel veda virtualizzazione, dischi, NIC e i gruppi IOMMU che ti servono. Una voce di catalogo non è un test di passthrough."
+      },
+      {
+        "en": "Reference family",
+        "it": "Famiglia di riferimento"
+      },
+      {
+        "en": "Manual updated 16 October 2026. Check the build you install.",
+        "it": "Manuale aggiornato il 16 ottobre 2026. Controlla la build che installi."
+      },
+      {
+        "en": "Install roles",
+        "it": "Ruoli di installazione"
+      },
+      {
+        "en": "Compute, Storage, or Full",
+        "it": "Compute, Storage o Full"
+      },
+      {
+        "en": "Hypervisor licence",
+        "it": "Licenza hypervisor"
+      },
+      {
+        "en": "Support plans are optional",
+        "it": "I piani di supporto sono opzionali"
+      },
+      {
+        "en": "Compute and full. Not 10.x.",
+        "it": "Compute e full. Non la 10.x."
+      },
+      {
+        "en": "Inspect the bootstrap script, then install Compute, Storage, or Full. The help on the build you installed wins if it differs from this page.",
+        "it": "Ispeziona lo script di bootstrap, poi installa Compute, Storage o Full. Se l'help della build installata differisce da questa pagina, vince l'help."
+      },
+      {
+        "en": "Install the operating system for the role:",
+        "it": "Installa il sistema operativo per il ruolo:"
+      },
+      {
+        "en": "Compute or Full: a supported AlmaLinux 9 release. The October 2026 guide uses 9.8.",
+        "it": "Compute o Full: una release AlmaLinux 9 supportata. La guida di ottobre 2026 usa la 9.8."
+      },
+      {
+        "en": "Storage-only: documented Ubuntu or Debian releases, or AlmaLinux 9.",
+        "it": "Solo storage: release Ubuntu o Debian documentate, oppure AlmaLinux 9."
+      },
+      {
+        "en": "The documented role names are Compute, Storage, and Full, with on-prem. If atomos-cli --help differs, follow the installed build.",
+        "it": "I nomi di ruolo documentati sono Compute, Storage e Full, con on-prem. Se atomos-cli --help differisce, segui la build installata."
+      },
+      {
+        "en": "Optional modules such as ZFS, GlusterFS, Lazydocker, and NVMe-oF. Installing a module does not create the pool.",
+        "it": "Moduli opzionali come ZFS, GlusterFS, Lazydocker e NVMe-oF. Installare un modulo non crea il pool."
+      },
+      {
+        "en": "Documented host capabilities from the 1.11.0 manual. Each one still needs a test on the build you install.",
+        "it": "Capacità dell'host documentate nel manuale 1.11.0. Ognuna va comunque collaudata sulla build che installi."
+      },
+      {
+        "en": "What you operate on the host",
+        "it": "Cosa operi sull'host"
+      },
+      {
+        "en": "Virtual machines use volumes on the host. qcow2 is the thin format to validate with the storage you choose.",
+        "it": "Le macchine virtuali usano volumi sull'host. qcow2 è il formato thin da validare con lo storage che scegli."
+      },
+      {
+        "en": "Possible when CPUs match, storage is shared, and the network path is there. Measure it before you schedule maintenance around it.",
+        "it": "Possibile quando le CPU coincidono, lo storage è condiviso e il percorso di rete c'è. Misurala prima di pianificarci una manutenzione."
+      },
+      {
+        "en": "Hot add is implemented. Windows guests do not support hot-unplug of CPU or RAM.",
+        "it": "L'hot add è implementato. I guest Windows non supportano l'hot-unplug di CPU o RAM."
+      },
+      {
+        "en": "Install, bridge setup, status, and the cluster secret are host commands. Electros does not replace the machine's own Linux admin.",
+        "it": "Installazione, bridge, stato e cluster secret sono comandi sull'host. Electros non sostituisce l'amministrazione Linux della macchina."
+      },
+      {
+        "en": "Dynamic placement exists on suitable builds. Confirm the trigger, pinning, and the maintenance window on your cluster.",
+        "it": "Il posizionamento dinamico esiste su build adatte. Conferma trigger, pinning e finestra di manutenzione sul tuo cluster."
+      },
+      {
+        "en": "The wizard can offer ZFS, GlusterFS, Lazydocker, and NVMe-oF. Ceph needs an explicit compatibility check. Installing a module does not configure the pool.",
+        "it": "Il wizard può offrire ZFS, GlusterFS, Lazydocker e NVMe-oF. Ceph richiede un controllo di compatibilità esplicito. Installare un modulo non configura il pool."
+      },
+      {
+        "en": "C4 publishes capacity. Failover is a separate test.",
+        "it": "C4 pubblica la capacità. Il failover è un test a parte."
+      },
+      {
+        "en": "The hypervisor licence is €0 per server. Compare that with a VMware licence on the same hardware.",
+        "it": "La licenza hypervisor è 0 € per server. Confrontala con una licenza VMware sullo stesso hardware."
+      },
+      {
+        "en": "The 1.11.0 manual does not publish a certified guest matrix. KVM can boot many Linux and Windows systems. Windows does not support hot-unplug of CPU or RAM.",
+        "it": "Il manuale 1.11.0 non pubblica una matrice guest certificata. KVM può avviare molti sistemi Linux e Windows. Windows non supporta l'hot-unplug di CPU o RAM."
+      },
+      {
+        "en": "Prove the guest you will run",
+        "it": "Prova il guest che eseguirai"
+      },
+      {
+        "en": "Other Linux guests — test them",
+        "it": "Altri guest Linux — provali"
+      },
+      {
+        "en": "Storage you configure",
+        "it": "Storage che configuri"
+      },
+      {
+        "en": "Installing a module does not create the pool. Ceph stays off until that build has been validated.",
+        "it": "Installare un modulo non crea il pool. Ceph resta spento finché quella build non è stata validata."
+      },
+      {
+        "en": "The install wizard can offer these modules. A module on disk is not a pool, an export, or a shared filesystem.",
+        "it": "Il wizard di installazione può offrire questi moduli. Un modulo su disco non è un pool, un export o un filesystem condiviso."
+      },
+      {
+        "en": "The manual lists them among storage paths to design. Confirm the network, the target, and a reboot before you place virtual disks there.",
+        "it": "Il manuale li elenca tra i percorsi di storage da progettare. Conferma rete, target e un reboot prima di metterci dischi virtuali."
+      },
+      {
+        "en": "Leave Ceph disabled until you have an explicit compatibility check for the AtomOS build you are running.",
+        "it": "Lascia Ceph disattivato finché non hai un controllo di compatibilità esplicito per la build AtomOS che stai eseguendo."
+      },
+      {
+        "en": "Hosts publish what they can run. A client can ask for a match. Quorum, fencing, and automatic VM restart are a separate test.",
+        "it": "Gli host pubblicano ciò che possono eseguire. Un client può chiedere una corrispondenza. Quorum, fencing e riavvio automatico delle VM sono un test a parte."
+      },
+      {
+        "en": "C4 finds capacity. It does not fail over for you.",
+        "it": "C4 trova la capacità. Non fa il failover al posto tuo."
+      },
+      {
+        "en": "C4 is the discovery and capability layer. Hosts advertise capacity. That visibility is not the same as permission to place a workload, and it is not high availability.",
+        "it": "C4 è il livello di discovery e di capacità. Gli host annunciano la capacità. Quella visibilità non è il permesso di collocare un carico, e non è alta disponibilità."
+      },
+      {
+        "en": "Hosts advertise capacity. Multi-node installs share one cluster secret",
+        "it": "Gli host annunciano la capacità. Le installazioni multi-nodo condividono un solo cluster secret"
+      },
+      {
+        "en": "Electros still decides which connection is active",
+        "it": "Electros decide ancora quale connessione è attiva"
+      },
+      {
+        "en": "Failover, fencing, and split-brain behaviour must be tested on your cluster",
+        "it": "Failover, fencing e comportamento di split-brain vanno collaudati sul tuo cluster"
+      },
+      {
+        "en": "A single host has no intrinsic high availability",
+        "it": "Un singolo host non ha alta disponibilità intrinseca"
+      },
+      {
+        "en": "C4 can help place a workload on a compatible host. It does not elect a leader or fence a failed node for you.",
+        "it": "C4 può aiutare a collocare un carico su un host compatibile. Non elegge un leader e non isola un nodo guasto al posto tuo."
+      },
+      {
+        "en": "Discovery, then a decision",
+        "it": "Discovery, poi una decisione"
+      },
+      {
+        "en": "No per-VM or per-core hypervisor licence",
+        "it": "Nessuna licenza hypervisor per VM o per core"
+      },
+      {
+        "en": "Local console for that server, Electros for the fleet",
+        "it": "Console locale per quel server, Electros per la flotta"
+      },
+      {
+        "en": "atomos-cli on the host",
+        "it": "atomos-cli sull'host"
+      },
+      {
+        "en": "Live migration — validate CPU, shared storage, and network on your build",
+        "it": "Migrazione live — valida CPU, storage condiviso e rete sulla tua build"
+      },
+      {
+        "en": "Host administration with Linux, systemd, and libvirt",
+        "it": "Amministrazione dell'host con Linux, systemd e libvirt"
+      },
+      {
+        "en": "Optional support plans, sold per server",
+        "it": "Piani di supporto opzionali, venduti per server"
+      },
+      {
+        "en": "RHEL-compatible base: AlmaLinux for compute and full installs",
+        "it": "Base compatibile RHEL: AlmaLinux per le installazioni compute e full"
+      },
+      {
+        "en": "Three roles from atomos-cli: Compute, Storage, or Full",
+        "it": "Tre ruoli da atomos-cli: Compute, Storage o Full"
+      },
+      {
+        "en": "GPU PCI passthrough — validate the card, driver, and IOMMU group",
+        "it": "Passthrough PCI della GPU — valida scheda, driver e gruppo IOMMU"
+      },
+      {
+        "en": "C4 discovers capacity. It does not by itself provide quorum, fencing, or failover",
+        "it": "C4 scopre la capacità. Da solo non fornisce quorum, fencing o failover"
+      },
+      {
+        "en": "Fleet workflow in Electros, host operations on the machine",
+        "it": "Flusso di flotta in Electros, operazioni sull'host nella macchina"
+      },
+      {
+        "en": "Which operating system does AtomOS install on?",
+        "it": "Su quale sistema operativo si installa AtomOS?"
+      },
+      {
+        "en": "Compute and full installs use a supported AlmaLinux 9 release. The October 2026 guide uses 9.8 and does not extend that to 10.x. Ubuntu and Debian are documented for storage-only. SUSE is still a lab combination.",
+        "it": "Le installazioni compute e full usano una release AlmaLinux 9 supportata. La guida di ottobre 2026 usa la 9.8 e non la estende alla 10.x. Ubuntu e Debian sono documentati solo per lo storage. SUSE è ancora una combinazione da laboratorio."
+      },
+      {
+        "en": "Can I pass a GPU to a virtual machine?",
+        "it": "Posso passare una GPU a una macchina virtuale?"
+      },
+      {
+        "en": "PCI passthrough is the documented path, and it depends on IOMMU groups, the GPU, and the driver. Partitioned GPUs are not in this release. Prove the card on the hardware you will ship.",
+        "it": "Il passthrough PCI è il percorso documentato, e dipende da gruppi IOMMU, GPU e driver. Le GPU partizionate non sono in questa release. Prova la scheda sull'hardware che metterai in produzione."
+      },
+      {
+        "en": "Does clustering fail over by itself?",
+        "it": "Il cluster fa il failover da solo?"
+      },
+      {
+        "en": "No. C4 discovers capacity. Quorum, fencing, fault detection, and automatic VM restart are still a test you run. A single host has no intrinsic high availability.",
+        "it": "No. C4 scopre la capacità. Quorum, fencing, rilevamento dei guasti e riavvio automatico delle VM restano un test che esegui tu. Un singolo host non ha alta disponibilità intrinseca."
+      },
+      {
+        "en": "How do Electros and the host split the work?",
+        "it": "Come si dividono il lavoro Electros e l'host?"
+      },
+      {
+        "en": "Is Veeam a certified backup?",
+        "it": "Veeam è un backup certificato?"
+      },
+      {
+        "en": "Integration components are available. Restore of a whole VM or a single file still has to be measured on your Veeam build, guest, and AtomOS version. RAID is not a backup.",
+        "it": "I componenti di integrazione sono disponibili. Il restore di una VM intera o di un singolo file va comunque misurato sulla tua build Veeam, sul guest e sulla versione AtomOS. Il RAID non è un backup."
+      },
+      {
+        "en": "Is the hypervisor free?",
+        "it": "L'hypervisor è gratuito?"
+      },
+      {
+        "en": "Yes. The AtomOS hypervisor licence is €0 per server. Optional support plans are separate. Check the installed component versions before you treat a procedure as supported.",
+        "it": "Sì. La licenza hypervisor AtomOS è 0 € per server. I piani di supporto opzionali sono separati. Controlla le versioni dei componenti installati prima di considerare supportata una procedura."
+      },
+      {
+        "en": "Run KVM on your servers. Govern the fleet from Electros.",
+        "it": "Esegui KVM sui tuoi server. Governa la flotta da Electros."
+      },
+      {
+        "en": "The hypervisor licence is €0 per server. Support plans are optional.",
+        "it": "La licenza hypervisor è 0 € per server. I piani di supporto sono opzionali."
+      },
+      {
+        "en": "Install with atomos-cli",
+        "it": "Installa con atomos-cli"
+      },
+      {
+        "en": "Prove it on your build",
+        "it": "Provalo sulla tua build"
+      },
+      {
+        "en": "Not automatic",
+        "it": "Non automatico"
+      },
+      {
+        "en": "Compute, storage, vaults",
+        "it": "Compute, storage, vault"
+      },
+      {
+        "en": "Two admin planes",
+        "it": "Due piani di amministrazione"
+      },
+      {
+        "en": "GPU PCI passthrough",
+        "it": "Passthrough PCI della GPU"
+      },
+      {
+        "en": "Live migration and load balancing",
+        "it": "Migrazione live e bilanciamento"
+      },
+      {
+        "en": "Hot CPU and RAM",
+        "it": "CPU e RAM a caldo"
+      },
+      {
+        "en": "Backup and Veeam",
+        "it": "Backup e Veeam"
+      },
+      {
+        "en": "High availability",
+        "it": "Alta disponibilità"
+      },
+      {
+        "en": "Check the build",
+        "it": "Controlla la build"
+      },
+      {
+        "en": "Prove the hardware",
+        "it": "Prova l'hardware"
+      },
+      {
+        "en": "ZFS and GlusterFS",
+        "it": "ZFS e GlusterFS"
+      },
+      {
+        "en": "NVMe-oF and iSCSI",
+        "it": "NVMe-oF e iSCSI"
+      },
+      {
+        "en": "Governed from Electros",
+        "it": "Governato da Electros"
+      },
+      {
         "en": "Unlike CPU-core or VM-count based licensing, AtomOS's server-based pricing encourages organizations to maximize the value of each physical server. This drives investment in larger, more efficient hardware that can host more workloads with better performance per watt.",
         "it": "A differenza delle licenze basate sui core CPU o sul numero di macchine virtuali, i prezzi basati sui server di AtomOS incoraggiano le organizzazioni a massimizzare il valore di ciascun server fisico. Ciò spinge a investire in hardware più grande ed efficiente in grado di ospitare più carichi di lavoro con migliori prestazioni per watt."
       },
@@ -410,8 +870,8 @@
         "it": "installazione completa (calcolo + storage): AlmaLinux 9"
       },
       {
-        "en": "✓ Web GUI (Cockpit + Electros orchestration dashboard)",
-        "it": "✓ GUI Web (Cockpit + dashboard di orchestrazione Electros)"
+        "en": "Web GUI, plus the Electros orchestration dashboard",
+        "it": "Interfaccia web, più la dashboard di orchestrazione Electros"
       },
       {
         "en": "Lower total cost of ownership and operational expenses",
@@ -7032,8 +7492,8 @@
         "it": "Passthrough GPU con isolamento IOMMU"
       },
       {
-        "en": "Local Cockpit-based Web UI on :9090",
-        "it": "Interfaccia utente Web basata su Cockpit locale su:9090"
+        "en": "Local console on the AtomOS host",
+        "it": "Console locale sull'host AtomOS"
       },
       {
         "en": "Real-time cross-CSP cost comparison",

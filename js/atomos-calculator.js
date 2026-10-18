@@ -94,9 +94,9 @@
             disclaimer: 'Estimates based on published list pricing and typical configurations. VMware uses per-core licensing (minimum 16 cores per CPU). Nutanix/Sangfor: per-node HCI estimates. Hyper-V: Windows Server Datacenter per-core equivalent. AtomOS is free forever; the only cost shown is optional Base or Pro support (8x5), priced per host/year. 24x7 support is available at custom pricing. Actual costs may vary. Contact sales for exact quotes.',
             pageTitle: 'Compare Costs — AtomOS vs {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
-            pageSubtitle: 'Calculate how much you could save with AtomOS compared to {compShort}. Discover how our virtualization solution helps you escape rising costs, without compromising enterprise-level reliability.',
-            metaDescription: 'Calculate how much you could save with AtomOS compared to {compShort}. Compare virtualization costs and discover enterprise-level reliability at a fraction of the price.',
-            metaDescriptionShort: 'Calculate how much you could save with AtomOS compared to {compShort}. Compare virtualization costs and discover enterprise-level reliability.',
+            pageSubtitle: 'The AtomOS hypervisor licence is €0 per server. Compare that with a {compShort} licence on the same hardware.',
+            metaDescription: 'Compare AtomOS with {compShort}. The hypervisor licence is €0 per server. Optional support is priced per host.',
+            metaDescriptionShort: 'Compare AtomOS with {compShort}. The hypervisor licence is €0 per server.',
             chartTitle: 'AtomOS vs {compLabel}',
             detailsSummary: 'How did we compute AtomOS vs {compLabel}?',
             detailsIntroDynamic: 'Detailed breakdown of AtomOS vs {compLabel} cost comparison and computation.',
@@ -174,9 +174,9 @@
             disclaimer: 'Stime basate su listini pubblicati e configurazioni tipiche. VMware usa licenze per core (minimo 16 core per CPU). Nutanix/Sangfor: stime HCI per nodo. Hyper-V: equivalente Windows Server Datacenter per core. AtomOS è gratuito per sempre; l\'unico costo mostrato è il supporto opzionale Base o Pro (8x5), con prezzo per host/anno. Il supporto 24x7 è disponibile a prezzo personalizzato. I costi effettivi possono variare. Contatta il commerciale per preventivi esatti.',
             pageTitle: 'Confronta i costi: AtomOS e {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
-            pageSubtitle: 'Calcola quanto potresti risparmiare con AtomOS rispetto a {compShort}. Scopri come la nostra soluzione di virtualizzazione ti aiuta a evitare l\'aumento dei costi, senza compromettere l\'affidabilità a livello aziendale.',
-            metaDescription: 'Calcola quanto potresti risparmiare con AtomOS rispetto a {compShort}. Confronta i costi di virtualizzazione e scopri l\'affidabilità di livello aziendale a una frazione del prezzo.',
-            metaDescriptionShort: 'Calcola quanto potresti risparmiare con AtomOS rispetto a {compShort}. Confronta i costi di virtualizzazione e scopri l\'affidabilità di livello aziendale.',
+            pageSubtitle: 'La licenza hypervisor AtomOS è 0 € per server. Confrontala con una licenza {compShort} sullo stesso hardware.',
+            metaDescription: 'Confronta AtomOS con {compShort}. La licenza hypervisor è 0 € per server. Il supporto opzionale è a prezzo per host.',
+            metaDescriptionShort: 'Confronta AtomOS con {compShort}. La licenza hypervisor è 0 € per server.',
             chartTitle: 'AtomOS vs {compLabel}',
             detailsSummary: 'Come abbiamo calcolato AtomOS vs {compLabel}?',
             detailsIntroDynamic: 'Dettaglio del confronto costi AtomOS vs {compLabel} e del calcolo.',
@@ -254,9 +254,9 @@
             disclaimer: 'Estimations basées sur les tarifs publics et des configurations typiques. VMware : licence par cœur (minimum 16 cœurs par CPU). Nutanix/Sangfor : estimations HCI par nœud. Hyper-V : équivalent Windows Server Datacenter par cœur. AtomOS est gratuit pour toujours ; le seul coût affiché est le support optionnel Base ou Pro (8x5), facturé par hôte/an. Le support 24x7 est disponible sur devis. Les coûts réels peuvent varier. Contactez les ventes pour un devis exact.',
             pageTitle: 'Comparer les coûts : AtomOS vs {compShort}',
             pageTitleSuffix: ' | Elemento Cloud',
-            pageSubtitle: 'Calculez combien vous pourriez économiser avec AtomOS par rapport à {compShort}. Découvrez comment notre solution de virtualisation vous aide à maîtriser les coûts, sans compromettre la fiabilité entreprise.',
-            metaDescription: 'Calculez combien vous pourriez économiser avec AtomOS par rapport à {compShort}. Comparez les coûts de virtualisation et découvrez une fiabilité entreprise à moindre coût.',
-            metaDescriptionShort: 'Calculez combien vous pourriez économiser avec AtomOS par rapport à {compShort}. Comparez les coûts de virtualisation et découvrez une fiabilité entreprise.',
+            pageSubtitle: 'La licence d\'hyperviseur AtomOS est de 0 € par serveur. Comparez-la à une licence {compShort} sur le même matériel.',
+            metaDescription: 'Comparez AtomOS à {compShort}. La licence d\'hyperviseur est de 0 € par serveur. Le support optionnel est facturé par hôte.',
+            metaDescriptionShort: 'Comparez AtomOS à {compShort}. La licence d\'hyperviseur est de 0 € par serveur.',
             chartTitle: 'AtomOS vs {compLabel}',
             detailsSummary: 'Comment avons-nous calculé AtomOS vs {compLabel} ?',
             detailsIntroDynamic: 'Détail de la comparaison des coûts AtomOS vs {compLabel} et du calcul.',
@@ -507,6 +507,7 @@
             const pageSubtitle = document.querySelector('#atomos-page-subtitle');
             if (pageTitle) pageTitle.textContent = t('pageTitle', { compShort });
             if (pageSubtitle) pageSubtitle.textContent = t('pageSubtitle', { compShort });
+            if (/compare-costs/.test(location.pathname)) {
             document.title = t('pageTitle', { compShort }) + t('pageTitleSuffix');
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) metaDesc.setAttribute('content', t('metaDescription', { compShort }));
@@ -518,6 +519,7 @@
             if (twTitle) twTitle.setAttribute('content', t('pageTitle', { compShort }) + t('pageTitleSuffix'));
             const twDesc = document.querySelector('meta[name="twitter:description"]');
             if (twDesc) twDesc.setAttribute('content', t('pageSubtitle', { compShort }));
+            }
             setText($('atomos-calc-details-summary'), t('detailsSummary', { compLabel }));
             setText($('atomos-calc-details-intro'), t('detailsIntroDynamic', { compLabel }));
             setText($('atomos-calc-metric-label-vm'), t('costPerVmYear', { label: compLabel }));
