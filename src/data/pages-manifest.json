@@ -1409,8 +1409,8 @@
     "legacyPath": "electros.html",
     "group": "root",
     "slug": "electros",
-    "title": "Electros App — Orchestration Dashboard | Elemento Cloud",
-    "description": "Electros is Elemento Cloud's desktop dashboard for AtomOS, VMware ESXi, Proxmox, and Meson targets. Start with a 14-day trial — one seat per organisation.",
+    "title": "Electros App — One desktop control plane | Elemento Cloud",
+    "description": "Electros is the desktop control plane for AtomOS, VMware ESXi, Proxmox, and Meson. Create VMs, Spot instances, Kubernetes, and databases from one 14-day trial.",
     "robots": "index, follow",
     "ogType": "product",
     "extraCss": [

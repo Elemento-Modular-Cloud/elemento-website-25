@@ -5598,432 +5598,660 @@
     ],
     "electros": [
       {
-        "en": "We used to juggle a dozen consoles. With Electros , it feels like one window onto millions of machines worldwide—whether we need a beefy CPU host , a GPU-heavy stack for AI, or something in between. When we need something more exotic on-prem , we still reach for the same interface . That consistency is what sold us.",
-        "fr": "Nous jonglions avec une douzaine de consoles. Avec Electros, nous avons l'impression d'être une fenêtre sur des millions de machines dans le monde, que nous ayons besoin d'un hôte CPU puissant, d'une pile GPU pour l'IA ou de quelque chose entre les deux. Lorsque nous avons besoin de quelque chose de plus exotique sur site, nous recherchons toujours la même interface. Cette cohérence est ce qui nous a vendu."
+        "en": "Open an embedded VNC console for long-lived virtual machines. For public-cloud Spot VMs, the Electros desktop app can open an SSH terminal to a reachable instance. SSH Terminal requires a running Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open the desktop SSH window.",
+        "fr": "Ouvrez une console VNC intégrée pour les machines virtuelles de longue durée. Pour les VM Spot sur cloud public, l'application desktop Electros peut ouvrir un terminal SSH vers une instance joignable. Le terminal SSH exige une VM Spot en cours d'exécution, avec une adresse IPv4 publique joignable et le port TCP 22. Les versions navigateur ne peuvent pas ouvrir la fenêtre SSH du desktop."
       },
       {
-        "en": "Open an embedded VNC console for long-lived virtual machines. For public-cloud Spot VMs, the Electros desktop app can open an SSH terminal to a reachable instance. SSH Terminal requires a running Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open the desktop SSH window.",
-        "fr": "Ouvrez une console VNC intégrée pour les machines virtuelles de longue durée. Pour les VM Spot de cloud public, l'application desktop Electros peut ouvrir un terminal SSH vers une instance joignable. Le terminal SSH est disponible dans l'application desktop et exige une VM Spot en cours d'exécution avec une adresse IPv4 publique joignable et le port TCP 22. Les builds navigateur ne peuvent pas ouvrir la fenêtre SSH desktop."
+        "en": "* An active connection = one integration in use: a non-AtomOS hypervisor, a service already running on your clouds, a resource purchased via Atomosphere, a Kubernetes cluster. Connections are interchangeable — drop one and it's immediately available again: only what's active at the same time counts.",
+        "fr": "* Une connexion active = une intégration en cours : un hyperviseur autre qu'AtomOS, un service déjà présent sur vos clouds, une ressource achetée via Atomosphere, un cluster Kubernetes. Les connexions sont interchangeables — vous en fermez une et elle redevient disponible : seul le nombre actif en même temps compte."
+      },
+      {
+        "en": "New accounts get a 14-day free trial once. After that, each organisation needs an Electros seat: Start is €19.90 per month billed annually (€239 / year, or €30 monthly), Grow is €39.90 per month billed annually (€479 / year, or €60 monthly). One seat per organisation.",
+        "fr": "Les nouveaux comptes obtiennent un essai gratuit de 14 jours une fois. Ensuite, chaque organisation a besoin d'un siège Electros : Start coûte 19,90 € par mois en facturation annuelle (239 € / an, ou 30 € par mois), Grow coûte 39,90 € par mois en facturation annuelle (479 € / an, ou 60 € par mois). Un siège par organisation."
+      },
+      {
+        "en": "Fill the form, press Continue, then pick a host card — or Automatic Selection when you do not care which eligible machine runs it. Press Create only when you mean to provision. Some cloud and organisation flows open a payment page after a successful create.",
+        "fr": "Remplissez le formulaire, appuyez sur Continuer, puis choisissez une carte hôte — ou Sélection automatique si peu importe quelle machine éligible l'exécute. Appuyez sur Créer seulement lorsque vous voulez provisionner. Certains flux cloud et d'organisation ouvrent une page de paiement après une création réussie."
       },
       {
         "en": "Native desktop apps for Linux, macOS, and Windows. v3.3.0 publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.",
         "fr": "Applications desktop natives pour Linux, macOS et Windows. v3.3.0 publie neuf installateurs : AppImage Linux x64 et ARM64, DEB Debian/Ubuntu x64 et ARM64, RPM Linux x64 et ARM64, DMG macOS Intel x64 et Apple Silicon ARM64, et EXE Windows x64."
       },
       {
-        "en": "See workload counts, compute capacity, VM states, storage, networking, PaaS/SaaS health and target reachability in one operational view. The dashboard provides status and shortcuts; editing remains on the relevant resource page.",
-        "fr": "Voir le nombre de charges de travail, la capacité de calcul, les états des machines virtuelles, le stockage, la mise en réseau, la santé PaaS/SaaS et l'accessibilité cible dans une vue opérationnelle. Le tableau de bord fournit l'état et les raccourcis ; l'édition reste sur la page de ressource pertinente."
+        "en": "An active connection is one integration in use: a non-AtomOS hypervisor, a public-cloud service you already run, a resource bought through Atomosphere, or a Kubernetes cluster. Turn one off and the slot is free again. AtomOS endpoints do not count.",
+        "fr": "Une connexion active est une intégration en cours : un hyperviseur autre qu'AtomOS, un service de cloud public que vous utilisez déjà, une ressource achetée via Atomosphere, ou un cluster Kubernetes. Vous la coupez et l'emplacement redevient libre. Les endpoints AtomOS ne comptent pas."
       },
       {
-        "en": "Electros is Elemento Cloud's orchestration dashboard—available as a native desktop app for Linux, macOS, and Windows. It provides visibility, provisioning, and remote access for workloads on the targets you register.",
-        "fr": "Electros est le tableau de bord d'orchestration d'Elemento Cloud, disponible en tant qu'application de bureau native pour Linux, macOS et Windows. Il fournit une visibilité, un provisionnement et un accès à distance pour les charges de travail sur les cibles que vous enregistrez."
+        "en": "Turn on a scenario to enable a whole lab at once, or enable a spare target. A disabled host is missing from host pickers, and its VMs and disks disappear from the IaaS lists. Your plan’s connection quota caps how many you can enable.",
+        "fr": "Activez un scénario pour activer tout un labo d'un coup, ou activez une cible libre. Un hôte désactivé disparaît des sélecteurs d'hôtes, et ses VM et disques disparaissent des listes IaaS. Le quota de connexions du forfait limite le nombre que vous pouvez activer."
+      },
+      {
+        "en": "Yes. Create a sub-organisation with caps on VMs, CPU, RAM, storage and allowed network types. Usage and permissions choose who may use a target or a scenario. Your plan’s connection quota caps how many targets you can enable at once.",
+        "fr": "Oui. Créez une sous-organisation avec des plafonds sur les VM, le CPU, la RAM, le stockage et les types de réseau autorisés. Usage et permissions choisissent qui peut utiliser une cible ou un scénario. Le quota de connexions du forfait limite le nombre de cibles que vous pouvez activer à la fois."
+      },
+      {
+        "en": "An organisation admin registers AtomOS hosts, VMware ESXi or Proxmox hypervisors, and public or private Meson accounts under Connections. Registration records the target. It does not power on a host or provision a workload.",
+        "fr": "Un admin de l'organisation enregistre des hôtes AtomOS, des hyperviseurs VMware ESXi ou Proxmox, et des comptes Meson publics ou privés sous Connexions. L'enregistrement consigne la cible. Il n'allume pas un hôte et ne provisionne pas une charge de travail."
       },
       {
         "en": "If you do not have an Elemento account yet, create one first — you get an organisation and a 14-day free trial. If you already have an account, open Buy a seat to purchase for an organisation via Stripe.",
-        "fr": "Si vous n'avez pas encore de compte Elemento, créez-en un d'abord : vous bénéficiez d'une organisation et d'un essai gratuit de 14 jours. Si vous avez déjà un compte, ouvrez Acheter une place à acheter pour une organisation via Stripe."
+        "fr": "Si vous n'avez pas encore de compte Elemento, créez-en un d'abord : vous obtenez une organisation et un essai gratuit de 14 jours. Si vous avez déjà un compte, ouvrez Acheter un siège pour acheter pour une organisation via Stripe."
       },
       {
-        "en": "Electros is a desktop app backed by core services for the targets you register. Atomosphere connects public and private Meson accounts so Electros can provision and operate workloads on those accounts.",
-        "fr": "Electros est une application de bureau soutenue par des services de base pour les cibles que vous enregistrez. Atomosphere connecte les comptes Meson publics et privés afin qu'Electros puisse provisionner et exploiter les charges de travail sur ces comptes."
+        "en": "Public Meson accounts your organisation already allows, plus private Meson credentials. Private Meson guides are currently available for AWS, Azure, Google Cloud, OVHcloud, UpCloud and Scaleway.",
+        "fr": "Comptes Meson publics déjà autorisés par votre organisation, plus les identifiants Meson privés. Les guides Meson privés sont actuellement disponibles pour AWS, Azure, Google Cloud, OVHcloud, UpCloud et Scaleway."
       },
       {
-        "en": "New accounts get a 14-day free trial once. After that, each organisation needs an Electros seat subscription — one seat per organisation. Sign in above to buy a seat; checkout opens in Stripe.",
-        "fr": "Les nouveaux comptes bénéficient une fois d'un essai gratuit de 14 jours. Ensuite, chaque organisation a besoin d'un abonnement de siège Electros — un siège par organisation. Connectez-vous ci-dessus pour acheter un siège ; le paiement s'ouvre dans Stripe."
-      },
-      {
-        "en": "Register AtomOS, hypervisor and Meson targets; group them into reusable scenarios; enable the targets needed for the current working session; and manage organisation-level usage permissions.",
-        "fr": "Enregistrez les cibles AtomOS, hyperviseur et Meson ; regroupez-les dans des scénarios réutilisables ; activez les cibles nécessaires pour la session de travail en cours ; et gérez les autorisations d'utilisation au niveau de l'organisation."
-      },
-      {
-        "en": "Atomosphere connects the public and private Meson accounts you register. Private Meson guides are currently available for AWS , Azure , Google Cloud , OVHcloud , UpCloud and Scaleway .",
-        "fr": "Atomosphere connecte les comptes Meson publics et privés que vous enregistrez. Des guides privés Meson sont actuellement disponibles pour AWS , Azure , Google Cloud , OVHcloud , UpCloud et Scaleway ."
-      },
-      {
-        "en": "Electros opens an embedded VNC console for long-lived virtual machines. For public-cloud Spot VMs, the desktop app can open an SSH terminal when the instance is running and reachable.",
-        "fr": "Electros ouvre une console VNC intégrée pour les machines virtuelles à longue durée de vie. Pour les VM Spot de cloud public, l'application de bureau peut ouvrir un terminal SSH lorsque l'instance est en cours d'exécution et accessible."
-      },
-      {
-        "en": "SSH Terminal is available in the desktop app and requires a running Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open the desktop SSH window.",
-        "fr": "Le terminal SSH est disponible dans l'application de bureau et nécessite une machine virtuelle Spot en cours d'exécution avec une adresse IPv4 publique accessible et un port TCP 22. Les versions du navigateur ne peuvent pas ouvrir la fenêtre SSH du bureau."
+        "en": "No. Connections is an address book. Enabling a target or a scenario under Active Connections is what makes it appear in host pickers and IaaS lists. Create still happens in a separate wizard.",
+        "fr": "Non. Connexions est un carnet d'adresses. Activer une cible ou un scénario sous Connexions actives la fait apparaître dans les sélecteurs d'hôtes et les listes IaaS. La création se fait toujours dans un assistant séparé."
       },
       {
         "en": "Electros caches selected static resources for a more resilient desktop experience. Managing live resources still requires connectivity to the relevant target and Elemento services.",
-        "fr": "Electros met en cache certaines ressources statiques pour une expérience desktop plus résiliente. Gérer des ressources en fonctionnement exige toujours une connexion vers la cible concernée et les services Elemento."
+        "fr": "Electros met en cache des ressources statiques sélectionnées pour une expérience desktop plus résiliente. Gérer des ressources actives exige toujours une connectivité vers la cible concernée et les services Elemento."
       },
       {
-        "en": "Atomosphere connects the public and private Meson accounts you register. Private Meson guides are currently available for AWS, Azure, Google Cloud, OVHcloud, UpCloud and Scaleway.",
-        "fr": "Atomosphere connecte les comptes Meson publics et privés que vous enregistrez. Des guides privés Meson sont actuellement disponibles pour AWS, Azure, Google Cloud, OVHcloud, UpCloud et Scaleway."
-      },
-      {
-        "en": "Register and govern AtomOS hosts, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson cloud accounts from one interface — connected through Atomosphere.",
-        "fr": "Enregistrez et régissez les hôtes AtomOS, VMware ESXi 6 ou 7, Proxmox VE 7 ou 8 et les comptes cloud Meson publics ou privés à partir d'une interface — connectée via Atomosphere."
+        "en": "Terminate deletes the instance and stops billing for it. Leaving a Spot VM running is what the bill is for. Some create flows also open a payment page after a successful create.",
+        "fr": "Terminer supprime l'instance et arrête la facturation. Laisser une VM Spot en cours d'exécution, c'est ce que la facture couvre. Certains flux de création ouvrent aussi une page de paiement après une création réussie."
       },
       {
         "en": "On the Buy a seat page, sign in, choose an organisation and plan, then Stripe opens in your browser. Subscribe during the trial so you do not lose access when it ends.",
-        "fr": "Sur la page Acheter une place, connectez-vous, choisissez une organisation et un plan, puis Stripe s'ouvre dans votre navigateur. Abonnez-vous pendant la période d'essai afin de ne pas perdre l'accès à la fin de celle-ci."
+        "fr": "Sur la page Acheter un siège, connectez-vous, choisissez une organisation et un forfait, puis Stripe s'ouvre dans le navigateur. Abonnez-vous pendant l'essai pour ne pas perdre l'accès à la fin."
+      },
+      {
+        "en": "Electros talks to the AtomOS hosts, hypervisors, and Meson accounts you add. Atomosphere connects public and private Meson so those accounts can place a workload.",
+        "fr": "Electros parle aux hôtes AtomOS, aux hyperviseurs et aux comptes Meson que vous ajoutez. Atomosphere relie Meson public et privé pour que ces comptes puissent placer une charge de travail."
       },
       {
         "en": "Register to create your Elemento account and personal organisation. You get a 14-day Electros trial (once per account). After that, come back here to buy a seat.",
-        "fr": "Inscrivez-vous pour créer votre compte Elemento et votre organisation personnelle. Vous bénéficiez d'un essai Electros de 14 jours (une fois par compte). Après cela, revenez ici pour acheter une place."
+        "fr": "Inscrivez-vous pour créer votre compte Elemento et votre organisation personnelle. Vous obtenez un essai Electros de 14 jours (une fois par compte). Ensuite, revenez ici pour acheter un siège."
       },
       {
-        "en": "Create and operate virtual machines from the Electros dashboard after a target is enabled. Registering a target does not power it on or provision a workload.",
-        "fr": "Créez et utilisez des machines virtuelles à partir du tableau de bord Electros après l'activation d'une cible. L'enregistrement d'une cible ne l'allume pas et ne provisionne pas une charge de travail."
+        "en": "The native app for Linux, macOS, and Windows is the product. Spot VM SSH and wallpaper import need the desktop app. Browser builds cannot open those windows.",
+        "fr": "L'application native pour Linux, macOS et Windows est le produit. Le SSH des VM Spot et l'import de fond d'écran exigent l'application desktop. Les versions navigateur ne peuvent pas ouvrir ces fenêtres."
       },
       {
-        "en": "Register VMware ESXi 6 or 7, Proxmox VE 7 or 8, and AtomOS hosts alongside Meson accounts. Versions shown here match the current connections guide.",
-        "fr": "Enregistrez les hôtes VMware ESXi 6 ou 7, Proxmox VE 7 ou 8 et AtomOS aux côtés des comptes Meson. Les versions présentées ici correspondent au guide de connexions actuel."
+        "en": "Electros is the screen you use to run workloads on machines you already connected. You describe the resource here. Electros talks to the host for you.",
+        "fr": "Electros est l'écran avec lequel vous exécutez des charges de travail sur des machines déjà connectées. Vous décrivez la ressource ici. Electros parle à l'hôte pour vous."
+      },
+      {
+        "en": "Register AtomOS, VMware ESXi, Proxmox, and Meson accounts. Describe the workload, pick the host last, and Electros provisions it from one desktop app.",
+        "fr": "Enregistrez des comptes AtomOS, VMware ESXi, Proxmox et Meson. Décrivez la charge de travail, choisissez l'hôte en dernier, et Electros la provisionne depuis une seule application desktop."
       },
       {
         "en": "During or after the trial, open Buy a seat, pick an organisation and plan, then complete Stripe checkout. One seat is valid in one organisation.",
-        "fr": "Pendant ou après l'essai, ouvrez Acheter une place, choisissez une organisation et un plan, puis terminez le paiement Stripe. Un siège est valable dans une organisation."
+        "fr": "Pendant ou après l'essai, ouvrez Acheter un siège, choisissez une organisation et un forfait, puis terminez le paiement Stripe. Un siège est valable dans une organisation."
+      },
+      {
+        "en": "Order Postgres, a managed Kubernetes cluster, or an n8n app from the same create flow — where those services are enabled for the organisation.",
+        "fr": "Commandez Postgres, un cluster Kubernetes managé ou une app n8n depuis le même flux de création — lorsque ces services sont activés pour l'organisation."
       },
       {
         "en": "Known issue in v3.3.0: creating a VM can succeed while form restoration shows a failure notification. The virtual machine is still created.",
-        "fr": "Problème connu dans la v3.3.0 : la création d'une VM peut réussir tandis que la restauration du formulaire affiche une notification d'échec. La machine virtuelle est toujours créée."
+        "fr": "Problème connu en v3.3.0 : la création d'une VM peut réussir alors que la restauration du formulaire affiche une notification d'échec. La machine virtuelle est tout de même créée."
       },
       {
-        "en": "The consolidated VM edit form is not complete in v3.3.0. Use the available row and attached-resource actions for supported live changes.",
-        "fr": "Le formulaire de modification de VM consolidée n'est pas complet dans la v3.3.0. Utilisez les actions de ligne et de ressources jointes disponibles pour les changements en direct pris en charge."
+        "en": "Split quotas with sub-organisations. Invite people onto a paid tier. Cap VMs, CPU, RAM, storage and which network types a team may create.",
+        "fr": "Répartissez les quotas avec des sous-organisations. Invitez des personnes sur un palier payant. Plafonnez les VM, le CPU, la RAM, le stockage et les types de réseau qu'une équipe peut créer."
+      },
+      {
+        "en": "Per-seat pricing: no cost per VM, core, socket or resource. Download for free, try it for 14 days, then pick the plan that grows with you.",
+        "fr": "Tarif par siège : aucun coût par VM, cœur, socket ou ressource. Téléchargez gratuitement, essayez 14 jours, puis choisissez le plan qui grandit avec vous."
+      },
+      {
+        "en": "The consolidated VM edit form is not complete in v3.3.0. Use the available row and attached-resource actions for supported changes.",
+        "fr": "Le formulaire unique de modification de VM n'est pas complet en v3.3.0. Pour les modifications prises en charge, utilisez les actions de ligne et des ressources attachées."
+      },
+      {
+        "en": "Bundle AtomOS, Proxmox and ESXi into a scenario. Enable the stack for this session and the host picker fills with that lab only.",
+        "fr": "Regroupez AtomOS, Proxmox et ESXi dans un scénario. Activez la pile pour cette session et le sélecteur d'hôtes ne montre que ce labo."
+      },
+      {
+        "en": "Burst a Spot VM on a public-cloud Meson account, open desktop SSH when the guest is reachable, then Terminate so billing stops.",
+        "fr": "Lancez une VM Spot sur un compte Meson de cloud public, ouvrez SSH desktop lorsque l'invité est joignable, puis Terminez pour arrêter la facturation."
       },
       {
         "en": "Once per Elemento account. When you sign up, we create your organisation with one Electros seat so you can start immediately.",
-        "fr": "Une fois par compte Elemento. Lorsque vous vous inscrivez, nous créons votre organisation avec un siège Electros afin que vous puissiez commencer immédiatement."
+        "fr": "Une fois par compte Elemento. À l'inscription, nous créons votre organisation avec un siège Electros pour que vous puissiez commencer tout de suite."
       },
       {
-        "en": "Running public-cloud Spot VM with a reachable public IPv4 address and TCP port 22. Browser builds cannot open this window.",
-        "fr": "VM Spot de cloud public en cours d'exécution, avec une adresse IPv4 publique joignable et le port TCP 22. Les builds navigateur ne peuvent pas ouvrir cette fenêtre."
+        "en": "Active Cloud Status · proactive alerts and flags in your dashboard for incidents and maintenance on the services you use",
+        "fr": "Cloud Status actif · alertes préventives et flags en dashboard sur les incidents et maintenances des services que vous utilisez"
+      },
+      {
+        "en": "AtomOS hosts, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson accounts — one inventory, one session.",
+        "fr": "Hôtes AtomOS, VMware ESXi 6 ou 7, Proxmox VE 7 ou 8, et comptes Meson publics ou privés — un inventaire, une session."
+      },
+      {
+        "en": "Connect a target, activate it for this session, then create. The same rhythm for a volume, a VM, a database, or an app.",
+        "fr": "Connectez une cible, activez-la pour cette session, puis créez. Le même rythme pour un volume, une VM, une base de données ou une app."
       },
       {
         "en": "New accounts get a 14-day free trial once. Each organisation includes one Electros seat — buy a seat after you sign in.",
-        "fr": "Les nouveaux comptes bénéficient d'un essai gratuit de 14 jours une fois. Chaque organisation comprend un siège Electros — achetez un siège après votre connexion."
+        "fr": "Les nouveaux comptes obtiennent un essai gratuit de 14 jours une fois. Chaque organisation inclut un siège Electros — achetez un siège après la connexion."
       },
       {
-        "en": "Register and govern AtomOS hosts, VMware ESXi, Proxmox, and public or private Meson cloud accounts from one interface.",
-        "fr": "Enregistrez et régissez les hôtes AtomOS, VMware ESXi, Proxmox et les comptes cloud Meson publics ou privés à partir d'une seule interface."
+        "en": "Fill the form, press Continue, then choose a host card. Estimated net price appears when the provider can quote one.",
+        "fr": "Remplissez le formulaire, appuyez sur Continuer, puis choisissez une carte hôte. Le prix net estimé apparaît lorsque le fournisseur peut le coter."
       },
       {
         "en": "Sign in with email and password, pick the organisation that should hold the seat, choose a plan, then pay in Stripe.",
-        "fr": "Connectez-vous avec une adresse e-mail et un mot de passe, choisissez l'organisation qui devrait occuper le siège, choisissez un plan, puis payez dans Stripe."
+        "fr": "Connectez-vous avec e-mail et mot de passe, choisissez l'organisation qui doit détenir le siège, choisissez un forfait, puis payez dans Stripe."
       },
       {
-        "en": "Compare eligible deployment targets using provider, region, sizing, availability and sustainability information.",
-        "fr": "Comparez les objectifs de déploiement éligibles en utilisant les informations sur le fournisseur, la région, la taille, la disponibilité et la durabilité."
+        "en": "Versions match the current connections guide. Hypervisor passwords are collected later, when you enable the target.",
+        "fr": "Les versions correspondent au guide des connexions actuel. Les mots de passe d'hyperviseur sont demandés plus tard, lorsque vous activez la cible."
       },
       {
         "en": "The networking guide lists Bridge and marks that type disabled. v3.3.0 does not offer bridged-network creation.",
-        "fr": "Le guide de mise en réseau répertorie Bridge et marque ce type désactivé. v3.3.0 n'offre pas de création de réseau ponté."
+        "fr": "Le guide réseau liste Bridge et marque ce type comme désactivé. v3.3.0 n'offre pas la création de réseaux bridged."
       },
       {
-        "en": "Registration records a target. Enabling it for a session is a separate step and does not provision a workload.",
-        "fr": "L'enregistrement enregistre une cible. L'activer pour une session est une étape distincte et ne provisionne pas de charge de travail."
+        "en": "One wizard, then a host card with provider, region, sizing, availability and sustainability information",
+        "fr": "Un seul assistant, puis une carte hôte avec fournisseur, région, dimensionnement, disponibilité et durabilité"
       },
       {
-        "en": "Desktop SSH terminal for a running public-cloud Spot VM with a reachable public IPv4 address and TCP port 22.",
-        "fr": "Terminal SSH de bureau pour une VM Spot de cloud public en cours d'exécution avec une adresse IPv4 publique accessible et un port TCP 22."
+        "en": "Sub-organisations, usage limits, invite-and-subscribe, and a connection quota for the current session.",
+        "fr": "Sous-organisations, limites d'usage, inviter-et-abonner, et un quota de connexions pour la session en cours."
       },
       {
-        "en": "Current desktop release: v3.3.0 — 6 October 2026. Review the release notes and known issues before deploying.",
-        "fr": "Version desktop actuelle : v3.3.0 — 6 octobre 2026. Consultez les notes de version et les problèmes connus avant de déployer."
+        "en": "Visibility and operability on your public cloud resources: not just see them — manage and operate them",
+        "fr": "Visibilité et opérabilité sur vos ressources cloud publiques : non seulement les voir — les gérer et y opérer"
       },
       {
-        "en": "Electros ⇄ Atomosphere ⇄ the AtomOS hosts, ESXi and Proxmox hypervisors, and Meson accounts you register.",
-        "fr": "Electros ⇄ Atomosphere ⇄ les hôtes AtomOS, les hyperviseurs ESXi et Proxmox et les comptes Meson que vous enregistrez."
+        "en": "Bring your own cloud credentials. Private Meson guides are currently available for these providers:",
+        "fr": "Apportez vos propres identifiants cloud. Les guides Meson privés sont actuellement disponibles pour ces fournisseurs :"
       },
       {
         "en": "No account yet? Register first. Already have one? Open Buy a seat to purchase for an organisation.",
-        "fr": "Pas encore de compte ? Inscrivez-vous d'abord. Vous en avez déjà un ? Ouvrez Acheter une place pour une organisation."
+        "fr": "Pas encore de compte ? Inscrivez-vous d'abord. Vous en avez déjà un ? Ouvrez Acheter un siège pour acheter pour une organisation."
       },
       {
-        "en": "Host selection using provider, region, sizing, availability, and sustainability information",
-        "fr": "Choix de l'hôte selon le fournisseur, la région, le dimensionnement, la disponibilité et la durabilité"
+        "en": "One seat per organisation. A 14-day trial, then Start or Grow. Annual billing is the lower rate.",
+        "fr": "Un siège par organisation. Un essai de 14 jours, puis Start ou Grow. La facturation annuelle est le tarif le plus bas."
       },
       {
-        "en": "Embedded graphical console for long-lived virtual machines. The guest must be running.",
-        "fr": "Console graphique intégrée pour les machines virtuelles à longue durée de vie. Le voyageur doit courir."
+        "en": "Current desktop release: v3.3.0 — 6 October 2026. Review the release notes before deploying.",
+        "fr": "Version desktop actuelle : v3.3.0 — 6 octobre 2026. Consultez les notes de version avant le déploiement."
       },
       {
-        "en": "Embedded VNC for long-lived virtual machines, and desktop SSH for reachable Spot VMs",
-        "fr": "VNC intégré pour les machines virtuelles à longue durée de vie et SSH de bureau pour les machines virtuelles Spot accessibles"
+        "en": "Desktop SSH to a running instance with a reachable public IPv4 address and TCP port 22",
+        "fr": "SSH desktop vers une instance en cours d'exécution avec une IPv4 publique joignable et le port TCP 22"
+      },
+      {
+        "en": "Empty qcow2 and raw volumes, cloud images, cloud-init configs, and ISO or tool disks",
+        "fr": "Volumes qcow2 et raw vides, images cloud, configs cloud-init, et disques ISO ou outils"
+      },
+      {
+        "en": "Usage and permissions choose who in the organisation may use a target or a scenario.",
+        "fr": "Usage et permissions choisissent qui dans l'organisation peut utiliser une cible ou un scénario."
+      },
+      {
+        "en": "Shipped in Electros v3.3.0. Each pillar links to the matching user-guide chapter.",
+        "fr": "Livré dans Electros v3.3.0. Chaque pilier renvoie au chapitre du guide correspondant."
       },
       {
         "en": "Volume edit, grow or resize, conversion, and deletion when the host supports them",
-        "fr": "Édition, agrandissement ou redimensionnement, conversion et suppression de volume lorsque l'hôte les prend en charge"
+        "fr": "Modification, agrandissement ou redimensionnement, conversion et suppression du volume lorsque l'hôte les prend en charge"
       },
       {
-        "en": "Advanced HA, EFI, Intel TDX, CPU flags, architecture, ECC, VLAN, and PCI options",
-        "fr": "Options avancées HA, EFI, Intel TDX, drapeaux CPU, architecture, ECC, VLAN et PCI"
+        "en": "Short-lived machines on a public-cloud Meson account — not on local AtomOS hosts",
+        "fr": "Machines de courte durée sur un compte Meson de cloud public — pas sur des hôtes AtomOS locaux"
       },
       {
-        "en": "Target types are separate from the private-cloud providers with a current guide",
-        "fr": "Les types de cibles sont distincts des fournisseurs de cloud privé avec un guide actuel"
+        "en": "The same desktop surface for hosts, hypervisors, and cloud accounts you register",
+        "fr": "La même surface desktop pour les hôtes, hyperviseurs et comptes cloud que vous enregistrez"
       },
       {
-        "en": "Create an account for the trial, or sign in to buy a seat for an organisation",
-        "fr": "Créez un compte pour l'essai, ou connectez-vous pour acheter un siège pour une organisation"
+        "en": "Visibility into your existing public cloud resources (AWS, Azure, Google Cloud…)",
+        "fr": "Visibilité sur vos ressources cloud publiques existantes (AWS, Azure, Google Cloud…)"
       },
       {
-        "en": "Register AtomOS, hypervisor, and Meson targets without powering on a host",
-        "fr": "Enregistrez des cibles AtomOS, hyperviseur et Meson sans allumer un hôte"
+        "en": "Sub-organisations with caps on VMs, CPU, RAM, storage and allowed network types",
+        "fr": "Sous-organisations avec plafonds sur VM, CPU, RAM, stockage et types de réseau autorisés"
       },
       {
-        "en": "Experience the unified interface for managing your cloud infrastructure",
-        "fr": "Découvrez l'interface unifiée pour gérer votre infrastructure cloud"
+        "en": "Basic, advanced, and blueprint VMs — including templates from a Git repository",
+        "fr": "VM basic, advanced et blueprint — y compris les modèles depuis un dépôt Git"
       },
       {
-        "en": "Embedded VNC for long-lived VMs, and desktop SSH for reachable Spot VMs",
-        "fr": "VNC intégré pour les VM de longue durée, et SSH desktop pour les VM Spot joignables"
+        "en": "Postgres, MySQL, SQL Server, or Redis databases, plus object-storage buckets",
+        "fr": "Bases Postgres, MySQL, SQL Server ou Redis, plus des buckets object storage"
       },
       {
-        "en": "Installers in v3.3.0, and the remote-access scope those builds support",
-        "fr": "Installateurs dans la v3.3.0, et la portée d'accès à distance prise en charge par ces builds"
+        "en": "Built-in AI agent · unlimited interactions with your own key (BYOK required)",
+        "fr": "AI agent intégré · interactions illimitées avec votre clé (BYOK obligatoire)"
       },
       {
-        "en": "Powerful capabilities for managing hybrid and multicloud environments",
-        "fr": "Des fonctionnalités puissantes pour gérer les environnements hybrides et multicloud"
+        "en": "The dashboard is a morning check. It does not edit a VM, a disk, or a bill.",
+        "fr": "Le tableau de bord est le contrôle du matin. Il ne modifie pas une VM, un disque ou une facture."
       },
       {
-        "en": "Group targets into scenarios and enable them for the current session",
-        "fr": "Regroupez les cibles en scénarios et activez celles nécessaires à la session en cours"
+        "en": "Inventory, capacity, VM states, storage mix, OS landscape, and VM location",
+        "fr": "Inventaire, capacité, états des VM, mix de stockage, paysage OS et emplacement des VM"
       },
       {
-        "en": "VM, storage, and networking actions on the relevant resource page",
-        "fr": "Actions VM, stockage et réseau sur la page de la ressource concernée"
+        "en": "AtomOS migration, backups, clone to AtomOS, port forwards and port tunnels",
+        "fr": "Migration AtomOS, sauvegardes, clone vers AtomOS, redirections de ports et tunnels de ports"
       },
       {
-        "en": "Ready to manage your hybrid cloud workloads with a single app?",
-        "fr": "Prêt à gérer vos charges de travail de cloud hybride avec une seule application ?"
+        "en": "Managed Kubernetes, or Kubernetes with your own S3-compatible state bucket",
+        "fr": "Kubernetes managé, ou Kubernetes avec votre propre bucket d'état compatible S3"
       },
       {
-        "en": "Graphical console from the VM row. The guest must be running.",
-        "fr": "Console graphique depuis la ligne de la VM. L'invité doit être en cours d'exécution."
+        "en": "These pages fill from the services your organisation is allowed to deploy.",
+        "fr": "Ces pages se remplissent avec les services que votre organisation a le droit de déployer."
       },
       {
-        "en": "What the v3.3.0 desktop app can do on an enabled target",
-        "fr": "Ce que l'application de bureau v3.3.0 peut faire sur une cible activée"
+        "en": "Filterable flavour catalogue, optional cloud-init, then a cloud host card",
+        "fr": "Catalogue de flavours filtrable, cloud-init optionnel, puis une carte hôte cloud"
       },
       {
-        "en": "Local libvirt NAT, isolated, routed, and open networks",
-        "fr": "Réseaux libvirt locaux NAT, isolés, routés et ouverts"
+        "en": "Power, reboot, force-off, deletion, and embedded VNC on a running guest",
+        "fr": "Alimentation, redémarrage, arrêt forcé, suppression et VNC intégré sur un invité en cours d'exécution"
       },
       {
-        "en": "Atomosphere connectivity for registered Meson accounts",
-        "fr": "Connectivité Atomosphere pour les comptes Meson enregistrés"
+        "en": "Local libvirt NAT, isolated, routed, and open networks, plus DHCP pools",
+        "fr": "Réseaux libvirt locaux NAT, isolés, routed et open, plus pools DHCP"
       },
       {
-        "en": "A native Electros app for Linux, macOS, and Windows",
-        "fr": "Une application Electros native pour Linux, macOS et Windows"
+        "en": "Cloud Status · daily email digest of provider incidents and maintenance",
+        "fr": "Cloud Status · bulletin quotidien par e-mail sur les incidents et maintenances des fournisseurs"
       },
       {
-        "en": "The Orchestration Dashboard for registered targets",
-        "fr": "Le tableau de bord d'orchestration pour les cibles enregistrées"
+        "en": "Start the 14-day trial, or sign in to buy a seat for an organisation",
+        "fr": "Démarrez l'essai de 14 jours, ou connectez-vous pour acheter un siège pour une organisation"
       },
       {
-        "en": "Basic, advanced, and blueprint-based VM creation",
-        "fr": "Création de VM basique, avancée et à partir d'un blueprint"
+        "en": "Sub-organisation limits on VMs, CPU, RAM, storage and network types",
+        "fr": "Limites de sous-organisation sur VM, CPU, RAM, stockage et types de réseau"
       },
       {
-        "en": "Virtual machines guide · Spot VM and SSH guide",
-        "fr": "Guide des machines virtuelles · Guide Spot VM et SSH"
+        "en": "Dashboard for the morning check. Editing stays on the resource page",
+        "fr": "Tableau de bord pour le contrôle du matin. La modification reste sur la page de la ressource"
       },
       {
-        "en": "Common questions about Electros functionality",
-        "fr": "Questions courantes sur la fonctionnalité Electros"
+        "en": "Register the target under Connections. Nothing is powered on yet.",
+        "fr": "Enregistrez la cible sous Connexions. Rien n'est allumé."
       },
       {
-        "en": "14-day trial, then one seat per organisation",
-        "fr": "Essai de 14 jours, puis un siège par organisation"
+        "en": "Priority assistance · response within 24h, welcome call included",
+        "fr": "Assistance prioritaire · réponse sous 24 h, welcome call incluse"
       },
       {
-        "en": "Manage organisation-level usage permissions",
-        "fr": "Gérez les permissions d'usage au niveau de l'organisation"
+        "en": "Hide public IPv4 addresses and emails when you share the screen",
+        "fr": "Masquez les adresses IPv4 publiques et les e-mails lorsque vous partagez l'écran"
       },
       {
-        "en": "Virtual machines, storage, and networking",
-        "fr": "Machines virtuelles, stockage et mise en réseau"
+        "en": "Shortcuts to create a basic VM, a Spot VM, or a hosted service",
+        "fr": "Raccourcis pour créer une VM basic, une VM Spot ou un service hébergé"
       },
       {
-        "en": "Desktop app for Linux, macOS, and Windows",
-        "fr": "Application desktop pour Linux, macOS et Windows"
+        "en": "Credentials stay on the row: connection secrets and kubeconfig",
+        "fr": "Les identifiants restent sur la ligne : secrets de connexion et kubeconfig"
       },
       {
-        "en": "Intel x64 DMG · Apple Silicon ARM64 DMG",
-        "fr": "DMG Intel x64 · DMG Apple Silicon ARM64"
+        "en": "Trial, seats, targets, and what the desktop app can do today",
+        "fr": "Essai, sièges, cibles, et ce que l'application desktop peut faire aujourd'hui"
+      },
+      {
+        "en": "The v3.3.0 checksum file does not include the RPM digests.",
+        "fr": "Le fichier de checksums de v3.3.0 n'inclut pas les empreintes RPM."
+      },
+      {
+        "en": "One desktop app. Four ways teams use it on the first day.",
+        "fr": "Une application desktop. Quatre usages dès le premier jour."
+      },
+      {
+        "en": "14-day free trial on every plan — no credit card required",
+        "fr": "14 jours d'essai gratuit sur tous les plans — sans carte bancaire"
+      },
+      {
+        "en": "From 5 licences up, with dedicated support and assistance",
+        "fr": "À partir de 5 licences, avec support et assistance dédiés"
+      },
+      {
+        "en": "Register once. Enable a scenario when you need that lab",
+        "fr": "Enregistrez une fois. Activez un scénario lorsque vous avez besoin de ce labo"
+      },
+      {
+        "en": "Terminate deletes the instance and stops billing for it",
+        "fr": "Terminer supprime l'instance et arrête la facturation"
+      },
+      {
+        "en": "Invite people onto a paid tier, then complete checkout",
+        "fr": "Invitez des personnes sur un palier payant, puis terminez le paiement"
+      },
+      {
+        "en": "The browser build cannot open the desktop SSH window.",
+        "fr": "La version navigateur ne peut pas ouvrir la fenêtre SSH du desktop."
+      },
+      {
+        "en": "Enable a scenario or a spare target for this session.",
+        "fr": "Activez un scénario ou une cible libre pour cette session."
+      },
+      {
+        "en": "Fill the form, choose a host card, then press Create.",
+        "fr": "Remplissez le formulaire, choisissez une carte hôte, puis appuyez sur Créer."
+      },
+      {
+        "en": "Everything in Start, plus up to 15 active connections",
+        "fr": "Tout Start, plus jusqu'à 15 connexions actives"
+      },
+      {
+        "en": "billed annually · €239 /year per seat (≈ €19.9/month)",
+        "fr": "facturé annuellement · 239 € /an par siège (≈ 19,9 €/mois)"
+      },
+      {
+        "en": "billed annually · €479 /year per seat (≈ €39.9/month)",
+        "fr": "facturé annuellement · 479 € /an par siège (≈ 39,9 €/mois)"
+      },
+      {
+        "en": "Attach and detach volumes and networks from the row",
+        "fr": "Attachez et détachez volumes et réseaux depuis la ligne"
+      },
+      {
+        "en": "Scenarios that switch a whole lab on with one click",
+        "fr": "Scénarios qui activent tout un labo en un clic"
+      },
+      {
+        "en": "Networking counts plus PaaS and SaaS health rings",
+        "fr": "Comptes réseau plus anneaux de santé PaaS et SaaS"
+      },
+      {
+        "en": "Connections and support sized to the organisation",
+        "fr": "Connexions et support adaptés à l'organisation"
+      },
+      {
+        "en": "Enterprise-grade support, tailored to your needs",
+        "fr": "Support de niveau entreprise, selon vos besoins"
+      },
+      {
+        "en": "Unlimited AtomOS endpoints, included at no cost",
+        "fr": "Endpoints AtomOS illimités, inclus sans frais"
+      },
+      {
+        "en": "Stop switching consoles. Start choosing hosts.",
+        "fr": "Arrêtez de changer de console. Commencez à choisir des hôtes."
+      },
+      {
+        "en": "For growing teams wanting dedicated assistance",
+        "fr": "Pour les équipes qui veulent une assistance dédiée"
+      },
+      {
+        "en": "A lab context that never matches the next job",
+        "fr": "Un contexte de labo qui ne correspond jamais au job suivant"
+      },
+      {
+        "en": "Targets you register. Clouds you already own.",
+        "fr": "Cibles que vous enregistrez. Clouds que vous possédez déjà."
+      },
+      {
+        "en": "Does registering a target provision anything?",
+        "fr": "Enregistrer une cible provisionne-t-il quelque chose ?"
+      },
+      {
+        "en": "Priority assistance, response within 24 hours",
+        "fr": "Assistance prioritaire, réponse sous 24 heures"
+      },
+      {
+        "en": "Already have an account? Sign in & buy a seat",
+        "fr": "Vous avez déjà un compte ? Connectez-vous et achetez un siège"
+      },
+      {
+        "en": "volumes, white label and dedicated governance",
+        "fr": "volumes, white label et gouvernance dédiée"
+      },
+      {
+        "en": "One console per hypervisor and cloud account",
+        "fr": "Une console par hyperviseur et compte cloud"
+      },
+      {
+        "en": "SSH into each box to create a disk or a VM",
+        "fr": "SSH dans chaque machine pour créer un disque ou une VM"
+      },
+      {
+        "en": "Target reachability: active or unreachable",
+        "fr": "Joignabilité de la cible : active ou injoignable"
+      },
+      {
+        "en": "Run the next workload from one desktop app",
+        "fr": "Exécutez la prochaine charge de travail depuis une seule application desktop"
+      },
+      {
+        "en": "What does a Spot VM cost when I am done?",
+        "fr": "Que coûte une VM Spot lorsque j'ai terminé ?"
+      },
+      {
+        "en": "For teams that want priority assistance",
+        "fr": "Pour les équipes qui veulent une assistance prioritaire"
+      },
+      {
+        "en": "Global Tailscale networks across hosts",
+        "fr": "Réseaux Tailscale globaux entre hôtes"
       },
       {
         "en": "Which operating systems are supported?",
-        "fr": "Quels systèmes d’exploitation sont supportés ?"
+        "fr": "Quels systèmes d'exploitation sont pris en charge ?"
       },
       {
-        "en": "Power, reboot, force-off, and deletion",
-        "fr": "Marche, redémarrage, arrêt forcé et suppression"
+        "en": "What you can run from one desktop app",
+        "fr": "Ce que vous pouvez exécuter depuis une seule application desktop"
       },
       {
-        "en": "Attach and detach volumes and networks",
-        "fr": "Attacher et détacher des volumes et des réseaux"
+        "en": "For teams unifying their first clouds",
+        "fr": "Pour les équipes qui unifient leurs premiers clouds"
       },
       {
-        "en": "AtomOS port forwards and port tunnels",
-        "fr": "Redirections et tunnels de ports AtomOS"
+        "en": "Active connections set to your volume",
+        "fr": "Connexions actives selon votre volume"
       },
       {
         "en": "What access protocols are supported?",
         "fr": "Quels protocoles d'accès sont pris en charge ?"
       },
       {
-        "en": "How Electros works behind the scenes",
-        "fr": "Comment Electros travaille en coulisses"
+        "en": "Your whole infrastructure, governed.",
+        "fr": "Toute votre infrastructure, gouvernée."
       },
       {
-        "en": "How Atomosphere connectivity works →",
-        "fr": "Comment fonctionne la connectivité Atomosphere →"
+        "en": "MCP support (Model Context Protocol)",
+        "fr": "Support MCP (Model Context Protocol)"
       },
       {
-        "en": "DHCP pools, reservations, and routes",
-        "fr": "Pools DHCP, réservations et routes"
+        "en": "Quotas tracked by hand across teams",
+        "fr": "Quotas suivis à la main entre les équipes"
       },
       {
-        "en": "Targets and private Meson providers",
-        "fr": "Cibles et fournisseurs privés Meson"
+        "en": "5% discount on AtomOS support plans",
+        "fr": "5 % de réduction sur les plans d'assistance AtomOS"
       },
       {
-        "en": "Desktop platforms and remote access",
-        "fr": "Plateformes de bureau et accès à distance"
+        "en": "How Atomosphere connectivity works",
+        "fr": "Comment fonctionne la connectivité Atomosphere"
       },
       {
-        "en": "Targets, scenarios and permissions",
-        "fr": "Cibles, scénarios et autorisations"
+        "en": "€239 / year, or €30 billed monthly",
+        "fr": "239 € / an, ou 30 € facturés chaque mois"
       },
       {
-        "en": "Provisioning on an enabled target",
-        "fr": "Provisionnement sur une cible activée"
+        "en": "€479 / year, or €60 billed monthly",
+        "fr": "479 € / an, ou 60 € facturés chaque mois"
       },
       {
-        "en": "Checksums: combined_checksums.txt",
-        "fr": "Sommes de contrôle : combined_checksums.txt"
+        "en": "Can I limit what each team uses?",
+        "fr": "Puis-je limiter ce que chaque équipe utilise ?"
       },
       {
-        "en": "Cloud-init configuration volumes",
-        "fr": "Volumes de configuration cloud-init"
+        "en": "Support via ticketing and email",
+        "fr": "Support par tickets et e-mail"
       },
       {
-        "en": "Clone non-AtomOS VMs to AtomOS",
-        "fr": "Cloner les VM non AtomOS vers AtomOS"
+        "en": "Minimum 5 seats, custom pricing",
+        "fr": "Minimum 5 sièges, tarif sur mesure"
       },
       {
-        "en": "Connected through Atomosphere",
-        "fr": "Connecté via Atomosphere"
+        "en": "billed monthly, cancel anytime",
+        "fr": "facturation mensuelle, résiliez quand vous voulez"
       },
       {
-        "en": "Multi-host Tailscale networks",
-        "fr": "Réseaux Tailscale multi-hôtes"
+        "en": "AtomOS hosts on your network",
+        "fr": "Hôtes AtomOS sur votre réseau"
       },
       {
-        "en": "x64 AppImage · ARM64 AppImage",
-        "fr": "AppImage x64 · AppImage ARM64"
+        "en": "Up to 15 active connections*",
+        "fr": "Jusqu'à 15 connexions actives*"
       },
       {
-        "en": "AtomOS migration and backups",
-        "fr": "Migration et sauvegardes AtomOS"
-      },
-      {
-        "en": "Empty qcow2 and raw volumes",
-        "fr": "Volumes qcow2 et raw vides"
+        "en": "Up to 7 active connections*",
+        "fr": "Jusqu'à 7 connexions actives*"
       },
       {
         "en": "Frequently Asked Questions",
-        "fr": "Foire aux questions"
+        "fr": "Questions fréquentes"
       },
       {
         "en": "Does Electros run offline?",
-        "fr": "Electros fonctionne-t-il hors ligne ?"
+        "fr": "Electros fonctionne-t-il hors ligne ?"
       },
       {
-        "en": "Get started with Electros",
-        "fr": "Premiers pas avec Electros"
+        "en": "Up to 7 active connections",
+        "fr": "Jusqu'à 7 connexions actives"
       },
       {
-        "en": "Registered Meson accounts",
-        "fr": "Comptes Meson enregistrés"
-      },
-      {
-        "en": "I already have an account",
-        "fr": "J'ai déjà un compte"
+        "en": "Everything in Start, plus:",
+        "fr": "Tout Start, plus :"
       },
       {
         "en": "Architectures and formats",
         "fr": "Architectures et formats"
       },
       {
-        "en": "Desktop operating systems",
-        "fr": "Systèmes d'exploitation desktop"
+        "en": "Get started with Electros",
+        "fr": "Démarrez avec Electros"
       },
       {
-        "en": "Remote access in v3.3.0:",
-        "fr": "Accès à distance dans la v3.3.0 :"
+        "en": "I already have an account",
+        "fr": "J'ai déjà un compte"
+      },
+      {
+        "en": "Which clouds can I bring?",
+        "fr": "Quels clouds puis-je apporter ?"
+      },
+      {
+        "en": "Custom active connections",
+        "fr": "Connexions actives sur mesure"
+      },
+      {
+        "en": "n8n and OpenClaw app VMs",
+        "fr": "VM d'apps n8n et OpenClaw"
       },
       {
         "en": "Is Electros free to use?",
-        "fr": "L’utilisation d’Electros est-elle gratuite ?"
+        "fr": "Electros est-il gratuit ?"
+      },
+      {
+        "en": "Connect. Create. Govern.",
+        "fr": "Connectez. Créez. Gouvernez."
+      },
+      {
+        "en": "Public and private Meson",
+        "fr": "Meson public et privé"
+      },
+      {
+        "en": "AtomOS, ESXi and Proxmox",
+        "fr": "AtomOS, ESXi et Proxmox"
+      },
+      {
+        "en": "Platform teams and MSPs",
+        "fr": "Équipes plateforme et MSP"
       },
       {
         "en": "Subscribe for your seat",
-        "fr": "Abonnez-vous à votre place"
+        "fr": "Abonnez-vous pour votre siège"
       },
       {
-        "en": "Technical Architecture:",
-        "fr": "Architecture technique :"
+        "en": "Desktop app or browser?",
+        "fr": "Application desktop ou navigateur ?"
       },
       {
-        "en": "See Electros in Action",
+        "en": "Storage and networking",
+        "fr": "Stockage et réseau"
+      },
+      {
+        "en": "See Electros in action",
         "fr": "Voir Electros en action"
-      },
-      {
-        "en": "Trial and subscription",
-        "fr": "Essai et abonnement"
-      },
-      {
-        "en": "Remote access built in",
-        "fr": "Accès à distance intégré"
-      },
-      {
-        "en": "Hypervisors and AtomOS",
-        "fr": "Hyperviseurs et AtomOS"
       },
       {
         "en": "Meson private accounts",
         "fr": "Comptes Meson privés"
       },
       {
-        "en": "Deployment comparison",
-        "fr": "Comparaison des déploiements"
+        "en": "Trial and subscription",
+        "fr": "Essai et abonnement"
       },
       {
-        "en": "How do I get started?",
-        "fr": "Comment procéder ?"
+        "en": "White label on request",
+        "fr": "White label sur demande"
+      },
+      {
+        "en": "Managed PaaS and SaaS",
+        "fr": "PaaS et SaaS managés"
       },
       {
         "en": "Meson public accounts",
         "fr": "Comptes Meson publics"
       },
       {
-        "en": "Core Usage Scenarios",
-        "fr": "Scénarios d'utilisation de base"
+        "en": "How do I get started?",
+        "fr": "Par où commencer ?"
       },
       {
-        "en": "Unified Architecture",
-        "fr": "Architecture unifiée"
+        "en": "Desktop control plane",
+        "fr": "Control plane desktop"
       },
       {
-        "en": "ISO and tool images",
-        "fr": "Images ISO et d'outils"
+        "en": "Governance and teams",
+        "fr": "Gouvernance et équipes"
       },
       {
-        "en": "x64 DEB · ARM64 DEB",
-        "fr": "DEB x64 · DEB ARM64"
+        "en": "Sign in & buy a seat",
+        "fr": "Connexion et achat d'un siège"
       },
       {
-        "en": "x64 RPM · ARM64 RPM",
-        "fr": "RPM x64 · RPM ARM64"
+        "en": "Private Meson guides",
+        "fr": "Guides Meson privés"
+      },
+      {
+        "en": "Try free for 14 days",
+        "fr": "Essayer gratuitement 14 jours"
+      },
+      {
+        "en": "Who Electros is for",
+        "fr": "Pour qui est Electros"
+      },
+      {
+        "en": "Start 14-day trial",
+        "fr": "Démarrer l'essai de 14 jours"
+      },
+      {
+        "en": "Active Connections",
+        "fr": "Connexions actives"
+      },
+      {
+        "en": "Hosts you register",
+        "fr": "Hôtes que vous enregistrez"
+      },
+      {
+        "en": "Enterprise support",
+        "fr": "Support entreprise"
+      },
+      {
+        "en": "Migration services",
+        "fr": "Services de migration"
+      },
+      {
+        "en": "Connections guide",
+        "fr": "Guide des connexions"
       },
       {
         "en": "Download Electros",
@@ -6031,55 +6259,155 @@
       },
       {
         "en": "I need an account",
-        "fr": "J’ai besoin d’un compte"
+        "fr": "J'ai besoin d'un compte"
       },
       {
-        "en": "Connections guide",
-        "fr": "Guide de connexions"
+        "en": "14-day free trial",
+        "fr": "Essai gratuit de 14 jours"
       },
       {
-        "en": "v3.3.0 installers",
-        "fr": "Installateurs v3.3.0"
-      },
-      {
-        "en": "Seat subscription",
-        "fr": "Abonnement au siège"
+        "en": "Virtual machines",
+        "fr": "Machines virtuelles"
       },
       {
         "en": "Networking guide",
-        "fr": "Guide de mise en réseau"
+        "fr": "Guide réseau"
       },
       {
-        "en": "Desktop app only",
-        "fr": "Application desktop uniquement"
+        "en": "Electros pricing",
+        "fr": "Tarifs Electros"
+      },
+      {
+        "en": "One create flow",
+        "fr": "Un seul flux de création"
+      },
+      {
+        "en": "Team governance",
+        "fr": "Gouvernance d'équipe"
+      },
+      {
+        "en": "Before Electros",
+        "fr": "Avant Electros"
       },
       {
         "en": "Fleet dashboard",
-        "fr": "Tableau de bord de la flotte"
+        "fr": "Tableau de bord de flotte"
       },
       {
         "en": "Where do I pay?",
-        "fr": "Ou puis-je payer?"
+        "fr": "Où payer ?"
       },
       {
-        "en": "Under the Hood",
-        "fr": "Sous le capot"
+        "en": "RPM-based Linux",
+        "fr": "Linux basé sur RPM"
       },
       {
-        "en": "Long-lived VMs",
-        "fr": "VM de longue durée"
+        "en": "/month per seat",
+        "fr": "/mois par siège"
+      },
+      {
+        "en": "Minimum 5 seats",
+        "fr": "Minimum 5 sièges"
+      },
+      {
+        "en": "Read the guide",
+        "fr": "Lire le guide"
+      },
+      {
+        "en": "Create account",
+        "fr": "Créer un compte"
+      },
+      {
+        "en": "With Electros",
+        "fr": "Avec Electros"
       },
       {
         "en": "Storage guide",
-        "fr": "Guide du stockage"
+        "fr": "Guide stockage"
       },
       {
-        "en": "Cloud images",
-        "fr": "Images cloud"
+        "en": "Release notes",
+        "fr": "Notes de version"
       },
       {
-        "en": "Products",
-        "fr": "Produits"
+        "en": "How it works",
+        "fr": "Comment ça marche"
+      },
+      {
+        "en": "Known issues",
+        "fr": "Problèmes connus"
+      },
+      {
+        "en": "From 5 seats",
+        "fr": "À partir de 5 sièges"
+      },
+      {
+        "en": "Custom price",
+        "fr": "Prix sur mesure"
+      },
+      {
+        "en": "Most popular",
+        "fr": "Le plus choisi"
+      },
+      {
+        "en": "Hybrid labs",
+        "fr": "Labos hybrides"
+      },
+      {
+        "en": "Book a demo",
+        "fr": "Réserver une démo"
+      },
+      {
+        "en": "Unreachable",
+        "fr": "Injoignables"
+      },
+      {
+        "en": "Most chosen",
+        "fr": "Le plus choisi"
+      },
+      {
+        "en": "Annual −33%",
+        "fr": "Annuel −33 %"
+      },
+      {
+        "en": "Any target",
+        "fr": "N'importe quelle cible"
+      },
+      {
+        "en": "Developers",
+        "fr": "Développeurs"
+      },
+      {
+        "en": "Let's talk",
+        "fr": "Parlons-en"
+      },
+      {
+        "en": "App teams",
+        "fr": "Équipes applicatives"
+      },
+      {
+        "en": "Reachable",
+        "fr": "Joignables"
+      },
+      {
+        "en": "Checksums",
+        "fr": "Sommes de contrôle"
+      },
+      {
+        "en": "Running",
+        "fr": "En cours"
+      },
+      {
+        "en": "Stopped",
+        "fr": "Arrêtées"
+      },
+      {
+        "en": "Monthly",
+        "fr": "Mensuel"
+      },
+      {
+        "en": "Paused",
+        "fr": "En pause"
       }
     ],
     "forms_getintouch": [

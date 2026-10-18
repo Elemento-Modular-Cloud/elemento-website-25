@@ -347,8 +347,8 @@
       "title": "Editor dei post del blog - Elemento"
     },
     "electros": {
-      "description": "Electros è la dashboard desktop di Elemento Cloud per target AtomOS, VMware ESXi, Proxmox e Meson. Inizia con una prova di 14 giorni — un seat per organizzazione.",
-      "title": "App Electros — Dashboard di orchestrazione | Elemento Cloud"
+      "description": "Electros è il control plane desktop per AtomOS, VMware ESXi, Proxmox e Meson. Crea VM, istanze Spot, Kubernetes e database con una prova di 14 giorni.",
+      "title": "App Electros — Un control plane desktop | Elemento Cloud"
     },
     "getintouch": {
       "title": "Mettiti in contatto con Elemento"

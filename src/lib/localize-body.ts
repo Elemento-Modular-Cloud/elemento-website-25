@@ -245,7 +245,7 @@ function localizeFaqAnswers(html: string, map: Map<string, string>): string {
 
 function localizeMappedElements(html: string, map: Map<string, string>): string {
   if (!map.size) return html;
-  const tags = ['h1', 'h2', 'h3', 'h4', 'p', 'li'];
+  const tags = ['h1', 'h2', 'h3', 'h4', 'p', 'li', 'summary'];
   let out = html;
   for (const tag of tags) {
     const re = new RegExp(`<${tag}([^>]*)>([\\s\\S]*?)<\\/${tag}>`, 'gi');
@@ -463,25 +463,33 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     ],
     electros: [
       [
-        'Platforms to run<br><small>Native apps for Linux, macOS, and Windows</small>',
-        "Piattaforme<br><small>App native per Linux, macOS e Windows</small>",
-      ],
-      [
         'Target types<br><small>AtomOS, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson</small>',
-        'Tipi di target<br><small>AtomOS, VMware ESXi 6 o 7, Proxmox VE 7 o 8 e account Meson pubblici o privati</small>',
+        'Tipi di target<br><small>AtomOS, VMware ESXi 6 o 7, Proxmox VE 7 o 8 e Meson pubblici o privati</small>',
       ],
       [
-        'Desktop app<br><small>One interface for the AtomOS, hypervisor, and Meson targets you register</small>',
-        "App desktop<br><small>Un'interfaccia per i target AtomOS, hypervisor e Meson che registri</small>",
+        'Private Meson providers<br><small>AWS, Azure, Google Cloud, OVHcloud, UpCloud and Scaleway</small>',
+        'Provider Meson privati<br><small>AWS, Azure, Google Cloud, OVHcloud, UpCloud e Scaleway</small>',
+      ],
+      [
+        'Database engines<br><small>Postgres, MySQL, SQL Server, and Redis where enabled</small>',
+        'Motori database<br><small>Postgres, MySQL, SQL Server e Redis, se abilitati</small>',
       ],
       [
         'Installers<br><small>9 installers across Linux, macOS and Windows</small>',
         'Installer<br><small>9 installer per Linux, macOS e Windows</small>',
       ],
       [
-        /Electros:<br>\s*<span class="pixel-accent">Fleet<\/span>\s*Control Center/gi,
-        'Electros:<br><span class="pixel-accent">Flotta</span> Centro di controllo',
+        /Every host, hypervisor and cloud account\.<br>\s*<span class="pixel-accent">One<\/span>\s*desktop control plane/gi,
+        'Ogni host, hypervisor e account cloud.<br><span class="pixel-accent">Un</span> control plane desktop',
       ],
+      ['<h3>Connect</h3>', '<h3>Collega</h3>'],
+      ['<h3>Activate</h3>', '<h3>Attiva</h3>'],
+      ['<h3>Create</h3>', '<h3>Crea</h3>'],
+      ['<h3>Spot VMs</h3>', '<h3>VM Spot</h3>'],
+      ['<h3>Target types</h3>', '<h3>Tipi di target</h3>'],
+      ['User guide', 'Guida utente'],
+      ['VMware ESXi 6 or 7', 'VMware ESXi 6 o 7'],
+      ['Proxmox VE 7 or 8', 'Proxmox VE 7 o 8'],
     ],
     'signup-success': [
       ['Check your email', 'Controlla la tua email'],
@@ -568,25 +576,33 @@ export function localizeBody(html: string, locale: Locale, stem: string): string
     ],
     electros: [
       [
-        'Platforms to run<br><small>Native apps for Linux, macOS, and Windows</small>',
-        'Plateformes<br><small>Apps natives pour Linux, macOS et Windows</small>',
-      ],
-      [
         'Target types<br><small>AtomOS, VMware ESXi 6 or 7, Proxmox VE 7 or 8, and public or private Meson</small>',
-        'Types de cibles<br><small>AtomOS, VMware ESXi 6 ou 7, Proxmox VE 7 ou 8, et comptes Meson publics ou privés</small>',
+        'Types de cibles<br><small>AtomOS, VMware ESXi 6 ou 7, Proxmox VE 7 ou 8, et Meson publics ou privés</small>',
       ],
       [
-        'Desktop app<br><small>One interface for the AtomOS, hypervisor, and Meson targets you register</small>',
-        'Application desktop<br><small>Une interface pour les cibles AtomOS, hyperviseurs et Meson que vous enregistrez</small>',
+        'Private Meson providers<br><small>AWS, Azure, Google Cloud, OVHcloud, UpCloud and Scaleway</small>',
+        'Fournisseurs Meson privés<br><small>AWS, Azure, Google Cloud, OVHcloud, UpCloud et Scaleway</small>',
+      ],
+      [
+        'Database engines<br><small>Postgres, MySQL, SQL Server, and Redis where enabled</small>',
+        'Moteurs de base de données<br><small>Postgres, MySQL, SQL Server et Redis, lorsqu’ils sont activés</small>',
       ],
       [
         'Installers<br><small>9 installers across Linux, macOS and Windows</small>',
         'Installateurs<br><small>9 installateurs pour Linux, macOS et Windows</small>',
       ],
       [
-        /Electros:<br>\s*<span class="pixel-accent">Fleet<\/span>\s*Control Center/gi,
-        'Electros:<br><span class="pixel-accent">Flotte</span> Centre de contrôle',
+        /Every host, hypervisor and cloud account\.<br>\s*<span class="pixel-accent">One<\/span>\s*desktop control plane/gi,
+        'Chaque hôte, hyperviseur et compte cloud.<br><span class="pixel-accent">Un</span> control plane desktop',
       ],
+      ['<h3>Connect</h3>', '<h3>Connecter</h3>'],
+      ['<h3>Activate</h3>', '<h3>Activer</h3>'],
+      ['<h3>Create</h3>', '<h3>Créer</h3>'],
+      ['<h3>Spot VMs</h3>', '<h3>VM Spot</h3>'],
+      ['<h3>Target types</h3>', '<h3>Types de cibles</h3>'],
+      ['User guide', 'Guide utilisateur'],
+      ['VMware ESXi 6 or 7', 'VMware ESXi 6 ou 7'],
+      ['Proxmox VE 7 or 8', 'Proxmox VE 7 ou 8'],
     ],
     'signup-success': [
       ['Check your email', 'Vérifiez votre e-mail'],
