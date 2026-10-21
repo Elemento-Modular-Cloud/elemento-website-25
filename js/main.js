@@ -283,10 +283,13 @@ class ElementoWebsite {
         const forms = document.querySelectorAll('form');
         
         forms.forEach(form => {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                this.handleFormSubmit(form);
-            });
+            // novalidate forms own their submit (checkout, signup). This handler only fakes a send.
+            if (!form.hasAttribute('novalidate')) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.handleFormSubmit(form);
+                });
+            }
 
             // Form validation
             const inputs = form.querySelectorAll('input, textarea, select');
@@ -314,16 +317,28 @@ class ElementoWebsite {
         }, 2000);
     }
 
+    fieldLabel(field) {
+        if (field.id) {
+            const label = document.querySelector(`label[for="${field.id}"]`);
+            if (label) {
+                const text = label.textContent.replace(/\*/g, '').replace(/\s+/g, ' ').trim();
+                if (text) return text;
+            }
+        }
+        const aria = field.getAttribute('aria-label');
+        if (aria) return aria.trim();
+        return 'This field';
+    }
+
     validateField(field) {
         const value = field.value.trim();
-        const fieldName = field.name || field.id;
         
         // Remove existing error
         this.clearFieldError(field);
         
         // Basic validation
         if (field.hasAttribute('required') && !value) {
-            this.showFieldError(field, `${fieldName} is required`);
+            this.showFieldError(field, `${this.fieldLabel(field)} is required`);
             return false;
         }
         
