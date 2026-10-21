@@ -16,7 +16,6 @@
         'This organisation already has a trial seat. Open Electros to manage billing or convert to a paid plan, or choose another organisation below.',
       enterCredentials: 'Enter your email and password.',
       signInFailed: 'Sign-in failed. Check your credentials and try again.',
-      sessionExpired: 'Your session expired. Sign in again to verify your email.',
       noToken: 'Login succeeded but no access token was returned.',
       selectOrgPlan: 'Select an organisation, plan, and billing period.',
       openingStripe: 'Opening Stripe…',
@@ -27,7 +26,10 @@
       addBilling: 'Your email is verified. Add invoicing details to continue.',
       incompleteBilling:
         'Billing details for this organisation are incomplete. Fill them in below, then continue.',
-      billingRequired: 'Address, ZIP, city, province, and country are required.',
+      billingRequired: 'Company name, VAT number, address, ZIP, city, province, and country are required.',
+      billingItaly: 'Italian customers need an SDI code or a PEC address.',
+      billingSdi: 'An SDI code is 7 characters.',
+      billingPec: 'Enter a valid PEC address.',
       billingSavedIncomplete:
         'Billing details were saved but still look incomplete. Check the fields and try again.',
       billingSaveFailed: 'Could not save billing details.',
@@ -70,7 +72,6 @@
         'Questa organizzazione ha già un seat in prova. Apri Electros per gestire la fatturazione o passare a un piano a pagamento, oppure scegli un’altra organizzazione.',
       enterCredentials: 'Inserisci email e password.',
       signInFailed: 'Accesso non riuscito. Controlla le credenziali e riprova.',
-      sessionExpired: 'La sessione è scaduta. Accedi di nuovo per verificare la tua email.',
       noToken: 'Accesso riuscito ma non è stato restituito alcun token.',
       selectOrgPlan: 'Seleziona organizzazione, piano e periodo di fatturazione.',
       openingStripe: 'Apertura di Stripe…',
@@ -81,7 +82,10 @@
       addBilling: 'La tua email è verificata. Aggiungi i dati di fatturazione per continuare.',
       incompleteBilling:
         'I dati di fatturazione di questa organizzazione sono incompleti. Compilali qui sotto, poi continua.',
-      billingRequired: 'Indirizzo, CAP, città, provincia e paese sono obbligatori.',
+      billingRequired: 'Ragione sociale, partita IVA, indirizzo, CAP, città, provincia e paese sono obbligatori.',
+      billingItaly: 'Per i clienti italiani servono un codice SDI oppure un indirizzo PEC.',
+      billingSdi: 'Il codice SDI è di 7 caratteri.',
+      billingPec: 'Inserisci un indirizzo PEC valido.',
       billingSavedIncomplete:
         'I dati di fatturazione sono stati salvati ma risultano ancora incompleti. Controlla i campi e riprova.',
       billingSaveFailed: 'Impossibile salvare i dati di fatturazione.',
@@ -124,7 +128,6 @@
         'Cette organisation a déjà un siège d’essai. Ouvrez Electros pour gérer la facturation ou passer à une offre payante, ou choisissez une autre organisation.',
       enterCredentials: 'Saisissez votre e-mail et votre mot de passe.',
       signInFailed: 'Connexion échouée. Vérifiez vos identifiants et réessayez.',
-      sessionExpired: 'Votre session a expiré. Reconnectez-vous pour vérifier votre e-mail.',
       noToken: 'Connexion réussie mais aucun jeton n’a été renvoyé.',
       selectOrgPlan: 'Sélectionnez une organisation, une offre et une périodicité.',
       openingStripe: 'Ouverture de Stripe…',
@@ -135,7 +138,10 @@
       addBilling: 'Votre e-mail est vérifié. Ajoutez les coordonnées de facturation pour continuer.',
       incompleteBilling:
         'Les coordonnées de facturation de cette organisation sont incomplètes. Complétez-les ci-dessous, puis continuez.',
-      billingRequired: 'Adresse, code postal, ville, province et pays sont obligatoires.',
+      billingRequired: 'La raison sociale, le numéro de TVA, l’adresse, le code postal, la ville, la province et le pays sont obligatoires.',
+      billingItaly: 'Les clients italiens doivent indiquer un code SDI ou une adresse PEC.',
+      billingSdi: 'Un code SDI comporte 7 caractères.',
+      billingPec: 'Saisissez une adresse PEC valide.',
       billingSavedIncomplete:
         'Les coordonnées ont été enregistrées mais semblent encore incomplètes. Vérifiez les champs et réessayez.',
       billingSaveFailed: 'Impossible d’enregistrer les coordonnées de facturation.',
@@ -285,15 +291,27 @@
     return err && err.status === 403 && raw.includes('billing details are incomplete');
   }
 
+  function realSdiCode(value) {
+    const sdi = String(value || '').trim();
+    if (!/^[A-Za-z0-9]{7}$/.test(sdi)) return '';
+    if (sdi.toUpperCase() === '0000000' || sdi.toUpperCase() === 'XXXXXXX') return '';
+    return sdi;
+  }
+
   function billingDetailsComplete(details) {
     if (!details || typeof details !== 'object') return false;
-    return Boolean(
-      details.full_address &&
+    const base = Boolean(
+      details.company_name &&
+        details.vat_code &&
+        details.full_address &&
         details.zip_code &&
         details.city &&
         details.province &&
         details.nationality
     );
+    if (!base) return false;
+    if (String(details.nationality).trim().toUpperCase() !== 'IT') return true;
+    return Boolean(realSdiCode(details.sdi_code) || String(details.pec_address || '').trim());
   }
 
   async function tryPaymentLinks() {
@@ -568,19 +586,26 @@
     if (!billingForm || !details) return;
     const map = {
       billingCompanyName: details.company_name,
-      billingNationality: details.nationality || 'IT',
       billingVatCode: details.vat_code,
       billingFiscalCode: details.fiscal_code,
       billingAddress: details.full_address,
       billingZip: details.zip_code,
       billingCity: details.city,
       billingProvince: details.province,
-      billingSdi: details.sdi_code || '0000000',
+      billingPec: details.pec_address,
     };
     Object.entries(map).forEach(([id, value]) => {
       const el = document.getElementById(id);
       if (el && value != null && value !== '') el.value = value;
     });
+    const sdiEl = document.getElementById('billingSdi');
+    if (sdiEl) sdiEl.value = realSdiCode(details.sdi_code);
+    const country = document.getElementById('billingNationality');
+    if (country) {
+      const code = String(details.nationality || 'IT').trim().toUpperCase();
+      if ([...country.options].some((opt) => opt.value === code)) country.value = code;
+    }
+    syncItalyFields();
   }
 
   function userFacingError(err, fallback) {
@@ -782,10 +807,78 @@
     await continueAfterVerified();
   }
 
+  const BILLING_FIELD_IDS = [
+    'billingCompanyName',
+    'billingVatCode',
+    'billingFiscalCode',
+    'billingSdi',
+    'billingPec',
+    'billingAddress',
+    'billingNationality',
+    'billingProvince',
+    'billingZip',
+    'billingCity',
+  ];
+
+  function markBillingFields(invalidIds) {
+    BILLING_FIELD_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.style.borderColor = invalidIds.indexOf(id) >= 0 ? '#DC3545' : '';
+    });
+  }
+
+  function syncItalyFields() {
+    const country = document.getElementById('billingNationality');
+    const italy = document.getElementById('billingItalyFields');
+    if (!italy) return;
+    italy.hidden = !country || country.value !== 'IT';
+  }
+
+  function fillCountrySelect() {
+    const select = document.getElementById('billingNationality');
+    if (!select || select.options.length) return;
+    const locale = pageLocale();
+    const codes = [
+      'AD', 'AE', 'AF', 'AG', 'AI', 'AL', 'AM', 'AO', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AW', 'AX', 'AZ',
+      'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BL', 'BM', 'BN', 'BO', 'BQ', 'BR', 'BS',
+      'BT', 'BV', 'BW', 'BY', 'BZ', 'CA', 'CC', 'CD', 'CF', 'CG', 'CH', 'CI', 'CK', 'CL', 'CM', 'CN',
+      'CO', 'CR', 'CU', 'CV', 'CW', 'CX', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE',
+      'EG', 'EH', 'ER', 'ES', 'ET', 'FI', 'FJ', 'FK', 'FM', 'FO', 'FR', 'GA', 'GB', 'GD', 'GE', 'GF',
+      'GG', 'GH', 'GI', 'GL', 'GM', 'GN', 'GP', 'GQ', 'GR', 'GS', 'GT', 'GU', 'GW', 'GY', 'HK', 'HM',
+      'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IM', 'IN', 'IO', 'IQ', 'IR', 'IS', 'IT', 'JE', 'JM',
+      'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KP', 'KR', 'KW', 'KY', 'KZ', 'LA', 'LB', 'LC',
+      'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'LY', 'MA', 'MC', 'MD', 'ME', 'MF', 'MG', 'MH', 'MK',
+      'ML', 'MM', 'MN', 'MO', 'MP', 'MQ', 'MR', 'MS', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA',
+      'NC', 'NE', 'NF', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NU', 'NZ', 'OM', 'PA', 'PE', 'PF', 'PG',
+      'PH', 'PK', 'PL', 'PM', 'PN', 'PR', 'PS', 'PT', 'PW', 'PY', 'QA', 'RE', 'RO', 'RS', 'RU', 'RW',
+      'SA', 'SB', 'SC', 'SD', 'SE', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL', 'SM', 'SN', 'SO', 'SR', 'SS',
+      'ST', 'SV', 'SX', 'SY', 'SZ', 'TC', 'TD', 'TF', 'TG', 'TH', 'TJ', 'TK', 'TL', 'TM', 'TN', 'TO',
+      'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'UM', 'US', 'UY', 'UZ', 'VA', 'VC', 'VE', 'VG', 'VI',
+      'VN', 'VU', 'WF', 'WS', 'YE', 'YT', 'ZA', 'ZM', 'ZW',
+    ];
+    const names = new Intl.DisplayNames([locale], { type: 'region' });
+    const options = codes
+      .map((code) => ({ code, name: names.of(code) || code }))
+      .sort((a, b) => a.name.localeCompare(b.name, locale));
+    const italy = options.filter((item) => item.code === 'IT');
+    const rest = options.filter((item) => item.code !== 'IT');
+    italy.concat(rest).forEach((item) => {
+      const opt = document.createElement('option');
+      opt.value = item.code;
+      opt.textContent = item.name;
+      select.appendChild(opt);
+    });
+    select.value = 'IT';
+    select.addEventListener('change', syncItalyFields);
+    syncItalyFields();
+  }
+
   function readBillingPayload() {
     const nationality = (document.getElementById('billingNationality').value || 'IT').trim().toUpperCase();
-    let sdi = (document.getElementById('billingSdi').value || '').trim();
-    if (!sdi) sdi = nationality === 'IT' ? '0000000' : 'XXXXXXX';
+    const italian = nationality === 'IT';
+    const sdiInput = (document.getElementById('billingSdi').value || '').trim();
+    const pecInput = (document.getElementById('billingPec').value || '').trim();
+    const sdi = italian ? (realSdiCode(sdiInput) || '0000000') : 'XXXXXXX';
 
     return {
       fiscal_code: (document.getElementById('billingFiscalCode').value || '').trim() || null,
@@ -796,8 +889,44 @@
       city: (document.getElementById('billingCity').value || '').trim(),
       province: (document.getElementById('billingProvince').value || '').trim(),
       sdi_code: sdi,
+      pec_address: italian ? pecInput : '',
       nationality,
+      sdiInput,
+      pecInput,
     };
+  }
+
+  function billingValidationError(payload) {
+    const missing = [];
+    if (!payload.company_name) missing.push('billingCompanyName');
+    if (!payload.vat_code) missing.push('billingVatCode');
+    if (!payload.full_address) missing.push('billingAddress');
+    if (!payload.zip_code) missing.push('billingZip');
+    if (!payload.city) missing.push('billingCity');
+    if (!payload.province) missing.push('billingProvince');
+    if (!payload.nationality) missing.push('billingNationality');
+    if (missing.length) {
+      markBillingFields(missing);
+      return 'billingRequired';
+    }
+    if (payload.nationality === 'IT') {
+      const sdi = payload.sdiInput;
+      const pec = payload.pecInput;
+      if (sdi && !/^[A-Za-z0-9]{7}$/.test(sdi)) {
+        markBillingFields(['billingSdi']);
+        return 'billingSdi';
+      }
+      if (pec && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(pec)) {
+        markBillingFields(['billingPec']);
+        return 'billingPec';
+      }
+      if (!realSdiCode(sdi) && !pec) {
+        markBillingFields(['billingSdi', 'billingPec']);
+        return 'billingItaly';
+      }
+    }
+    markBillingFields([]);
+    return '';
   }
 
   function renderOrgs(scopes) {
@@ -1076,10 +1205,13 @@
       showError('');
       const submitBtn = billingForm.querySelector('[type="submit"]');
       const payload = readBillingPayload();
-      if (!payload.full_address || !payload.zip_code || !payload.city || !payload.province || !payload.nationality) {
-        showError(t('billingRequired'));
+      const invalid = billingValidationError(payload);
+      if (invalid) {
+        showError(t(invalid));
         return;
       }
+      delete payload.sdiInput;
+      delete payload.pecInput;
       submitBtn.disabled = true;
       submitBtn.textContent = t('saving');
       try {
@@ -1185,8 +1317,6 @@
     });
   }
 
+  fillCountrySelect();
   showStep('login');
-  if (new URLSearchParams(window.location.search).get('session') === 'expired') {
-    showError(t('sessionExpired'));
-  }
 })();

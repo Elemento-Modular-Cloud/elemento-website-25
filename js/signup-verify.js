@@ -1,13 +1,22 @@
 /**
- * After registration, send the email code and confirm it.
- * Same portal calls as the buy-seat verification step.
+ * Registration welcome page:
+ * sign in (only if the registration session is gone) → verify email → choices.
+ * Buying a seat is a separate page with its own sign-in and verify step.
  */
 (function () {
   const PORTAL = 'https://portal.elemento.cloud/api/v2';
 
   const UI = {
     en: {
-      lead: 'Enter the 6-digit code sent to {email}.',
+      leadVerify: 'Enter the 6-digit code sent to {email}.',
+      leadSignIn: 'Sign in to verify your email, then choose how to continue.',
+      leadVerified: 'Your email is verified. Choose how to continue.',
+      sessionExpired: 'Your session expired. Sign in again to verify your email.',
+      signIn: 'Sign in',
+      signingIn: 'Signing in…',
+      enterCredentials: 'Enter your email and password.',
+      signInFailed: 'Sign-in failed. Check your credentials and try again.',
+      noToken: 'Login succeeded but no access token was returned.',
       verify: 'Verify email',
       verifying: 'Verifying…',
       resend: 'Resend code',
@@ -17,11 +26,17 @@
       codeSendFailed: 'Could not send the verification code. Try again.',
       refreshFailed: 'Your email was verified, but the session could not be refreshed. Sign in again.',
       stillUnverified: 'This session still shows the email as unverified. Sign in again.',
-      verifiedLead: 'Your email is verified.',
-      missingSession: 'We could not start verification in this browser. Sign in on Buy a seat and verify your email there.',
     },
     it: {
-      lead: 'Inserisci il codice a 6 cifre inviato a {email}.',
+      leadVerify: 'Inserisci il codice a 6 cifre inviato a {email}.',
+      leadSignIn: 'Accedi per verificare la tua email, poi scegli come continuare.',
+      leadVerified: 'La tua email è verificata. Scegli come continuare.',
+      sessionExpired: 'La sessione è scaduta. Accedi di nuovo per verificare la tua email.',
+      signIn: 'Accedi',
+      signingIn: 'Accesso…',
+      enterCredentials: 'Inserisci email e password.',
+      signInFailed: 'Accesso non riuscito. Controlla le credenziali e riprova.',
+      noToken: 'Accesso riuscito ma non è stato restituito alcun token.',
       verify: 'Verifica email',
       verifying: 'Verifica…',
       resend: 'Invia di nuovo il codice',
@@ -31,11 +46,17 @@
       codeSendFailed: 'Impossibile inviare il codice di verifica. Riprova.',
       refreshFailed: 'Email verificata, ma la sessione non è stata aggiornata. Accedi di nuovo.',
       stillUnverified: 'Questa sessione risulta ancora con email non verificata. Accedi di nuovo.',
-      verifiedLead: 'La tua email è verificata.',
-      missingSession: 'Impossibile avviare la verifica in questo browser. Accedi da Acquista un seat e verifica l’email lì.',
     },
     fr: {
-      lead: 'Saisissez le code à 6 chiffres envoyé à {email}.',
+      leadVerify: 'Saisissez le code à 6 chiffres envoyé à {email}.',
+      leadSignIn: 'Connectez-vous pour vérifier votre e-mail, puis choisissez comment continuer.',
+      leadVerified: 'Votre e-mail est vérifié. Choisissez comment continuer.',
+      sessionExpired: 'Votre session a expiré. Reconnectez-vous pour vérifier votre e-mail.',
+      signIn: 'Se connecter',
+      signingIn: 'Connexion…',
+      enterCredentials: 'Saisissez votre e-mail et votre mot de passe.',
+      signInFailed: 'Connexion échouée. Vérifiez vos identifiants et réessayez.',
+      noToken: 'Connexion réussie mais aucun jeton n’a été renvoyé.',
       verify: 'Vérifier l’e-mail',
       verifying: 'Vérification…',
       resend: 'Renvoyer le code',
@@ -45,8 +66,6 @@
       codeSendFailed: 'Impossible d’envoyer le code de vérification. Réessayez.',
       refreshFailed: 'E-mail vérifié, mais la session n’a pas pu être renouvelée. Reconnectez-vous.',
       stillUnverified: 'Cette session indique encore un e-mail non vérifié. Reconnectez-vous.',
-      verifiedLead: 'Votre e-mail est vérifié.',
-      missingSession: 'Impossible de démarrer la vérification dans ce navigateur. Connectez-vous sur Acheter un siège et vérifiez votre e-mail.',
     },
   };
 
@@ -65,24 +84,61 @@
     return (UI[loc] && UI[loc][key]) || UI.en[key] || key;
   }
 
+  function buySeatHref() {
+    const loc = pageLocale();
+    if (window.ElementoI18n?.localeStemHref) {
+      return window.ElementoI18n.localeStemHref('buy-seat', loc);
+    }
+    return loc === 'en' ? '/buy-seat.html' : `/${loc}/buy-seat.html`;
+  }
+
+  const signInPanel = document.getElementById('signupSignIn');
+  const signInForm = document.getElementById('signupSignInForm');
+  const signInEmailEl = document.getElementById('signupSignInEmail');
+  const signInPasswordEl = document.getElementById('signupSignInPassword');
+  const signInSubmit = document.getElementById('signupSignInSubmit');
+  const verifyPanel = document.getElementById('signupVerify');
+  const choicesPanel = document.getElementById('signupChoices');
   const form = document.getElementById('signupVerifyForm');
   const alertEl = document.getElementById('signupVerifyAlert');
-  const emailEl = document.getElementById('signupVerifyEmail');
   const leadEl = document.getElementById('signupVerifyLead');
   const codeEl = document.getElementById('signupVerifyCode');
   const hintEl = document.getElementById('signupVerifyHint');
   const resendBtn = document.getElementById('signupResendCode');
   const submitBtn = document.getElementById('signupVerifySubmit');
-  if (!form || !codeEl || !submitBtn) return;
+  const buyLink = document.getElementById('signupBuyElectros');
+  if (!form || !codeEl || !submitBtn || !signInForm) return;
+
+  if (buyLink) buyLink.href = buySeatHref();
 
   let accessToken = null;
   let refreshToken = null;
+  let accountEmail = '';
   let resendTimer = null;
 
   function showAlert(message) {
     if (!alertEl) return;
     alertEl.textContent = message || '';
     alertEl.hidden = !message;
+  }
+
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"]/g, (ch) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+    }[ch]));
+  }
+
+  function setLead(key, email) {
+    if (!leadEl) return;
+    if (key === 'leadVerify') {
+      const shown = email || 'your email';
+      leadEl.innerHTML = t('leadVerify').replace('{email}', `<strong>${escapeHtml(shown)}</strong>`);
+      return;
+    }
+    leadEl.textContent = t(key);
   }
 
   function storedEmail() {
@@ -93,6 +149,14 @@
     } catch (_) {
       return '';
     }
+  }
+
+  function rememberEmail(email) {
+    if (!email) return;
+    accountEmail = email;
+    try {
+      sessionStorage.setItem('elemento_username', email);
+    } catch (_) { /* ignore */ }
   }
 
   function tokenClaims(token) {
@@ -107,10 +171,15 @@
     }
   }
 
+  function emailVerified(token) {
+    const claims = tokenClaims(token) || {};
+    return claims.elemento_email_verified === true;
+  }
+
   async function portalFetch(path, options = {}) {
     const headers = { Accept: 'application/json' };
     if (options.body) headers['Content-Type'] = 'application/json';
-    if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+    if (accessToken && options.auth !== false) headers.Authorization = `Bearer ${accessToken}`;
     const response = await fetch(`${PORTAL}${path}`, {
       method: options.method || 'GET',
       headers,
@@ -146,16 +215,44 @@
     return claims.exp * 1000 <= Date.now();
   }
 
-  function backToLogin() {
+  function clearSession() {
+    accessToken = null;
+    refreshToken = null;
     try {
       sessionStorage.removeItem('elemento_access_token');
       sessionStorage.removeItem('elemento_refresh_token');
     } catch (_) { /* ignore */ }
-    const i18n = window.ElementoI18n;
-    const path = i18n && typeof i18n.localeStemHref === 'function'
-      ? i18n.localeStemHref('buy-seat', pageLocale())
-      : 'buy-seat.html';
-    window.location.assign(`${path}?session=expired`);
+  }
+
+  function storeSession(data, email) {
+    accessToken = data.access_token;
+    if (data.refresh_token) refreshToken = data.refresh_token;
+    rememberEmail(email || data.username || accountEmail);
+    try {
+      sessionStorage.setItem('elemento_access_token', accessToken);
+      if (refreshToken) sessionStorage.setItem('elemento_refresh_token', refreshToken);
+    } catch (_) { /* ignore */ }
+  }
+
+  function showStep(step) {
+    if (signInPanel) signInPanel.hidden = step !== 'signin';
+    if (verifyPanel) verifyPanel.hidden = step !== 'verify';
+    if (choicesPanel) choicesPanel.hidden = step !== 'choices';
+  }
+
+  function showSignIn(reason) {
+    if (resendTimer) {
+      clearInterval(resendTimer);
+      resendTimer = null;
+    }
+    showStep('signin');
+    setLead('leadSignIn');
+    showAlert(reason === 'expired' ? t('sessionExpired') : '');
+    if (signInEmailEl && accountEmail && !signInEmailEl.value) signInEmailEl.value = accountEmail;
+    if (signInSubmit) {
+      signInSubmit.disabled = false;
+      signInSubmit.textContent = t('signIn');
+    }
   }
 
   function showResendNow() {
@@ -194,6 +291,23 @@
     startResendCooldown();
   }
 
+  function showVerify() {
+    showAlert('');
+    showStep('verify');
+    setLead('leadVerify', accountEmail);
+    if (submitBtn) submitBtn.textContent = t('verify');
+  }
+
+  function showChoices() {
+    if (resendTimer) {
+      clearInterval(resendTimer);
+      resendTimer = null;
+    }
+    showAlert('');
+    showStep('choices');
+    setLead('leadVerified');
+  }
+
   async function refreshSession() {
     if (!refreshToken) throw new Error(t('refreshFailed'));
     const data = await portalFetch('/auth/refresh', {
@@ -201,18 +315,26 @@
       body: { refresh_token: refreshToken },
     });
     if (!data || !data.access_token) throw new Error(t('refreshFailed'));
-    accessToken = data.access_token;
-    if (data.refresh_token) refreshToken = data.refresh_token;
-    try {
-      sessionStorage.setItem('elemento_access_token', accessToken);
-      if (refreshToken) sessionStorage.setItem('elemento_refresh_token', refreshToken);
-    } catch (_) { /* ignore */ }
+    storeSession(data, accountEmail);
   }
 
-  function showVerified() {
-    showAlert('');
-    form.hidden = true;
-    if (leadEl) leadEl.textContent = t('verifiedLead');
+  async function continueAfterAuth() {
+    if (emailVerified(accessToken)) {
+      showChoices();
+      return;
+    }
+    showVerify();
+    try {
+      await requestCode();
+    } catch (err) {
+      if (tokenExpired(err)) {
+        clearSession();
+        showSignIn('expired');
+        return;
+      }
+      showResendNow();
+      showAlert(err.message || t('codeSendFailed'));
+    }
   }
 
   codeEl.addEventListener('input', () => {
@@ -228,7 +350,8 @@
         await requestCode();
       } catch (err) {
         if (tokenExpired(err)) {
-          backToLogin();
+          clearSession();
+          showSignIn('expired');
           return;
         }
         showResendNow();
@@ -238,6 +361,43 @@
       }
     });
   }
+
+  signInForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    showAlert('');
+    const email = (signInEmailEl && signInEmailEl.value || '').trim();
+    const password = signInPasswordEl ? signInPasswordEl.value : '';
+    if (signInEmailEl) signInEmailEl.style.borderColor = '';
+    if (signInPasswordEl) signInPasswordEl.style.borderColor = '';
+    if (!email || !password) {
+      if (signInEmailEl && !email) signInEmailEl.style.borderColor = '#DC3545';
+      if (signInPasswordEl && !password) signInPasswordEl.style.borderColor = '#DC3545';
+      showAlert(t('enterCredentials'));
+      return;
+    }
+    if (signInSubmit) {
+      signInSubmit.disabled = true;
+      signInSubmit.textContent = t('signingIn');
+    }
+    try {
+      const data = await portalFetch('/auth/userpass', {
+        method: 'POST',
+        auth: false,
+        body: { username: email, password },
+      });
+      if (!data || !data.access_token) throw new Error(t('noToken'));
+      storeSession(data, email);
+      if (signInPasswordEl) signInPasswordEl.value = '';
+      await continueAfterAuth();
+    } catch (err) {
+      showAlert(err.message || t('signInFailed'));
+    } finally {
+      if (signInSubmit && signInPanel && !signInPanel.hidden) {
+        signInSubmit.disabled = false;
+        signInSubmit.textContent = t('signIn');
+      }
+    }
+  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -257,13 +417,12 @@
         body: { code },
       });
       await refreshSession();
-      const claims = tokenClaims(accessToken) || {};
-      if (claims.elemento_email_verified !== true) throw new Error(t('stillUnverified'));
-      if (resendTimer) clearInterval(resendTimer);
-      showVerified();
+      if (!emailVerified(accessToken)) throw new Error(t('stillUnverified'));
+      showChoices();
     } catch (err) {
       if (tokenExpired(err)) {
-        backToLogin();
+        clearSession();
+        showSignIn('expired');
         return;
       }
       if (err.status === 400) showAlert(t('codeInvalid'));
@@ -284,23 +443,14 @@
 
   accessToken = sessionStorage.getItem('elemento_access_token');
   refreshToken = sessionStorage.getItem('elemento_refresh_token');
-  const email = storedEmail();
-  if (emailEl) emailEl.textContent = email || 'your email';
-  if (leadEl && email) {
-    leadEl.innerHTML = t('lead').replace('{email}', `<strong>${email.replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]))}</strong>`);
-  }
+  accountEmail = storedEmail();
 
   if (!accessToken || accessTokenStale(accessToken)) {
-    backToLogin();
+    const hadToken = Boolean(accessToken);
+    clearSession();
+    showSignIn(hadToken ? 'expired' : 'missing');
     return;
   }
 
-  requestCode().catch((err) => {
-    if (tokenExpired(err)) {
-      backToLogin();
-      return;
-    }
-    showResendNow();
-    showAlert(err.message || t('codeSendFailed'));
-  });
+  continueAfterAuth();
 })();

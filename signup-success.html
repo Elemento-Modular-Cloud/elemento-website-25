@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Elemento - Registration Successful</title>
-    <meta name="description" content="Your Elemento account is ready. Verify your email with the code we send you.">
+    <meta name="description" content="Your Elemento account is ready. Verify your email, then start a trial, buy Electros, or open LaunchPad.">
     <link rel="canonical" href="https://elemento.cloud/signup-success.html">
     <meta name="robots" content="noindex, nofollow">
     <!-- Favicon -->
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/signup-success.css">
     </head>
 <body>
+    <div id="navbar-placeholder"></div>
 
     <main class="signup-success-page" id="main-content">
         <div class="signup-success-inner">
@@ -41,8 +42,20 @@
                 <p class="signup-success-lead hero-subtitle" id="signupVerifyLead">
                     Enter the 6-digit code sent to <strong id="signupVerifyEmail">your email</strong>.
                 </p>
+                <div class="signup-verify-alert" id="signupVerifyAlert" hidden></div>
+                <div class="signup-verify" id="signupSignIn" hidden>
+                    <form id="signupSignInForm" class="signup-verify-form" autocomplete="on" novalidate>
+                        <label for="signupSignInEmail">Email</label>
+                        <input type="email" id="signupSignInEmail" name="username" autocomplete="username" inputmode="email" autocapitalize="off" autocorrect="off" spellcheck="false" required placeholder="you@company.com">
+                        <label for="signupSignInPassword">Password</label>
+                        <input type="password" id="signupSignInPassword" name="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required placeholder="Your password">
+                        <p class="signup-verify-reset">
+                            <a href="https://portal.elemento.cloud/api/v2/user/recovery">Forgot your password?</a>
+                        </p>
+                        <button type="submit" class="btn btn-primary" id="signupSignInSubmit">Sign in</button>
+                    </form>
+                </div>
                 <div class="signup-verify" id="signupVerify">
-                    <div class="signup-verify-alert" id="signupVerifyAlert" hidden></div>
                     <form id="signupVerifyForm" class="signup-verify-form" autocomplete="off" novalidate>
                         <label for="signupVerifyCode">Verification code</label>
                         <input type="text" id="signupVerifyCode" class="signup-verify-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required placeholder="123456">
@@ -55,24 +68,24 @@
                 </div>
             </header>
 
-            <section class="signup-success-products fade-in" aria-labelledby="products-heading">
-                <h2 id="products-heading">Electros, AtomOS, and LaunchPad</h2>
+            <section class="signup-success-products fade-in" id="signupChoices" hidden aria-labelledby="choices-heading">
+                <h2 id="choices-heading">Choose how to continue</h2>
                 <ul class="signup-success-product-grid">
                     <li class="signup-success-product">
                         <img src="assets/logos/Electros.svg" alt="" width="48" height="48">
-                        <h3><a href="electros.html">Electros</a></h3>
-                        <p>Desktop control plane for AtomOS, VMware, Proxmox, and public clouds. Your account includes a 14-day trial.</p>
-                        <a class="signup-success-product-link" href="https://electros.cloud/#download">Download Electros</a>
+                        <h3>Start your trial</h3>
+                        <p>Your account includes a 14-day Electros trial. Download the app and sign in.</p>
+                        <a class="signup-success-product-link" href="https://electros.cloud/#download">Start trial and download</a>
                     </li>
                     <li class="signup-success-product">
-                        <img src="assets/logos/Atomos.svg" alt="" width="48" height="48">
-                        <h3><a href="atomos.html">AtomOS</a></h3>
-                        <p>Linux hypervisor for bare metal and private clouds. Free forever.</p>
-                        <a class="signup-success-product-link" href="atomos.html">Explore AtomOS</a>
+                        <img src="assets/logos/Electros.svg" alt="" width="48" height="48">
+                        <h3>Buy Electros</h3>
+                        <p>Add a paid seat for your organisation and check out in Stripe.</p>
+                        <a class="signup-success-product-link" id="signupBuyElectros" href="buy-seat.html">Buy Electros</a>
                     </li>
                     <li class="signup-success-product">
                         <img src="assets/logos/LaunchPad.svg" alt="" width="48" height="48">
-                        <h3><a href="https://launchpad.electros.cloud">LaunchPad</a></h3>
+                        <h3>LaunchPad</h3>
                         <p>A private cloud on your own machine: open AI models, virtual machines, and services.</p>
                         <a class="signup-success-product-link" href="https://launchpad.electros.cloud">Go to LaunchPad</a>
                     </li>
@@ -83,6 +96,6 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="js/signup-verify.js?v=20261021b" defer></script>
+    <script src="js/signup-verify.js?v=20261021d" defer></script>
 </body>
 </html>

@@ -173,43 +173,52 @@
                         <form id="subscribeBillingForm" class="subscribe-form" autocomplete="organization" novalidate>
                         <div class="subscribe-form-grid">
                             <div class="subscribe-form-row subscribe-form-row--full">
-                                <label for="billingCompanyName">Company name</label>
-                                <input type="text" id="billingCompanyName" name="company_name" autocomplete="organization">
+                                <label for="billingCompanyName">Company name *</label>
+                                <input type="text" id="billingCompanyName" name="company_name" autocomplete="organization" required>
                             </div>
                             <div class="subscribe-form-row">
-                                <label for="billingVatCode">VAT number</label>
-                                <input type="text" id="billingVatCode" name="vat_code" autocomplete="off">
+                                <label for="billingVatCode">VAT number *</label>
+                                <input type="text" id="billingVatCode" name="vat_code" autocomplete="off" required>
                             </div>
                             <div class="subscribe-form-row">
                                 <label for="billingFiscalCode">Fiscal code</label>
                                 <input type="text" id="billingFiscalCode" name="fiscal_code" autocomplete="off">
                             </div>
-                            <div class="subscribe-form-row">
-                                <label for="billingSdi">SDI code</label>
-                                <input type="text" id="billingSdi" name="sdi_code" value="0000000" autocomplete="off">
+                            <div class="subscribe-form-row subscribe-form-row--full" id="billingItalyFields">
+                                <div class="subscribe-form-grid">
+                                    <div class="subscribe-form-row">
+                                        <label for="billingSdi">SDI code</label>
+                                        <input type="text" id="billingSdi" name="sdi_code" maxlength="7" autocomplete="off" placeholder="7 characters">
+                                    </div>
+                                    <div class="subscribe-form-row">
+                                        <label for="billingPec">PEC address</label>
+                                        <input type="email" id="billingPec" name="pec_address" autocomplete="email" placeholder="name@pec.it">
+                                    </div>
+                                </div>
+                                <p class="subscribe-hint">For an Italian invoice, enter an SDI code or a PEC address.</p>
                             </div>
                             <div class="subscribe-form-row subscribe-form-row--full">
-                                <label for="billingAddress">Address</label>
+                                <label for="billingAddress">Address *</label>
                                 <input type="text" id="billingAddress" name="full_address" autocomplete="street-address" required>
                             </div>
                             <div class="subscribe-form-row">
-                                <label for="billingNationality">Country (ISO)</label>
-                                <input type="text" id="billingNationality" name="nationality" maxlength="2" autocomplete="country" value="IT" required>
+                                <label for="billingNationality">Country *</label>
+                                <select id="billingNationality" name="nationality" autocomplete="country" required></select>
                             </div>
                             <div class="subscribe-form-row">
-                                <label for="billingProvince">Province</label>
+                                <label for="billingProvince">Province *</label>
                                 <input type="text" id="billingProvince" name="province" autocomplete="address-level1" required>
                             </div>
                             <div class="subscribe-form-row">
-                                <label for="billingZip">ZIP / CAP</label>
+                                <label for="billingZip">ZIP / CAP *</label>
                                 <input type="text" id="billingZip" name="zip_code" autocomplete="postal-code" required>
                             </div>
                             <div class="subscribe-form-row">
-                                <label for="billingCity">City</label>
+                                <label for="billingCity">City *</label>
                                 <input type="text" id="billingCity" name="city" autocomplete="address-level2" required>
                             </div>
                         </div>
-                        <p class="subscribe-hint">VAT or fiscal code can be left blank when not applicable; address fields are required.</p>
+                        <p class="subscribe-hint">Fields marked * are required. Fiscal code is optional.</p>
                         <div class="subscribe-plan-actions">
                             <button type="button" class="btn btn-secondary" data-subscribe-back="plan">Back</button>
                             <button type="submit" class="btn btn-primary subscribe-submit">Save &amp; continue</button>
@@ -228,6 +237,6 @@
     <script src="js/footer.js" defer></script>
     <script src="js/themes.js" defer></script>
     <script src="js/main.js" defer></script>
-    <script src="js/electros-subscribe.js?v=20261021c" defer></script>
+    <script src="js/electros-subscribe.js?v=20261021f" defer></script>
 </body>
 </html>

@@ -382,6 +382,10 @@ body.page-buy-seat .breadcrumb {
     gap: 1rem;
 }
 
+#billingItalyFields[hidden] {
+    display: none;
+}
+
 @media (min-width: 640px) {
     .subscribe-form-grid {
         grid-template-columns: 1fr 1fr;
