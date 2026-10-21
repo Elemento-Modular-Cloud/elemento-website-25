@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Elemento - Registration Successful</title>
-    <meta name="description" content="Your Elemento account is ready. Open Electros, AtomOS, or LaunchPad, buy Electros seats, or start with LaunchPad.">
+    <meta name="description" content="Your Elemento account is ready. Verify your email with the code we send you.">
     <link rel="canonical" href="https://elemento.cloud/signup-success.html">
     <meta name="robots" content="noindex, nofollow">
     <!-- Favicon -->
@@ -38,18 +38,20 @@
             <header class="signup-success-hero fade-in">
                 <p class="signup-success-eyebrow">Registration complete</p>
                 <h1 class="signup-success-title">Welcome to <span class="pixel-accent">Elemento</span>!</h1>
-                <p class="signup-success-lead hero-subtitle">
-                    Your Elemento account is ready. Go to Electros, AtomOS, or LaunchPad.
+                <p class="signup-success-lead hero-subtitle" id="signupVerifyLead">
+                    Enter the 6-digit code sent to <strong id="signupVerifyEmail">your email</strong>.
                 </p>
-                <div class="signup-success-actions">
-                    <a class="btn btn-primary" href="buy-seat.html">Buy Electros seats</a>
-                    <a class="btn btn-primary" href="https://launchpad.electros.cloud">Open LaunchPad</a>
-                </div>
-                <div class="signup-success-email-alert email-notification">
-                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                    <p>
-                        <strong>Check your email</strong> — confirm your address if prompted, then sign in with the password you chose.
-                    </p>
+                <div class="signup-verify" id="signupVerify">
+                    <div class="signup-verify-alert" id="signupVerifyAlert" hidden></div>
+                    <form id="signupVerifyForm" class="signup-verify-form" autocomplete="off" novalidate>
+                        <label for="signupVerifyCode">Verification code</label>
+                        <input type="text" id="signupVerifyCode" class="signup-verify-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required placeholder="123456">
+                        <p class="signup-verify-hint" id="signupVerifyHint"></p>
+                        <div class="signup-verify-actions">
+                            <button type="button" class="btn btn-secondary" id="signupResendCode" hidden>Resend code</button>
+                            <button type="submit" class="btn btn-primary" id="signupVerifySubmit">Verify email</button>
+                        </div>
+                    </form>
                 </div>
             </header>
 
@@ -81,27 +83,6 @@
 
     <div id="footer-placeholder"></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            localStorage.setItem('elemento-registration-success', 'true');
-            localStorage.setItem('elemento-registration-timestamp', Date.now().toString());
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'sign_up', { method: 'web_form' });
-            }
-        });
-
-        window.addEventListener('message', function (event) {
-            if (event.data.type === 'form-submitted' && event.data.formType === 'signup') {
-                const userEmail = event.data.data?.email;
-                const lead = document.querySelector('.signup-success-lead');
-                if (lead && userEmail) {
-                    lead.innerHTML =
-                        'Your account has been created. We sent a confirmation to <strong>' +
-                        userEmail +
-                        '</strong>. Go to Electros, AtomOS, or LaunchPad.';
-                }
-            }
-        });
-    </script>
+    <script src="js/signup-verify.js?v=20261021a" defer></script>
 </body>
 </html>

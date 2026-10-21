@@ -92,17 +92,74 @@ body:has(.signup-success-page) .breadcrumb {
     color: var(--text-color);
 }
 
-.signup-success-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-md);
+.signup-verify {
+    max-width: 24rem;
     margin: 0 auto var(--space-xl);
+    text-align: left;
 }
 
-.signup-success-actions .btn {
-    min-width: 14rem;
+.signup-verify-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.signup-verify-form label {
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.signup-verify-code {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid color-mix(in srgb, var(--text-color) 18%, transparent);
+    background: var(--background-color, #fff);
+    color: var(--text-color);
+}
+
+.signup-verify-hint,
+.signup-verify-alert {
+    margin: 0;
+    font-family: var(--font-secondary, 'Open Sans', sans-serif);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.signup-verify-hint {
+    color: var(--text-secondary);
+    min-height: 1.2em;
+}
+
+.signup-verify-alert {
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md, 8px);
+    background: color-mix(in srgb, #dc3545 12%, var(--background-color, #fff));
+    color: var(--text-color);
+}
+
+.signup-verify-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.signup-verify-actions .btn {
+    width: 100%;
     justify-content: center;
+}
+
+.signup-verify-actions .btn[hidden],
+.signup-verify-alert[hidden],
+.signup-verify-form[hidden] {
+    display: none;
 }
 
 .signup-success-products h2 {
