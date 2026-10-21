@@ -68,6 +68,12 @@ body.page-buy-seat .breadcrumb {
     text-decoration: underline;
 }
 
+.buy-seat-reset {
+    margin: -0.25rem 0 0.75rem;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
 /* —— Shared step card —— */
 .subscribe-panel {
     --subscribe-panel-min-height: 31rem;
