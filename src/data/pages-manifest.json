@@ -1444,7 +1444,7 @@
       "css/buy-seat.css"
     ],
     "extraScripts": [
-      "js/electros-subscribe.js"
+      "js/electros-subscribe.js?v=20261021b"
     ],
     "type": "legacy",
     "locales": [

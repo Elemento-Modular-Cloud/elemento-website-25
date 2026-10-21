@@ -364,6 +364,12 @@
     return String(subscription.status || '').toLowerCase() === 'active';
   }
 
+  /** Tier name of a paid seat. A free trial is not a tier. */
+  function paidTierName(subscription) {
+    if (!isPaidSeat(subscription)) return '';
+    return String(subscription.tier_name || subscription.tier || '').trim();
+  }
+
   function setTrialNote(show) {
     const note = document.getElementById('subscribeTrialNote');
     if (note) note.hidden = !show;
@@ -893,27 +899,35 @@
       return 'needs-billing';
     }
 
+    let current = null;
     try {
-      const existing = await portalFetch('/subscription/');
-      const status = existing && String(existing.status || '').toLowerCase();
-      if (existing && (status === 'incomplete' || status === 'incomplete_expired' || status === 'past_due')) {
+      current = await portalFetch('/subscription/');
+      const status = current && String(current.status || '').toLowerCase();
+      if (current && (status === 'incomplete' || status === 'incomplete_expired' || status === 'past_due')) {
         if (await tryPaymentLinks()) return 'redirected';
       }
     } catch (_) { /* no current subscription */ }
 
+    // A free trial is not a tier, so it buys a new subscription.
+    // change-tier is only a move from one paid tier to another.
+    const currentPaidTier = state.upgradingTrial ? '' : paidTierName(current);
+    if (currentPaidTier && currentPaidTier === String(tier)) {
+      showAlreadyPaid(state.orgName, current);
+      return 'already-paid';
+    }
+    let changingTier = Boolean(currentPaidTier) && currentPaidTier !== String(tier);
+
+    const checkoutBody = {
+      email: state.email || state.username,
+      tier,
+      billing_frequency,
+    };
     let data;
-    const checkoutPath = state.upgradingTrial
-      ? '/subscription/change-tier'
-      : '/subscription/subscribe';
     try {
-      data = await portalFetch(checkoutPath, {
-        method: 'POST',
-        body: {
-          email: state.email || state.username,
-          tier,
-          billing_frequency,
-        },
-      });
+      data = await portalFetch(
+        changingTier ? '/subscription/change-tier' : '/subscription/subscribe',
+        { method: 'POST', body: checkoutBody }
+      );
     } catch (err) {
       if (isIncompleteBillingError(err)) {
         state.hasBillingDetails = false;
@@ -922,28 +936,24 @@
         );
         return 'needs-billing';
       }
-      if (!state.upgradingTrial && err.status === 409) {
+      if (!changingTier && err.status === 409 && !state.upgradingTrial) {
         const seat = await findOrgSeat(false);
-        if (seat.trial && !seat.paid) {
-          state.upgradingTrial = true;
-          setTrialNote(true);
+        const paidName = paidTierName(seat.paid);
+        if (paidName && paidName !== String(tier)) {
+          changingTier = true;
           data = await portalFetch('/subscription/change-tier', {
             method: 'POST',
-            body: {
-              email: state.email || state.username,
-              tier,
-              billing_frequency,
-            },
+            body: checkoutBody,
           });
         } else {
           if (await tryPaymentLinks()) return 'redirected';
           showAlreadyPaid(state.orgName, seat.paid || { is_trial: false });
           return 'already-paid';
         }
-      } else if (err.status === 409 || err.status >= 500) {
+      } else if (err.status >= 500) {
         if (await tryPaymentLinks()) return 'redirected';
         const claims = tokenClaims() || {};
-        if (!state.upgradingTrial && (claims.elemento_active_subscriber === true || err.status === 409)) {
+        if (!state.upgradingTrial && !changingTier && claims.elemento_active_subscriber === true) {
           showAlreadyPaid(state.orgName, { is_trial: false });
           return 'already-paid';
         }
@@ -961,7 +971,7 @@
       checkout &&
       Array.isArray(checkout.subscriptions) &&
       checkout.subscriptions.some((s) => s && s.is_trial);
-    if (!state.upgradingTrial && (trialGranted || (checkout && checkout.checkout_url == null))) {
+    if (!changingTier && (trialGranted || (checkout && checkout.checkout_url == null))) {
       return 'ready';
     }
     throw new Error(t('noCheckoutUrl'));
