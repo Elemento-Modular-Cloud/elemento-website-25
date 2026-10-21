@@ -16,6 +16,7 @@
         'This organisation already has a trial seat. Open Electros to manage billing or convert to a paid plan, or choose another organisation below.',
       enterCredentials: 'Enter your email and password.',
       signInFailed: 'Sign-in failed. Check your credentials and try again.',
+      sessionExpired: 'Your session expired. Sign in again to verify your email.',
       noToken: 'Login succeeded but no access token was returned.',
       selectOrgPlan: 'Select an organisation, plan, and billing period.',
       openingStripe: 'Opening Stripe…',
@@ -69,6 +70,7 @@
         'Questa organizzazione ha già un seat in prova. Apri Electros per gestire la fatturazione o passare a un piano a pagamento, oppure scegli un’altra organizzazione.',
       enterCredentials: 'Inserisci email e password.',
       signInFailed: 'Accesso non riuscito. Controlla le credenziali e riprova.',
+      sessionExpired: 'La sessione è scaduta. Accedi di nuovo per verificare la tua email.',
       noToken: 'Accesso riuscito ma non è stato restituito alcun token.',
       selectOrgPlan: 'Seleziona organizzazione, piano e periodo di fatturazione.',
       openingStripe: 'Apertura di Stripe…',
@@ -122,6 +124,7 @@
         'Cette organisation a déjà un siège d’essai. Ouvrez Electros pour gérer la facturation ou passer à une offre payante, ou choisissez une autre organisation.',
       enterCredentials: 'Saisissez votre e-mail et votre mot de passe.',
       signInFailed: 'Connexion échouée. Vérifiez vos identifiants et réessayez.',
+      sessionExpired: 'Votre session a expiré. Reconnectez-vous pour vérifier votre e-mail.',
       noToken: 'Connexion réussie mais aucun jeton n’a été renvoyé.',
       selectOrgPlan: 'Sélectionnez une organisation, une offre et une périodicité.',
       openingStripe: 'Ouverture de Stripe…',
@@ -1183,4 +1186,7 @@
   }
 
   showStep('login');
+  if (new URLSearchParams(window.location.search).get('session') === 'expired') {
+    showError(t('sessionExpired'));
+  }
 })();

@@ -124,12 +124,38 @@
       data = null;
     }
     if (!response.ok) {
-      const detail = data && (data.detail || data.message || data.error_msg);
-      const err = new Error(typeof detail === 'string' ? detail : text || `HTTP ${response.status}`);
+      let detail = data && (data.detail ?? data.message ?? data.error_msg);
+      if (detail && typeof detail === 'object') {
+        detail = detail.error_msg || detail.message || detail.detail || '';
+      }
+      const err = new Error((typeof detail === 'string' && detail) || text || `HTTP ${response.status}`);
       err.status = response.status;
       throw err;
     }
     return data;
+  }
+
+  function tokenExpired(err) {
+    const raw = ((err && err.message) || '').toLowerCase();
+    return raw.includes('token expired') || raw.includes('token_expired') || (err && err.status === 401);
+  }
+
+  function accessTokenStale(token) {
+    const claims = tokenClaims(token);
+    if (!claims || typeof claims.exp !== 'number') return false;
+    return claims.exp * 1000 <= Date.now();
+  }
+
+  function backToLogin() {
+    try {
+      sessionStorage.removeItem('elemento_access_token');
+      sessionStorage.removeItem('elemento_refresh_token');
+    } catch (_) { /* ignore */ }
+    const i18n = window.ElementoI18n;
+    const path = i18n && typeof i18n.localeStemHref === 'function'
+      ? i18n.localeStemHref('buy-seat', pageLocale())
+      : 'buy-seat.html';
+    window.location.assign(`${path}?session=expired`);
   }
 
   function showResendNow() {
@@ -201,6 +227,10 @@
       try {
         await requestCode();
       } catch (err) {
+        if (tokenExpired(err)) {
+          backToLogin();
+          return;
+        }
         showResendNow();
         showAlert(err.message || t('codeSendFailed'));
       } finally {
@@ -232,6 +262,10 @@
       if (resendTimer) clearInterval(resendTimer);
       showVerified();
     } catch (err) {
+      if (tokenExpired(err)) {
+        backToLogin();
+        return;
+      }
       if (err.status === 400) showAlert(t('codeInvalid'));
       else showAlert(err.message || t('codeInvalid'));
     } finally {
@@ -256,13 +290,16 @@
     leadEl.innerHTML = t('lead').replace('{email}', `<strong>${email.replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]))}</strong>`);
   }
 
-  if (!accessToken) {
-    showAlert(t('missingSession'));
-    submitBtn.disabled = true;
+  if (!accessToken || accessTokenStale(accessToken)) {
+    backToLogin();
     return;
   }
 
   requestCode().catch((err) => {
+    if (tokenExpired(err)) {
+      backToLogin();
+      return;
+    }
     showResendNow();
     showAlert(err.message || t('codeSendFailed'));
   });
