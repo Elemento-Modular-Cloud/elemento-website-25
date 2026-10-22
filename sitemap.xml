@@ -261,6 +261,12 @@
   <!-- Featured blog posts -->
   <!-- BLOG_SITEMAP_POSTS_START -->
   <url>
+    <loc>https://elemento.cloud/blog-posts/2026-10-22-riprendere-il-controllo.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>

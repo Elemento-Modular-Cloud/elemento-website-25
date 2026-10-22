@@ -5,8 +5,15 @@
     <link>https://elemento.cloud/blog.html</link>
     <description>Cloud computing insights, industry news, and technology stories from Elemento.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elemento.cloud/rss.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>Riprendere il controllo. Guarda l’evento o leggi la trascrizione</title>
+      <link>https://elemento.cloud/blog-posts/2026-10-22-riprendere-il-controllo.html</link>
+      <guid isPermaLink="true">https://elemento.cloud/blog-posts/2026-10-22-riprendere-il-controllo.html</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Registrazione, galleria e trascrizione dell’evento Riprendere il controllo: cloud ibrido, sovranità dei dati e AI privata.</description>
+    </item>
     <item>
       <title>Understanding Hypervisors: A Comprehensive Guide to Type 1 and Type 2</title>
       <link>https://elemento.cloud/blog-posts/2026-10-06-understanding-hypervisors-type-1-and-type-2.html</link>

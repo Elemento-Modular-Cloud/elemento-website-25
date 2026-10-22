@@ -336,6 +336,12 @@
     margin-top: var(--space-lg);
 }
 
+/* Continuation lines inside one speaker turn */
+.blog-content p.transcript-continue {
+    margin-top: 0.75rem;
+    margin-bottom: 0.9rem;
+}
+
 /* Enhanced List Spacing */
 .blog-content ul + p,
 .blog-content ol + p {
@@ -349,6 +355,23 @@
     border-radius: var(--card-border-radius);
     margin: var(--space-lg) 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content .video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: var(--space-lg) 0;
+    aspect-ratio: 16 / 9;
+}
+
+.blog-content .video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: var(--card-border-radius);
 }
 
 /* Comparison tables */

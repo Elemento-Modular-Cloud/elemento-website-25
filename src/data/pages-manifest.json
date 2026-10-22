@@ -1190,6 +1190,46 @@
     ]
   },
   {
+    "stem": "blog-posts/2026-10-22-riprendere-il-controllo",
+    "legacyPath": "blog-posts/2026-10-22-riprendere-il-controllo.html",
+    "group": "blog-posts",
+    "slug": "2026-10-22-riprendere-il-controllo",
+    "title": "Riprendere il controllo. Guarda l’evento o leggi la trascrizione | Elemento Blog",
+    "description": "Registrazione, galleria e trascrizione dell’evento Riprendere il controllo: cloud ibrido, sovranità dei dati e AI privata.",
+    "robots": "index, follow",
+    "ogType": "article",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
+    "stem": "blog-posts/2026-10-22-riprendere-il-controllo.it",
+    "legacyPath": "blog-posts/2026-10-22-riprendere-il-controllo.it.html",
+    "group": "blog-posts",
+    "slug": "2026-10-22-riprendere-il-controllo.it",
+    "title": "Riprendere il controllo. Guarda l’evento o leggi la trascrizione | Blog Elemento",
+    "description": "Registrazione, galleria e trascrizione dell’evento Riprendere il controllo: cloud ibrido, sovranità dei dati e AI privata.",
+    "robots": "index, follow",
+    "ogType": "article",
+    "extraCss": [
+      "css/blog-post.css"
+    ],
+    "extraScripts": [],
+    "type": "legacy",
+    "locales": [
+      "en",
+      "it",
+      "fr"
+    ]
+  },
+  {
     "stem": "blog-posts/404",
     "legacyPath": "blog-posts/404.html",
     "group": "blog-posts",
