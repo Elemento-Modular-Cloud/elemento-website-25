@@ -118,6 +118,18 @@ body.has-hypermonitor-ticker {
     padding-bottom: var(--hypermonitor-ticker-height) !important;
 }
 
+/* Short pages otherwise leave the footer floating above the ticker. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-placeholder {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
 /* HyperMonitor live incident ticker */
 .atc-ticker {
     --hm: #ef4056;

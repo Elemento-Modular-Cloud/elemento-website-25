@@ -7,6 +7,9 @@
 
 body:has(.signup-success-page) {
     scroll-padding-top: calc(var(--signup-success-nav-offset) + var(--space-md));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body:has(.signup-success-page) .breadcrumb {
@@ -14,13 +17,21 @@ body:has(.signup-success-page) .breadcrumb {
 }
 
 .signup-success-page {
-    padding: calc(var(--signup-success-nav-offset) + var(--space-2xl)) 0 var(--space-4xl);
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
+    padding: var(--signup-success-nav-offset) 0 0;
 }
 
 .signup-success-page .signup-success-inner {
     max-width: var(--signup-success-max);
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
+    width: 100%;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 1.5rem var(--space-lg);
 }
 
 /* Hero */
@@ -365,8 +376,8 @@ body:has(.signup-success-page) .breadcrumb {
 
 @media (max-width: 768px) {
     .signup-success-page {
-        padding-top: calc(var(--signup-success-nav-offset) + var(--space-xl));
-        padding-bottom: var(--space-3xl);
+        padding-top: var(--signup-success-nav-offset);
+        padding-bottom: 0;
     }
 
     .signup-success-product-grid,

@@ -7,6 +7,9 @@
 
 body.page-buy-seat {
     scroll-padding-top: calc(var(--buy-seat-nav-offset) + var(--space-md, 1rem));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body.page-buy-seat .breadcrumb {
@@ -14,14 +17,22 @@ body.page-buy-seat .breadcrumb {
 }
 
 .buy-seat-page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
     width: 100%;
-    padding: calc(var(--buy-seat-nav-offset) + var(--space-xl, 2rem)) 0 var(--space-4xl, 4rem);
+    padding: var(--buy-seat-nav-offset) 0 0;
 }
 
 .buy-seat-page > .container {
     max-width: 720px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg, 1.5rem);
+    width: 100%;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 1.5rem var(--space-lg, 1.5rem);
 }
 
 .buy-seat-intro {
