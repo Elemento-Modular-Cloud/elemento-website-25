@@ -16,7 +16,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 
 .signup-iframe-section {
     width: 100%;
-    padding: calc(var(--signup-nav-offset) + var(--space-xl)) 0 var(--space-4xl);
+    padding: calc(var(--signup-nav-offset) + var(--space-xl)) 0 2rem;
 }
 
 .signup-iframe-section .container {
@@ -39,7 +39,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 @media (max-width: 768px) {
     .signup-iframe-section {
         padding-top: calc(var(--signup-nav-offset) + var(--space-lg));
-        padding-bottom: var(--space-3xl);
+        padding-bottom: 1.5rem;
     }
 
     .form-iframe {
