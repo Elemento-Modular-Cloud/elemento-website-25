@@ -7,6 +7,9 @@
 
 body:has(.signup-iframe-section) {
     scroll-padding-top: calc(var(--signup-nav-offset) + var(--space-md));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Breadcrumb is fixed to the bottom site-wide; hide on this focused form page */
@@ -15,14 +18,20 @@ body:has(.signup-iframe-section) .breadcrumb {
 }
 
 .signup-iframe-section {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
     width: 100%;
-    padding: calc(var(--signup-nav-offset) + var(--space-xl)) 0 2rem;
+    padding: var(--signup-nav-offset) 0 0;
 }
 
 .signup-iframe-section .container {
     max-width: 720px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
+    width: 100%;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding: 1.5rem var(--space-lg);
 }
 
 /* Transparent iframe shell — one card lives inside the embed document */
@@ -38,8 +47,7 @@ body:has(.signup-iframe-section) .breadcrumb {
 
 @media (max-width: 768px) {
     .signup-iframe-section {
-        padding-top: calc(var(--signup-nav-offset) + var(--space-lg));
-        padding-bottom: 1.5rem;
+        padding-top: var(--signup-nav-offset);
     }
 
     .form-iframe {
