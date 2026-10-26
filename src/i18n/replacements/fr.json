@@ -6074,8 +6074,8 @@
         "fr": "Remplissez le formulaire, appuyez sur Continuer, puis choisissez une carte hôte — ou Sélection automatique si peu importe quelle machine éligible l'exécute. Appuyez sur Créer seulement lorsque vous voulez provisionner. Certains flux cloud et d'organisation ouvrent une page de paiement après une création réussie."
       },
       {
-        "en": "Native desktop apps for Linux, macOS, and Windows. v3.3.0 publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.",
-        "fr": "Applications desktop natives pour Linux, macOS et Windows. v3.3.0 publie neuf installateurs : AppImage Linux x64 et ARM64, DEB Debian/Ubuntu x64 et ARM64, RPM Linux x64 et ARM64, DMG macOS Intel x64 et Apple Silicon ARM64, et EXE Windows x64."
+        "en": "Native desktop apps for Linux, macOS, and Windows. Each desktop release publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.",
+        "fr": "Applications desktop natives pour Linux, macOS et Windows. Chaque version desktop publie neuf installateurs : AppImage Linux x64 et ARM64, DEB Debian/Ubuntu x64 et ARM64, RPM Linux x64 et ARM64, DMG macOS Intel x64 et Apple Silicon ARM64, et EXE Windows x64."
       },
       {
         "en": "An active connection is one integration in use: a non-AtomOS hypervisor, a public-cloud service you already run, a resource bought through Atomosphere, or a Kubernetes cluster. Turn one off and the slot is free again. AtomOS endpoints do not count.",
@@ -6230,8 +6230,8 @@
         "fr": "Un siège par organisation. Un essai de 14 jours, puis Start ou Grow. La facturation annuelle est le tarif le plus bas."
       },
       {
-        "en": "Current desktop release: v3.3.0 — 6 October 2026. Review the release notes before deploying.",
-        "fr": "Version desktop actuelle : v3.3.0 — 6 octobre 2026. Consultez les notes de version avant le déploiement."
+        "en": "Current desktop release: loading… Review the release notes before deploying.",
+        "fr": "Version desktop actuelle : chargement… Consultez les notes de version avant le déploiement."
       },
       {
         "en": "Desktop SSH to a running instance with a reachable public IPv4 address and TCP port 22",
@@ -6246,8 +6246,8 @@
         "fr": "Usage et permissions choisissent qui dans l'organisation peut utiliser une cible ou un scénario."
       },
       {
-        "en": "Shipped in Electros v3.3.0. Each pillar links to the matching user-guide chapter.",
-        "fr": "Livré dans Electros v3.3.0. Chaque pilier renvoie au chapitre du guide correspondant."
+        "en": "Shipped in the current Electros desktop release. Each pillar links to the matching user-guide chapter.",
+        "fr": "Livré dans la version desktop actuelle d'Electros. Chaque pilier renvoie au chapitre du guide correspondant."
       },
       {
         "en": "Volume edit, grow or resize, conversion, and deletion when the host supports them",
@@ -6354,8 +6354,8 @@
         "fr": "Essai, sièges, cibles, et ce que l'application desktop peut faire aujourd'hui"
       },
       {
-        "en": "The v3.3.0 checksum file does not include the RPM digests.",
-        "fr": "Le fichier de checksums de v3.3.0 n'inclut pas les empreintes RPM."
+        "en": "The latest release checksum file does not include RPM digests.",
+        "fr": "Le fichier de checksums de la dernière version n'inclut pas les empreintes RPM."
       },
       {
         "en": "One desktop app. Four ways teams use it on the first day.",

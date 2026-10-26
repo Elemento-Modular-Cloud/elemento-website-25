@@ -755,7 +755,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">What you can run from one desktop app</h2>
-                <p class="section-subtitle">Shipped in Electros v3.3.0. Each pillar links to the matching user-guide chapter.</p>
+                <p class="section-subtitle">Shipped in the current Electros desktop release. Each pillar links to the matching user-guide chapter.</p>
             </div>
 
             <div class="electros-bento">
@@ -923,14 +923,14 @@
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Download Section: URLs filled at runtime from GitHub /releases/latest -->
     <section class="section features" id="download">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Download Electros</h2>
-                <p class="section-subtitle">Current desktop release: v3.3.0 — 6 October 2026. Review the release notes before deploying.</p>
+                <p class="section-subtitle" id="electros-release-label">Current desktop release: loading… Review the release notes before deploying.</p>
                 <p class="text-center">
-                    <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/tag/v3.3.0" target="_blank" rel="noopener noreferrer">Release notes</a>
+                    <a id="electros-release-notes" href="https://github.com/Elemento-Modular-Cloud/Electros/releases/latest" target="_blank" rel="noopener noreferrer">Release notes</a>
                 </p>
             </div>
             <div class="electros-downloads fade-in">
@@ -938,19 +938,19 @@
                     <i class="fab fa-linux"></i>
                     <h3>Linux</h3>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-x64.AppImage">x64 AppImage</a>
+                        <a href="#" id="ai-x64-btn">x64 AppImage</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 6d716edae411b32951cf5b33e93e39feab2e879c7d6aebdacede9665e17aa431</code>
-                            <code>MD5 d689398f60eeb32b82d30260ef3f7fac</code>
+                            <code id="ai-x64-sha256">SHA256 Loading…</code>
+                            <code id="ai-x64-md5">MD5 Loading…</code>
                         </details>
                     </div>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-arm64.AppImage">ARM64 AppImage</a>
+                        <a href="#" id="ai-arm-btn">ARM64 AppImage</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 f8b2dc618d63fa6ba8b0a53cd526aea79a08c15dfdbb0fe0b2d3aba4f828dabf</code>
-                            <code>MD5 46a2dbaebe94de2b948d6d96e1ac5839</code>
+                            <code id="ai-arm-sha256">SHA256 Loading…</code>
+                            <code id="ai-arm-md5">MD5 Loading…</code>
                         </details>
                     </div>
                 </article>
@@ -958,19 +958,19 @@
                     <i class="fab fa-ubuntu"></i>
                     <h3>Debian/Ubuntu</h3>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-x64.deb">x64 DEB</a>
+                        <a href="#" id="deb-x64-btn">x64 DEB</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 209c38828fb017e7eb736a23d1f2463be7509931c3a9ab064c288a23cd8298d6</code>
-                            <code>MD5 0aaf12e8d5562441cb1b6ec3e4fd6c08</code>
+                            <code id="deb-x64-sha256">SHA256 Loading…</code>
+                            <code id="deb-x64-md5">MD5 Loading…</code>
                         </details>
                     </div>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-arm64.deb">ARM64 DEB</a>
+                        <a href="#" id="deb-arm-btn">ARM64 DEB</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 2c2d59f448a8845fe56d84555629f8de05dc8f4eef2a6e1e37f3ad3f268e6b9b</code>
-                            <code>MD5 8a3e15f75f01d80c477b8a6266273d43</code>
+                            <code id="deb-arm-sha256">SHA256 Loading…</code>
+                            <code id="deb-arm-md5">MD5 Loading…</code>
                         </details>
                     </div>
                 </article>
@@ -978,30 +978,40 @@
                     <i class="fas fa-box"></i>
                     <h3>RPM-based Linux</h3>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-x64.rpm">x64 RPM</a>
+                        <a href="#" id="rpm-x64-btn">x64 RPM</a>
+                        <details class="electros-hash">
+                            <summary>Checksums</summary>
+                            <code id="rpm-x64-sha256">SHA256 Loading…</code>
+                            <code id="rpm-x64-md5">MD5 Loading…</code>
+                        </details>
                     </div>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-linux-arm64.rpm">ARM64 RPM</a>
+                        <a href="#" id="rpm-arm-btn">ARM64 RPM</a>
+                        <details class="electros-hash">
+                            <summary>Checksums</summary>
+                            <code id="rpm-arm-sha256">SHA256 Loading…</code>
+                            <code id="rpm-arm-md5">MD5 Loading…</code>
+                        </details>
                     </div>
-                    <p class="electros-fineprint">The v3.3.0 checksum file does not include the RPM digests.</p>
+                    <p class="electros-fineprint" id="electros-rpm-checksum-note" hidden>The latest release checksum file does not include RPM digests.</p>
                 </article>
                 <article class="electros-dl-card">
                     <i class="fab fa-apple"></i>
                     <h3>macOS</h3>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-mac-x64.dmg">Intel x64 DMG</a>
+                        <a href="#" id="dmg-x64-btn">Intel x64 DMG</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 521efbdb7190e0d499be8656e14bdeec5b297768dafadbb2d8225993cfdf4539</code>
-                            <code>MD5 61fa4a86d0263e7ae9965b86f2e1b0da</code>
+                            <code id="dmg-x64-sha256">SHA256 Loading…</code>
+                            <code id="dmg-x64-md5">MD5 Loading…</code>
                         </details>
                     </div>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-mac-arm64.dmg">Apple Silicon ARM64 DMG</a>
+                        <a href="#" id="dmg-arm-btn">Apple Silicon ARM64 DMG</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 4cba9c278c0ed3bfa6e56dc5d52d999bef1d67ebb9b0c07d06126498f5f7fcb0</code>
-                            <code>MD5 8cf5088a97a0938238f611ec26ff6a70</code>
+                            <code id="dmg-arm-sha256">SHA256 Loading…</code>
+                            <code id="dmg-arm-md5">MD5 Loading…</code>
                         </details>
                     </div>
                 </article>
@@ -1009,11 +1019,11 @@
                     <i class="fab fa-windows"></i>
                     <h3>Windows</h3>
                     <div class="electros-dl-file">
-                        <a href="https://github.com/Elemento-Modular-Cloud/Electros/releases/download/v3.3.0/Electros-v3.3.0-win-x64.exe">x64 EXE</a>
+                        <a href="#" id="exe-x64-btn">x64 EXE</a>
                         <details class="electros-hash">
                             <summary>Checksums</summary>
-                            <code>SHA256 1634315ad76ad5438ad3c971e6abd3e03f77548cd0cecd9122726a3909945f2b</code>
-                            <code>MD5 58fa34b622b6753849822da12337cd8f</code>
+                            <code id="exe-x64-sha256">SHA256 Loading…</code>
+                            <code id="exe-x64-md5">MD5 Loading…</code>
                         </details>
                     </div>
                 </article>
@@ -1148,7 +1158,7 @@
                 </details>
                 <details class="electros-spoiler">
                     <summary>Which operating systems are supported?</summary>
-                    <p>Native desktop apps for Linux, macOS, and Windows. v3.3.0 publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.</p>
+                    <p>Native desktop apps for Linux, macOS, and Windows. Each desktop release publishes nine installers: Linux x64 and ARM64 AppImage, Debian/Ubuntu x64 and ARM64 DEB, RPM-based Linux x64 and ARM64 RPM, macOS Intel x64 and Apple Silicon ARM64 DMG, and Windows x64 EXE.</p>
                     <p><a href="#download">Download Electros</a></p>
                 </details>
                 <details class="electros-spoiler">
@@ -1209,6 +1219,7 @@
     <script src="js/footer.js" defer></script>
     <script src="js/atmosphere_hero_with_logo.js" defer></script>
     <script src="js/themes.js" defer></script>
+    <script src="js/electros.js?v=20261026a" defer></script>
     <script src="js/main.js" defer></script>
     <script>
         (function () {
