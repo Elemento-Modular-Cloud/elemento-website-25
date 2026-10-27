@@ -1124,7 +1124,7 @@
       const submitBtn = loginForm.querySelector('[type="submit"]');
       const emailEl = document.getElementById('subscribeEmail');
       const passwordEl = document.getElementById('subscribePassword');
-      const email = emailEl.value.trim();
+      const email = emailEl.value.trim().toLowerCase();
       const password = passwordEl.value;
       emailEl.style.borderColor = '';
       passwordEl.style.borderColor = '';
@@ -1134,6 +1134,7 @@
         showError(t('enterCredentials'));
         return;
       }
+      if (emailEl.value !== email) emailEl.value = email;
       submitBtn.disabled = true;
       submitBtn.textContent = t('signingIn');
       try {

@@ -365,7 +365,7 @@
   signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     showAlert('');
-    const email = (signInEmailEl && signInEmailEl.value || '').trim();
+    const email = (signInEmailEl && signInEmailEl.value || '').trim().toLowerCase();
     const password = signInPasswordEl ? signInPasswordEl.value : '';
     if (signInEmailEl) signInEmailEl.style.borderColor = '';
     if (signInPasswordEl) signInPasswordEl.style.borderColor = '';
@@ -375,6 +375,7 @@
       showAlert(t('enterCredentials'));
       return;
     }
+    if (signInEmailEl && signInEmailEl.value !== email) signInEmailEl.value = email;
     if (signInSubmit) {
       signInSubmit.disabled = true;
       signInSubmit.textContent = t('signingIn');

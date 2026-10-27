@@ -318,7 +318,9 @@
             const payload = {
                 user_name: document.getElementById('firstName').value.trim(),
                 user_surname: document.getElementById('lastName').value.trim(),
-                email: document.getElementById('email').value.trim(),
+                // Lowercase: portal account ids are uuid5(email), but Keycloak lowercases
+                // the email claim — mixed-case signups break verify-email lookup.
+                email: document.getElementById('email').value.trim().toLowerCase(),
                 password: document.getElementById('password').value,
                 preferences: {
                     marketing_emails: document.getElementById('newsletter').checked
