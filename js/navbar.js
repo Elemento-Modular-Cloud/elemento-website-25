@@ -334,6 +334,10 @@ class Navbar {
                                         <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
                                         <span class="">AtomOS</span>
                                     </a></li>
+                                    <li><a href="https://launchpad.electros.cloud" class="dropdown-link">
+                                        <img src="${basePath}assets/logos/LaunchPad.svg" alt="LaunchPad icon" class="product-icon" width="20" height="20">
+                                        <span class="">LaunchPad</span>
+                                    </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -377,6 +381,10 @@ class Navbar {
                                 <li><a href="${this.getLocalizedHref('atomos.html')}" class="dropdown-link ${this.getActiveClassByStem('atomos')}">
                                     <img src="${basePath}assets/logos/Atomos.svg" alt="AtomOS icon" class="product-icon" width="20" height="20">
                                     <span class="">AtomOS</span>
+                                </a></li>
+                                <li><a href="https://launchpad.electros.cloud" class="dropdown-link">
+                                    <img src="${basePath}assets/logos/LaunchPad.svg" alt="LaunchPad icon" class="product-icon" width="20" height="20">
+                                    <span class="">LaunchPad</span>
                                 </a></li>
                             </ul>
                         </div>
