@@ -261,6 +261,12 @@
   <!-- Featured blog posts -->
   <!-- BLOG_SITEMAP_POSTS_START -->
   <url>
+    <loc>https://elemento.cloud/blog-posts/2026-11-16-black-friday-2026-the-best-saas-and-ai-deals-for-builders.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://elemento.cloud/blog-posts/2026-10-22-riprendere-il-controllo.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
