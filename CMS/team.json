@@ -251,6 +251,30 @@
     }
   },
   {
+    "id": "nour-ghali",
+    "division": "sales",
+    "photo": "CMS/team/nghali.webp",
+    "links": [],
+    "en": {
+      "name": "Nour Ghali",
+      "role": "Marketing and Sales Intern",
+      "highlight": "",
+      "bio": ""
+    },
+    "it": {
+      "name": "Nour Ghali",
+      "role": "Tirocinante Marketing e Vendite",
+      "highlight": "",
+      "bio": ""
+    },
+    "fr": {
+      "name": "Nour Ghali",
+      "role": "Stagiaire Marketing et Ventes",
+      "highlight": "",
+      "bio": ""
+    }
+  },
+  {
     "id": "andrea-riccardi",
     "division": "engineering",
     "photo": "CMS/team/ariccardi.webp",
