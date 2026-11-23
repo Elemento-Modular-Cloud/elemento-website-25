@@ -351,6 +351,9 @@
   },
   {
     "id": "paolo-beci",
+    "hallOfFame": true,
+    "from": "2025",
+    "to": "2026",
     "division": "engineering",
     "photo": "CMS/team/pbeci.webp",
     "links": [
@@ -547,6 +550,9 @@
   },
   {
     "id": "pamela-gerbotto",
+    "hallOfFame": true,
+    "from": "2025",
+    "to": "2026",
     "division": "engineering",
     "photo": "CMS/team/pgerbotto.webp",
     "links": [],
