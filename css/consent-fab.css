@@ -1,0 +1,172 @@
+/* Consently cookie button and ProductBridge support bubble, joined into one
+   bottom-right pill: [🍪 Cookies | 💬 Support]. Either one alone falls back to a
+   rounded button. Both vendors set size, colour and position inline, hence !important.
+   The cookie half is offset by the support half's width, so each half has a fixed
+   width per language. */
+:root {
+  --fab-cookie-w: 98px;
+  --fab-chat-w: 100px;
+  --fab-cookie-label: "🍪  Cookies";
+  --fab-chat-label: "💬  Support";
+  --fab-fg: #F5F5FA;
+}
+html[lang^="it"] {
+  --fab-cookie-w: 92px;
+  --fab-chat-w: 108px;
+  --fab-cookie-label: "🍪  Cookie";
+  --fab-chat-label: "💬  Supporto";
+}
+html[lang^="fr"] {
+  --fab-cookie-w: 98px;
+  --fab-chat-w: 116px;
+  --fab-cookie-label: "🍪  Cookies";
+  --fab-chat-label: "💬  Assistance";
+}
+.theme-light,
+html[data-theme="light"] { --fab-fg: #181720; }
+.cm__float-btn,
+.pb-messenger-button {
+  height: 36px !important;
+  right: 16px !important;
+  left: auto !important;
+  bottom: 16px !important;
+  display: grid !important;
+  place-items: center;
+  padding: 0 !important;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.14)) !important;
+  border-radius: 18px !important;
+  background: var(--background-color, #181720) !important;
+  color: var(--fab-fg) !important;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.35) !important;
+  font: 600 13px/1 "Red Hat Text", Inter, system-ui, sans-serif !important;
+  letter-spacing: 0.01em !important;
+  white-space: pre;
+  cursor: pointer;
+  animation: none !important;
+  transform: none !important;
+  transition: background-color 0.15s ease !important;
+}
+.cm__float-btn { width: var(--fab-cookie-w) !important; }
+.pb-messenger-button { width: var(--fab-chat-w) !important; }
+.cm__float-btn:hover,
+.pb-messenger-button:hover {
+  background: color-mix(in srgb, var(--text-color, #fff) 8%, var(--background-color, #181720)) !important;
+}
+.cm__float-btn img,
+.pb-messenger-button .pbm-icon-chat { display: none !important; }
+body .cm__float-btn::before {
+  content: var(--fab-cookie-label) !important;
+  display: block !important;
+  font: inherit !important;
+  color: inherit !important;
+}
+.pb-messenger-button::before {
+  content: var(--fab-chat-label);
+  font: inherit;
+  transition: opacity 0.16s, transform 0.16s;
+}
+.pb-messenger-button.pbm-open::before { opacity: 0; transform: scale(0.8); }
+.pb-messenger-button .pbm-icon-close { width: 16px; height: 16px; }
+.pb-messenger-panel { bottom: 64px !important; }
+
+body:has(.pb-messenger-button) .cm__float-btn {
+  right: calc(16px + var(--fab-chat-w)) !important;
+  z-index: 2147483647 !important;
+  border-right: 0 !important;
+  border-radius: 18px 0 0 18px !important;
+}
+body:has(.cm__float-btn) .pb-messenger-button {
+  border-radius: 0 18px 18px 0 !important;
+}
+/* Consently hides its own button while the consent banner or preferences are open,
+   and the banner sits where the pill is: hide the support half with it. */
+html.show--consent .pb-messenger-button,
+html.show--preferences .pb-messenger-button {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+@media (max-width: 520px) {
+  body:has(.pb-messenger-button.pbm-open) .cm__float-btn { display: none !important; }
+}
+
+/* Consently banner and preferences in the site palette. Consently declares its
+   theme on :root, so redeclaring the variables on its container wins. */
+#cc-main {
+  --cc-surface: var(--background-color, #181720);
+  --cc-raise: color-mix(in srgb, var(--text-color, #fff) 6%, var(--cc-surface));
+  --cc-raise-hover: color-mix(in srgb, var(--text-color, #fff) 11%, var(--cc-surface));
+  --cc-edge: var(--line, rgba(255, 255, 255, 0.12));
+
+  --cc-bg: var(--cc-surface);
+  --cc-pm-bg: var(--cc-surface);
+  --cc-footer-bg: var(--cc-raise);
+  --cc-primary-color: var(--fab-fg);
+  --cc-secondary-color: var(--text-color);
+  --cc-pm-primary-color: var(--fab-fg);
+  --cc-pm-secondary-color: var(--text-color);
+  --cc-separator-border-color: var(--cc-edge);
+  --cc-pm-separator-border-color: var(--cc-edge);
+  --cc-pm-header-border-color: var(--cc-edge);
+  --cc-footer-border-color: var(--cc-edge);
+  --cc-section-category-border: var(--cc-edge);
+  --cc-pm-tab-border-color: var(--cc-edge);
+  --cc-pm-tab-color: var(--text-color);
+  --cc-pm-tab-active-color: var(--accent, #FF7A00);
+
+  --cc-accept-bg: var(--accent, #FF7A00);
+  --cc-accept-border-color: var(--accent, #FF7A00);
+  --cc-accept-color: var(--btn-text, #181720);
+  --cc-accept-hover-bg: var(--accent-hover, #CC6200);
+  --cc-accept-hover-border-color: var(--accent-hover, #CC6200);
+  --cc-accept-hover-color: var(--btn-text, #181720);
+  --cc-btn-primary-bg: var(--accent, #FF7A00);
+  --cc-btn-primary-color: var(--btn-text, #181720);
+  --cc-btn-primary-hover-bg: var(--accent-hover, #CC6200);
+  --cc-btn-primary-hover-color: var(--btn-text, #181720);
+
+  --cc-reject-bg: var(--cc-raise);
+  --cc-reject-border-color: var(--cc-edge);
+  --cc-reject-color: var(--fab-fg);
+  --cc-reject-hover-bg: var(--cc-raise-hover);
+  --cc-reject-hover-border-color: var(--cc-edge);
+  --cc-reject-hover-color: var(--fab-fg);
+  --cc-save-bg: var(--cc-raise);
+  --cc-save-border-color: var(--cc-edge);
+  --cc-save-color: var(--fab-fg);
+  --cc-save-hover-bg: var(--cc-raise-hover);
+  --cc-save-hover-border-color: var(--cc-edge);
+  --cc-save-hover-color: var(--fab-fg);
+  --cc-preferences-bg: var(--cc-raise);
+  --cc-preferences-border-color: var(--cc-edge);
+  --cc-preferences-color: var(--fab-fg);
+  --cc-preferences-hover-bg: var(--cc-raise-hover);
+  --cc-preferences-hover-border-color: var(--cc-edge);
+  --cc-preferences-hover-color: var(--fab-fg);
+  --cc-btn-secondary-bg: var(--cc-raise);
+  --cc-btn-secondary-hover-bg: var(--cc-raise-hover);
+  --cc-btn-secondary-hover-color: var(--fab-fg);
+
+  --cc-pm-category-block-bg: var(--cc-raise);
+  --cc-pm-category-block-border: var(--cc-edge);
+  --cc-pm-category-block-hover-bg: var(--cc-raise-hover);
+  --cc-pm-category-block-hover-border: var(--cc-edge);
+  --cc-cookie-category-block-bg: var(--cc-raise);
+  --cc-cookie-category-block-border: var(--cc-edge);
+  --cc-cookie-category-block-hover-bg: var(--cc-raise-hover);
+  --cc-cookie-category-block-hover-border: var(--cc-edge);
+  --cc-pm-close-btn-bg: var(--cc-raise);
+  --cc-pm-close-btn-border-color: var(--cc-edge);
+  --cc-pm-close-btn-hover-bg: var(--cc-raise-hover);
+  --cc-pm-close-btn-hover-border-color: var(--cc-edge);
+  --cc-pm-close-btn-icon-color: var(--fab-fg);
+  --cc-pm-close-btn-hover-icon-color: var(--fab-fg);
+
+  --cc-pm-checkbox-accent-color: var(--accent, #FF7A00);
+  --cc-toggle-on-bg: var(--accent, #FF7A00);
+  --cc-pm-toggle-on-bg: var(--accent, #FF7A00);
+  --cc-pm-toggle-on-knob-bg: var(--cc-surface);
+  --cc-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
+  --cc-pm-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
+  --cc-pm-toggle-off-knob-bg: var(--fab-fg);
+  --cc-toggle-readonly-bg: color-mix(in srgb, var(--accent, #FF7A00) 40%, var(--cc-surface));
+}
