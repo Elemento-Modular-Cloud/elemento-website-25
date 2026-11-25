@@ -2,18 +2,23 @@
    bottom-right pill: [🍪 Cookies | 💬 Support]. Either one alone falls back to a
    rounded button. Both vendors set size, colour and position inline, hence !important.
    The cookie half is offset by the support half's width, so each half has a fixed
-   width per language. */
+   width per language.
+
+   Pill colours match LaunchPad’s three themes. Elemento keeps the theme class on
+   body (and may leave html[data-theme]="light"), and Consently can mount outside
+   body — so theme vars are set on html:has(body.theme-*) as well. */
 :root {
   --fab-cookie-w: 98px;
   --fab-chat-w: 100px;
   --fab-cookie-label: "🍪  Cookies";
   --fab-chat-label: "💬  Support";
-  /* Follow site theme tokens so light/dark (and SSR data-theme mismatches) stay readable. */
-  --fab-fg: var(--text-color, #F5F5FA);
+  --fab-fg: #F5F5FA;
+  --fab-surface: #181720;
   --fab-accent: var(--accent-color, var(--accent, #FF7A00));
   --fab-accent-hover: var(--accent-color-dark, var(--accent-hover, #CC6200));
   --fab-btn-text: var(--btn-text, var(--button-text-color, #181720));
-  --fab-edge: var(--line, var(--border, color-mix(in srgb, var(--text-color, #fff) 12%, transparent)));
+  --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
+  --fab-bottom: 16px;
 }
 html[lang^="it"] {
   --fab-cookie-w: 92px;
@@ -27,18 +32,46 @@ html[lang^="fr"] {
   --fab-cookie-label: "🍪  Cookies";
   --fab-chat-label: "💬  Assistance";
 }
+
+html.theme-light,
+body.theme-light,
+html:has(body.theme-light) {
+  --fab-fg: #181720;
+  --fab-surface: #F5F5FA;
+  --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
+}
+html.theme-dark,
+body.theme-dark,
+html:has(body.theme-dark) {
+  --fab-fg: #F5F5FA;
+  --fab-surface: #181720;
+  --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
+}
+html.theme-high-contrast,
+body.theme-high-contrast,
+html:has(body.theme-high-contrast) {
+  --fab-fg: #FFFFFF;
+  --fab-surface: #000000;
+  --fab-edge: color-mix(in srgb, var(--fab-fg) 28%, transparent);
+}
+
+html.has-hypermonitor-ticker,
+body.has-hypermonitor-ticker {
+  --fab-bottom: calc(16px + var(--hypermonitor-ticker-height, 40px));
+}
+
 .cm__float-btn,
 .pb-messenger-button {
   height: 36px !important;
   right: 16px !important;
   left: auto !important;
-  bottom: 16px !important;
+  bottom: var(--fab-bottom) !important;
   display: grid !important;
   place-items: center;
   padding: 0 !important;
   border: 1px solid var(--fab-edge) !important;
   border-radius: 18px !important;
-  background: var(--background-color, #181720) !important;
+  background: var(--fab-surface) !important;
   color: var(--fab-fg) !important;
   box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.35) !important;
   font: 600 13px/1 "Red Hat Text", Inter, system-ui, sans-serif !important;
@@ -48,16 +81,18 @@ html[lang^="fr"] {
   animation: none !important;
   transform: none !important;
   transition: background-color 0.15s ease !important;
+  z-index: 2147483000 !important;
 }
 .cm__float-btn { width: var(--fab-cookie-w) !important; }
 .pb-messenger-button { width: var(--fab-chat-w) !important; }
 .cm__float-btn:hover,
 .pb-messenger-button:hover {
-  background: color-mix(in srgb, var(--text-color, #fff) 8%, var(--background-color, #181720)) !important;
+  background: color-mix(in srgb, var(--fab-fg) 8%, var(--fab-surface)) !important;
 }
 .cm__float-btn img,
 .pb-messenger-button .pbm-icon-chat { display: none !important; }
-body .cm__float-btn::before {
+body .cm__float-btn::before,
+.cm__float-btn::before {
   content: var(--fab-cookie-label) !important;
   display: block !important;
   font: inherit !important;
@@ -70,7 +105,9 @@ body .cm__float-btn::before {
 }
 .pb-messenger-button.pbm-open::before { opacity: 0; transform: scale(0.8); }
 .pb-messenger-button .pbm-icon-close { width: 16px; height: 16px; }
-.pb-messenger-panel { bottom: 64px !important; }
+.pb-messenger-panel {
+  bottom: calc(var(--fab-bottom) + 48px) !important;
+}
 
 body:has(.pb-messenger-button) .cm__float-btn {
   right: calc(16px + var(--fab-chat-w)) !important;
@@ -95,25 +132,25 @@ html.show--preferences .pb-messenger-button {
 /* Consently banner and preferences in the site palette. Consently declares its
    theme on :root, so redeclaring the variables on its container wins. */
 #cc-main {
-  --cc-surface: var(--background-color, #181720);
-  --cc-raise: color-mix(in srgb, var(--text-color, #fff) 6%, var(--cc-surface));
-  --cc-raise-hover: color-mix(in srgb, var(--text-color, #fff) 11%, var(--cc-surface));
+  --cc-surface: var(--fab-surface);
+  --cc-raise: color-mix(in srgb, var(--fab-fg) 6%, var(--cc-surface));
+  --cc-raise-hover: color-mix(in srgb, var(--fab-fg) 11%, var(--cc-surface));
   --cc-edge: var(--fab-edge);
 
   --cc-bg: var(--cc-surface);
   --cc-pm-bg: var(--cc-surface);
   --cc-footer-bg: var(--cc-raise);
   --cc-primary-color: var(--fab-fg);
-  --cc-secondary-color: var(--text-color);
+  --cc-secondary-color: var(--fab-fg);
   --cc-pm-primary-color: var(--fab-fg);
-  --cc-pm-secondary-color: var(--text-color);
+  --cc-pm-secondary-color: var(--fab-fg);
   --cc-separator-border-color: var(--cc-edge);
   --cc-pm-separator-border-color: var(--cc-edge);
   --cc-pm-header-border-color: var(--cc-edge);
   --cc-footer-border-color: var(--cc-edge);
   --cc-section-category-border: var(--cc-edge);
   --cc-pm-tab-border-color: var(--cc-edge);
-  --cc-pm-tab-color: var(--text-color);
+  --cc-pm-tab-color: var(--fab-fg);
   --cc-pm-tab-active-color: var(--fab-accent);
 
   --cc-accept-bg: var(--fab-accent);
@@ -168,8 +205,8 @@ html.show--preferences .pb-messenger-button {
   --cc-toggle-on-bg: var(--fab-accent);
   --cc-pm-toggle-on-bg: var(--fab-accent);
   --cc-pm-toggle-on-knob-bg: var(--cc-surface);
-  --cc-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
-  --cc-pm-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
+  --cc-toggle-off-bg: color-mix(in srgb, var(--fab-fg) 30%, var(--cc-surface));
+  --cc-pm-toggle-off-bg: color-mix(in srgb, var(--fab-fg) 30%, var(--cc-surface));
   --cc-pm-toggle-off-knob-bg: var(--fab-fg);
   --cc-toggle-readonly-bg: color-mix(in srgb, var(--fab-accent) 40%, var(--cc-surface));
 }
