@@ -8,7 +8,12 @@
   --fab-chat-w: 100px;
   --fab-cookie-label: "🍪  Cookies";
   --fab-chat-label: "💬  Support";
-  --fab-fg: #F5F5FA;
+  /* Follow site theme tokens so light/dark (and SSR data-theme mismatches) stay readable. */
+  --fab-fg: var(--text-color, #F5F5FA);
+  --fab-accent: var(--accent-color, var(--accent, #FF7A00));
+  --fab-accent-hover: var(--accent-color-dark, var(--accent-hover, #CC6200));
+  --fab-btn-text: var(--btn-text, var(--button-text-color, #181720));
+  --fab-edge: var(--line, var(--border, color-mix(in srgb, var(--text-color, #fff) 12%, transparent)));
 }
 html[lang^="it"] {
   --fab-cookie-w: 92px;
@@ -22,8 +27,6 @@ html[lang^="fr"] {
   --fab-cookie-label: "🍪  Cookies";
   --fab-chat-label: "💬  Assistance";
 }
-.theme-light,
-html[data-theme="light"] { --fab-fg: #181720; }
 .cm__float-btn,
 .pb-messenger-button {
   height: 36px !important;
@@ -33,7 +36,7 @@ html[data-theme="light"] { --fab-fg: #181720; }
   display: grid !important;
   place-items: center;
   padding: 0 !important;
-  border: 1px solid var(--line, rgba(255, 255, 255, 0.14)) !important;
+  border: 1px solid var(--fab-edge) !important;
   border-radius: 18px !important;
   background: var(--background-color, #181720) !important;
   color: var(--fab-fg) !important;
@@ -95,7 +98,7 @@ html.show--preferences .pb-messenger-button {
   --cc-surface: var(--background-color, #181720);
   --cc-raise: color-mix(in srgb, var(--text-color, #fff) 6%, var(--cc-surface));
   --cc-raise-hover: color-mix(in srgb, var(--text-color, #fff) 11%, var(--cc-surface));
-  --cc-edge: var(--line, rgba(255, 255, 255, 0.12));
+  --cc-edge: var(--fab-edge);
 
   --cc-bg: var(--cc-surface);
   --cc-pm-bg: var(--cc-surface);
@@ -111,18 +114,18 @@ html.show--preferences .pb-messenger-button {
   --cc-section-category-border: var(--cc-edge);
   --cc-pm-tab-border-color: var(--cc-edge);
   --cc-pm-tab-color: var(--text-color);
-  --cc-pm-tab-active-color: var(--accent, #FF7A00);
+  --cc-pm-tab-active-color: var(--fab-accent);
 
-  --cc-accept-bg: var(--accent, #FF7A00);
-  --cc-accept-border-color: var(--accent, #FF7A00);
-  --cc-accept-color: var(--btn-text, #181720);
-  --cc-accept-hover-bg: var(--accent-hover, #CC6200);
-  --cc-accept-hover-border-color: var(--accent-hover, #CC6200);
-  --cc-accept-hover-color: var(--btn-text, #181720);
-  --cc-btn-primary-bg: var(--accent, #FF7A00);
-  --cc-btn-primary-color: var(--btn-text, #181720);
-  --cc-btn-primary-hover-bg: var(--accent-hover, #CC6200);
-  --cc-btn-primary-hover-color: var(--btn-text, #181720);
+  --cc-accept-bg: var(--fab-accent);
+  --cc-accept-border-color: var(--fab-accent);
+  --cc-accept-color: var(--fab-btn-text);
+  --cc-accept-hover-bg: var(--fab-accent-hover);
+  --cc-accept-hover-border-color: var(--fab-accent-hover);
+  --cc-accept-hover-color: var(--fab-btn-text);
+  --cc-btn-primary-bg: var(--fab-accent);
+  --cc-btn-primary-color: var(--fab-btn-text);
+  --cc-btn-primary-hover-bg: var(--fab-accent-hover);
+  --cc-btn-primary-hover-color: var(--fab-btn-text);
 
   --cc-reject-bg: var(--cc-raise);
   --cc-reject-border-color: var(--cc-edge);
@@ -161,12 +164,12 @@ html.show--preferences .pb-messenger-button {
   --cc-pm-close-btn-icon-color: var(--fab-fg);
   --cc-pm-close-btn-hover-icon-color: var(--fab-fg);
 
-  --cc-pm-checkbox-accent-color: var(--accent, #FF7A00);
-  --cc-toggle-on-bg: var(--accent, #FF7A00);
-  --cc-pm-toggle-on-bg: var(--accent, #FF7A00);
+  --cc-pm-checkbox-accent-color: var(--fab-accent);
+  --cc-toggle-on-bg: var(--fab-accent);
+  --cc-pm-toggle-on-bg: var(--fab-accent);
   --cc-pm-toggle-on-knob-bg: var(--cc-surface);
   --cc-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
   --cc-pm-toggle-off-bg: color-mix(in srgb, var(--text-color, #fff) 30%, var(--cc-surface));
   --cc-pm-toggle-off-knob-bg: var(--fab-fg);
-  --cc-toggle-readonly-bg: color-mix(in srgb, var(--accent, #FF7A00) 40%, var(--cc-surface));
+  --cc-toggle-readonly-bg: color-mix(in srgb, var(--fab-accent) 40%, var(--cc-surface));
 }
