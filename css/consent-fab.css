@@ -19,6 +19,7 @@
   --fab-btn-text: var(--btn-text, var(--button-text-color, #181720));
   --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
   --fab-bottom: 16px;
+  --fab-ticker-clearance: calc(16px + var(--hypermonitor-ticker-height, 40px));
 }
 html[lang^="it"] {
   --fab-cookie-w: 92px;
@@ -33,6 +34,7 @@ html[lang^="fr"] {
   --fab-chat-label: "💬  Assistance";
 }
 
+/* Light */
 html.theme-light,
 body.theme-light,
 html:has(body.theme-light) {
@@ -40,6 +42,7 @@ html:has(body.theme-light) {
   --fab-surface: #F5F5FA;
   --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
 }
+/* Dark — match Elemento/LaunchPad surface, not pure black */
 html.theme-dark,
 body.theme-dark,
 html:has(body.theme-dark) {
@@ -47,17 +50,20 @@ html:has(body.theme-dark) {
   --fab-surface: #181720;
   --fab-edge: color-mix(in srgb, var(--fab-fg) 14%, transparent);
 }
+/* High contrast / midnight — keep readable white on the site’s deep navy, not #000 */
 html.theme-high-contrast,
 body.theme-high-contrast,
 html:has(body.theme-high-contrast) {
-  --fab-fg: #FFFFFF;
-  --fab-surface: #000000;
-  --fab-edge: color-mix(in srgb, var(--fab-fg) 28%, transparent);
+  --fab-fg: #F5F5FA;
+  --fab-surface: #0F0E14;
+  --fab-edge: color-mix(in srgb, var(--fab-fg) 18%, transparent);
 }
 
 html.has-hypermonitor-ticker,
-body.has-hypermonitor-ticker {
-  --fab-bottom: calc(16px + var(--hypermonitor-ticker-height, 40px));
+body.has-hypermonitor-ticker,
+html:has(.atc-ticker--fixed),
+html:has(#hypermonitor-live-ticker) {
+  --fab-bottom: var(--fab-ticker-clearance);
 }
 
 .cm__float-btn,
@@ -83,6 +89,19 @@ body.has-hypermonitor-ticker {
   transition: background-color 0.15s ease !important;
   z-index: 2147483000 !important;
 }
+
+/* Direct bottom rules beat Consently inline styles more reliably than the var alone. */
+html.has-hypermonitor-ticker .cm__float-btn,
+html.has-hypermonitor-ticker .pb-messenger-button,
+body.has-hypermonitor-ticker .cm__float-btn,
+body.has-hypermonitor-ticker .pb-messenger-button,
+html:has(.atc-ticker--fixed) .cm__float-btn,
+html:has(.atc-ticker--fixed) .pb-messenger-button,
+html:has(#hypermonitor-live-ticker) .cm__float-btn,
+html:has(#hypermonitor-live-ticker) .pb-messenger-button {
+  bottom: var(--fab-ticker-clearance) !important;
+}
+
 .cm__float-btn { width: var(--fab-cookie-w) !important; }
 .pb-messenger-button { width: var(--fab-chat-w) !important; }
 .cm__float-btn:hover,
@@ -107,6 +126,12 @@ body .cm__float-btn::before,
 .pb-messenger-button .pbm-icon-close { width: 16px; height: 16px; }
 .pb-messenger-panel {
   bottom: calc(var(--fab-bottom) + 48px) !important;
+}
+html.has-hypermonitor-ticker .pb-messenger-panel,
+body.has-hypermonitor-ticker .pb-messenger-panel,
+html:has(.atc-ticker--fixed) .pb-messenger-panel,
+html:has(#hypermonitor-live-ticker) .pb-messenger-panel {
+  bottom: calc(var(--fab-ticker-clearance) + 48px) !important;
 }
 
 body:has(.pb-messenger-button) .cm__float-btn {
