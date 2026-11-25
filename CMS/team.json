@@ -254,24 +254,29 @@
     "id": "nour-ghali",
     "division": "sales",
     "photo": "CMS/team/nghali.webp",
-    "links": [],
+    "links": [
+      {
+        "type": "Linkedin",
+        "url": "https://www.linkedin.com/in/nour-ghali-a2ba02255/"
+      }
+    ],
     "en": {
       "name": "Nour Ghali",
       "role": "Marketing and Sales Intern",
-      "highlight": "",
-      "bio": ""
+      "highlight": "MSc student in Strategic Management and Marketing",
+      "bio": "Marketing and Sales Intern at Elemento Cloud and MSc student in Strategic Management and Marketing. My work focuses on lead generation, social media management, and creating engaging content for social platforms and YouTube. Outside the office, I enjoy discovering new places and listening to music."
     },
     "it": {
       "name": "Nour Ghali",
       "role": "Tirocinante Marketing e Vendite",
-      "highlight": "",
-      "bio": ""
+      "highlight": "Studentessa magistrale in Strategic Management and Marketing",
+      "bio": "Tirocinante Marketing e Vendite presso Elemento Cloud e studentessa magistrale in Strategic Management and Marketing. Il mio lavoro si concentra sulla lead generation, sulla gestione dei social media e sulla creazione di contenuti coinvolgenti per i social e YouTube. Fuori dall'ufficio, mi piace scoprire nuovi posti e ascoltare musica."
     },
     "fr": {
       "name": "Nour Ghali",
       "role": "Stagiaire Marketing et Ventes",
-      "highlight": "",
-      "bio": ""
+      "highlight": "Étudiante en MSc Strategic Management and Marketing",
+      "bio": "Stagiaire Marketing et Ventes chez Elemento Cloud et étudiante en MSc Strategic Management and Marketing. Mon travail porte sur la génération de leads, la gestion des réseaux sociaux et la création de contenus engageants pour les plateformes sociales et YouTube. En dehors du bureau, j'aime découvrir de nouveaux endroits et écouter de la musique."
     }
   },
   {
