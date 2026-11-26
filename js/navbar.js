@@ -272,15 +272,15 @@ class Navbar {
     getBannerStrings() {
         const defaults = {
             en: {
-                text: 'AtomOS is free forever — 150€ off your first support plan',
+                text: 'AtomOS is free forever: 150€ off your first support plan',
                 aria: 'AtomOS is free forever. Get 150 euros off your first support plan.',
             },
             it: {
-                text: 'AtomOS è gratuito per sempre — 150€ di sconto sul primo piano di supporto',
+                text: 'AtomOS è gratuito per sempre: 150€ di sconto sul primo piano di supporto',
                 aria: 'AtomOS è gratuito per sempre. 150 euro di sconto sul primo piano di supporto.',
             },
             fr: {
-                text: "AtomOS est gratuit pour toujours — 150 € de réduction sur votre premier plan de support",
+                text: "AtomOS est gratuit pour toujours : 150 € de réduction sur votre premier plan de support",
                 aria: "AtomOS est gratuit pour toujours. 150 euros de réduction sur votre premier plan de support.",
             },
         };

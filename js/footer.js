@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li><a href="${localizedHref('technology.html')}">${ui.nav.technology}</a></li>
                         <li><a href="${localizedHref('atomosphere.html')}">Atomosphere</a></li>
                         <li><a href="${localizedHref('contact.html')}">${ui.nav.contact}</a></li>
-                        <li><a href="${localizedHref('careers.html')}">${f.careers}</a></li>
+                        <li><a href="https://www.linkedin.com/company/elemento-modular-cloud/" target="_blank" rel="noopener noreferrer">${f.careers}</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
