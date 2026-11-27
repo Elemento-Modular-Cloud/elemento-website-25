@@ -183,21 +183,42 @@ html:has(#hypermonitor-live-ticker) .woot-widget-holder {
   bottom: calc(var(--fab-ticker-clearance) + 48px) !important;
 }
 
-body:has(.woot-widget-bubble) .cm__float-btn {
+body:has(.woot-widget-bubble) .cm__float-btn,
+html:has(.woot-widget-bubble) .cm__float-btn {
   right: calc(16px + var(--fab-chat-w)) !important;
   z-index: 2147483647 !important;
   border-right: 0 !important;
   border-radius: 18px 0 0 18px !important;
 }
-body:has(.cm__float-btn) .woot-widget-bubble {
+body:has(.cm__float-btn) .woot-widget-bubble,
+html:has(.cm__float-btn) .woot-widget-bubble {
   border-radius: 0 18px 18px 0 !important;
 }
 /* Consently hides its own button while the consent banner or preferences are open,
-   and the banner sits where the pill is: hide the support half with it. */
+   and the banner sits where the pill is: hide the support half with it.
+   Our display:grid !important would otherwise fight Consently’s display:none. */
+html.show--consent .cm__float-btn,
+html.show--preferences .cm__float-btn,
 html.show--consent .woot-widget-bubble,
-html.show--preferences .woot-widget-bubble {
+html.show--preferences .woot-widget-bubble,
+html.show--consent .woot-widget-holder,
+html.show--preferences .woot-widget-holder,
+html.show--consent #cw-bubble-holder,
+html.show--preferences #cw-bubble-holder {
   visibility: hidden !important;
   opacity: 0 !important;
+  pointer-events: none !important;
+}
+/* Keep the Consently modal above Chatwoot while open. */
+html.show--consent #cc-main,
+html.show--preferences #cc-main {
+  z-index: 2147483647 !important;
+  pointer-events: auto !important;
+}
+html.show--consent #cc-main .cm,
+html.show--preferences #cc-main .pm {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 @media (max-width: 520px) {
   /* Hide the launcher while the widget is open so it does not cover send. */
