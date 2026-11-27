@@ -1,4 +1,4 @@
-/* Consently cookie button and ProductBridge support bubble, joined into one
+/* Consently cookie button and Chatwoot support bubble, joined into one
    bottom-right pill: [🍪 Cookies | 💬 Support]. Either one alone falls back to a
    rounded button. Both vendors set size, colour and position inline, hence !important.
    The cookie half is offset by the support half's width, so each half has a fixed
@@ -67,13 +67,19 @@ html:has(#hypermonitor-live-ticker) {
 }
 
 .cm__float-btn,
-.pb-messenger-button {
+.woot-widget-bubble,
+.woot-widget-bubble.woot-widget--expanded,
+.woot-widget-bubble.woot--close {
   height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
   right: 16px !important;
   left: auto !important;
   bottom: var(--fab-bottom) !important;
   display: grid !important;
-  place-items: center;
+  place-items: center !important;
+  align-items: center !important;
+  justify-content: center !important;
   padding: 0 !important;
   border: 1px solid var(--fab-edge) !important;
   border-radius: 18px !important;
@@ -82,34 +88,54 @@ html:has(#hypermonitor-live-ticker) {
   box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.35) !important;
   font: 600 13px/1 "Red Hat Text", Inter, system-ui, sans-serif !important;
   letter-spacing: 0.01em !important;
-  white-space: pre;
+  white-space: pre !important;
   cursor: pointer;
   animation: none !important;
   transform: none !important;
   transition: background-color 0.15s ease !important;
   z-index: 2147483000 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 
 /* Direct bottom rules beat Consently inline styles more reliably than the var alone. */
 html.has-hypermonitor-ticker .cm__float-btn,
-html.has-hypermonitor-ticker .pb-messenger-button,
+html.has-hypermonitor-ticker .woot-widget-bubble,
 body.has-hypermonitor-ticker .cm__float-btn,
-body.has-hypermonitor-ticker .pb-messenger-button,
+body.has-hypermonitor-ticker .woot-widget-bubble,
 html:has(.atc-ticker--fixed) .cm__float-btn,
-html:has(.atc-ticker--fixed) .pb-messenger-button,
+html:has(.atc-ticker--fixed) .woot-widget-bubble,
 html:has(#hypermonitor-live-ticker) .cm__float-btn,
-html:has(#hypermonitor-live-ticker) .pb-messenger-button {
+html:has(#hypermonitor-live-ticker) .woot-widget-bubble {
   bottom: var(--fab-ticker-clearance) !important;
 }
 
 .cm__float-btn { width: var(--fab-cookie-w) !important; }
-.pb-messenger-button { width: var(--fab-chat-w) !important; }
+.woot-widget-bubble,
+.woot-widget-bubble.woot-widget--expanded,
+.woot-widget-bubble.woot--close {
+  width: var(--fab-chat-w) !important;
+  min-width: var(--fab-chat-w) !important;
+  max-width: var(--fab-chat-w) !important;
+}
 .cm__float-btn:hover,
-.pb-messenger-button:hover {
+.woot-widget-bubble:hover {
   background: color-mix(in srgb, var(--fab-fg) 8%, var(--fab-surface)) !important;
 }
-.cm__float-btn img,
-.pb-messenger-button .pbm-icon-chat { display: none !important; }
+.cm__float-btn img { display: none !important; }
+/* Chatwoot expanded bubble ships an icon + title; use our label instead. */
+.woot-widget-bubble svg,
+.woot-widget-bubble.woot-widget--expanded svg,
+.woot-widget-bubble.woot--close svg,
+.woot-widget-bubble > div,
+.woot-widget-bubble.woot-widget--expanded > div {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
 body .cm__float-btn::before,
 .cm__float-btn::before {
   content: var(--fab-cookie-label) !important;
@@ -117,45 +143,83 @@ body .cm__float-btn::before,
   font: inherit !important;
   color: inherit !important;
 }
-.pb-messenger-button::before {
-  content: var(--fab-chat-label);
-  font: inherit;
+.woot-widget-bubble::before,
+.woot-widget-bubble.woot-widget--expanded::before {
+  content: var(--fab-chat-label) !important;
+  display: block !important;
+  font: inherit !important;
+  color: inherit !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  background: none !important;
+  box-shadow: none !important;
   transition: opacity 0.16s, transform 0.16s;
 }
-.pb-messenger-button.pbm-open::before { opacity: 0; transform: scale(0.8); }
-.pb-messenger-button .pbm-icon-close { width: 16px; height: 16px; }
-.pb-messenger-panel {
-  bottom: calc(var(--fab-bottom) + 48px) !important;
+/* Kill Chatwoot’s drawn X bars; show a simple close glyph instead. */
+.woot-widget-bubble.woot--close::before {
+  content: "✕" !important;
+  opacity: 1 !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
 }
-html.has-hypermonitor-ticker .pb-messenger-panel,
-body.has-hypermonitor-ticker .pb-messenger-panel,
-html:has(.atc-ticker--fixed) .pb-messenger-panel,
-html:has(#hypermonitor-live-ticker) .pb-messenger-panel {
+.woot-widget-bubble.woot--close::after {
+  content: none !important;
+  display: none !important;
+}
+.woot-widget-holder {
+  bottom: calc(var(--fab-bottom) + 48px) !important;
+  z-index: 2147483001 !important;
+}
+html.has-hypermonitor-ticker .woot-widget-holder,
+body.has-hypermonitor-ticker .woot-widget-holder,
+html:has(.atc-ticker--fixed) .woot-widget-holder,
+html:has(#hypermonitor-live-ticker) .woot-widget-holder {
   bottom: calc(var(--fab-ticker-clearance) + 48px) !important;
 }
 
-body:has(.pb-messenger-button) .cm__float-btn {
+body:has(.woot-widget-bubble) .cm__float-btn {
   right: calc(16px + var(--fab-chat-w)) !important;
   z-index: 2147483647 !important;
   border-right: 0 !important;
   border-radius: 18px 0 0 18px !important;
 }
-body:has(.cm__float-btn) .pb-messenger-button {
+body:has(.cm__float-btn) .woot-widget-bubble {
   border-radius: 0 18px 18px 0 !important;
 }
 /* Consently hides its own button while the consent banner or preferences are open,
    and the banner sits where the pill is: hide the support half with it. */
-html.show--consent .pb-messenger-button,
-html.show--preferences .pb-messenger-button {
+html.show--consent .woot-widget-bubble,
+html.show--preferences .woot-widget-bubble {
   visibility: hidden !important;
   opacity: 0 !important;
 }
 @media (max-width: 520px) {
-  body:has(.pb-messenger-button.pbm-open) .cm__float-btn { display: none !important; }
+  /* Hide the launcher while the widget is open so it does not cover send. */
+  html.cw-open .woot-widget-bubble,
+  html.cw-open .cm__float-btn {
+    display: none !important;
+  }
+  html.cw-open .woot-widget-holder {
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    border-radius: 0 !important;
+  }
 }
 
-/* Consently banner and preferences in the site palette. Consently declares its
-   theme on :root, so redeclaring the variables on its container wins. */
+
 #cc-main {
   --cc-surface: var(--fab-surface);
   --cc-raise: color-mix(in srgb, var(--fab-fg) 6%, var(--cc-surface));

@@ -308,7 +308,7 @@
     },
     {
       "id": "body.cookie.h5.10",
-      "en": "ProductBridge",
+      "en": "Chatwoot",
       "it": "",
       "fr": "",
       "source": "cookie.html",
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "body.cookie.li.63",
-      "en": "ProductBridge – Privacy Policy",
+      "en": "Chatwoot Inc. – Privacy Policy",
       "it": "",
       "fr": "",
       "source": "cookie.html",
@@ -2636,7 +2636,7 @@
     },
     {
       "id": "body.cookie.p.48",
-      "en": "Company: ProductBridge Place of processing: European Union (AWS, Paris; backups in Germany), with AI analysis performed in the United States under Standard Contractual Clauses",
+      "en": "Company: Chatwoot Inc. Place of processing: United States (AWS)",
       "it": "",
       "fr": "",
       "source": "cookie.html",
@@ -2644,7 +2644,7 @@
     },
     {
       "id": "body.cookie.p.49",
-      "en": "ProductBridge powers the chat and support widget, the public roadmap, the changelog, the feedback area and the surveys of this Application. Its Trackers keep the support conversation associated with the same visitor between page loads and, where the User has created an account in the feedback area, keep that session open.",
+      "en": "Chatwoot powers the live chat and support widget on this Application. Its Trackers keep the support conversation associated with the same visitor between page loads.",
       "it": "",
       "fr": "",
       "source": "cookie.html",

@@ -3515,7 +3515,7 @@ body.cookie.h4.5,Trackers managed directly by the Owner,,,cookie.html,<h4>
 body.cookie.h4.6,Trackers managed by third parties,,,cookie.html,<h4>
 body.cookie.h4.7,Trackers managed by third parties,,,cookie.html,<h4>
 body.cookie.h5.1,Consent management (Consently),,,cookie.html,<h5>
-body.cookie.h5.10,ProductBridge,,,cookie.html,<h5>
+body.cookie.h5.10,Chatwoot,,,cookie.html,<h5>
 body.cookie.h5.11,PressDeck,,,cookie.html,<h5>
 body.cookie.h5.12,Livid,,,cookie.html,<h5>
 body.cookie.h5.13,Gumlet,,,cookie.html,<h5>
@@ -3676,7 +3676,7 @@ body.cookie.li.6,consently-tc-string (cookie): 1 year — set only where the IAB
 body.cookie.li.60,email address,,,cookie.html,<li>
 body.cookie.li.61,Trackers,,,cookie.html,<li>
 body.cookie.li.62,Usage Data,,,cookie.html,<li>
-body.cookie.li.63,ProductBridge – Privacy Policy,,,cookie.html,<li>
+body.cookie.li.63,Chatwoot Inc. – Privacy Policy,,,cookie.html,<li>
 body.cookie.li.64,Trackers,,,cookie.html,<li>
 body.cookie.li.65,Usage Data,,,cookie.html,<li>
 body.cookie.li.66,PressDeck – Privacy Policy,,,cookie.html,<li>
@@ -3806,8 +3806,8 @@ body.cookie.p.44,Company: Web3Creative Place of processing: India,,,cookie.html,
 body.cookie.p.45,Web3Forms receives and delivers to the Owner the content of the contact and registration forms available on this Application.,,,cookie.html,<p>
 body.cookie.p.46,Personal Data processed:,,,cookie.html,<p>
 body.cookie.p.47,Service provided by:,,,cookie.html,<p>
-body.cookie.p.48,"Company: ProductBridge Place of processing: European Union (AWS, Paris; backups in Germany), with AI analysis performed in the United States under Standard Contractual Clauses",,,cookie.html,<p>
-body.cookie.p.49,"ProductBridge powers the chat and support widget, the public roadmap, the changelog, the feedback area and the surveys of this Application. Its Trackers keep the support conversation associated with the same visitor between page loads and, where the User has created an account in the feedback area, keep that session open.",,,cookie.html,<p>
+body.cookie.p.48,"Company: Chatwoot Inc. Place of processing: United States (AWS)",,,cookie.html,<p>
+body.cookie.p.49,"Chatwoot powers the live chat and support widget on this Application. Its Trackers keep the support conversation associated with the same visitor between page loads.",,,cookie.html,<p>
 body.cookie.p.5,"The Trackers described below are not necessarily present on every one of these properties: each of them uses only those that are needed for the features it offers. Consent is collected separately on each domain, because Trackers set on one domain are not readable from another.",,,cookie.html,<p>
 body.cookie.p.50,Personal Data processed:,,,cookie.html,<p>
 body.cookie.p.51,Service provided by:,,,cookie.html,<p>
@@ -4484,7 +4484,7 @@ body.privacy.h4.50,GenPage,,,privacy.html,<h4>
 body.privacy.h4.51,Mailjet,,,privacy.html,<h4>
 body.privacy.h4.52,PostHog surveys,,,privacy.html,<h4>
 body.privacy.h4.53,Typeform,,,privacy.html,<h4>
-body.privacy.h4.54,ProductBridge,,,privacy.html,<h4>
+body.privacy.h4.54,Chatwoot,,,privacy.html,<h4>
 body.privacy.h4.55,Intercom,,,privacy.html,<h4>
 body.privacy.h4.56,Lunacal,,,privacy.html,<h4>
 body.privacy.h4.57,Riverside,,,privacy.html,<h4>
@@ -5058,7 +5058,7 @@ body.privacy.li.487,Usage Data,,,privacy.html,<li>
 body.privacy.li.488,username,,,privacy.html,<li>
 body.privacy.li.489,various types of Data as specified in the privacy policy of the service,,,privacy.html,<li>
 body.privacy.li.49,Creation and hosting of personalised landing pages,,,privacy.html,<li>
-body.privacy.li.490,ProductBridge – Privacy Policy,,,privacy.html,<li>
+body.privacy.li.490,Chatwoot Inc. – Privacy Policy,,,privacy.html,<li>
 body.privacy.li.491,"Responses provided by Intercom are generated, fully or in part, by an automated system and not by a human operator.",,,privacy.html,<li>
 body.privacy.li.492,"Material produced by Intercom (including images, audio, videos, and text) is created, fully or in part, by automated systems.",,,privacy.html,<li>
 body.privacy.li.493,"Intercom uses an AI-powered emotion recognition system: it can analyse facial expressions, voice patterns or written text to infer emotional states. You are informed of this processing before it begins.",,,privacy.html,<li>
@@ -5833,9 +5833,9 @@ body.privacy.p.285,Typeform is a form builder and data collection platform provi
 body.privacy.p.286,Personal Data processed:,,,privacy.html,<p>
 body.privacy.p.287,Service provided by:,,,privacy.html,<p>
 body.privacy.p.288,"This type of service allows this Application to manage communications, support and contact requests with Users, whether received or sent via email or by other means (such as an email client or the contact form). The Personal Data processed depend on the information provided by the User in the messages and the means used for communication (e.g. email address).",,,privacy.html,<p>
-body.privacy.p.289,"Company: ProductBridge Place of processing: European Union (AWS, Paris; backups in Germany), with AI analysis performed in the United States under Standard Contractual Clauses",,,privacy.html,<p>
+body.privacy.p.289,"Company: Chatwoot Inc. Place of processing: United States (AWS)",,,privacy.html,<p>
 body.privacy.p.29,"In order to understand Google's use of Data, consult their partner policy and their Business Data page .",,,privacy.html,<p>
-body.privacy.p.290,"ProductBridge is the platform through which the Owner operates its public product roadmap, its changelog, its user feedback area — where Users may submit and vote on proposals for new features, after creating an account — the chat widget through which Users may open support tickets and receive replies, and the surveys addressed to Users, including satisfaction surveys such as the Net Promoter Score.",,,privacy.html,<p>
+body.privacy.p.290,"Chatwoot is the platform through which the Owner operates the live chat widget on this Application, so that Users may open support conversations and receive replies.",,,privacy.html,<p>
 body.privacy.p.291,"This service uses artificial intelligence to analyse the feedback and the support requests submitted by Users, in order to classify them and summarise them for the Owner.",,,privacy.html,<p>
 body.privacy.p.292,Personal Data processed:,,,privacy.html,<p>
 body.privacy.p.293,Service provided by:,,,privacy.html,<p>
